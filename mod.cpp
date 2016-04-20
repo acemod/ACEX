@@ -1,0 +1,12 @@
+name = "Advanced Combat Environment 3 - Misc";
+picture = "logo_ace3_ca.paa";
+actionName = "GitHub";
+action = "https://github.com/acemod/ace-misc";
+description = "ACE3";
+logo = "logo_ace3_ca.paa";
+logoOver = "logo_ace3_ca.paa";
+tooltip = "ACE3 Misc";
+tooltipOwned = "ACE3 Misc Owned";
+overview = "Advanced Combat Environment 3 Misc components";
+author = "ACE3 Team";
+overviewPicture = "logo_ace3_ca.paa";
