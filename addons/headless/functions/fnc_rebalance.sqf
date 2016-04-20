@@ -23,7 +23,7 @@ TRACE_3("Rebalance",GVAR(inRebalance),GVAR(headlessClients),_force);
 if (GVAR(inRebalance) || {GVAR(headlessClients) isEqualTo []}) exitWith {};
 
 // Transfer after rebalance delay
-[FUNC(transferGroups), [_force], GVAR(Delay)] call EFUNC(common,waitAndExecute);
+[FUNC(transferGroups), [_force], GVAR(Delay)] call (ace_common_waitAndExecute);
 
 // Currently in rebalance flag
 GVAR(inRebalance) = true;

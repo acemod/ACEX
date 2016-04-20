@@ -20,8 +20,8 @@ params ["_logic", "", "_activated"];
 
 if (!_activated) exitWith {};
 
-[_logic, QGVAR(Enabled), "Enabled"] call EFUNC(common,readSettingFromModule);
-[_logic, QGVAR(Delay), "Delay"] call EFUNC(common,readSettingFromModule);
-[_logic, QGVAR(Log), "Log"] call EFUNC(common,readSettingFromModule);
+[_logic, QGVAR(Enabled), "Enabled"] call (ace_common_readSettingFromModule);
+[_logic, QGVAR(Delay), "Delay"] call (ace_common_readSettingFromModule);
+[_logic, QGVAR(Log), "Log"] call (ace_common_readSettingFromModule);
 
 ACE_LOGINFO("Headless Module Initialized.");

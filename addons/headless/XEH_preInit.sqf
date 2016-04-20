@@ -12,7 +12,7 @@ PREP(transferGroups);
 if (isServer) then {
     GVAR(headlessClients) = [];
     GVAR(inRebalance) = false;
-    ["ACE_HeadlessClientJoined", FUNC(handleConnectHC)] call EFUNC(common,addEventHandler);
+    ["ACE_HeadlessClientJoined", FUNC(handleConnectHC)] call (ace_common_addEventHandler);
 };
 
 ADDON = true;

@@ -18,8 +18,8 @@
 params ["_headlessClient"];
 
 // Delay until settings are initialized (for checking if HC trasnferring is enabled)
-if (!EGVAR(common,settingsInitFinished)) exitWith {
-    EGVAR(common,runAtSettingsInitialized) pushBack [FUNC(handleConnectHC), _this];
+if (!(ace_common_settingsInitFinished)) exitWith {
+    (ace_common_runAtSettingsInitialized) pushBack [FUNC(handleConnectHC), _this];
 };
 
 // Exit if HC transferring disabled or HC already registered
