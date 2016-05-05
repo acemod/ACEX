@@ -24,13 +24,11 @@ GVAR(headlessClients) params [
 ];
 
 if (GVAR(Log)) then {
-    ACE_LOGINFO_2("Present HCs: %1 - Full Rebalance: %2",GVAR(headlessClients),_force);
+    ACE_LOGINFO_2("Present HCs: %1 - Full Rebalance: %2", GVAR(headlessClients), _force);
 };
-
 
 // Enable round-robin load balancing if more than one HC is present
 private _loadBalance = [false, true] select (count GVAR(headlessClients) > 1);
-
 
 // Get IDs and determine first HC to start with
 private _idHC1 = -1;
@@ -59,18 +57,15 @@ if (!local _HC3) then {
     };
 };
 
-
 // Prepare statistics
 private _numTransferredHC1 = 0;
 private _numTransferredHC2 = 0;
 private _numTransferredHC3 = 0;
 
-
 // Transfer AI groups
 {
     // No transfer if empty group
     private _transfer = !(_x isEqualTo []);
-
     if (_transfer) then {
         {
             // No transfer if already transferred
@@ -127,18 +122,16 @@ private _numTransferredHC3 = 0;
                 };
             };
             default {
-                TRACE_1("No Valid HC to transfer to",_currentHC);
+                TRACE_1("No Valid HC to transfer to", _currentHC);
             };
         };
     };
 } forEach allGroups;
 
-
 if (GVAR(Log)) then {
     private _numTransferredTotal = _numTransferredHC1 + _numTransferredHC2 + _numTransferredHC3;
-    ACE_LOGINFO_4("Groups Transferred: Total: %1 - HC1: %2 - HC2: %3 - HC3: %4",_numTransferredTotal,_numTransferredHC1,_numTransferredHC2,_numTransferredHC3);
+    ACE_LOGINFO_4("Groups Transferred: Total: %1 - HC1: %2 - HC2: %3 - HC3: %4", _numTransferredTotal, _numTransferredHC1, _numTransferredHC2, _numTransferredHC3);
 };
-
 
 // Allow rebalance flag
 GVAR(inRebalance) = false;

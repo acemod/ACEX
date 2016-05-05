@@ -11,6 +11,6 @@ if (hasInterface && !isServer) exitWith {};
         };
     } else {
         // Register HC (this part happens on HC only)
-        ["ACE_HeadlessClientJoined", [player]] call (ace_common_globalEvent);
+        ["ACE_HeadlessClientJoined", [player]] call ace_common_fnc_globalEvent;
     };
-}] call (ace_common_addEventHandler);
+}] call ace_common_fnc_addEventHandler;

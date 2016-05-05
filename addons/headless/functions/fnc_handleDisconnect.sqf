@@ -9,7 +9,7 @@
  * Transfer To Server <BOOL>
  *
  * Example:
- * [unit] call ace_headless_handleDisconnect;
+ * [unit] call ace_headless_fnc_handleDisconnect;
  *
  * Public: No
  */

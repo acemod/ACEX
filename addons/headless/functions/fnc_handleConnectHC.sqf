@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [headlessClient] call ace_headless_handleConnectHC;
+ * [headlessClient] call ace_headless_fnc_handleConnectHC;
  *
  * Public: No
  */

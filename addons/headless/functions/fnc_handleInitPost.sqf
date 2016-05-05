@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [object] call ace_headless_handleInitPost;
+ * [object] call ace_headless_fnc_handleInitPost;
  *
  * Public: No
  */
@@ -20,8 +20,8 @@ params ["_object"];
 TRACE_1("InitPost",_object);
 
 // Delay until settings are initialized (for checking if HC trasnferring is enabled)
-if (!(ace_common_settingsInitFinished)) exitWith {
-    (ace_common_runAtSettingsInitialized) pushBack [FUNC(handleInitPost), _this];
+if (!ace_common_settingsInitFinished) exitWith {
+    ace_common_runAtSettingsInitialized pushBack [FUNC(handleInitPost), _this];
 };
 
 // Exit if HC transferring disabled or object not a unit (including unit inside vehicle) or is player
