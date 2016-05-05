@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACE">
+    <Package name="FIELD_RATIONS">
+        <Key ID="STR_ACE_FIELD_RATIONS_mainInteractionName">
+            <English>Survival</English>
+        </Key>
+        <Key ID="STR_ACE_FIELD_RATIONS_refillWater">
+            <English>Refill</English>
+        </Key>
+        <Key ID="STR_ACE_FIELD_RATIONS_timeWithoutWater_name">
+            <English>Time without water</English>
+        </Key>
+        <Key ID="STR_ACE_FIELD_RATIONS_timeWithoutWater_description">
+            <English>How long should a unit be able to go without water (hours)</English>
+        </Key>
+        <Key ID="STR_ACE_FIELD_RATIONS_timeWithoutFood_name">
+            <English>Time without food</English>
+        </Key>
+        <Key ID="STR_ACE_FIELD_RATIONS_timeWithoutFood_description">
+            <English>How long should a unit be able to go without food (hours)</English>
+        </Key>
+        <Key ID="STR_ACE_FIELD_RATIONS_moduleName">
+            <English>Field Rations</English>
+        </Key>
+        <Key ID="STR_ACE_FIELD_RATIONS_EatingX">
+            <English>Eating %1</English>
+        </Key>
+        <Key ID="STR_ACE_FIELD_RATIONS_DrinkingX">
+            <English>Drinking %1</English>
+        </Key>
+        <Key ID="STR_ACE_FIELD_RATIONS_RefillX">
+            <English>Refill %1</English>
+        </Key>
+        <Key ID="STR_ACE_FIELD_RATIONS_Refilling">
+            <English>Refilling</English>
+        </Key>
+    </Package>
+</Project>
