@@ -1,11 +1,11 @@
 class RscPicture;
 
 class RscTitles {
-    class ace_field_rations_PlayerStatusUI {
+    class acex_field_rations_PlayerStatusUI {
         duration = 1e+011;
         idd = 1111;
         movingEnable = 0;
-        onLoad = "uiNamespace setVariable ['ace_field_rations_PlayerStatusUI', _this select 0];";
+        onLoad = "uiNamespace setVariable ['acex_field_rations_PlayerStatusUI', _this select 0];";
         class controlsBackground {
             class FoodStatus: RscPicture {
                 sizeEx = 0.032;

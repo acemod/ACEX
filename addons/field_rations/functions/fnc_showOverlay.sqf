@@ -9,7 +9,7 @@
  * None <NIL>
  *
  * Example:
- * [1] call ace_field_rations_fnc_showOverlay
+ * [1] call acex_field_rations_fnc_showOverlay
  *
  * Public: No
  */

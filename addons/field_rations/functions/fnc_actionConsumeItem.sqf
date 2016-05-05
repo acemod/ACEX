@@ -11,7 +11,7 @@
  * Can Be Disarmed <BOOL>
  *
  * Example:
- * [player, player, "ACE_waterbottle_half"] call ace_field_rations_fnc_actionConsumeItem
+ * [player, player, "ACE_waterbottle_half"] call acex_field_rations_fnc_actionConsumeItem
  *
  * Public: No
  */

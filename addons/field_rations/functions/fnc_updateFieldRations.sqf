@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [] call ace_field_rations_fnc_updateFieldRations
+ * [] call acex_field_rations_fnc_updateFieldRations
  *
  * Public: No
  */

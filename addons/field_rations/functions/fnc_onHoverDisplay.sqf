@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [] call ace_field_rations_fnc_onHoverDisplay
+ * [] call acex_field_rations_fnc_onHoverDisplay
  *
  * Public: No
  */

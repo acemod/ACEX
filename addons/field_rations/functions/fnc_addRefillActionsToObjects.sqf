@@ -10,19 +10,11 @@
  * None <Nil>
  *
  * Example:
- * [] call ace_field_rations_fnc_addRefillActionsToObjects
+ * [] call acex_field_rations_fnc_addRefillActionsToObjects
  *
  * Public: No
  */
 #include "script_component.hpp"
-
-#define WATER_SOURCES [\
-    ["Land_Barrel_water"],\
-    ["Land_BarrelWater_F"],\
-    ["Land_stand_waterl_EP1"],\
-    ["Land_Reservoir_EP1"],\
-    ["Land_Misc_Well_C_EP1"],\
-    ["Land_Misc_Well_L_EP1"]]
 
 //Function to get the refil actiosn for all water containers:
 local _fncGetChildren = {
@@ -37,7 +29,7 @@ local _fncGetChildren = {
             local _displayName = getText (_cfg >> "displayName");
             local _picture = getText (_cfg >> "picture");
             local _actionText = format [localize LSTRING(RefillX), _displayName];
-            local _action = [_x, _actionText, _picture, {_this call FUNC(actionRefillFromWaterSource)}, {_this call FUNC(canRefillFromWaterSource)}, {}, _x] call EFUNC(interact_menu,createAction);
+            local _action = [_x, _actionText, _picture, {_this call FUNC(actionRefillFromWaterSource)}, {_this call FUNC(canRefillFromWaterSource)}, {}, _x] call ace_interact_menu_fnc_createAction;
             _actions pushBack [_action, [], _player];
         };
     } forEach (items _player);
@@ -51,7 +43,7 @@ local _fncGetChildren = {
     TRACE_3("Adding refil action", (isClass _cfg), _classname, _tapLocation);
 
     if (isClass _cfg) then {
-        _action = [QGVAR(refill), (localize LSTRING(refillWater)), QUOTE(PATHTOF(ui\hud_drinkstatus2.paa)), {}, {true}, _fncGetChildren, [], _tapLocation, 4] call EFUNC(interact_menu,createAction);
-        [_classname, 0, [], _action] call EFUNC(interact_menu,addActionToClass);
+        _action = [QGVAR(refill), (localize LSTRING(refillWater)), QUOTE(PATHTOF(ui\hud_drinkstatus2.paa)), {}, {true}, _fncGetChildren, [], _tapLocation, 4] call ace_interact_menu_fnc_createAction;
+        [_classname, 0, [], _action] call ace_interact_menu_fnc_addActionToClass;
     };
 } forEach WATER_SOURCES;

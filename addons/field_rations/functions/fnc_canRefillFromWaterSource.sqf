@@ -11,7 +11,7 @@
  * Can Be Item Refilled From Source <BOOL>
  *
  * Example:
- * [barrel, player, "ACE_waterbottle_half"] call ace_field_rations_fnc_canRefillFromWaterSource
+ * [barrel, player, "ACE_waterbottle_half"] call acex_field_rations_fnc_canRefillFromWaterSource
  *
  * Public: No
  */

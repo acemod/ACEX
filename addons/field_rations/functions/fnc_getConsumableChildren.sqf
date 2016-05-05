@@ -10,7 +10,7 @@
  * Actions <ARRAY>
  *
  * Example:
- * [player, ''] call ace_field_rations_fnc_getConsumableChildren
+ * [player, ''] call acex_field_rations_fnc_getConsumableChildren
  *
  * Public: No
  */
@@ -34,7 +34,7 @@ local _consumableItems = [];
             local _displayName = getText (_cfg >> "displayName");
             local _picture = getText (_cfg >> "picture");
 
-            local _action = [_x, _displayName, _picture, {_this call FUNC(actionConsumeItem)}, {_this call FUNC(canConsumeItem)}, {}, _x] call EFUNC(interact_menu,createAction);
+            local _action = [_x, _displayName, _picture, {_this call FUNC(actionConsumeItem)}, {_this call FUNC(canConsumeItem)}, {}, _x] call ace_interact_menu_fnc_createAction;
             _actions pushBack [_action, [], _player];
         };
     };

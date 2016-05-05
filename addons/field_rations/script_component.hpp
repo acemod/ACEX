@@ -16,3 +16,10 @@
 #define DEFAULT_ALPHA_LEVEL 0.4
 #define TIME_
 
+#define WATER_SOURCES [\
+    ["Land_Barrel_water"],\
+    ["Land_BarrelWater_F"],\
+    ["Land_stand_waterl_EP1"],\
+    ["Land_Reservoir_EP1"],\
+    ["Land_Misc_Well_C_EP1"],\
+    ["Land_Misc_Well_L_EP1"]]

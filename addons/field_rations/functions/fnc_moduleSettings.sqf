@@ -9,7 +9,7 @@
  * None <NIL>
  *
  * Example:
- * [logic] call ace_field_rations_fnc_moduleSettings
+ * [logic] call acex_field_rations_fnc_moduleSettings
  *
  * Public: No
  */

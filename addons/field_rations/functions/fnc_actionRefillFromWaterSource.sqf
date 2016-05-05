@@ -11,7 +11,7 @@
  * None <NIL>
  *
  * Example:
- * [barrel, player, "ACE_waterbottle_half"] call ace_field_rations_fnc_actionRefillFromWaterSource
+ * [barrel, player, "ACE_waterbottle_half"] call acex_field_rations_fnc_actionRefillFromWaterSource
  *
  * Public: No
  */

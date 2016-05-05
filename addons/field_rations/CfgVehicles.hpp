@@ -43,7 +43,7 @@ class CfgVehicles {
     };
 
     class NATO_Box_Base;
-    class ace_field_rations_all: NATO_Box_Base {
+    class acex_field_rations_all: NATO_Box_Base {
         scope = 2;
         accuracy = 1000;
         displayName = "[ACE] Field Rations [All]";

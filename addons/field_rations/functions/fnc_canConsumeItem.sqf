@@ -11,7 +11,7 @@
  * Can Player Consume Item <BOOL>
  *
  * Example:
- * [player, player, "ACE_waterbottle_half"] call ace_field_rations_fnc_canConsumeItem
+ * [player, player, "ACE_waterbottle_half"] call acex_field_rations_fnc_canConsumeItem
  *
  * Public: No
  */
