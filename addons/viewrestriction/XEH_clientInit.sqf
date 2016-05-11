@@ -26,12 +26,12 @@ if !(hasInterface) exitWith {};
     // Add Event Handler for changing camera - also happens on spawn
     ["cameraViewChanged", {
         call FUNC(changeCamera);
-    }] call ace_common_fnc_addEventHandler;
+    }] call ACEFUNC(common,addEventHandler);
 
     // Add Event Hander for exiting and entering a vehicle when on Selective mode
     if (GVAR(mode) == 3) then {
         ["playerVehicleChanged", {
             call FUNC(changeCamera);
-        }] call ace_common_fnc_addEventHandler;
+        }] call ACEFUNC(common,addEventHandler);
     };
-}] call ace_common_fnc_addEventHandler;
+}] call ACEFUNC(common,addEventHandler);

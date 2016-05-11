@@ -21,5 +21,5 @@
 {ACE_player == cameraOn || vehicle ACE_player == cameraOn} &&
 {!isNull ACE_player} &&
 {alive ACE_player} &&
-{!call ace_common_fnc_isFeatureCameraActive} &&
+{!call ACEFUNC(common,isFeatureCameraActive)} &&
 {!(cameraOn isKindOf "UAV" || cameraOn isKindOf "UAV_01_base_F")} // UAVs are remote controlled

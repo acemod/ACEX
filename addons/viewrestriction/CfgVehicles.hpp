@@ -16,7 +16,7 @@
 class CfgVehicles {
     class ACE_Module;
     class GVAR(Module): ACE_Module {
-        author = ECSTRING(common,ACETeam);
+        author = "$STR_ACE_common_ACETeam";
         category = "ACE";
         function = QFUNC(moduleInit);
         displayName = CSTRING(ModuleDisplayName);
