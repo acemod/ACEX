@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [false] call ace_headless_fnc_rebalance;
+ * [false] call acex_headless_fnc_rebalance;
  *
  * Public: No
  */
@@ -23,7 +23,7 @@ TRACE_3("Rebalance",GVAR(inRebalance),GVAR(headlessClients),_force);
 if (GVAR(inRebalance) || {GVAR(headlessClients) isEqualTo []}) exitWith {};
 
 // Transfer after rebalance delay
-[FUNC(transferGroups), [_force], GVAR(Delay)] call ace_common_fnc_waitAndExecute;
+[FUNC(transferGroups), [_force], GVAR(Delay)] call ACEFUNC(common,waitAndExecute);
 
 // Currently in rebalance flag
 GVAR(inRebalance) = true;

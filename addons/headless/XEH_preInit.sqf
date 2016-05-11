@@ -7,7 +7,7 @@ ADDON = false;
 if (isServer) then {
     GVAR(headlessClients) = [];
     GVAR(inRebalance) = false;
-    ["ACE_HeadlessClientJoined", FUNC(handleConnectHC)] call ace_common_fnc_addEventHandler;
+    ["ACE_HeadlessClientJoined", FUNC(handleConnectHC)] call ACEFUNC(common,addEventHandler);
 };
 
 ADDON = true;
