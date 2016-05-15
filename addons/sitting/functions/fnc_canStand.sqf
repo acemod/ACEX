@@ -9,7 +9,7 @@
  * Can Stand Up <BOOL>
  *
  * Example:
- * player call ace_sitting_fnc_canStand;
+ * player call acex_sitting_fnc_canStand;
  *
  * Public: No
  */

@@ -9,7 +9,7 @@
  * Random Animation <STRING>
  *
  * Example:
- * _animation = call ace_sitting_fnc_getRandomAnimation
+ * _animation = call acex_sitting_fnc_getRandomAnimation
  *
  * Public: No
  */

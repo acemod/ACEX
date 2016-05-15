@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [seat, player] call ace_sitting_fnc_sit;
+ * [seat, player] call acex_sitting_fnc_sit;
  *
  * Public: No
  */

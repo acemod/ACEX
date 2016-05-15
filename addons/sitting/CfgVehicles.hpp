@@ -4,7 +4,7 @@ class CBA_Extended_EventHandlers;
 class CfgVehicles {
     class ACE_Module;
     class ACEX_ModuleSitting: ACE_Module {
-        author = ECSTRING(common,ACETeam);
+        author = "$STR_ACE_common_ACETeam";
         category = "ACEX";
         displayName = CSTRING(ModuleDisplayName);
         function = QFUNC(moduleInit);
@@ -34,7 +34,7 @@ class CfgVehicles {
                 exceptions[] = {"isNotSitting"};
                 statement = QUOTE(_player call FUNC(stand));
                 priority = 0;
-                icon = PATHTOF(UI\stand_ca.paa);
+                icon = QUOTE(PATHTOF(UI\stand_ca.paa));
             };
         };
     };

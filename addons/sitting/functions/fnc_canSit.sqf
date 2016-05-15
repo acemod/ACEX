@@ -9,7 +9,7 @@
  * Can Sit Down <BOOL>
  *
  * Example:
- * [seat] call ace_sitting_fnc_canSit
+ * [seat] call acex_sitting_fnc_canSit
  *
  * Public: No
  */

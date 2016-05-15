@@ -14,7 +14,7 @@
  */
 #include "script_component.hpp"
 
-if !(isServer) exitWith {};
+if (!isServer) exitWith {};
 
 params ["_logic", "_units", "_activated"];
 

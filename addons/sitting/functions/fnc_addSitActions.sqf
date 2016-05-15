@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [seat] call ace_sitting_fnc_addSitActions
+ * [seat] call acex_sitting_fnc_addSitActions
  *
  * Public: No
  */
