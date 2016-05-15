@@ -9,7 +9,7 @@
  * Transfer To Server <BOOL>
  *
  * Example:
- * [unit] call ace_headless_fnc_handleDisconnect;
+ * [unit] call acex_headless_fnc_handleDisconnect;
  *
  * Public: No
  */

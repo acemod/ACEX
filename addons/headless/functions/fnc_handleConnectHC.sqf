@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [headlessClient] call ace_headless_fnc_handleConnectHC;
+ * [headlessClient] call acex_headless_fnc_handleConnectHC;
  *
  * Public: No
  */
@@ -18,8 +18,8 @@
 params ["_headlessClient"];
 
 // Delay until settings are initialized (for checking if HC trasnferring is enabled)
-if (!(ace_common_settingsInitFinished)) exitWith {
-    (ace_common_runAtSettingsInitialized) pushBack [FUNC(handleConnectHC), _this];
+if (!ACEGVAR(common,settingsInitFinished)) exitWith {
+    ACEGVAR(common,runAtSettingsInitialized) pushBack [FUNC(handleConnectHC), _this];
 };
 
 // Exit if HC transferring disabled or HC already registered
