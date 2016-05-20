@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX">
+    <Package name="intelItems">
+        <Key ID="STR_ACEX_IntelItems_pickupAction">            
+            <English>Pick Up</English>
+            <Czech>Vyzvednout</Czech>
+            <French>Ramasser</French>
+            <German>Aufnehmen</German>
+            <Italian>Prelevare</Italian>
+            <Polish>Podnieś</Polish>
+            <Portuguese>Pegar</Portuguese>
+            <Russian>Подобрать</Russian>
+            <Spanish>Recoger</Spanish>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_VehicleClass_displayName">
+            <English>ACEX Intel Items</English>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_Document_displayName">
+            <English>Intel Document</English>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_Document_descriptionShort">
+            <English>Intel Document</English>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_Photo_displayName">
+            <English>Intel Photo</English>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_Photo_descriptionShort">
+            <English>Intel Photo</English>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_Notepad_displayName">
+            <English>Notepad</English>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_Notepad_descriptionShort">
+            <English>Notepad</English>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_edit_text">          
+            <English>Text:</English>
+            <Czech>Text:</Czech>
+            <French>Texte :</French>
+            <German>Text:</German>
+            <Italian>Testo:</Italian>
+            <Polish>Tekst:</Polish>
+            <Portuguese>Texto:</Portuguese>
+            <Russian>Текст:</Russian>
+            <Spanish>Texto:</Spanish>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_edit_photo">          
+            <English>Photo Filename:</English>
+        </Key>
+    </Package>
+</Project>
