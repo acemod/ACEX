@@ -12,7 +12,7 @@ class CfgVehicles {
         icon = QUOTE(PATHTOF(UI\Icon_Module_Headless_ca.paa));
         class Arguments {
             class Enabled {
-                displayName = ECSTRING(common,Enabled);
+                displayName = ACECSTRING(common,Enabled);
                 description = CSTRING(EnabledDesc);
                 typeName = "BOOL";
                 defaultValue = 0;
