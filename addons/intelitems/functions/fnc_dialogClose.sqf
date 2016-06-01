@@ -40,7 +40,7 @@ if (_localData isEqualTo []) exitWith {ACE_LOGERROR_1("No Local Data on Index [%
 
 //Update Data (if changed)
 if (_type == TYPE_NOTEPAD) then { //Only notepads can update their data
-    private _ctrlText = ctrlText (_display displayCtrl 724346);
+    private _ctrlText = ctrlText (_display displayCtrl IDC_CONTENTEDIT);
     if (_data != _ctrlText) then {
         TRACE_2("updating data",_ctrlText,_data);
         missionNamespace setVariable [(format [QGVAR(intel_%1), _intelIndex]), [_type, _ctrlText], true];
@@ -48,7 +48,7 @@ if (_type == TYPE_NOTEPAD) then { //Only notepads can update their data
 };
 
 //Update Position:
-private _pos = ctrlPosition (_display displayCtrl 724340);
+private _pos = ctrlPosition (_display displayCtrl IDC_CG);
 _localData set [1, _pos select 0];
 _localData set [2, _pos select 1];
 TRACE_1("",_localData);

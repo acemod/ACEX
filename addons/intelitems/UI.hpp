@@ -18,48 +18,37 @@ class GVAR(controlGroup): ctrlControlsGroupNoScrollbars {
     w = 0.5625 * (0.5 * safezoneH);
     h = 0.5 * safezoneH;
     class Controls {
+        //Control positions will be set via sqf
+        class border: ctrlStaticPicture {
+            idc = IDC_BORDER;
+            text = "#(argb,8,8,3)color(0,0,0,1)";
+        };
         class paperBackground: ctrlStaticPicture {
-            idc = 724341;
+            idc = IDC_PAPERBACKGROUND;
             text = "#(argb,8,8,3)color(0.89,0.89,0.89,1)";
-            x = 0;
-            y = 0;
-            w = 0.5625 * (0.5 * safezoneH);
-            h = 0.5 * safezoneH;
         };
         class contentPicture: ctrlStaticPictureKeepAspect {
-            idc = 724345;
+            idc = IDC_CONTENTPICTURE;
             text = "#(argb,8,8,3)color(1,0,0,1)";
-            x = 0;
-            y = 0;
-            w = 0.5625 * (0.5 * safezoneH);
-            h = 0.5 * safezoneH;
             onMouseButtonDown = QUOTE([ARR_2(ctrlParentControlsGroup (_this select 0), true)] call FUNC(onIntelButtonClick););
         };
         class contentEdit: ctrlEditMulti {
-            idc = 724346;
+            idc = IDC_CONTENTEDIT;
             text = "";
             sizeEx = "4.32 * (1 / (getResolution select 3)) * 1.25 * 4";
             font = "PuristaSemibold";
             shadow = 0;
-            x = 0;
-            y = 0;
-            w = 0.5625 * (0.5 * safezoneH);
-            h = 0.5 * safezoneH;
             colorBackground[] = {0, 0, 0, 0};
             colorDisabled[] = {0, 0, 0, 0};
             colorText[] = {0, 0, 0, 1};
             onMouseButtonDown = QUOTE([ARR_2(ctrlParentControlsGroup (_this select 0), true)] call FUNC(onIntelButtonClick););
         };
         class contentText: ctrlStaticMulti {
-            idc = 724347;
+            idc = IDC_CONTENTTEXT;
             text = "";
             sizeEx = "4.32 * (1 / (getResolution select 3)) * 1.25 * 4";
             font = "PuristaSemibold";
             shadow = 0;
-            x = 0;
-            y = 0;
-            w = 0.5625 * (0.5 * safezoneH);
-            h = 0.5 * safezoneH;
             colorBackground[] = {0, 0, 0, 0};
             colorDisabled[] = {0, 0, 0, 0};
             colorText[] = {0, 0, 0, 1};
@@ -86,15 +75,15 @@ class GVAR(dialog) {
     };
     class Controls {
         class controlGroup: GVAR(controlGroup) {
-            idc = 724340;
+            idc = IDC_CG;
         };
         class topBar: ctrlStatic {
-            idc = 724350;
+            idc = IDC_TOPBAR;
             colorBackground[] = {0.1, 0.1, 0.1, 1};
             moving = 1;
         };
         class closeButton: ctrlActivePictureKeepAspect {
-            idc = 724351;
+            idc = IDC_CLOSEBUTTON;
             text = "\A3\Ui_f\data\GUI\Rsc\RscDisplayArcadeMap\icon_exit_cross_ca.paa";
             moving = 1;
             colorText[] = {1,1,1,0.7};
@@ -135,7 +124,7 @@ class GVAR(zeusAttributes): RscDisplayAttributes {
                     h = "5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
                     class controls {
                         class Title: ctrlStatic {
-                            idc = 26468;
+                            idc = IDC_ZEUSTITLE;
                             text = CSTRING(edit_text);
                             x = "0 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
                             y = "0 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
@@ -144,7 +133,7 @@ class GVAR(zeusAttributes): RscDisplayAttributes {
                             colorBackground[] = {0,0,0,0.5};
                         };
                         class Value: ctrlEditMulti {
-                            idc = 26469;
+                            idc = IDC_ZEUSVALUE;
                             x = "5.5 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
                             y = "0 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
                             w = "19 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";

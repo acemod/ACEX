@@ -61,22 +61,22 @@ _display = uiNamespace getVariable [QGVAR(dialog), displayNull];
 _display setVariable [QGVAR(intelIndex), _intelIndex];
 TRACE_1("setting up dialog",_display);
 
-private _ctrlGroup = _display displayCtrl 724340;
+private _ctrlGroup = _display displayCtrl IDC_CG;
 
 //Set control Group with data, and pos, it will return it's width
 private _width = [_ctrlGroup, _intelIndex, true, _controlGroupPosX, _controlGroupPosY] call FUNC(displayDataInControlGroup);
 
 //Top Bar
 private _pos = [_controlGroupPosX, _controlGroupPosY - 16 * pixelH, _width, 17 * pixelH];
-(_display displayCtrl 724350) ctrlSetPosition _pos;
+(_display displayCtrl IDC_TOPBAR) ctrlSetPosition _pos;
 switch ((missionNamespace getVariable (format [QGVAR(intel_%1), _intelIndex])) select 0) do {
-case (TYPE_DOCUMENT): {(_display displayCtrl 724350) ctrlSetText localize LSTRING(Document_displayName)};
-case (TYPE_PHOTO): {(_display displayCtrl 724350) ctrlSetText localize LSTRING(Photo_displayName)};
-case (TYPE_NOTEPAD): {(_display displayCtrl 724350) ctrlSetText localize LSTRING(Notepad_displayName)};
+case (TYPE_DOCUMENT): {(_display displayCtrl IDC_TOPBAR) ctrlSetText localize LSTRING(Document_displayName)};
+case (TYPE_PHOTO): {(_display displayCtrl IDC_TOPBAR) ctrlSetText localize LSTRING(Photo_displayName)};
+case (TYPE_NOTEPAD): {(_display displayCtrl IDC_TOPBAR) ctrlSetText localize LSTRING(Notepad_displayName)};
 };
-(_display displayCtrl 724350) ctrlCommit 0;
+(_display displayCtrl IDC_TOPBAR) ctrlCommit 0;
 
 //Close Button:
 _pos = [_controlGroupPosX + _width - 17 * pixelW, _controlGroupPosY - 16 * pixelH, 17 * pixelW, 17 * pixelH];
-(_display displayCtrl 724351) ctrlSetPosition _pos;
-(_display displayCtrl 724351) ctrlCommit 0;
+(_display displayCtrl IDC_CLOSEBUTTON) ctrlSetPosition _pos;
+(_display displayCtrl IDC_CLOSEBUTTON) ctrlCommit 0;

@@ -16,6 +16,21 @@
 
 #include "\z\acex\addons\main\script_macros.hpp"
 
+//Internal "Type" codes:
 #define TYPE_DOCUMENT 0
 #define TYPE_PHOTO 1
 #define TYPE_NOTEPAD 2
+
+//IDCS:
+#define IDC_CG 724340
+#define IDC_BORDER 724341
+#define IDC_PAPERBACKGROUND 724342
+#define IDC_CONTENTPICTURE 724343
+#define IDC_CONTENTEDIT 724344
+#define IDC_CONTENTTEXT 724345
+
+#define IDC_TOPBAR 724350
+#define IDC_CLOSEBUTTON 724351
+
+#define IDC_ZEUSTITLE 26468
+#define IDC_ZEUSVALUE 26469

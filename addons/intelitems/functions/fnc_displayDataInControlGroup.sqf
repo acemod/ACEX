@@ -30,64 +30,73 @@ _intel params ["_type", "_data"];
 TRACE_3("intel",_intelIndex,_type,_data);
 
 private _cgPos = ctrlPosition _ctrlGroup;
+_cgPos set [0, _cgPosX];
+_cgPos set [1, _cgPosY];
 
 switch (_type) do {
 case (TYPE_DOCUMENT): {
         TRACE_1("Setting up document [contentText]",_data);
-        (_ctrlGroup controlsGroupCtrl 724346) ctrlEnable false;
-        (_ctrlGroup controlsGroupCtrl 724346) ctrlShow false;
+        (_ctrlGroup controlsGroupCtrl IDC_CONTENTEDIT) ctrlEnable false;
+        (_ctrlGroup controlsGroupCtrl IDC_CONTENTEDIT) ctrlShow false;
 
-        (_ctrlGroup controlsGroupCtrl 724347) ctrlSetText _data;
+        (_ctrlGroup controlsGroupCtrl IDC_CONTENTTEXT) ctrlSetText _data;
 
-        (_ctrlGroup controlsGroupCtrl 724345) ctrlEnable false;
-        (_ctrlGroup controlsGroupCtrl 724345) ctrlShow false;
+        (_ctrlGroup controlsGroupCtrl IDC_CONTENTPICTURE) ctrlEnable false;
+        (_ctrlGroup controlsGroupCtrl IDC_CONTENTPICTURE) ctrlShow false;
     };
 case (TYPE_PHOTO): {
         TRACE_1("Setting up photo [contentPicture]",_data);
-        (_ctrlGroup controlsGroupCtrl 724346) ctrlEnable false;
-        (_ctrlGroup controlsGroupCtrl 724346) ctrlShow false;
+        (_ctrlGroup controlsGroupCtrl IDC_CONTENTEDIT) ctrlEnable false;
+        (_ctrlGroup controlsGroupCtrl IDC_CONTENTEDIT) ctrlShow false;
 
         //Show the contentText, so it can capture the mouse clicks
-        (_ctrlGroup controlsGroupCtrl 724347) ctrlEnable true;
-        (_ctrlGroup controlsGroupCtrl 724347) ctrlShow true;
+        (_ctrlGroup controlsGroupCtrl IDC_CONTENTTEXT) ctrlEnable true;
+        (_ctrlGroup controlsGroupCtrl IDC_CONTENTTEXT) ctrlShow true;
 
-        (_ctrlGroup controlsGroupCtrl 724345) ctrlSetText _data;
+        (_ctrlGroup controlsGroupCtrl IDC_CONTENTPICTURE) ctrlSetText _data;
 
         //Photo shown as square (new width):
-        {
-            private _pos = ctrlPosition (_ctrlGroup controlsGroupCtrl _x);
-            _pos set [2, (3/4) * 0.5 * safezoneH];
-            (_ctrlGroup controlsGroupCtrl _x) ctrlSetPosition _pos;
-            (_ctrlGroup controlsGroupCtrl _x) ctrlCommit 0;
-        } forEach [724341, 724345, 724347]; //Set Paper, Picture and Dummy Text to same size
         _cgPos set [2, (3/4) * 0.5 * safezoneH]; //Update control group's width (and return)
     };
 case (TYPE_NOTEPAD): {
         if (_isDialog) then {
             TRACE_2("Setting up notepad [contentEdit]",_data,_isDialog);
-            (_ctrlGroup controlsGroupCtrl 724346) ctrlSetText _data;
-            ctrlSetFocus (_ctrlGroup controlsGroupCtrl 724346);
+            (_ctrlGroup controlsGroupCtrl IDC_CONTENTEDIT) ctrlSetText _data;
+            ctrlSetFocus (_ctrlGroup controlsGroupCtrl IDC_CONTENTEDIT);
 
-            (_ctrlGroup controlsGroupCtrl 724347) ctrlEnable false;
-            (_ctrlGroup controlsGroupCtrl 724347) ctrlShow false;
+            (_ctrlGroup controlsGroupCtrl IDC_CONTENTTEXT) ctrlEnable false;
+            (_ctrlGroup controlsGroupCtrl IDC_CONTENTTEXT) ctrlShow false;
         } else {
             TRACE_2("Setting up notepad [contentText]",_data,_isDialog);
-            (_ctrlGroup controlsGroupCtrl 724346) ctrlEnable false;
-            (_ctrlGroup controlsGroupCtrl 724346) ctrlShow false;
+            (_ctrlGroup controlsGroupCtrl IDC_CONTENTEDIT) ctrlEnable false;
+            (_ctrlGroup controlsGroupCtrl IDC_CONTENTEDIT) ctrlShow false;
 
-            (_ctrlGroup controlsGroupCtrl 724347) ctrlSetText _data;
+            (_ctrlGroup controlsGroupCtrl IDC_CONTENTTEXT) ctrlSetText _data;
         };
-        (_ctrlGroup controlsGroupCtrl 724345) ctrlEnable false;
-        (_ctrlGroup controlsGroupCtrl 724345) ctrlShow false;
+        (_ctrlGroup controlsGroupCtrl IDC_CONTENTPICTURE) ctrlEnable false;
+        (_ctrlGroup controlsGroupCtrl IDC_CONTENTPICTURE) ctrlShow false;
 
-        _returnWidth = 1;
+        (_ctrlGroup controlsGroupCtrl IDC_PAPERBACKGROUND) ctrlSetText "#(argb,8,8,3)color(0.97,0.91,0.77,1)";
     };
 };
 
-_cgPos set [0, _cgPosX];
-_cgPos set [1, _cgPosY];
+//Set the cg to it' size:
 _ctrlGroup ctrlSetPosition _cgPos;
 _ctrlGroup ctrlCommit 0;
 
-//Return width:
+//Set the cg elements to the correct size for the cg:
+{
+    private _ctrlPos = if (_x == IDC_BORDER) then {
+        [0, 0, _cgPos select 2, _cgPos select 3]
+    } else {
+        [1*pixelW, 1*pixelH, (_cgPos select 2) - (2 * pixelW), (_cgPos select 3) - (2 * pixelH)]
+    };
+    (_ctrlGroup controlsGroupCtrl _x) ctrlSetPosition _ctrlPos;
+    (_ctrlGroup controlsGroupCtrl _x) ctrlCommit 0;
+} forEach [IDC_BORDER, IDC_PAPERBACKGROUND, IDC_CONTENTPICTURE, IDC_CONTENTEDIT, IDC_CONTENTTEXT]; //Set Paper, Picture and Dummy Text to same size
+
+
+(_ctrlGroup controlsGroupCtrl IDC_BORDER) ctrlSetText "#(argb,8,8,3)color(0,0,0,1)";
+
+//Return width of cg:
 (_cgPos select 2)

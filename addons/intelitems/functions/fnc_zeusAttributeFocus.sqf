@@ -29,14 +29,14 @@ _control ctrlRemoveAllEventHandlers "setFocus";
 
 //Specific on-load stuff:
 if (typeOf _intelObject == QGVAR(PhotoObject)) then {
-    (_display displayCtrl 26468) ctrlSetText localize LSTRING(edit_photo);
+    (_display displayCtrl IDC_ZEUSTITLE) ctrlSetText localize LSTRING(edit_photo);
 };
 
 private _intelIndex = _intelObject getVariable [QGVAR(intelIndex), -1];
 TRACE_2("",_intelObject,_intelIndex);
 if (_intelIndex != -1) then {
     (missionNamespace getVariable [format [QGVAR(intel_%1), _intelIndex], [-1,"-1"]]) params ["", "_data"];
-    (_display displayCtrl 26469) ctrlSetText _data;
+    (_display displayCtrl IDC_ZEUSVALUE) ctrlSetText _data;
 };
 
 //Ok Button Confirm:
@@ -44,7 +44,7 @@ private _fnc_onConfirm = {
     params ["_ctrlButtonOK"];
     private _display = ctrlparent _ctrlButtonOK;
     private _intelObject = missionNamespace getVariable ["BIS_fnc_initCuratorAttributes_target", objnull];
-    private _newText = ctrlText (_display displayCtrl 26469);
+    private _newText = ctrlText (_display displayCtrl IDC_ZEUSVALUE);
     TRACE_2("onConfirm",_intelObject,_newText);
 
     //Send event to server:
