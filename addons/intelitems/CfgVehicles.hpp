@@ -6,6 +6,7 @@ class CfgVehicles {
         icon = "iconObject_2x3";
         mapSize = 0.3;
         vehicleClass = QUOTE(ADDON);
+        simulation = "House";
         destrType = "DesturctNo";
         curatorInfoTypeEmpty = QGVAR(zeusAttributes);
         class Attributes {
