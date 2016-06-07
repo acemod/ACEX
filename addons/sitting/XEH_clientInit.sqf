@@ -15,15 +15,15 @@ DFUNC(onInitEvent) = {
     ["isNotSitting", {isNil {(_this select 0) getVariable QGVAR(isSitting)}}] call ACEFUNC(common,addCanInteractWithCondition);
 
     // Handle interruptions
-    ["medical_onUnconscious", {_this call DFUNC(handleInterrupt)}] call ACEFUNC(common,addEventhandler);
-    ["SetHandcuffed", {_this call DFUNC(handleInterrupt)}] call ACEFUNC(common,addEventhandler);
+    ["ace_unconscious", {_this call DFUNC(handleInterrupt)}] call CBA_fnc_addEventHandler;
+    ["ace_captives_SetHandcuffed", {_this call DFUNC(handleInterrupt)}] call CBA_fnc_addEventHandler;
 };
 
-["SettingsInitialized", {
+["ace_settingsInitialized", {
     call FUNC(onInitEvent);
-}] call ACEFUNC(common,addEventHandler);
+}] call CBA_fnc_addEventHandler;
 
-["SettingChanged", {
+["ace_settingChanged", {
     params ["_name", "_value", "_force"];
     call FUNC(onInitEvent);
-}] call ACEFUNC(common,addEventhandler);
+}] call CBA_fnc_addEventHandler;
