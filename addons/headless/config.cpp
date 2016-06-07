@@ -18,5 +18,5 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 
 class ACE_newEvents {
-    ACE_HeadlessClientJoined = QGVAR(HeadlessClientJoined);
+    ACE_HeadlessClientJoined = QGVAR(headlessClientJoined);
 };

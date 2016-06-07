@@ -11,6 +11,6 @@ if (hasInterface && !isServer) exitWith {};
         };
     } else {
         // Register HC (this part happens on HC only)
-        [QGVAR(HeadlessClientJoined), [player]] call CBA_fnc_globalEvent;
+        [QGVAR(headlessClientJoined), [player]] call CBA_fnc_globalEvent;
     };
 }] call CBA_fnc_addEventHandler;
