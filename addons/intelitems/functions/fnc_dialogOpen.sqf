@@ -74,6 +74,7 @@ case (TYPE_DOCUMENT): {(_display displayCtrl IDC_TOPBAR) ctrlSetText localize LS
 case (TYPE_PHOTO): {(_display displayCtrl IDC_TOPBAR) ctrlSetText localize LSTRING(Photo_displayName)};
 case (TYPE_NOTEPAD): {(_display displayCtrl IDC_TOPBAR) ctrlSetText localize LSTRING(Notepad_displayName)};
 };
+(_display displayCtrl IDC_TOPBAR) ctrlSetFontHeight (17 * pixelH);
 (_display displayCtrl IDC_TOPBAR) ctrlCommit 0;
 
 //Close Button:

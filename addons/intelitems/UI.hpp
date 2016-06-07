@@ -13,10 +13,10 @@ class RscControlsGroupNoScrollbars;
 //ControlGroup used in both display and dialog
 class GVAR(controlGroup): ctrlControlsGroupNoScrollbars {
     idc = -1;
-    x = 0 * safezoneW + safezoneX;
-    y = 0.25 * safezoneH + safezoneY;
-    w = 0.5625 * (0.5 * safezoneH);
-    h = 0.5 * safezoneH;
+    x = "0 * safezoneW + safezoneX";
+    y = "0.25 * safezoneH + safezoneY";
+    w = "0.5625 * (0.5 * safezoneH)";
+    h = "0.5 * safezoneH";
     class Controls {
         //Control positions will be set via sqf
         class border: ctrlStaticPicture {
@@ -35,7 +35,8 @@ class GVAR(controlGroup): ctrlControlsGroupNoScrollbars {
         class contentEdit: ctrlEditMulti {
             idc = IDC_CONTENTEDIT;
             text = "";
-            sizeEx = "4.32 * (1 / (getResolution select 3)) * 1.25 * 4";
+            autocomplete = "";
+            sizeEx = "0.025 * safezoneH";
             font = "PuristaSemibold";
             shadow = 0;
             colorBackground[] = {0, 0, 0, 0};
@@ -46,7 +47,7 @@ class GVAR(controlGroup): ctrlControlsGroupNoScrollbars {
         class contentText: ctrlStaticMulti {
             idc = IDC_CONTENTTEXT;
             text = "";
-            sizeEx = "4.32 * (1 / (getResolution select 3)) * 1.25 * 4";
+            sizeEx = "0.025 * safezoneH";
             font = "PuristaSemibold";
             shadow = 0;
             colorBackground[] = {0, 0, 0, 0};
@@ -66,10 +67,10 @@ class GVAR(dialog) {
     class controlsBackground {
         class clickOff: ctrlActivePicture {
             text = "#(argb,8,8,3)color(0,0,0,0.5)";
-            x = -10 * safezoneW + safezoneX;
-            y = -10 * safezoneH + safezoneY;
-            w = 20 * safezoneW;
-            h = 20 * safezoneH;
+            x = "-10 * safezoneW + safezoneX";
+            y = "-10 * safezoneH + safezoneY";
+            w = "20 * safezoneW";
+            h = "20 * safezoneH";
             onMouseButtonDown = QUOTE(closeDialog 55;);
         };
     };
@@ -139,6 +140,7 @@ class GVAR(zeusAttributes): RscDisplayAttributes {
                             w = "19 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
                             h = "5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
                             autocomplete = "";
+                            sizeEx = "0.025 * safezoneH";
                         };
                     };
                 };

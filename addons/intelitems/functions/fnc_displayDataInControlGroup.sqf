@@ -39,7 +39,12 @@ case (TYPE_DOCUMENT): {
         (_ctrlGroup controlsGroupCtrl IDC_CONTENTEDIT) ctrlEnable false;
         (_ctrlGroup controlsGroupCtrl IDC_CONTENTEDIT) ctrlShow false;
 
-        (_ctrlGroup controlsGroupCtrl IDC_CONTENTTEXT) ctrlSetText _data;
+        //For some reason, we need to delay a frame or the line spacing will be broken
+        [{
+            params ["_ctrl", "_data"];
+            TRACE_2("delaySet",_ctrl,_data);
+            _ctrl ctrlSetText _data;
+        }, [(_ctrlGroup controlsGroupCtrl IDC_CONTENTTEXT), _data]] call CBA_fnc_execNextFrame;
 
         (_ctrlGroup controlsGroupCtrl IDC_CONTENTPICTURE) ctrlEnable false;
         (_ctrlGroup controlsGroupCtrl IDC_CONTENTPICTURE) ctrlShow false;
@@ -61,8 +66,12 @@ case (TYPE_PHOTO): {
 case (TYPE_NOTEPAD): {
         if (_isDialog) then {
             TRACE_2("Setting up notepad [contentEdit]",_data,_isDialog);
-            (_ctrlGroup controlsGroupCtrl IDC_CONTENTEDIT) ctrlSetText _data;
-            ctrlSetFocus (_ctrlGroup controlsGroupCtrl IDC_CONTENTEDIT);
+            [{
+                params ["_ctrl", "_data"];
+                TRACE_2("delaySet",_ctrl,_data);
+                _ctrl ctrlSetText _data;
+                ctrlSetFocus _ctrl;
+            }, [(_ctrlGroup controlsGroupCtrl IDC_CONTENTEDIT), _data]] call CBA_fnc_execNextFrame;
 
             (_ctrlGroup controlsGroupCtrl IDC_CONTENTTEXT) ctrlEnable false;
             (_ctrlGroup controlsGroupCtrl IDC_CONTENTTEXT) ctrlShow false;
@@ -71,7 +80,12 @@ case (TYPE_NOTEPAD): {
             (_ctrlGroup controlsGroupCtrl IDC_CONTENTEDIT) ctrlEnable false;
             (_ctrlGroup controlsGroupCtrl IDC_CONTENTEDIT) ctrlShow false;
 
-            (_ctrlGroup controlsGroupCtrl IDC_CONTENTTEXT) ctrlSetText _data;
+            [{
+                params ["_ctrl", "_data"];
+                TRACE_2("delaySet",_ctrl,_data);
+                _ctrl ctrlSetText _data;
+                ctrlSetFocus _ctrl;
+            }, [(_ctrlGroup controlsGroupCtrl IDC_CONTENTTEXT), _data]] call CBA_fnc_execNextFrame;
         };
         (_ctrlGroup controlsGroupCtrl IDC_CONTENTPICTURE) ctrlEnable false;
         (_ctrlGroup controlsGroupCtrl IDC_CONTENTPICTURE) ctrlShow false;
