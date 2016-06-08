@@ -22,21 +22,21 @@ TRACE_2("params",_player,_itemClassname);
 
 if (!(_this call FUNC(canConsumeItem))) exitWith {TRACE_1("canConsumeItem check failed", _this);};
 
-local _cfg = ConfigFile >> "CfgWeapons" >> _itemClassname;
+private _cfg = ConfigFile >> "CfgWeapons" >> _itemClassname;
 
-local _consumeTime = getNumber (_cfg >> QGVAR(consumeTime));
-local _displayName = getText (_cfg >> "displayName");
-local _hungerRestored = getNumber (_cfg >> QGVAR(isEatable));
-local _thirstRestored = getNumber (_cfg >> QGVAR(isDrinkable));
-local _replacementItem = getText (_cfg >> QGVAR(replacementItem));
+private _consumeTime = getNumber (_cfg >> QGVAR(consumeTime));
+private _displayName = getText (_cfg >> "displayName");
+private _hungerRestored = getNumber (_cfg >> QGVAR(isEatable));
+private _thirstRestored = getNumber (_cfg >> QGVAR(isDrinkable));
+private _replacementItem = getText (_cfg >> QGVAR(replacementItem));
 
-local _progressBarText = if (_hungerRestored > 0) then {
+private _progressBarText = if (_hungerRestored > 0) then {
     format [localize LSTRING(EatingX), _displayName];
 } else {
     format [localize LSTRING(DrinkingX), _displayName];
 };
 
-local _onFinish = {
+private _onFinish = {
     (_this select 0) params ["", "_player", "_itemClassname", "_hungerRestored", "_thirstRestored", "_replacementItem"];
     TRACE_4("Consume Finish",_itemClassname,_hungerRestored,_thirstRestored,_replacementItem);
 
@@ -46,16 +46,16 @@ local _onFinish = {
     };
 
     if (_hungerRestored > 0) then {
-        local _currentLevel = _player getvariable [QGVAR(hungerStatus), 100];
+        private _currentLevel = _player getvariable [QGVAR(hungerStatus), 100];
         _player setvariable [QGVAR(hungerStatus), ((_currentLevel + _hungerRestored) min 100)];
     };
     if (_thirstRestored > 0) then {
-        local _currentLevel = _player getvariable [QGVAR(thirstStatus), 100];
+        private _currentLevel = _player getvariable [QGVAR(thirstStatus), 100];
         _player setvariable [QGVAR(thirstStatus), ((_currentLevel + _thirstRestored) min 100)];
     };
 };
 
-local _onFailure = {
+private _onFailure = {
     TRACE_1("Consume Interrupted", _this);
 };
 

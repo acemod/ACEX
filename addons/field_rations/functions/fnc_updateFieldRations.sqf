@@ -22,16 +22,16 @@ if ((isNull ACE_player) || {!alive ACE_player}) exitWith {
     [0] call FUNC(showOverlay);
 };
 
-local _deltaTime = ACE_time - _lastUpdateTime;
-_args set [0, ACE_time];
+private _deltaTime = CBA_missionTime - _lastUpdateTime;
+_args set [0, CBA_missionTime];
 
-local _drinkStatus = ACE_player getVariable [QGVAR(thirstStatus), 100];
-local _foodStatus = ACE_player getVariable [QGVAR(hungerStatus), 100];
+private _drinkStatus = ACE_player getVariable [QGVAR(thirstStatus), 100];
+private _foodStatus = ACE_player getVariable [QGVAR(hungerStatus), 100];
 
-local _descentWater = _deltaTime / (36.0 * GVAR(timeWithoutWater));
-local _descentFood = _deltaTime / (36.0 * GVAR(timeWithoutFood));
+private _descentWater = _deltaTime / (36.0 * GVAR(timeWithoutWater));
+private _descentFood = _deltaTime / (36.0 * GVAR(timeWithoutFood));
 
-local _absSpeed = vectorMagnitude (velocity ACE_player);
+private _absSpeed = vectorMagnitude (velocity ACE_player);
 
 // TODO add in weight calculation and effect
 // If unit is not inside a vehicle, adjust waterlevels based on movement speed
@@ -40,17 +40,17 @@ if (((vehicle ACE_player) == ACE_player) && {_absSpeed > 1} && {((getPos ACE_pla
     _descentFood = _descentFood + (_absSpeed / 1200);
 };
 
-TRACE_5("update", ace_time, _drinkStatus, _descentWater, _foodStatus, _descentFood);
+TRACE_5("update", CBA_missionTime, _drinkStatus, _descentWater, _foodStatus, _descentFood);
 
 // Decrease both food and drink status based upon the decent rate
 _drinkStatus = (_drinkStatus - _descentWater) max 0;
 _foodStatus = (_foodStatus - _descentFood) max 0;
 
 // Check if we want to do a new sync across MP for the ACE_player
-local _doSync = false;
-if (ACE_time > _nextMpSync) then {
+private _doSync = false;
+if (CBA_missionTime > _nextMpSync) then {
     _doSync = true;
-    _args set [1, (ACE_time + 60)];
+    _args set [1, (CBA_missionTime + 60)];
 };
 
 // Store the hunger and thirst values
@@ -76,9 +76,9 @@ if ((_drinkStatus < 1) || {_foodStatus < 1}) then {
 // No point continueing if the unit is not awake or alive. Below are all animation consequounces
 if !([ACE_player] call ace_common_fnc_isAwake) exitwith {};
 
-local _animState = animationState ACE_player;
-local _isProne = ((count _animState > 8) && {(_animState select [5, 3]) == "pne"});
-local _proneAnim = "amovppnemstpsraswrfldnon"; //TODO: handle pistol/launcher/unarmed animation BS
+private _animState = animationState ACE_player;
+private _isProne = ((count _animState > 8) && {(_animState select [5, 3]) == "pne"});
+private _proneAnim = "amovppnemstpsraswrfldnon"; //TODO: handle pistol/launcher/unarmed animation BS
 
 if ((_drinkStatus < 25) || {_foodStatus < 25}) then {
     if ((speed ACE_player > 12) && {vehicle ACE_player == ACE_player} && {random(1) >= 0.3}) then {
@@ -88,7 +88,7 @@ if ((_drinkStatus < 25) || {_foodStatus < 25}) then {
 };
 
 if ((_drinkStatus < 20) || {_foodStatus < 20}) then {
-    local _passOutChance = linearConversion [20, 0, (_drinkStatus max _foodStatus), 0.05, 0.20];
+    private _passOutChance = linearConversion [20, 0, (_drinkStatus max _foodStatus), 0.05, 0.20];
     if ((random 1) < _passOutChance) then {
         TRACE_1("setUnconscious from hunger/thirst", _passOutChance);
         if (["ACE_Medical"] call ace_common_fnc_isModLoaded) then {

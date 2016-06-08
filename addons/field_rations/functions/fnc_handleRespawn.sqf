@@ -10,7 +10,7 @@
  * None <NIL>
  *
  * Example:
- * [bob1] call ACE_field_rations_fnc_handleRespawn
+ * [bob1] call acex_field_rations_fnc_handleRespawn
  *
  * Public: No
  */

@@ -1,7 +1,10 @@
 #define COMPONENT field_rations
-#include "\z\ace\addons\main\script_mod.hpp"
+#include "\z\acex\addons\main\script_mod.hpp"
 
 #define DEBUG_MODE_FULL
+#define DISABLE_COMPILE_CACHE
+#define CBA_DEBUG_SYNCHRONOUS
+#define ENABLE_PERFORMANCE_COUNTERS
 
 #ifdef DEBUG_ENABLED_FIELD_RATIONS
     #define DEBUG_MODE_FULL
@@ -11,10 +14,9 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_FIELD_RATIONS
 #endif
 
-#include "\z\ace\addons\main\script_macros.hpp"
+#include "\z\acex\addons\main\script_macros.hpp"
 
 #define DEFAULT_ALPHA_LEVEL 0.4
-#define TIME_
 
 #define WATER_SOURCES [\
     ["Land_Barrel_water"],\

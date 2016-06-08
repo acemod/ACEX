@@ -18,12 +18,12 @@
 
 params ["_player", "_typeOfConsumble"];
 
-local _actions = [];
-local _consumableItems = [];
+private _actions = [];
+private _consumableItems = [];
 {
-    local _cfg = configFile >> "CfgWeapons" >> _x;
+    private _cfg = configFile >> "CfgWeapons" >> _x;
     if ((isClass _cfg) && {!(_x in _consumableItems)}) then {
-        local _showItem = switch (true) do {
+        private _showItem = switch (true) do {
             case (_typeOfConsumble == "drink"): {getNumber (_cfg >> QGVAR(isDrinkable)) > 0};
             case (_typeOfConsumble == "eat"): {getNumber (_cfg >> QGVAR(isEatable)) > 0};
             default {(getNumber (_cfg >> QGVAR(isDrinkable)) > 0) || {getNumber (_cfg >> QGVAR(isEatable)) > 0}};
@@ -31,10 +31,10 @@ local _consumableItems = [];
         if (_showItem) then {
             _consumableItems pushBack _x;
 
-            local _displayName = getText (_cfg >> "displayName");
-            local _picture = getText (_cfg >> "picture");
+            private _displayName = getText (_cfg >> "displayName");
+            private _picture = getText (_cfg >> "picture");
 
-            local _action = [_x, _displayName, _picture, {_this call FUNC(actionConsumeItem)}, {_this call FUNC(canConsumeItem)}, {}, _x] call ace_interact_menu_fnc_createAction;
+            private _action = [_x, _displayName, _picture, {_this call FUNC(actionConsumeItem)}, {_this call FUNC(canConsumeItem)}, {}, _x] call ace_interact_menu_fnc_createAction;
             _actions pushBack [_action, [], _player];
         };
     };

@@ -2,7 +2,9 @@
 
 if !(hasInterface) exitWith {};
 
-["SettingsInitialized", {
+["ace_settingsInitialized", {
+    TRACE_3("ace_settingsInitialized eh",GVAR(systemEnabled),GVAR(timeWithoutWater),GVAR(timeWithoutFood));
+
     //If not enabled, dont't add PFEH or actions
     if (!GVAR(systemEnabled)) exitWith {};
 
@@ -15,13 +17,13 @@ if !(hasInterface) exitWith {};
 
     [] call FUNC(addRefillActionsToObjects);
 
-    [{_this call DFUNC(updateFieldRations)}, 10, [ACE_time, (ACE_time + 60)]] call CBA_fnc_addPerFrameHandler;
+    [FUNC(updateFieldRations), 10, [CBA_missionTime, (CBA_missionTime + 60)]] call CBA_fnc_addPerFrameHandler;
 
-    ["interactMenuClosed", {
+    ["ace_interactMenuClosed", {
         if (GVAR(hudInteractionHover)) then {
             GVAR(hudInteractionHover) = false;
             [3] call FUNC(showOverlay);
         };
-    }] call ace_common_fnc_addEventHandler;
+    }] call CBA_fnc_addEventHandler;
 
-}] call ace_common_fnc_addEventHandler;
+}] call CBA_fnc_addEventHandler;

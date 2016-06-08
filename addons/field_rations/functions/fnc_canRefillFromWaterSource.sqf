@@ -19,7 +19,7 @@
 
 params ["_waterSource", "_player", "_itemClassname"];
 
-local _cfg = configFile >> "CfgWeapons" >> _itemClassname;
+private _cfg = configFile >> "CfgWeapons" >> _itemClassname;
 
 ([_player, _waterSource, []] call ace_common_fnc_canInteractWith)
 && ((getText (_cfg >> QGVAR(onRefill))) != "")

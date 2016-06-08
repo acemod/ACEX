@@ -2,12 +2,13 @@
 
 class CfgPatches {
     class ADDON {
-        units[] = {"ACE_field_rations_module"};
+        units[] = {QGVAR(module), GVAR(box)};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"ace_interact_menu"};
-        author[] = {"Glowbal", "PabstMirror"};
-        authorUrl = "https://github.com/acemod/ACE3";
+        authors[] = {"Glowbal", "PabstMirror"};
+        author = ACECSTRING(common,ACETeam);
+        url = ACECSTRING(main,URL);
         VERSION_CONFIG;
     };
 };

@@ -17,19 +17,19 @@
 #include "script_component.hpp"
 
 //Function to get the refil actiosn for all water containers:
-local _fncGetChildren = {
+private _fncGetChildren = {
     params ["", "_player"];
 
-    local _actions = [];
+    private _actions = [];
     {
-        local _cfg = configFile >> "CfgWeapons" >> _x;
+        private _cfg = configFile >> "CfgWeapons" >> _x;
 
         // Construct the children actions. Every item that we can refill, will receive a refill action.
         if ((isClass _cfg) && {(getText (_cfg >> QGVAR(onRefill))) != ""}) then {
-            local _displayName = getText (_cfg >> "displayName");
-            local _picture = getText (_cfg >> "picture");
-            local _actionText = format [localize LSTRING(RefillX), _displayName];
-            local _action = [_x, _actionText, _picture, {_this call FUNC(actionRefillFromWaterSource)}, {_this call FUNC(canRefillFromWaterSource)}, {}, _x] call ace_interact_menu_fnc_createAction;
+            private _displayName = getText (_cfg >> "displayName");
+            private _picture = getText (_cfg >> "picture");
+            private _actionText = format [localize LSTRING(RefillX), _displayName];
+            private _action = [_x, _actionText, _picture, {_this call FUNC(actionRefillFromWaterSource)}, {_this call FUNC(canRefillFromWaterSource)}, {}, _x] call ace_interact_menu_fnc_createAction;
             _actions pushBack [_action, [], _player];
         };
     } forEach (items _player);
@@ -39,7 +39,7 @@ local _fncGetChildren = {
 {
     _x params ["_classname", ["_tapLocation", [0,0,0]]];
 
-    local _cfg = configFile >> "CfgVehicles" >> _classname;
+    private _cfg = configFile >> "CfgVehicles" >> _classname;
     TRACE_3("Adding refil action", (isClass _cfg), _classname, _tapLocation);
 
     if (isClass _cfg) then {

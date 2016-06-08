@@ -16,10 +16,10 @@ class CfgVehicles {
 
 
     class ACE_Module;
-    class ACE_field_rations_module: ACE_Module {
+    class GVAR(module): ACE_Module {
         scope = 2;
         author = ECSTRING(common,ACETeam);
-        category = "ACE";
+        category = "ACEX";
         displayName = CSTRING(moduleName);
         //icon = "\ace\ace_main\data\ace_basic_module.paa";
         function = QFUNC(moduleSettings);
@@ -43,157 +43,49 @@ class CfgVehicles {
     };
 
     class NATO_Box_Base;
-    class acex_field_rations_all: NATO_Box_Base {
+    class GVAR(box): NATO_Box_Base {
         scope = 2;
         accuracy = 1000;
         displayName = "[ACE] Field Rations [All]";
         model = "\A3\weapons_F\AmmoBoxes\AmmoBox_F";
         author = ECSTRING(common,ACETeam);
-        class TransportWeapons {
-            class ace_waterbottle {
-                weapon = "ace_waterbottle";
-                count = 20;
-            };
-            class _xx_ace_canteen {
-                weapon = "ace_canteen";
-                count = 20;
-            };
-            class _xx_ace_MRE_LambC {
-                weapon = "ace_MRE_LambC";
-                count = 10;
-            };
-            class _xx_ace_MRE_Rice {
-                weapon = "ace_MRE_Rice";
-                count = 10;
-            };
-            class _xx_ace_MRE_CreamTomatoSoup {
-                weapon = "ace_MRE_CreamTomatoSoup";
-                count = 10;
-            };
-            class _xx_ace_MRE_CreamChickenSoup {
-                weapon = "ace_MRE_CreamChickenSoup";
-                count = 10;
-            };
-            class _xx_ace_MRE_ChickenTikkaMassala {
-                weapon = "ace_MRE_ChickenTikkaMassala";
-                count = 10;
-            };
-            class _xx_ace_MRE_SteakVegetables {
-                weapon = "ace_MRE_SteakVegetables";
-                count = 10;
-            };
-            class _xx_ace_MRE_MeatballsPasta {
-                weapon = "ace_MRE_MeatballsPasta";
-                count = 10;
-            };
-            class _xx_ace_MRE_ChickenHerbDumplings {
-                weapon = "ace_MRE_ChickenHerbDumplings";
-                count = 10;
-            };
-            class _xx_ace_Humanitarian_Ration {
-                weapon = "ace_Humanitarian_Ration";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_ChiliBeans {
-                weapon = "ace_US_MRE_ChiliBeans";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_ChickenFajita {
-                weapon = "ace_US_MRE_ChickenFajita";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_ChickenNoodles {
-                weapon = "ace_US_MRE_ChickenNoodles";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_PorkSausageGravy {
-                weapon = "ace_US_MRE_PorkSausageGravy";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_MedChicen {
-                weapon = "ace_US_MRE_MedChicen";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_BeefRoastVeggies {
-                weapon = "ace_US_MRE_BeefRoastVeggies";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_BeefBrisket {
-                weapon = "ace_US_MRE_BeefBrisket";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_MeatballMarinara {
-                weapon = "ace_US_MRE_MeatballMarinara";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_BeefStew {
-                weapon = "ace_US_MRE_BeefStew";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_ChiliMacaroni {
-                weapon = "ace_US_MRE_ChiliMacaroni";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_VegetableLasagna {
-                weapon = "ace_US_MRE_VegetableLasagna";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_SpicyPennePasta {
-                weapon = "ace_US_MRE_SpicyPennePasta";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_CheeseTortellini {
-                weapon = "ace_US_MRE_CheeseTortellini";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_Ratatouille {
-                weapon = "ace_US_MRE_Ratatouille";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_MexicanStyleChickenStew {
-                weapon = "ace_US_MRE_MexicanStyleChickenStew";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_PorkRib {
-                weapon = "ace_US_MRE_PorkRib";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_MapleSausage {
-                weapon = "ace_US_MRE_MapleSausage";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_BeefRavioli {
-                weapon = "ace_US_MRE_BeefRavioli";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_SloppyJoe {
-                weapon = "ace_US_MRE_SloppyJoe";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_SpaghettiMeatSauce {
-                weapon = "ace_US_MRE_SpaghettiMeatSauce";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_LemonPepperTuna {
-                weapon = "ace_US_MRE_LemonPepperTuna";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_AsianBeefStrips {
-                weapon = "ace_US_MRE_AsianBeefStrips";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_ChickenPestoPasta {
-                weapon = "ace_US_MRE_ChickenPestoPasta";
-                count = 10;
-            };
-            class _xx_ace_US_MRE_SouthwestStyleBeefBlackBeans {
-                weapon = "ace_US_MRE_SouthwestStyleBeefBlackBeans";
-                count = 10;
-            };
-            class _xx_ace_mre_c_ration {
-                weapon = "ace_mre_c_ration";
-                count = 10;
-            };
+        class TransportItems {
+            MACRO_ADDITEM(ace_waterbottle,20);
+            MACRO_ADDITEM(ace_canteen,20);
+            MACRO_ADDITEM(ace_MRE_LambC,10);
+            MACRO_ADDITEM(ace_MRE_Rice,10);
+            MACRO_ADDITEM(ace_MRE_CreamTomatoSoup,10);
+            MACRO_ADDITEM(ace_MRE_CreamChickenSoup,10);
+            MACRO_ADDITEM(ace_MRE_ChickenTikkaMassala,10);
+            MACRO_ADDITEM(ace_MRE_SteakVegetables,10);
+            MACRO_ADDITEM(ace_MRE_MeatballsPasta,10);
+            MACRO_ADDITEM(ace_MRE_ChickenHerbDumplings,10);
+            MACRO_ADDITEM(ace_Humanitarian_Ration,10);
+            MACRO_ADDITEM(ace_US_MRE_ChiliBeans,10);
+            MACRO_ADDITEM(ace_US_MRE_ChickenFajita,10);
+            MACRO_ADDITEM(ace_US_MRE_ChickenNoodles,10);
+            MACRO_ADDITEM(ace_US_MRE_PorkSausageGravy,10);
+            MACRO_ADDITEM(ace_US_MRE_MedChicen,10);
+            MACRO_ADDITEM(ace_US_MRE_BeefRoastVeggies,10);
+            MACRO_ADDITEM(ace_US_MRE_BeefBrisket,10);
+            MACRO_ADDITEM(ace_US_MRE_MeatballMarinara,10);
+            MACRO_ADDITEM(ace_US_MRE_BeefStew,10);
+            MACRO_ADDITEM(ace_US_MRE_ChiliMacaroni,10);
+            MACRO_ADDITEM(ace_US_MRE_VegetableLasagna,10);
+            MACRO_ADDITEM(ace_US_MRE_SpicyPennePasta,10);
+            MACRO_ADDITEM(ace_US_MRE_CheeseTortellini,10);
+            MACRO_ADDITEM(ace_US_MRE_Ratatouille,10);
+            MACRO_ADDITEM(ace_US_MRE_MexicanStyleChickenStew,10);
+            MACRO_ADDITEM(ace_US_MRE_PorkRib,10);
+            MACRO_ADDITEM(ace_US_MRE_MapleSausage,10);
+            MACRO_ADDITEM(ace_US_MRE_BeefRavioli,10);
+            MACRO_ADDITEM(ace_US_MRE_SloppyJoe,10);
+            MACRO_ADDITEM(ace_US_MRE_SpaghettiMeatSauce,10);
+            MACRO_ADDITEM(ace_US_MRE_LemonPepperTuna,10);
+            MACRO_ADDITEM(ace_US_MRE_AsianBeefStrips,10);
+            MACRO_ADDITEM(ace_US_MRE_ChickenPestoPasta,10);
+            MACRO_ADDITEM(ace_US_MRE_SouthwestStyleBeefBlackBeans,10);
+            MACRO_ADDITEM(ace_mre_c_ration,10);
         };
     };
 };

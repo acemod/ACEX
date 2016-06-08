@@ -20,12 +20,12 @@
 params ["_waterSource", "_player", "_originalItem"];
 
 // Prepare all info necessary for completing the action
-local _onRefillItem = getText (configFile >> "CfgWeapons" >> _originalItem >> QGVAR(onRefill));
+private _onRefillItem = getText (configFile >> "CfgWeapons" >> _originalItem >> QGVAR(onRefill));
 if (_onRefillItem == "") exitwith {ACE_LOGERROR_1("No onRefill string", _originalItem);};
 
-local _progressBarText = localize LSTRING(Refilling);
+private _progressBarText = localize LSTRING(Refilling);
 
-local _onFinish = {
+private _onFinish = {
     (_this select 0) params ["_waterSource", "_player", "_oldItem", "_onRefillItem"];
     TRACE_3("Refil Finish",_player,_oldItem,_onRefillItem);
 
@@ -34,7 +34,7 @@ local _onFinish = {
     [_player, _onRefillItem] call ace_common_fnc_addToInventory;
 };
 
-local _onFailure = {
+private _onFailure = {
     TRACE_1("Refil Interrupted", _this);
 };
 
