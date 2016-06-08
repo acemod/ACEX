@@ -19,19 +19,19 @@
             <English>Intel Document</English>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Document_descriptionShort">
-            <English>Intel Document</English>
+            <English>Printed Document - Can access from the map screen</English>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Photo_displayName">
             <English>Intel Photo</English>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Photo_descriptionShort">
-            <English>Intel Photo</English>
+            <English>Photo - Can access from the map screen</English>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Notepad_displayName">
             <English>Notepad</English>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Notepad_descriptionShort">
-            <English>Notepad</English>
+            <English>Notepad - Can access from the map screen</English>
         </Key>
         <Key ID="STR_ACEX_IntelItems_edit_text">          
             <English>Text:</English>

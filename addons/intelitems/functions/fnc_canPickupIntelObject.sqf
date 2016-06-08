@@ -1,6 +1,6 @@
 /*
  * Author: PabstMirror
- * Returns if player pickup intel object
+ * Returns if player pickup intel object.
  *
  * Arguments:
  * 0: Target <Object>

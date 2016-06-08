@@ -6,7 +6,7 @@ class CfgVehicles {
         icon = "iconObject_2x3";
         mapSize = 0.3;
         vehicleClass = QUOTE(ADDON);
-        simulation = "House";
+        simulation = "House"; //Needed because the objects don't have good collision physx
         destrType = "DesturctNo";
         curatorInfoTypeEmpty = QGVAR(zeusAttributes);
         class Attributes {
@@ -32,7 +32,6 @@ class CfgVehicles {
             };
         };
     };
-
 
     class GVAR(DocumentObject): GVAR(base) {
         displayName = CSTRING(Document_displayName);
