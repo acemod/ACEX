@@ -3,7 +3,7 @@
 // Exit on player clients that are not hosts
 if (hasInterface && !isServer) exitWith {};
 
-["SettingsInitialized", {
+["ace_settingsInitialized", {
     if (isServer) then {
         // Add disconnect EH if HC transferring enabled
         if (GVAR(Enabled)) then {
@@ -11,6 +11,6 @@ if (hasInterface && !isServer) exitWith {};
         };
     } else {
         // Register HC (this part happens on HC only)
-        ["ACE_HeadlessClientJoined", [player]] call ACEFUNC(common,globalEvent);
+        [QGVAR(headlessClientJoined), [player]] call CBA_fnc_globalEvent;
     };
-}] call ACEFUNC(common,addEventHandler);
+}] call CBA_fnc_addEventHandler;

@@ -3,7 +3,7 @@
 // Exit on Headless Client
 if !(hasInterface) exitWith {};
 
-["SettingsInitialized", {
+["ace_settingsInitialized", {
     // Exit if module is disabled
     if (GVAR(mode) == 0) exitWith {};
 
@@ -24,14 +24,14 @@ if !(hasInterface) exitWith {};
     };
 
     // Add Event Handler for changing camera - also happens on spawn
-    ["cameraViewChanged", {
+    ["ace_cameraViewChanged", {
         call FUNC(changeCamera);
-    }] call ACEFUNC(common,addEventHandler);
+    }] call CBA_fnc_addEventHandler;
 
     // Add Event Hander for exiting and entering a vehicle when on Selective mode
     if (GVAR(mode) == 3) then {
-        ["playerVehicleChanged", {
+        ["ace_playerVehicleChanged", {
             call FUNC(changeCamera);
-        }] call ACEFUNC(common,addEventHandler);
+        }] call CBA_fnc_addEventHandler;
     };
-}] call ACEFUNC(common,addEventHandler);
+}] call CBA_fnc_addEventHandler;
