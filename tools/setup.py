@@ -23,16 +23,16 @@ def main():
   # ACEX3 Development Environment Setup #
   ######################################
 
-  This script will create your ACEX3 dev environment for you.
+  This script will create your ACEX dev environment for you.
 
   Before you run this, you should already have:
     - A properly setup ACE3 Development Environment
 
   If you have not done those things yet, please abort this script in the next step and do so first.
 
-  This script will create two hard links on your system, both pointing to your ACEX3 project folder:
-    [Arma 3 installation directory]\\{} => ACEX3 project folder
-    P:\\{}                              => ACEX3 project folder
+  This script will create two hard links on your system, both pointing to your ACEX project folder:
+    [Arma 3 installation directory]\\{} => ACEX project folder
+    P:\\{}                              => ACEX project folder
     """.format(FULLDIR,FULLDIR))
     print("\n")
 
