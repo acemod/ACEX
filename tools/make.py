@@ -941,7 +941,7 @@ See the make.cfg file for additional build options.
         if (os.path.isdir(optionals_root)):
             print_green ("optionals_root: {}".format(optionals_root))
         else:
-            print_error ("Directory {} does not exist.".format(optionals_root))
+            print_yellow ("optionals_root: does not exist")
 
         print_green ("release_dir: {}".format(release_dir))
 
