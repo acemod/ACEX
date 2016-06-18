@@ -7,16 +7,10 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"acex_main"};
         author = ACECSTRING(common,ACETeam);
-        authors[]= {"Jonpas"};
+        authors[] = {""};
         url = ACECSTRING(main,URL);
         VERSION_CONFIG;
     };
 };
 
-#include "ACE_Settings.hpp"
 #include "CfgEventHandlers.hpp"
-#include "CfgVehicles.hpp"
-
-class ACE_newEvents {
-    ACE_HeadlessClientJoined = QGVAR(headlessClientJoined);
-};
