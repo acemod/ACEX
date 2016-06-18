@@ -942,6 +942,7 @@ See the make.cfg file for additional build options.
             print_green ("optionals_root: {}".format(optionals_root))
         else:
             print_error ("Directory {} does not exist.".format(optionals_root))
+            sys.exit()
 
         print_green ("release_dir: {}".format(release_dir))
 
@@ -1034,10 +1035,7 @@ See the make.cfg file for additional build options.
         # Temporarily copy optionals_root for building. They will be removed later.
         optionals_modules = []
         optional_files = []
-        try:
-            copy_optionals_for_building(optionals_modules,optional_files)
-        except:
-            pass
+        copy_optionals_for_building(optionals_modules,optional_files)
 
         # Get list of subdirs in make root.
         dirs = next(os.walk(module_root))[1]
@@ -1067,10 +1065,7 @@ See the make.cfg file for additional build options.
                     print_green("Created: {}".format(os.path.join(private_key_path, key_name + ".biprivatekey")))
                     print("Removing any old signature keys...")
                     purge(os.path.join(module_root, release_dir, project, "addons"), "^.*\.bisign$","*.bisign")
-                    try:
-                        purge(os.path.join(module_root, release_dir, project, "optionals"), "^.*\.bisign$","*.bisign")
-                    except:
-                        pass
+                    purge(os.path.join(module_root, release_dir, project, "optionals"), "^.*\.bisign$","*.bisign")
                     purge(os.path.join(module_root, release_dir, project, "keys"), "^.*\.bikey$","*.bikey")
                 else:
                     print_error("Failed to create key!")
