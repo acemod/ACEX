@@ -1,7 +1,7 @@
 class CfgVehicles {
     class ACE_Module;
     class GVAR(module): ACE_Module {
-        author = "STR_ACE_common_ACETeam";
+        author = "$STR_ACE_common_ACETeam";
         category = "ACE_missionModules";
         displayName = CSTRING(Module);
         function = QFUNC(moduleInit);
@@ -12,7 +12,7 @@ class CfgVehicles {
         icon = QUOTE(PATHTOF(UI\Icon_Module_Headless_ca.paa));
         class Arguments {
             class Enabled {
-                displayName = ECSTRING(common,Enabled);
+                displayName = ACECSTRING(common,Enabled);
                 description = CSTRING(EnabledDesc);
                 typeName = "BOOL";
                 defaultValue = 0;

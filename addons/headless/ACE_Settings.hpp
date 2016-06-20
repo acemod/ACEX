@@ -2,7 +2,7 @@ class ACE_Settings {
     class GVAR(Enabled) {
         value = 0;
         typeName = "BOOL";
-        displayName = ECSTRING(common,Enabled);
+        displayName = ACECSTRING(common,Enabled);
         description = CSTRING(EnabledDesc);
     };
     class GVAR(Delay) {

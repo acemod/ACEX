@@ -23,16 +23,16 @@ def main():
   # ACEX3 Development Environment Setup #
   ######################################
 
-  This script will create your ACEX3 dev environment for you.
+  This script will create your ACEX dev environment for you.
 
   Before you run this, you should already have:
     - A properly setup ACE3 Development Environment
 
   If you have not done those things yet, please abort this script in the next step and do so first.
 
-  This script will create two hard links on your system, both pointing to your ACEX3 project folder:
-    [Arma 3 installation directory]\\{} => ACEX3 project folder
-    P:\\{}                              => ACEX3 project folder
+  This script will create two hard links on your system, both pointing to your ACEX project folder:
+    [Arma 3 installation directory]\\{} => ACEX project folder
+    P:\\{}                              => ACEX project folder
     """.format(FULLDIR,FULLDIR))
     print("\n")
 
@@ -76,12 +76,8 @@ def main():
         if not os.path.exists(os.path.join(armapath, MAINDIR)):
             os.mkdir(os.path.join(armapath, MAINDIR))
 
-        if platform.win32_ver()[0] == "7":
-            subprocess.call(["cmd", "/c", "mklink", "/D", "P:\\{}\\{}".format(MAINDIR,PROJECTDIR), projectpath])
-            subprocess.call(["cmd", "/c", "mklink", "/D", os.path.join(armapath, MAINDIR, PROJECTDIR), projectpath])
-        else:
-            subprocess.call(["cmd", "/c", "mklink", "/D", "/J", "P:\\{}\\{}".format(MAINDIR,PROJECTDIR), projectpath])
-            subprocess.call(["cmd", "/c", "mklink", "/D", "/J", os.path.join(armapath, MAINDIR, PROJECTDIR), projectpath])
+        subprocess.call(["cmd", "/c", "mklink", "/J", "P:\\{}\\{}".format(MAINDIR,PROJECTDIR), projectpath])
+        subprocess.call(["cmd", "/c", "mklink", "/J", os.path.join(armapath, MAINDIR, PROJECTDIR), projectpath])
     except:
         raise
         print("Something went wrong during the link creation. Please finish the setup manually.")

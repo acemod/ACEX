@@ -6,8 +6,9 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"acex_main"};
-        author[]= {"Jonpas"};
-        authorUrl = "https://github.com/jonpas";
+        author = ACECSTRING(common,ACETeam);
+        authors[]= {"Jonpas"};
+        url = ACECSTRING(main,URL);
         VERSION_CONFIG;
     };
 };
@@ -15,3 +16,7 @@ class CfgPatches {
 #include "ACE_Settings.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"
+
+class ACE_newEvents {
+    ACE_HeadlessClientJoined = QGVAR(headlessClientJoined);
+};

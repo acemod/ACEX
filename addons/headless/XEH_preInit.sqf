@@ -2,17 +2,12 @@
 
 ADDON = false;
 
-PREP(handleConnectHC);
-PREP(handleDisconnect);
-PREP(handleInitPost);
-PREP(moduleInit);
-PREP(rebalance);
-PREP(transferGroups);
+#include "XEH_PREP.hpp"
 
 if (isServer) then {
     GVAR(headlessClients) = [];
     GVAR(inRebalance) = false;
-    ["ACE_HeadlessClientJoined", FUNC(handleConnectHC)] call ace_common_fnc_addEventHandler;
+    [QGVAR(headlessClientJoined), FUNC(handleConnectHC)] call CBA_fnc_addEventHandler;
 };
 
 ADDON = true;

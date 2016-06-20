@@ -5,12 +5,20 @@ branches:
 language: python
 python:
 - '3.4'
+before_script:
+- if [ -n "${GH_TOKEN}" ] && [ "${TRAVIS_BRANCH}" == "master" ] && [ "${TRAVIS_PULL_REQUEST}" == "false" ]; then
+    pip install pygithub;
+    pip install pygithub3;
+  fi
 script:
 - python3 tools/sqf_validator.py
 - python3 tools/config_style_checker.py
+- if [ -n "${GH_TOKEN}" ] && [ "${TRAVIS_BRANCH}" == "master" ] && [ "${TRAVIS_PULL_REQUEST}" == "false" ]; then
+    python3 tools/deploy.py;
+  fi
 env:
   global:
-  - secure: KcJQbknBOdC5lA4nFGKPXVRVIGLDXDRzC8XkHuXJCE9pIR/wbxbkvx8fHKcC6SC9eHgzneC3+o4m4+CjIbVvIwDgslRbJ8Y59i90ncONmdoRx1HUYHwuYWVZm9HJFjCsIbrEqhSyyKS+PB3WZVOLbErtNHsgS8f43PTh5Ujg7Vg=
+   - secure: "FwfRA1CpKkkclDTpM3vBJGVI/WSrkzkTxLhEtRQmsS4Yyg+r/VEh+OcvrYD7IrOxrWxFNE65Qvrom2OTtx2xRHHVSYQFtoV5M/lDtQkt3dXtavgn5nANex6pi8uUSAuHuKAt5sRw7FBiPCP48VT7LyFlc/9SErqvr0ioHmXM4YlqS/09rZAzbNGp88mgpaEdAUnJ9eJ1BKx3lR5ZvBaix0au0hCoLz4F3FArlVrecIN4Y+iA50m0dz9RzBIFM07nlzNIU1Ny7HCBHM3DYSY86N/JUo1WKBGfjeAdtN8WhWS1GF9U9vfsoidQu0dPLclOQVsBKN1ct5SRBC3t5IQF/DpGUxxxI2VKjw9ejxl2iQgtcZe51p4AcpWh2AgObXohHIXWlMKWb6kw+m8yJGxEdArg34PZorWqLDdDM+Yqi0M+hB6PwDJlVGLzVlDZolxH52b5g+LDG1oZMOLCf2k3HfVBN7xISwszGBznzvkMOr/NlnDDEaewfVbR+v71oeiQC9l3Ps1YVsJOhiX0zjDHk3z7gheUmgP55ecXVxQYQXXp1wUKg3c0Cd0jFb8MQq0pguYacY6ksq96jtCYHcOtkqQUP/WBP8iNozUw2Y0idCT2zN4nXolVks0i0S9z+2eYYKGSr6pbTUJmg+DfnAgzOqRX1qO5s0c69Ld6NYncyCU="
 notifications:
   slack:
     rooms:
