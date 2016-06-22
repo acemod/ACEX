@@ -73,7 +73,7 @@ dssignfile = ""
 prefix = "acex"
 pbo_name_prefix = "acex_"
 signature_blacklist = []
-importantFiles = ["mod.cpp", "README.md", "AUTHORS.txt", "LICENSE", "logo_acex_ca.paa"]
+importantFiles = ["mod.cpp", "meta.cpp", "README.md", "AUTHORS.txt", "LICENSE", "logo_acex_ca.paa"]
 versionFiles = ["README.md", "mod.cpp"]
 
 ciBuild = False # Used for CI builds
