@@ -14,4 +14,5 @@
 #define ACEX_TAG ACEX
 
 // MINIMAL required version for the Mod. Components can specify others..
-#define REQUIRED_VERSION 1.56
+#define REQUIRED_VERSION 1.60
+#define REQUIRED_ACE_VERSION 3.6.0
