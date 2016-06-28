@@ -2,7 +2,7 @@ class CfgVehicles {
     class ACE_Module;
     class GVAR(module): ACE_Module {
         author = "$STR_ACE_common_ACETeam";
-        category = "ACE_missionModules";
+        category = "ACEX";
         displayName = CSTRING(Module);
         function = QFUNC(moduleInit);
         scope = 2;
