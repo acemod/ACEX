@@ -24,7 +24,7 @@
         <Key ID="STR_ACEX_Headless_DelayDesc">
             <English>Minimal delay between transfers, in seconds. (Default: 15)</English>
             <German>Minimale Verzögerung zwischen Transfers in Sekunden. (Standard: 15)</German>
-            <Polish>Minimalnyo odstęp pomiędzy transferami w sekundach. (Domyślnie: 15)</Polish>
+            <Polish>Minimalny odstęp pomiędzy transferami w sekundach. (Domyślnie: 15)</Polish>
         </Key>
         <Key ID="STR_ACEX_Headless_Log">
             <English>Log</English>
