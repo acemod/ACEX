@@ -14,7 +14,7 @@
         <Key ID="STR_ACEX_Headless_EnabledDesc">
             <English>Enables transferring of AI to Headless Clients.</English>
             <German>Aktiviert denTransfer der KI auf Headless Clients.</German>
-            <Polish>Włacza transfer AI do Headless Client.</Polish>
+            <Polish>Włącza transfer AI do Headless Client.</Polish>
         </Key>
         <Key ID="STR_ACEX_Headless_Delay">
             <English>Delay</English>
