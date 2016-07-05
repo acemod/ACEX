@@ -11,6 +11,12 @@ class ACE_Settings {
         displayName = CSTRING(Delay);
         description = CSTRING(DelayDesc);
     };
+    class GVAR(EndMission) {
+        value = 0;
+        typeName = "BOOL";
+        displayName = CSTRING(EndMission);
+        description = CSTRING(EndMissionDesc);
+    };
     class GVAR(Log) {
         value = 0;
         typeName = "BOOL";

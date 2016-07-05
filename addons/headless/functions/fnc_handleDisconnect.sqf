@@ -18,7 +18,16 @@
 params ["_object"];
 
 // Exit if not HC
-if !(_object in GVAR(headlessClients)) exitWith {};
+if !(_object in GVAR(headlessClients)) exitWith {
+    // End mission when no players present
+    if (GVAR(EndMission) && {(count allPlayers - count GVAR(headlessClients)) == 0}) then {
+        [] call BIS_fnc_endMissionServer;
+        if (GVAR(Log)) then {
+            ACE_LOGINFO("Ended Mission on all players leaving");
+        };
+    };
+    false
+};
 
 // Remove HC
 GVAR(headlessClients) deleteAt (GVAR(headlessClients) find _object);

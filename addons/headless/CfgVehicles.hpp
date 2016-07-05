@@ -2,6 +2,7 @@ class CfgVehicles {
     class ACE_Module;
     class GVAR(module): ACE_Module {
         author = "$STR_ACE_common_ACETeam";
+        author = ACECSTRING(common,ACETeam);
         category = "ACEX";
         displayName = CSTRING(Module);
         function = QFUNC(moduleInit);
@@ -9,7 +10,7 @@ class CfgVehicles {
         isGlobal = 1; // Global
         isTriggerActivated = 0;
         isDisposable = 0;
-        icon = QUOTE(PATHTOF(UI\Icon_Module_Headless_ca.paa));
+        icon = QPATHTOF(UI\Icon_Module_Headless_ca.paa);
         class Arguments {
             class Enabled {
                 displayName = ACECSTRING(common,Enabled);
@@ -22,6 +23,12 @@ class CfgVehicles {
                 description = CSTRING(DelayDesc);
                 typeName = "NUMBER";
                 defaultValue = DELAY_DEFAULT;
+            };
+            class EndMission {
+                displayName = CSTRING(EndMission);
+                description = CSTRING(EndMissionDesc);
+                typeName = "BOOL";
+                defaultValue = 0;
             };
             class Log {
                 displayName = CSTRING(Log);
