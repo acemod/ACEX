@@ -1,7 +1,6 @@
 class CfgVehicles {
     class ACE_Module;
     class GVAR(module): ACE_Module {
-        author = "$STR_ACE_common_ACETeam";
         author = ACECSTRING(common,ACETeam);
         category = "ACEX";
         displayName = CSTRING(Module);
