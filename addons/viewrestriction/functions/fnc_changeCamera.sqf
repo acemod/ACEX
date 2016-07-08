@@ -3,33 +3,36 @@
  * Change camera based on setting.
  *
  * Arguments:
- * None
+ * 0: New Camera View <STRING>
+ * 1: Vehicle <OBJECT>
  *
  * Return Value:
  * None
  *
  * Example:
- * [] call acex_viewrestriction_fnc_changeCamera
+ * ["INTERNAL", vehicle] call acex_viewrestriction_fnc_changeCamera
  *
  * Public: No
  */
 #include "script_component.hpp"
 
-if (!call FUNC(canChangeCamera)) exitWith {};
+params ["_newCameraView", "_cameraOn"];
+
+if (! ([_newCameraView, _cameraOn] call FUNC(canChangeCamera))) exitWith {};
 
 TRACE_1("View Restricted",GVAR(mode));
 
 // FirstPerson
 if (GVAR(mode) == 1) exitWith {
-    cameraOn switchCamera "Internal";
+    _cameraOn switchCamera "INTERNAL";
 };
 
 // ThirdPerson
 if (GVAR(mode) == 2) exitWith {
-    cameraOn switchCamera "External";
+    _cameraOn switchCamera "EXTERNAL";
 };
 
 // Selective
 if (GVAR(mode) == 3) exitWith {
-    call FUNC(selectiveChangeCamera);
+    [_cameraOn] call FUNC(selectiveChangeCamera);
 };
