@@ -49,7 +49,7 @@
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveAirDesc">
             <English>Selective mode in Air Vehicles. Default: Disabled (Requires Mode: Selective)</English>
             <Polish>Tryb selektywny lotnictwa. Domyślnie: Wyłączony (Wymagany tryb globalny: Selektywny)</Polish>
-            <German><German>Selektiver Modus in Luftfahrzeugen. (Standard: Deaktiviert, Benötigt Modus: Selektiv)</German></German>
+            <German>Selektiver Modus in Luftfahrzeugen. (Standard: Deaktiviert, Benötigt Modus: Selektiv)</German>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveSea">
             <English>(Selective) Sea Vehicles</English>
@@ -59,7 +59,7 @@
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveSeaDesc">
             <English>Selective mode in Sea Vehicles. Default: Disabled (Requires Mode: Selective)</English>
             <Polish>Tryb selektywny jednostek pływających. Domyślnie: Wyłączony (Wymagany tryb globalny: Selektywny)</Polish>
-            <German><German>Selektiver Modus zu Fuß. (Standard: Deaktiviert, Benötigt Modus: Selektiv)</German></German>
+            <German>Selektiver Modus zu Fuß. (Standard: Deaktiviert, Benötigt Modus: Selektiv)</German>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveUAV">
             <English>(Selective) UAVs</English>
