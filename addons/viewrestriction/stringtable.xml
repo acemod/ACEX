@@ -69,7 +69,7 @@
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveUAVDesc">
             <English>Selective mode in UAVs. Default: Disabled (Requires Mode: Selective)</English>
             <Polish>Tryb selektywny UAV. Domyślnie: Wyłączony (Wymagany tryb globalny: Selektywny)</Polish>
-            <German>Selektiver Modus in unbemannten Luftfahrzeugen. (Standart: Deaktiviert, Benötigt Modus: Selektiv</German>
+            <German>Selektiver Modus in unbemannten Luftfahrzeugen. (Standard: Deaktiviert, Benötigt Modus: Selektiv</German>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_Disabled">
             <English>Disabled</English>
