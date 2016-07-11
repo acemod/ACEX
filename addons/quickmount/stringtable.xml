@@ -15,5 +15,11 @@
         <Key ID="STR_ACEX_QuickMount_VehicleFull">
             <English>Vehicle Full</English>
         </Key>
+        <Key ID="STR_ACEX_QuickMount_Distance">
+            <English>Distance</English>
+        </Key>
+        <Key ID="STR_ACEX_QuickMount_DistanceDescription">
+            <English>Maximum distance to check for vehicles.</English>
+        </Key>
     </Package>
 </Project>
