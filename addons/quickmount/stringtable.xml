@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="ACEX">
     <Package name="QuickMount">
+        <Key ID="STR_ACEX_QuickMount_Category">
+            <English>Quick Mount</English>
+        </Key>
         <Key ID="STR_ACEX_QuickMount_KeybindName">
             <English>Vehicle quick mount</English>
             <German>Fahrzeug schnell montieren</German>
@@ -8,6 +11,9 @@
         </Key>
         <Key ID="STR_ACEX_QuickMount_KeybindDescription">
             <English>Quickly enter the nearest, eligible vehicle in your line of sight</English>
+        </Key>
+        <Key ID="STR_ACEX_QuickMount_VehicleFull">
+            <English>Vehicle Full</English>
         </Key>
     </Package>
 </Project>
