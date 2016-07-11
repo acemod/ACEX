@@ -19,7 +19,7 @@
 if (!GVAR(enabled)) exitWith {};
 if (isNull ACE_player || {vehicle ACE_player != ACE_player} || {!alive ACE_player}) exitWith {};
 
-private _start = eyePos ACE_player;
+private _start = AGLtoASL positionCameraToWorld [0,0,0];
 private _end = (_start vectorAdd (getCameraViewDirection ACE_player vectorMultiply GVAR(distance)));
 private _objects = lineIntersectsWith [_start, _end, ACE_player, objNull, true];
 reverse _objects;
