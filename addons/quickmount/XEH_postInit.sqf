@@ -3,5 +3,5 @@
 if (!hasInterface) exitWith {};
 
 [QUOTE(ACEX_TAG), QGVAR(actionID), [localize LSTRING(KeybindName), localize LSTRING(KeybindDescription)], "", {
-    [ace_player] call FUNC(getInNearest);
+    [] call FUNC(getInNearest);
 }] call CBA_fnc_addKeybind;
