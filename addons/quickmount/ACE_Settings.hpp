@@ -1,5 +1,5 @@
 class ACE_Settings {
-    class GVAR(Enabled) {
+    class GVAR(enabled) {
         value = 1;
         typeName = "BOOL";
         category = CSTRING(Category);
