@@ -21,7 +21,7 @@ params [["_unit", objNull, [objNull]]];
 if (isNull _unit || {vehicle _unit != _unit} || {!alive _unit} || {!isPlayer _unit}) exitWith {};
 
 private _start = eyePos _unit;
-private _end = (_start vectorAdd (eyeDirection _unit vectorMultiply GVAR(distance)));
+private _end = (_start vectorAdd (getCameraViewDirection _unit vectorMultiply GVAR(distance)));
 private _objects = reverse (lineIntersectsWith [_start, _end, _unit, objNull, true]);
 private _target = _objects param [0, objNull];
 
