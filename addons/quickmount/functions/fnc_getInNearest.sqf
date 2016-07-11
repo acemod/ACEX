@@ -16,29 +16,27 @@
 
 #include "script_component.hpp"
 
-params [["_unit", objNull, [objNull]]];
+if (!GVAR(enabled)) exitWith {};
+if (isNull ACE_player || {vehicle ACE_player != ACE_player} || {!alive ACE_player} || {!([ACE_player, false] call ACEFUNC(common,isPlayer))}) exitWith {};
 
-if (!GVAR(Enabled)) exitWith {};
-if (isNull _unit || {vehicle _unit != _unit} || {!alive _unit} || {!isPlayer _unit}) exitWith {};
-
-private _start = eyePos _unit;
-private _end = (_start vectorAdd (getCameraViewDirection _unit vectorMultiply GVAR(distance)));
-private _objects = lineIntersectsWith [_start, _end, _unit, objNull, true];
+private _start = eyePos ACE_player;
+private _end = (_start vectorAdd (getCameraViewDirection ACE_player vectorMultiply GVAR(distance)));
+private _objects = lineIntersectsWith [_start, _end, ACE_player, objNull, true];
 reverse _objects;
 private _target = _objects param [0, objNull];
 
-if (!isNull _target && {{_target isKindOf _x} count ["Air","LandVehicle","Ship"] > 0}) then {
+if (!isNull _target && {alive _target} && {{_target isKindOf _x} count ["Air","LandVehicle","Ship","StaticMortar"] > 0}) then {
     if (_target emptyPositions "Driver" > 0) then {
-        _unit action ["GetInDriver", _target];
+        ACE_player action ["GetInDriver", _target];
     } else {
         if (_target emptyPositions "Gunner" > 0) then {
-            _unit action ["GetInGunner", _target];
+            ACE_player action ["GetInGunner", _target];
         } else {
             if (_target emptyPositions "Commander" > 0) then {
-                _unit action ["GetInCommander", _target];
+                ACE_player action ["GetInCommander", _target];
             } else {
                 if (_target emptyPositions "Cargo" > 0) then {
-                    _unit action ["GetInCargo", _target];
+                    ACE_player action ["GetInCargo", _target];
                 } else {
                     [localize LSTRING(VehicleFull)] call ACEFUNC(common,displayTextStructured);
                 };
