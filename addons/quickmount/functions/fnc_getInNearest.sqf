@@ -3,13 +3,13 @@
  * Mount the given player in the nearest eligible vehicle based on their distance and direction to the vehicle
  *
  * Arguments:
- * 0: Player unit <OBJECT>
+ * None
  *
  * Return Value:
  * None
  *
  * Example:
- * [ace_player] call acex_quickmount_fnc_getInNearest;
+ * [] call acex_quickmount_fnc_getInNearest;
  *
  * Public: No
  */
