@@ -10,7 +10,7 @@
             <Polish>Pojazd szybkie mocowanie</Polish>
         </Key>
         <Key ID="STR_ACEX_QuickMount_KeybindDescription">
-            <English>Quickly enter the nearest, eligible vehicle in your line of sight</English>
+            <English>Quickly enter the vehicle you are directly looking at.</English>
         </Key>
         <Key ID="STR_ACEX_QuickMount_VehicleFull">
             <English>Vehicle Full</English>
