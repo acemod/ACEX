@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX">
+    <Package name="QuickMount">
+        <Key ID="STR_ACEX_QuickMount_KeybindName">
+            <English>Vehicle quick mount</English>
+            <German>Fahrzeug schnell montieren</German>
+            <Polish>Pojazd szybkie mocowanie</Polish>
+        </Key>
+        <Key ID="STR_ACEX_QuickMount_KeybindDescription">
+            <English>Quickly enter the nearest, eligible vehicle in your line of sight</English>
+        </Key>
+    </Package>
+</Project>
