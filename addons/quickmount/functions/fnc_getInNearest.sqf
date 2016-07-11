@@ -17,7 +17,7 @@
 #include "script_component.hpp"
 
 if (!GVAR(enabled)) exitWith {};
-if (isNull ACE_player || {vehicle ACE_player != ACE_player} || {!alive ACE_player} || {!([ACE_player, false] call ACEFUNC(common,isPlayer))}) exitWith {};
+if (isNull ACE_player || {vehicle ACE_player != ACE_player} || {!alive ACE_player}) exitWith {};
 
 private _start = eyePos ACE_player;
 private _end = (_start vectorAdd (getCameraViewDirection ACE_player vectorMultiply GVAR(distance)));
