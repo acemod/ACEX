@@ -16,5 +16,6 @@ class ACE_Settings {
         description = CSTRING(KeybindDescription);
         isClientSettable = 0;
         force = 0;
+        values[] = {"0m", "1m", "2m", "3m", "4m", "5m", "6m", "7m", "8m", "9m", "10m"};
     };
 };
