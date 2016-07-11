@@ -1,1 +1,2 @@
 PREP(getInNearest);
+PREP(moduleInit);
