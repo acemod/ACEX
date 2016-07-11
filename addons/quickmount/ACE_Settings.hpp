@@ -6,7 +6,7 @@ class ACE_Settings {
         displayName = ACECSTRING(common,Enabled);
         description = CSTRING(KeybindDescription);
         isClientSettable = 0;
-        force = 1;
+        force = 0;
     };
     class GVAR(distance) {
         value = 3;
@@ -15,7 +15,7 @@ class ACE_Settings {
         displayName = ACECSTRING(common,Enabled);
         description = CSTRING(KeybindDescription);
         isClientSettable = 0;
-        force = 1;
+        force = 0;
         values[] = {"0m", "1m", "2m", "3m", "4m", "5m", "6m", "7m", "8m", "9m", "10m"};
     };
 };
