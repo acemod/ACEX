@@ -21,9 +21,9 @@ if (isNull ACE_player || {vehicle ACE_player != ACE_player} || {!alive ACE_playe
 
 private _start = AGLtoASL positionCameraToWorld [0,0,0];
 private _end = (_start vectorAdd (getCameraViewDirection ACE_player vectorMultiply GVAR(distance)));
-private _objects = lineIntersectsWith [_start, _end, ACE_player, objNull, true];
-reverse _objects;
-private _target = _objects param [0, objNull];
+private _objects = lineIntersectsSurfaces [_start, _end, ACE_player];
+private _target = _objects param [0, []];
+_target = _target param [2, objNull];
 
 if (!isNull _target && {alive _target} && {{_target isKindOf _x} count ["Air","LandVehicle","Ship","StaticMortar"] > 0}) then {
     if (_target emptyPositions "Driver" > 0) then {
