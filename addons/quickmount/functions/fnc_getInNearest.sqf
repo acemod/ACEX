@@ -1,6 +1,6 @@
 /*
  * Author: Kingsley
- * Mount the given player in the nearest eligible vehicle based on their distance and direction to the vehicle
+ * Mount the player in the vehicle they are directly looking at based on their distance.
  *
  * Arguments:
  * None
