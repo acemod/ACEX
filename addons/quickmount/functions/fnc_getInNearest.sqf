@@ -25,7 +25,13 @@ private _objects = lineIntersectsSurfaces [_start, _end, ACE_player];
 private _target = _objects param [0, []];
 _target = _target param [2, objNull];
 
-if (!isNull _target && {alive _target} && {{_target isKindOf _x} count ["Air","LandVehicle","Ship","StaticMortar"] > 0}) then {
+if (
+    !isNull _target &&
+    {alive _target} &&
+    {{_target isKindOf _x} count ["Air","LandVehicle","Ship","StaticMortar"] > 0} &&
+    {locked _target in [0,1]} &&
+    {([ACE_player, _target] call ACEFUNC(common,canInteractWith))}
+) then {
     {
         if (_target emptyPositions _x > 0) exitWith {
             ACE_player action ["GetIn" + _x, _target];
