@@ -41,7 +41,7 @@ if (
     {
         private _unit = _target call compile format ["assigned%1 _this", _x];
 
-        if (!isNull _unit && {!alive _unit}) exitWith {
+        if (_unit isEqualType objNull && {!isNull _unit} && {!alive _unit}) exitWith {
             if (!_hasAction) then {
                 ACE_player action ["GetIn" + _x, _target];
                 _hasAction = true;
@@ -53,15 +53,18 @@ if (
                 if (_forEachIndex == 3) then {
                     private _crew = fullCrew [_target, "turret", true];
                     private _turretSeat = (_crew select {isNull (_x select 0)}) param [0, []];
+                    
                     if (_turretSeat isEqualTo []) then {
                         ACE_player action ["GetIn" + _x, _target];
                     } else {
                         ACE_player action ["GetInTurret", _target, _turretSeat select 3];
                     };
+                    
                     _hasAction = true;
                 } else {
                     ACE_player action ["GetIn" + _x, _target];
                 };
+                
                 _hasAction = true;
             };
         };
@@ -72,4 +75,4 @@ if (
     } forEach ["Driver", "Gunner", "Commander", "Cargo"];
 };
 
-nil
+true
