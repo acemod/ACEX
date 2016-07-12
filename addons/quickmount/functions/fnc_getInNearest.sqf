@@ -17,7 +17,7 @@
 #include "script_component.hpp"
 
 if (!GVAR(enabled)) exitWith {};
-if (isNull ACE_player || {vehicle ACE_player != ACE_player} || {!alive ACE_player}) exitWith {};
+if (isNull ACE_player || {vehicle ACE_player != ACE_player} || {!alive ACE_player} || {(ACE_player getVariable ["ace_unconscious", false])}) exitWith {};
 
 private _start = AGLtoASL positionCameraToWorld [0,0,0];
 private _end = (_start vectorAdd (getCameraViewDirection ACE_player vectorMultiply GVAR(distance)));
