@@ -34,8 +34,21 @@ if (
 ) then {
     {
         if (_target emptyPositions _x > 0) exitWith {
-            ACE_player action ["GetIn" + _x, _target];
+            if (_forEachIndex == 3) then {
+                private _crew = fullCrew [_target, "turret", true];
+                private _turretSeat = (_crew select {isNull (_x select 0)}) param [0, []];
+                
+                if (_turretSeat isEqualTo []) then {
+                    ACE_player action ["GetIn" + _x, _target];
+                } else {
+                    _turretSeat params ["_unit", "_role", "", "_turretPath"];
+                    ACE_player action ["GetInTurret", _target, _turretPath];
+                };
+            } else {
+                ACE_player action ["GetIn" + _x, _target];
+            };
         };
+
         if (_forEachIndex == 3) then {
             [localize LSTRING(VehicleFull)] call ACEFUNC(common,displayTextStructured);
         };
