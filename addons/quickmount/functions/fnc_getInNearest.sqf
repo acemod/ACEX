@@ -26,23 +26,14 @@ private _target = _objects param [0, []];
 _target = _target param [2, objNull];
 
 if (!isNull _target && {alive _target} && {{_target isKindOf _x} count ["Air","LandVehicle","Ship","StaticMortar"] > 0}) then {
-    if (_target emptyPositions "Driver" > 0) then {
-        ACE_player action ["GetInDriver", _target];
-    } else {
-        if (_target emptyPositions "Gunner" > 0) then {
-            ACE_player action ["GetInGunner", _target];
-        } else {
-            if (_target emptyPositions "Commander" > 0) then {
-                ACE_player action ["GetInCommander", _target];
-            } else {
-                if (_target emptyPositions "Cargo" > 0) then {
-                    ACE_player action ["GetInCargo", _target];
-                } else {
-                    [localize LSTRING(VehicleFull)] call ACEFUNC(common,displayTextStructured);
-                };
-            };
+    {
+        if (_target emptyPositions _x > 0) exitWith {
+            ACE_player action ["GetIn" + _x, _target];
         };
-    };
+        if (_forEachIndex == 3) then {
+            [localize LSTRING(VehicleFull)] call ACEFUNC(common,displayTextStructured);
+        };
+    } forEach ["Driver", "Gunner", "Commander", "Cargo"];
 };
 
 nil
