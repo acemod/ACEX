@@ -32,23 +32,46 @@ if (
     {locked _target in [0,1]} &&
     {([ACE_player, _target] call ACEFUNC(common,canInteractWith))}
 ) then {
+    private _hasAction = false;
+    
     {
+        if (_forEachIndex in [0,1,2]) then {
+            private _unit = _target call compile format ["assigned%1 _this", _x];
+            
+            if (!isNull _unit && {!alive _unit}) exitWith {
+                if (!_hasAction) then {
+                    ACE_player action ["GetIn" + _x, _target];
+                    _hasAction = true;
+                };
+            };
+        };
+
         if (_target emptyPositions _x > 0) exitWith {
             if (_forEachIndex == 3) then {
                 private _crew = fullCrew [_target, "turret", true];
                 private _turretSeat = (_crew select {isNull (_x select 0)}) param [0, []];
                 
                 if (_turretSeat isEqualTo []) then {
-                    ACE_player action ["GetIn" + _x, _target];
+                    if (!_hasAction) then {
+                        ACE_player action ["GetIn" + _x, _target];
+                        _hasAction = true;
+                    };
                 } else {
                     _turretSeat params ["_unit", "_role", "", "_turretPath"];
-                    ACE_player action ["GetInTurret", _target, _turretPath];
+                    
+                    if (!_hasAction) then {
+                        ACE_player action ["GetInTurret", _target, _turretPath];
+                        _hasAction = true;
+                    };
                 };
             } else {
-                ACE_player action ["GetIn" + _x, _target];
+                if (!_hasAction) then {
+                    ACE_player action ["GetIn" + _x, _target];
+                    _hasAction = true;
+                };
             };
         };
-
+        
         if (_forEachIndex == 3) then {
             [localize LSTRING(VehicleFull)] call ACEFUNC(common,displayTextStructured);
         };
