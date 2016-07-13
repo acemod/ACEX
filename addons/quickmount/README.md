@@ -1,10 +1,6 @@
 acex_quickmount
 ============
-
-Adds a keybind to quickly mount the nearest eligible vehicle based on player distance and direction to vehicle.
-
-Useful for when the action menu fails to appear and you're rushing to get into the vehicle in extract situations for example.
-
+Adds a keybind to quickly enter the vehicle you are directly looking at.
 
 ## Maintainers
 
