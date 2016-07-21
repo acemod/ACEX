@@ -22,11 +22,11 @@ if !(_object in GVAR(headlessClients)) exitWith {
     // End mission when no players present
     if (GVAR(EndMission) && {!GVAR(endMissionCheckDelayed)}) then {
         // Delay check until 2.5 minutes into the mission - wait for allPlayers to sync
-        if (CBA_missionTime < 150000) then {
+        if (CBA_missionTime < 150) then {
             GVAR(endMissionCheckDelayed) = true;
             [{
                 call FUNC(endMissionNoPlayers);
-            }, [], (150000 - CBA_missionTime) / 100] call CBA_fnc_waitAndExecute;
+            }, [], 150 - CBA_missionTime] call CBA_fnc_waitAndExecute;
         } else {
             call FUNC(endMissionNoPlayers);
         };
