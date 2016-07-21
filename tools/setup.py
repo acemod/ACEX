@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 #######################
-#  ACEX3 Setup Script  #
+#  ACEX Setup Script  #
 #######################
 
 import os
@@ -20,7 +20,7 @@ def main():
     FULLDIR = "{}\\{}".format(MAINDIR,PROJECTDIR)
     print("""
   ######################################
-  # ACEX3 Development Environment Setup #
+  # ACEX Development Environment Setup #
   ######################################
 
   This script will create your ACEX dev environment for you.
