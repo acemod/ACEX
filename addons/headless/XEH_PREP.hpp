@@ -1,3 +1,4 @@
+PREP(endMissionNoPlayers);
 PREP(handleConnectHC);
 PREP(handleDisconnect);
 PREP(handleInitPost);
