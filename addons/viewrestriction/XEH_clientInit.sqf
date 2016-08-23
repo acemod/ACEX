@@ -15,12 +15,12 @@ if !(hasInterface) exitWith {};
         {GVAR(modeSelectiveSea) == 0}/* &&
         {GVAR(modeSelectiveUAV) == 0}*/
     ) exitWith {
-        ACE_LOGWARNING("Selective mode enabled, but all sub-modes are disabled.")
+        WARNING("Selective mode enabled, but all sub-modes are disabled.")
     };
 
     // Exit if third person view is not available
     if (difficultyOption "thirdPersonView" == 0) exitWith {
-        ACE_LOGWARNING("View Restriction is enabled, but 3rd person is disabled with server difficulty.");
+        WARNING("View Restriction is enabled, but 3rd person is disabled with server difficulty.");
     };
 
     // Add Event Handler for changing camera - also happens on spawn

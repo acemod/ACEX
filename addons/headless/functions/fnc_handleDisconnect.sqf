@@ -24,7 +24,7 @@ if !(_object in GVAR(headlessClients)) exitWith {};
 GVAR(headlessClients) deleteAt (GVAR(headlessClients) find _object);
 
 if (GVAR(Log)) then {
-    ACE_LOGINFO_1("Removed HC: %1",_object);
+    INFO_1("Removed HC: %1",_object);
 };
 
 // Rebalance

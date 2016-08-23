@@ -24,4 +24,4 @@ if (!_activated) exitWith {};
 [_logic, QGVAR(Delay), "Delay"] call ACEFUNC(common,readSettingFromModule);
 [_logic, QGVAR(Log), "Log"] call ACEFUNC(common,readSettingFromModule);
 
-ACE_LOGINFO("Headless Module Initialized.");
+INFO("Headless Module Initialized.");
