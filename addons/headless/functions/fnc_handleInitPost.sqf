@@ -16,7 +16,6 @@
 #include "script_component.hpp"
 
 params ["_object"];
-
 TRACE_1("InitPost",_object);
 
 // Delay until settings are initialized (for checking if HC trasnferring is enabled)

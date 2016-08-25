@@ -13,7 +13,8 @@ class ACE_Settings {
     };
     class GVAR(EndMission) {
         value = 0;
-        typeName = "BOOL";
+        values[] = {ACECSTRING(Common,Disabled), CSTRING(Instant), CSTRING(Delayed)};
+        typeName = "SCALAR";
         displayName = CSTRING(EndMission);
         description = CSTRING(EndMissionDesc);
     };

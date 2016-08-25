@@ -26,8 +26,22 @@ class CfgVehicles {
             class EndMission {
                 displayName = CSTRING(EndMission);
                 description = CSTRING(EndMissionDesc);
-                typeName = "BOOL";
-                defaultValue = 0;
+                typeName = "NUMBER";
+                class values {
+                    class Disabled {
+                        name = ACECSTRING(Common,Disabled);
+                        value = 0;
+                        default = 1;
+                    };
+                    class Instant {
+                        name = CSTRING(Instant);
+                        value = 1;
+                    };
+                    class Delayed {
+                        name = CSTRING(Delayed);
+                        value = 2;
+                    };
+                };
             };
             class Log {
                 displayName = CSTRING(Log);

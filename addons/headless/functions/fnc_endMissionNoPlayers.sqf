@@ -16,12 +16,13 @@
 #include "script_component.hpp"
 
 // Exit if players connected
-if (call CBA_fnc_players > 0) exitWith {
+if !(call CBA_fnc_players isEqualTo []) exitWith {
     GVAR(endMissionCheckDelayed) = false;
+    TRACE_1("Players are present",count (call CBA_fnc_players));
 };
 
 // End mission
 [] call BIS_fnc_endMissionServer;
 if (GVAR(Log)) then {
-    ACE_LOGINFO("Ended Mission on all players leaving");
+    ACE_LOGINFO("Ended Mission on all players leaving.");
 };

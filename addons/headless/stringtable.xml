@@ -30,7 +30,13 @@
             <English>End Mission</English>
         </Key>
         <Key ID="STR_ACEX_Headless_EndMissionDesc">
-            <English>End mission when there are no players connected (same as 'persistent = 0' in server configuration but with Headless Client support)</English>
+            <English>End mission when there are no players connected (same as 'persistent = 0' in server configuration but with Headless Client support).</English>
+        </Key>
+        <Key ID="STR_ACEX_Headless_Instant">
+            <English>Instant</English>
+        </Key>
+        <Key ID="STR_ACEX_Headless_Delayed">
+            <English>Delayed (60s)</English>
         </Key>
         <Key ID="STR_ACEX_Headless_Log">
             <English>Log</English>
