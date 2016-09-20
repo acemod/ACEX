@@ -26,6 +26,18 @@
             <German>Minimale Verzögerung zwischen Transfers in Sekunden. (Standard: 15)</German>
             <Polish>Minimalny odstęp pomiędzy transferami w sekundach. (Domyślnie: 15)</Polish>
         </Key>
+        <Key ID="STR_ACEX_Headless_EndMission">
+            <English>End Mission</English>
+        </Key>
+        <Key ID="STR_ACEX_Headless_EndMissionDesc">
+            <English>End mission when there are no players connected (same as 'persistent = 0' in server configuration but with Headless Client support).</English>
+        </Key>
+        <Key ID="STR_ACEX_Headless_Instant">
+            <English>Instant</English>
+        </Key>
+        <Key ID="STR_ACEX_Headless_Delayed">
+            <English>Delayed (60s)</English>
+        </Key>
         <Key ID="STR_ACEX_Headless_Log">
             <English>Log</English>
             <German>Protokolldatei anlegen</German>
