@@ -80,10 +80,19 @@ GVAR(outputText) = "None";
     if (!(_unitIsPlayer || _killerIsPlayer)) exitWith {};
 
     // Log firendly fire
-    if ((!isNull _killer) && {_unit != _killer}) then {
-        // side group is better, but group could already be null if it was last unit
-        private _unitSide = if (!isNull (group _unit)) then {side group _unit} else {side _unit};
-        private _killerSide = if (!isNull (group _killer)) then {side group _killer} else {side _killer};
+    private _fnc_getSideFromConfig = {
+        params ["_object"];
+        switch (getNumber (configFile >> "CfgVehicles" >> (typeOf _object) >> "side")) do {
+            case (0): {east};
+            case (1): {west};
+            case (2): {resistance};
+            default {civilian};
+        };
+    };
+    if ((!isNull _killer) && {_unit != _killer} && {_killer isKindOf "CAManBase"}) then {
+        // Because of unconscious group switching/captives it's probably best to just use unit's config side
+        private _unitSide = [_unit] call _fnc_getSideFromConfig;
+        private _killerSide = [_killer] call _fnc_getSideFromConfig;
         if ([_unitSide, _killerSide] call BIS_fnc_areFriendly) then {
             _killInfo pushBack "<t color='#ff0000'>Friendly Fire</t>";
         };
