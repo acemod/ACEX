@@ -24,7 +24,7 @@ GVAR(headlessClients) params [
 ];
 
 if (GVAR(Log)) then {
-    ACE_LOGINFO_2("Present HCs: %1 - Full Rebalance: %2", GVAR(headlessClients), _force);
+    INFO_2("Present HCs: %1 - Full Rebalance: %2", GVAR(headlessClients), _force);
 };
 
 // Enable round-robin load balancing if more than one HC is present
@@ -130,7 +130,7 @@ private _numTransferredHC3 = 0;
 
 if (GVAR(Log)) then {
     private _numTransferredTotal = _numTransferredHC1 + _numTransferredHC2 + _numTransferredHC3;
-    ACE_LOGINFO_4("Groups Transferred: Total: %1 - HC1: %2 - HC2: %3 - HC3: %4", _numTransferredTotal, _numTransferredHC1, _numTransferredHC2, _numTransferredHC3);
+    INFO_4("Groups Transferred: Total: %1 - HC1: %2 - HC2: %3 - HC3: %4", _numTransferredTotal, _numTransferredHC1, _numTransferredHC2, _numTransferredHC3);
 };
 
 // Allow rebalance flag

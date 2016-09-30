@@ -29,7 +29,7 @@ if (!GVAR(Enabled) || {_headlessClient in GVAR(headlessClients)}) exitWith {};
 GVAR(headlessClients) pushBack _headlessClient;
 
 if (GVAR(Log)) then {
-    ACE_LOGINFO_1("Registered HC: %1",_headlessClient);
+    INFO_1("Registered HC: %1",_headlessClient);
 };
 
 // Rebalance
