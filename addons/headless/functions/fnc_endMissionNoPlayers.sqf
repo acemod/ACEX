@@ -24,5 +24,5 @@ if !(call CBA_fnc_players isEqualTo []) exitWith {
 // End mission
 [] call BIS_fnc_endMissionServer;
 if (GVAR(Log)) then {
-    ACE_LOGINFO("Ended Mission on all players leaving.");
+    INFO("Ended Mission on all players leaving.");
 };
