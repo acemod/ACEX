@@ -65,8 +65,8 @@ ACE_player setVariable [QGVAR(hungerStatus), _foodStatus, _doSync];
 if ((_drinkStatus < 1) || {_foodStatus < 1}) then {
     if (random(1) > 0.2) then {
         TRACE_1("death from hunger/thirst", ACE_player);
-        if (["ACE_Medical"] call ace_common_fnc_isModLoaded) then {
-            [ACE_player] call ace_medical_fnc_setDead;
+        if (["ACE_Medical"] call ACEFUNC(common,isModLoaded)) then {
+            [ACE_player] call ACEFUNC(medical,setDead);
         } else {
             ACE_player setDamage 1;
         };
@@ -74,7 +74,7 @@ if ((_drinkStatus < 1) || {_foodStatus < 1}) then {
 };
 
 // No point continueing if the unit is not awake or alive. Below are all animation consequounces
-if !([ACE_player] call ace_common_fnc_isAwake) exitwith {};
+if !([ACE_player] call ACEFUNC(common,isAwake) exitwith {};)
 
 private _animState = animationState ACE_player;
 private _isProne = ((count _animState > 8) && {(_animState select [5, 3]) == "pne"});
@@ -83,7 +83,7 @@ private _proneAnim = "amovppnemstpsraswrfldnon"; //TODO: handle pistol/launcher/
 if ((_drinkStatus < 25) || {_foodStatus < 25}) then {
     if ((speed ACE_player > 12) && {vehicle ACE_player == ACE_player} && {random(1) >= 0.3}) then {
         TRACE_1("Falldown from hunger/thirst",ACE_player);
-        [ACE_player, _proneAnim, 2] call ace_common_fnc_doAnimation;
+        [ACE_player, _proneAnim, 2] call ACEFUNC(common,doAnimation);
     };
 };
 
@@ -91,8 +91,8 @@ if ((_drinkStatus < 20) || {_foodStatus < 20}) then {
     private _passOutChance = linearConversion [20, 0, (_drinkStatus max _foodStatus), 0.05, 0.20];
     if ((random 1) < _passOutChance) then {
         TRACE_1("setUnconscious from hunger/thirst", _passOutChance);
-        if (["ACE_Medical"] call ace_common_fnc_isModLoaded) then {
-            [ACE_player, true, 5] call ace_medical_fnc_setUnconscious;
+        if (["ACE_Medical"] call ACEFUNC(common,isModLoaded)) then {
+            [ACE_player, true, 5] call ACEFUNC(medical,setUnconscious);
         };
     };
 };
@@ -101,6 +101,6 @@ if ((_drinkStatus < 20) || {_foodStatus < 20}) then {
 if ((_drinkStatus < 7) || {_foodStatus < 7}) then {
     if ((speed ACE_player > 1) && {vehicle ACE_player == ACE_player} && {!_isProne}) then {
         TRACE_1("force prone from hunger/thirst", _animState);
-        [ACE_player, _proneAnim, 2] call ace_common_fnc_doAnimation;
+        [ACE_player, _proneAnim, 2] call ACEFUNC(common,doAnimation;)
     };
 };

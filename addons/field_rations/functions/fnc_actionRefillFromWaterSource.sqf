@@ -21,7 +21,7 @@ params ["_waterSource", "_player", "_originalItem"];
 
 // Prepare all info necessary for completing the action
 private _onRefillItem = getText (configFile >> "CfgWeapons" >> _originalItem >> QGVAR(onRefill));
-if (_onRefillItem == "") exitwith {ACE_LOGERROR_1("No onRefill string", _originalItem);};
+if (_onRefillItem == "") exitwith {ERROR_1("No onRefill string", _originalItem);};
 
 private _progressBarText = localize LSTRING(Refilling);
 
@@ -31,7 +31,7 @@ private _onFinish = {
 
     // Switch out the old item by the newly refilled item
     _player removeItem _oldItem;
-    [_player, _onRefillItem] call ace_common_fnc_addToInventory;
+    [_player, _onRefillItem] call ACEFUNC(common,addToInventory);
 };
 
 private _onFailure = {
@@ -45,4 +45,4 @@ private _onFailure = {
     _onFailure,
     _progressBarText,
     {(_this select 0) call FUNC(canRefillFromWaterSource)}
-] call ace_common_fnc_progressBar;
+] call ACEFUNC(common,progressBar);

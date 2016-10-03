@@ -19,6 +19,6 @@
 
 params ["", "_player", "_itemClassname"];
 
-([_player, _player, ["isNotInside"]] call ace_common_fnc_canInteractWith)
+([_player, _player, ["isNotInside"]] call ACEFUNC(common,canInteractWith))
 && {(_itemClassname in (items _player))}
 && {((vehicle _player) != _player) || {(vectorMagnitude (velocity _player)) < 1}}

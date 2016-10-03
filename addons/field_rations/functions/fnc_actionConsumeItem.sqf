@@ -42,7 +42,7 @@ private _onFinish = {
 
     _player removeItem _itemClassname;
     if (_replacementItem != "") then {
-        [_player, _replacementItem] call ace_common_fnc_addToInventory;
+        [_player, _replacementItem] call ACEFUNC(common,addToInventory);
     };
 
     if (_hungerRestored > 0) then {
@@ -67,4 +67,4 @@ private _onFailure = {
     _progressBarText,
     {(_this select 0) call FUNC(canConsumeItem)},
     ["isNotInside"]
-] call ace_common_fnc_progressBar;
+] call ACEFUNC(common,progressBar);
