@@ -1,7 +1,7 @@
 class CfgVehicles {
     class ACE_Module;
     class GVAR(createIed): ACE_Module {
-        author = "STR_ACE_common_ACETeam";
+        author = ACECSTRING(common,ACETeam);
         category = "ACE_missionModules";
         displayName = CSTRING(Module);
         function = QFUNC(moduleInit);
@@ -10,37 +10,64 @@ class CfgVehicles {
         isTriggerActivated = 0;
         isDisposable = 0;
         // icon = ""; // TODO add module icon
-        class Arguments    {
+        class Arguments {
             class typeOfIED {
-                displayName = "Type";
-                description = "The Type of the IED";
+                displayName = CSTRING(Type);
+                description = CSTRING(Type_Description);
                 typeName = "NUMBER";
                 class values {
-                    class land {name="Normal"; value=0; default=1; };
-                    class urban {name="Urban"; value=1; };
+                    class land {
+                        name = CSTRING(Type_Normal);
+                        value = 0; default = 1;
+                    };
+                    class urban {
+                        name = CSTRING(Type_Urban);
+                        value = 1;
+                    };
                 };
             };
-
             class sizeOfIED {
-                displayName = "Size";
-                description = "The size of the IED";
+                displayName = CSTRING(Size);
+                description = CSTRING(Size_Description);
                 typeName = "NUMBER";
                 class values {
-                    class small {name="Small"; value=1; default=1; };
-                    class large {name="Large"; value=0; };
+                    class small {
+                        name = CSTRING(Size_Normal);
+                        value = 0; default = 1;
+                    };
+                    class large {
+                        name = CSTRING(Size_Urban);
+                        value = 1;
+                    };
                 };
             };
 
             class heightOfIED {
-                displayName = "Height";
-                description = "The height that the IED is burried";
+                displayName = CSTRING(Height);
+                description = CSTRING(Height_Description);
                 typeName = "NUMBER";
                 class values {
-                    class Above {name="Above Ground"; value=0; default=1; };
-                    class slightly {name="Slightly burried"; value=1; };
-                    class medium {name="Medium burried"; value=2; };
-                    class almost {name="Almost burried"; value=3; };
-                    class fully {name="Fully burried"; value=4; };
+                    class Above {
+                        name = CSTRING(Height_AboveGround);
+                        value = 0;
+                        default = 1;
+                    };
+                    class slightly {
+                        name = CSTRING(Height_SlightlyBurried);
+                        value = 1;
+                    };
+                    class medium {
+                        name = CSTRING(Height_MediumBurried);
+                        value = 2;
+                    };
+                    class almost {
+                        name = CSTRING(Height_AlmostBurried);
+                        value = 3;
+                    };
+                    class fully {
+                        name = CSTRING(Height_FullyBurried);
+                        value = 4;
+                    };
                 };
             };
 

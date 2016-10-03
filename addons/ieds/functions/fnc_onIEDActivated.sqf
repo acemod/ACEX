@@ -24,6 +24,8 @@ private _chain = _logic getvariable [QGVAR(collection), []];
 
     private _trigger = _iedLogic getvariable [QGVAR(linkedIED), objNull];
     if (!(isNull _trigger)) then {
+        ["acex_iedActivated", [_trigger]] call CBA_fnc_localEvent;
+
         [_iedLogic, _trigger, _logic] spawn { // using a spawn because it doesn't matter to much if an ied isn't detonated at a reliable time
             params ["_iedLogic", "_trigger", "_master"];
             if (!isNull _trigger) then {

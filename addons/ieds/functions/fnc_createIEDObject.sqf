@@ -6,8 +6,6 @@
 
 params ["_logic"];
 
-private ["_logic","_typeOfIED", "_sizeOfIED", "_heightOfIED", "_iedClass", "_iedCreated"];
-
 if (isNull _logic) exitwith {};
 
 private _typeOfIED = _logic getvariable ["typeOfIED", 0];
@@ -27,13 +25,13 @@ private _iedClass = switch (_typeOfIED) do {
     case 1: { URBAN_IEDS select _sizeOfIED };
 };
 
-private _iedCreated = _iedClass createVehicle (getPos _logic);
-
+private _iedCreated = _iedClass createVehicle [0,0,0];
 _iedCreated setPos [getPos _Logic select 0, getPos _Logic select 1, (getPos _Logic select 2) + _heightOfIED];
 
 if (_logic getvariable ["iedActivationType", 0] == 0) then {
     private _mine = createMine [_iedClass, getPos _iedCreated, [], 0];
-    _mine setDir ((getDir _iedCreated)+90);
+    _mine setDir ((getDir _iedCreated) + 90);
+    _mine setPos _iedCreated;
     _iedCreated setvariable [QGVAR(pressurePlate), _mine];
     hideObjectGlobal _mine;
 };
@@ -67,5 +65,7 @@ _iedCreated addEventHandler ["Killed", {
     };
     deleteVehicle _ied;
 }];
+
+["acex_iedCreated", [_iedCreated, _typeOfIED, _sizeOfIED, _heightOfIED]] call CBA_fnc_localEvent;
 
 _iedCreated;

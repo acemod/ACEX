@@ -2,11 +2,13 @@
 
 class CfgPatches {
     class ADDON {
+        name = COMPONENT_NAME;
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"acex_main", "ace_explosives"};
-        author[]= {"Glowbal"};
+        author = ACECSTRING(common,ACETeam);
+        authors[]= {"Glowbal"};
         authorUrl = "https://github.com/glowbal";
         VERSION_CONFIG;
     };

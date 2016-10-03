@@ -4,5 +4,50 @@
         <Key ID="STR_ACEX_ieds_Module">
             <English>Create IED</English>
         </Key>
+        <Key ID="STR_ACEX_ieds_Type">
+            <English>Type</English>
+        </Key>
+        <Key ID="STR_ACEX_ieds_Type_Description">
+            <English>The Type of the IED</English>
+        </Key>
+        <Key ID="STR_ACEX_ieds_Type_Urban">
+            <English>Urban</English>
+        </Key>
+        <Key ID="STR_ACEX_ieds_Type_Normal">
+            <English>Normal</English>
+        </Key>
+        <Key ID="STR_ACEX_ieds_Size">
+            <English>Size</English>
+        </Key>
+        <Key ID="STR_ACEX_ieds_Size_Description">
+            <English>The Size of the IED</English>
+        </Key>
+        <Key ID="STR_ACEX_ieds_Size_Small">
+            <English>Small</English>
+        </Key>
+        <Key ID="STR_ACEX_ieds_Size_Large">
+            <English>Large</English>
+        </Key>
+        <Key ID="STR_ACEX_ieds_Height">
+            <English>Height</English>
+        </Key>
+        <Key ID="STR_ACEX_ieds_Height_Description">
+            <English>The height that the IED is burried</English>
+        </Key>
+        <Key ID="STR_ACEX_ieds_Height_AboveGround">
+            <English>Above Ground</English>
+        </Key>
+        <Key ID="STR_ACEX_ieds_Height_SlightlyBurried">
+            <English>Slightly burried</English>
+        </Key>
+        <Key ID="STR_ACEX_ieds_Height_MediumBurried">
+            <English>Medium burried</English>
+        </Key>
+        <Key ID="STR_ACEX_ieds_Height_AlmostBurried">
+            <English>Almost burried</English>
+        </Key>
+        <Key ID="STR_ACEX_ieds_Height_FullyBurried">
+            <English>Fully burried</English>
+        </Key>
     </Package>
 </Project>
