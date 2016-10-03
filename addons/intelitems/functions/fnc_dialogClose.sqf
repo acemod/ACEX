@@ -24,7 +24,7 @@ TRACE_2("params",_display,_exitCode);
 
 private _intelIndex = _display getVariable [QGVAR(intelIndex), -1];
 private _intel = missionNamespace getVariable (format [QGVAR(intel_%1), _intelIndex]);
-if (isNil "_intel") exitWith {ACE_LOGERROR_1("Bad data on intel index [%1]",_intelIndex);};
+if (isNil "_intel") exitWith {ERROR_1("Bad data on intel index [%1]",_intelIndex);};
 _intel params ["_type", "_data"];
 TRACE_3("intel",_intelIndex,_type,_data);
 
@@ -36,7 +36,7 @@ private _localData = [];
         _localData = _x;
     };
 } forEach GVAR(localDataInfo);
-if (_localData isEqualTo []) exitWith {ACE_LOGERROR_1("No Local Data on Index [%1]",_intelIndex);};
+if (_localData isEqualTo []) exitWith {ERROR_1("No Local Data on Index [%1]",_intelIndex);};
 
 //Update Data (if changed)
 if (_type == TYPE_NOTEPAD) then { //Only notepads can update their data

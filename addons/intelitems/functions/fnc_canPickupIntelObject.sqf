@@ -27,7 +27,7 @@ case (typeOf _intelObject == QGVAR(NotepadObject)): {QGVAR(Notepad);};
 };
 
 if (_magClassname == "") exitWith {
-    ACE_LOGERROR_2("Bad Type? [%1-%2]",_intelObject, typeOf _intelObject);
+    ERROR_2("Bad Type? [%1-%2]",_intelObject, typeOf _intelObject);
     false
 };
 

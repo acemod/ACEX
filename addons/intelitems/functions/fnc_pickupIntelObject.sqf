@@ -43,7 +43,7 @@ _unit addMagazine _magClassname;
 private _after = [_unit, _magClassname] call CBA_fnc_getMagazineIndex;
 
 private _new = _after - _before;
-if ((count _new) != 1) exitWith {ACE_LOGERROR_2("MAG NOT ADDED - Before[%1] After[%2]",_before,_after);};
+if ((count _new) != 1) exitWith {ERROR_2("MAG NOT ADDED - Before[%1] After[%2]",_before,_after);};
 private _newMagID = _new select 0;
 
 

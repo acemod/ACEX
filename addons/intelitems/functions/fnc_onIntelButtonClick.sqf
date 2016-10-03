@@ -23,7 +23,7 @@ if (dialog) exitWith {TRACE_1("dialog open",dialog);};
 
 private _intelIndex = _ctrl getVariable [QGVAR(intelIndex), -1];
 TRACE_1("",_intelIndex);
-if (_intelIndex < 0) exitWith {ACE_LOGERROR_1("Bad data on ctrl",_intelIndex);};
+if (_intelIndex < 0) exitWith {ERROR_1("Bad data on ctrl",_intelIndex);};
 
 private _justToggle = false;
 //If we just hit the bottom buttons, just toggle off if already displayed:
@@ -31,14 +31,15 @@ if (!_force) then {
     GVAR(mapDisplays) = GVAR(mapDisplays) select {
         _x params ["_localData", "_mapCtrl"];
         _localData params ["_xIntelIndex"];
-        if (_xIntelIndex == _intelIndex) then {
+
+        if (_xIntelIndex == _intelIndex) exitWith {
             _justToggle = true;
+
             TRACE_2("closing display, dialog open",_xIntelIndex,_mapCtrl);
             ctrlDelete _mapCtrl;
             false
-        } else {
-            true
         };
+        true
     };
 };
 if (_justToggle) exitWith {};

@@ -25,10 +25,10 @@ GVAR(intelCount) = GVAR(intelCount) + 1;
 if (_data == "") then {
     switch (_type) do {
     case (TYPE_DOCUMENT): {
-            ACE_LOGWARNING_3("[index %1] Trying to create DOCUMENT [type %2] with empty string [data %3]",_intelIndex,_type,_data);
+            WARNING_3("[index %1] Trying to create DOCUMENT [type %2] with empty string [data %3]",_intelIndex,_type,_data);
         };
     case (TYPE_PHOTO): {
-            ACE_LOGWARNING_3("[index %1] Trying to create PHOTO [type %2] with empty string [data %3]",_intelIndex,_type,_data);
+            WARNING_3("[index %1] Trying to create PHOTO [type %2] with empty string [data %3]",_intelIndex,_type,_data);
             _data = "z\ace\addons\common\data\icon_banana_ca.paa"; //Dummy photo, so client won't get file missing error
         };
     };

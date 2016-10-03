@@ -70,9 +70,9 @@ private _width = [_ctrlGroup, _intelIndex, true, _controlGroupPosX, _controlGrou
 private _pos = [_controlGroupPosX, _controlGroupPosY - 16 * pixelH, _width, 17 * pixelH];
 (_display displayCtrl IDC_TOPBAR) ctrlSetPosition _pos;
 switch ((missionNamespace getVariable (format [QGVAR(intel_%1), _intelIndex])) select 0) do {
-case (TYPE_DOCUMENT): {(_display displayCtrl IDC_TOPBAR) ctrlSetText localize LSTRING(Document_displayName)};
-case (TYPE_PHOTO): {(_display displayCtrl IDC_TOPBAR) ctrlSetText localize LSTRING(Photo_displayName)};
-case (TYPE_NOTEPAD): {(_display displayCtrl IDC_TOPBAR) ctrlSetText localize LSTRING(Notepad_displayName)};
+    case (TYPE_DOCUMENT): {(_display displayCtrl IDC_TOPBAR) ctrlSetText localize LSTRING(Document_displayName)};
+    case (TYPE_PHOTO): {(_display displayCtrl IDC_TOPBAR) ctrlSetText localize LSTRING(Photo_displayName)};
+    case (TYPE_NOTEPAD): {(_display displayCtrl IDC_TOPBAR) ctrlSetText localize LSTRING(Notepad_displayName)};
 };
 (_display displayCtrl IDC_TOPBAR) ctrlSetFontHeight (17 * pixelH);
 (_display displayCtrl IDC_TOPBAR) ctrlCommit 0;

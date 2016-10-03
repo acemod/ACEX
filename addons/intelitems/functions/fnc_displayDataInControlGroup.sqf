@@ -25,7 +25,7 @@ params ["_ctrlGroup", "_intelIndex", "_isDialog", "_cgPosX", "_cgPosY"];
 TRACE_5("params",_ctrlGroup,_intelIndex,_isDialog,_cgPosX,_cgPosY);
 
 private _intel = missionNamespace getVariable (format [QGVAR(intel_%1), _intelIndex]);
-if (isNil "_intel") exitWith {ACE_LOGERROR_1("Bad data on intel index [%1]",_intelIndex);};
+if (isNil "_intel") exitWith {ERROR_1("Bad data on intel index [%1]",_intelIndex);};
 _intel params ["_type", "_data"];
 TRACE_3("intel",_intelIndex,_type,_data);
 
