@@ -12,7 +12,7 @@
 #define VERSION_AR MAJOR,MINOR,PATCHLVL,BUILD
 
 // MINIMAL required version for the Mod. Components can specify others..
-#define REQUIRED_VERSION 1.60
+#define REQUIRED_VERSION 1.64
 #define REQUIRED_ACE_VERSION {3,6,0}
 
 #ifdef COMPONENT_BEAUTIFIED
