@@ -24,6 +24,9 @@ class CfgVehicles {
             description = CSTRING(ModuleDescription);
         };
     };
+    class ACE_ModuleSitting: ACEX_ModuleSitting {
+        scope = 1; // hiden, backwards compatability
+    };
 
     class Man;
     class CAManBase: Man {
