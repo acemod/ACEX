@@ -65,7 +65,7 @@ private _numTransferredHC3 = 0;
 // Transfer AI groups
 {
     // No transfer if empty group
-    private _transfer = !(_x isEqualTo []) && {!(_x getVariable [QGVAR(blacklist), false])};
+    private _transfer = !(units _x isEqualTo []) && {!(_x getVariable [QGVAR(blacklist), false])};
     if (_transfer) then {
         {
             // No transfer if already transferred
