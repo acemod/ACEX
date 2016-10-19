@@ -12,6 +12,7 @@ class CfgPatches {
         url = ACECSTRING(main,URL);
         VERSION_CONFIG;
     };
+
     // backwards compatability
     class ACE_common;
     class ACE_Sitting: ACE_common {
