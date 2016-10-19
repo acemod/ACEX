@@ -12,19 +12,6 @@ class CfgPatches {
         url = ACECSTRING(main,URL);
         VERSION_CONFIG;
     };
-
-    // backwards compatability
-    class ACE_Sitting {
-        name = COMPONENT_NAME;
-        units[] = {};
-        weapons[] = {};
-        requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"acex_main", "ace_interaction"};
-        author = ACECSTRING(common,ACETeam);
-        authors[] = {"Jonpas"};
-        url = ACECSTRING(main,URL);
-        VERSION_CONFIG;
-    };
 };
 
 #include "ACE_Settings.hpp"
