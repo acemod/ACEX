@@ -16,6 +16,7 @@ class CfgPatches {
     // backwards compatability
     class ACE_Sitting {
         name = COMPONENT_NAME;
+        ACE_isOptional = 1; // skip checkFiles
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
