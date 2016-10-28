@@ -36,5 +36,15 @@
             <German>Zeichnet Transferstatistiken, Verbindungen und Verbindungsabbrüche in einer RPT-Datei auf. (Standard: Nein)</German>
             <Polish>Zapisz statystyki transferu i status połączenia Headless Clienta do RPT. (Domyślnie: Tak)</Polish>
         </Key>
+        <Key ID="STR_ACEX_Headless_BlacklistEden">
+            <English>Headless Blacklist</English>
+            <German>Headless Blacklist</German>
+            <Polish>Headless Blacklist</Polish>
+        </Key>
+        <Key ID="STR_ACEX_Headless_BlacklistEdenDesc">
+            <English>If blacklisted this group will not be transfered to headless clients.</English>
+            <German>If blacklisted this group will not be transfered to headless clients.</German>
+            <Polish>If blacklisted this group will not be transfered to headless clients.</Polish>
+        </Key>
     </Package>
 </Project>

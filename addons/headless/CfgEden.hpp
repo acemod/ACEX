@@ -4,8 +4,8 @@ class Cfg3DEN {
             class ace_attributes {
                 class Attributes {
                     class GVAR(blacklist) {
-                        displayName = "Headless Blacklist";
-                        tooltip = "If blacklisted this vehicle will not be transfered to headless clients.";
+                        displayName = CSTRING(BlacklistEden);
+                        tooltip = CSTRING(BlacklistEdenDesc);
                         property = QGVAR(blacklist);
                         control = "Checkbox";
                         condition = "objectVehicle";
@@ -21,8 +21,8 @@ class Cfg3DEN {
             class ace_attributes {
                 class Attributes {
                     class GVAR(blacklist) {
-                        displayName = "Headless Blacklist";
-                        tooltip = "If blacklisted this group will not be transfered to headless clients.";
+                        displayName = CSTRING(BlacklistEden);
+                        tooltip = CSTRING(BlacklistEdenDesc);
                         property = QGVAR(blacklist);
                         control = "Checkbox";
                         expression = QUOTE(_this setVariable [ARR_3(QQGVAR(blacklist), _value, true)]);
