@@ -1,4 +1,5 @@
 #define COMPONENT quickmount
+#define COMPONENT_BEAUTIFIED QuickMount
 #include "\z\acex\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
