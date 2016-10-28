@@ -29,11 +29,15 @@ private _end = (_start vectorAdd (getCameraViewDirection ACE_player vectorMultip
 private _objects = lineIntersectsSurfaces [_start, _end, ACE_player];
 private _target = (_objects param [0, []]) param [2, objNull];
 
+if (locked _target in [2,3]) exitWith {
+    [localize LSTRING(VehicleLocked)] call ACEFUNC(common,displayTextStructured);
+    true
+};
+
 if (
     !isNull _target &&
     {alive _target} &&
     {{_target isKindOf _x} count ["Air","LandVehicle","Ship","StaticMortar"] > 0} &&
-    {locked _target in [0, 1]} &&
     {([ACE_player, _target] call ACEFUNC(common,canInteractWith))}
 ) then {
     private _hasAction = false;

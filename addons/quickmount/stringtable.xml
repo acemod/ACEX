@@ -21,5 +21,8 @@
         <Key ID="STR_ACEX_QuickMount_DistanceDescription">
             <English>Maximum distance to check for vehicles.</English>
         </Key>
+        <Key ID="STR_ACEX_QuickMount_VehicleLocked">
+            <English>Vehicle Locked</English>
+        </Key>
     </Package>
 </Project>
