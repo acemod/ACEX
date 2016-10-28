@@ -2,7 +2,7 @@
 
 if (!hasInterface) exitWith {};
 
-[QUOTE(ACEX_TAG), QGVAR(actionID), [localize LSTRING(KeybindName), localize LSTRING(KeybindDescription)], "", {
+["ACEX", QGVAR(actionID), [localize LSTRING(KeybindName), localize LSTRING(KeybindDescription)], "", {
     if (!dialog) then {
         [] call FUNC(getInNearest);
     };

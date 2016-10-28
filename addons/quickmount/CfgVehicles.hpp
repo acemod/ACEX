@@ -3,7 +3,7 @@ class CfgVehicles {
     
     class GVAR(module): ACE_Module {
         author = ACECSTRING(common,ACETeam);
-        category = QUOTE(ACEX_TAG);
+        category = "ACEX";
         displayName = CSTRING(Category);
         function = QFUNC(moduleInit);
         scope = 2;
