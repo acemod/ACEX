@@ -40,7 +40,7 @@
             <English>Headless Blacklist</English>
         </Key>
         <Key ID="STR_ACEX_Headless_BlacklistEdenDesc">
-            <English>If blacklisted this group will not be transfered to headless clients.</English>
+            <English>Disables transferring of this AI unit/group to Headless Clients. No effect on player units.</English>
         </Key>
     </Package>
 </Project>
