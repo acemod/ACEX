@@ -8,7 +8,7 @@ class Cfg3DEN {
                         tooltip = CSTRING(BlacklistEdenDesc);
                         property = QGVAR(blacklist);
                         control = "Checkbox";
-                        condition = "objectVehicle";
+                        condition = "objectControllable";
                         expression = QUOTE(_this setVariable [ARR_3(QQGVAR(blacklist), _value, true)]);
                         defaultValue = 0;
                     };
