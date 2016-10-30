@@ -39,7 +39,7 @@ if (
     {alive _target} &&
     {{_target isKindOf _x} count ["Air","LandVehicle","Ship","StaticMortar"] > 0} &&
     {([ACE_player, _target] call ACEFUNC(common,canInteractWith))} &&
-    {speed _target < GVAR(speed)}
+    {speed _target <= GVAR(speed)}
 ) then {
     private _hasAction = false;
 
