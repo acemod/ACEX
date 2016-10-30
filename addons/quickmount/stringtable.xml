@@ -24,5 +24,11 @@
         <Key ID="STR_ACEX_QuickMount_VehicleLocked">
             <English>Vehicle Locked</English>
         </Key>
+        <Key ID="STR_ACEX_QuickMount_Speed">
+            <English>Maximum Speed (km/h)</English>
+        </Key>
+        <Key ID="STR_ACEX_QuickMount_SpeedDescription">
+            <English>Maximum vehicle speed (km/h) allowed for player entry</English>
+        </Key>
     </Package>
 </Project>

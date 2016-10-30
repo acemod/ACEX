@@ -18,3 +18,4 @@
 #include "\z\acex\addons\main\script_macros.hpp"
 
 #define DEFAULT_DISTANCE 3
+#define DEFAULT_SPEED 18

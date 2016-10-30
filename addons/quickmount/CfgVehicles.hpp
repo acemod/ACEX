@@ -24,6 +24,12 @@ class CfgVehicles {
                 typeName = "NUMBER";
                 defaultValue = DEFAULT_DISTANCE;
             };
+            class Speed {
+                displayName = CSTRING(Speed);
+                description = CSTRING(SpeedDescription);
+                typeName = "NUMBER";
+                defaultValue = DEFAULT_SPEED;
+            };
         };
         class ModuleDescription {
             description = CSTRING(KeybindDescription);
