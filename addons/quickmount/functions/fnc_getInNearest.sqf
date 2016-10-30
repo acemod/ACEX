@@ -38,11 +38,19 @@ if (
     !isNull _target &&
     {alive _target} &&
     {{_target isKindOf _x} count ["Air","LandVehicle","Ship","StaticMortar"] > 0} &&
-    {([ACE_player, _target] call ACEFUNC(common,canInteractWith))}
     {([ACE_player, _target] call ACEFUNC(common,canInteractWith))} &&
     {speed _target < GVAR(speed)}
 ) then {
     private _hasAction = false;
+
+    if (GVAR(priority) > 3 || GVAR(priority) < 0) then {
+        GVAR(priority) = 0;
+    };
+
+    private _seats = ["Driver", "Gunner", "Commander", "Cargo"];
+    private _sortedSeats = [(_seats select GVAR(priority))];
+    _seats deleteAt GVAR(priority);
+    _sortedSeats append _seats;
 
     {
         private _unit = _target call compile format ["assigned%1 _this", _x];
@@ -56,7 +64,7 @@ if (
 
         if (_target emptyPositions _x > 0) exitWith {
             if (!_hasAction) then {
-                if (_forEachIndex == 3) then {
+                if (_x == "Cargo") then {
                     private _crew = fullCrew [_target, "turret", true];
                     private _turretSeat = (_crew select {isNull (_x select 0)}) param [0, []];
                     
@@ -78,7 +86,7 @@ if (
         if (_forEachIndex == 3) then {
             [localize LSTRING(VehicleFull)] call ACEFUNC(common,displayTextStructured);
         };
-    } forEach ["Driver", "Gunner", "Commander", "Cargo"];
+    } forEach _sortedSeats;
 };
 
 true

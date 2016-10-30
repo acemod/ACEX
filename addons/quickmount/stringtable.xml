@@ -30,5 +30,11 @@
         <Key ID="STR_ACEX_QuickMount_SpeedDescription">
             <English>Maximum vehicle speed (km/h) allowed for player entry</English>
         </Key>
+        <Key ID="STR_ACEX_QuickMount_Priority">
+            <English>Prioritize Seat</English>
+        </Key>
+        <Key ID="STR_ACEX_QuickMount_PriorityDescription">
+            <English>Seat priority on entry</English>
+        </Key>
     </Package>
 </Project>
