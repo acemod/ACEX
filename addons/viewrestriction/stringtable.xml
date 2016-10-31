@@ -28,13 +28,13 @@
             <English>(Selective) Foot</English>
             <Polish>(Tryb selektywny) Piechota</Polish>
             <German>(Selektiv) zu Fuß</German>
-            <Hungarian>(Szelektív) Láb</Hungarian>
+            <Hungarian>(Szelektív) Gyalogos</Hungarian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveFootDesc">
             <English>Selective mode on Foot. Default: Disabled (Requires Mode: Selective)</English>
             <Polish>Tryb selektywny piechoty. Domyślnie: Wyłączony (Wymagany tryb globalny: Selektywny)</Polish>
             <German>Selektiver Modus zu Fuß. (Standard: Deaktiviert, Benötigt Modus: Selektiv)</German>
-            <Hungarian>Szelektív mód a Lábon. Alapértelmezett: Kikapcsolva (Mód: Szelektív szükséges)</Hungarian>
+            <Hungarian>Szelektív mód Gyalogosan. Alapértelmezett: Kikapcsolva (Mód: Szelektív szükséges)</Hungarian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveLand">
             <English>(Selective) Land Vehicles</English>
