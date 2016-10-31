@@ -5,6 +5,7 @@
             <English>View Restriction</English>
             <Polish>Ograniczenie widoczności</Polish>
             <German>Sichteinschränkungen</German>
+            <Hungarian>Korlátozások</Hungarian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModuleDescription">
             <English>View restriction settings to limit the usage of 1st of 3rd person views globally or per vehicle type.</English>
@@ -15,66 +16,79 @@
             <English>Mode</English>
             <Polish>Tryb</Polish>
             <German>Modus</German>
+            <Hungarian>Mód</Hungarian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeDesc">
             <English>Sets global mode. Default: Disabled</English>
             <Polish>Zmienia tryb globalny. (Domyślnie: Wyłączony)</Polish>
             <German>Globaler Modus. (Standard: Deaktiviert)</German>
+            <Hungarian>Globális mód beállítása. Alapértelmeyett: Kikapcsolva</Hungarian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveFoot">
             <English>(Selective) Foot</English>
             <Polish>(Tryb selektywny) Piechota</Polish>
             <German>(Selektiv) zu Fuß</German>
+            <Hungarian>(Szelektív) Láb</Hungarian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveFootDesc">
             <English>Selective mode on Foot. Default: Disabled (Requires Mode: Selective)</English>
             <Polish>Tryb selektywny piechoty. Domyślnie: Wyłączony (Wymagany tryb globalny: Selektywny)</Polish>
             <German>Selektiver Modus zu Fuß. (Standard: Deaktiviert, Benötigt Modus: Selektiv)</German>
+            <Hungarian>Szelektív mód a Lábon. Alapértelmezett: Kikapcsolva (Mód: Szelektív szükséges)</Hungarian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveLand">
             <English>(Selective) Land Vehicles</English>
             <Polish>(Tryb selektywny) Pojazdy</Polish>
             <German>(Selektiv) Landfahrzeuge</German>
+            <Hungarian>(Szelektív) Szárazföldi Járművek</Hungarian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveLandDesc">
             <English>Selective mode in Land Vehicles. Default: Disabled (Requires Mode: Selective)</English>
             <Polish>Tryb selektywny pojazdów. Domyślnie: Wyłączony (Wymagany tryb globalny: Selektywny)</Polish>
             <German>Selektiver Modus in Landfahrzeugen. (Standard: Deaktiviert, Benötigt Modus: Selektiv)</German>
+            <Hungarian>Szelektív mód a Szárazföldi Járművekben. Alapértelmezett: Kikapcsolva (Mód: Szelektív szükséges)</Hungarian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveAir">
             <English>(Selective) Air Vehicles</English>
             <Polish> (Tryb selektywny) Lotnictwo</Polish>
             <German>(Selektiv) Luftfahrzeuge</German>
+            <Hungarian>(Szelektív) Légijárművek</Hungarian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveAirDesc">
             <English>Selective mode in Air Vehicles. Default: Disabled (Requires Mode: Selective)</English>
             <Polish>Tryb selektywny lotnictwa. Domyślnie: Wyłączony (Wymagany tryb globalny: Selektywny)</Polish>
             <German>Selektiver Modus in Luftfahrzeugen. (Standard: Deaktiviert, Benötigt Modus: Selektiv)</German>
+            <Hungarian>Szelektív mód a Légijárművekben. Alapértelmezett: Kikapcsolva (Mód: Szelektív szükséges)</Hungarian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveSea">
             <English>(Selective) Sea Vehicles</English>
             <Polish>(Tryb selektywny) Jednostki pływające</Polish>
             <German>(Selektiv) Wasserfahrzeuge</German>
+            <Hungarian>(Szelektív) Vízi Járművek</Hungarian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveSeaDesc">
             <English>Selective mode in Sea Vehicles. Default: Disabled (Requires Mode: Selective)</English>
             <Polish>Tryb selektywny jednostek pływających. Domyślnie: Wyłączony (Wymagany tryb globalny: Selektywny)</Polish>
             <German>Selektiver Modus zu Fuß. (Standard: Deaktiviert, Benötigt Modus: Selektiv)</German>
+            <Hungarian>Szelektív mód a Vízi Járművekben. Alapértelmezett: Kikapcsolva (Mód: Szelektív szükséges)</Hungarian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveUAV">
             <English>(Selective) UAVs</English>
             <Polish> (Tryb selektywny) UAV</Polish>
             <German>(Selektiv) Unbemannte Luftfahrzeuge</German>
+            <Hungarian>(Szelektív) Pilóta Nélüli Légijárművek</Hungarian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveUAVDesc">
             <English>Selective mode in UAVs. Default: Disabled (Requires Mode: Selective)</English>
             <Polish>Tryb selektywny UAV. Domyślnie: Wyłączony (Wymagany tryb globalny: Selektywny)</Polish>
             <German>Selektiver Modus in unbemannten Luftfahrzeugen. (Standard: Deaktiviert, Benötigt Modus: Selektiv</German>
+            <Hungarian>Szelektív mód a Pilóta Nélküli Légijárművekben. Alapértelmezett: Kikapcsolva (Mód: Szelektív szükséges)</Hungarian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_Disabled">
             <English>Disabled</English>
             <Polish>Wyłączony</Polish>
             <German>Deaktiviert</German>
+            <Hungarian>Kikapcsolva</Hungarian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_FirstPerson">
             <English>Forced 1st Person</English>
@@ -90,6 +104,7 @@
             <English>Selective</English>
             <Polish>Selektywny</Polish>
             <German>Selektiv</German>
+            <Hungarian>Szelektív</Hungarian>
         </Key>
     </Package>
 </Project>
