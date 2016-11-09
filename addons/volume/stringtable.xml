@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACEX">
+    <Package name="Volume">
+        <Key ID="STR_ACEX_Volume_Name">
+            <English>Volume</English>
+        </Key>
+        <Key ID="STR_ACEX_Volume_KeybindName">
+            <English>Toggle Volume</English>
+        </Key>
+        <Key ID="STR_ACEX_Volume_KeybindDescription">
+            <English>Toggle volume reduction</English>
+        </Key>
+        <Key ID="STR_ACEX_Volume_Lowered">
+            <English>Lowered volume</English>
+        </Key>
+        <Key ID="STR_ACEX_Volume_Restored">
+            <English>Restored volume</English>
+        </Key>
+        <Key ID="STR_ACEX_Volume_Reduction">
+            <English>Reduction</English>
+        </Key>
+        <Key ID="STR_ACEX_Volume_ReductionDescription">
+            <English>Reduce volume by this percentage</English>
+        </Key>
+    </Package>
+</Project>
