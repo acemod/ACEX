@@ -22,6 +22,12 @@
         <Key ID="STR_ACEX_Volume_ReductionDescription">
             <English>Reduce volume by this percentage</English>
         </Key>
+        <Key ID="STR_ACEX_Volume_LowerInVehicles">
+            <English>Lower in vehicles</English>
+        </Key>
+        <Key ID="STR_ACEX_Volume_LowerInVehiclesDescription">
+            <English>Automatically lower volume when inside vehicles</English>
+        </Key>
         <Key ID="STR_ACEX_Volume_FadeDelay">
             <English>Fade delay</English>
         </Key>

@@ -28,4 +28,13 @@ class ACE_Settings {
         force = 0;
         values[] = {"0s", "1s", "2s", "3s", "4s", "5s", "6s", "7s", "8s", "9s", "10s"};
     };
+    class GVAR(lowerInVehicles) {
+        value = 0;
+        typeName = "BOOL";
+        category = CSTRING(Name);
+        displayName = CSTRING(LowerInVehicles);
+        description = CSTRING(LowerInVehiclesDescription);
+        isClientSettable = 1;
+        force = 0;
+    };
 };
