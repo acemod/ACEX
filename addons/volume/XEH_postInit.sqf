@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+if (!hasInterface) exitWith {};
+
 ["ACEX", QGVAR(actionID), [localize LSTRING(KeybindName), localize LSTRING(KeybindDescription)], "", {
     if (!GVAR(enabled)) exitWith {
         if (GVAR(isLowered)) then {
@@ -27,3 +29,8 @@
         [] call FUNC(restoreVolume);
     };
 }] call CBA_fnc_addPlayerEventHandler;
+
+[{
+    if (!GVAR(remindIfLowered) || {!GVAR(isLowered)}) exitWith {};
+    [localize LSTRING(LoweredReminder)] call ACEFUNC(common,displayTextStructured);
+}, 60] call CBA_fnc_addPerFrameHandler;

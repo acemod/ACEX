@@ -40,5 +40,14 @@
         <Key ID="STR_ACEX_Volume_FadeDelayDescription">
             <English>Time it takes (in seconds) for the sound to fade in/out</English>
         </Key>
+        <Key ID="STR_ACEX_Volume_RemindIfLowered">
+            <English>Reminder if lowered</English>
+        </Key>
+        <Key ID="STR_ACEX_Volume_RemindIfLoweredDescription">
+            <English>Reminds you every minute if your volume is lowered</English>
+        </Key>
+        <Key ID="STR_ACEX_Volume_LoweredReminder">
+            <English>Volume still lowered</English>
+        </Key>
     </Package>
 </Project>

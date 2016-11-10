@@ -46,4 +46,13 @@ class ACE_Settings {
         isClientSettable = 1;
         force = 0;
     };
+    class GVAR(remindIfLowered) {
+        value = 0;
+        typeName = "BOOL";
+        category = CSTRING(Name);
+        displayName = CSTRING(RemindIfLowered);
+        description = CSTRING(RemindIfLoweredDescription);
+        isClientSettable = 1;
+        force = 0;
+    };
 };
