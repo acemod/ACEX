@@ -27,4 +27,6 @@ GVAR(fadeDelay) fadeMusic (GVAR(initialMusicVolume) - _reductionGame);
 
 GVAR(isLowered) = true;
 
-[localize LSTRING(Lowered)] call ACEFUNC(common,displayTextStructured);
+if (GVAR(showNotification)) then {
+    [localize LSTRING(Lowered)] call ACEFUNC(common,displayTextStructured);
+};

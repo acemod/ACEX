@@ -37,4 +37,13 @@ class ACE_Settings {
         isClientSettable = 1;
         force = 0;
     };
+    class GVAR(showNotification) {
+        value = 1;
+        typeName = "BOOL";
+        category = CSTRING(Name);
+        displayName = CSTRING(ShowNotification);
+        description = CSTRING(ShowNotificationDescription);
+        isClientSettable = 1;
+        force = 0;
+    };
 };

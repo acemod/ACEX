@@ -28,6 +28,12 @@
         <Key ID="STR_ACEX_Volume_LowerInVehiclesDescription">
             <English>Automatically lower volume when inside vehicles</English>
         </Key>
+        <Key ID="STR_ACEX_Volume_ShowNotification">
+            <English>Show notification</English>
+        </Key>
+        <Key ID="STR_ACEX_Volume_ShowNotificationDescription">
+            <English>Show notification when lowering/restoring volume</English>
+        </Key>
         <Key ID="STR_ACEX_Volume_FadeDelay">
             <English>Fade delay</English>
         </Key>
