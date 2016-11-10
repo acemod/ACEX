@@ -22,5 +22,11 @@
         <Key ID="STR_ACEX_Volume_ReductionDescription">
             <English>Reduce volume by this percentage</English>
         </Key>
+        <Key ID="STR_ACEX_Volume_FadeDelay">
+            <English>Fade delay</English>
+        </Key>
+        <Key ID="STR_ACEX_Volume_FadeDelayDescription">
+            <English>Time it takes (in seconds) for the sound to fade in/out</English>
+        </Key>
     </Package>
 </Project>
