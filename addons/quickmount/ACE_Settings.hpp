@@ -14,7 +14,7 @@ class ACE_Settings {
         category = CSTRING(Category);
         displayName = CSTRING(Distance);
         description = CSTRING(DistanceDescription);
-        isClientSettable = 1;
+        isClientSettable = 0;
         force = 0;
         values[] = {"0m", "1m", "2m", "3m", "4m", "5m", "6m", "7m", "8m", "9m", "10m"};
     };
@@ -24,7 +24,7 @@ class ACE_Settings {
         category = CSTRING(Category);
         displayName = CSTRING(Speed);
         description = CSTRING(SpeedDescription);
-        isClientSettable = 1;
+        isClientSettable = 0;
         force = 0;
         values[] = {"0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"};
     };
