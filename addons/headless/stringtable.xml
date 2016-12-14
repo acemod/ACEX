@@ -5,48 +5,59 @@
             <English>Headless</English>
             <German>Headless</German>
             <Polish>Headless</Polish>
+            <Japanese>ヘッドレス</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_ModuleDesc">
             <English>This module allows you to setup automatic transferring of AI to Headless Clients. (Default: No)</English>
             <German>Dieses Modul erlaubt es dir, die KI automatisch auf einen Headless Client zu transferieren. (Standard: Nein) </German>
             <Polish>Ten moduł zezwala na automatyczny transfer AI do Headless Cient. (Domyślnie: Nie)</Polish>
+            <Japanese>モジュールは AI を自動的にヘッドレス クライアントへ移行します。(標準：無効)</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_EnabledDesc">
             <English>Enables transferring of AI to Headless Clients.</English>
             <German>Aktiviert denTransfer der KI auf Headless Clients.</German>
             <Polish>Włącza transfer AI do Headless Client.</Polish>
+            <Japanese>AI をヘッドレス クライアントへ移行を有効化</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_Delay">
             <English>Delay</English>
             <German>Verzögerung</German>
             <Polish>Opóźnienie</Polish>
+            <Japanese>遅延</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_DelayDesc">
             <English>Minimal delay between transfers, in seconds. (Default: 15)</English>
             <German>Minimale Verzögerung zwischen Transfers in Sekunden. (Standard: 15)</German>
             <Polish>Minimalny odstęp pomiędzy transferami w sekundach. (Domyślnie: 15)</Polish>
+            <Japanese>移行する際の最低遅延を秒数で設定します。(標準：15)</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_EndMission">
             <English>End Mission</English>
+            <Japanese>ミッション終了</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_EndMissionDesc">
             <English>End mission when there are no players connected (same as 'persistent = 0' in server configuration but with Headless Client support).</English>
+            <Japanese>ミッションの終了はプレイヤーが接続していない場合に適用。(サーバ設定で'presistent =0'が設定されていても、ヘッドレス クライアントは適用される)</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_Instant">
             <English>Instant</English>
+            <Japanese>即座</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_Delayed">
             <English>Delayed (60s)</English>
+            <Japanese>遅延 (60秒)</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_Log">
             <English>Log</English>
             <German>Protokolldatei anlegen</German>
             <Polish>Dziennik zdarzeń</Polish>
+            <Japanese>ログ</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_LogDesc">
             <English>Log transfer statistics and Headless Client (dis)connections to RPT. (Default: No)</English>
             <German>Zeichnet Transferstatistiken, Verbindungen und Verbindungsabbrüche in einer RPT-Datei auf. (Standard: Nein)</German>
             <Polish>Zapisz statystyki transferu i status połączenia Headless Clienta do RPT. (Domyślnie: Tak)</Polish>
+            <Japanese>統計とヘッドレス クライアントの接続有無を PRT へ記録します。(標準：無効)</Japanese>
         </Key>
     </Package>
 </Project>
