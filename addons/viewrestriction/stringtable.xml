@@ -6,105 +6,123 @@
             <Polish>Ograniczenie widoczności</Polish>
             <German>Sichteinschränkungen</German>
             <Hungarian>Korlátozások</Hungarian>
+            <Japanese>視点制限</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModuleDescription">
             <English>View restriction settings to limit the usage of 1st of 3rd person views globally or per vehicle type.</English>
             <Polish>Ograniczenie widoczności ze względu na użycie 1. lub 3. os. globalnie, lub z uwzględnieniem typu pojazdu.</Polish>
             <German>Einstellungen um Egoperspektive und Third-Person-Perspektive global oder pro Fahrzeugtyp zu limitieren.</German>
+            <Japanese>全体や車両ごとで使える視点を1人称か3人称視点のどちらかに制限します。</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_Mode">
             <English>Mode</English>
             <Polish>Tryb</Polish>
             <German>Modus</German>
             <Hungarian>Mód</Hungarian>
+            <Japanese>モード</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeDesc">
             <English>Sets global mode. Default: Disabled</English>
             <Polish>Zmienia tryb globalny. (Domyślnie: Wyłączony)</Polish>
             <German>Globaler Modus. (Standard: Deaktiviert)</German>
             <Hungarian>Globális mód beállítása. Alapértelmeyett: Kikapcsolva</Hungarian>
+            <Japanese>グローバル モードの設定。標準：無効</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveFoot">
             <English>(Selective) Foot</English>
             <Polish>(Tryb selektywny) Piechota</Polish>
             <German>(Selektiv) zu Fuß</German>
             <Hungarian>(Szelektív) Gyalogos</Hungarian>
+            <Japanese>(選択性) 地上</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveFootDesc">
             <English>Selective mode on Foot. Default: Disabled (Requires Mode: Selective)</English>
             <Polish>Tryb selektywny piechoty. Domyślnie: Wyłączony (Wymagany tryb globalny: Selektywny)</Polish>
             <German>Selektiver Modus zu Fuß. (Standard: Deaktiviert, Benötigt Modus: Selektiv)</German>
             <Hungarian>Szelektív mód Gyalogosan. Alapértelmezett: Kikapcsolva (Mód: Szelektív szükséges)</Hungarian>
+            <Japanese>地上でのモードを選択します。(標準：無効化 (要求モード：選択性)</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveLand">
             <English>(Selective) Land Vehicles</English>
             <Polish>(Tryb selektywny) Pojazdy</Polish>
             <German>(Selektiv) Landfahrzeuge</German>
             <Hungarian>(Szelektív) Szárazföldi Járművek</Hungarian>
+            <Japanese>(選択性) 地上車両</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveLandDesc">
             <English>Selective mode in Land Vehicles. Default: Disabled (Requires Mode: Selective)</English>
             <Polish>Tryb selektywny pojazdów. Domyślnie: Wyłączony (Wymagany tryb globalny: Selektywny)</Polish>
             <German>Selektiver Modus in Landfahrzeugen. (Standard: Deaktiviert, Benötigt Modus: Selektiv)</German>
             <Hungarian>Szelektív mód a Szárazföldi Járművekben. Alapértelmezett: Kikapcsolva (Mód: Szelektív szükséges)</Hungarian>
+            <Japanese>地上車両でのモードを選択します。(標準：無効化 (要求モード：選択性)</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveAir">
             <English>(Selective) Air Vehicles</English>
             <Polish> (Tryb selektywny) Lotnictwo</Polish>
             <German>(Selektiv) Luftfahrzeuge</German>
             <Hungarian>(Szelektív) Légijárművek</Hungarian>
+            <Japanese>(選択性) 航空機</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveAirDesc">
             <English>Selective mode in Air Vehicles. Default: Disabled (Requires Mode: Selective)</English>
             <Polish>Tryb selektywny lotnictwa. Domyślnie: Wyłączony (Wymagany tryb globalny: Selektywny)</Polish>
             <German>Selektiver Modus in Luftfahrzeugen. (Standard: Deaktiviert, Benötigt Modus: Selektiv)</German>
             <Hungarian>Szelektív mód a Légijárművekben. Alapértelmezett: Kikapcsolva (Mód: Szelektív szükséges)</Hungarian>
+            <Japanese>航空機でのモードを選択します。(標準：無効化 (要求モード：選択性)</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveSea">
             <English>(Selective) Sea Vehicles</English>
             <Polish>(Tryb selektywny) Jednostki pływające</Polish>
             <German>(Selektiv) Wasserfahrzeuge</German>
             <Hungarian>(Szelektív) Vízi Járművek</Hungarian>
+            <Japanese>(選択性) 船舶</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveSeaDesc">
             <English>Selective mode in Sea Vehicles. Default: Disabled (Requires Mode: Selective)</English>
             <Polish>Tryb selektywny jednostek pływających. Domyślnie: Wyłączony (Wymagany tryb globalny: Selektywny)</Polish>
             <German>Selektiver Modus zu Fuß. (Standard: Deaktiviert, Benötigt Modus: Selektiv)</German>
             <Hungarian>Szelektív mód a Vízi Járművekben. Alapértelmezett: Kikapcsolva (Mód: Szelektív szükséges)</Hungarian>
+            <Japanese>船舶でのモードを選択します。(標準：無効化 (要求モード：選択性)</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveUAV">
             <English>(Selective) UAVs</English>
             <Polish> (Tryb selektywny) UAV</Polish>
             <German>(Selektiv) Unbemannte Luftfahrzeuge</German>
             <Hungarian>(Szelektív) Pilóta Nélüli Légijárművek</Hungarian>
+            <Japanese>(選択性) 無人機</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveUAVDesc">
             <English>Selective mode in UAVs. Default: Disabled (Requires Mode: Selective)</English>
             <Polish>Tryb selektywny UAV. Domyślnie: Wyłączony (Wymagany tryb globalny: Selektywny)</Polish>
             <German>Selektiver Modus in unbemannten Luftfahrzeugen. (Standard: Deaktiviert, Benötigt Modus: Selektiv</German>
             <Hungarian>Szelektív mód a Pilóta Nélküli Légijárművekben. Alapértelmezett: Kikapcsolva (Mód: Szelektív szükséges)</Hungarian>
+            <Japanese>無人機でのモードを選択します。(標準：無効化 (要求モード：選択性)</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_Disabled">
             <English>Disabled</English>
             <Polish>Wyłączony</Polish>
             <German>Deaktiviert</German>
             <Hungarian>Kikapcsolva</Hungarian>
+            <Japanese>無効</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_FirstPerson">
             <English>Forced 1st Person</English>
             <Polish>Wymuś 1. osobę</Polish>
             <German>Erzwungene Egoperspektive</German>
+            <Japanese>1人称視点に強制</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ThirdPerson">
             <English>Forced 3rd Person</English>
             <Polish>Wymuś 3. osobę</Polish>
             <German>Erzwungene Third-Person-Perspektive</German>
+            <Japanese>3人称視点に強制</Japanese>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_Selective">
             <English>Selective</English>
             <Polish>Selektywny</Polish>
             <German>Selektiv</German>
             <Hungarian>Szelektív</Hungarian>
+            <Japanese>選択性</Japanese>
         </Key>
     </Package>
 </Project>
