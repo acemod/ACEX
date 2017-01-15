@@ -6,7 +6,7 @@ if (hasInterface && !isServer) exitWith {};
 ["ace_settingsInitialized", {
     if (isServer) then {
         // Add disconnect EH if end mission is enabled
-        if (GVAR(endMission)) then {
+        if (GVAR(EndMission) != 0) then {
             addMissionEventHandler ["HandleDisconnect", {_this call FUNC(handleDisconnect)}];
         };
     } else {
