@@ -23,7 +23,7 @@ private _reductionGame = _coef * GVAR(initialGameVolume);
 private _reductionMusic = _coef * GVAR(initialMusicVolume);
 
 GVAR(fadeDelay) fadeSound (GVAR(initialGameVolume) - _reductionGame);
-GVAR(fadeDelay) fadeMusic (GVAR(initialMusicVolume) - _reductionGame);
+GVAR(fadeDelay) fadeMusic (GVAR(initialMusicVolume) - _reductionMusic);
 
 GVAR(isLowered) = true;
 
