@@ -59,5 +59,11 @@
             <Polish>Zapisz statystyki transferu i status połączenia Headless Clienta do RPT. (Domyślnie: Tak)</Polish>
             <Japanese>統計とヘッドレス クライアントの接続有無を PRT へ記録します。(標準：無効)</Japanese>
         </Key>
+        <Key ID="STR_ACEX_Headless_BlacklistEden">
+            <English>Headless Blacklist</English>
+        </Key>
+        <Key ID="STR_ACEX_Headless_BlacklistEdenDesc">
+            <English>Disables transferring of this AI unit/group to Headless Clients. No effect on player units.</English>
+        </Key>
     </Package>
 </Project>
