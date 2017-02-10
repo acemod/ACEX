@@ -8,7 +8,7 @@
             <English>Toggle Volume</English>
         </Key>
         <Key ID="STR_ACEX_Volume_KeybindDescription">
-            <English>Toggle volume reduction</English>
+            <English>Toggle volume reduction.</English>
         </Key>
         <Key ID="STR_ACEX_Volume_Lowered">
             <English>Lowered volume</English>
@@ -20,31 +20,31 @@
             <English>Reduction</English>
         </Key>
         <Key ID="STR_ACEX_Volume_ReductionDescription">
-            <English>Reduce volume by this percentage</English>
+            <English>Reduce volume by this percentage.</English>
         </Key>
         <Key ID="STR_ACEX_Volume_LowerInVehicles">
             <English>Lower in vehicles</English>
         </Key>
         <Key ID="STR_ACEX_Volume_LowerInVehiclesDescription">
-            <English>Automatically lower volume when inside vehicles</English>
+            <English>Automatically lower volume when inside vehicles.</English>
         </Key>
         <Key ID="STR_ACEX_Volume_ShowNotification">
             <English>Show notification</English>
         </Key>
         <Key ID="STR_ACEX_Volume_ShowNotificationDescription">
-            <English>Show notification when lowering/restoring volume</English>
+            <English>Show notification when lowering/restoring volume.</English>
         </Key>
         <Key ID="STR_ACEX_Volume_FadeDelay">
             <English>Fade delay</English>
         </Key>
         <Key ID="STR_ACEX_Volume_FadeDelayDescription">
-            <English>Time it takes (in seconds) for the sound to fade in/out</English>
+            <English>Time it takes (in seconds) for the sound to fade in/out.</English>
         </Key>
         <Key ID="STR_ACEX_Volume_RemindIfLowered">
             <English>Reminder if lowered</English>
         </Key>
         <Key ID="STR_ACEX_Volume_RemindIfLoweredDescription">
-            <English>Reminds you every minute if your volume is lowered</English>
+            <English>Reminds you every minute if your volume is lowered.</English>
         </Key>
         <Key ID="STR_ACEX_Volume_LoweredReminder">
             <English>Volume still lowered</English>
