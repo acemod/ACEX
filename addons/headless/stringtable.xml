@@ -5,58 +5,69 @@
             <English>Headless</English>
             <German>Headless</German>
             <Polish>Headless</Polish>
+            <Korean>헤드리스</Korean>
             <Japanese>ヘッドレス</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_ModuleDesc">
             <English>This module allows you to setup automatic transferring of AI to Headless Clients. (Default: No)</English>
             <German>Dieses Modul erlaubt es dir, die KI automatisch auf einen Headless Client zu transferieren. (Standard: Nein) </German>
             <Polish>Ten moduł zezwala na automatyczny transfer AI do Headless Cient. (Domyślnie: Nie)</Polish>
+            <Korean>이 모듈을 사용하면 헤드리스 클라이언트에 AI 자동 전송을 설정할 수 있습니다. (기본값 : No)</Korean>
             <Japanese>モジュールは AI を自動的にヘッドレス クライアントへ移行します。(標準：無効)</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_EnabledDesc">
             <English>Enables transferring of AI to Headless Clients.</English>
             <German>Aktiviert denTransfer der KI auf Headless Clients.</German>
             <Polish>Włącza transfer AI do Headless Client.</Polish>
+            <Korean>AI를 헤드리스 클라이언트로 전송할 수 있습니다.</Korean>
             <Japanese>AI をヘッドレス クライアントへ移行を有効化</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_Delay">
             <English>Delay</English>
             <German>Verzögerung</German>
             <Polish>Opóźnienie</Polish>
+            <Korean>지연</Korean>
             <Japanese>遅延</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_DelayDesc">
             <English>Minimal delay between transfers, in seconds. (Default: 15)</English>
             <German>Minimale Verzögerung zwischen Transfers in Sekunden. (Standard: 15)</German>
             <Polish>Minimalny odstęp pomiędzy transferami w sekundach. (Domyślnie: 15)</Polish>
+            <Korean>전송 간 최소 지연 시간, 초당. (기본값: 15)</Korean>
             <Japanese>移行する際の最低遅延を秒数で設定します。(標準：15)</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_EndMission">
             <English>End Mission</English>
+            <Korean>미션 종료</Korean>
             <Japanese>ミッション終了</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_EndMissionDesc">
             <English>End mission when there are no players connected (same as 'persistent = 0' in server configuration but with Headless Client support).</English>
+            <Korean>연결된 플레이어가 없을 때 임무 종료. (서버 구성에서는 'persistent = 0'과 같지만 Headless Client는 지원함)</Korean>
             <Japanese>ミッションの終了はプレイヤーが接続していない場合に適用。(サーバ設定で'presistent =0'が設定されていても、ヘッドレス クライアントは適用される)</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_Instant">
             <English>Instant</English>
+            <Korean>즉시</Korean>
             <Japanese>即座</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_Delayed">
             <English>Delayed (60s)</English>
+            <Korean>지연 (60초)</Korean>
             <Japanese>遅延 (60秒)</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_Log">
             <English>Log</English>
             <German>Protokolldatei anlegen</German>
             <Polish>Dziennik zdarzeń</Polish>
+            <Korean>로그</Korean>
             <Japanese>ログ</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_LogDesc">
             <English>Log transfer statistics and Headless Client (dis)connections to RPT. (Default: No)</English>
             <German>Zeichnet Transferstatistiken, Verbindungen und Verbindungsabbrüche in einer RPT-Datei auf. (Standard: Nein)</German>
             <Polish>Zapisz statystyki transferu i status połączenia Headless Clienta do RPT. (Domyślnie: Tak)</Polish>
+            <Korean>전송 통계 및 헤드리스 클라이언트 연결(해제) 로그 RPT. (기본값: No)</Korean>
             <Japanese>統計とヘッドレス クライアントの接続有無を PRT へ記録します。(標準：無効)</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_BlacklistEden">
