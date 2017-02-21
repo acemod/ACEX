@@ -14,7 +14,6 @@ if (!hasInterface) exitWith {};
     } else {
         [] call FUNC(lowerVolume);
     };
-
     false
 }] call CBA_fnc_addKeybind;
 
