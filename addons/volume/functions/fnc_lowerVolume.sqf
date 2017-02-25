@@ -1,6 +1,6 @@
 /*
  * Author: Kingsley
- * Lowers the game and music volume with values from ACE settings
+ * Lowers the game and music volume with values from ACE settings.
  *
  * Arguments:
  * None
@@ -11,9 +11,8 @@
  * Example:
  * [] call acex_volume_fnc_lowerVolume;
  *
- * Public: Yes
+ * Public: No
  */
-
 #include "script_component.hpp"
 
 ACEGVAR(hearing,disableVolumeUpdate) = true;

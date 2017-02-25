@@ -14,3 +14,6 @@
 #endif
 
 #include "\z\acex\addons\main\script_macros.hpp"
+
+
+#define REMINDER_DELAY 60

@@ -1,6 +1,6 @@
 /*
  * Author: Kingsley
- * Restores the game and music volume to what it was when the mission first started
+ * Restores the game and music volume to what it was when the mission first started,
  *
  * Arguments:
  * None
@@ -11,9 +11,8 @@
  * Example:
  * [] call acex_volume_fnc_restoreVolume;
  *
- * Public: Yes
+ * Public: No
  */
-
 #include "script_component.hpp"
 
 ACEGVAR(hearing,disableVolumeUpdate) = false;
