@@ -1,7 +1,7 @@
 PREP(endMissionNoPlayers);
 PREP(handleConnectHC);
 PREP(handleDisconnect);
-PREP(handleInitPost);
+PREP(handleAISpawn);
 PREP(moduleInit);
 PREP(rebalance);
 PREP(transferGroups);

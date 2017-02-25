@@ -23,7 +23,7 @@ GVAR(headlessClients) params [
     ["_HC3", objNull, [objNull] ]
 ];
 
-if (GVAR(Log)) then {
+if (GVAR(log)) then {
     INFO_2("Present HCs: %1 - Full Rebalance: %2", GVAR(headlessClients), _force);
 };
 
@@ -90,7 +90,6 @@ private _numTransferredHC3 = 0;
         } forEach (units _x);
     };
 
-
     // Round robin between HCs if load balance enabled, else pass all to one HC
     if (_transfer) then {
         switch (_currentHC) do {
@@ -128,7 +127,7 @@ private _numTransferredHC3 = 0;
     };
 } forEach allGroups;
 
-if (GVAR(Log)) then {
+if (GVAR(log)) then {
     private _numTransferredTotal = _numTransferredHC1 + _numTransferredHC2 + _numTransferredHC3;
     INFO_4("Groups Transferred: Total: %1 - HC1: %2 - HC2: %3 - HC3: %4", _numTransferredTotal, _numTransferredHC1, _numTransferredHC2, _numTransferredHC3);
 };
