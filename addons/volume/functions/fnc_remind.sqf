@@ -21,4 +21,4 @@ if (!GVAR(remindIfLowered) || {!GVAR(isLowered)}) exitWith {};
 [localize LSTRING(LoweredReminder)] call ACEFUNC(common,displayTextStructured);
 
 // Fire another reminder in 60s
-[FUNC(remind), [], 60] call CBA_fnc_waitAndExecute;
+[FUNC(remind), [], REMINDER_DELAY] call CBA_fnc_waitAndExecute;
