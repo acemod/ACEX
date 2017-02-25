@@ -3,6 +3,8 @@
 // Exit on Headless
 if (!hasInterface) exitWith {};
 
+["ThingX", "init", {call FUNC(addSitActions)}, nil, nil, true] call CBA_fnc_addClassEventHandler;
+
 GVAR(isEnabled) = false;
 DFUNC(onInitEvent) = {
     TRACE_1("SettingInit", GVAR(enable));

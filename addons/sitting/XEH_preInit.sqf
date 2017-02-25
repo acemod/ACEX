@@ -4,6 +4,8 @@ ADDON = false;
 
 #include "XEH_PREP.hpp"
 
-GVAR(initializedClasses) = [];
+if (hasInterface) then {
+    GVAR(initializedClasses) = [];
+};
 
 ADDON = true;
