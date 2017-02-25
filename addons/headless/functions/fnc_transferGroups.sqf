@@ -67,6 +67,12 @@ private _numTransferredHC3 = 0;
     // No transfer if empty group
     private _transfer = !(units _x isEqualTo []) && {!(_x getVariable [QGVAR(blacklist), false])};
     if (_transfer) then {
+        // No transfer if waypoints with synchronized triggers exist for the group
+        private _allWaypointsWithTriggers = (waypoints _x) select {!((synchronizedTriggers _x) isEqualTo [])};
+        if !(_allWaypointsWithTriggers isEqualTo []) exitWith {
+            _transfer = false;
+        };
+
         {
             // No transfer if already transferred
             if (!_force && {(owner _x) in [_idHC1, _idHC2, _idHC3]}) exitWith {
