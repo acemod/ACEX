@@ -564,20 +564,6 @@ class CfgVehicles {
         };
     };
 
-    class ACEX_Item_Pliers_Item: ACEX_MiscItem_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Pliers_F0";
-        author = ACECSTRING(common,ACETeam);
-        vehicleClass = "ACE_Misc_Items";
-        class TransportItems {
-            class ACEX_Item_Pliers {
-                name = "ACEX_Item_Pliers";
-                count = 1;
-            };
-        };
-    };
-
     class ACEX_Item_Saw_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
@@ -643,104 +629,6 @@ class CfgVehicles {
         class TransportItems {
             class ACEX_Item_Money {
                 name = "ACEX_Item_Money";
-                count = 1;
-            };
-        };
-    };
-
-    class ACEX_Item_Battery_Item: ACEX_MiscItem_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "$STR_A3_batteries";
-        author = ACECSTRING(common,ACETeam);
-        vehicleClass = "ACE_Misc_Items";
-        class TransportItems {
-            class ACEX_Item_Battery {
-                name = "ACEX_Item_Battery";
-                count = 1;
-            };
-        };
-    };
-
-    class ACEX_Item_BakedBeans_Item: ACEX_MiscItem_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "$STR_A3_baked_beens";
-        author = ACECSTRING(common,ACETeam);
-        vehicleClass = "ACE_Misc_Items";
-        class TransportItems {
-            class ACEX_Item_BakedBeans {
-                name = "ACEX_Item_BakedBeans";
-                count = 1;
-            };
-        };
-    };
-
-    class ACEX_Item_BottlePlastic_V2_Item: ACEX_MiscItem_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "$STR_A3_water_bottle";
-        author = ACECSTRING(common,ACETeam);
-        vehicleClass = "ACE_Misc_Items";
-        class TransportItems {
-            class ACEX_Item_BottlePlastic_V2 {
-                name = "ACEX_Item_BottlePlastic_V2";
-                count = 1;
-            };
-        };
-    };
-
-    class ACEX_Item_Canteen_Item: ACEX_MiscItem_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "$STR_A3_canteen";
-        author = ACECSTRING(common,ACETeam);
-        vehicleClass = "ACE_Misc_Items";
-        class TransportItems {
-            class ACEX_Item_Canteen {
-                name = "ACEX_Item_Canteen";
-                count = 1;
-            };
-        };
-    };
-
-    class ACEX_Item_CerealsBox_Item: ACEX_MiscItem_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "$STR_A3_cereal_box";
-        author = ACECSTRING(common,ACETeam);
-        vehicleClass = "ACE_Misc_Items";
-        class TransportItems {
-            class ACEX_Item_CerealsBox {
-                name = "ACEX_Item_CerealsBox";
-                count = 1;
-            };
-        };
-    };
-
-    class ACEX_Item_PowderedMilk_Item: ACEX_MiscItem_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "$STR_A3_powdered_milk";
-        author = ACECSTRING(common,ACETeam);
-        vehicleClass = "ACE_Misc_Items";
-        class TransportItems {
-            class ACEX_Item_PowderedMilk {
-                name = "ACEX_Item_PowderedMilk";
-                count = 1;
-            };
-        };
-    };
-
-    class ACEX_Item_RiceBox_Item: ACEX_MiscItem_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "$STR_A3_rice";
-        author = ACECSTRING(common,ACETeam);
-        vehicleClass = "ACE_Misc_Items";
-        class TransportItems {
-            class ACEX_Item_RiceBox {
-                name = "ACEX_Item_RiceBox";
                 count = 1;
             };
         };
@@ -830,20 +718,6 @@ class CfgVehicles {
         };
     };
 
-    class ACEX_Item_DuctTape: ACEX_MiscItem_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "$STR_A3_duct_tape";
-        author = ACECSTRING(common,ACETeam);
-        vehicleClass = "ACE_Misc_Items";
-        class TransportItems {
-            class ACEX_Item_DuctTape {
-                name = "ACEX_Item_DuctTape";
-                count = 1;
-            };
-        };
-    };
-
     class ACEX_Item_FireExtinguisher: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
@@ -909,62 +783,6 @@ class CfgVehicles {
         class TransportItems {
             class ACEX_Item_MetalWire {
                 name = "ACEX_Item_MetalWire";
-                count = 1;
-            };
-        };
-    };
-
-    class ACEX_Item_Shovel: ACEX_MiscItem_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "$STR_A3_shovel";
-        author = ACECSTRING(common,ACETeam);
-        vehicleClass = "ACE_Misc_Items";
-        class TransportItems {
-            class ACEX_Item_Shovel {
-                name = "ACEX_Item_Shovel";
-                count = 1;
-            };
-        };
-    };
-
-    class ACEX_Item_Map_Altis: ACEX_MiscItem_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "$STR_A3_map_altis0";
-        author = ACECSTRING(common,ACETeam);
-        vehicleClass = "ACE_Misc_Items";
-        class TransportItems {
-            class ACEX_Item_Map_Altis {
-                name = "ACEX_Item_Map_Altis";
-                count = 1;
-            };
-        };
-    };
-
-    class ACEX_Item_Map_Blank: ACEX_MiscItem_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "$STR_A3_MAP1";
-        author = ACECSTRING(common,ACETeam);
-        vehicleClass = "ACE_Misc_Items";
-        class TransportItems {
-            class ACEX_Item_Map_Blank {
-                name = "ACEX_Item_Map_Blank";
-                count = 1;
-            };
-        };
-    };
-
-    class ACEX_Item_Map_Stratis: ACEX_MiscItem_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Map_F0";
-        author = ACECSTRING(common,ACETeam);
-        vehicleClass = "ACE_Misc_Items";
-        class TransportItems {
-            class ACEX_Item_Map_Stratis {
-                name = "ACEX_Item_Map_Stratis";
                 count = 1;
             };
         };

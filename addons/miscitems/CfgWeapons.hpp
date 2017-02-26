@@ -446,17 +446,6 @@ class CfgWeapons {
         };
     };
 
-    class ACEX_Item_Pliers: ACE_ItemCore {
-        displayName = "$STR_A3_cfgVehicles_Land_Pliers_F0";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f\Items\Tools\Pliers_F.p3d";
-        picture = QPATHTOF(UI\Pliers_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 5;
-        };
-    };
-
     class ACEX_Item_Saw: ACE_ItemCore {
         displayName = "$STR_A3_cfgVehicles_Land_Saw_F0";
         descriptionShort = CSTRING(Prop);
@@ -509,94 +498,6 @@ class CfgWeapons {
         scope = 2;
         class ItemInfo: InventoryItem_Base_F {
             mass = 15;
-        };
-    };
-
-    class ACEX_Item_Battery: ACE_ItemCore {
-        displayName = "$STR_A3_batteries";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f_epa\Items\Electronics\Battery_F.p3d";
-        picture = QPATHTOF(UI\Battery_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 1;
-        };
-    };
-
-    class ACEX_Item_BakedBeans: ACE_ItemCore {
-        displayName = "$STR_A3_baked_beens";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f_epa\Items\Food\BakedBeans_F.p3d";
-        picture = QPATHTOF(UI\BakedBeans_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 10;
-        };
-    };
-
-    class ACEX_Item_BottlePlastic_V2: ACE_ItemCore {
-        displayName = "$STR_A3_water_bottle";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f_epa\Items\Food\BottlePlastic_V2_F.p3d";
-        picture = QPATHTOF(UI\BottlePlastic_V2_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 12;
-        };
-    };
-
-    class ACEX_Item_Canteen: ACE_ItemCore {
-        displayName = "$STR_A3_canteen";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f_epa\Items\Food\Canteen_F.p3d";
-        picture = QPATHTOF(UI\Canteen_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 10;
-        };
-    };
-
-    class ACEX_Item_CerealsBox: ACE_ItemCore {
-        displayName = "$STR_A3_cereal_box";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f_epa\Items\Food\CerealsBox_F.p3d";
-        picture = QPATHTOF(UI\CerealsBox_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 8;
-        };
-    };
-
-    class ACEX_Item_PowderedMilk: ACE_ItemCore {
-        displayName = "$STR_A3_powdered_milk";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f_epa\Items\Food\PowderedMilk_F.p3d";
-        picture = QPATHTOF(UI\PowderedMilk_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 7;
-        };
-    };
-
-    class ACEX_Item_RiceBox: ACE_ItemCore {
-        displayName = "$STR_A3_rice";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f_epa\Items\Food\RiceBox_F.p3d";
-        picture = QPATHTOF(UI\RiceBox_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 7;
-        };
-    };
-
-    class ACEX_Item_Antibiotic: ACE_ItemCore {
-        displayName = "$STR_A3_antibiotics";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f_epa\Items\Medical\Antibiotic_F.p3d";
-        picture = QPATHTOF(UI\Antibiotic_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 5;
         };
     };
 
@@ -666,17 +567,6 @@ class CfgWeapons {
         };
     };
 
-    class ACEX_Item_DuctTape: ACE_ItemCore {
-        displayName = "$STR_A3_duct_tape";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f_epa\Items\Tools\DuctTape_F.p3d";
-        picture = QPATHTOF(UI\DuctTape_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 3;
-        };
-    };
-
     class ACEX_Item_FireExtinguisher: ACE_ItemCore {
         displayName = "$STR_A3_fire_extinguisher";
         descriptionShort = CSTRING(Prop);
@@ -729,50 +619,6 @@ class CfgWeapons {
         scope = 2;
         class ItemInfo: InventoryItem_Base_F {
             mass = 5;
-        };
-    };
-
-    class ACEX_Item_Shovel: ACE_ItemCore {
-        displayName = "$STR_A3_shovel";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f_epa\Items\Tools\Shovel_F.p3d";
-        picture = QPATHTOF(UI\Shovel_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 200;
-        };
-    };
-
-    class ACEX_Item_Map_Altis: ACE_ItemCore {
-        displayName = "$STR_A3_map_altis0";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f_epb\Items\Documents\Map_Altis_F.p3d";
-        picture = QPATHTOF(UI\Map_Altis_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 4;
-        };
-    };
-
-    class ACEX_Item_Map_Blank: ACE_ItemCore {
-        displayName = "$STR_A3_MAP1";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f_epb\Items\Documents\Map_Blank_F.p3d";
-        picture = QPATHTOF(UI\Map_Blank_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 4;
-        };
-    };
-
-    class ACEX_Item_Map_Stratis: ACE_ItemCore {
-        displayName = "$STR_A3_cfgVehicles_Land_Map_F0";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f_epb\Items\Documents\Map_Stratis_F.p3d";
-        picture = QPATHTOF(UI\Map_Stratis_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 4;
         };
     };
 };
