@@ -18,13 +18,13 @@
 params ["_force"];
 
 GVAR(headlessClients) params [
-    ["_HC1", objNull, [objNull] ],
-    ["_HC2", objNull, [objNull] ],
-    ["_HC3", objNull, [objNull] ]
+    ["_HC1", objNull, [objNull]],
+    ["_HC2", objNull, [objNull]],
+    ["_HC3", objNull, [objNull]]
 ];
 
 if (GVAR(log)) then {
-    INFO_2("Present HCs: %1 - Full Rebalance: %2", GVAR(headlessClients), _force);
+    INFO_2("Present HCs: %1 - Full Rebalance: %2",GVAR(headlessClients),_force);
 };
 
 // Enable round-robin load balancing if more than one HC is present
