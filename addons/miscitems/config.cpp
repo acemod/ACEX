@@ -7,7 +7,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"acex_main"};
         author = ACECSTRING(common,ACETeam);
-        authors[] = {"voiper"};
+        authors[] = {"voiper", "Bohemia Interactive"};
         url = ACECSTRING(main,URL);
         VERSION_CONFIG;
     };
