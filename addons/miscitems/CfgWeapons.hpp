@@ -146,17 +146,6 @@ class CfgWeapons {
         };
     };
 
-    class ACEX_Item_Notepad: ACE_ItemCore {
-        displayName = "$STR_A3_cfgVehicles_Land_Notepad_F0";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f\Items\Documents\Notepad_F.p3d";
-        picture = QPATHTOF(UI\Notepad_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 10;
-        };
-    };
-
     class ACEX_Item_Photos_V1: ACE_ItemCore {
         displayName = "$STR_A3_cfgVehicles_Land_Photos_V1_F0";
         descriptionShort = CSTRING(Prop);
