@@ -4,5 +4,8 @@
         <Key ID="STR_ACEX_MiscItems_Category">
             <English>Items (Misc)</English>
         </Key>
+        <Key ID="STR_ACEX_MiscItems_Prop">
+            <English>Prop item (no functionality).</English>
+        </Key>
     </Package>
 </Project>
