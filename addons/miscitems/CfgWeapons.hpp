@@ -201,39 +201,6 @@ class CfgWeapons {
         };
     };
 
-    class ACEX_Item_Can_V1: ACE_ItemCore {
-        displayName = "$STR_A3_cfgVehicles_Land_Can_V1_F0";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f\Items\Food\Can_V1_F.p3d";
-        picture = QPATHTOF(UI\Can_V1_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 9;
-        };
-    };
-
-    class ACEX_Item_Can_V2: ACE_ItemCore {
-        displayName = "$STR_A3_cfgVehicles_Land_Can_V2_F0";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f\Items\Food\Can_V2_F.p3d";
-        picture = QPATHTOF(UI\Can_V2_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 9;
-        };
-    };
-
-    class ACEX_Item_Can_V3: ACE_ItemCore {
-        displayName = "$STR_A3_cfgVehicles_Land_Can_V3_F0";
-        descriptionShort = CSTRING(Prop);
-        model = "a3\structures_f\Items\Food\Can_V3_F.p3d";
-        picture = QPATHTOF(UI\Can_V3_ca.paa);
-        scope = 2;
-        class ItemInfo: InventoryItem_Base_F {
-            mass = 9;
-        };
-    };
-
     class ACEX_Item_TacticalBacon: ACE_ItemCore {
         displayName = "$STR_A3_cfgVehicles_Land_TacticalBacon_F0";
         descriptionShort = CSTRING(Prop);

@@ -256,48 +256,6 @@ class CfgVehicles {
         };
     };
 
-    class ACEX_Item_Can_V1_Item: ACEX_MiscItem_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Can_V1_F0";
-        author = ACECSTRING(common,ACETeam);
-        vehicleClass = "ACE_Misc_Items";
-        class TransportItems {
-            class ACEX_Item_Can_V1 {
-                name = "ACEX_Item_Can_V1";
-                count = 1;
-            };
-        };
-    };
-
-    class ACEX_Item_Can_V2_Item: ACEX_MiscItem_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Can_V2_F0";
-        author = ACECSTRING(common,ACETeam);
-        vehicleClass = "ACE_Misc_Items";
-        class TransportItems {
-            class ACEX_Item_Can_V2 {
-                name = "ACEX_Item_Can_V2";
-                count = 1;
-            };
-        };
-    };
-
-    class ACEX_Item_Can_V3_Item: ACEX_MiscItem_F {
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Can_V3_F0";
-        author = ACECSTRING(common,ACETeam);
-        vehicleClass = "ACE_Misc_Items";
-        class TransportItems {
-            class ACEX_Item_Can_V3 {
-                name = "ACEX_Item_Can_V3";
-                count = 1;
-            };
-        };
-    };
-
     class ACEX_Item_TacticalBacon_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
