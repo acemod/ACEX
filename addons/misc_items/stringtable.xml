@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project name="ACE">
-    <Package name="Misc_items">
-        <Key ID="STR_ACEX_Misc_items_Category">
-            <English>Items (Misc)</English>
-        </Key>
-    </Package>
-</Project>

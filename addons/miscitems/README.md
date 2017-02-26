@@ -1,4 +1,4 @@
-acex_misc_items
+acex_miscitems
 =======
 
 Makes the default small items from A3 (cell phone, etc.) equippable for various uses. Especially helpful for mission makers.
