@@ -45,6 +45,9 @@ if !(_object in GVAR(headlessClients)) exitWith {
     false
 };
 
+//Exit if AI distribution is disabled
+if (!GVAR(enabled)) exitWith {true};
+
 // Remove HC
 GVAR(headlessClients) deleteAt (GVAR(headlessClients) find _object);
 
