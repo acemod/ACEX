@@ -18,13 +18,13 @@
 params ["_force"];
 
 GVAR(headlessClients) params [
-    ["_HC1", objNull, [objNull] ],
-    ["_HC2", objNull, [objNull] ],
-    ["_HC3", objNull, [objNull] ]
+    ["_HC1", objNull, [objNull]],
+    ["_HC2", objNull, [objNull]],
+    ["_HC3", objNull, [objNull]]
 ];
 
-if (GVAR(Log)) then {
-    INFO_2("Present HCs: %1 - Full Rebalance: %2", GVAR(headlessClients), _force);
+if (GVAR(log)) then {
+    INFO_2("Present HCs: %1 - Full Rebalance: %2",GVAR(headlessClients),_force);
 };
 
 // Enable round-robin load balancing if more than one HC is present
@@ -67,6 +67,12 @@ private _numTransferredHC3 = 0;
     // No transfer if empty group
     private _transfer = !(units _x isEqualTo []) && {!(_x getVariable [QGVAR(blacklist), false])};
     if (_transfer) then {
+        // No transfer if waypoints with synchronized triggers exist for the group
+        private _allWaypointsWithTriggers = (waypoints _x) select {!((synchronizedTriggers _x) isEqualTo [])};
+        if !(_allWaypointsWithTriggers isEqualTo []) exitWith {
+            _transfer = false;
+        };
+
         {
             // No transfer if already transferred
             if (!_force && {(owner _x) in [_idHC1, _idHC2, _idHC3]}) exitWith {
@@ -89,7 +95,6 @@ private _numTransferredHC3 = 0;
             };
         } forEach (units _x);
     };
-
 
     // Round robin between HCs if load balance enabled, else pass all to one HC
     if (_transfer) then {
@@ -128,7 +133,7 @@ private _numTransferredHC3 = 0;
     };
 } forEach allGroups;
 
-if (GVAR(Log)) then {
+if (GVAR(log)) then {
     private _numTransferredTotal = _numTransferredHC1 + _numTransferredHC2 + _numTransferredHC3;
     INFO_4("Groups Transferred: Total: %1 - HC1: %2 - HC2: %3 - HC3: %4", _numTransferredTotal, _numTransferredHC1, _numTransferredHC2, _numTransferredHC3);
 };
