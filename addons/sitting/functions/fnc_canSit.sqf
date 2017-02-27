@@ -22,4 +22,4 @@ params ["_seat", "_player"];
 GVAR(enable) &&
 {isNil {_player getVariable QGVAR(isSitting)}} &&
 {!(_seat call ACEFUNC(common,owned))} &&
-{round (vectorUp _seat select 0) == 0 && {round (vectorUp _seat select 1) == 0} && {round (vectorUp _seat select 2) == 1}}
+{round (vectorUp _seat select 0) == 0 && {round (vectorUp _seat select 1) == 0} && {round (vectorUp _seat select 2) == 1}};

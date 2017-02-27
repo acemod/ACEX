@@ -41,4 +41,4 @@ selectRandom [
     QGVAR(HubSittingChairUC_idle2),
     QGVAR(HubSittingChairUC_idle3),
     QGVAR(HubSittingChairUC_move1)
-]
+];

@@ -18,4 +18,4 @@
 params ["_player"];
 
 // Sitting
-!isNil {_player getVariable QGVAR(isSitting)}
+!isNil {_player getVariable QGVAR(isSitting)};
