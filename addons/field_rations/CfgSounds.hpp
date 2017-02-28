@@ -1,7 +1,7 @@
 class CfgSounds {
-    class cse_drinking {
-        name = "cse_drinking";
-        sound[] = {PATHTOF(sounds\drinkingSound.ogg),"db-1",1.0};
+    class GVAR(drinking) {
+        name = QGVAR(drinking);
+        sound[] = {QPATHTOF(sounds\drinkingSound.ogg),"db-10",1.0};
         titles[] = {};
     };
 };

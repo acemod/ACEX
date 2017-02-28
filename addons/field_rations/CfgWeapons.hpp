@@ -8,7 +8,7 @@ class CfgWeapons {
         count = 1;
         type = 16;
         displayName = "Water Bottle";
-        picture = QUOTE(PATHTOF(UI\item_waterbottle_full_co.paa));
+        picture = QPATHTOF(UI\item_waterbottle_full_co.paa);
         model = "\A3\Structures_F_EPA\Items\Food\BottlePlastic_V2_F.p3d";
         descriptionShort = "A waterbottle";
         class ItemInfo: InventoryItem_Base_F {
@@ -16,54 +16,45 @@ class CfgWeapons {
             type= 201;
         };
         GVAR(consumeTime) = 4.5;
-        GVAR(isDrinkable) = 3.75;
+        GVAR(consumeEffect) = QGVAR(drinking);
+        GVAR(isDrinkable) = 7.5;
         GVAR(replacementItem) = "ACE_waterbottle_half";
     };
     class ACE_waterbottle_half: ACE_waterbottle {
         displayName = "Water Bottle 1/2";
-        picture = QUOTE(PATHTOF(UI\item_waterbottle_full_co.paa));
+        picture = QPATHTOF(UI\item_waterbottle_full_co.paa);
         descriptionShort = "Half full waterbottle";
         GVAR(replacementItem) = "ACE_waterbottle_empty";
-        GVAR(isDrinkable) = 3.75;
         GVAR(onRefill) = "ACE_waterbottle";
     };
     class ACE_waterbottle_empty: ACE_waterbottle {
         displayName = "Empty Water Bottle";
-        picture = QUOTE(PATHTOF(UI\item_waterbottle_empty_co.paa));
+        picture = QPATHTOF(UI\item_waterbottle_empty_co.paa);
         descriptionShort = "An empty waterbottle";
         GVAR(isDrinkable) = 0;
         GVAR(onRefill) = "ACE_waterbottle";
         GVAR(replacementItem) = "";
     };
-    class ACE_canteen: ItemCore {
-        author = ACECSTRING(common,ACETeam);
-        scope = 2;
-        value = 1;
-        count = 1;
-        type = 16;
+    class ACE_canteen: ACE_waterbottle {
         displayName = "Canteen (Water)";
-        picture = QUOTE(PATHTOF(UI\item_canteen_co.paa));
+        picture = QPATHTOF(UI\item_canteen_co.paa);
         model = "\A3\Structures_F_EPA\Items\Food\Canteen_F.p3d";
         descriptionShort = "A Canteen containing water";
         class ItemInfo: InventoryItem_Base_F {
-            mass= 5;
+            mass= 7.5;
             type= 201;
         };
-        GVAR(isDrinkable) = 3.75;
         GVAR(replacementItem) = "ACE_canteen_half";
     };
     class ACE_canteen_half: ACE_canteen {
         displayName = "Canteen (Half)";
-        model = "\A3\Structures_F_EPA\Items\Food\Canteen_F.p3d";
         descriptionShort = "A Canteen containing water (Half)";
-        GVAR(isDrinkable) = 3.75;
         GVAR(replacementItem) = "ACE_canteen_empty";
         GVAR(onRefill) = "ACE_canteen";
     };
     class ACE_canteen_empty: ACE_canteen {
         displayName = "Canteen (Empty)";
-        model = "\A3\Structures_F_EPA\Items\Food\Canteen_F.p3d";
-        descriptionShort = "A Canteen containing water (Half)";
+        descriptionShort = "An empty Canteen";
         GVAR(isDrinkable) = 0;
         GVAR(replacementItem) = "";
         GVAR(onRefill) = "ACE_canteen";
@@ -78,16 +69,15 @@ class CfgWeapons {
         count = 1;
         type = 16;
         displayName = "MRE";
-        picture = QUOTE(PATHTOF(UI\item_MRE_type1_co.paa));
-        model = QUOTE(PATHTOF(models\mre_type1.p3d));
+        picture = QPATHTOF(UI\item_MRE_type1_co.paa);
+        model = QPATHTOF(models\mre_type1.p3d);
         descriptionShort = "A Meal Ready to Eat, unprepared";
-        class ItemInfo: InventoryItem_Base_F
-        {
+        class ItemInfo: InventoryItem_Base_F {
             mass= 2;
             type= 201;
         };
-        GVAR(consumeTime) = 10;
-        GVAR(isEatable) = 10;
+        GVAR(consumeTime) = 7;
+        GVAR(isEatable) = 20;
         GVAR(isDrinkable) = 0;
         GVAR(replacementItem) = "";
     };
@@ -102,8 +92,8 @@ class CfgWeapons {
 
     class ACE_MRE_Rice: ACE_MRE_BASE {
         displayName = "MRE Rice";
-        picture = QUOTE(PATHTOF(UI\item_MRE_type2_co.paa));
-        model = QUOTE(PATHTOF(models\mre_type2.p3d));
+        picture = QPATHTOF(UI\item_MRE_type2_co.paa);
+        model = QPATHTOF(models\mre_type2.p3d);
         descriptionShort = "An MRE Containing Rice. Heat for best effect";
     };
     // class ACE_MRE_Rice_prepared: ACE_MRE_Rice {
@@ -112,8 +102,8 @@ class CfgWeapons {
 
     class ACE_MRE_CreamTomatoSoup: ACE_MRE_BASE {
         displayName = "MRE Cream Tomato Soup";
-        picture = QUOTE(PATHTOF(UI\item_MRE_type3_co.paa));
-        model = QUOTE(PATHTOF(models\mre_type3.p3d));
+        picture = QPATHTOF(UI\item_MRE_type3_co.paa);
+        model = QPATHTOF(models\mre_type3.p3d);
         descriptionShort = "An MRE Containing Tomato Soup cream. Mix with water and heat for best effect";
     };
     // class ACE_MRE_CreamTomatoSoup_prepared: ACE_MRE_CreamTomatoSoup {
@@ -122,8 +112,8 @@ class CfgWeapons {
 
     class ACE_MRE_CreamChickenSoup: ACE_MRE_BASE {
         displayName = "MRE Cream Chicken Soup";
-        picture = QUOTE(PATHTOF(UI\item_MRE_type3_co.paa));
-        model = QUOTE(PATHTOF(models\mre_type3.p3d));
+        picture = QPATHTOF(UI\item_MRE_type3_co.paa);
+        model = QPATHTOF(models\mre_type3.p3d);
         descriptionShort = "An MRE Containing Chicken Soup. Mix with water and heat for best effect";
     };
     // class ACE_MRE_CreamChickenSoup_prepared: ACE_MRE_CreamChickenSoup {
@@ -132,8 +122,8 @@ class CfgWeapons {
 
     class ACE_MRE_ChickenTikkaMassala: ACE_MRE_BASE {
         displayName = "MRE Chicken Tikka Massala";
-        picture = QUOTE(PATHTOF(UI\item_MRE_type4_co.paa));
-        model = QUOTE(PATHTOF(models\mre_type4.p3d));
+        picture = QPATHTOF(UI\item_MRE_type4_co.paa);
+        model = QPATHTOF(models\mre_type4.p3d);
         descriptionShort = "An MRE with Chicken Tikka Massala. Heat for best effect";
     };
     // class ACE_MRE_ChickenTikkaMassala_prepared: ACE_MRE_ChickenTikkaMassala {
@@ -142,8 +132,8 @@ class CfgWeapons {
 
     class ACE_MRE_SteakVegetables: ACE_MRE_BASE {
         displayName = "MRE Steak & Vegetables";
-        picture = QUOTE(PATHTOF(UI\item_MRE_type5_co.paa));
-        model = QUOTE(PATHTOF(models\mre_type5.p3d));
+        picture = QPATHTOF(UI\item_MRE_type5_co.paa);
+        model = QPATHTOF(models\mre_type5.p3d);
         descriptionShort = "An MRE Containing Steak & Vegetables. Heat for best effect";
     };
     // class ACE_MRE_SteakVegetables_prepared: ACE_MRE_SteakVegetables {
@@ -152,8 +142,8 @@ class CfgWeapons {
 
     class ACE_MRE_MeatballsPasta: ACE_MRE_BASE {
         displayName = "MRE Meatballs & Pasta";
-        picture = QUOTE(PATHTOF(UI\item_MRE_type6_co.paa));
-        model = QUOTE(PATHTOF(models\mre_type6.p3d));
+        picture = QPATHTOF(UI\item_MRE_type6_co.paa);
+        model = QPATHTOF(models\mre_type6.p3d);
         descriptionShort = "An MRE Containing Meatballs & Pasta. Heat for best effect";
     };
     // class ACE_MRE_MeatballsPasta_prepared: ACE_MRE_MeatballsPasta {
@@ -162,8 +152,8 @@ class CfgWeapons {
 
     class ACE_MRE_ChickenHerbDumplings: ACE_MRE_BASE {
         displayName = "MRE Chicken with Herb Dumplings";
-        picture = QUOTE(PATHTOF(UI\item_MRE_type6_co.paa));
-        model = QUOTE(PATHTOF(models\mre_type6.p3d));
+        picture = QPATHTOF(UI\item_MRE_type6_co.paa);
+        model = QPATHTOF(models\mre_type6.p3d);
         descriptionShort = "An MRE Containing Chicken with Herb Dumplings. Heat for best effect";
     };
     // class ACE_MRE_ChickenHerbDumplings_prepared: ACE_MRE_ChickenHerbDumplings {
@@ -172,8 +162,8 @@ class CfgWeapons {
 
     class ACE_Humanitarian_Ration: ACE_MRE_BASE {
         displayName = "Humanitarian Ration";
-        picture = QUOTE(PATHTOF(UI\item_MRE_human_co.paa));
-        model = QUOTE(PATHTOF(models\mre_human.p3d));
+        picture = QPATHTOF(UI\item_MRE_human_co.paa);
+        model = QPATHTOF(models\mre_human.p3d);
         descriptionShort = "An Humanitarian Ration, for handing out to the local population";
     };
 
@@ -370,8 +360,7 @@ class CfgWeapons {
 
     class ACE_mre_c_ration: ACE_MRE_BASE {
         displayName = "C Ration";
-        picture = QUOTE(PATHTOF(UI\item_MRE_c_ration_co.paa));
+        picture = QPATHTOF(UI\item_MRE_c_ration_co.paa);
         descriptionShort = "C ration";
     };
-
 };

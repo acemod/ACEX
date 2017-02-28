@@ -11,8 +11,8 @@ if !(hasInterface) exitWith {};
     if (missionNamespace getVariable ["ACE_advanced_fatigue_enabled", false]) then {
         TRACE_1("Adding Duty Factor",ACE_advanced_fatigue_enabled);
         [QUOTE(ADDON), {
-            // todo?
-            1
+            (linearConversion [75, 0, (_this getVariable [QGVAR(thirstStatus), 100]), 1, 2.0, true]) *
+            (linearConversion [60, 0, (_this getVariable [QGVAR(hungerStatus), 100]), 1, 1.5, true])
         }] call ACEFUNC(advanced_fatigue,addDutyFactor);
     };
 

@@ -9,7 +9,7 @@ class CfgVehicles {
                 statement = QUOTE(_this call FUNC(onHoverDisplay));
                 condition = QUOTE(GVAR(systemEnabled));
                 insertChildren = QUOTE([ARR_2(_player, '')] call FUNC(getConsumableChildren));
-                icon = PATHTOF(UI\icon_survival.paa);
+                icon = QPATHTOF(UI\icon_survival.paa);
             };
         };
     };

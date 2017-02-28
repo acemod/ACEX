@@ -9,7 +9,7 @@ class RscTitles {
         class controlsBackground {
             class FoodStatus: RscPicture {
                 sizeEx = 0.032;
-                text = QUOTE(PATHTOF(UI\hud_foodstatus2.paa));
+                text = QPATHTOF(UI\hud_foodstatus2.paa);
                 colorText[] = {0.0,1.0,0.0,0.4};
                 idc = 11112;
                 x = "(safezoneW + safezoneX) - (2.1 * (((safezoneW / safezoneH) min 1.2) / 40))";
@@ -18,7 +18,7 @@ class RscTitles {
                 h = "1.8 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
             };
             class drinkStatus: FoodStatus {
-                text = QUOTE(PATHTOF(UI\hud_drinkstatus2.paa));
+                text = QPATHTOF(UI\hud_drinkstatus2.paa);
                 colorText[] = {0.0,1.0,0.0,0.4};
                 idc = 11113;
                 y = "(safezoneH + safezoneY) - 1 * (2.1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25))";

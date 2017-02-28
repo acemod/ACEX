@@ -25,10 +25,17 @@ if (!(_this call FUNC(canConsumeItem))) exitWith {TRACE_1("canConsumeItem check 
 private _cfg = ConfigFile >> "CfgWeapons" >> _itemClassname;
 
 private _consumeTime = getNumber (_cfg >> QGVAR(consumeTime));
+private _consumeEffect = getText (_cfg >> QGVAR(consumeEffect));
 private _displayName = getText (_cfg >> "displayName");
 private _hungerRestored = getNumber (_cfg >> QGVAR(isEatable));
 private _thirstRestored = getNumber (_cfg >> QGVAR(isDrinkable));
 private _replacementItem = getText (_cfg >> QGVAR(replacementItem));
+
+TRACE_6("cfg",_consumeTime,_consumeEffect,_displayName,_hungerRestored,_thirstRestored,_replacementItem);
+
+if (_consumeEffect != "") then {
+    playSound _consumeEffect;
+};
 
 private _progressBarText = if (_hungerRestored > 0) then {
     format [localize LSTRING(EatingX), _displayName];

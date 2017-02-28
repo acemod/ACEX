@@ -43,7 +43,7 @@ private _fncGetChildren = {
     TRACE_3("Adding refil action",isClass _cfg,_classname,_tapLocation);
 
     if (isClass _cfg) then {
-        _action = [QGVAR(refill), (format [localize LSTRING(RefillX), ""]), QUOTE(PATHTOF(ui\hud_drinkstatus2.paa)), {}, {true}, _fncGetChildren, [], _tapLocation, 4] call ACEFUNC(interact_menu,createAction);
+        _action = [QGVAR(refill), (format [localize LSTRING(RefillX), ""]), QPATHTOF(ui\hud_drinkstatus2.paa), {}, {true}, _fncGetChildren, [], _tapLocation, 4] call ACEFUNC(interact_menu,createAction);
         [_classname, 0, [], _action] call ACEFUNC(interact_menu,addActionToClass);
     };
 } forEach WATER_SOURCES;
