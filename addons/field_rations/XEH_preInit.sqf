@@ -2,16 +2,8 @@
 
 ADDON = false;
 
-PREP(actionConsumeItem);
-PREP(actionRefillFromWaterSource);
-PREP(addRefillActionsToObjects);
-PREP(canConsumeItem);
-PREP(canRefillFromWaterSource);
-PREP(getConsumableChildren);
-PREP(handleRespawn);
-PREP(moduleSettings);
-PREP(onHoverDisplay);
-PREP(showOverlay);
-PREP(updateFieldRations);
+PREP_RECOMPILE_START;
+#include "XEH_PREP.hpp"
+PREP_RECOMPILE_END;
 
 ADDON = true;

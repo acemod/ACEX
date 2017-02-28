@@ -4,9 +4,6 @@
         <Key ID="STR_ACEX_FIELD_RATIONS_mainInteractionName">
             <English>Survival</English>
         </Key>
-        <Key ID="STR_ACEX_FIELD_RATIONS_refillWater">
-            <English>Refill</English>
-        </Key>
         <Key ID="STR_ACEX_FIELD_RATIONS_timeWithoutWater_name">
             <English>Time without water</English>
         </Key>

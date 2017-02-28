@@ -8,6 +8,14 @@ if !(hasInterface) exitWith {};
     //If not enabled, dont't add PFEH or actions
     if (!GVAR(systemEnabled)) exitWith {};
 
+    if (missionNamespace getVariable ["ACE_advanced_fatigue_enabled", false]) then {
+        TRACE_1("Adding Duty Factor",ACE_advanced_fatigue_enabled);
+        [QUOTE(ADDON), {
+            // todo?
+            1
+        }] call ACEFUNC(advanced_fatigue,addDutyFactor);
+    };
+
     GVAR(hudInteractionHover) = false;
     GVAR(hudIsShowing) = false;
 
@@ -17,7 +25,7 @@ if !(hasInterface) exitWith {};
 
     [] call FUNC(addRefillActionsToObjects);
 
-    [FUNC(updateFieldRations), 10, [CBA_missionTime, (CBA_missionTime + 60)]] call CBA_fnc_addPerFrameHandler;
+    [LINKFUNC(updateFieldRations), [(CBA_missionTime + 60)], 10] call CBA_fnc_waitAndExecute;
 
     ["ace_interactMenuClosed", {
         if (GVAR(hudInteractionHover)) then {

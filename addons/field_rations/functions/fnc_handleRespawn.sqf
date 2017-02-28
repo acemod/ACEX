@@ -19,7 +19,7 @@
 if (!GVAR(systemEnabled)) exitWith {};
 
 params ["_unit", "_corpse"];
-TRACE_2("params",_unit,_corpse);
+TRACE_2("handleRespawn",_unit,_corpse);
 
 diag_log text format ["Respawn ------------- %1 ==== %2", _this, _unit isEqualTo _corpse];
 

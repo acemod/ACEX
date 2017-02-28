@@ -29,7 +29,7 @@ private _fncGetChildren = {
             private _displayName = getText (_cfg >> "displayName");
             private _picture = getText (_cfg >> "picture");
             private _actionText = format [localize LSTRING(RefillX), _displayName];
-            private _action = [_x, _actionText, _picture, {_this call FUNC(actionRefillFromWaterSource)}, {_this call FUNC(canRefillFromWaterSource)}, {}, _x] call ACEFUNC(interact_menu,createAction);
+            private _action = [_x, _actionText, _picture, LINKFUNC(actionRefillFromWaterSource), LINKFUNC(canRefillFromWaterSource), {}, _x] call ACEFUNC(interact_menu,createAction);
             _actions pushBack [_action, [], _player];
         };
     } forEach (items _player);
@@ -40,10 +40,10 @@ private _fncGetChildren = {
     _x params ["_classname", ["_tapLocation", [0,0,0]]];
 
     private _cfg = configFile >> "CfgVehicles" >> _classname;
-    TRACE_3("Adding refil action", (isClass _cfg), _classname, _tapLocation);
+    TRACE_3("Adding refil action",isClass _cfg,_classname,_tapLocation);
 
     if (isClass _cfg) then {
-        _action = [QGVAR(refill), (localize LSTRING(refillWater)), QUOTE(PATHTOF(ui\hud_drinkstatus2.paa)), {}, {true}, _fncGetChildren, [], _tapLocation, 4] call ACEFUNC(interact_menu,createAction);
+        _action = [QGVAR(refill), (format [localize LSTRING(RefillX), ""]), QUOTE(PATHTOF(ui\hud_drinkstatus2.paa)), {}, {true}, _fncGetChildren, [], _tapLocation, 4] call ACEFUNC(interact_menu,createAction);
         [_classname, 0, [], _action] call ACEFUNC(interact_menu,addActionToClass);
     };
 } forEach WATER_SOURCES;

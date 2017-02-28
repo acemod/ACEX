@@ -34,7 +34,7 @@ private _consumableItems = [];
             private _displayName = getText (_cfg >> "displayName");
             private _picture = getText (_cfg >> "picture");
 
-            private _action = [_x, _displayName, _picture, {_this call FUNC(actionConsumeItem)}, {_this call FUNC(canConsumeItem)}, {}, _x] call ACEFUNC(interact_menu,createAction);
+            private _action = [_x, _displayName, _picture, LINKFUNC(actionConsumeItem), LINKFUNC(canConsumeItem), {}, _x] call ACEFUNC(interact_menu,createAction);
             _actions pushBack [_action, [], _player];
         };
     };

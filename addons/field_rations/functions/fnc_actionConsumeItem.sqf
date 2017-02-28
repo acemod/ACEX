@@ -18,7 +18,7 @@
 #include "script_component.hpp"
 
 params ["", "_player", "_itemClassname"];
-TRACE_2("params",_player,_itemClassname);
+TRACE_2("actionConsumeItem",_player,_itemClassname);
 
 if (!(_this call FUNC(canConsumeItem))) exitWith {TRACE_1("canConsumeItem check failed", _this);};
 

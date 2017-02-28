@@ -2,6 +2,7 @@ class CfgWeapons {
     class ItemCore;
     class InventoryItem_Base_F;
     class ACE_waterbottle: ItemCore {
+        author = ACECSTRING(common,ACETeam);
         scope = 2;
         value = 1;
         count = 1;
@@ -35,6 +36,7 @@ class CfgWeapons {
         GVAR(replacementItem) = "";
     };
     class ACE_canteen: ItemCore {
+        author = ACECSTRING(common,ACETeam);
         scope = 2;
         value = 1;
         count = 1;
@@ -70,6 +72,7 @@ class CfgWeapons {
     //Food:
 
     class ACE_MRE_BASE: ACE_waterbottle {
+        author = ACECSTRING(common,ACETeam);
         scope = 2;
         value = 1;
         count = 1;

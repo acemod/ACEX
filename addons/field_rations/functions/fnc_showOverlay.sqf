@@ -15,7 +15,7 @@
  */
 #include "script_component.hpp"
 
-#define DEFAULT_ALPHA_LEVEL 0.6
+#define DEFAULT_ALPHA_LEVEL 0.9
 
 params [["_transistionTime", 10]];
 

@@ -18,7 +18,7 @@ class CfgVehicles {
     class ACE_Module;
     class GVAR(module): ACE_Module {
         scope = 2;
-        author = ECSTRING(common,ACETeam);
+        author = ACECSTRING(common,ACETeam);
         category = "ACEX";
         displayName = CSTRING(moduleName);
         //icon = "\ace\ace_main\data\ace_basic_module.paa";
@@ -46,9 +46,9 @@ class CfgVehicles {
     class GVAR(box): NATO_Box_Base {
         scope = 2;
         accuracy = 1000;
-        displayName = "[ACE] Field Rations [All]";
+        displayName = "[ACEX] Field Rations [All]";
         model = "\A3\weapons_F\AmmoBoxes\AmmoBox_F";
-        author = ECSTRING(common,ACETeam);
+        author = ACECSTRING(common,ACETeam);
         class TransportItems {
             MACRO_ADDITEM(ace_waterbottle,20);
             MACRO_ADDITEM(ace_canteen,20);
