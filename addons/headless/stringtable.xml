@@ -72,9 +72,11 @@
         </Key>
         <Key ID="STR_ACEX_Headless_BlacklistEden">
             <English>Headless Blacklist</English>
+            <Japanese>ヘッドレス ブラックリスト</Japanese>
         </Key>
         <Key ID="STR_ACEX_Headless_BlacklistEdenDesc">
             <English>Disables transferring of this AI unit/group to Headless Clients. No effect on player units.</English>
+            <Japanese>ヘッドレス クライアントへ移行させない AI ユニット/グループを指定。プレイヤー ユニットへは効果なし。</Japanese>
         </Key>
     </Package>
 </Project>
