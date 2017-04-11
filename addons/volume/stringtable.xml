@@ -3,51 +3,67 @@
     <Package name="Volume">
         <Key ID="STR_ACEX_Volume_Name">
             <English>Volume</English>
+            <French>Volume</French>
         </Key>
         <Key ID="STR_ACEX_Volume_KeybindName">
             <English>Toggle Volume</English>
+            <French>Bascule Volume</French>
         </Key>
         <Key ID="STR_ACEX_Volume_KeybindDescription">
             <English>Toggle volume reduction.</English>
+            <French>Active la réduction du volume.</French>
         </Key>
         <Key ID="STR_ACEX_Volume_Lowered">
             <English>Lowered volume</English>
+            <French>Volume réduit</French>
         </Key>
         <Key ID="STR_ACEX_Volume_Restored">
             <English>Restored volume</English>
+            <French>Volume rétabli</French>
         </Key>
         <Key ID="STR_ACEX_Volume_Reduction">
             <English>Reduction</English>
+            <French>Réduction</French>
         </Key>
         <Key ID="STR_ACEX_Volume_ReductionDescription">
             <English>Reduce volume by this percentage.</English>
+            <French>Réduit le volume de ce pourcentage.</French>
         </Key>
         <Key ID="STR_ACEX_Volume_LowerInVehicles">
             <English>Lower in vehicles</English>
+            <French>Réduit dans les véhicules</French>
         </Key>
         <Key ID="STR_ACEX_Volume_LowerInVehiclesDescription">
             <English>Automatically lower volume when inside vehicles.</English>
+            <French>Réduit automatiquement le volume à l'intérieur des véhicules.</French>
         </Key>
         <Key ID="STR_ACEX_Volume_ShowNotification">
             <English>Show notification</English>
+            <French>Afficher notification</French>
         </Key>
         <Key ID="STR_ACEX_Volume_ShowNotificationDescription">
             <English>Show notification when lowering/restoring volume.</English>
+            <French>Affiche une notification lorsque le volume est réduit/rétabli.</French>
         </Key>
         <Key ID="STR_ACEX_Volume_FadeDelay">
             <English>Fade delay</English>
+            <French>Retard fondu</French>
         </Key>
         <Key ID="STR_ACEX_Volume_FadeDelayDescription">
             <English>Time it takes (in seconds) for the sound to fade in/out.</English>
+            <French>Temps nécessaire (en secondes) aux sons pour être réduits/rétablis.</French>
         </Key>
         <Key ID="STR_ACEX_Volume_RemindIfLowered">
             <English>Reminder if lowered</English>
+            <French>Rappel si réduit</French>
         </Key>
         <Key ID="STR_ACEX_Volume_RemindIfLoweredDescription">
             <English>Reminds you every minute if your volume is lowered.</English>
+            <French>Rappelle chaque minute que le volume est réduit.</French>
         </Key>
         <Key ID="STR_ACEX_Volume_LoweredReminder">
             <English>Volume still lowered</English>
+            <French>Volume réduit</French>
         </Key>
     </Package>
 </Project>
