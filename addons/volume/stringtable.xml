@@ -3,67 +3,83 @@
     <Package name="Volume">
         <Key ID="STR_ACEX_Volume_Name">
             <English>Volume</English>
+            <French>Volume</French>
 			<Japanese>音量</Japanese>
         </Key>
         <Key ID="STR_ACEX_Volume_KeybindName">
             <English>Toggle Volume</English>
-			<Japanese>音量を切り替え</Japanese>
+            <Japanese>音量を切り替え</Japanese>
+            <French>Bascule Volume</French>
         </Key>
         <Key ID="STR_ACEX_Volume_KeybindDescription">
             <English>Toggle volume reduction.</English>
-			<Japanese>音量を一時的に低減</Japanese>
+            <Japanese>音量を一時的に低減</Japanese>
+            <French>Active la réduction du volume.</French>
         </Key>
         <Key ID="STR_ACEX_Volume_Lowered">
             <English>Lowered volume</English>
-			<Japanese>音量を下げた</Japanese>
+            <Japanese>音量を下げた</Japanese>
+            <French>Volume réduit</French>
         </Key>
         <Key ID="STR_ACEX_Volume_Restored">
             <English>Restored volume</English>
-			<Japanese>音量を戻した</Japanese>
+            <Japanese>音量を戻した</Japanese>
+            <French>Volume rétabli</French>
         </Key>
         <Key ID="STR_ACEX_Volume_Reduction">
             <English>Reduction</English>
-			<Japanese>低減</Japanese>
+            <Japanese>低減</Japanese>
+            <French>Réduction</French>
         </Key>
         <Key ID="STR_ACEX_Volume_ReductionDescription">
             <English>Reduce volume by this percentage.</English>
-			<Japanese>この割合で音量を低減。</Japanese>
+            <Japanese>この割合で音量を低減。</Japanese>
+            <French>Réduit le volume de ce pourcentage.</French>
         </Key>
         <Key ID="STR_ACEX_Volume_LowerInVehicles">
             <English>Lower in vehicles</English>
-			<Japanese>車両内で低減</Japanese>
+            <Japanese>車両内で低減</Japanese>
+            <French>Réduit dans les véhicules</French>
         </Key>
         <Key ID="STR_ACEX_Volume_LowerInVehiclesDescription">
             <English>Automatically lower volume when inside vehicles.</English>
-			<Japanese>自動的に車両内で音量を低減させます。</Japanese>
+            <Japanese>自動的に車両内で音量を低減させます。</Japanese>
+            <French>Réduit automatiquement le volume à l'intérieur des véhicules.</French>
         </Key>
         <Key ID="STR_ACEX_Volume_ShowNotification">
             <English>Show notification</English>
-			<Japanese>通知を表示</Japanese>
+            <Japanese>通知を表示</Japanese>
+            <French>Afficher notification</French>
         </Key>
         <Key ID="STR_ACEX_Volume_ShowNotificationDescription">
             <English>Show notification when lowering/restoring volume.</English>
-			<Japanese>音量を低減、復元させた時に通知を表示します。</Japanese>
+            <Japanese>音量を低減、復元させた時に通知を表示します。</Japanese>
+            <French>Affiche une notification lorsque le volume est réduit/rétabli.</French>
         </Key>
         <Key ID="STR_ACEX_Volume_FadeDelay">
             <English>Fade delay</English>
-			<Japanese>フェードへの遅延</Japanese>
+            <Japanese>フェードへの遅延</Japanese>
+            <French>Retard fondu</French>
         </Key>
         <Key ID="STR_ACEX_Volume_FadeDelayDescription">
             <English>Time it takes (in seconds) for the sound to fade in/out.</English>
-			<Japanese>音がフェードイン、アウトするまでの時間(秒)を決定します。</Japanese>
+            <Japanese>音がフェードイン、アウトするまでの時間(秒)を決定します。</Japanese>
+            <French>Temps nécessaire (en secondes) aux sons pour être réduits/rétablis.</French>
         </Key>
         <Key ID="STR_ACEX_Volume_RemindIfLowered">
             <English>Reminder if lowered</English>
-			<Japanese>低減時に通知</Japanese>
+            <Japanese>低減時に通知</Japanese>
+            <French>Rappel si réduit</French>
         </Key>
         <Key ID="STR_ACEX_Volume_RemindIfLoweredDescription">
             <English>Reminds you every minute if your volume is lowered.</English>
-			<Japanese>音量を低減させた時は毎分ごとに通知します。</Japanese>
+            <Japanese>音量を低減させた時は毎分ごとに通知します。</Japanese>
+            <French>Rappelle chaque minute que le volume est réduit.</French>
         </Key>
         <Key ID="STR_ACEX_Volume_LoweredReminder">
             <English>Volume still lowered</English>
-			<Japanese>音量を低減中</Japanese>
+            <Japanese>音量を低減中</Japanese>
+            <French>Volume réduit</French>
         </Key>
     </Package>
 </Project>
