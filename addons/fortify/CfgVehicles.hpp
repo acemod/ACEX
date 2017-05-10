@@ -9,7 +9,7 @@ class CfgVehicles {
                 statement = "";
                 exceptions[] = {};
                 showDisabled = 0;
-                priority = 4;
+                priority = 1;
             };
         };
     };

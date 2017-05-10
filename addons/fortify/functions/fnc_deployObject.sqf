@@ -25,12 +25,18 @@ _params params [
     ["_classname", "", [""]]
 ];
 
+private _isStatic = getArray (configFile >> "CfgVehicles" >> _classname >> "weapons") isEqualTo [];
+private _isLamp = getText (configFile >> "CfgVehicles" >> _classname >> "editorSubcategory") == "EdSubcat_Lamps";
+private _budget = [_side] call FUNC(getBudget);
+private _cost = [_side, _classname] call FUNC(getCost);
 private _object = createVehicle [_classname, [0, 0, 0], [], 0, "NONE"];
 
 _player setVariable [QGVAR(deployedObject), _object];
 _player setVariable [QGVAR(isDeploying), true];
 
-[QACEGVAR(common,enableSimulationGlobal), [_object, false]] call CBA_fnc_serverEvent;
+if (_isStatic && !_isLamp) then {
+    [QACEGVAR(common,enableSimulationGlobal), [_object, false]] call CBA_fnc_serverEvent;
+};
 
 GVAR(deployDirection) = 0;
 
@@ -41,25 +47,23 @@ GVAR(deployPFH) = [{
     _boundingBox params ["_p1", "_p2"];
     private _maxWidth = abs ((_p2 select 0) - (_p1 select 0));
     private _maxLength = abs ((_p2 select 1) - (_p1 select 1));
+    private _maxHeight = abs ((_p2 select 2) - (_p1 select 2));
     private _distance = _maxWidth max _maxLength;
 
-    private _basePos = eyePos _unit vectorAdd ([
-        sin getDir _unit,
-        +cos getDir _unit,
-        (getCameraViewDirection _unit select 2)
-    ] vectorMultiply _distance);
+    private _start = AGLtoASL positionCameraToWorld [0, 0, 0];
+    private _basePos = (_start vectorAdd (getCameraViewDirection _unit vectorMultiply _distance));
+    _basePos set [2, ((_basePos select 2) - (_maxHeight / 2)) max getTerrainHeightASL _basePos];
 
     private _angle = (GVAR(deployDirection) + getDir _unit);
     private _v3 = surfaceNormal _basePos;
     private _v2 = [sin _angle, +cos _angle, 0] vectorCrossProduct _v3;
     private _v1 = _v3 vectorCrossProduct _v2;
 
-    _basePos set [2, getTerrainHeightASL _basePos];
     _object setPosASL _basePos;
     _object setVectorDirAndUp [_v1, _v3];
 }, 0, [_player, _object]] call CBA_fnc_addPerFrameHandler;
 
-["Confirm", "Cancel", "Direction"] call ACEFUNC(interaction,showMouseHint);
+[([format ["Confirm -$%1", _cost], "Confirm"] select (_budget == -1)), "Cancel", "Direction"] call ACEFUNC(interaction,showMouseHint);
 
 _player setVariable [
     QGVAR(Confirm),

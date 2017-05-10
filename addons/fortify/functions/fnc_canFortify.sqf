@@ -20,5 +20,6 @@ params [["_unit", objNull, [objNull]]];
 
 private _budget = [side group _unit] call FUNC(getBudget);
 
-("ACE_FortifyPickaxe" in (items _unit)) &&
+GVAR(mode) &&
+{("ACE_Fortify" in (items _unit))} &&
 {(_budget == -1 || _budget > 0)}
