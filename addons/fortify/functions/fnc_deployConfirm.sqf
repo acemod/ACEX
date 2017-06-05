@@ -34,29 +34,17 @@ private _action = [
     "",
     {
         params ["_target", "_player", "_params"];
-        _params params ["_side", "_cost"];
         deleteVehicle _target;
-
-        private _budget = [_side] call FUNC(getBudget);
-
-        if (_budget != -1) then {
-            missionNamespace setVariable [format ["ACEX_Fortify_Budget_%1", _side], _budget + _cost, true];
-            format ["BUDGET $%1", _budget + _cost] remoteExecCall ["hint", _side];
-        };
+        _params call FUNC(updateBudget);
     },
     {GVAR(mode)},
     {},
     [_side, _cost]
 ] call ACEFUNC(interact_menu,createAction);
 
-[_object, 0, [], _action] remoteExecCall [QACEFUNC(interact_menu,addActionToObject), 0, true];
+[QGVAR(addActionToObject), [_side, _object, _action]] call CBA_fnc_globalEventJIP;
 
-private _budget = [_side] call FUNC(getBudget);
-
-if (_budget != -1) then {
-    missionNamespace setVariable [format ["ACEX_Fortify_Budget_%1", _side], _budget - _cost, true];
-    format ["BUDGET $%1", _budget - _cost] remoteExecCall ["hint", _side];
-};
+[_side, -_cost] call FUNC(updateBudget);
 
 _unit setVariable [QGVAR(deployedObject), nil, true];
 _unit setVariable [QGVAR(isDeploying), false, true];
@@ -69,5 +57,13 @@ call ACEFUNC(interaction,hideMouseHint);
 
 if (GVAR(keyCtrl)) then {
     // Re-run if ctrl key held
-    [_unit, _unit, [_side, typeOf _object]] call FUNC(deployObject);
+    [
+        objNull,
+        _unit,
+        [_side, typeOf _object, [
+            GVAR(objectRotationX),
+            GVAR(objectRotationY),
+            GVAR(objectRotationZ)
+        ]]
+    ] call FUNC(deployObject);
 };

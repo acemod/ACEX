@@ -10,7 +10,7 @@
  * Cost <NUMERIC>
  *
  * Example:
- * TODO
+ * [west, "Sandbag"] call acex_fortify_fnc_getCost;
  *
  * Public: Yes
  */

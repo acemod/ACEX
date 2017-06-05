@@ -22,11 +22,16 @@ params ["_target", "_player", "_params"];
 
 _params params [
     ["_side", sideUnknown, [sideUnknown]],
-    ["_classname", "", [""]]
+    ["_classname", "", [""]],
+    ["_rotations", [0,0,0]]
 ];
 
+// TODO Needs a better way to check if the objects has any "seats" the AI/players can use
 private _isStatic = getArray (configFile >> "CfgVehicles" >> _classname >> "weapons") isEqualTo [];
+
+// TODO Needs a more reliable way to check if the object is lamp / has light sources
 private _isLamp = getText (configFile >> "CfgVehicles" >> _classname >> "editorSubcategory") == "EdSubcat_Lamps";
+
 private _budget = [_side] call FUNC(getBudget);
 private _cost = [_side, _classname] call FUNC(getCost);
 private _object = createVehicle [_classname, [0, 0, 0], [], 0, "NONE"];
@@ -40,28 +45,27 @@ if (_isStatic && !_isLamp) then {
 
 _object disableCollisionWith _player;
 
-GVAR(objectRotationX) = 0;
-GVAR(objectRotationY) = 0;
-GVAR(objectRotationZ) = 0;
+GVAR(objectRotationX) = _rotations select 0;
+GVAR(objectRotationY) = _rotations select 1;
+GVAR(objectRotationZ) = _rotations select 2;
 
 GVAR(deployPFH) = [{
     (_this select 0) params ["_unit", "_object"];
 
-    private _boundingBox = boundingBoxReal _object;
-    _boundingBox params ["_p1", "_p2"];
-    private _maxWidth = abs ((_p2 select 0) - (_p1 select 0));
-    private _maxLength = abs ((_p2 select 1) - (_p1 select 1));
-    private _maxHeight = abs ((_p2 select 2) - (_p1 select 2));
-    private _distance = _maxWidth max _maxLength;
+    private _lengths = [_object] call FUNC(axisLengths);
+    _lengths params ["_width", "_length", "_height"];
 
+    private _distance = _width max _length;
     private _start = AGLtoASL positionCameraToWorld [0, 0, 0];
     private _basePos = (_start vectorAdd (getCameraViewDirection _unit vectorMultiply _distance));
-    _basePos set [2, ((_basePos select 2) - (_maxHeight / 2)) max getTerrainHeightASL _basePos];
+    _basePos set [2, ((_basePos select 2) - (_height / 2)) max getTerrainHeightASL _basePos];
 
     _object setPosASL _basePos;
     [_object, GVAR(objectRotationX), GVAR(objectRotationY), GVAR(objectRotationZ) + getDir _unit] call ACEFUNC(common,setPitchBankYaw);
 
-    hintSilent format ["Rotation:\nX: %1\nY: %2\nZ: %3", GVAR(objectRotationX), GVAR(objectRotationY), GVAR(objectRotationZ)];
+    #ifdef DEBUG_MODE_FULL
+        hintSilent format ["Rotation:\nX: %1\nY: %2\nZ: %3", GVAR(objectRotationX), GVAR(objectRotationY), GVAR(objectRotationZ)];
+    #endif
 }, 0, [_player, _object]] call CBA_fnc_addPerFrameHandler;
 
 [([format ["Confirm -$%1", _cost], "Confirm"] select (_budget == -1)), "Cancel", "Rotation"] call ACEFUNC(interaction,showMouseHint);

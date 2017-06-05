@@ -9,7 +9,7 @@
  * Budget <NUMERIC>
  *
  * Example:
- * TODO
+ * [west] call acex_fortify_fnc_getBudget;
  *
  * Public: Yes
  */
