@@ -17,6 +17,7 @@ class CfgPatches {
     class ACE_common;
     class ACE_Sitting: ACE_common {
         name = COMPONENT_NAME;
+        ACE_isOptional = 1; // skip checkFiles
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
