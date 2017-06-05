@@ -24,6 +24,8 @@ private _budget = [_side] call FUNC(getBudget);
 private _cost = [_side, typeOf _object] call FUNC(getCost);
 private _text = [format ["Remove Object +$%1", _cost], "Remove Object"] select (_budget == -1);
 
+_object enableCollisionWith _unit;
+
 _object setVariable [QGVAR(object), true, true];
 
 private _action = [
@@ -64,3 +66,8 @@ GVAR(deployPFH) = -1;
 
 call ACEFUNC(interaction,hideMouseHint);
 [_unit, "DefaultAction", _unit getVariable [QGVAR(Confirm), -1]] call ACEFUNC(common,removeActionEventHandler);
+
+if (GVAR(keyCtrl)) then {
+    // Re-run if ctrl key held
+    [_unit, _unit, [_side, typeOf _object]] call FUNC(deployObject);
+};

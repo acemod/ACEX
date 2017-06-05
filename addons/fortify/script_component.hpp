@@ -1,8 +1,8 @@
 #define COMPONENT fortify
 #include "\z\acex\addons\main\script_mod.hpp"
 
-// #define DEBUG_MODE_FULL
-// #define DISABLE_COMPILE_CACHE
+#define DEBUG_MODE_FULL
+#define DISABLE_COMPILE_CACHE
 // #define CBA_DEBUG_SYNCHRONOUS
 // #define ENABLE_PERFORMANCE_COUNTERS
 
@@ -15,3 +15,4 @@
 #endif
 
 #include "\z\acex\addons\main\script_macros.hpp"
+#include "\a3\editor_f\Data\Scripts\dikCodes.h"

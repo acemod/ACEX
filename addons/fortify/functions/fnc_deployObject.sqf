@@ -38,7 +38,11 @@ if (_isStatic && !_isLamp) then {
     [QACEGVAR(common,enableSimulationGlobal), [_object, false]] call CBA_fnc_serverEvent;
 };
 
-GVAR(deployDirection) = 0;
+_object disableCollisionWith _player;
+
+GVAR(objectRotationX) = 0;
+GVAR(objectRotationY) = 0;
+GVAR(objectRotationZ) = 0;
 
 GVAR(deployPFH) = [{
     (_this select 0) params ["_unit", "_object"];
@@ -54,16 +58,13 @@ GVAR(deployPFH) = [{
     private _basePos = (_start vectorAdd (getCameraViewDirection _unit vectorMultiply _distance));
     _basePos set [2, ((_basePos select 2) - (_maxHeight / 2)) max getTerrainHeightASL _basePos];
 
-    private _angle = (GVAR(deployDirection) + getDir _unit);
-    private _v3 = surfaceNormal _basePos;
-    private _v2 = [sin _angle, +cos _angle, 0] vectorCrossProduct _v3;
-    private _v1 = _v3 vectorCrossProduct _v2;
-
     _object setPosASL _basePos;
-    _object setVectorDirAndUp [_v1, _v3];
+    [_object, GVAR(objectRotationX), GVAR(objectRotationY), GVAR(objectRotationZ) + getDir _unit] call ACEFUNC(common,setPitchBankYaw);
+
+    hintSilent format ["Rotation:\nX: %1\nY: %2\nZ: %3", GVAR(objectRotationX), GVAR(objectRotationY), GVAR(objectRotationZ)];
 }, 0, [_player, _object]] call CBA_fnc_addPerFrameHandler;
 
-[([format ["Confirm -$%1", _cost], "Confirm"] select (_budget == -1)), "Cancel", "Direction"] call ACEFUNC(interaction,showMouseHint);
+[([format ["Confirm -$%1", _cost], "Confirm"] select (_budget == -1)), "Cancel", "Rotation"] call ACEFUNC(interaction,showMouseHint);
 
 _player setVariable [
     QGVAR(Confirm),
