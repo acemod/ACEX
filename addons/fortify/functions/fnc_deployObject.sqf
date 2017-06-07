@@ -34,7 +34,7 @@ private _isLamp = getText (configFile >> "CfgVehicles" >> _classname >> "editorS
 
 private _budget = [_side] call FUNC(getBudget);
 private _cost = [_side, _classname] call FUNC(getCost);
-private _object = createVehicle [_classname, [0, 0, 0], [], 0, "NONE"];
+private _object = _classname createVehicle [0, 0, 0];
 
 _player setVariable [QGVAR(deployedObject), _object];
 _player setVariable [QGVAR(isDeploying), true];

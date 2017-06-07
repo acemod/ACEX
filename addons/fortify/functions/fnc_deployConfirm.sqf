@@ -28,7 +28,8 @@ _object enableCollisionWith _unit;
 
 _object setVariable [QGVAR(object), true, true];
 
-private _action = [
+// Remove object action
+[QGVAR(addActionToObject), [_side, _object, ([
     QGVAR(removeObject),
     _text,
     "",
@@ -40,9 +41,7 @@ private _action = [
     {GVAR(mode)},
     {},
     [_side, _cost]
-] call ACEFUNC(interact_menu,createAction);
-
-[QGVAR(addActionToObject), [_side, _object, _action]] call CBA_fnc_globalEventJIP;
+] call ACEFUNC(interact_menu,createAction))]] call CBA_fnc_globalEventJIP;
 
 [_side, -_cost] call FUNC(updateBudget);
 

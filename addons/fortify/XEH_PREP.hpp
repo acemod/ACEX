@@ -9,3 +9,5 @@ PREP(getCost);
 PREP(getBudget);
 PREP(updateBudget);
 PREP(axisLengths);
+PREP(handleChatCommand);
+PREP(parseSide);

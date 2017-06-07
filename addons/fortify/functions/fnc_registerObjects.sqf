@@ -3,6 +3,7 @@
  * Registers the given objects in the given side's player interaction menu.
  * Players on that side must have the pickaxe item in their inventory to access the menu.
  * Classnames must be in the format [<classname>, <cost>]
+ * MUST BE CALLED ON SERVER!
  *
  * Arguments:
  * 0: Side <SIDE>

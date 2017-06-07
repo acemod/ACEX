@@ -29,3 +29,7 @@ private _onChange = {
         [_object, 0, [], _action] call ACEFUNC(interact_menu,addActionToObject);
     };
 }] call CBA_fnc_addEventHandler;
+
+[QGVAR(registerObjects), FUNC(registerObjects)] call CBA_fnc_addEventHandler;
+
+["fortify", FUNC(handleChatCommand), "admin"] call CBA_fnc_registerChatCommand;
