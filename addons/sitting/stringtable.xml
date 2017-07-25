@@ -14,6 +14,8 @@
             <Italian>Siediti</Italian>
             <Japanese>座る</Japanese>
             <Korean>앉기</Korean>
+            <Chinesesimp>坐下</Chinesesimp>
+            <Chinese>坐下</Chinese>
         </Key>
         <Key ID="STR_ACEX_Sitting_Stand">
             <English>Stand Up</English>
@@ -28,6 +30,8 @@
             <Italian>Alzati</Italian>
             <Japanese>立つ</Japanese>
             <Korean>일어서기</Korean>
+            <Chinesesimp>站起来</Chinesesimp>
+            <Chinese>站起來</Chinese>
         </Key>
         <Key ID="STR_ACEX_Sitting_Enable">
             <English>Enable Sitting</English>
@@ -42,6 +46,8 @@
             <Italian>Abilita seduta</Italian>
             <Japanese>座るのを有効化</Japanese>
             <Korean>앉기 사용</Korean>
+            <Chinesesimp>开启坐下功能</Chinesesimp>
+            <Chinese>開啟坐下功能</Chinese>
         </Key>
         <Key ID="STR_ACEX_Sitting_ModuleDisplayName">
             <English>Sitting</English>
@@ -56,6 +62,8 @@
             <Italian>Sedersi</Italian>
             <Japanese>着座</Japanese>
             <Korean>앉기</Korean>
+            <Chinesesimp>坐下功能</Chinesesimp>
+            <Chinese>坐下功能</Chinese>
         </Key>
         <Key ID="STR_ACEX_Sitting_ModuleDescription">
             <English>This module allows you to disable the ability to sit on chairs.</English>
@@ -70,6 +78,8 @@
             <Italian>Questo modulo ti permette di disabilitare la possibilità di sederti sulle sedie.</Italian>
             <Japanese>モジュールでは椅子に着席するのを無効化できます。</Japanese>
             <Korean>이 모듈을 사용하여 의자에 앉을 수 있는 기능을 비활성 할 수 있습니다.</Korean>
+            <Chinesesimp>此模块可以让你开关在椅子上坐下的能力。</Chinesesimp>
+            <Chinese>此模塊可以讓你開關在椅子上坐下的能力。</Chinese>
         </Key>
     </Package>
 </Project>
