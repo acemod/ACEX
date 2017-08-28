@@ -22,20 +22,11 @@ params ["", "_player", "_params"];
 _params params [["_side", sideUnknown, [sideUnknown]], ["_classname", "", [""]], ["_rotations", [0,0,0]]];
 TRACE_4("deployObject",_player,_side,_classname,_rotations);
 
-// TODO Needs a better way to check if the objects has any "seats" the AI/players can use
-private _isStatic = getArray (configFile >> "CfgVehicles" >> _classname >> "weapons") isEqualTo [];
-
-// TODO Needs a more reliable way to check if the object is lamp / has light sources
-private _isLamp = getText (configFile >> "CfgVehicles" >> _classname >> "editorSubcategory") == "EdSubcat_Lamps";
-
 private _budget = [_side] call FUNC(getBudget);
 private _cost = [_side, _classname] call FUNC(getCost);
-private _object = _classname createVehicle [0, 0, 0];
 
-if (_isStatic && {!_isLamp}) then {
-    [QACEGVAR(common,enableSimulationGlobal), [_object, false]] call CBA_fnc_serverEvent;
-};
-
+// Create a local only copy of the object
+private _object = _classname createVehicleLocal [0, 0, 0];
 _object disableCollisionWith _player;
 
 GVAR(objectRotationX) = _rotations select 0;
@@ -50,7 +41,8 @@ private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAI
     params ["_args", "_pfID"];
     _args params ["_unit", "_object", "_cost", "_mouseClickID"];
 
-    if ((_unit != ACE_player) || {!([_unit, _object, []] call EFUNC(common,canInteractWith))} || {!([_unit, _cost] call FUNC(canFortify))}) then {
+
+    if ((_unit != ACE_player) || {isNull _object} || {!([_unit, _object, []] call EFUNC(common,canInteractWith))} || {!([_unit, _cost] call FUNC(canFortify))}) then {
         GVAR(isPlacing) = PLACE_CANCEL;
     };
     if (GVAR(isPlacing) != PLACE_WAITING) exitWith {
@@ -69,10 +61,9 @@ private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAI
         };
     };
 
-
     ([_object] call FUNC(axisLengths)) params ["_width", "_length", "_height"];
-
     private _distance = _width max _length;
+
     private _start = eyePos _unit;
     private _camViewDir = getCameraViewDirection _unit;
     private _basePos = (_start vectorAdd (_camViewDir vectorMultiply _distance));
