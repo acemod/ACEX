@@ -14,7 +14,7 @@ GVAR(objectRotationY) = 0;
 GVAR(objectRotationZ) = 0;
 
 // Register CBA Chat command for admins (Example: #fortify west small 200)
-["fortify", LINKFUNC(handleChatCommand), "admin"] call CBA_fnc_registerChatCommand;
+["ace-fortify", LINKFUNC(handleChatCommand), "admin"] call CBA_fnc_registerChatCommand;
 
 [QGVAR(sideBudgetHint), {
     params ["_side"];
