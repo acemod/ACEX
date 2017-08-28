@@ -18,21 +18,18 @@
 
 #include "script_component.hpp"
 
-params [
-    ["_side", sideUnknown, [sideUnknown]],
-    ["_change", 0, [0]],
-    ["_hint", true, [true]]
-];
+params [["_side", sideUnknown, [sideUnknown]], ["_change", 0, [0]], ["_hint", true, [true]]];
+TRACE_3("updateBudget",_side,_change,_hint);
 
-if (_side isEqualTo sideUnknown) exitWith {};
+if (_side isEqualTo sideUnknown) exitWith {ERROR("Unknown side");};
 
 private _budget = [_side] call FUNC(getBudget);
 private _newBudget = _budget + _change;
 
 if (_budget != -1) then {
-    missionNamespace setVariable [format ["ACEX_Fortify_Budget_%1", _side], _newBudget, true];
+    missionNamespace setVariable [format [QGVAR(Budget_%1), _side], _newBudget, true];
 
     if (_hint) then {
-        [QGVAR(displayTextStructured), [_side, [format ["BUDGET $%1", _newBudget]]]] call CBA_fnc_globalEvent;
+        [QGVAR(sideHint), [_side, [format ["BUDGET $%1", _newBudget]]]] call CBA_fnc_globalEvent;
     };
 };

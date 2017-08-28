@@ -18,4 +18,4 @@
 
 params ["_side"];
 
-(missionNamespace getVariable [format ["ACEX_Fortify_Budget_%1", _side], -1])
+(missionNamespace getVariable [format [QGVAR(Budget_%1), _side], -1])

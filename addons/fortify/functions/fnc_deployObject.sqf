@@ -11,20 +11,16 @@
  * None
  *
  * Example:
- * TODO
+ * [player, player, [west, "Land_BagBunker_Small_F"]] call acex_fortify_fnc_deployObject
  *
  * Public: No
  */
 
 #include "script_component.hpp"
 
-params ["_target", "_player", "_params"];
-
-_params params [
-    ["_side", sideUnknown, [sideUnknown]],
-    ["_classname", "", [""]],
-    ["_rotations", [0,0,0]]
-];
+params ["", "_player", "_params"];
+_params params [["_side", sideUnknown, [sideUnknown]], ["_classname", "", [""]], ["_rotations", [0,0,0]]];
+TRACE_4("deployObject",_player,_side,_classname,_rotations);
 
 // TODO Needs a better way to check if the objects has any "seats" the AI/players can use
 private _isStatic = getArray (configFile >> "CfgVehicles" >> _classname >> "weapons") isEqualTo [];
@@ -36,10 +32,7 @@ private _budget = [_side] call FUNC(getBudget);
 private _cost = [_side, _classname] call FUNC(getCost);
 private _object = _classname createVehicle [0, 0, 0];
 
-_player setVariable [QGVAR(deployedObject), _object];
-_player setVariable [QGVAR(isDeploying), true];
-
-if (_isStatic && !_isLamp) then {
+if (_isStatic && {!_isLamp}) then {
     [QACEGVAR(common,enableSimulationGlobal), [_object, false]] call CBA_fnc_serverEvent;
 };
 
@@ -49,33 +42,47 @@ GVAR(objectRotationX) = _rotations select 0;
 GVAR(objectRotationY) = _rotations select 1;
 GVAR(objectRotationZ) = _rotations select 2;
 
-GVAR(deployPFH) = [{
-    (_this select 0) params ["_unit", "_object"];
+GVAR(isPlacing) = PLACE_WAITING;
+[([format ["Confirm -$%1", _cost], "Confirm"] select (_budget == -1)), "Cancel", "Rotation"] call ACEFUNC(interaction,showMouseHint);
+private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAITING}, {GVAR(isPlacing) = PLACE_APPROVE}] call ACEFUNC(common,addActionEventHandler);
 
-    private _lengths = [_object] call FUNC(axisLengths);
-    _lengths params ["_width", "_length", "_height"];
+[{
+    params ["_args", "_pfID"];
+    _args params ["_unit", "_object", "_cost", "_mouseClickID"];
+
+    if ((_unit != ACE_player) || {!([_unit, _object, []] call EFUNC(common,canInteractWith))} || {!([_unit, _cost] call FUNC(canFortify))}) then {
+        GVAR(isPlacing) = PLACE_CANCEL;
+    };
+    if (GVAR(isPlacing) != PLACE_WAITING) exitWith {
+        TRACE_3("exiting PFEH",GVAR(isPlacing),_pfID,_mouseClickID);
+
+        [_pfID] call CBA_fnc_removePerFrameHandler;
+        call ACEFUNC(interaction,hideMouseHint);
+        [_unit, "DefaultAction", _mouseClickID] call ACEFUNC(common,removeActionEventHandler);
+
+        if (GVAR(isPlacing) == PLACE_APPROVE) then {
+            TRACE_1("deploying object",_object);
+            GVAR(isPlacing) = PLACE_CANCEL;
+            [_unit, _object] call FUNC(deployConfirm);
+        } else {
+            TRACE_1("deleting object",_object);
+            deleteVehicle _object;
+        };
+    };
+
+
+    ([_object] call FUNC(axisLengths)) params ["_width", "_length", "_height"];
 
     private _distance = _width max _length;
     private _start = AGLtoASL positionCameraToWorld [0, 0, 0];
     private _basePos = (_start vectorAdd (getCameraViewDirection _unit vectorMultiply _distance));
-    _basePos set [2, ((_basePos select 2) - (_height / 2)) max getTerrainHeightASL _basePos];
+    _basePos set [2, ((_basePos select 2) - (_height / 2)) max ((getTerrainHeightASL _basePos) - 0.05)];
 
     _object setPosASL _basePos;
     [_object, GVAR(objectRotationX), GVAR(objectRotationY), GVAR(objectRotationZ) + getDir _unit] call ACEFUNC(common,setPitchBankYaw);
 
     #ifdef DEBUG_MODE_FULL
-        hintSilent format ["Rotation:\nX: %1\nY: %2\nZ: %3", GVAR(objectRotationX), GVAR(objectRotationY), GVAR(objectRotationZ)];
+    hintSilent format ["Rotation:\nX: %1\nY: %2\nZ: %3", GVAR(objectRotationX), GVAR(objectRotationY), GVAR(objectRotationZ)];
     #endif
-}, 0, [_player, _object]] call CBA_fnc_addPerFrameHandler;
+}, 0, [_player, _object, _cost, _mouseClickID]] call CBA_fnc_addPerFrameHandler;
 
-[([format ["Confirm -$%1", _cost], "Confirm"] select (_budget == -1)), "Cancel", "Rotation"] call ACEFUNC(interaction,showMouseHint);
-
-_player setVariable [
-    QGVAR(Confirm),
-    [
-        _player,
-        "DefaultAction",
-        {GVAR(deployPFH) != -1},
-        {[_this select 0] call FUNC(deployConfirm)}
-    ] call ACEFUNC(common,addActionEventHandler)
-];

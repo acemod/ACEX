@@ -3,29 +3,27 @@
  * Adds the child actions.
  *
  * Arguments:
- * 0: Target <OBJECT>
- * 1: Player <OBJECT>
- * 2: Params <ARRAY>
+ * 0: Player <OBJECT>
  *
  * Return Value:
  * Actions <ARRAY>
  *
  * Example:
- * TODO
+ * [player] call acex_fortify_fnc_addActions
  *
  * Public: No
  */
 
 #include "script_component.hpp"
 
-params ["_target", "_player", "_params"];
+params ["_player"];
 
 private _side = side group _player;
-private _objects = missionNamespace getVariable [format ["ACEX_Fortify_Objects_%1", _side], []];
+private _objects = missionNamespace getVariable [format [QGVAR(Objects_%1), _side], []];
 private _actions = [];
 
 {
-    _x params ["_classname", "_cost"];
+    _x params ["_classname"];
 
     private _action = [
         _classname,
@@ -33,16 +31,16 @@ private _actions = [];
         "",
         {_this call FUNC(deployObject)},
         {
-            params ["_target", "_player", "_params"];
+            params ["", "_player", "_params"];
             private _cost = _params call FUNC(getCost);
-            private _budget = [side group _unit] call FUNC(getBudget);
+            private _budget = [side group _player] call FUNC(getBudget);
             (_budget == -1 || _budget >= _cost)
         },
         {},
         [_side, _classname]
     ] call ACEFUNC(interact_menu,createAction);
 
-    _actions pushBack [_action, [], _target];
+    _actions pushBack [_action, [], _player];
 } forEach _objects;
 
 _actions

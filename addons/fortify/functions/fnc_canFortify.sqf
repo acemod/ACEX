@@ -4,6 +4,7 @@
  *
  * Arguments:
  * 0: Player <OBJECT>
+ * 1: Cost (default: 0) <NUMBER><OPTIONAL>
  *
  * Return Value:
  * Boolean
@@ -16,10 +17,11 @@
 
 #include "script_component.hpp"
 
-params [["_unit", objNull, [objNull]]];
+params ["_player", ["_cost", 0]];
 
-private _budget = [side group _unit] call FUNC(getBudget);
-
-GVAR(mode) &&
-{("ACE_Fortify" in (items _unit))} &&
-{(_budget == -1 || _budget > 0)}
+(missionNamespace getVariable [QGVAR(fortifyAllowed), true]) &&
+{("ACE_Fortify" in (items _player))} &&
+{
+    private _budget = [side group _player] call FUNC(getBudget);
+    ((_budget == -1) || {_budget > _cost})
+}

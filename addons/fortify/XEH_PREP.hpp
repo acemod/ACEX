@@ -1,8 +1,9 @@
+TRACE_1("",QUOTE(ADDON));
+
 PREP(registerObjects);
 PREP(canFortify);
 PREP(deployObject);
 PREP(deployConfirm);
-PREP(deployCancel);
 PREP(handleScrollWheel);
 PREP(addActions);
 PREP(getCost);
@@ -11,3 +12,4 @@ PREP(updateBudget);
 PREP(axisLengths);
 PREP(handleChatCommand);
 PREP(parseSide);
+PREP(getPlaceableSet);

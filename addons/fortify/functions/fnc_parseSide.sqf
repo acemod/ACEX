@@ -19,6 +19,7 @@
 #include "script_component.hpp"
 
 params ["_side"];
+TRACE_1("parseSide",_side);
 
 if (_side isEqualType sideUnknown) exitWith {_side};
 

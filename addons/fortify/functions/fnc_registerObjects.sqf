@@ -23,11 +23,8 @@
 
 if (!isServer) exitWith {};
 
-params [
-    ["_side", sideUnknown, [sideUnknown]],
-    ["_budget", -1, [0]],
-    ["_objects", [], [[]]]
-];
+params [["_side", sideUnknown, [sideUnknown]], ["_budget", -1, [0]], ["_objects", [], [[]]]];
+TRACE_3("registerObjects",_side,_budget,_objects);
 
-missionNamespace setVariable [format ["ACEX_Fortify_Budget_%1", _side], _budget, true];
-missionNamespace setVariable [format ["ACEX_Fortify_Objects_%1", _side], _objects, true];
+missionNamespace setVariable [format [QGVAR(Budget_%1), _side], _budget, true];
+missionNamespace setVariable [format [QGVAR(Objects_%1), _side], _objects, true];

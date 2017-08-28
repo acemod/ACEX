@@ -6,7 +6,7 @@
  * 0: Object <OBJECT>
  *
  * Return Value:
- * Length <NUMBER>
+ * Lengths <ARRAY>
  *
  * Example:
  * [_object] call acex_fortify_fnc_axisLengths;
@@ -18,11 +18,10 @@
 
 params [["_object", objNull, [objNull]]];
 
-private _boundingBox = boundingBoxReal _object;
-_boundingBox params ["_p1", "_p2"];
+(boundingBoxReal _object) params ["_p1", "_p2"];
 
-([
+[
     (abs ((_p2 select 0) - (_p1 select 0))),
     (abs ((_p2 select 1) - (_p1 select 1))),
     (abs ((_p2 select 2) - (_p1 select 2)))
-])
+]

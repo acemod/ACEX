@@ -1,35 +1,55 @@
 #include "script_component.hpp"
 
-if (!hasInterface) exitWith {};
-
-private _onChange = {
-    if (ace_player getVariable [QGVAR(isDeploying), false]) then {
-        [ace_player] call FUNC(deployCancel);
-    };
+if (isServer) then {
+    [QGVAR(registerObjects), LINKFUNC(registerObjects)] call CBA_fnc_addEventHandler;
 };
 
-["ace_interactMenuOpened", _onChange] call CBA_fnc_addEventHandler;
-["unit", _onChange] call CBA_fnc_addPlayerEventHandler;
-["loadout", _onChange] call CBA_fnc_addPlayerEventHandler;
-["vehicle", _onChange] call CBA_fnc_addPlayerEventHandler;
-["ace_unconscious", _onChange] call CBA_fnc_addEventHandler;
+if (!hasInterface) exitWith {};
 
-[QGVAR(displayTextStructured), {
+GVAR(isPlacing) = PLACE_CANCEL;
+["ace_interactMenuOpened", {GVAR(placingStatus) = PLACE_CANCEL;}] call CBA_fnc_addEventHandler;
+
+GVAR(objectRotationX) = 0;
+GVAR(objectRotationY) = 0;
+GVAR(objectRotationZ) = 0;
+
+// Register CBA Chat command for admins (Example: #fortify west small 200)
+["fortify", LINKFUNC(handleChatCommand), "admin"] call CBA_fnc_registerChatCommand;
+
+[QGVAR(sideHint), {
     params ["_side", "_args"];
-
+    TRACE_2("sideHint EH",_side,_args);
     if (_side isEqualTo side group ace_player) then {
         _args call ACEFUNC(common,displayTextStructured);
     };
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(addActionToObject), {
-    params ["_side", "_object", "_action"];
-
+    params ["_side", "_object"];
+    TRACE_2("addActionToObject EH",_side,_object);
     if (_side isEqualTo side group ace_player) then {
-        [_object, 0, [], _action] call ACEFUNC(interact_menu,addActionToObject);
+        private _budget = [_side] call FUNC(getBudget);
+        private _cost = [_side, typeOf _object] call FUNC(getCost);
+        private _text = [format ["Remove Object +$%1", _cost], "Remove Object"] select (_budget == -1);
+
+        // Remove object action
+        private _removeAction = [
+            QGVAR(removeObject),
+            _text,
+            "",
+            {
+                params ["_target", "", "_params"];
+                TRACE_2("deleting placed object",_target,_params);
+                deleteVehicle _target;
+                _params call FUNC(updateBudget);
+            },
+            {missionNamespace getVariable [QGVAR(fortifyAllowed), true]},
+            {},
+            [_side, _cost],
+            {[0, 0, 0]},
+            5
+        ] call ACEFUNC(interact_menu,createAction);
+
+        [_object, 0, [], _removeAction] call ACEFUNC(interact_menu,addActionToObject);
     };
 }] call CBA_fnc_addEventHandler;
-
-[QGVAR(registerObjects), FUNC(registerObjects)] call CBA_fnc_addEventHandler;
-
-["fortify", FUNC(handleChatCommand), "admin"] call CBA_fnc_registerChatCommand;

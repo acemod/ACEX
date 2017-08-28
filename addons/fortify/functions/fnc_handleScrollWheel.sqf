@@ -9,35 +9,25 @@
  * Bool
  *
  * Example:
- * TODO
+ * [5] call acex_fortify_fnc_handleScrollWheel
  *
  * Public: No
  */
-
 #include "script_component.hpp"
 
-if (GVAR(deployPFH) == -1) exitWith {false};
+if (GVAR(isPlacing) != PLACE_WAITING) exitWith {false};
 
 params ["_scroll"];
 
-if (!GVAR(keyShift) && {!GVAR(keyCtrl)} && {!GVAR(keyAlt)}) exitWith {
-    GVAR(objectRotationZ) = GVAR(objectRotationZ) + (_scroll * 5);
-    true
-};
-
-if (GVAR(keyShift)) exitWith {
+if (cba_events_shift) exitWith {
     GVAR(objectRotationX) = GVAR(objectRotationX) + (_scroll * 5);
     true
 };
 
-if (GVAR(keyCtrl)) exitWith {
+if (cba_events_control) exitWith {
     GVAR(objectRotationY) = GVAR(objectRotationY) + (_scroll * 5);
     true
 };
 
-if (GVAR(keyAlt)) exitWith {
-    GVAR(objectRotationZ) = GVAR(objectRotationZ) + (_scroll * 5);
-    true
-};
-
+GVAR(objectRotationZ) = GVAR(objectRotationZ) + (_scroll * 5);
 true
