@@ -55,7 +55,6 @@ private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAI
     };
     if (GVAR(isPlacing) != PLACE_WAITING) exitWith {
         TRACE_3("exiting PFEH",GVAR(isPlacing),_pfID,_mouseClickID);
-
         [_pfID] call CBA_fnc_removePerFrameHandler;
         call ACEFUNC(interaction,hideMouseHint);
         [_unit, "DefaultAction", _mouseClickID] call ACEFUNC(common,removeActionEventHandler);
@@ -74,13 +73,21 @@ private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAI
     ([_object] call FUNC(axisLengths)) params ["_width", "_length", "_height"];
 
     private _distance = _width max _length;
-    private _start = AGLtoASL positionCameraToWorld [0, 0, 0];
-    private _basePos = (_start vectorAdd (getCameraViewDirection _unit vectorMultiply _distance));
+    private _start = eyePos _unit;
+    private _camViewDir = getCameraViewDirection _unit;
+    private _basePos = (_start vectorAdd (_camViewDir vectorMultiply _distance));
     _basePos set [2, ((_basePos select 2) - (_height / 2)) max ((getTerrainHeightASL _basePos) - 0.05)];
 
     _object setPosASL _basePos;
-    [_object, GVAR(objectRotationX), GVAR(objectRotationY), GVAR(objectRotationZ) + getDir _unit] call ACEFUNC(common,setPitchBankYaw);
 
+    private _vZ =  180 + GVAR(objectRotationZ) + getDir _unit;
+    if (cba_events_alt) then {
+        // Snap to terrain surface dir
+        _object setDir _vZ;
+        _object setVectorUp (surfaceNormal _basePos);
+    } else {
+        [_object, GVAR(objectRotationX), GVAR(objectRotationY), _vZ] call ACEFUNC(common,setPitchBankYaw);
+    };
     #ifdef DEBUG_MODE_FULL
     hintSilent format ["Rotation:\nX: %1\nY: %2\nZ: %3", GVAR(objectRotationX), GVAR(objectRotationY), GVAR(objectRotationZ)];
     #endif
