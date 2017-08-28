@@ -16,11 +16,12 @@ GVAR(objectRotationZ) = 0;
 // Register CBA Chat command for admins (Example: #fortify west small 200)
 ["fortify", LINKFUNC(handleChatCommand), "admin"] call CBA_fnc_registerChatCommand;
 
-[QGVAR(sideHint), {
-    params ["_side", "_args"];
-    TRACE_2("sideHint EH",_side,_args);
+[QGVAR(sideBudgetHint), {
+    params ["_side"];
     if (_side isEqualTo side group ace_player) then {
-        _args call ACEFUNC(common,displayTextStructured);
+        private _budget = [_side] call FUNC(getBudget);
+        TRACE_2("sideBudgetHint",_side,_budget);
+        [format ["%1 $%2", localize LSTRING(Budget), _newBudget]] call ACEFUNC(common,displayTextStructured);
     };
 }] call CBA_fnc_addEventHandler;
 

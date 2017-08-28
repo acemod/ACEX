@@ -30,6 +30,6 @@ if (_budget != -1) then {
     missionNamespace setVariable [format [QGVAR(Budget_%1), _side], _newBudget, true];
 
     if (_hint) then {
-        [QGVAR(sideHint), [_side, [format ["BUDGET $%1", _newBudget]]]] call CBA_fnc_globalEvent;
+        [QGVAR(sideBudgetHint), [_side]] call CBA_fnc_globalEvent;
     };
 };

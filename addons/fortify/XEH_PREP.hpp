@@ -13,3 +13,5 @@ PREP(axisLengths);
 PREP(handleChatCommand);
 PREP(parseSide);
 PREP(getPlaceableSet);
+PREP(modifyAction);
+PREP(setupModule);
