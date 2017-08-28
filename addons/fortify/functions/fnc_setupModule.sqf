@@ -1,6 +1,6 @@
 /*
  * Author: PabstMirror
- * Modifies the fortify action, shows current budget.
+ * Handles setup module.
  *
  * Arguments:
  * 0: The module logic <OBJECT>
@@ -18,8 +18,9 @@
 #include "script_component.hpp"
 
 params ["_logic", "", "_activated"];
-TRACE_2("badbeef setupModule",_logic,_activated);
+TRACE_2("setupModule",_logic,_activated);
 
+// Note: no changes needed here for cba-setting switch
 if (!isServer) exitWith {};
 if (!_activated) exitWith {};
 
