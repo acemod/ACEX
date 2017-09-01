@@ -7,7 +7,7 @@ if (isServer) then {
 if (!hasInterface) exitWith {};
 
 GVAR(isPlacing) = PLACE_CANCEL;
-["ace_interactMenuOpened", {GVAR(placingStatus) = PLACE_CANCEL;}] call CBA_fnc_addEventHandler;
+["ace_interactMenuOpened", {GVAR(isPlacing) = PLACE_CANCEL;}] call CBA_fnc_addEventHandler;
 
 GVAR(objectRotationX) = 0;
 GVAR(objectRotationY) = 0;
