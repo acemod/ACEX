@@ -4,6 +4,9 @@
         <Key ID="STR_ACEX_Fortify_Fortify">
             <English>Fortify</English>
         </Key>
+        <Key ID="STR_ACEX_Fortify_FortifyItem_name">
+            <English>Fortify Tool</English>
+        </Key>
         <Key ID="STR_ACEX_Fortify_Budget">
             <English>Budget</English>
         </Key>

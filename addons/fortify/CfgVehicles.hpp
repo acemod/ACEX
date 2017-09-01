@@ -52,6 +52,7 @@ class CfgVehicles {
             };
             class AddToolItem {
                 displayName = CSTRING(addToolItem);
+                // description = CSTRING();
                 typeName = "BOOL";
                 defaultValue = 0;
             };

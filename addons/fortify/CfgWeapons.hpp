@@ -4,7 +4,7 @@ class CfgWeapons {
 
     class ACE_Fortify: ACE_ItemCore {
         author = ECSTRING(common,ACETeam);
-        displayName = "Fortify Tool";
+        displayName = CSTRING(FortifyItem_name);
         descriptionShort = "";
         model = "\A3\Structures_F\Items\Tools\Hammer_F.p3d";
         picture = QPATHTOF(UI\hammer_ca.paa);
