@@ -3,7 +3,7 @@ class CfgWeapons {
     class ACE_ItemCore;
 
     class ACE_Fortify: ACE_ItemCore {
-        author = ECSTRING(common,ACETeam);
+        author = ACECSTRING(common,ACETeam);
         displayName = CSTRING(FortifyItem_name);
         descriptionShort = "";
         model = "\A3\Structures_F\Items\Tools\Hammer_F.p3d";
