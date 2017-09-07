@@ -21,7 +21,7 @@ GVAR(objectRotationZ) = 0;
     if (_side isEqualTo side group ace_player) then {
         private _budget = [_side] call FUNC(getBudget);
         TRACE_2("sideBudgetHint",_side,_budget);
-        [format ["%1 $%2", localize LSTRING(Budget), _newBudget]] call ACEFUNC(common,displayTextStructured);
+        [format ["%1 $%2", localize LSTRING(Budget), _budget]] call ACEFUNC(common,displayTextStructured);
     };
 }] call CBA_fnc_addEventHandler;
 
