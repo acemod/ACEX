@@ -4,7 +4,7 @@
  *
  * Arguments:
  * 0: Player <OBJECT>
- * 1: Fority Object <OBJECT>
+ * 1: Fortify Object <OBJECT>
  *
  * Return Value:
  * None

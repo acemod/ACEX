@@ -4,14 +4,14 @@
  *
  * Arguments:
  * 0: Side <SIDE>
- * 1: Change (0) <NUMBER>
- * 2: Display hint (true) <BOOL>
+ * 1: Change <NUMBER> (default: 0)
+ * 2: Display hint <BOOL> (default: true)
  *
  * Return Value:
  * None
  *
  * Example:
- * [west, -250, false] call acex_fortify_fnc_updateBudget;
+ * [west, -250, false] call acex_fortify_fnc_updateBudget
  *
  * Public: Yes
  */

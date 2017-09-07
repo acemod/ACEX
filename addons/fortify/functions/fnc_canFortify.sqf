@@ -4,13 +4,13 @@
  *
  * Arguments:
  * 0: Player <OBJECT>
- * 1: Cost (default: 0) <NUMBER><OPTIONAL>
+ * 1: Cost <NUMBER> (default: 0)
  *
  * Return Value:
- * Boolean
+ * Can Fortify <BOOL>
  *
  * Example:
- * [player] call acex_fortify_fnc_canFortify;
+ * [player] call acex_fortify_fnc_canFortify
  *
  * Public: Yes
  */

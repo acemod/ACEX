@@ -3,10 +3,10 @@
  * Handles the object direction.
  *
  * Arguments:
- * 0: Scroll <NUMERIC>
+ * 0: Scroll <NUMBER>
  *
  * Return Value:
- * Bool
+ * Handled <BOOL>
  *
  * Example:
  * [5] call acex_fortify_fnc_handleScrollWheel

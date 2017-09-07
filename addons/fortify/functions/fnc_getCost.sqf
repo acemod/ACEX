@@ -7,10 +7,10 @@
  * 1: Classname <STRING>
  *
  * Return Value:
- * Cost <NUMERIC>
+ * Cost <NUMBER>
  *
  * Example:
- * [west, "Sandbag"] call acex_fortify_fnc_getCost;
+ * [west, "Sandbag"] call acex_fortify_fnc_getCost
  *
  * Public: Yes
  */

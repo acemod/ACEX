@@ -6,7 +6,7 @@
  * 0: Side <SIDE>
  *
  * Return Value:
- * Budget <NUMERIC>
+ * Budget <NUMBER>
  *
  * Example:
  * [west] call acex_fortify_fnc_getBudget

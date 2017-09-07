@@ -6,7 +6,7 @@
  * 0: Size <STRING>
  *
  * Return Value:
- * <ARRAY>
+ * Pairs of classnames and costs <ARRAY>
  *
  * Example:
  * ["small"] call acex_fortify_fnc_getPlaceableSet

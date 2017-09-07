@@ -3,7 +3,7 @@
  * Handles the chat command usage by admin.
  *
  * Arguments:
- * 0: Args <STRING>
+ * 0: Chat Text <STRING>
  *
  * Return Value:
  * None

@@ -42,7 +42,7 @@ _preset = switch (_preset) do {
 };
 
 private _budget = _logic getVariable ["Budget", -1];
-if (!(_budget isEqualType 0)) then {_budget = 1234};
+if (!(_budget isEqualType 0)) then {_budget = -1};
 
 private _addToolItem = _logic getVariable ["AddToolItem", false];
 if (!(_addToolItem isEqualType false)) then {_addToolItem = false};

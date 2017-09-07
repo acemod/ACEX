@@ -5,7 +5,7 @@
  * Arguments:
  * 0: Target <OBJECT>
  * 1: Player <OBJECT>
- * 2: Params <ARRAY>
+ * 2: Object params (side, classname, rotations) <ARRAY>
  *
  * Return Value:
  * None
