@@ -34,7 +34,7 @@ private _newObject = _typeOf createVehicle _posASL;
 _newObject setPosASL _posASL;
 _newObject setVectorDirAndUp [_vectorDir, _vectorUp];
 
-[QGVAR(addActionToObject), [_side, _newObject]] call CBA_fnc_globalEventJIP;
+[QGVAR(addActionToObject_server), [_side, _newObject]] call CBA_fnc_serverEvent;
 
 
 if (cba_events_control) then {

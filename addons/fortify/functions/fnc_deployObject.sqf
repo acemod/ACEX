@@ -34,7 +34,15 @@ GVAR(objectRotationY) = _rotations select 1;
 GVAR(objectRotationZ) = _rotations select 2;
 
 GVAR(isPlacing) = PLACE_WAITING;
-[([format ["Confirm -$%1", _cost], "Confirm"] select (_budget == -1)), "Cancel", "Rotation"] call ACEFUNC(interaction,showMouseHint);
+
+private _lmb = localize LSTRING(confirm);
+if (_budget > -1) then {_lmb = _lmb + format [" -$%1", _cost];};
+private _rmb = localize ACELSTRING(Common,Cancel);
+private _wheel = localize LSTRING(rotate);
+private _xAxis = localize "str_disp_conf_xaxis";
+private _icons = [["alt", localize "str_3den_display3den_entitymenu_movesurface_text"], ["shift", localize "str_disp_conf_xaxis" + " " +_wheel], ["control", localize "str_disp_conf_yaxis" + " " + _wheel]];
+[_lmb, _rmb, _wheel, _icons] call ACEFUNC(interaction,showMouseHint);
+
 private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAITING}, {GVAR(isPlacing) = PLACE_APPROVE}] call ACEFUNC(common,addActionEventHandler);
 
 [{
@@ -62,7 +70,7 @@ private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAI
     };
 
     ([_object] call FUNC(axisLengths)) params ["_width", "_length", "_height"];
-    private _distance = _width max _length;
+    private _distance = (_width max _length) + 0.5; // for saftey, move it a bit extra away from player's center
 
     private _start = eyePos _unit;
     private _camViewDir = getCameraViewDirection _unit;
