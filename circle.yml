@@ -6,5 +6,5 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Validate terraform code
+          name: Validate SQF And Config style
           command: python tools/sqf_validator.py && python tools/config_style_checker.py
