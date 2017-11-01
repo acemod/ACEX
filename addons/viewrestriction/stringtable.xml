@@ -11,6 +11,7 @@
             <French>Restriction Vue</French>
             <Chinesesimp>视野限制</Chinesesimp>
             <Chinese>視野限制</Chinese>
+            <Italian>Visualizza Restrizione</Italian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModuleDescription">
             <English>View restriction settings to limit the usage of 1st or 3rd person views globally or per vehicle type.</English>
@@ -21,6 +22,7 @@
             <French>La restriction de la vue limite l'usage de la vue à la 1ère/3ème personne globalement ou par type de véhicule.</French>
             <Chinesesimp>视野限制可以设定在全局或是局部状况下能用的视野模式。</Chinesesimp>
             <Chinese>視野限制可以設定在全局或是局部狀況下能用的視野模式。</Chinese>
+            <Italian>Visualizza le impostazioni di restrizione per limitare l'utilizzo di prima e terza persona a livello globale o per tipologia di veicolo.</Italian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_Mode">
             <English>Mode</English>
@@ -32,6 +34,7 @@
             <French>Mode</French>
             <Chinesesimp>模式</Chinesesimp>
             <Chinese>模式</Chinese>
+            <Italian>Modalità</Italian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeDesc">
             <English>Sets global mode. Default: Disabled</English>
@@ -43,6 +46,7 @@
             <French>Mode global. Défaut: Désactivé</French>
             <Chinesesimp>设定全局的视野模式。预设:关闭</Chinesesimp>
             <Chinese>設定全局的視野模式。預設:關閉</Chinese>
+            <Italian>Imposta modalità globale. Default: Disabilitato</Italian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveFoot">
             <English>(Selective) Foot</English>
@@ -54,6 +58,7 @@
             <French>(Sélectif) A pied</French>
             <Chinesesimp>(可选) 步行</Chinesesimp>
             <Chinese>(可選) 步行</Chinese>
+            <Italian>(Selettiva) Piedi</Italian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveFootDesc">
             <English>Selective mode on Foot. Default: Disabled (Requires Mode: Selective)</English>
@@ -65,6 +70,7 @@
             <French>Mode sélectif hors des véhicules. Défaut: Désactivé (Nécessite Mode: Sélectif)</French>
             <Chinesesimp>设定在步行的状况下能使用的视野模式。预设:关闭(需在全局设定中先选择'使用可选设定')</Chinesesimp>
             <Chinese>設定在步行的狀況下能使用的視野模式。預設:關閉(需在全局設定中先選擇'使用可選設定')</Chinese>
+            <Italian>Modalità selettiva su Piedi. Default: Disabilitato (Necessita della Modalità: Selettiva)</Italian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveLand">
             <English>(Selective) Land Vehicles</English>
@@ -76,6 +82,7 @@
             <French>(Sélectif) Véhicules terrestres</French>
             <Chinesesimp>(可选) 陆上载具</Chinesesimp>
             <Chinese>(可選) 陸上載具</Chinese>
+            <Italian>(Selettiva) Veicoli Terrestri</Italian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveLandDesc">
             <English>Selective mode in Land Vehicles. Default: Disabled (Requires Mode: Selective)</English>
@@ -87,6 +94,7 @@
             <French>Mode sélectif dans les véhicules terrestres. Défaut: Désactivé (Nécessite Mode: Sélectif)</French>
             <Chinesesimp>设定在搭乘陆上载具的状况下能使用的视野模式。预设:关闭(需在全局设定中先选择'使用可选设定')</Chinesesimp>
             <Chinese>設定在搭乘陸上載具的狀況下能使用的視野模式。預設:關閉(需在全局設定中先選擇'使用可選設定')</Chinese>
+            <Italian>Modalità selettiva su Veicoli Terrestri. Default: Disabilitato (Necessita della Modalità: Selettiva)</Italian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveAir">
             <English>(Selective) Air Vehicles</English>
@@ -98,6 +106,7 @@
             <French>(Sélectif) Véhicules aériens</French>
             <Chinesesimp>(可选) 空中载具</Chinesesimp>
             <Chinese>(可選) 空中載具</Chinese>
+            <Italian>(Selettiva) Veicolo Aerei</Italian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveAirDesc">
             <English>Selective mode in Air Vehicles. Default: Disabled (Requires Mode: Selective)</English>
@@ -109,6 +118,7 @@
             <French>Mode sélectif dans les véhicules aériens. Défaut: Désactivé (Nécessite Mode: Sélectif)</French>
             <Chinesesimp>设定在搭乘空中载具的状况下能使用的视野模式。预设:关闭(需在全局设定中先选择'使用可选设定')</Chinesesimp>
             <Chinese>設定在搭乘空中載具的狀況下能使用的視野模式。預設:關閉(需在全局設定中先選擇'使用可選設定')</Chinese>
+            <Italian>Modalità selettiva su Veicoli Aerei. Default: Disabilitato (Necessita della Modalità: Selettiva)</Italian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveSea">
             <English>(Selective) Sea Vehicles</English>
@@ -120,6 +130,7 @@
             <French>(Sélectif) Véhicules marins</French>
             <Chinesesimp>(可选) 水上载具</Chinesesimp>
             <Chinese>(可選) 水上載具</Chinese>
+            <Italian>(Selettiva) Veicoli Marittimi</Italian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveSeaDesc">
             <English>Selective mode in Sea Vehicles. Default: Disabled (Requires Mode: Selective)</English>
@@ -131,6 +142,7 @@
             <French>Mode sélectif dans les véhicules marins. Défaut: Désactivé (Nécessite Mode: Sélectif)</French>
             <Chinesesimp>设定在搭乘水上载具的状况下能使用的视野模式。预设:关闭(需在全局设定中先选择'使用可选设定')</Chinesesimp>
             <Chinese>設定在搭乘水上載具的狀況下能使用的視野模式。預設:關閉(需在全局設定中先選擇'使用可選設定')</Chinese>
+            <Italian>Modalità selettiva su Veicoli Marittimi. Default: Disabilitato (Necessita della Modalità: Selettiva)</Italian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveUAV">
             <English>(Selective) UAVs</English>
@@ -142,6 +154,7 @@
             <French>(Sélectif) Drones</French>
             <Chinesesimp>(可选) 无人载具</Chinesesimp>
             <Chinese>(可選) 無人載具</Chinese>
+            <Italian>(Selettiva) UAV</Italian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveUAVDesc">
             <English>Selective mode in UAVs. Default: Disabled (Requires Mode: Selective)</English>
@@ -153,6 +166,7 @@
             <French>Mode sélectif dans les drones. Défaut: Désactivé (Nécessite Mode: Sélectif)</French>
             <Chinesesimp>设定在搭乘无人载具的状况下能使用的视野模式。预设:关闭(需在全局设定中先选择'使用可选设定')</Chinesesimp>
             <Chinese>設定在搭乘無人載具的狀況下能使用的視野模式。預設:關閉(需在全局設定中先選擇'使用可選設定')</Chinese>
+            <Italian>Modalità selettiva su UAVi. Default: Disabilitato (Necessita della Modalità: Selettiva)</Italian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_Disabled">
             <English>Disabled</English>

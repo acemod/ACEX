@@ -8,6 +8,7 @@
             <Korean>음량</Korean>
             <Chinesesimp>音量</Chinesesimp>
             <Chinese>音量</Chinese>
+            <Italian>Volume</Italian>
         </Key>
         <Key ID="STR_ACEX_Volume_KeybindName">
             <English>Toggle Volume</English>
@@ -16,6 +17,7 @@
             <Korean>음량 토글</Korean>
             <Chinesesimp>切换音量</Chinesesimp>
             <Chinese>切換音量</Chinese>
+            <Italian>Attiva Volume</Italian>
         </Key>
         <Key ID="STR_ACEX_Volume_KeybindDescription">
             <English>Toggle volume reduction.</English>
@@ -24,6 +26,7 @@
             <Korean>토글하여 음량 감소합니다.</Korean>
             <Chinesesimp>切换降低音量。</Chinesesimp>
             <Chinese>切換降低音量。</Chinese>
+            <Italian>Attiva riduzione del volume.</Italian>
         </Key>
         <Key ID="STR_ACEX_Volume_Lowered">
             <English>Lowered volume</English>
@@ -32,6 +35,7 @@
             <Korean>음량 감소됨</Korean>
             <Chinesesimp>降低音量</Chinesesimp>
             <Chinese>降低音量</Chinese>
+            <Italian>Volume diminuito</Italian>
         </Key>
         <Key ID="STR_ACEX_Volume_Restored">
             <English>Restored volume</English>
@@ -40,6 +44,7 @@
             <Korean>음량 복구됨</Korean>
             <Chinesesimp>回复音量</Chinesesimp>
             <Chinese>回復音量</Chinese>
+            <Italian>Volume ripristinato</Italian>
         </Key>
         <Key ID="STR_ACEX_Volume_Reduction">
             <English>Reduction</English>
@@ -48,6 +53,7 @@
             <Korean>감소</Korean>
             <Chinesesimp>降低</Chinesesimp>
             <Chinese>降低</Chinese>
+            <Italian>Riduzione</Italian>
         </Key>
         <Key ID="STR_ACEX_Volume_ReductionDescription">
             <English>Reduce volume by this percentage.</English>
@@ -56,6 +62,7 @@
             <Korean>다음의 비율로 음량을 감소합니다.</Korean>
             <Chinesesimp>使用此百分比来调整音量降低大小。</Chinesesimp>
             <Chinese>使用此百分比來調整音量降低大小。</Chinese>
+            <Italian>Riduci il volume di questa percentuale.</Italian>
         </Key>
         <Key ID="STR_ACEX_Volume_LowerInVehicles">
             <English>Lower in vehicles</English>
@@ -64,6 +71,7 @@
             <Korean>차량에서 감소함</Korean>
             <Chinesesimp>在载具中降低音量</Chinesesimp>
             <Chinese>在載具中降低音量</Chinese>
+            <Italian>Più basso nei veicoli</Italian>
         </Key>
         <Key ID="STR_ACEX_Volume_LowerInVehiclesDescription">
             <English>Automatically lower volume when inside vehicles.</English>
@@ -72,6 +80,7 @@
             <Korean>자동으로 차량내에 있으면 음량을 감소 합니다.</Korean>
             <Chinesesimp>当搭乘载具时自动降低音量。</Chinesesimp>
             <Chinese>當搭乘載具時自動降低音量。</Chinese>
+            <Italian>Riduce automaticamente il volume quando dentro i veicoli.</Italian>
         </Key>
         <Key ID="STR_ACEX_Volume_ShowNotification">
             <English>Show notification</English>
@@ -80,6 +89,7 @@
             <Korean>설정 보기</Korean>
             <Chinesesimp>显示提示</Chinesesimp>
             <Chinese>顯示提示</Chinese>
+            <Italian>Mostra notifiche</Italian>
         </Key>
         <Key ID="STR_ACEX_Volume_ShowNotificationDescription">
             <English>Show notification when lowering/restoring volume.</English>
@@ -88,6 +98,7 @@
             <Korean>음량이 감소/복구될 때 메세지를 표시합니다.</Korean>
             <Chinesesimp>当正在降低/回复音量时显示提示。</Chinesesimp>
             <Chinese>當正在降低/回復音量時顯示提示。</Chinese>
+            <Italian>Mostra notifiche mentre si abbassa/ripristina il volume.</Italian>
         </Key>
         <Key ID="STR_ACEX_Volume_FadeDelay">
             <English>Fade delay</English>
@@ -96,6 +107,7 @@
             <Korean>페이드 지연</Korean>
             <Chinesesimp>淡出/入延迟</Chinesesimp>
             <Chinese>淡出/入延遲</Chinese>
+            <Italian>Latenza della dissolvenza</Italian>
         </Key>
         <Key ID="STR_ACEX_Volume_FadeDelayDescription">
             <English>Time it takes (in seconds) for the sound to fade in/out.</English>
@@ -104,6 +116,7 @@
             <Korean>페이드 인/아웃 되는데 걸리는 시간(초)</Korean>
             <Chinesesimp>设定音量淡出/入时所需的秒数。</Chinesesimp>
             <Chinese>設定音量淡出/入時所需的秒數。</Chinese>
+            <Italian>Il tempo che impiega (in secondi) il suono a dissolversi entrata/uscita.</Italian>
         </Key>
         <Key ID="STR_ACEX_Volume_RemindIfLowered">
             <English>Reminder if lowered</English>
@@ -112,6 +125,7 @@
             <Korean>감소시 알림</Korean>
             <Chinesesimp>降低音量时是否提醒</Chinesesimp>
             <Chinese>降低音量時是否提醒</Chinese>
+            <Italian>Sollecita se diminuito</Italian>
         </Key>
         <Key ID="STR_ACEX_Volume_RemindIfLoweredDescription">
             <English>Reminds you every minute if your volume is lowered.</English>
@@ -120,6 +134,7 @@
             <Korean>음량이 감소되면 매 분 마다 알려줍니다</Korean>
             <Chinesesimp>开启后会每分钟警告一次你的音量已被降低。</Chinesesimp>
             <Chinese>開啟後會每分鐘警告一次你的音量已被降低。</Chinese>
+            <Italian>Ti notifica ogni minuto se il tuo volume è basso.</Italian>
         </Key>
         <Key ID="STR_ACEX_Volume_LoweredReminder">
             <English>Volume still lowered</English>
@@ -128,6 +143,7 @@
             <Korean>음량 감소중</Korean>
             <Chinesesimp>降低音量中</Chinesesimp>
             <Chinese>降低音量中</Chinese>
+            <Italian>Il volume è ancora basso</Italian>
         </Key>
     </Package>
 </Project>
