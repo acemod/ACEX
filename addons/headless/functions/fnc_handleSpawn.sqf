@@ -19,7 +19,7 @@ params ["_object"];
 TRACE_1("Spawn",_object);
 
 // Exit if HC transferring disabled or object not a unit (including unit inside vehicle) or is player
-if (!(_object in allUnits) || {isPlayer _object}) exitWith {};
+if (!(_object in allUnits) || {isPlayer _object} || {{_object isKindOf _x} count HC_BLACKLIST > 0}) exitWith {};
 
 // Rebalance
 [false] call FUNC(rebalance);
