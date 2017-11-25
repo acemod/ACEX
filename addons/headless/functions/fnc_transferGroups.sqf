@@ -93,6 +93,12 @@ private _numTransferredHC3 = 0;
             if (vehicle _x != _x && {(vehicle _x) getVariable [QGVAR(blacklist), false]}) exitWith {
                 _transfer = false;
             };
+            
+            // No transfer if hardcore blacklisted
+            private _unit = _x;
+            if ({_unit isKindOf _x} count HC_BLACKLIST > 0) exitWith {
+                _transfer = false;
+            };
         } forEach (units _x);
     };
 
