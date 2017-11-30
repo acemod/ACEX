@@ -1,7 +1,7 @@
 acex_fortify
 ============
 
-Allows quick placement of fortifcations.
+Allows quick placement of fortifications.
 
 ## Author
 
