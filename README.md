@@ -24,6 +24,9 @@
     <a href="https://travis-ci.org/acemod/ACEX">
         <img src="https://img.shields.io/travis/acemod/ACEX.svg?style=flat-square&label=Build" alt="ACEX Build Status">
     </a>
+    <a href="https://travis-ci.org/acemod/ACEX">
+        <img src="https://circleci.com/gh/acemod/ACEX.svg?style=svg" alt="ACEX Build Status">
+    </a>
 </p>
 
 <p align="center">
