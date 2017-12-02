@@ -65,7 +65,7 @@ private _seatPosOrig = getPosASL _seat;
     };
 
     //  Stand up if chair gets deleted or moved
-    if (isNull _seat || {getPosASL _player distance _seatPosOrig > 1} || {!((getPosASL _seat) isEqualTo _seatPosOrig)}) exitWith {
+    if (isNull _seat || {getPosASL _player distance _seatPosOrig > 1} || {((getPosASL _seat) vectorDistance _seatPosOrig) > 0.01}) exitWith {
         _player call FUNC(stand);
         TRACE_2("Chair moved",getPosASL _seat,_seatPosOrig);
     };
