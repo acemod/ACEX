@@ -13,6 +13,6 @@ if (isServer) then {
     [QGVAR(headlessClientJoined), FUNC(handleConnectHC)] call CBA_fnc_addEventHandler;
 };
 
-GVAR(kindOfBlackList) = ["UAV", "UAV_AI_base_F", "B_UAV_AI", "O_UAV_AI", "I_UAV_AI"];
+GVAR(kindOfBlackList) = [];
 
 ADDON = true;
