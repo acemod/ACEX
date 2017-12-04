@@ -96,7 +96,7 @@ private _numTransferredHC3 = 0;
             
             // No transfer if hardcore blacklisted
             private _unit = _x;
-            if ({_unit isKindOf _x} count HC_BLACKLIST > 0) exitWith {
+            if ({_unit isKindOf _x} count (HC_BLACKLIST + GVAR(kindOfBlackList)) > 0) exitWith {
                 _transfer = false;
             };
         } forEach (units _x);
