@@ -70,3 +70,5 @@ private _seatPosOrig = getPosASL _seat;
         TRACE_2("Chair moved",getPosASL _seat,_seatPosOrig);
     };
 }, 0, [_player, _seat, _seatPosOrig]] call CBA_fnc_addPerFrameHandler;
+
+["ace_satDown", [_player, _seat]] call CBA_fnc_localEvent;
