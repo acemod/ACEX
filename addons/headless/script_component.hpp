@@ -17,4 +17,4 @@
 #include "\z\acex\addons\main\script_macros.hpp"
 
 #define DELAY_DEFAULT 15
-#define HC_BLACKLIST ["UAV"]
+#define HC_BLACKLIST ["UAV", "UAV_AI_base_F", "B_UAV_AI", "O_UAV_AI", "I_UAV_AI"]
