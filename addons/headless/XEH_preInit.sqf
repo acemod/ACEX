@@ -13,4 +13,6 @@ if (isServer) then {
     [QGVAR(headlessClientJoined), FUNC(handleConnectHC)] call CBA_fnc_addEventHandler;
 };
 
+GVAR(kindOfBlackList) = [];
+
 ADDON = true;
