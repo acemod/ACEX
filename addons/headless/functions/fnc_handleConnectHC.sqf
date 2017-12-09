@@ -28,5 +28,8 @@ if (GVAR(log)) then {
     INFO_1("Registered HC: %1",_headlessClient);
 };
 
+//Exit if AI distribution is disabled
+if (!GVAR(enabled)) exitWith {true};
+
 // Rebalance
 [true] call FUNC(rebalance);
