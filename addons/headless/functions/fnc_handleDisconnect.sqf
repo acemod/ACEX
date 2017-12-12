@@ -46,7 +46,7 @@ if !(_object in GVAR(headlessClients)) exitWith {
     false
 };
 
-// Exit if AI distribution is disabled but end mission is enabled
+// Exit if AI distribution is disabled
 if (!GVAR(enabled)) exitWith {true};
 
 // Remove HC
