@@ -19,7 +19,12 @@ params ["_object"];
 TRACE_1("Spawn",_object);
 
 // Exit if HC transferring disabled or object not a unit (including unit inside vehicle) or is player
-if (!(_object in allUnits) || {isPlayer _object} || {{_object isKindOf _x} count (HC_BLACKLIST + GVAR(kindOfBlackList)) > 0}) exitWith {};
+if (!(_object in allUnits) || {isPlayer _object}) exitWith {};
+
+// Exit and blacklist if of blacklist type
+if ({_object isKindOf _x} count GVAR(blacklistType) > 0) exitWith {
+    _object setVariable [QGVAR(blacklist), true];
+};
 
 // Rebalance
 [false] call FUNC(rebalance);
