@@ -30,6 +30,7 @@ _side = switch (_side) do {
     case (1): {west};
     case (2): {east};
     case (3): {resistance};
+    case (4): {civilian};
     default {sideUnknown};
 };
 

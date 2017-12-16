@@ -26,5 +26,14 @@ if (!isServer) exitWith {};
 params [["_side", sideUnknown, [sideUnknown]], ["_budget", -1, [0]], ["_objects", [], [[]]]];
 TRACE_3("registerObjects",_side,_budget,_objects);
 
+if (_side isEqualTo sideUnknown) exitWith {ERROR_1("Bad Side %1",_this);};
+
+if (!isNil {missionNamespace getVariable format [QGVAR(Budget_%1), _side]}) then {
+    INFO_1("Overwriting previous budget for side [%1]",_side);
+};
+if (!isNil {missionNamespace getVariable format [QGVAR(Objects_%1), _side]}) then {
+    INFO_1("Overwriting previous objects for side [%1]",_side);
+};
+
 missionNamespace setVariable [format [QGVAR(Budget_%1), _side], _budget, true];
 missionNamespace setVariable [format [QGVAR(Objects_%1), _side], _objects, true];
