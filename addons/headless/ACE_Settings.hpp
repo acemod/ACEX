@@ -12,6 +12,7 @@ class ACE_Settings {
         typeName = "SCALAR";
         displayName = CSTRING(Delay);
         description = CSTRING(DelayDesc);
+        sliderSettings[] = {0, 120, DELAY_DEFAULT, 0};
     };
     class GVAR(endMission) {
         category = CSTRING(Module);
