@@ -23,15 +23,18 @@ TRACE_1("parseSide",_side);
 
 if (_side isEqualType sideUnknown) exitWith {_side};
 
-private _char = _side select [0, 1];
+private _char = toLower (_side select [0, 1]);
 
-((([
-    ["b", west],
-    ["o", east],
-    ["i", resistance],
-    ["w", west],
-    ["e", east],
-    ["r", resistance]
-] select {
-    toLower _char == (_x select 0)
-}) param [0, []]) param [1, sideUnknown])
+private _return = switch (_char) do {
+    case ("b");
+    case ("w"): {west};
+    case ("o");
+    case ("e"): {east};
+    case ("r");
+    case ("i"): {resistance};
+    case ("c"): {civilian};
+    default {sideUnknown};
+};
+
+TRACE_2("",_char,_return);
+_return
