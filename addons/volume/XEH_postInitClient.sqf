@@ -32,3 +32,6 @@ if (!hasInterface) exitWith {};
 
 // Self-calling reminder
 [FUNC(remind), [], REMINDER_DELAY] call CBA_fnc_waitAndExecute;
+
+// Restore volume on respawn
+ace_player addEventHandler ["Respawn", FUNC(restoreVolume)];
