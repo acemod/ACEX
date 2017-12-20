@@ -3,15 +3,19 @@
     <Package name="Fortify">
         <Key ID="STR_ACEX_Fortify_Fortify">
             <English>Fortify</English>
+            <Japanese>要塞</Japanese>
         </Key>
         <Key ID="STR_ACEX_Fortify_FortifyItem_name">
             <English>Fortify Tool</English>
+            <Japanese>要塞ツール</Japanese>
         </Key>
         <Key ID="STR_ACEX_Fortify_Budget">
             <English>Budget</English>
+            <Japanese>予算</Japanese>
         </Key>
         <Key ID="STR_ACEX_Fortify_addToolItem">
             <English>Auto add fortify item</English>
+            <Japanese>自動的に要塞ツールを追加</Japanese>
         </Key>
         <Key ID="STR_ACEX_Fortify_rotate">
             <English>Rotate</English>
@@ -24,7 +28,7 @@
             <Polish>Obrót</Polish>
             <Portuguese>Rotaciona</Portuguese>
             <Russian>Bращать</Russian>
-            <Japanese>向きを変える</Japanese>
+            <Japanese>回転</Japanese>
             <Korean>회전</Korean>
             <Chinesesimp>旋转</Chinesesimp>
             <Chinese>旋轉</Chinese>
