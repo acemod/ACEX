@@ -1,53 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="ACEX">
-    <Package name="Fortify">
-        <Key ID="STR_ACEX_Fortify_Fortify">
-            <English>Fortify</English>
-            <Japanese>要塞</Japanese>
-        </Key>
-        <Key ID="STR_ACEX_Fortify_FortifyItem_name">
-            <English>Fortify Tool</English>
-            <Japanese>要塞ツール</Japanese>
-        </Key>
-        <Key ID="STR_ACEX_Fortify_Budget">
-            <English>Budget</English>
-            <Japanese>予算</Japanese>
-        </Key>
-        <Key ID="STR_ACEX_Fortify_addToolItem">
-            <English>Auto add fortify item</English>
-            <Japanese>自動的に要塞ツールを追加</Japanese>
-        </Key>
-        <Key ID="STR_ACEX_Fortify_rotate">
-            <English>Rotate</English>
-            <German>Drehen</German>
-            <Spanish>Girar</Spanish>
-            <French>Tourner</French>
-            <Italian>Rotazione</Italian>
-            <Czech>Otočit</Czech>
-            <Hungarian>Forgatás</Hungarian>
-            <Polish>Obrót</Polish>
-            <Portuguese>Rotaciona</Portuguese>
-            <Russian>Bращать</Russian>
-            <Japanese>回転</Japanese>
-            <Korean>회전</Korean>
-            <Chinesesimp>旋转</Chinesesimp>
-            <Chinese>旋轉</Chinese>
-        </Key>
-        <Key ID="STR_ACEX_Fortify_Confirm">
-            <English>Confirm Deployment</English>
-            <German>Aufbauen</German>
-            <Russian>Подтвердить установку</Russian>
-            <Polish>Potwierdź rozłożenie</Polish>
-            <Spanish>Confirmar despliegue</Spanish>
-            <French>Confirmer Déploiement</French>
-            <Czech>Potvrdit Položení</Czech>
-            <Italian>Conferma Posizionamento</Italian>
-            <Hungarian>Lerak</Hungarian>
-            <Portuguese>Confirmar implantação</Portuguese>
-            <Japanese>ここで作る</Japanese>
-            <Korean>설치 확인</Korean>
-            <Chinesesimp>确认布署</Chinesesimp>
-            <Chinese>確認佈署</Chinese>
-        </Key>
-    </Package>
+	<Package name="Fortify">
+		<Key ID="STR_ACEX_Fortify_Fortify">
+			<English>Fortify</English>
+			<Japanese>要塞</Japanese>
+			<Dutch>Versterk</Dutch>
+		</Key>
+		<Key ID="STR_ACEX_Fortify_FortifyItem_name">
+			<English>Fortify Tool</English>
+			<Japanese>要塞ツール</Japanese>
+			<Dutch>Versterkings gereedschap</Dutch>
+		</Key>
+		<Key ID="STR_ACEX_Fortify_Budget">
+			<English>Budget</English>
+			<Japanese>予算</Japanese>
+		</Key>
+		<Key ID="STR_ACEX_Fortify_addToolItem">
+			<English>Auto add fortify item</English>
+			<Japanese>自動的に要塞ツールを追加</Japanese>
+			<Dutch>Voeg automatisch versterkings gereedschap toe</Dutch>
+		</Key>
+		<Key ID="STR_ACEX_Fortify_rotate">
+			<English>Rotate</English>
+			<German>Drehen</German>
+			<Spanish>Girar</Spanish>
+			<French>Tourner</French>
+			<Italian>Rotazione</Italian>
+			<Czech>Otočit</Czech>
+			<Hungarian>Forgatás</Hungarian>
+			<Polish>Obrót</Polish>
+			<Portuguese>Rotaciona</Portuguese>
+			<Russian>Bращать</Russian>
+			<Japanese>回転</Japanese>
+			<Korean>회전</Korean>
+			<Chinesesimp>旋转</Chinesesimp>
+			<Chinese>旋轉</Chinese>
+			<Dutch>Draai</Dutch>
+		</Key>
+		<Key ID="STR_ACEX_Fortify_Confirm">
+			<English>Confirm Deployment</English>
+			<German>Aufbauen</German>
+			<Russian>Подтвердить установку</Russian>
+			<Polish>Potwierdź rozłożenie</Polish>
+			<Spanish>Confirmar despliegue</Spanish>
+			<French>Confirmer Déploiement</French>
+			<Czech>Potvrdit Položení</Czech>
+			<Italian>Conferma Posizionamento</Italian>
+			<Hungarian>Lerak</Hungarian>
+			<Portuguese>Confirmar implantação</Portuguese>
+			<Japanese>ここで作る</Japanese>
+			<Korean>설치 확인</Korean>
+			<Chinesesimp>确认布署</Chinesesimp>
+			<Chinese>確認佈署</Chinese>
+			<Dutch>Bevestig Bouw</Dutch>
+		</Key>
+	</Package>
 </Project>
