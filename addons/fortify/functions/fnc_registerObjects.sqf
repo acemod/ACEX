@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * [west, 5000, [["Sandbag", 5], ["Bunker", 50]]] call acex_fortify_fnc_registerObjects
+ * [west, 5000, [["Land_BagFence_Long_F", 5], ["Land_BagBunker_Small_F", 50]]] call acex_fortify_fnc_registerObjects
  *
  * Public: Yes
  */
@@ -27,6 +27,17 @@ params [["_side", sideUnknown, [sideUnknown]], ["_budget", -1, [0]], ["_objects"
 TRACE_3("registerObjects",_side,_budget,_objects);
 
 if (_side isEqualTo sideUnknown) exitWith {ERROR_1("Bad Side %1",_this);};
+
+_objects select {
+    private _isValid = _x params [["_xClassname", "", [""]], ["_xCost", 0, [0]]];
+    if (_isValid) then {
+        _isValid = isClass (configFile >> "CfgVehicles" >> _xClassname);
+        if (!_isValid) then {WARNING_1("Classname does not exist in CfgVehicles %1",_x);};
+    } else {
+        WARNING_1("Bad classname/cost input %1, should be [<STRING>,<NUMBER>]",_x);
+    };
+    _isValid
+};
 
 if (!isNil {missionNamespace getVariable format [QGVAR(Budget_%1), _side]}) then {
     INFO_1("Overwriting previous budget for side [%1]",_side);
