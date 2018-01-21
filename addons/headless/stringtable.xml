@@ -121,6 +121,7 @@
             <Chinesesimp>无头客户端黑名单</Chinesesimp>
             <Chinese>無頭客戶端黑名單</Chinese>
             <Italian>Lista Nera Headless</Italian>
+            <Korean>헤드리스 블랙리스트</Korean>
         </Key>
         <Key ID="STR_ACEX_Headless_BlacklistEdenDesc">
             <English>Disables transferring of this AI unit/group to Headless Clients. No effect on player units.</English>
@@ -129,6 +130,7 @@
             <Chinesesimp>禁止转换黑名单中的AI单位/群组到无头客户端上。此功能对玩家单位无用。</Chinesesimp>
             <Chinese>禁止轉換黑名單中的AI單位/群組到無頭客戶端上。此功能對玩家單位無用。</Chinese>
             <Italian>Disabilita il trasferimento di questa unità/gruppo di AI negli Headless Client. Non ha effetto sui giocatori.</Italian>
+            <Korean>이 AI 유닛 / 그룹을 헤드리스 클라이언트로 전송하지 못하도록합니다. 플레이어 유닛에는 영향을주지 않습니다.</Korean>
         </Key>
     </Package>
 </Project>
