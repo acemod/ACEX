@@ -210,5 +210,13 @@
             <Chinesesimp>使用可选设定</Chinesesimp>
             <Chinese>使用可選設定</Chinese>
         </Key>
+        <Key ID="STR_ACEX_ViewRestriction_SettingPreserveViewName">
+            <English>Preserve view for vehicle types</English>
+            <Russian>Запоминать вид для типов техники</Russian>
+        </Key>
+        <Key ID="STR_ACEX_ViewRestriction_SettingPreserveViewDesc">
+            <English>Switch view on vehicle change to last used in this vehicle type (Requires Mode: Disabled)</English>
+            <Russian>Переключать вид при смене техники на последний использованный в данном типе техники (требуется Режим: Отключен)</Russian>
+        </Key>
     </Package>
 </Project>
