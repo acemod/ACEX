@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="ACEX">
     <Package name="Field_Rations">
-        
+        <Key ID="STR_ACEX_Field_Rations_DisplayName">
+            <English>Field Rations</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_Enabled_Description">
+            <English>Enable/Disable field rations</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_TimeWithoutWater_DisplayName">
+            <English>Time without water</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_TimeWithoutWater_Description">
+            <English>How long should a unit be able to go without water (hours)</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_TimeWithoutFood_DisplayName">
+            <English>Time without food</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_TimeWithoutFood_Description">
+            <English>How long should a unit be able to go without food (hours)</English>
+        </Key>
     </Package>
 </Project>
