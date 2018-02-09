@@ -14,4 +14,6 @@ if !(hasInterface) exitWith {};
             (linearConversion [75, 0, _this getVariable [QGVAR(thirst), 100], 1, 2, true]) * (linearConversion [60, 0, _this getVariable [QGVAR(hunger), 100], 1, 1.5, true])
         }] call ACEFUNC(advanced_fatigue,addDutyFactor);
     };
+
+    [] call FUNC(addRefillActions);
 }] call CBA_fnc_addEventHandler;
