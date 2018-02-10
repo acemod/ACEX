@@ -16,4 +16,12 @@ if !(hasInterface) exitWith {};
     };
 
     [] call FUNC(addRefillActions);
+
+    // Start update loop with 10 second interval and 60 second MP sync
+    [LINKFUNC(update), CBA_missionTime + 60, 10] call CBA_fnc_waitAndExecute;
+
+    #ifdef DEBUG_MODE_FULL
+        ["ACE_player thirst", {ACE_player getVariable [QGVAR(thirst), 100]}, [true, 0, 100]] call ACEFUNC(common,watchVariable);
+        ["ACE_player hunger", {ACE_player getVariable [QGVAR(hunger), 100]}, [true, 0, 100]] call ACEFUNC(common,watchVariable);
+    #endif
 }] call CBA_fnc_addEventHandler;
