@@ -19,5 +19,95 @@
         <Key ID="STR_ACEX_Field_Rations_TimeWithoutFood_Description">
             <English>How long should a unit be able to go without food (hours)</English>
         </Key>
+        <Key ID="STR_ACEX_Field_Rations_WaterBottle_DisplayName">
+            <English>Water Bottle</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_WaterBottle_Description">
+            <English>A water bottle</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_WaterBottleHalf_DisplayName">
+            <English>Water Bottle (Half)</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_WaterBottleHalf_Description">
+            <English>A half full water bottle</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_WaterBottleEmpty_DisplayName">
+            <English>Water Bottle (Empty)</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_WaterBottleEmpty_Description">
+            <English>An empty water bottle</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_Canteen_DisplayName">
+            <English>Canteen</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_Canteen_Description">
+            <English>A canteen filled with water</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_CanteenHalf_DisplayName">
+            <English>Canteen (Half)</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_CanteenHalf_Description">
+            <English>A canteen half filled with water</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_CanteenEmpty_DisplayName">
+            <English>Canteen (Empty)</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_CanteenEmpty_Description">
+            <English>An empty canteen</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_MRE_LambCurry_DisplayName">
+            <English>MRE Lamb Curry</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_MRE_LambCurry_Description">
+            <English>An MRE containing Lamb Curry. Heat for best effect</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_MRE_Rice_DisplayName">
+            <English>MRE Rice</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_MRE_Rice_Description">
+            <English>An MRE containing Rice. Heat for best effect</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_MRE_CreamTomatoSoup_DisplayName">
+            <English>MRE Cream Tomato Soup</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_MRE_CreamTomatoSoup_Description">
+            <English>An MRE containing Cream Tomato Soup. Mix with water and heat for best effect</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_MRE_CreamChickenSoup_DisplayName">
+            <English>MRE Cream Chicken Soup</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_MRE_CreamChickenSoup_Description">
+            <English>An MRE containing Chicken Soup. Mix with water and heat for best effect</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_MRE_ChickenTikkaMasala_DisplayName">
+            <English>MRE Chicken Tikka Masala</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_MRE_ChickenTikkaMasala_Description">
+            <English>An MRE with Chicken Tikka Massala. Heat for best effect</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_MRE_SteakVegetables_DisplayName">
+            <English>MRE Steak Vegetables</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_MRE_SteakVegetables_Description">
+            <English>An MRE containing Steak &amp; Vegetables. Heat for best effect</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_MRE_MeatballsPasta_DisplayName">
+            <English>MRE Meatballs &amp; Pasta</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_MRE_MeatballsPasta_Description">
+            <English>An MRE containing Meatballs &amp; Pasta. Heat for best effect</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_MRE_ChickenHerbDumplings_DisplayName">
+            <English>MRE Chicken with Herb Dumplings</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_MRE_ChickenHerbDumplings_Description">
+            <English>An MRE containing Chicken with Herb Dumplings. Heat for best effect</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_Humanitarian_Ration_DisplayName">
+            <English>Humanitarian Ration</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_Humanitarian_Ration_Description">
+            <English>A Humanitarian Ration intended to serve as a person's food supply during crises</English>
+        </Key>
     </Package>
 </Project>
