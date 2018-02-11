@@ -16,7 +16,7 @@ private _fnc_getChildren = {
             private _displayName = getText (_cfg >> "displayName");
             private _picture = getText (_cfg >> "picture");
             private _actionText = format ["Refill %1", _displayName]; // TODO: localize
-            private _action = [_x, _actionText, _picture, LINKFUNC(refillFromWaterSource), LINKFUNC(canRefillFromWaterSource), {}, _x] call ACEFUNC(interact_menu,createAction);
+            private _action = [_x, _actionText, _picture, LINKFUNC(refillItem), LINKFUNC(canRefillItem), {}, _x] call ACEFUNC(interact_menu,createAction);
             _actions pushBack [_action, [], _player];
         };
     } forEach (items _player);
