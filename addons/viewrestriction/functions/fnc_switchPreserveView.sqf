@@ -16,6 +16,7 @@
 #include "script_component.hpp"
 
 params ["_enabled"];
+
 if (!_enabled || {GVAR(mode) > 0}) exitWith {
     if (isNil QGVAR(preserveViewCameraViewEH)) exitWith {};
     ["cameraView", GVAR(preserveViewCameraViewEH)] call CBA_fnc_removePlayerEventHandler;
