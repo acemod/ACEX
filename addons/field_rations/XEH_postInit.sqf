@@ -32,6 +32,9 @@ if !(hasInterface) exitWith {};
         };
     }] call CBA_fnc_addEventHandler;
 
+    // Add respawn eventhandler to reset necessary variables, done through script so only added if field rations is enabled
+    ["CAManBase", "respawn", LINKFUNC(handleRespawn)] call CBA_fnc_addClassEventHandler;
+
     #ifdef DEBUG_MODE_FULL
         ["ACE_player thirst", {ACE_player getVariable [QGVAR(thirst), 100]}, [true, 0, 100]] call ACEFUNC(common,watchVariable);
         ["ACE_player hunger", {ACE_player getVariable [QGVAR(hunger), 100]}, [true, 0, 100]] call ACEFUNC(common,watchVariable);
