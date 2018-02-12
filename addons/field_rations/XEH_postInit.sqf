@@ -15,10 +15,22 @@ if !(hasInterface) exitWith {};
         }] call ACEFUNC(advanced_fatigue,addDutyFactor);
     };
 
+    // HUD variables
+    GVAR(hudInteractionHover) = false;
+    GVAR(hudIsShowing) = false;
+
     [] call FUNC(addRefillActions);
 
     // Start update loop with 10 second interval and 60 second MP sync
     [LINKFUNC(update), CBA_missionTime + 60, 10] call CBA_fnc_waitAndExecute;
+
+    // Add event to hide HUD if it was shown through interact menu hover
+    ["ace_interactMenuClosed", {
+        if (GVAR(hudInteractionHover)) then {
+            GVAR(hudInteractionHover) = false;
+            [3] call FUNC(showHud);
+        };
+    }] call CBA_fnc_addEventHandler;
 
     #ifdef DEBUG_MODE_FULL
         ["ACE_player thirst", {ACE_player getVariable [QGVAR(thirst), 100]}, [true, 0, 100]] call ACEFUNC(common,watchVariable);

@@ -15,3 +15,6 @@
 #endif
 
 #include "\z\acex\addons\main\script_macros.hpp"
+
+#define IDC_THIRST 568421
+#define IDC_HUNGER 568422
