@@ -1,3 +1,20 @@
+/*
+ * Author: mharis001, Glowbal, PabstMirror
+ * Refills an item from given water source. Old item is deleted, replacement item (from config) is added.
+ *
+ * Arguments:
+ * 0: Water source <OBJECT>
+ * 1: Player <OBJECT>
+ * 2: Item classname <STRING>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [waterSource1, ACE_player, "ACE_WaterBottle_empty"] call acex_field_rations_fnc_refillItem
+ *
+ * Public: No
+ */
 #include "script_component.hpp"
 
 #define DEFAULT_REFILL_TIME 6

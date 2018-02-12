@@ -1,3 +1,20 @@
+/*
+ * Author: mharis001, Glowbal, PabstMirror
+ * Checks whether a player can consume an item.
+ *
+ * Arguments:
+ * 0: Target (not used) <OBJECT>
+ * 1: Player <OBJECT>
+ * 2: Item classname <STRING>
+ *
+ * Return Value:
+ * Can consume item <BOOL>
+ *
+ * Example:
+ * [objNull, ACE_player, "ACE_WaterBottle"] call acex_field_rations_fnc_canConsumeItem
+ *
+ * Public: No
+ */
 #include "script_component.hpp"
 
 params ["", "_player", "_itemClass"];

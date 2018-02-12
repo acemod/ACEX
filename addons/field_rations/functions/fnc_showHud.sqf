@@ -1,3 +1,18 @@
+/*
+ * Author: mharis001, Glowbal, PabstMirror
+ * Shows the thirst and hunger status HUD. Will fade out HUD if not necessary.
+ *
+ * Arguments:
+ * 0: Transition time (seconds) <NUMBER>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [3] call acex_field_rations_fnc_showHud
+ *
+ * Public: No
+ */
 #include "script_component.hpp"
 
 params [["_transitionTime", 10]];

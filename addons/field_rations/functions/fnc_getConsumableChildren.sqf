@@ -1,3 +1,18 @@
+/*
+ * Author: mharis001, Glowbal, PabstMirror
+ * Returns children actions for consumable items in player's inventory/
+ *
+ * Arguments:
+ * 0: Player <OBJECT>
+ *
+ * Return Value:
+ * Actions <ARRAY>
+ *
+ * Example:
+ * [ACE_player] call acex_field_rations_fnc_getConsumableChildren
+ *
+ * Public: No
+ */
 #include "script_component.hpp"
 
 params ["_player"];

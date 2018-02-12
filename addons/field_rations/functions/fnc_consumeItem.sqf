@@ -1,3 +1,20 @@
+/*
+ * Author: mharis001, Glowbal, PabstMirror
+ * Consumes (eat/drink) an item. Creates progress bar and restores relevant thirst/hunger values.
+ *
+ * Arguments:
+ * 0: Target (not used) <OBJECT>
+ * 1: Player <OBJECT>
+ * 2: Item classname <STRING>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [objNull, ACE_player, "ACE_WaterBottle"] call acex_field_rations_fnc_consumeItem
+ *
+ * Public: No
+ */
 #include "script_component.hpp"
 
 params ["", "_player", "_itemClass"];

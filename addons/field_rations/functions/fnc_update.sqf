@@ -1,3 +1,18 @@
+/*
+ * Author: mharis001, Glowbal, PabstMirror
+ * Main looping update function for thirst/hunger status. Updates the HUD and applies relevant effects (consequences).
+ *
+ * Arguments:
+ * 0: Next MP sync <NUMBER>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [10] call acex_field_rations_fnc_update
+ *
+ * Public: No
+ */
 #include "script_component.hpp"
 
 // 10 sec (interval) * 100 (percent) / 3600 (sec in hour) = 0.2777778

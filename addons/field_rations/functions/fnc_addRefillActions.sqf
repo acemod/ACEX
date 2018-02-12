@@ -1,3 +1,18 @@
+/*
+ * Author: mharis001, Glowbal, PabstMirror
+ * Adds refill water actions to water sources.
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [] call acex_field_rations_fnc_addRefillActions
+ *
+ * Public: No
+ */
 #include "script_component.hpp"
 
 // Get config based classes for water sources to allow addition of more sources
