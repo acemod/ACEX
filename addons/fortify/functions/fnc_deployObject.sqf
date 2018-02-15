@@ -50,7 +50,7 @@ private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAI
     _args params ["_unit", "_object", "_cost", "_mouseClickID"];
 
 
-    if ((_unit != ACE_player) || {isNull _object} || {!([_unit, _object, []] call EFUNC(common,canInteractWith))} || {!([_unit, _cost] call FUNC(canFortify))}) then {
+    if ((_unit != ACE_player) || {isNull _object} || {!([_unit, _object, []] call ACEFUNC(common,canInteractWith))} || {!([_unit, _cost] call FUNC(canFortify))}) then {
         GVAR(isPlacing) = PLACE_CANCEL;
     };
     if (GVAR(isPlacing) != PLACE_WAITING) exitWith {
