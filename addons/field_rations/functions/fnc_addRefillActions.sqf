@@ -44,6 +44,6 @@ private _fnc_getChildren = {
     private _refillLocation = if (isArray (_x >> QGVAR(refillLocation))) then {getArray (_x >> QGVAR(refillLocation))} else {[0, 0, 0]};
 
     LOG_2("Adding refill action to %1 at %2",_classname,_refillLocation);
-    private _action = [QGVAR(refill), localize LSTRING(Refill), "", {}, {true}, _fnc_getChildren, [], _refillLocation, 4] call ACEFUNC(interact_menu,createAction);
+    private _action = [QGVAR(refill), localize LSTRING(Refill), "", {true}, {true}, _fnc_getChildren, [], _refillLocation, 4] call ACEFUNC(interact_menu,createAction);
     [_classname, 0, [], _action] call ACEFUNC(interact_menu,addActionToClass);
 } forEach _waterSources;
