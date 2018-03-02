@@ -55,4 +55,19 @@ class CfgVehicles {
             };
         };
     };
+
+    class GVAR(buildLocationModule): ACE_Module {
+        author = ACECSTRING(common,ACETeam);
+        category = "ACEX";
+        displayName = CSTRING(buildLocationModule);
+        scope = 2;
+        isGlobal = 1;
+        canSetArea = 1;
+        function = QFUNC(buildLocationModule);
+        class AttributeValues {
+            size3[] = {300,300,-1};
+            IsRectangle = 1;
+        };
+    };
+
 };
