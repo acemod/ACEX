@@ -22,7 +22,7 @@ if !(hasInterface) exitWith {};
     [] call FUNC(addRefillActions);
 
     // Start update loop with 10 second interval and 60 second MP sync
-    [LINKFUNC(update), CBA_missionTime + 60, 10] call CBA_fnc_waitAndExecute;
+    [LINKFUNC(update), CBA_missionTime + MP_SYNC_INTERVAL, 10] call CBA_fnc_waitAndExecute;
 
     // Add event to hide HUD if it was shown through interact menu hover
     ["ace_interactMenuClosed", {

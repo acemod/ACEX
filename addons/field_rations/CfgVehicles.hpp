@@ -4,7 +4,7 @@ class CfgVehicles {
         class ACE_SelfActions {
             class ACEX_FieldRations {
                 displayName = CSTRING(MainInteractionText);
-                condition = QUOTE(GVAR(enabled)); // TODO: dont show action if nothing to eat/drink? (unit has consumables?)
+                condition = QUOTE(GVAR(enabled));
                 exceptions[] = {"isNotInside"};
                 statement = QUOTE(GVAR(hudInteractionHover) = true; [0.5] call FUNC(showHud));
                 runOnHover = 1;
@@ -38,6 +38,11 @@ class CfgVehicles {
         GVAR(refillSource) = 1;
     };
     class StorageBladder_02_water_sand_F: Land_StorageBladder_02_F {
+        GVAR(refillSource) = 1;
+    };
+
+    class NonStrategic;
+    class Land_Water_source_F: NonStrategic {
         GVAR(refillSource) = 1;
     };
 };

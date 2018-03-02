@@ -16,5 +16,7 @@
 
 #include "\z\acex\addons\main\script_macros.hpp"
 
+#define MP_SYNC_INTERVAL 60
+
 #define IDC_THIRST 568421
 #define IDC_HUNGER 568422

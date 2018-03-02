@@ -209,6 +209,22 @@
             <Russian>Питьевой</Russian>
             <Spanish>Bebida</Spanish>
         </Key>
+        <Key ID="STR_ACEX_Field_Rations_ItemRefilled">
+            <English>Item Refilled</English>
+            <Chinese>項目重新填充</Chinese>
+            <Chinesesimp>项目重新填充</Chinesesimp>
+            <Czech>Položka je vyplněna</Czech>
+            <French>Article rechargé</French>
+            <German>Artikel nachgefüllt</German>
+            <Hungarian>Újratöltött tétel</Hungarian>
+            <Italian>Articolo riempito</Italian>
+            <Japanese>リフィルされたアイテム</Japanese>
+            <Korean>리필 품목</Korean>
+            <Polish>Element ponownie napełniony</Polish>
+            <Portuguese>Item Recarregado</Portuguese>
+            <Russian>Заполненный товар</Russian>
+            <Spanish>Artículo Rellenado</Spanish>
+        </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottle_DisplayName">
             <English>Water Bottle</English>
             <Chinese>水瓶</Chinese>

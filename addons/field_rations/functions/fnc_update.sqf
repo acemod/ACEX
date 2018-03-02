@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [10] call acex_field_rations_fnc_update
+ * [60] call acex_field_rations_fnc_update
  *
  * Public: No
  */
@@ -33,21 +33,39 @@ if (isNull ACE_player || {!alive ACE_player}) then {
         _workMultiplier = linearConversion [1, 7, _absSpeed, 1, 2, true];
     };
 
-    // TODO: account for temperature. more water loss when hot
-    // TODO: account for ivBags from ace_medical? less _descentWater
-
     private _descentWater = _workMultiplier * DESCENT_CONSTANT / GVAR(timeWithoutWater);
     private _descentFood = _workMultiplier * DESCENT_CONSTANT / GVAR(timeWithoutFood);
 
-    // Decrease food and water based on descent rate
-    _thirstStatus = (_thirstStatus - _descentWater) max 0;
+    // Modify water loss based on ace_weather temperature
+    if (["ace_weather"] call ACEFUNC(common,isModLoaded)) then {
+        private _temperature = ((getPosASL ACE_player) select 2) call ACEFUNC(weather,calculateTemperatureAtHeight);
+        private _tempFactor = linearConversion [15, 60, _temperature, 1, 1.5, true];
+        _descentWater = _descentWater * _tempFactor;
+        TRACE_2("Modified water loss based on temperature",_temperature,_tempFactor);
+    };
+
+    // Modify water loss based on ace_medical ivBags
+    if (["ace_medical"] call ACEFUNC(common,isModLoaded)) then {
+        private _ivBags = ACE_player getVariable [QACEGVAR(medical,ivBags), []];
+        if (!(_ivBags isEqualTo []) && {!(ACE_player getVariable [QACEGVAR(medical,isBleeding), false])}) then {
+            // Basic medical is 10x faster in IV change, therefore add extra based on medical level
+            // Unable to get perfect change since update runs every 10s
+            private _changeFactor = [6, 1] select (ACEGVAR(medical,level) >= 2);
+            _descentWater = -1 * (_changeFactor * count _ivBags);
+            TRACE_2("Modified water loss due to IV bags from ace_medical",_changeFactor,_ivBags);
+        };
+    };
+
+    // Decrease (or increase) food and water based on descent rate
+    TRACE_3("Update thirst and hunger status",_descentWater,_descentFood,_workMultiplier);
+    _thirstStatus = ((_thirstStatus - _descentWater) max 0) min 100;
     _hungerStatus = (_hungerStatus - _descentFood) max 0;
 
     // Check if we want to do a MP sync for ACE_player
     private _doSync = false;
     if (CBA_missionTime >= _nextMpSync) then {
         _doSync = true;
-        _nextMpSync = CBA_missionTime + 60;
+        _nextMpSync = CBA_missionTime + MP_SYNC_INTERVAL;
     };
 
     // Store hunger and thirst values

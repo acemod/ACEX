@@ -47,6 +47,10 @@ private _onFinish = {
     // Switch old item for refilled one
     _player removeItem _originalItem;
     [_player, _onRefillItem] call ACEFUNC(common,addToInventory);
+
+    // Display hint
+    private _picture = getText (configFile >> "CfgWeapons" >> _onRefillItem >> "picture");
+    [LSTRING(ItemRefilled), _picture] call ACEFUNC(common,displayTextPicture);
 };
 
 private _onFailure = {
