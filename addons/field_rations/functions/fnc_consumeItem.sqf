@@ -34,9 +34,9 @@ TRACE_6("Consume Item Config",_displayName,_consumeTime,_consumeEffect,_thirstRe
 
 // Progress bar based on restored value
 private _progressBarText = if (_hungerRestored > 0) then {
-    format ["%1 %2", "Eating", _displayName]; // TODO: Localize
+    format ["%1 %2...", localize LSTRING(Eating), _displayName];
 } else {
-    format ["%1 %2", "Drinking", _displayName]; // TODO: Localize
+    format ["%1 %2...", localize LSTRING(Drinking), _displayName];
 };
 
 // Play sound if defined
@@ -64,6 +64,9 @@ private _onFinish = {
         private _hungerStatus = _player getVariable [QGVAR(hunger), 100];
         _player setVariable [QGVAR(hunger), (_hungerStatus + _hungerRestored) min 100];
     };
+
+    // Update HUD to reflect change, force show
+    [5, true] call FUNC(showHud);
 };
 
 private _onFailure = {

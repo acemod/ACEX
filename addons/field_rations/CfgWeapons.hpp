@@ -56,6 +56,7 @@ class CfgWeapons {
         };
         GVAR(consumeTime) = 5;
         GVAR(consumeEffect) = QGVAR(drinking);
+        GVAR(consumeActionText) = CSTRING(DrinkFromCanteen);
         GVAR(isDrinkable) = 10;
         GVAR(replacementItem) = "ACE_Canteen_half";
     };
@@ -67,6 +68,7 @@ class CfgWeapons {
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 3;
         };
+        GVAR(consumeActionText) = CSTRING(DrinkFromCanteenHalf);
         GVAR(replacementItem) = "ACE_Canteen_empty";
         GVAR(onRefill) = "ACE_Canteen";
     };
@@ -79,6 +81,7 @@ class CfgWeapons {
             mass = 1;
         };
         GVAR(isDrinkable) = 0;
+        GVAR(consumeActionText) = "";
         GVAR(replacementItem) = "";
         GVAR(onRefill) = "ACE_Canteen";
     };

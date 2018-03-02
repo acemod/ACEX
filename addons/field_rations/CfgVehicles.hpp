@@ -3,7 +3,7 @@ class CfgVehicles {
     class CAManBase: Man {
         class ACE_SelfActions {
             class ACEX_FieldRations {
-                displayName = "Survival" // TODO: localize. change text/
+                displayName = CSTRING(MainInteractionText);
                 condition = QUOTE(GVAR(enabled)); // TODO: dont show action if nothing to eat/drink? (unit has consumables?)
                 exceptions[] = {"isNotInside"};
                 statement = QUOTE(GVAR(hudInteractionHover) = true; [0.5] call FUNC(showHud));

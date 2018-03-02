@@ -30,7 +30,7 @@ private _fnc_getChildren = {
         if (isClass _cfg && {getText (_cfg >> QGVAR(onRefill)) != ""}) then {
             private _displayName = getText (_cfg >> "displayName");
             private _picture = getText (_cfg >> "picture");
-            private _actionText = format ["Refill %1", _displayName]; // TODO: localize
+            private _actionText = format ["%1 %2", localize LSTRING(Refill), _displayName];
             private _action = [_x, _actionText, _picture, LINKFUNC(refillItem), LINKFUNC(canRefillItem), {}, _x] call ACEFUNC(interact_menu,createAction);
             _actions pushBack [_action, [], _player];
         };
@@ -44,6 +44,6 @@ private _fnc_getChildren = {
     private _refillLocation = if (isArray (_x >> QGVAR(refillLocation))) then {getArray (_x >> QGVAR(refillLocation))} else {[0, 0, 0]};
 
     LOG_2("Adding refill action to %1 at %2",_classname,_refillLocation);
-    private _action = [QGVAR(refill), "Refill", "", {}, {true}, _fnc_getChildren, [], _refillLocation, 4] call ACEFUNC(interact_menu,createAction); // TODO: localize
+    private _action = [QGVAR(refill), localize LSTRING(Refill), "", {}, {true}, _fnc_getChildren, [], _refillLocation, 4] call ACEFUNC(interact_menu,createAction);
     [_classname, 0, [], _action] call ACEFUNC(interact_menu,addActionToClass);
 } forEach _waterSources;

@@ -38,7 +38,7 @@ if (_refillTime isEqualTo 0) then {
     TRACE_2("Refill time not defined. Using default",_originalItem,_refillTime);
 };
 
-private _progressBarText = "Refilling..."; // TODO: localize. displayName of item?
+private _progressBarText = localize LSTRING(Refilling);
 
 private _onFinish = {
     (_this select 0) params ["_waterSource", "_player", "_originalItem", "_onRefillItem"];

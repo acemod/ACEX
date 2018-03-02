@@ -1,6 +1,6 @@
 /*
  * Author: mharis001, Glowbal, PabstMirror
- * Returns children actions for consumable items in player's inventory/
+ * Returns children actions for consumable items in player's inventory.
  *
  * Arguments:
  * 0: Player <OBJECT>
@@ -35,19 +35,17 @@ private _alreadyAdded = [];
 
         // Get action text (allows for custom text to be defined)
         private _displayName = getText (_cfg >> "displayName");
-        private _consumeText = getText (_cfg >> QGVAR(consumeText));
-
-        // TODO: add config bypass for custom name -> just use displayName?
+        private _consumeActionText = getText (_cfg >> QGVAR(consumeActionText));
 
         private _actionText = switch (true) do {
-            case (_consumeText != ""): {
-                if (isLocalized _consumeText) then {localize _consumeText} else {_consumeText};
+            case (_consumeActionText != ""): {
+                if (isLocalized _consumeActionText) then {localize _consumeActionText} else {_consumeActionText};
             };
             case (_hungerRestored >= _thirstRestored): {
-                format ["%1 %2", "Eat", _displayName]; // TODO: localize
+                format ["%1 %2", localize LSTRING(Eat), _displayName];
             };
             case (_thirstRestored > _hungerRestored): {
-                format ["%1 %2", "Drink", _displayName]; // TODO: localize
+                format ["%1 %2", localize LSTRING(Drink), _displayName];
             };
         };
 
