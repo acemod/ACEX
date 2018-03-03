@@ -61,5 +61,8 @@
             <Chinesesimp>确认布署</Chinesesimp>
             <Chinese>確認佈署</Chinese>
         </Key>
+        <Key ID="STR_ACEX_Fortify_buildLocationModule">
+            <English>Fortify: Limit Build Area</English>
+        </Key>
     </Package>
 </Project>
