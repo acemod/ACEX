@@ -122,5 +122,67 @@ class CfgVehicles {
         ACEGVAR(dragging,canCarry) = 1;
         ACEGVAR(dragging,carryPosition)[] = {0, 0.75, 0.5};
         ACEGVAR(dragging,carryDirection) = 180;
+
+        class ACE_Actions {
+            class ACEX_Sitting_Position_1
+            {
+                displayName = CSTRING(Sit);
+                position = "[0.5,0,0]";
+                distance = 2;
+                statement = QUOTE([_target,_player,1] call FUNC(sitMultiPos));
+                condition = "true"; //TODO proper condition
+                icon = QUOTE(PATHTOF(UI\sit_ca.paa));
+            };
+            class ACEX_Sitting_Position_2
+            {
+                displayName = CSTRING(Sit);
+                position = "[-0.5, 0, 0]";
+                distance = 2;
+                statement = QUOTE([_target,_player,2] call FUNC(sitMultiPos));
+                condition = "true"; //TODO proper condition
+                icon = QUOTE(PATHTOF(UI\sit_ca.paa));
+            };
+        };
     };
+    
+    class House_Small_F;
+    class Land_Bench_01_F : House_Small_F {
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+        };
+
+        GVAR(canSit) = 1;
+        GVAR(sitDirection) = 180;
+        GVAR(sitPosition)[] = {0, -0.1, -1}; // Z must be -1 due to chair's geometry (magic floating seat point)
+        ACEGVAR(dragging,canCarry) = 1;
+        ACEGVAR(dragging,carryPosition)[] = {0, 0.75, 0.5};
+        ACEGVAR(dragging,carryDirection) = 180;
+
+        class ACE_Actions {
+            class ACEX_Sitting_Position_1
+            {
+                displayName = CSTRING(Sit);
+                position = "[0.5,0,0]";
+                distance = 2;
+                statement = QUOTE([_target,_player,1] call FUNC(sitMultiPos));
+                condition = "true"; //TODO proper condition
+                icon = QUOTE(PATHTOF(UI\sit_ca.paa));
+            };
+            class ACEX_Sitting_Position_2
+            {
+                displayName = CSTRING(Sit);
+                position = "[-0.5, 0, 0]";
+                distance = 2;
+                statement = QUOTE([_target,_player,2] call FUNC(sitMultiPos));
+                condition = "true"; //TODO proper condition
+                icon = QUOTE(PATHTOF(UI\sit_ca.paa));
+            };
+        };
+    };
+
+    class Land_Bench_02_F : Land_Bench_01_F {};
+    class Land_Bench_03_F : Land_Bench_01_F {};
+    class Land_Bench_04_F : Land_Bench_01_F {};
+    class Land_Bench_05_F : Land_Bench_01_F {};
+    
 };

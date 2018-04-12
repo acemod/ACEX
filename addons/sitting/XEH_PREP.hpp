@@ -6,3 +6,4 @@ PREP(handleInterrupt);
 PREP(moduleInit);
 PREP(sit);
 PREP(stand);
+PREP(sitMultiPos);
