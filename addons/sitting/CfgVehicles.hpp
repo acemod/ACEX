@@ -122,28 +122,19 @@ class CfgVehicles {
         ACEGVAR(dragging,canCarry) = 1;
         ACEGVAR(dragging,carryPosition)[] = {0, 0.75, 0.5};
         ACEGVAR(dragging,carryDirection) = 180;
-
-        class ACE_Actions {
-            class ACEX_Sitting_Position_1
-            {
-                displayName = CSTRING(Sit);
-                position = "[0.5,0,0]";
-                distance = 2;
-                statement = QUOTE([_target,_player,1] call FUNC(sitMultiPos));
-                condition = "true"; //TODO proper condition
-                icon = QUOTE(PATHTOF(UI\sit_ca.paa));
-            };
-            class ACEX_Sitting_Position_2
-            {
-                displayName = CSTRING(Sit);
-                position = "[-0.5, 0, 0]";
-                distance = 2;
-                statement = QUOTE([_target,_player,2] call FUNC(sitMultiPos));
-                condition = "true"; //TODO proper condition
-                icon = QUOTE(PATHTOF(UI\sit_ca.paa));
-            };
-        };
     };
+
+    // usage in class ACE_Actions SEAT_ACTION(seat name, interact point position/mem point, sitting position)
+    #define SEAT_ACTION(var1,var2,var3) class var1 \
+            {\
+                displayName = CSTRING(Sit); \
+                distance = 2; \
+                icon = QUOTE(PATHTOF(UI\sit_ca.paa)); \
+                statement = QUOTE([_target,_player,QUOTE(QUOTE(var1))] call FUNC(sitMultiPos)); \
+                condition = QUOTE([_target,_player,QUOTE(QUOTE(var1))] call FUNC(canSitMultiPos)); \
+                position = var2; \
+                GVAR(sitPosition)[] = var3; \
+            }
     
     class House_Small_F;
     class Land_Bench_01_F : House_Small_F {
@@ -153,36 +144,79 @@ class CfgVehicles {
 
         GVAR(canSit) = 1;
         GVAR(sitDirection) = 180;
-        GVAR(sitPosition)[] = {0, -0.1, -1}; // Z must be -1 due to chair's geometry (magic floating seat point)
-        ACEGVAR(dragging,canCarry) = 1;
-        ACEGVAR(dragging,carryPosition)[] = {0, 0.75, 0.5};
-        ACEGVAR(dragging,carryDirection) = 180;
 
         class ACE_Actions {
-            class ACEX_Sitting_Position_1
+
+            SEAT_ACTION(GVAR(pos_1),"[0.5,0,0]", {0.5, -0.04, -0.90});
+
+            SEAT_ACTION(GVAR(pos_2),"[-0.5,0,0]", {-0.5, -0.04, -0.90});
+
+            SEAT_ACTION(GVAR(pos_3),"[0,0,0]", {0.5, -0.04, -0.90});
+        };
+    };
+
+    class Land_Bench_02_F : Land_Bench_01_F {
+        class ACE_Actions {
+            class ACEX_sitting_pos_1
+            {
+                GVAR(sitPosition)[] = {0.5, 0, -0.9};
+            };
+            class ACEX_sitting_pos_2
+            {
+                GVAR(sitPosition)[] = {-0.5, 0, -0.9};
+            };
+        };
+    };
+    class Land_Bench_03_F : Land_Bench_01_F {
+        class ACE_Actions {
+            class ACEX_sitting_pos_1
+            {
+                GVAR(sitPosition)[] = {0.5, 0, -0.8};
+            };
+            class ACEX_sitting_pos_2
+            {
+                GVAR(sitPosition)[] = {-0.5, 0, -0.8};
+            };
+        };
+    };
+    class Land_Bench_04_F : Land_Bench_01_F {
+
+        class ACE_Actions {
+            class ACEX_sitting_pos_1
             {
                 displayName = CSTRING(Sit);
                 position = "[0.5,0,0]";
                 distance = 2;
-                statement = QUOTE([_target,_player,1] call FUNC(sitMultiPos));
-                condition = "true"; //TODO proper condition
                 icon = QUOTE(PATHTOF(UI\sit_ca.paa));
+
+                GVAR(sitPosition)[] = {0.5, -0.1, -2};
+                statement = QUOTE([_target,_player] call FUNC(sitMultiPos));
+                condition = QUOTE([_target,_player] call FUNC(canSitMultiPos));
             };
-            class ACEX_Sitting_Position_2
+            class ACEX_sitting_pos_2
             {
                 displayName = CSTRING(Sit);
-                position = "[-0.5, 0, 0]";
+                position = "[-0.5,0,0]";
                 distance = 2;
-                statement = QUOTE([_target,_player,2] call FUNC(sitMultiPos));
-                condition = "true"; //TODO proper condition
                 icon = QUOTE(PATHTOF(UI\sit_ca.paa));
+
+                GVAR(sitPosition)[] = {-0.5, -0.1, -2};
+                statement = QUOTE([_target,_player] call FUNC(sitMultiPos));
+                condition = QUOTE([_target,_player] call FUNC(canSitMultiPos));
             };
         };
     };
-
-    class Land_Bench_02_F : Land_Bench_01_F {};
-    class Land_Bench_03_F : Land_Bench_01_F {};
-    class Land_Bench_04_F : Land_Bench_01_F {};
-    class Land_Bench_05_F : Land_Bench_01_F {};
+    class Land_Bench_05_F : Land_Bench_01_F {
+        class ACE_Actions {
+            class ACEX_sitting_pos_1
+            {
+                GVAR(sitPosition)[] = {0.5, 0, -1};
+            };
+            class ACEX_sitting_pos_2
+            {
+                GVAR(sitPosition)[] = {-0.5, 0, -1};
+            };
+        };
+    };
     
 };
