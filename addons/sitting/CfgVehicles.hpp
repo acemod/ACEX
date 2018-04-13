@@ -124,7 +124,22 @@ class CfgVehicles {
         ACEGVAR(dragging,carryDirection) = 180;
     };
 
+    // Wooden Log
+    class Land_WoodenLog_F: ThingX {
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+        };
+
+        GVAR(canSit) = 1;
+        GVAR(sitDirection) = 0;
+        GVAR(sitPosition)[] = {0, -0.1, -1};
+        ACEGVAR(dragging,canCarry) = 1;
+        ACEGVAR(dragging,carryPosition)[] = {0, 0.75, 0.5};
+        ACEGVAR(dragging,carryDirection) = 180;
+    };
+
     // usage in class ACE_Actions SEAT_ACTION(seat name, interact point position/mem point, sitting position)
+    // copy this macro to your custom config to create custom objects with multi sitting
     #define SEAT_ACTION(var1,var2,var3) class var1 \
             {\
                 displayName = CSTRING(Sit); \
@@ -146,76 +161,20 @@ class CfgVehicles {
         GVAR(sitDirection) = 180;
 
         class ACE_Actions {
-
             SEAT_ACTION(GVAR(pos_1),"[0.5,0,0]", {0.5, -0.04, -0.90});
-
             SEAT_ACTION(GVAR(pos_2),"[-0.5,0,0]", {-0.5, -0.04, -0.90});
-
-            SEAT_ACTION(GVAR(pos_3),"[0,0,0]", {0.5, -0.04, -0.90});
         };
     };
 
-    class Land_Bench_02_F : Land_Bench_01_F {
-        class ACE_Actions {
-            class ACEX_sitting_pos_1
-            {
-                GVAR(sitPosition)[] = {0.5, 0, -0.9};
-            };
-            class ACEX_sitting_pos_2
-            {
-                GVAR(sitPosition)[] = {-0.5, 0, -0.9};
-            };
-        };
-    };
-    class Land_Bench_03_F : Land_Bench_01_F {
-        class ACE_Actions {
-            class ACEX_sitting_pos_1
-            {
-                GVAR(sitPosition)[] = {0.5, 0, -0.8};
-            };
-            class ACEX_sitting_pos_2
-            {
-                GVAR(sitPosition)[] = {-0.5, 0, -0.8};
-            };
-        };
-    };
-    class Land_Bench_04_F : Land_Bench_01_F {
+    class Land_Bench_02_F : Land_Bench_01_F {};
 
-        class ACE_Actions {
-            class ACEX_sitting_pos_1
-            {
-                displayName = CSTRING(Sit);
-                position = "[0.5,0,0]";
-                distance = 2;
-                icon = QUOTE(PATHTOF(UI\sit_ca.paa));
+    class Land_Bench_03_F : Land_Bench_01_F {};
 
-                GVAR(sitPosition)[] = {0.5, -0.1, -2};
-                statement = QUOTE([_target,_player] call FUNC(sitMultiPos));
-                condition = QUOTE([_target,_player] call FUNC(canSitMultiPos));
-            };
-            class ACEX_sitting_pos_2
-            {
-                displayName = CSTRING(Sit);
-                position = "[-0.5,0,0]";
-                distance = 2;
-                icon = QUOTE(PATHTOF(UI\sit_ca.paa));
-
-                GVAR(sitPosition)[] = {-0.5, -0.1, -2};
-                statement = QUOTE([_target,_player] call FUNC(sitMultiPos));
-                condition = QUOTE([_target,_player] call FUNC(canSitMultiPos));
-            };
-        };
-    };
     class Land_Bench_05_F : Land_Bench_01_F {
+        GVAR(sitDirection) = 0;
         class ACE_Actions {
-            class ACEX_sitting_pos_1
-            {
-                GVAR(sitPosition)[] = {0.5, 0, -1};
-            };
-            class ACEX_sitting_pos_2
-            {
-                GVAR(sitPosition)[] = {-0.5, 0, -1};
-            };
+            SEAT_ACTION(GVAR(pos_1),"[0.5,0,0.3]", {0.5, -0.04, -0.90});
+            SEAT_ACTION(GVAR(pos_2),"[-0.5,0,0.3]", {-0.5, -0.04, -0.90});
         };
     };
     
