@@ -23,12 +23,11 @@ params ["_seat","_player","_seatPosConfig"];
 // Overwrite weird position, because Arma decides to set it differently based on current animation/stance...
 _player switchMove "amovpknlmstpsraswrfldnon";
 
-// Add scroll-wheel action to release object
-
+// Add scroll-wheel action to stand up
 private _actionID = _player addAction [
     format ["<t color='#FFFF00'>%1</t>", localize LSTRING(Stand)],
-    QUOTE{ ((player getVariable QGVAR(isSitting)) select 0 ) setVariable [(_this select 3), false, true]; (_this select 0) call FUNC(stand); },
-    _seatPosConfig,
+    QUOTE((_this select 0) call FUNC(stand)),
+    nil,
     20,
     false,
     true,
@@ -53,6 +52,7 @@ _player setPosASL (AGLtoASL (_seat modelToWorld _sitPosition));
 
 // Set variables, save seat object on player
 _player setVariable [QGVAR(isSitting), [_seat, _actionID]];
+_player setVariable [QGVAR(seatPos), _seatPosConfig];
 _seat setVariable [_seatPosConfig,true,true];
 
 // Add automatical stand PFH in case of interruptions
@@ -69,10 +69,9 @@ private _seatPosOrig = getPosASL _seat;
 
     //  Stand up if chair gets deleted or moved
     if (isNull _seat || {getPosASL _player distance _seatPosOrig > 1} || {((getPosASL _seat) vectorDistance _seatPosOrig) > 0.01}) exitWith {
-        _seat setVariable [_seatPosConfig,false,true];
         _player call FUNC(stand);
         TRACE_2("Chair moved",getPosASL _seat,_seatPosOrig);
     };
-}, 0, [_player, _seat, _seatPosOrig,_seatPosConfig]] call CBA_fnc_addPerFrameHandler;
+}, 0, [_player, _seat, _seatPosOrig]] call CBA_fnc_addPerFrameHandler;
 
 ["ace_satDown", [_player, _seat]] call CBA_fnc_localEvent;

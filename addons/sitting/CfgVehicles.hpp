@@ -140,6 +140,7 @@ class CfgVehicles {
 
     // usage in class ACE_Actions SEAT_ACTION(seat name, interact point position/mem point, sitting position)
     // copy this macro to your custom config to create custom objects with multi sitting
+    // if not already present include #include "\z\ace\addons\main\script_macros.hpp" or replace macros appropriately
     #define SEAT_ACTION(var1,var2,var3) class var1 \
             {\
                 displayName = CSTRING(Sit); \
