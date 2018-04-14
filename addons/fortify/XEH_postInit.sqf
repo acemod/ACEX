@@ -53,7 +53,7 @@ GVAR(objectRotationZ) = 0;
                 deleteVehicle _target;
                 _params call FUNC(updateBudget);
             },
-            {missionNamespace getVariable [QGVAR(fortifyAllowed), true]},
+            {(missionNamespace getVariable [QGVAR(fortifyAllowed), true]) && {"ACE_Fortify" in (items _player)}},
             {},
             [_side, _cost],
             {[0, 0, 0]},
