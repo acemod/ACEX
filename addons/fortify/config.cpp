@@ -17,4 +17,5 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
 
+#include "ACE_Settings.hpp"
 #include "ACEX_Fortify_Presets.hpp"
