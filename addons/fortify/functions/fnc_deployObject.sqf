@@ -44,15 +44,24 @@ private _icons = [["alt", localize "str_3den_display3den_entitymenu_movesurface_
 [_lmb, _rmb, _wheel, _icons] call ACEFUNC(interaction,showMouseHint);
 
 private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAITING}, {GVAR(isPlacing) = PLACE_APPROVE}] call ACEFUNC(common,addActionEventHandler);
+[QGVAR(onDeployStart), [_player, _object, _cost]] call CBA_fnc_localEvent;
 
 [{
     params ["_args", "_pfID"];
     _args params ["_unit", "_object", "_cost", "_mouseClickID"];
 
-
     if ((_unit != ACE_player) || {isNull _object} || {!([_unit, _object, []] call ACEFUNC(common,canInteractWith))} || {!([_unit, _cost] call FUNC(canFortify))}) then {
         GVAR(isPlacing) = PLACE_CANCEL;
     };
+
+    if (GVAR(isPlacing) == PLACE_APPROVE) then {
+        // Run custom deploy handlers
+        private _someReturnFalse = {if ([_unit, _object, _cost] call _x isEqualTo false) exitWith {1}} count GVAR(deployHandlers);
+        if (_someReturnFalse isEqualTo 1) then {
+            GVAR(isPlacing) = PLACE_WAITING;
+        };
+    };
+
     if (GVAR(isPlacing) != PLACE_WAITING) exitWith {
         TRACE_3("exiting PFEH",GVAR(isPlacing),_pfID,_mouseClickID);
         [_pfID] call CBA_fnc_removePerFrameHandler;
