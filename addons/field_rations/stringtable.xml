@@ -17,6 +17,22 @@
             <Russian>Полевые рационы</Russian>
             <Spanish>Raciones de campo</Spanish>
         </Key>
+        <Key ID="STR_ACEX_Field_Rations_IGUI_Description">
+            <English>Indicates current hunger and thirst status.</English>
+            <Chinese>指示當前的飢餓和渴望狀態。</Chinese>
+            <Chinesesimp>指示当前的饥饿和渴望状态。</Chinesesimp>
+            <Czech>Označuje aktuální stav hladovění a žízní.</Czech>
+            <French>Indique l'état actuel de la faim et de la soif.</French>
+            <German>Zeigt den aktuellen Hunger- und Durststatus an.</German>
+            <Hungarian>Jelzi az éhínség és a szomjúság állapotát.</Hungarian>
+            <Italian>Indica lo stato attuale di fame e sete.</Italian>
+            <Japanese>現在の飢餓と渇きの状態を示します。</Japanese>
+            <Korean>현재의 굶주림과 갈증 상태를 나타냅니다.</Korean>
+            <Polish>Wskazuje bieżący status głodu i pragnienia.</Polish>
+            <Portuguese>Indica o status atual de fome e sede.</Portuguese>
+            <Russian>Указывает на текущий статус голода и жажды.</Russian>
+            <Spanish>Indica el estado actual de hambre y sed.</Spanish>
+        </Key>
         <Key ID="STR_ACEX_Field_Rations_MainInteractionText">
             <English>Survival</English>
             <Chinese>生存</Chinese>
@@ -112,6 +128,89 @@
             <Portuguese>Quanto tempo uma unidade pode ir sem alimentos (horas)</Portuguese>
             <Russian>Как долго подразделение сможет идти без пищи (часы)</Russian>
             <Spanish>¿Cuánto tiempo debería una unidad ir sin comida (horas)?</Spanish>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_HudShowLevel_DisplayName">
+            <English>HUD Show</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_HudShowLevel_Description">
+            <English>Show the HUD when either hunger or thirst is below this level</English>
+            <Chinese>當飢餓或乾渴低於這個水平時顯示HUD</Chinese>
+            <Chinesesimp>当饥饿或干渴低于这个水平时显示HUD</Chinesesimp>
+            <Czech>Zobrazte HUD, pokud je hlad nebo žízeň pod touto úrovní</Czech>
+            <French>Afficher le HUD lorsque la faim ou la soif est inférieure à ce niveau</French>
+            <German>Zeigen Sie das HUD, wenn Hunger oder Durst unter diesem Wert liegt</German>
+            <Hungarian>Mutassa be a HUD-t, ha az éhség vagy szomjúság ezen a szint alatt van</Hungarian>
+            <Italian>Mostra l'HUD quando la fame o la sete sono al di sotto di questo livello</Italian>
+            <Japanese>空腹または渇きのいずれかがこのレベルよりも低いときにHUDを表示する</Japanese>
+            <Korean>배고픔이나 갈증이이 수준 아래에있을 때 HUD를 보여줍니다.</Korean>
+            <Polish>Pokaż HUD, gdy głód lub pragnienie jest poniżej tego poziomu</Polish>
+            <Portuguese>Mostre o HUD quando a fome ou sede estiver abaixo desse nível</Portuguese>
+            <Russian>Покажите HUD, когда голод или жажда будут ниже этого уровня</Russian>
+            <Spanish>Muestre el HUD cuando el hambre o la sed están por debajo de este nivel</Spanish>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_Always">
+            <English>Always</English>
+            <Chinese>總是</Chinese>
+            <Chinesesimp>总是</Chinesesimp>
+            <Czech>Vždy</Czech>
+            <French>Toujours</French>
+            <German>Immer</German>
+            <Hungarian>Mindig</Hungarian>
+            <Italian>Sempre</Italian>
+            <Japanese>常に</Japanese>
+            <Korean>항상</Korean>
+            <Polish>Zawsze</Polish>
+            <Portuguese>Sempre</Portuguese>
+            <Russian>Всегда</Russian>
+            <Spanish>Siempre</Spanish>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_HudTransparency_DisplayName">
+            <English>HUD Transparency</English>
+            <Chinese>HUD透明度</Chinese>
+            <Chinesesimp>HUD透明度</Chinesesimp>
+            <Czech>Transparentnost HUD</Czech>
+            <French>Transparence HUD</French>
+            <German>HUD Transparenz</German>
+            <Hungarian>HUD Átlátszóság</Hungarian>
+            <Italian>HUD Trasparenza</Italian>
+            <Japanese>HUDの透過性</Japanese>
+            <Korean>HUD 투명성</Korean>
+            <Polish>Przejrzystość HUD</Polish>
+            <Portuguese>Transparência HUD</Portuguese>
+            <Russian>Прозрачность HUD</Russian>
+            <Spanish>Transparencia de HUD</Spanish>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_HudTransparency_Description">
+            <English>Controls transparency of HUD. Dynamic setting makes HUD less transparent as thirst/hunger increases</English>
+            <Chinese>控制HUD的透明度。 動態設置使得HUD在飢渴感增加時不那麼透明</Chinese>
+            <Chinesesimp>控制HUD的透明度。 动态设置使得HUD在饥渴感增加时不那么透明</Chinesesimp>
+            <Czech>Řídí průhlednost HUD. Dynamické nastavení činí z HUD méně transparentní, jak se žízeň / hlad zvyšuje</Czech>
+            <French>Contrôle la transparence de HUD. Le réglage dynamique rend le HUD moins transparent à mesure que la soif et la faim augmentent</French>
+            <German>Steuert die Transparenz des HUD. Die dynamische Einstellung macht HUD weniger transparent, wenn Durst / Hunger zunimmt</German>
+            <Hungarian>A HUD átláthatóságát szabályozza. A dinamikus beállítás miatt a HUD kevésbé átlátszó, mint a szomjúság / éhínség</Hungarian>
+            <Italian>Controlla la trasparenza dell'HUD. L'impostazione dinamica rende l'HUD meno trasparente man mano che aumenta la sete / la fame</Italian>
+            <Japanese>HUDの透過性を制御します。 喉の渇きや飢えが増すほど、動的な設定はHUDの透明性を低下させます</Japanese>
+            <Korean>HUD의 투명성을 제어합니다. 갈증이나 굶주림이 증가하면서 HUD의 동적 설정이 덜 투명 해집니다.</Korean>
+            <Polish>Kontroluje przezroczystość ekranu HUD. Ustawienie dynamiczne sprawia, że HUD jest mniej przezroczysty, gdy wzrasta pragnienie / głód</Polish>
+            <Portuguese>Controla a transparência do HUD. A configuração dinâmica torna o HUD menos transparente à medida que a sede / fome aumenta</Portuguese>
+            <Russian>Управляет прозрачностью HUD. Динамическая настройка делает HUD менее прозрачной по мере увеличения жажды / голода</Russian>
+            <Spanish>Controla la transparencia del HUD. La configuración dinámica hace que HUD sea menos transparente a medida que aumenta la sed / hambre</Spanish>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_Dynamic">
+            <English>Dynamic</English>
+            <Chinese>動態</Chinese>
+            <Chinesesimp>动态</Chinesesimp>
+            <Czech>Dynamický</Czech>
+            <French>Dynamique</French>
+            <German>Dynamisch</German>
+            <Hungarian>Dinamikus</Hungarian>
+            <Italian>Dinamico</Italian>
+            <Japanese>動的</Japanese>
+            <Korean>동적</Korean>
+            <Polish>Dynamiczny</Polish>
+            <Portuguese>Dinâmico</Portuguese>
+            <Russian>динамический</Russian>
+            <Spanish>Dinámica</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Refill">
             <English>Refill</English>
