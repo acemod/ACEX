@@ -64,6 +64,9 @@
         <Key ID="STR_ACEX_Fortify_buildLocationModule">
             <English>Fortify: Limit Build Area</English>
         </Key>
+        <Key ID="STR_ACEX_Fortify_settingsCategory">
+            <English>ACEX Fortify</English>
+        </Key>
         <Key ID="STR_ACEX_Fortify_settingHint">
             <English>Show budget updates</English>
         </Key>
