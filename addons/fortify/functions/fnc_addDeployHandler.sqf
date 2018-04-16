@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [{alive param [0]}] call acex_fortify_fnc_addDeployValidator;
+ * [{alive param [0]}] call acex_fortify_fnc_addDeployHandler;
  *
  * Public: Yes
  */
