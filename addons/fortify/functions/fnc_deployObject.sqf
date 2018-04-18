@@ -58,6 +58,7 @@ private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAI
         // Run custom deploy handlers
         private _someReturnFalse = {if ([_unit, _object, _cost] call _x isEqualTo false) exitWith {1}} count GVAR(deployHandlers);
         if (_someReturnFalse isEqualTo 1) then {
+            // do not allow placement
             GVAR(isPlacing) = PLACE_WAITING;
         };
     };
