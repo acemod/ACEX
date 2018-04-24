@@ -179,6 +179,8 @@ class CfgVehicles {
         GVAR(sitPosition)[] = { {0.5, -0.15, -0.90}, {-0.5, -0.15, -0.90} };
     };
 
+    // Land_Bench_03_F is not possible with the current system
+
     class Land_Bench_05_F : Land_Bench_01_F {
         GVAR(sitDirection) = 0;
 

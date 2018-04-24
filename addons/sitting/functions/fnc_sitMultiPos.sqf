@@ -15,7 +15,6 @@
  *
  * Public: No
  */
-
 #include "script_component.hpp"
 
 params ["_seat","_player","_seatPos"];
@@ -47,6 +46,8 @@ private _sitPosition = _sitPositionAll select _seatPos;
 [_player, call FUNC(getRandomAnimation), 2] call ACEFUNC(common,doAnimation); // Correctly places when using non-transitional animations
 [_player, "", 1] call ACEFUNC(common,doAnimation); // Correctly applies animation's config values (such as disallow throwing of grenades, intercept keybinds... etc).
 
+TRACE_2("Sit pos and dir",_sitPosition,_sitDirection);
+
 // Set direction and position
 _player setDir _sitDirection;
 //modelToWorld returns AGL
@@ -59,9 +60,11 @@ _seat setVariable [format["%1%2",QGVAR(pos_),_seatPos],true,true];
 
 // Add automatical stand PFH in case of interruptions
 private _seatPosOrig = getPosASL _seat;
+private _seatDistanceOriginal = player distance _seat;
+
 [{
     params ["_args", "_pfhId"];
-    _args params ["_player", "_seat", "_seatPosOrig","_seatPosConfig"];
+    _args params ["_player", "_seat", "_seatPosOrig" , "_seatDistanceOriginal"];
 
     // Remove PFH if not sitting any more
     if (isNil {_player getVariable QGVAR(isSitting)}) exitWith {
@@ -70,10 +73,10 @@ private _seatPosOrig = getPosASL _seat;
     };
 
     //  Stand up if chair gets deleted or moved
-    if (isNull _seat || {getPosASL _player distance _seatPosOrig > 1} || {((getPosASL _seat) vectorDistance _seatPosOrig) > 0.01}) exitWith {
+    if (isNull _seat || {getPosASL _player distance _seatPosOrig > (_seatDistanceOriginal + 0.5)} || {((getPosASL _seat) vectorDistance _seatPosOrig) > 0.01}) exitWith {
         _player call FUNC(stand);
         TRACE_2("Chair moved",getPosASL _seat,_seatPosOrig);
     };
-}, 0, [_player, _seat, _seatPosOrig]] call CBA_fnc_addPerFrameHandler;
+}, 0, [_player, _seat, _seatPosOrig,_seatDistanceOriginal]] call CBA_fnc_addPerFrameHandler;
 
 ["ace_satDown", [_player, _seat]] call CBA_fnc_localEvent;
