@@ -20,9 +20,9 @@ params ["_player"];
 (_player getVariable QGVAR(isSitting)) params ["_seat", "_actionID"];
 
 // If MultiSitting unclaim seat
-private _seatPosConfig = _player getVariable [QGVAR(seatPos),""];
-if !(_seatPosConfig isEqualTo "") then {
-    _seat setVariable [_seatPosConfig,false,true];
+private _seatPos = _player getVariable [QGVAR(seatPos),""];
+if !(_seatPos isEqualTo "") then {
+    _seat setVariable [format["%1%2",QGVAR(pos_),_seatPos],false,true];
 };
 
 // Remove scroll-wheel action

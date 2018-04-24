@@ -5,7 +5,7 @@
  * Arguments:
  * 0: Seat <OBJECT>
  * 1: Player <OBJECT>
- * 2: Seat Position Config <STRING>
+ * 2: Seat Position <STRING>
  *
  * Return Value:
  * None
@@ -18,7 +18,8 @@
 
 #include "script_component.hpp"
 
-params ["_seat","_player","_seatPosConfig"];
+params ["_seat","_player","_seatPos"];
+life_test = _this;
 
 // Overwrite weird position, because Arma decides to set it differently based on current animation/stance...
 _player switchMove "amovpknlmstpsraswrfldnon";
@@ -39,7 +40,9 @@ private _actionID = _player addAction [
 private _configFile = configFile >> "CfgVehicles" >> typeOf _seat;
 
 private _sitDirection = (getDir _seat) + getNumber (_configFile >> QGVAR(sitDirection));
-private _sitPosition = getArray (_configFile >> "ACE_Actions" >> _seatPosConfig >> QGVAR(sitPosition));
+private _sitPositionAll = getArray (_configFile >> "ACE_Actions" >> _seatPosConfig >> QGVAR(sitPosition));
+
+private _sitPosition = _sitPositionAll select _seatPos;
 
 // Get random animation and perform it (before moving player to ensure correct placement)
 [_player, call FUNC(getRandomAnimation), 2] call ACEFUNC(common,doAnimation); // Correctly places when using non-transitional animations
@@ -52,8 +55,8 @@ _player setPosASL (AGLtoASL (_seat modelToWorld _sitPosition));
 
 // Set variables, save seat object on player
 _player setVariable [QGVAR(isSitting), [_seat, _actionID]];
-_player setVariable [QGVAR(seatPos), _seatPosConfig];
-_seat setVariable [_seatPosConfig,true,true];
+_player setVariable [QGVAR(seatPos), _seatPos];
+_seat setVariable [format["%1%2",QGVAR(pos_),_seatPos],true,true];
 
 // Add automatical stand PFH in case of interruptions
 private _seatPosOrig = getPosASL _seat;
