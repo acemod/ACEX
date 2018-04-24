@@ -19,7 +19,6 @@
 #include "script_component.hpp"
 
 params ["_seat","_player","_seatPos"];
-life_test = _this;
 
 // Overwrite weird position, because Arma decides to set it differently based on current animation/stance...
 _player switchMove "amovpknlmstpsraswrfldnon";
