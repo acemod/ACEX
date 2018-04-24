@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [seat,1] call acex_sitting_fnc_sit;
+ * [seat,player,1] call acex_sitting_fnc_sitMultiPos;
  *
  * Public: No
  */
@@ -40,7 +40,7 @@ private _actionID = _player addAction [
 private _configFile = configFile >> "CfgVehicles" >> typeOf _seat;
 
 private _sitDirection = (getDir _seat) + getNumber (_configFile >> QGVAR(sitDirection));
-private _sitPositionAll = getArray (_configFile >> "ACE_Actions" >> _seatPosConfig >> QGVAR(sitPosition));
+private _sitPositionAll = getArray (_configFile >> QGVAR(sitPosition));
 
 private _sitPosition = _sitPositionAll select _seatPos;
 

@@ -140,20 +140,7 @@ class CfgVehicles {
         ACEGVAR(dragging,carryDirection) = 180;
     };
 
-    // usage in class ACE_Actions SEAT_ACTION(seat name, interact point position/mem point, sitting position)
-    // copy this macro to your custom config to create custom objects with multi sitting
-    // if not already present include #include "\z\ace\addons\main\script_macros.hpp" or replace macros appropriately
-    #define SEAT_ACTION(var1,var2,var3) class var1 \
-            {\
-                displayName = CSTRING(Sit); \
-                distance = 2; \
-                icon = QUOTE(PATHTOF(UI\sit_ca.paa)); \
-                statement = QUOTE([_target,_player,QUOTE(QUOTE(var1))] call FUNC(sitMultiPos)); \
-                condition = QUOTE([_target,_player,QUOTE(QUOTE(var1))] call FUNC(canSitMultiPos)); \
-                position = var2; \
-                GVAR(sitPosition)[] = var3; \
-            }
-    
+
     class House_Small_F;
     class Land_Bench_01_F : House_Small_F {
         class EventHandlers {
@@ -166,30 +153,17 @@ class CfgVehicles {
         GVAR(sitPosition)[] = { {0.5, -0.04, -0.90}, {-0.5, -0.04, -0.90} };
         GVAR(interactPosition)[] = { {0.5,0,0.3}, {-0.5,0,0.3} };
 
-        /*
-        class ACE_Actions {
-            SEAT_ACTION(GVAR(pos_1),"[0.5,0,0]", {0.5, -0.04, -0.90});
-            SEAT_ACTION(GVAR(pos_2),"[-0.5,0,0]", {-0.5, -0.04, -0.90});
-        };*/
     };
 
-    class Land_Bench_02_F : House_Small_F {
-
-        GVAR(canSit) = 1;
-        GVAR(sitDirection) = 180;
-
-        GVAR(sitPosition)[] = { {0.5, -0.04, -0.90}, {-0.5, -0.04, -0.90} };
-        GVAR(interactPosition)[] = { {0.5,0,0.3}, {-0.5,0,0.3} };
-    };
+    class Land_Bench_02_F : Land_Bench_01_F {};
 
     class Land_Bench_03_F : Land_Bench_01_F {};
 
     class Land_Bench_05_F : Land_Bench_01_F {
         GVAR(sitDirection) = 0;
-        class ACE_Actions {
-            SEAT_ACTION(GVAR(pos_1),"[0.5,0,0.3]", {0.5, -0.04, -0.90});
-            SEAT_ACTION(GVAR(pos_2),"[-0.5,0,0.3]", {-0.5, -0.04, -0.90});
-        };
+
+        GVAR(sitPosition)[] = { {0.5, -0.04, -0.90}, {-0.5, -0.04, -0.90} };
+        GVAR(interactPosition)[] = { {0.5,0,0.3}, {-0.5,0,0.3} };
     };
     
 };

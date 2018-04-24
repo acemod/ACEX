@@ -17,8 +17,6 @@
 #include "script_component.hpp"
 params ["_seat"];
 
-TRACE_1("Calling add action",_type);
-
 private "_type";
 if((typeName _seat) isEqualTo "OBJECT") then {
 	_type = typeOf _seat;
@@ -27,7 +25,7 @@ if((typeName _seat) isEqualTo "OBJECT") then {
 };
 
 // Exit if sitting disabled or the object is not specified as a seat
-if (!GVAR(enable) || {getNumber (configFile >> "CfgVehicles" >> _type >> QGVAR(canSit)) != 1}) exitWith { TRACE_1("Unsupported type",_type); };
+if (!GVAR(enable) || {getNumber (configFile >> "CfgVehicles" >> _type >> QGVAR(canSit)) != 1}) exitWith {};
 
 // Exit if class already initialized
 if (_type in GVAR(initializedClasses)) exitWith {};
@@ -52,14 +50,16 @@ if (typeName (_sitPosition select 0) isEqualTo "ARRAY") then {
 			_menuType = ["ACE_MainActions"];
 		};
 
+		TRACE_3("Menu Position",_menuPosition,_menuType,_forEachIndex);
+
 		private _sitAction = [
 		    format["%1_pos_%2",QGVAR(Sit),_forEachIndex],
 		    localize LSTRING(Sit),
 		    QUOTE(PATHTOF(UI\sit_ca.paa)),
-		    { [_this select 0, _this select 1, _forEachIndex] call FUNC(sitMultiPos)},
-		    { [_this select 0, _this select 1, _forEachIndex] call FUNC(canSitMultiPos)},
+		    { _this call FUNC(sitMultiPos)},
+		    { _this call FUNC(canSitMultiPos)},
 		    {},
-		    [],
+		    _forEachIndex,
 		    _menuPosition,
 		    1.5
 		] call ACEFUNC(interact_menu,createAction);

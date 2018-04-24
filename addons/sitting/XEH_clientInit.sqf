@@ -15,7 +15,6 @@ GVAR(isEnabled) = false;
     // Initialize classes as they spawn
     ["ThingX", "init", FUNC(addSitActions), nil, nil, true] call CBA_fnc_addClassEventHandler;
 
-    private _sourceClasses = [];
     {
         if(getNumber (_x >> QGVAR(canSit)) isEqualTo 1) then {
             [configName _x] call FUNC(addSitActions);
