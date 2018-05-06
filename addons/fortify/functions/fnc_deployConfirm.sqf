@@ -34,8 +34,8 @@ private _newObject = _typeOf createVehicle _posASL;
 _newObject setPosASL _posASL;
 _newObject setVectorDirAndUp [_vectorDir, _vectorUp];
 
-[QGVAR(addActionToObject_server), [_side, _newObject]] call CBA_fnc_serverEvent;
-
+// Server will use this event to run the jip compatible QGVAR(addActionToObject) event
+[QGVAR(objectPlaced), [_unit, _side, _newObject]] call CBA_fnc_globalEvent;
 
 if (cba_events_control) then {
     // Re-run if ctrl key held

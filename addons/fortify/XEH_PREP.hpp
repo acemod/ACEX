@@ -1,5 +1,6 @@
 TRACE_1("",QUOTE(ADDON));
 
+PREP(addDeployHandler);
 PREP(registerObjects);
 PREP(canFortify);
 PREP(deployObject);
@@ -15,3 +16,4 @@ PREP(parseSide);
 PREP(getPlaceableSet);
 PREP(modifyAction);
 PREP(setupModule);
+PREP(buildLocationModule);

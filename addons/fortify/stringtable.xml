@@ -3,15 +3,31 @@
     <Package name="Fortify">
         <Key ID="STR_ACEX_Fortify_Fortify">
             <English>Fortify</English>
+            <Japanese>要塞</Japanese>
+            <Korean>요새화</Korean>
+            <Chinese>要塞</Chinese>
+            <Chinesesimp>要塞</Chinesesimp>
         </Key>
         <Key ID="STR_ACEX_Fortify_FortifyItem_name">
             <English>Fortify Tool</English>
+            <Japanese>要塞ツール</Japanese>
+            <Korean>요새화 도구</Korean>
+            <Chinese>要塞工具</Chinese>
+            <Chinesesimp>要塞工具</Chinesesimp>
         </Key>
         <Key ID="STR_ACEX_Fortify_Budget">
             <English>Budget</English>
+            <Japanese>予算</Japanese>
+            <Korean>예산</Korean>
+            <Chinese>預算</Chinese>
+            <Chinesesimp>预算</Chinesesimp>
         </Key>
         <Key ID="STR_ACEX_Fortify_addToolItem">
             <English>Auto add fortify item</English>
+            <Japanese>自動的に要塞ツールを追加</Japanese>
+            <Korean>자동 추가 요새 항목</Korean>
+            <Chinese>自動增加要塞物品</Chinese>
+            <Chinesesimp>自动增加要塞物品</Chinesesimp>
         </Key>
         <Key ID="STR_ACEX_Fortify_rotate">
             <English>Rotate</English>
@@ -24,7 +40,7 @@
             <Polish>Obrót</Polish>
             <Portuguese>Rotaciona</Portuguese>
             <Russian>Bращать</Russian>
-            <Japanese>向きを変える</Japanese>
+            <Japanese>回転</Japanese>
             <Korean>회전</Korean>
             <Chinesesimp>旋转</Chinesesimp>
             <Chinese>旋轉</Chinese>
@@ -44,6 +60,9 @@
             <Korean>설치 확인</Korean>
             <Chinesesimp>确认布署</Chinesesimp>
             <Chinese>確認佈署</Chinese>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_buildLocationModule">
+            <English>Fortify: Limit Build Area</English>
         </Key>
     </Package>
 </Project>

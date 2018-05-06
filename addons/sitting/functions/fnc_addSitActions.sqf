@@ -19,20 +19,11 @@ params ["_seat"];
 
 private _type = typeOf _seat;
 
-// Exit if the object is not specified as a seat
-if (getNumber (configFile >> "CfgVehicles" >> _type >> QGVAR(canSit)) != 1) exitWith {};
-
-// only run this after the settings are initialized
-if !(ACEGVAR(common,settingsInitFinished)) exitWith {
-    ACEGVAR(common,runAtSettingsInitialized) pushBack [FUNC(addSitActions), _this];
-};
-
-//If not enabled, don't add actions:
-if (!GVAR(enable)) exitWith {};
+// Exit if sitting disabled or the object is not specified as a seat
+if (!GVAR(enable) || {getNumber (configFile >> "CfgVehicles" >> _type >> QGVAR(canSit)) != 1}) exitWith {};
 
 // Exit if class already initialized
 if (_type in GVAR(initializedClasses)) exitWith {};
-
 GVAR(initializedClasses) pushBack _type;
 
 TRACE_1("Adding Sit Action",_type);
