@@ -3,6 +3,7 @@ PREP(canConsumeItem);
 PREP(canRefillItem);
 PREP(consumeItem);
 PREP(getConsumableChildren);
+PREP(getRefillChildren);
 PREP(refillItem);
 PREP(showHud);
 PREP(update);
