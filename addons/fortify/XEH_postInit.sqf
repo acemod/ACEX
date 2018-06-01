@@ -24,7 +24,7 @@ GVAR(objectRotationZ) = 0;
 
 [QGVAR(sideBudgetHint), {
     params ["_side"];
-    if (_side isEqualTo side group ace_player) then {
+    if (_side isEqualTo side group ace_player && {GVAR(settingHint) isEqualTo 2} || {GVAR(settingHint) isEqualTo 1 && "ACE_Fortify" in (items ace_player)}) then {
         private _budget = [_side] call FUNC(getBudget);
         TRACE_2("sideBudgetHint",_side,_budget);
         [format ["%1 $%2", localize LSTRING(Budget), _budget]] call ACEFUNC(common,displayTextStructured);

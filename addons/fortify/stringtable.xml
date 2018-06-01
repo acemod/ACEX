@@ -65,5 +65,23 @@
             <English>Fortify: Limit Build Area</English>
             <Japanese>要塞: 構築制限エリア</Japanese>
         </Key>
+        <Key ID="STR_ACEX_Fortify_settingsCategory">
+            <English>ACEX Fortify</English>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_settingHint">
+            <English>Show budget updates</English>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_settingHintDesc">
+            <English>Controls when updates to budget is shown in a hint display</English>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_settingHintNone">
+            <English>Never show</English>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_settingHintHasTool">
+            <English>Has fortify tool</English>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_settingHintEveryone">
+            <English>Always show</English>
+        </Key>
     </Package>
 </Project>
