@@ -63,6 +63,7 @@
         </Key>
         <Key ID="STR_ACEX_Fortify_buildLocationModule">
             <English>Fortify: Limit Build Area</English>
+            <Japanese>要塞: 構築制限エリア</Japanese>
         </Key>
         <Key ID="STR_ACEX_Fortify_settingsCategory">
             <English>ACEX Fortify</English>

@@ -1,5 +1,6 @@
 TRACE_1("",QUOTE(ADDON));
 
+PREP(addDeployHandler);
 PREP(registerObjects);
 PREP(canFortify);
 PREP(deployObject);
