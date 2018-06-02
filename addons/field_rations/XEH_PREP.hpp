@@ -1,4 +1,3 @@
-PREP(addRefillActions);
 PREP(canConsumeItem);
 PREP(canRefillItem);
 PREP(consumeItem);
