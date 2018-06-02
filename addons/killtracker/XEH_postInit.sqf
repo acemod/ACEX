@@ -34,21 +34,24 @@ INFO("Running Kill Tracking");
 
 // Variables:
 GVAR(eventsArray) = [];
-GVAR(outputText) = "None";
+GVAR(outputText) = "Total Kills: 0";
+GVAR(killCount) = 0;
 
 // Add Event Handlers:
 [QGVAR(kill), {
     params ["_name", "_killInfo"];
     TRACE_2("kill eh",_name,_killInfo);
+    // Increment kill counter
+    GVAR(killCount) = GVAR(killCount) + 1;
     GVAR(eventsArray) pushBack format ["Killed: %1 %2", _name, _killInfo];
-    GVAR(outputText) = (GVAR(eventsArray) joinString "<br/>");
+    GVAR(outputText) = (format ["Total Kills: %1<br/>", GVAR(killCount)]) + (GVAR(eventsArray) joinString "<br/>");
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(death), {
     params ["_name", "_killInfo"];
     TRACE_2("death eh",_name,_killInfo);
     GVAR(eventsArray) pushBack format ["Died: %1 %2", _name, _killInfo];
-    GVAR(outputText) = (GVAR(eventsArray) joinString "<br/>");
+    GVAR(outputText) = (format ["Total Kills: %1<br/>", GVAR(killCount)]) + (GVAR(eventsArray) joinString "<br/>");
 }] call CBA_fnc_addEventHandler;
 
 // Add Killed Event Handler - killed EH and lastDamageSource var are local only
