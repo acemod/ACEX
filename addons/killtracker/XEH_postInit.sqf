@@ -34,7 +34,7 @@ INFO("Running Kill Tracking");
 
 // Variables:
 GVAR(eventsArray) = [];
-GVAR(outputText) = "None";
+GVAR(outputText) = "Total Kills: 0";
 GVAR(killCount) = 0;
 
 // Add Event Handlers:
