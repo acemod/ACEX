@@ -27,7 +27,8 @@ class CfgWeapons {
             mass = 3;
         };
         GVAR(replacementItem) = "ACE_WaterBottle_empty";
-        GVAR(onRefill) = "ACE_WaterBottle";
+        GVAR(refillItem) = "ACE_WaterBottle";
+        GVAR(refillAmount) = 1;
     };
 
     class ACE_WaterBottle_empty: ACE_WaterBottle {
@@ -40,7 +41,8 @@ class CfgWeapons {
         };
         GVAR(isDrinkable) = 0;
         GVAR(replacementItem) = "";
-        GVAR(onRefill) = "ACE_WaterBottle";
+        GVAR(refillItem) = "ACE_WaterBottle";
+        GVAR(refillAmount) = 1;
     };
 
     // Canteens
@@ -70,7 +72,8 @@ class CfgWeapons {
         };
         GVAR(consumeActionText) = CSTRING(DrinkFromCanteenHalf);
         GVAR(replacementItem) = "ACE_Canteen_empty";
-        GVAR(onRefill) = "ACE_Canteen";
+        GVAR(refillItem) = "ACE_Canteen";
+        GVAR(refillAmount) = 1;
     };
 
     class ACE_Canteen_empty: ACE_Canteen {
@@ -83,7 +86,8 @@ class CfgWeapons {
         GVAR(isDrinkable) = 0;
         GVAR(consumeActionText) = "";
         GVAR(replacementItem) = "";
-        GVAR(onRefill) = "ACE_Canteen";
+        GVAR(refillItem) = "ACE_Canteen";
+        GVAR(refillAmount) = 1;
     };
 
     // MREs

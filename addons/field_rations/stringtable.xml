@@ -212,6 +212,27 @@
             <Russian>динамический</Russian>
             <Spanish>Dinámica</Spanish>
         </Key>
+        <Key ID="STR_ACEX_Field_Rations_WaterSource">
+            <English>Water Source</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_CheckWater">
+            <English>Check remaining water</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_CheckingWater">
+            <English>Checking remaining water...</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_RemainingWaterLitre">
+            <English>There is 1 litre left.</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_RemainingWaterLitres">
+            <English>There are %1 litres left.</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_NoWaterRemaining">
+            <English>There is no water left.</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_DrinkDirectly">
+            <English>Drink directly</English>
+        </Key>
         <Key ID="STR_ACEX_Field_Rations_Refill">
             <English>Refill</English>
             <Chinese>筆芯</Chinese>

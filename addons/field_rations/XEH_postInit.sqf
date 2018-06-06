@@ -19,17 +19,56 @@ if !(hasInterface) exitWith {};
     GVAR(hudInteractionHover) = false;
     GVAR(hudIsShowing) = false;
 
+    // Compile water source actions
+    GVAR(mainAction) = [
+        QGVAR(waterSource),
+        localize LSTRING(WaterSource),
+        QPATHTOF(ui\icon_water_tap.paa),
+        {true},
+        {
+            alive _target
+            && {_target call FUNC(getRemainingWater) != REFILL_WATER_DISABLED}
+            && {[_player, _target] call ACEFUNC(common,canInteractWith)}
+        }
+    ] call ACEFUNC(interact_menu,createAction);
+
+    GVAR(subActions) = [
+        [
+            QGVAR(checkWater),
+            localize LSTRING(CheckWater),
+            QPATHTOF(ui\icon_water_tap.paa),
+            {[_player, _target] call FUNC(checkWater)},
+            {_target call FUNC(getRemainingWater) != REFILL_WATER_INFINITE}
+        ] call ACEFUNC(interact_menu,createAction),
+        [
+            QGVAR(drinkDirectly),
+            localize LSTRING(DrinkDirectly),
+            QPATHTOF(ui\icon_water_tap.paa),
+            {},
+            {}
+        ] call ACEFUNC(interact_menu,createAction),
+        [
+            QGVAR(refill),
+            localize LSTRING(Refill),
+            QPATHTOF(ui\icon_water_tap.paa),
+            {},
+            {true},
+            LINKFUNC(getRefillChildren)
+        ] call ACEFUNC(interact_menu,createAction)
+    ];
+
     // Add refill water actions to water sources from config
-    private _filter = QUOTE(getNumber (_x >> 'scope') == 2 && {getNumber (_x >> QQGVAR(refillSource)) > 0});
-    private _waterSources = _filter configClasses (configFile >> "CfgVehicles");
-
     {
-        private _classname = configName _x;
-        LOG_1("Adding refill action to %1",_classname);
-
-        private _action = [QGVAR(refill), localize LSTRING(Refill), QPATHTOF(ui\icon_water_tap.paa), {true}, {true}, LINKFUNC(getRefillChildren)] call ACEFUNC(interact_menu,createAction);
-        [_classname, 0, ["ACE_MainActions"], _action] call ACEFUNC(interact_menu,addActionToClass);
-    } forEach _waterSources;
+        private _waterSupply = getNumber (_x >> QGVAR(waterSupply));
+        if (_waterSupply > 0 || {_waterSupply == REFILL_WATER_INFINITE}) then {
+            private _classname = configName _x;
+            [_classname, 0, ["ACE_MainActions"], GVAR(mainAction)] call ACEFUNC(interact_menu,addActionToClass);
+            {
+                [_classname, 0, ["ACE_MainActions", QGVAR(waterSource)], _x] call ACEFUNC(interact_menu,addActionToClass);
+            } forEach GVAR(subActions);
+            LOG_1("Added water source actions to %1 from config",_classname);
+        };
+    } forEach (QUOTE(getNumber (_x >> 'scope') == 2) configClasses (configFile >> "CfgVehicles"));
 
     // Start update loop with 10 second interval and 60 second MP sync
     [LINKFUNC(update), CBA_missionTime + MP_SYNC_INTERVAL, 10] call CBA_fnc_waitAndExecute;

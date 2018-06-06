@@ -1,9 +1,12 @@
 PREP(canConsumeItem);
 PREP(canRefillItem);
+PREP(checkWater);
 PREP(consumeItem);
 PREP(getConsumableChildren);
 PREP(getRefillChildren);
+PREP(getRemainingWater);
 PREP(handleRespawn);
 PREP(refillItem);
+PREP(setRemainingWater);
 PREP(showHud);
 PREP(update);
