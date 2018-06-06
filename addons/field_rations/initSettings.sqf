@@ -12,7 +12,7 @@
     "SLIDER",
     [localize LSTRING(TimeWithoutWater_DisplayName), localize LSTRING(TimeWithoutWater_Description)],
     format ["ACEX %1", localize LSTRING(DisplayName)],
-    [1, 24, 2, 0],
+    [0.1, 24, 2, 1],
     true
 ] call CBA_settings_fnc_init;
 
@@ -21,7 +21,7 @@
     "SLIDER",
     [localize LSTRING(TimeWithoutFood_DisplayName), localize LSTRING(TimeWithoutFood_Description)],
     format ["ACEX %1", localize LSTRING(DisplayName)],
-    [1, 24, 2, 0],
+    [0.1, 24, 2, 1],
     true
 ] call CBA_settings_fnc_init;
 
