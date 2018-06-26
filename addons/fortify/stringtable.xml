@@ -64,24 +64,38 @@
         <Key ID="STR_ACEX_Fortify_buildLocationModule">
             <English>Fortify: Limit Build Area</English>
             <Japanese>要塞: 構築制限エリア</Japanese>
+            <Chinese>要塞: 限制建造區</Chinese>
+            <Chinesesimp>要塞: 限制建造区</Chinesesimp>
         </Key>
         <Key ID="STR_ACEX_Fortify_settingsCategory">
             <English>ACEX Fortify</English>
+            <Chinese>ACEX 要塞</Chinese>
+            <Chinesesimp>ACEX 要塞</Chinesesimp>
         </Key>
         <Key ID="STR_ACEX_Fortify_settingHint">
             <English>Show budget updates</English>
+            <Chinese>顯示預算更新</Chinese>
+            <Chinesesimp>显示预算更新</Chinesesimp>
         </Key>
         <Key ID="STR_ACEX_Fortify_settingHintDesc">
             <English>Controls when updates to budget is shown in a hint display</English>
+            <Chinese>決定預算變更時是否會顯示提示</Chinese>
+            <Chinesesimp>决定预算变更时是否会显示提示</Chinesesimp>
         </Key>
         <Key ID="STR_ACEX_Fortify_settingHintNone">
             <English>Never show</English>
+            <Chinese>永不顯示</Chinese>
+            <Chinesesimp>永不显示</Chinesesimp>
         </Key>
         <Key ID="STR_ACEX_Fortify_settingHintHasTool">
             <English>Has fortify tool</English>
+            <Chinese>有要塞工具</Chinese>
+            <Chinesesimp>有要塞工具</Chinesesimp>
         </Key>
         <Key ID="STR_ACEX_Fortify_settingHintEveryone">
             <English>Always show</English>
+            <Chinese>總是顯示</Chinese>
+            <Chinesesimp>总是显示</Chinesesimp>
         </Key>
     </Package>
 </Project>
