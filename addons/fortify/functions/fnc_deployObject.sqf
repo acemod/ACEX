@@ -54,13 +54,13 @@ private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAI
         GVAR(isPlacing) = PLACE_CANCEL;
     };
 
+    // If place approved, verify deploy handlers
     if (GVAR(isPlacing) == PLACE_APPROVE) then {
-        // Run custom deploy handlers
-        private _someReturnFalse = {if ([_unit, _object, _cost] call _x isEqualTo false) exitWith {1}} count GVAR(deployHandlers);
-        if (_someReturnFalse isEqualTo 1) then {
-            // do not allow placement
-            GVAR(isPlacing) = PLACE_WAITING;
-        };
+        {
+            if !([_unit, _object, _cost] call _x) exitWith {
+                GVAR(isPlacing) = PLACE_WAITING;
+            };
+        } forEach GVAR(deployHandlers);
     };
 
     if (GVAR(isPlacing) != PLACE_WAITING) exitWith {
@@ -84,8 +84,8 @@ private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAI
 
     private _start = eyePos _unit;
     private _camViewDir = getCameraViewDirection _unit;
-    private _basePos = (_start vectorAdd (_camViewDir vectorMultiply _distance));
-    _basePos set [2, ((_basePos select 2) - (_height / 2)) max ((getTerrainHeightASL _basePos) - 0.05)];
+    private _basePos = _start vectorAdd (_camViewDir vectorMultiply _distance);
+    _basePos set [2, ((_basePos select 2) - (_height / 2)) max (getTerrainHeightASL _basePos - 0.05)];
 
     _object setPosASL _basePos;
 
@@ -101,4 +101,3 @@ private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAI
     hintSilent format ["Rotation:\nX: %1\nY: %2\nZ: %3", GVAR(objectRotationX), GVAR(objectRotationY), GVAR(objectRotationZ)];
     #endif
 }, 0, [_player, _object, _cost, _mouseClickID]] call CBA_fnc_addPerFrameHandler;
-
