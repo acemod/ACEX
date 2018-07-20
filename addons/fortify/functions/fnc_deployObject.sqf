@@ -40,7 +40,7 @@ if (_budget > -1) then {_lmb = _lmb + format [" -$%1", _cost];};
 private _rmb = localize ACELSTRING(Common,Cancel);
 private _wheel = localize LSTRING(rotate);
 private _xAxis = localize "str_disp_conf_xaxis";
-private _icons = [["alt", localize "str_3den_display3den_entitymenu_movesurface_text"], ["shift", localize "str_disp_conf_xaxis" + " " +_wheel], ["control", localize "str_disp_conf_yaxis" + " " + _wheel]];
+private _icons = [["alt", localize "str_3den_display3den_entitymenu_movesurface_text"], ["shift", localize "str_disp_conf_xaxis" + " " + _wheel], ["control", localize "str_disp_conf_yaxis" + " " + _wheel]];
 [_lmb, _rmb, _wheel, _icons] call ACEFUNC(interaction,showMouseHint);
 
 private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAITING}, {GVAR(isPlacing) = PLACE_APPROVE}] call ACEFUNC(common,addActionEventHandler);
@@ -50,17 +50,13 @@ private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAI
     params ["_args", "_pfID"];
     _args params ["_unit", "_object", "_cost", "_mouseClickID"];
 
-    if ((_unit != ACE_player) || {isNull _object} || {!([_unit, _object, []] call ACEFUNC(common,canInteractWith))} || {!([_unit, _cost] call FUNC(canFortify))}) then {
+    if (_unit != ACE_player || {isNull _object} || {!([_unit, _object, []] call ACEFUNC(common,canInteractWith))} || {!([_unit, _cost] call FUNC(canFortify))}) then {
         GVAR(isPlacing) = PLACE_CANCEL;
     };
 
     // If place approved, verify deploy handlers
-    if (GVAR(isPlacing) == PLACE_APPROVE) then {
-        {
-            if !([_unit, _object, _cost] call _x) exitWith {
-                GVAR(isPlacing) = PLACE_WAITING;
-            };
-        } forEach GVAR(deployHandlers);
+    if (GVAR(isPlacing) == PLACE_APPROVE && {GVAR(deployHandlers) findIf {!([_unit, _object, _cost] call _x)} > -1}) then {
+        GVAR(isPlacing) = PLACE_WAITING;
     };
 
     if (GVAR(isPlacing) != PLACE_WAITING) exitWith {
