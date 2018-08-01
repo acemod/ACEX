@@ -55,7 +55,7 @@ private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAI
     };
 
     // If place approved, verify deploy handlers
-    if (GVAR(isPlacing) == PLACE_APPROVE && {GVAR(deployHandlers) findIf {!([_unit, _object, _cost] call _x)} > -1}) then {
+    if (GVAR(isPlacing) == PLACE_APPROVE && {(GVAR(deployHandlers) findIf {([_unit, _object, _cost] call _x) isEqualTo false}) > -1}) then {
         GVAR(isPlacing) = PLACE_WAITING;
     };
 
