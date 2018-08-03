@@ -2,20 +2,20 @@
 <Project name="ACEX">
     <Package name="Field_Rations">
         <Key ID="STR_ACEX_Field_Rations_DisplayName">
-            <English>Field Rations</English>
-            <Chinese>乾糧</Chinese>
-            <Chinesesimp>干粮</Chinesesimp>
-            <Czech>Poměrové pole</Czech>
-            <French>Rations sur le terrain</French>
-            <German>Feld Rationen</German>
-            <Hungarian>Terepi adagok</Hungarian>
-            <Italian>Razioni di campo</Italian>
-            <Japanese>フィールドレース</Japanese>
-            <Korean>필드 식량</Korean>
-            <Polish>Racje polowe</Polish>
-            <Portuguese>Rações de campo</Portuguese>
-            <Russian>Полевые рационы</Russian>
-            <Spanish>Raciones de campo</Spanish>
+            <English>ACEX Field Rations</English>
+            <Chinese>ACEX 乾糧</Chinese>
+            <Chinesesimp>ACEX 干粮</Chinesesimp>
+            <Czech>ACEX Poměrové pole</Czech>
+            <French>ACEX Rations sur le terrain</French>
+            <German>ACEX Feld Rationen</German>
+            <Hungarian>ACEX Terepi adagok</Hungarian>
+            <Italian>ACEX Razioni di campo</Italian>
+            <Japanese>ACEX フィールドレース</Japanese>
+            <Korean>ACEX 필드 식량</Korean>
+            <Polish>ACEX Racje polowe</Polish>
+            <Portuguese>ACEX Rações de campo</Portuguese>
+            <Russian>ACEX Полевые рационы</Russian>
+            <Spanish>ACEX Raciones de campo</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_IGUI_Description">
             <English>Indicates current hunger and thirst status.</English>
