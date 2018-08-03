@@ -6,6 +6,7 @@ PREP(consumeItem);
 PREP(getConsumableChildren);
 PREP(getRefillChildren);
 PREP(getRemainingWater);
+PREP(handleEffects);
 PREP(handleRespawn);
 PREP(refillItem);
 PREP(setRemainingWater);

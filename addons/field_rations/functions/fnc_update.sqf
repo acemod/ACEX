@@ -61,4 +61,7 @@ if (CBA_missionTime >= _nextMpSync) then {
 _player setVariable [QGVAR(thirst), _thirst, _doSync];
 _player setVariable [QGVAR(hunger), _hunger, _doSync];
 
+// Handle any effects/consequences of high thirst or hunger
+[_player, _thirst, _hunger] call FUNC(handleEffects);
+
 [FUNC(update), _nextMpSync, 1] call CBA_fnc_waitAndExecute;
