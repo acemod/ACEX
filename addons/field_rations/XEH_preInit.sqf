@@ -8,4 +8,8 @@ PREP_RECOMPILE_END;
 
 #include "initSettings.sqf"
 
+// Init arrays of status modifiers
+GVAR(thirstModifiers) = [];
+GVAR(hungerModifiers) = [];
+
 ADDON = true;
