@@ -212,6 +212,18 @@
             <Russian>динамический</Russian>
             <Spanish>Dinámica</Spanish>
         </Key>
+        <Key ID="STR_ACEX_Field_Rations_HudType">
+            <English>HUD Type</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_HudType_Description">
+            <English></English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_ColoredIcons">
+            <English>Colored Icons</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_DrainingIcons">
+            <English>Draining Icons</English>
+        </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSource">
             <English>Water Source</English>
         </Key>

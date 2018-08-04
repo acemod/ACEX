@@ -16,6 +16,8 @@
 
 #include "\z\acex\addons\main\script_macros.hpp"
 
+#include "\a3\ui_f\hpp\defineCommonGrids.inc"
+
 #define MP_SYNC_INTERVAL 60
 
 #define REFILL_WATER_INFINITE -10
@@ -23,5 +25,11 @@
 #define DEFAULT_REFILL_TIME 5
 #define CHECK_WATER_TIME 1
 
-#define IDC_THIRST 568421
-#define IDC_HUNGER 568422
+#define HUD_LAYER (QGVAR(hud) call BIS_fnc_rscLayer)
+
+#define IDC_COLORED_HUD_THIRST 6740
+#define IDC_COLORED_HUD_HUNGER 6750
+#define IDC_DRAINING_HUD_THIRST_GROUP 7740
+#define IDC_DRAINING_HUD_THIRST_ICON  7750
+#define IDC_DRAINING_HUD_HUNGER_GROUP 7840
+#define IDC_DRAINING_HUD_HUNGER_ICON  7850

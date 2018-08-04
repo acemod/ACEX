@@ -42,3 +42,12 @@
     [[-1, 1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2], [localize LSTRING(Dynamic), "0%", "10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%"], 4],
     false
 ] call CBA_settings_fnc_init;
+
+[
+    QGVAR(hudType),
+    "LIST",
+    [LSTRING(HudType), LSTRING(HudType_Description)],
+    localize LSTRING(DisplayName),
+    [[0, 1], [LSTRING(ColoredIcons), LSTRING(DrainingIcons)], 0],
+    false
+] call CBA_settings_fnc_init;
