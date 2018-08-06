@@ -28,18 +28,25 @@ if (isNull _display) then {
 };
 
 if (GVAR(hudType) == 0) then {
+    // Calculate HUD transparency based on setting
+    private _alpha = if (GVAR(hudTransparency) == -1) then {
+        linearConversion [0, 70, _thirst max _hunger, 0, 1, true];
+    } else {
+        GVAR(hudTransparency);
+    };
+
     // Update HUD icon colors (White -> Yellow -> Orange -> Red)
     (_display displayCtrl IDC_COLORED_HUD_THIRST) ctrlSetTextColor [
         1,
         linearConversion [35, 90, _thirst, 1, 0, true],
         linearConversion [0, 40, _thirst, 1, 0, true],
-        1
+        _alpha
     ];
     (_display displayCtrl IDC_COLORED_HUD_HUNGER) ctrlSetTextColor [
         1,
         linearConversion [35, 90, _hunger, 1, 0, true],
         linearConversion [0, 40, _hunger, 1, 0, true],
-        1
+        _alpha
     ];
 } else {
     // Reposition controls group and icon to create draining effect
