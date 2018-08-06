@@ -64,9 +64,6 @@ private _onFinish = {
         private _hungerStatus = _player getVariable [QGVAR(hunger), 100];
         _player setVariable [QGVAR(hunger), (_hungerStatus + _hungerRestored) min 100];
     };
-
-    // Update HUD to reflect change, force show
-    [5, true] call FUNC(showHud);
 };
 
 private _onFailure = {

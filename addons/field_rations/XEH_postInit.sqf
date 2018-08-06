@@ -85,6 +85,12 @@ if !(hasInterface) exitWith {};
         }] call FUNC(addStatusModifier);
     };
 
+    GVAR(hudInteractionHover) = false;
+
+    ["ace_interactMenuClosed", {
+        GVAR(hudInteractionHover) = false;
+    }] call CBA_fnc_addEventHandler;
+
     // Add respawn eventhandler to reset necessary variables, done through script so only added if field rations is enabled
     ["CAManBase", "respawn", LINKFUNC(handleRespawn)] call CBA_fnc_addClassEventHandler;
 

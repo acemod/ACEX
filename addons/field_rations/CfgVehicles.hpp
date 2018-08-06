@@ -2,11 +2,11 @@ class CfgVehicles {
     class Man;
     class CAManBase: Man {
         class ACE_SelfActions {
-            class ACEX_FieldRations {
+            class ADDON {
                 displayName = CSTRING(MainInteractionText);
                 condition = QUOTE(GVAR(enabled));
                 exceptions[] = {"isNotInside"};
-                statement = QUOTE(GVAR(hudInteractionHover) = true; [0.5] call FUNC(showHud));
+                statement = QUOTE(GVAR(hudInteractionHover) = true; [] call FUNC(handleHUD));
                 runOnHover = 1;
                 insertChildren = QUOTE((_this select 1) call FUNC(getConsumableChildren));
                 icon = QPATHTOF(ui\icon_survival.paa);

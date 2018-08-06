@@ -26,6 +26,7 @@ private _player = ACE_player;
 // Handle unit not alive or null
 if (!alive _player) exitWith {
     [FUNC(update), _nextMpSync, 1] call CBA_fnc_waitAndExecute;
+    HUD_LAYER cutFadeOut 0.5;
 };
 
 // Get current thirst and hunger
@@ -64,6 +65,11 @@ _player setVariable [QGVAR(hunger), _hunger, _doSync];
 // Handle any effects/consequences of high thirst or hunger
 // [_player, _thirst, _hunger] call FUNC(handleEffects);
 
-[_thirst, _hunger] call FUNC(handleHUD);
+// Handle showing/updating or hiding of HUD
+if (_thirst > GVAR(hudShowLevel) || {_hunger > GVAR(hudShowLevel)} || {GVAR(hudInteractionHover)}) then {
+    [_thirst, _hunger] call FUNC(handleHUD);
+} else {
+    HUD_LAYER cutFadeOut 0.5;
+};
 
 [FUNC(update), _nextMpSync, 1] call CBA_fnc_waitAndExecute;

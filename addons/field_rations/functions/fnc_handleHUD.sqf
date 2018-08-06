@@ -30,7 +30,7 @@ if (isNull _display) then {
 if (GVAR(hudType) == 0) then {
     // Calculate HUD transparency based on setting
     private _alpha = if (GVAR(hudTransparency) == -1) then {
-        linearConversion [0, 70, _thirst max _hunger, 0, 1, true];
+        linearConversion [0, 70, _thirst max _hunger, [0, 0.5] select GVAR(hudInteractionHover), 1, true];
     } else {
         GVAR(hudTransparency);
     };
