@@ -25,7 +25,7 @@ private _cfg = configFile >> "CfgWeapons" >> _itemClass;
 
 private _displayName = getText (_cfg >> "displayName");
 private _consumeTime = getNumber (_cfg >> QGVAR(consumeTime));
-private _consumeEffect = getText (_cfg >> QGVAR(consumeEffect));
+private _consumeEffect = getText (_cfg >> QGVAR(consumeSound));
 private _thirstRestored = getNumber (_cfg >> QGVAR(isDrinkable));
 private _hungerRestored = getNumber (_cfg >> QGVAR(isEatable));
 private _replacementItem = getText (_cfg >> QGVAR(replacementItem));

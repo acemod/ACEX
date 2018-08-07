@@ -9,51 +9,29 @@
  * Actions <ARRAY>
  *
  * Example:
- * [ACE_player] call acex_field_rations_fnc_getConsumableChildren
+ * [_player] call acex_field_rations_fnc_getConsumableChildren
  *
  * Public: No
  */
 #include "script_component.hpp"
 
-params ["_player"];
+[_this, {
+    params ["_player"];
+    TRACE_1("Creating consumable item actions",_player);
 
-private _actions = [];
-private _alreadyAdded = [];
+    private _cfgWeapons = configFile >> "CfgWeapons";
+    private _actions = [];
 
-{
-    private _cfg = configFile >> "CfgWeapons" >> _x;
+    {
+        private _config = _cfgWeapons >> _x;
+        if (getNumber (_config >> QGVAR(isDrinkable)) > 0 || {getNumber (_config >> QGVAR(isEatable)) > 0}) then {
+            private _displayName = getText (_config >> "displayName");
+            private _picture = getText (_config >> "picture");
 
-    if (isClass _cfg && {!(_x in _alreadyAdded)}) then {
-        private _thirstRestored = getNumber (_cfg >> QGVAR(isDrinkable));
-        private _hungerRestored = getNumber (_cfg >> QGVAR(isEatable));
-
-        // Check if valid consumable item
-        if (_thirstRestored isEqualTo 0 && {_hungerRestored isEqualTo 0}) exitWith {};
-
-        // Prevent multiple entries of same item
-        _alreadyAdded pushBack _x;
-
-        // Get action text (allows for custom text to be defined)
-        private _displayName = getText (_cfg >> "displayName");
-        private _consumeActionText = getText (_cfg >> QGVAR(consumeActionText));
-
-        private _actionText = switch (true) do {
-            case (_consumeActionText != ""): {
-                if (isLocalized _consumeActionText) then {localize _consumeActionText} else {_consumeActionText};
-            };
-            case (_hungerRestored >= _thirstRestored): {
-                format ["%1 %2", localize LSTRING(Eat), _displayName];
-            };
-            case (_thirstRestored > _hungerRestored): {
-                format ["%1 %2", localize LSTRING(Drink), _displayName];
-            };
+            private _action = [_x, _displayName, _picture, FUNC(consumeItem), FUNC(canConsumeItem), {}, _x] call ACEFUNC(interact_menu,createAction);
+            _actions pushBack [_action, [], _player];
         };
+    } forEach ([_player, false, true, true, true, false] call CBA_fnc_uniqueUnitItems);
 
-        private _picture = getText (_cfg >> "picture");
-
-        private _action = [_x, _actionText, _picture, LINKFUNC(consumeItem), LINKFUNC(canConsumeItem), {}, _x] call ACEFUNC(interact_menu,createAction);
-        _actions pushBack [_action, [], _player];
-    };
-} forEach (items _player);
-
-_actions
+    _actions
+}, ACE_player, QGVAR(consumableActions), 3600, "cba_events_loadoutEvent"] call ACEFUNC(common,cachedCall);

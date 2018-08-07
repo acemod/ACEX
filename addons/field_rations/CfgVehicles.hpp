@@ -8,7 +8,7 @@ class CfgVehicles {
                 exceptions[] = {"isNotInside"};
                 statement = QUOTE(GVAR(hudInteractionHover) = true; [] call FUNC(handleHUD));
                 runOnHover = 1;
-                insertChildren = QUOTE((_this select 1) call FUNC(getConsumableChildren));
+                insertChildren = QUOTE(_player call FUNC(getConsumableChildren));
                 icon = QPATHTOF(ui\icon_survival.paa);
             };
         };

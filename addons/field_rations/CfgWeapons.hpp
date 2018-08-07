@@ -2,6 +2,10 @@ class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
 
+    class ACE_Banana: ACE_ItemCore {
+        GVAR(isEatable) = 4;
+    };
+
     // Water Bottles
     class ACE_WaterBottle: ACE_ItemCore {
         author = ACECSTRING(common,ACETeam);
@@ -14,7 +18,7 @@ class CfgWeapons {
             mass = 5;
         };
         GVAR(consumeTime) = 5;
-        GVAR(consumeEffect) = QGVAR(drinking);
+        GVAR(consumeSound) = QGVAR(drinking);
         GVAR(isDrinkable) = 7.5;
         GVAR(replacementItem) = "ACE_WaterBottle_half";
     };
@@ -57,8 +61,8 @@ class CfgWeapons {
             mass = 5;
         };
         GVAR(consumeTime) = 5;
-        GVAR(consumeEffect) = QGVAR(drinking);
-        GVAR(consumeActionText) = CSTRING(DrinkFromCanteen);
+        GVAR(consumeSound) = QGVAR(drinking);
+        GVAR(consumeText) = CSTRING(DrinkFromCanteen);
         GVAR(isDrinkable) = 10;
         GVAR(replacementItem) = "ACE_Canteen_half";
     };
@@ -70,7 +74,7 @@ class CfgWeapons {
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 3;
         };
-        GVAR(consumeActionText) = CSTRING(DrinkFromCanteenHalf);
+        GVAR(consumeText) = CSTRING(DrinkFromCanteenHalf);
         GVAR(replacementItem) = "ACE_Canteen_empty";
         GVAR(refillItem) = "ACE_Canteen";
         GVAR(refillAmount) = 1;
@@ -84,7 +88,7 @@ class CfgWeapons {
             mass = 1;
         };
         GVAR(isDrinkable) = 0;
-        GVAR(consumeActionText) = "";
+        GVAR(consumeText) = "";
         GVAR(replacementItem) = "";
         GVAR(refillItem) = "ACE_Canteen";
         GVAR(refillAmount) = 1;
