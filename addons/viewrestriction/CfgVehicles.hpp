@@ -20,7 +20,7 @@ class CfgVehicles {
         category = "ACEX";
         function = QFUNC(moduleInit);
         displayName = CSTRING(ModuleDisplayName);
-        scope = 2;
+        scope = 1;
         isGlobal = 1;
         icon = QUOTE(PATHTOF(UI\Icon_Module_ViewRestriction_ca.paa));
         class Arguments {
