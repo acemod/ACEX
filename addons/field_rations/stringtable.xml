@@ -17,6 +17,9 @@
             <Russian>ACEX Полевые рационы</Russian>
             <Spanish>ACEX Raciones de campo</Spanish>
         </Key>
+        <Key ID="STR_ACEX_Field_Rations_IGUI_DisplayName">
+            <English>ACEX Field Rations HUD</English>
+        </Key>
         <Key ID="STR_ACEX_Field_Rations_IGUI_Description">
             <English>Indicates current hunger and thirst status.</English>
             <Chinese>指示當前的飢餓和渴望狀態。</Chinese>
