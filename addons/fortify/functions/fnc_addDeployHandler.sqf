@@ -1,22 +1,23 @@
 /*
- * Author: Cuel
- * Register a custom deployment validator
- * Provided code is passed [unit, object, cost]
- * Code needs to return BOOL: true(allowed) / false(blocked)
+ * Author: Cuel, mharis001
+ * Adds a custom deploy handler.
+ * Code needs to return BOOL: true (allowed) / false (blocked).
  *
  * Arguments:
  * 0: Code <CODE>
+ *  - Passed [Unit <OBJECT>, Object being placed <OBJECT>, Cost <NUMBER>]
  *
  * Return Value:
  * None
  *
  * Example:
- * [{alive param [0]}] call acex_fortify_fnc_addDeployHandler;
+ * [{(_this select 0) getVariable ["isBobTheBuilder", false]}] call acex_fortify_fnc_addDeployHandler
  *
  * Public: Yes
  */
-
 #include "script_component.hpp"
-params [["_code", {true}, [{}]]];
 
+params [["_code", {}, [{}]]];
+
+if (_code isEqualTo {} || {_code isEqualTo {true}}) exitWith {};
 GVAR(deployHandlers) pushBack _code;
