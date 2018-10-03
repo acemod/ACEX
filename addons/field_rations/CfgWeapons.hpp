@@ -1,9 +1,23 @@
 class CfgWeapons {
+    /*
+     * Consumable Items Config Entries:
+     * --------------------------------
+     * GVAR(consumeText)         - Text displayed for consumption progress bar
+     * GVAR(consumeTime)         - Time in seconds to consume item
+     * GVAR(consumeAnims)        - Array of animations [stand, crouch, prone]
+     * GVAR(consumeSounds)       - Array of sounds [stand, crouch, prone]
+     * GVAR(thirstRestored)      - Thirst restored on consumption
+     * GVAR(hungerRestored)      - Hunger restored on consumption
+     * GVAR(replacementItem)     - Replacement item on consumption (if any)
+     * GVAR(refillItem)          - Item added when refilled (makes item refillable)
+     * GVAR(refillAmount)        - Amount of water required to refill item
+     */
+
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
 
     class ACE_Banana: ACE_ItemCore {
-        GVAR(isEatable) = 4;
+        GVAR(hungerRestored) = 4;
     };
 
     // Water Bottles
@@ -17,25 +31,26 @@ class CfgWeapons {
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 5;
         };
-        GVAR(consumeTime) = 5;
-        GVAR(consumeSound) = QGVAR(drinking);
-        GVAR(isDrinkable) = 7.5;
-        GVAR(replacementItem) = "ACE_WaterBottle_half";
+        GVAR(consumeTime) = 10;
+        GVAR(thirstRestored) = 10;
+        GVAR(replacementItem) = "ACE_WaterBottle_Half";
+        GVAR(consumeAnims)[] = {QGVAR(drinkStand), QGVAR(drinkCrouch), QGVAR(drinkProne)};
+        GVAR(consumeSounds)[] = {};
     };
 
-    class ACE_WaterBottle_half: ACE_WaterBottle {
+    class ACE_WaterBottle_Half: ACE_WaterBottle {
         author = ACECSTRING(common,ACETeam);
         displayName = CSTRING(WaterBottleHalf_DisplayName);
         descriptionShort = CSTRING(WaterBottleHalf_Description);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 3;
         };
-        GVAR(replacementItem) = "ACE_WaterBottle_empty";
+        GVAR(replacementItem) = "ACE_WaterBottle_Empty";
         GVAR(refillItem) = "ACE_WaterBottle";
-        GVAR(refillAmount) = 1;
+        GVAR(refillAmount) = 0.5;
     };
 
-    class ACE_WaterBottle_empty: ACE_WaterBottle {
+    class ACE_WaterBottle_Empty: ACE_WaterBottle {
         author = ACECSTRING(common,ACETeam);
         displayName = CSTRING(WaterBottleEmpty_DisplayName);
         descriptionShort = CSTRING(WaterBottleEmpty_Description);
@@ -43,7 +58,7 @@ class CfgWeapons {
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
         };
-        GVAR(isDrinkable) = 0;
+        GVAR(thirstRestored) = 0;
         GVAR(replacementItem) = "";
         GVAR(refillItem) = "ACE_WaterBottle";
         GVAR(refillAmount) = 1;
@@ -61,34 +76,32 @@ class CfgWeapons {
             mass = 5;
         };
         GVAR(consumeTime) = 5;
-        GVAR(consumeSound) = QGVAR(drinking);
-        GVAR(consumeText) = CSTRING(DrinkFromCanteen);
-        GVAR(isDrinkable) = 10;
-        GVAR(replacementItem) = "ACE_Canteen_half";
+        GVAR(thirstRestored) = 10;
+        GVAR(replacementItem) = "ACE_Canteen_Half";
+        GVAR(consumeAnims)[] = {QGVAR(drinkStand), QGVAR(drinkCrouch), QGVAR(drinkProne)};
+        GVAR(consumeSounds)[] = {};
     };
 
-    class ACE_Canteen_half: ACE_Canteen {
+    class ACE_Canteen_Half: ACE_Canteen {
         author = ACECSTRING(common,ACETeam);
         displayName = CSTRING(CanteenHalf_DisplayName);
         descriptionShort = CSTRING(CanteenHalf_Description);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 3;
         };
-        GVAR(consumeText) = CSTRING(DrinkFromCanteenHalf);
-        GVAR(replacementItem) = "ACE_Canteen_empty";
+        GVAR(replacementItem) = "ACE_Canteen_Empty";
         GVAR(refillItem) = "ACE_Canteen";
-        GVAR(refillAmount) = 1;
+        GVAR(refillAmount) = 0.5;
     };
 
-    class ACE_Canteen_empty: ACE_Canteen {
+    class ACE_Canteen_Empty: ACE_Canteen {
         author = ACECSTRING(common,ACETeam);
         displayName = CSTRING(CanteenEmpty_DisplayName);
         descriptionShort = CSTRING(CanteenEmpty_Description);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
         };
-        GVAR(isDrinkable) = 0;
-        GVAR(consumeText) = "";
+        GVAR(thirstRestored) = 0;
         GVAR(replacementItem) = "";
         GVAR(refillItem) = "ACE_Canteen";
         GVAR(refillAmount) = 1;
@@ -105,8 +118,8 @@ class CfgWeapons {
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 5;
         };
-        GVAR(consumeTime) = 8;
-        GVAR(isEatable) = 20;
+        GVAR(consumeTime) = 10;
+        GVAR(hungerRestored) = 20;
     };
 
     class ACE_MRE_Rice: ACE_MRE_LambCurry {
