@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Kingsley
  * Checks whether the given player can fortify.
@@ -15,7 +16,6 @@
  * Public: Yes
  */
 
-#include "script_component.hpp"
 
 params ["_player", ["_cost", 0]];
 

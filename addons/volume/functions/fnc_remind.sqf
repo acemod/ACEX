@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Kingsley
  * Reminds about lowered volume.
@@ -13,7 +14,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 // Exit if reminder not enabled or not lowered
 if (!GVAR(remindIfLowered) || {!GVAR(isLowered)}) exitWith {};

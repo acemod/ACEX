@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Cuel, mharis001
  * Adds a custom deploy handler.
@@ -15,7 +16,6 @@
  *
  * Public: Yes
  */
-#include "script_component.hpp"
 
 params [["_code", {}, [{}]]];
 
