@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Jonpas
  * Initializes the View Restriction module.
@@ -10,7 +11,6 @@
  * Return Value:
  * None
  */
-#include "script_component.hpp"
 
 params ["_logic", "_units", "_activated"];
 

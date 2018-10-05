@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: PabstMirror
  * Tracks deaths/kills and logs to the end mission disaplay
@@ -15,7 +16,6 @@
  * Public: No
  */
 // #define DEBUG_MODE_FULL
-#include "script_component.hpp"
 
 // place the following in a misison's description.ext:
 /*

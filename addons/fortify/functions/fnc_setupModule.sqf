@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: PabstMirror
  * Handles setup module.
@@ -15,7 +16,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["_logic", "", "_activated"];
 TRACE_2("setupModule",_logic,_activated);

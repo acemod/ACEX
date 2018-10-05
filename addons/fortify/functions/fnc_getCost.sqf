@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Kingsley
  * Gets the cost for the given side and classname.
@@ -15,7 +16,6 @@
  * Public: Yes
  */
 
-#include "script_component.hpp"
 
 params ["_side", "_classname"];
 

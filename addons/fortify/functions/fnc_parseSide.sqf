@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Kingsley
  * Parses the given text and returns a side.
@@ -16,7 +17,6 @@
  * Public: Yes
  */
 
-#include "script_component.hpp"
 
 params ["_side"];
 TRACE_1("parseSide",_side);

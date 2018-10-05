@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Kingsley
  * Deploys the object to the player for them to move it around.
@@ -16,7 +17,6 @@
  * Public: No
  */
 
-#include "script_component.hpp"
 
 params ["", "_player", "_params"];
 _params params [["_side", sideUnknown, [sideUnknown]], ["_classname", "", [""]], ["_rotations", [0,0,0]]];

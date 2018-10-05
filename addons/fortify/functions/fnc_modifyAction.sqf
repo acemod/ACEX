@@ -1,3 +1,4 @@
+#include "script_component.hpp"
  /*
  * Author: PabstMirror
  * Modifies the fortify action, shows current budget.
@@ -16,7 +17,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["", "_player", "", "_actionData"];
 

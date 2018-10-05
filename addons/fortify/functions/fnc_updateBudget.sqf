@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Kingsley
  * Updates the given sides budget.
@@ -16,7 +17,6 @@
  * Public: Yes
  */
 
-#include "script_component.hpp"
 
 params [["_side", sideUnknown, [sideUnknown]], ["_change", 0, [0]], ["_hint", true, [true]]];
 TRACE_3("updateBudget",_side,_change,_hint);

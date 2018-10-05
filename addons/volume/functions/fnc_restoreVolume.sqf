@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Kingsley
  * Restores the game and music volume to what it was when the mission first started,
@@ -13,7 +14,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 ACEGVAR(hearing,disableVolumeUpdate) = false;
 
