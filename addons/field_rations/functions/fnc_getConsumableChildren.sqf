@@ -15,23 +15,26 @@
  */
 #include "script_component.hpp"
 
-[_this, {
-    params ["_player"];
+params ["_player"];
+
+private _fnc_getActions = {
     TRACE_1("Creating consumable item actions",_player);
 
-    private _cfgWeapons = configFile >> "CfgWeapons";
     private _actions = [];
+    private _cfgWeapons = configFile >> "CfgWeapons";
 
     {
         private _config = _cfgWeapons >> _x;
-        if (getNumber (_config >> QGVAR(isDrinkable)) > 0 || {getNumber (_config >> QGVAR(isEatable)) > 0}) then {
+        if (getNumber (_config >> QGVAR(thirstRestored)) > 0 || {getNumber (_config >> QGVAR(hungerRestored)) > 0}) then {
             private _displayName = getText (_config >> "displayName");
             private _picture = getText (_config >> "picture");
 
-            private _action = [_x, _displayName, _picture, FUNC(consumeItem), FUNC(canConsumeItem), {}, _x] call ACEFUNC(interact_menu,createAction);
+            private _action = [_x, _displayName, _picture, FUNC(consumeItem), {true}, {}, _x] call ACEFUNC(interact_menu,createAction);
             _actions pushBack [_action, [], _player];
         };
-    } forEach ([_player, false, true, true, true, false] call CBA_fnc_uniqueUnitItems);
+    } forEach (_player call ACEFUNC(common,uniqueItems));
 
     _actions
-}, ACE_player, QGVAR(consumableActions), 3600, "cba_events_loadoutEvent"] call ACEFUNC(common,cachedCall);
+};
+
+[[], _fnc_getActions, _player, QGVAR(consumableActionsCache), 9999, "cba_events_loadoutEvent"] call ACEFUNC(common,cachedCall);
