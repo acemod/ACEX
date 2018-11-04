@@ -6,6 +6,7 @@
  * Arguments:
  * 0: New Camera View <STRING>
  * 1: Vehicle <OBJECT>
+ * 2: Check gunner view <BOOL> (default: true)
  *
  * Return Value:
  * Can Change Camera <BOOL>
@@ -16,11 +17,12 @@
  * Public: No
  */
 
-params ["_newCameraView", "_cameraOn"];
+params ["_newCameraView", "_cameraOn", ["_checkGunnerView", true]];
 
 // Remote control hates switchCamera (control returns to player, camera is left on remotely controlled object/unit), make sure remote controlled units are not impacted
 
-!(_newCameraView in ["GUNNER", "GROUP"]) &&
+!(_newCameraView isEqualTo "GUNNER" && {_checkGunnerView}) &&
+{!(_newCameraView isEqualTo "GROUP")} &&
 {!isNull ACE_player} &&
 {player == ACE_player} &&
 {alive ACE_player} &&

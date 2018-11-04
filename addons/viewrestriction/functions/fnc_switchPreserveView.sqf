@@ -40,7 +40,7 @@ GVAR(preserveViewCameraViewEH) = ["cameraView", {
 GVAR(preserveViewVehicleEH) = ["vehicle", {
     params ["_player", "_vehicle"];
     private _cameraView = cameraView;
-    if !([_cameraView, cameraOn] call FUNC(canChangeCamera)) exitWith {};
+    if !([_cameraView, cameraOn, false] call FUNC(canChangeCamera)) exitWith {};
 
     private _vehicleClass = {if (_vehicle isKindOf _x) exitWith {_x}} forEach ["CAManBase", "LandVehicle", "Air", "Ship", "All"];
     private _savedView = profileNamespace getVariable (QGVAR(preserveView) + _vehicleClass);
