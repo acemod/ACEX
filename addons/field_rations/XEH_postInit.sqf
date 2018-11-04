@@ -15,32 +15,46 @@ if !(hasInterface) exitWith {};
     };
 
     // Compile water source actions
-    GVAR(mainAction) = [
+    private _mainAction = [
         QGVAR(waterSource),
         localize LSTRING(WaterSource),
         QPATHTOF(ui\icon_water_tap.paa),
         {true},
         {
-            alive _target
-            && {_target call FUNC(getRemainingWater) != REFILL_WATER_DISABLED}
-            && {[_player, _target] call ACEFUNC(common,canInteractWith)}
-        }
+            private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
+            alive _waterSource
+            && {_waterSource call FUNC(getRemainingWater) != REFILL_WATER_DISABLED}
+            && {[_player, _waterSource] call ACEFUNC(common,canInteractWith)}
+        },
+        { // Add refil actions as sub actions to main node?
+            private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
+            [_waterSource, _player] call FUNC(getRefillChildren);},
+        [],
+        {[0, 0, 0]},
+        5.5,
+        [false, false, false, false, true]
     ] call ACEFUNC(interact_menu,createAction);
 
-    GVAR(subActions) = [
+    private _subActions = [
         [
             QGVAR(checkWater),
             localize LSTRING(CheckWater),
             QPATHTOF(ui\icon_water_tap.paa),
-            {[_player, _target] call FUNC(checkWater)},
-            {_target call FUNC(getRemainingWater) != REFILL_WATER_INFINITE}
-        ] call ACEFUNC(interact_menu,createAction),
+            {
+                private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
+                [_player, _waterSource] call FUNC(checkWater);},
+            {
+                private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
+                (_waterSource call FUNC(getRemainingWater)) != REFILL_WATER_INFINITE
+            }
+        ] call ACEFUNC(interact_menu,createAction)
+        /*
         [
             QGVAR(drinkDirectly),
             localize LSTRING(DrinkDirectly),
             QPATHTOF(ui\icon_water_tap.paa),
-            {},
-            {}
+            {systemChat "x"},
+            {true}
         ] call ACEFUNC(interact_menu,createAction),
         [
             QGVAR(refill),
@@ -48,19 +62,22 @@ if !(hasInterface) exitWith {};
             QPATHTOF(ui\icon_water_tap.paa),
             {},
             {true},
-            LINKFUNC(getRefillChildren)
+            {
+                private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
+                [_waterSource, _player] call FUNC(getRefillChildren);
+            }
         ] call ACEFUNC(interact_menu,createAction)
+        */
     ];
-
-    // Add refill water actions to water sources from compiled list
+    // Add refill water actions
+    [QGVAR(helper), 0, [], _mainAction] call ACEFUNC(interact_menu,addActionToClass);
     {
-        private _classname = _x;
-        [_classname, 0, ["ACE_MainActions"], GVAR(mainAction)] call ACEFUNC(interact_menu,addActionToClass);
-        {
-            [_classname, 0, ["ACE_MainActions", QGVAR(waterSource)], _x] call ACEFUNC(interact_menu,addActionToClass);
-        } forEach GVAR(subActions);
-        LOG_1("Added water source actions to %1 from config",_classname);
-    } forEach GETUVAR(GVAR(waterSources),[]);
+        [QGVAR(helper), 0, [QGVAR(waterSource)], _x] call ACEFUNC(interact_menu,addActionToClass);
+    } forEach _subActions;
+
+    // Add water source helpers when interaction menu is opened
+    ["ace_interactMenuOpened", {call FUNC(addWaterSourceInteractions)}] call CBA_fnc_addEventHandler;
+
 
     // Add status modifiers
     if (["ace_medical"] call ACEFUNC(common,isModLoaded)) then {

@@ -26,7 +26,7 @@ private _actions = [];
 {
     private _config = configFile >> "CfgWeapons" >> _x;
     if (getText (_config >> QGVAR(refillItem)) != "" && {_water == REFILL_WATER_INFINITE || {getNumber (_config >> QGVAR(refillAmount)) <= _water}}) then {
-        private _displayName = getText (_config >> "displayName");
+        private _displayName = format ["%1: %2", localize LSTRING(Refill), getText (_config >> "displayName")];
         private _picture = getText (_config >> "picture");
         private _action = [_x, _displayName, _picture, FUNC(refillItem), FUNC(canRefillItem), {}, _x] call ACEFUNC(interact_menu,createAction);
         _actions pushBack [_action, [], _source];

@@ -14,6 +14,9 @@ class CfgVehicles {
         };
     };
 
+    class ACE_LogicDummy;
+    class GVAR(helper): ACE_LogicDummy {};
+
     class Items_base_F;
     class Land_WaterBarrel_F: Items_base_F {
         GVAR(waterSupply) = 200;
@@ -36,39 +39,18 @@ class CfgVehicles {
 
     class Infrastructure_base_F;
     class Land_WaterTank_01_F: Infrastructure_base_F {
-        class ACE_Actions {
-            class ACE_MainActions {
-                displayName = ACECSTRING(interaction,MainAction);
-                condition = "true";
-                position = "[0, -1.42, -0.78]";
-                distance = 2;
-            };
-        };
+        // position = "[0, -1.42, -0.78]";
         GVAR(waterSupply) = 2400;
     };
     class Land_WaterTank_02_F: Infrastructure_base_F {
-        class ACE_Actions {
-            class ACE_MainActions {
-                displayName = ACECSTRING(interaction,MainAction);
-                condition = "true";
-                position = "[-0.09, -1.45, 0.53]";
-                distance = 2;
-            };
-        };
+        // position = "[-0.09, -1.45, 0.53]";
         GVAR(waterSupply) = 2400;
     };
     class Land_WaterTank_03_F: Infrastructure_base_F {
         GVAR(waterSupply) = 200;
     };
     class Land_WaterTank_04_F: Infrastructure_base_F {
-        class ACE_Actions {
-            class ACE_MainActions {
-                displayName = ACECSTRING(interaction,MainAction);
-                condition = "true";
-                position = "[-0.155, -0.72, 0.37]";
-                distance = 2;
-            };
-        };
+        // position = "[-0.155, -0.72, 0.37]";
         GVAR(waterSupply) = 200;
     };
 
@@ -79,14 +61,7 @@ class CfgVehicles {
 
     class StorageBladder_base_F;
     class Land_StorageBladder_02_F: StorageBladder_base_F {
-        class ACE_Actions {
-            class ACE_MainActions {
-                displayName = ACECSTRING(interaction,MainAction);
-                condition = "true";
-                position = "[-2.02, 1.47, -0.02]";
-                distance = 2;
-            };
-        };
+        // position = "[-2.02, 1.47, -0.02]";
     };
     class StorageBladder_02_water_forest_F: Land_StorageBladder_02_F {
         GVAR(waterSupply) = 10000;

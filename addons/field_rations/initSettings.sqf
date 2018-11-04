@@ -4,7 +4,9 @@
     [ACELSTRING(common,Enabled), LSTRING(Enabled_Description)],
     LSTRING(DisplayName),
     false,
-    true
+    true,
+    {},
+    true // needRestart
 ] call CBA_settings_fnc_init;
 
 [
