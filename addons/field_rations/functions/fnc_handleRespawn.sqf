@@ -21,11 +21,5 @@ TRACE_2("Handle Respawn",_unit,_corpse);
 
 if !(local _unit) exitWith {};
 
-_unit setVariable [QGVAR(thirst), 100];
-_unit setVariable [QGVAR(hunger), 100];
-
-// Reset the HUD and variables if the respawning unit is the local player
-if ([_unit] call ACEFUNC(common,isPlayer)) then {
-    GVAR(hudInteractionHover) = false;
-    [0] call FUNC(showHud);
-};
+_unit setVariable [QGVAR(thirst), 0];
+_unit setVariable [QGVAR(hunger), 0];

@@ -32,7 +32,7 @@ class CfgWeapons {
         };
         GVAR(replacementItem) = "ACE_WaterBottle_empty";
         GVAR(refillItem) = "ACE_WaterBottle";
-        GVAR(refillAmount) = 1;
+        GVAR(refillAmount) = 0.5;
     };
 
     class ACE_WaterBottle_empty: ACE_WaterBottle {
@@ -77,7 +77,7 @@ class CfgWeapons {
         GVAR(consumeText) = CSTRING(DrinkFromCanteenHalf);
         GVAR(replacementItem) = "ACE_Canteen_empty";
         GVAR(refillItem) = "ACE_Canteen";
-        GVAR(refillAmount) = 1;
+        GVAR(refillAmount) = 0.5;
     };
 
     class ACE_Canteen_empty: ACE_Canteen {

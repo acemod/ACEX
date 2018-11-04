@@ -23,7 +23,7 @@ private _display = GETUVAR(GVAR(hudDisplay),displayNull);
 // Create HUD if display is null
 if (isNull _display) then {
     private _rscType = [QGVAR(hudColoredIcons), QGVAR(hudDrainingIcons)] select GVAR(hudType);
-    HUD_LAYER cutRsc [_rscType, "PLAIN", -1, false];
+    QGVAR(hud) cutRsc [_rscType, "PLAIN", -1, false];
     _display = GETUVAR(GVAR(hudDisplay),displayNull);
 };
 

@@ -12,4 +12,9 @@ PREP_RECOMPILE_END;
 GVAR(thirstModifiers) = [];
 GVAR(hungerModifiers) = [];
 
+// List of p3d water sources (case sensitive) for objects that report `typeOf == ""`
+GVAR(waterSourceP3ds) = [
+    "misc_wellpump.p3d" // (11899,9150,0] on chenarus
+];
+
 ADDON = true;

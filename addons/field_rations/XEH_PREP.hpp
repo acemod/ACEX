@@ -1,4 +1,5 @@
 PREP(addStatusModifier);
+PREP(addWaterSourceInteractions);
 PREP(canConsumeItem);
 PREP(canRefillItem);
 PREP(checkWater);

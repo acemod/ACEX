@@ -57,12 +57,12 @@ private _onFinish = {
 
     // Add relevant thirst/hunger values
     if (_thirstRestored > 0) then {
-        private _thirstStatus = _player getVariable [QGVAR(thirst), 100];
-        _player setVariable [QGVAR(thirst), (_thirstStatus + _thirstRestored) min 100];
+        private _thirstStatus = _player getVariable [QGVAR(thirst), 0];
+        _player setVariable [QGVAR(thirst), (_thirstStatus - _thirstRestored) max 0];
     };
     if (_hungerRestored > 0) then {
-        private _hungerStatus = _player getVariable [QGVAR(hunger), 100];
-        _player setVariable [QGVAR(hunger), (_hungerStatus + _hungerRestored) min 100];
+        private _hungerStatus = _player getVariable [QGVAR(hunger), 0];
+        _player setVariable [QGVAR(hunger), (_hungerStatus - _hungerRestored) max 0];
     };
 };
 
