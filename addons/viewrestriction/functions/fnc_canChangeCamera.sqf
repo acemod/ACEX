@@ -25,5 +25,5 @@ params ["_newCameraView", "_cameraOn"];
 {player == ACE_player} &&
 {alive ACE_player} &&
 {ACE_player == _cameraOn || vehicle ACE_player == _cameraOn} &&
-{!call ACEFUNC(common,isFeatureCameraActive)} &&
+{"" isEqualTo call CBA_fnc_getActiveFeatureCamera} &&
 {!(_cameraOn isKindOf "UAV" || _cameraOn isKindOf "UAV_01_base_F")} // UAVs are remote controlled
