@@ -17,10 +17,11 @@ class CfgWeapons {
     class CBA_MiscItem_ItemInfo;
 
     class ACE_Banana: ACE_ItemCore {
-        GVAR(hungerRestored) = 4;
+        GVAR(consumeTime) = 10;
+        GVAR(hungerRestored) = 3;
     };
 
-    // Water Bottles
+    // - Water Bottles --------------------------------------------------------
     class ACE_WaterBottle: ACE_ItemCore {
         author = ACECSTRING(common,ACETeam);
         scope = 2;
@@ -64,7 +65,7 @@ class CfgWeapons {
         GVAR(refillAmount) = 1;
     };
 
-    // Canteens
+    // - Canteens -------------------------------------------------------------
     class ACE_Canteen: ACE_ItemCore {
         author = ACECSTRING(common,ACETeam);
         scope = 2;
@@ -107,7 +108,38 @@ class CfgWeapons {
         GVAR(refillAmount) = 1;
     };
 
-    // MREs
+    // - Soda Cans ------------------------------------------------------------
+    class ACE_Can_Spirit: ACE_ItemCore {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        displayName = "$STR_a3_cfgvehicles_land_can_v1_f0";
+        descriptionShort = CSTRING(Can_Spirit_Description);
+        model = "\a3\structures_f\items\food\can_v1_f.p3d";
+        picture = QPATHTOF(ui\icon_can_spirit_ca.paa);
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 3;
+        };
+        GVAR(consumeTime) = 10;
+        GVAR(thirstRestored) = 5;
+    };
+
+    class ACE_Can_Franta: ACE_Can_Spirit {
+        author = ACECSTRING(common,ACETeam);
+        displayName = "$STR_a3_cfgvehicles_land_can_v2_f0";
+        descriptionShort = CSTRING(Can_Franta_Description);
+        model = "\a3\structures_f\items\food\can_v2_f.p3d";
+        picture = QPATHTOF(ui\icon_can_franta_ca.paa);
+    };
+
+    class ACE_Can_RedGull: ACE_Can_Spirit {
+        author = ACECSTRING(common,ACETeam);
+        displayName = "$STR_a3_cfgvehicles_land_can_v3_f0";
+        descriptionShort = CSTRING(Can_RedGull_Description);
+        model = "\a3\structures_f\items\food\can_v3_f.p3d";
+        picture = QPATHTOF(ui\icon_can_redgull_ca.paa);
+    };
+
+    // - MREs -----------------------------------------------------------------
     class ACE_MRE_LambCurry: ACE_ItemCore {
         author = ACECSTRING(common,ACETeam);
         scope = 2;

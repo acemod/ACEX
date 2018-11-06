@@ -545,6 +545,15 @@
             <Russian>Напиток из столовой (половина)</Russian>
             <Spanish>Bebida de Cantina (Mitad)</Spanish>
         </Key>
+        <Key ID="STR_ACEX_Field_Rations_Can_Spirit_Description">
+            <English>Refreshing lemon and lime flavored soft drink</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_Can_Franta_Description">
+            <English>Orange flavored soft drink with a tingly, fruity taste</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_Can_RedGull_Description">
+            <English>Red Gull gives you wings</English>
+        </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_LambCurry_DisplayName">
             <English>MRE Lamb Curry</English>
             <Chinese>MRE羊肉咖哩</Chinese>
