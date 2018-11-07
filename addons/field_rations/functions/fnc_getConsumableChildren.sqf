@@ -29,7 +29,7 @@ private _fnc_getActions = {
             private _displayName = getText (_config >> "displayName");
             private _picture = getText (_config >> "picture");
 
-            private _action = [_x, _displayName, _picture, FUNC(consumeItem), {true}, {}, _x] call ACEFUNC(interact_menu,createAction);
+            private _action = [_x, _displayName, _picture, LINKFUNC(consumeItem), {true}, {}, _x] call ACEFUNC(interact_menu,createAction);
             _actions pushBack [_action, [], _player];
         };
     } forEach (_player call ACEFUNC(common,uniqueItems));

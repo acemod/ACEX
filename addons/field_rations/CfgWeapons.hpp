@@ -34,6 +34,7 @@ class CfgWeapons {
         };
         GVAR(consumeTime) = 10;
         GVAR(thirstRestored) = 10;
+        GVAR(consumeText) = CSTRING(DrinkingX);
         GVAR(replacementItem) = "ACE_WaterBottle_Half";
         GVAR(consumeAnims)[] = {QGVAR(drinkStand), QGVAR(drinkCrouch), QGVAR(drinkProne)};
         GVAR(consumeSounds)[] = {QGVAR(drink1), QGVAR(drink1), QGVAR(drink2)};
@@ -78,6 +79,7 @@ class CfgWeapons {
         };
         GVAR(consumeTime) = 10;
         GVAR(thirstRestored) = 10;
+        GVAR(consumeText) = CSTRING(DrinkingX);
         GVAR(replacementItem) = "ACE_Canteen_Half";
         GVAR(consumeAnims)[] = {QGVAR(drinkStand), QGVAR(drinkCrouch), QGVAR(drinkProne)};
         GVAR(consumeSounds)[] = {QGVAR(drink1), QGVAR(drink1), QGVAR(drink2)};

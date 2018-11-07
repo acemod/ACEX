@@ -1,6 +1,6 @@
 /*
  * Author: mharis001, Glowbal, PabstMirror
- * Consumes (eat/drink) an item. Creates progress bar and restores relevant thirst/hunger values.
+ * Consumes an item. Creates progress bar and restores relevant thirst/hunger values.
  *
  * Arguments:
  * 0: Target (not used) <OBJECT>
@@ -18,47 +18,64 @@
 #include "script_component.hpp"
 
 params ["", "_player", "_consumeItem"];
-TRACE_2("Consume item started",_player,_consumeItem);
+TRACE_2("Consume Item STARTED",_player,_consumeItem);
 
 private _config = configFile >> "CfgWeapons" >> _consumeItem;
 
+// Get consume time for item
 private _consumeTime = getNumber (_config >> QGVAR(consumeTime));
+
+// Get restored values and replacement item
 private _thirstRestored = getNumber (_config >> QGVAR(thirstRestored));
 private _hungerRestored = getNumber (_config >> QGVAR(hungerRestored));
+private _replacementItem = getText (_config >> QGVAR(replacementItem));
 
-// Get consume text
+// Create consume text for item
 private _displayName = getText (_config >> "displayName");
 private _consumeText = getText (_config >> QGVAR(consumeText));
 
 if (_consumeText == "") then {
-    _consumeText = if (_hungerRestored > 0) then {LLSTRING(EatingX)} else {LLSTRING(DrinkingX)};
+    _consumeText = if (_hungerRestored > 0) then {
+        localize LSTRING(EatingX);
+    } else {
+        localize LSTRING(DrinkingX);
+    };
 };
 
+// Format displayName onto consume text
+// Allows for common strings to be used for multiple items
 _consumeText = format [_consumeText, _displayName];
 
-// Get consume animation and sound
+// Get consume animation and sound for item
 private _stanceIndex = ["STAND", "CROUCH", "PRONE"] find stance _player;
+// Handle in vehicle when stance is UNDEFINED
+if (vehicle _player != _player) then {_stanceIndex = 0};
+
 private _consumeAnim = getArray (_config >> QGVAR(consumeAnims)) param [_stanceIndex, "", [""]];
 private _consumeSound = getArray (_config >> QGVAR(consumeSounds)) param [_stanceIndex, "", [""]];
 
-// Play animation if defined
-if (_consumeAnim != "") then {
-    // Store current animation state
+private _soundPlayed = if (_consumeAnim != "" && {vehicle _player == _player && {!(_player call ACEFUNC(common,isSwimming))}}) then {
+    // Store current animation for resetting
     _player setVariable [QGVAR(previousAnim), animationState _player];
-    [_player, _consumeAnim, 2] call ACEFUNC(common,doAnimation);
-};
-
-// Player sound if defined
-if (_consumeSound != "") then {
-    playSound _consumeSound;
+    [_player, _consumeAnim, 1] call ACEFUNC(common,doAnimation);
+    false
+} else {
+    // No animation to sync sound to
+    if (_consumeSound != "") then {
+        playSound _consumeSound;
+    };
+    true
 };
 
 private _fnc_onSuccess = {
-    (_this select 0) params ["_player", "_consumeItem", "_replacementItem", "_thirstRestored", "_hungerRestored"];
-    TRACE_5("Consume item successful",_player,_consumeItem,_replacementItem,_thirstRestored,_hungerRestored);
+    params ["_args"];
+    _args params ["_player", "_consumeItem", "_replacementItem", "_thirstRestored", "_hungerRestored"];
+    TRACE_1("Consume Item SUCCESS",_args);
 
-    // Remove consumed item and add replacement item if necessary
+    // Remove consumed item
     _player removeItem _consumeItem;
+
+    // Add replacement item if needed
     if (_replacementItem != "") then {
         [_player, _replacementItem] call ACEFUNC(common,addToInventory);
     };
@@ -68,38 +85,56 @@ private _fnc_onSuccess = {
         private _thirst = _player getVariable [QGVAR(thirst), 0];
         _player setVariable [QGVAR(thirst), (_thirst - _thirstRestored) max 0];
     };
+
     if (_hungerRestored > 0) then {
         private _hunger = _player getVariable [QGVAR(hunger), 0];
         _player setVariable [QGVAR(hunger), (_hunger - _hungerRestored) max 0];
     };
 
-    // Reset player's animation
-    private _previousAnim = _player getVariable [QGVAR(previousAnim), ""];
-    if (_previousAnim != "") then {
-        [_player, _previousAnim, 2] call ACEFUNC(common,doAnimation);
-    };
+    _player setVariable [QGVAR(previousAnim), nil];
 };
 
 private _fnc_onFailure = {
-    (_this select 0) params ["_player"];
-    TRACE_1("Consume item failed",_player);
+    params ["_args"];
+    _args params ["_player"];
+    TRACE_1("Consume Item FAILED",_args);
 
-    // Reset player's animation
-    private _previousAnim = _player getVariable [QGVAR(previousAnim), ""];
-    if (_previousAnim != "") then {
-        [_player, _previousAnim, 2] call ACEFUNC(common,doAnimation);
+    // Reset animation if needed
+    if (vehicle _player == _player && {!(_player call ACEFUNC(common,isSwimming))}) then {
+        private _previousAnim = _player getVariable [QGVAR(previousAnim), ""];
+        if (_previousAnim != "") then {
+            [_player, _previousAnim, 2] call ACEFUNC(common,doAnimation);
+        };
     };
+
+    _player setVariable [QGVAR(previousAnim), nil];
 };
 
 private _fnc_condition = {
-    (_this select 0) params ["_player", "_consumeItem"];
+    params ["_args"];
+    _args params ["_player", "_consumeItem", "", "", "", "_consumeAnim", "_consumeSound", "_soundPlayed"];
+
+    // Attempt to sync sound with animation start
+    if (!_soundPlayed && {_consumeSound != "" && {_consumeAnim == "" || {animationState _player == _consumeAnim}}}) then {
+        playSound _consumeSound;
+        _args set [7, true];
+    };
 
     _consumeItem in (_player call ACEFUNC(common,uniqueItems));
 };
 
 [
     _consumeTime,
-    [_player, _consumeItem, _replacementItem, _thirstRestored, _hungerRestored],
+    [
+        _player,
+        _consumeItem,
+        _replacementItem,
+        _thirstRestored,
+        _hungerRestored,
+        _consumeAnim,
+        _consumeSound,
+        _soundPlayed
+    ],
     _fnc_onSuccess,
     _fnc_onFailure,
     _consumeText,

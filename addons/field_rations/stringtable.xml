@@ -273,6 +273,9 @@
             <Russian>принимать пищу</Russian>
             <Spanish>Comiendo</Spanish>
         </Key>
+        <Key ID="STR_ACEX_Field_Rations_EatingX">
+            <English>Eating %1...</English>
+        </Key>
         <Key ID="STR_ACEX_Field_Rations_Drink">
             <English>Drink</English>
             <Chinese>喝</Chinese>
@@ -304,6 +307,9 @@
             <Portuguese>Bebendo</Portuguese>
             <Russian>Питьевой</Russian>
             <Spanish>Bebida</Spanish>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_DrinkingX">
+            <English>Drinking %1...</English>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ItemRefilled">
             <English>Item Refilled</English>
