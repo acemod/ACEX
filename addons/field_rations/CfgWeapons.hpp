@@ -36,7 +36,7 @@ class CfgWeapons {
         GVAR(thirstRestored) = 10;
         GVAR(replacementItem) = "ACE_WaterBottle_Half";
         GVAR(consumeAnims)[] = {QGVAR(drinkStand), QGVAR(drinkCrouch), QGVAR(drinkProne)};
-        GVAR(consumeSounds)[] = {};
+        GVAR(consumeSounds)[] = {QGVAR(drink1), QGVAR(drink1), QGVAR(drink2)};
     };
 
     class ACE_WaterBottle_Half: ACE_WaterBottle {
@@ -76,11 +76,11 @@ class CfgWeapons {
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 5;
         };
-        GVAR(consumeTime) = 5;
+        GVAR(consumeTime) = 10;
         GVAR(thirstRestored) = 10;
         GVAR(replacementItem) = "ACE_Canteen_Half";
         GVAR(consumeAnims)[] = {QGVAR(drinkStand), QGVAR(drinkCrouch), QGVAR(drinkProne)};
-        GVAR(consumeSounds)[] = {};
+        GVAR(consumeSounds)[] = {QGVAR(drink1), QGVAR(drink1), QGVAR(drink2)};
     };
 
     class ACE_Canteen_Half: ACE_Canteen {
