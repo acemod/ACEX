@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Jonpas
  * Initializes the Headless module.
@@ -12,9 +13,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
-
-if (!isServer) exitWith {};
 
 params ["_logic", "", "_activated"];
 

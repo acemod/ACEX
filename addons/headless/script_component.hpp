@@ -4,7 +4,6 @@
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
-// #define CBA_DEBUG_SYNCHRONOUS
 // #define ENABLE_PERFORMANCE_COUNTERS
 
 #ifdef DEBUG_ENABLED_HEADLESS
@@ -18,3 +17,4 @@
 #include "\z\acex\addons\main\script_macros.hpp"
 
 #define DELAY_DEFAULT 15
+#define BLACKLIST_UAV "UAV", "UAV_AI_base_F", "B_UAV_AI", "O_UAV_AI", "I_UAV_AI"

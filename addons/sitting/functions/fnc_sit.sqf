@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Jonpas
  * Sits down the player.
@@ -14,7 +15,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["_seat", "_player"];
 
@@ -65,8 +65,10 @@ private _seatPosOrig = getPosASL _seat;
     };
 
     //  Stand up if chair gets deleted or moved
-    if (isNull _seat || !((getPosASL _seat) isEqualTo _seatPosOrig)) exitWith {
+    if (isNull _seat || {getPosASL _player distance _seatPosOrig > 1} || {((getPosASL _seat) vectorDistance _seatPosOrig) > 0.01}) exitWith {
         _player call FUNC(stand);
         TRACE_2("Chair moved",getPosASL _seat,_seatPosOrig);
     };
 }, 0, [_player, _seat, _seatPosOrig]] call CBA_fnc_addPerFrameHandler;
+
+["ace_satDown", [_player, _seat]] call CBA_fnc_localEvent;

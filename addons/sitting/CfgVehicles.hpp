@@ -8,7 +8,7 @@ class CfgVehicles {
         category = "ACEX";
         displayName = CSTRING(ModuleDisplayName);
         function = QFUNC(moduleInit);
-        scope = 2;
+        scope = 1;
         isGlobal = 1;
         isSingular = 1;
         icon = QUOTE(PATHTOF(UI\Icon_Module_Sitting_ca.paa));
@@ -23,6 +23,9 @@ class CfgVehicles {
         class ModuleDescription {
             description = CSTRING(ModuleDescription);
         };
+    };
+    class ACE_ModuleSitting: ACEX_ModuleSitting {
+        scope = 1; // hiden, backwards compatability
     };
 
     class Man;

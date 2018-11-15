@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Jonpas
  * Initializes the View Restriction module.
@@ -10,9 +11,6 @@
  * Return Value:
  * None
  */
-#include "script_component.hpp"
-
-if (!isServer) exitWith {};
 
 params ["_logic", "_units", "_activated"];
 

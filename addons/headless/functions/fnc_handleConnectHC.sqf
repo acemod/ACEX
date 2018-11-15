@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Jonpas
  * Registers connected Headless Client for use.
@@ -13,24 +14,22 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["_headlessClient"];
 
-// Delay until settings are initialized (for checking if HC trasnferring is enabled)
-if (!ACEGVAR(common,settingsInitFinished)) exitWith {
-    ACEGVAR(common,runAtSettingsInitialized) pushBack [FUNC(handleConnectHC), _this];
-};
-
-// Exit if HC transferring disabled or HC already registered
-if (!GVAR(Enabled) || {_headlessClient in GVAR(headlessClients)}) exitWith {};
+// Exit if HC already registered
+// No need to check if distribution or end mission enabled, as if disabled this will never run
+if (_headlessClient in GVAR(headlessClients)) exitWith {};
 
 // Register for use
 GVAR(headlessClients) pushBack _headlessClient;
 
-if (GVAR(Log)) then {
+if (GVAR(log)) then {
     INFO_1("Registered HC: %1",_headlessClient);
 };
+
+// Exit if AI distribution is disabled
+if (!GVAR(enabled)) exitWith {true};
 
 // Rebalance
 [true] call FUNC(rebalance);

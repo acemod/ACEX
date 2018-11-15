@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Jonpas
  * Stands up the player.
@@ -13,7 +14,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["_player"];
 
@@ -34,5 +34,8 @@ private _animation = switch (currentWeapon _player) do {
 
 // Set variables to nil
 _player setVariable [QGVAR(isSitting), nil];
+
+["ace_stoodUp", [_player, _seat]] call CBA_fnc_localEvent;
+
 if (isNull _seat) exitWith {};
 [objNull, _seat] call ACEFUNC(common,claim);
