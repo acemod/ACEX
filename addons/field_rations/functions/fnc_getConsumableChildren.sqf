@@ -29,7 +29,8 @@ private _fnc_getActions = {
             private _displayName = getText (_config >> "displayName");
             private _picture = getText (_config >> "picture");
 
-            private _action = [_x, _displayName, _picture, LINKFUNC(consumeItem), {true}, {}, _x] call ACEFUNC(interact_menu,createAction);
+            // Exec next frame so closing interaction menu doesn't block progressBar
+            private _action = [_x, _displayName, _picture, {[FUNC(consumeItem), _this] call CBA_fnc_execNextFrame}, {true}, {}, _x] call ACEFUNC(interact_menu,createAction);
             _actions pushBack [_action, [], _player];
         };
     } forEach (_player call ACEFUNC(common,uniqueItems));
