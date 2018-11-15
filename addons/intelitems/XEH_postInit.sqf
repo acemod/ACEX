@@ -23,6 +23,6 @@ if (hasInterface) then {
     [{ !isNull findDisplay 12 },
     {
         TRACE_1("Adding Main Map EH",_this);
-        ((findDisplay 12) displayCtrl 51) ctrlAddEventHandler ["Draw", FUNC(onMapDraw)];
+        ((findDisplay 12) displayCtrl 51) ctrlAddEventHandler ["Draw", {call FUNC(onMapDraw)}];
     }, []] call CBA_fnc_waitUntilAndExecute;
 };
