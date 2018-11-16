@@ -18,35 +18,38 @@
 
 params [["_thirst", ACE_player getVariable [QGVAR(thirst), 0]], ["_hunger", ACE_player getVariable [QGVAR(hunger), 0]]];
 
-private _display = GETUVAR(GVAR(hudDisplay),displayNull);
+private _display = uiNamespace getVariable [QGVAR(hudDisplay), displayNull];
 
 // Create HUD if display is null
 if (isNull _display) then {
     private _rscType = [QGVAR(hudColoredIcons), QGVAR(hudDrainingIcons)] select GVAR(hudType);
     QGVAR(hud) cutRsc [_rscType, "PLAIN", -1, false];
-    _display = GETUVAR(GVAR(hudDisplay),displayNull);
+    _display = uiNamespace getVariable [QGVAR(hudDisplay), displayNull];
 };
 
 if (GVAR(hudType) == 0) then {
-    // Calculate HUD transparency based on setting
-    private _alpha = if (GVAR(hudTransparency) == -1) then {
-        linearConversion [0, 70, _thirst max _hunger, [0, 0.5] select GVAR(hudInteractionHover), 1, true];
+    // Get HUD transparency based on setting
+    private _fade = if (GVAR(hudTransparency) == -1) then {
+        linearConversion [0, 70, _thirst max _hunger, 1, 0, true];
     } else {
         GVAR(hudTransparency);
     };
 
+    // Reduce transparency if hovering on interaction
+    _fade = _fade min ([1, 0.5] select GVAR(hudInteractionHover));
+
     // Update HUD icon colors (White -> Yellow -> Orange -> Red)
-    (_display displayCtrl IDC_COLORED_HUD_THIRST) ctrlSetTextColor [
-        1,
-        linearConversion [35, 90, _thirst, 1, 0, true],
-        linearConversion [0, 40, _thirst, 1, 0, true],
-        _alpha
-    ];
-    (_display displayCtrl IDC_COLORED_HUD_HUNGER) ctrlSetTextColor [
-        1,
-        linearConversion [35, 90, _hunger, 1, 0, true],
-        linearConversion [0, 40, _hunger, 1, 0, true],
-        _alpha
+    {
+        _x params ["_status", "_iconIDC"];
+
+        private _iconCtrl = _display displayCtrl _iconIDC;
+        private _color = [1, linearConversion [35, 90, _status, 1, 0, true], linearConversion [0, 40, _status, 1, 0, true], 1];
+        _iconCtrl ctrlSetTextColor _color;
+        _iconCtrl ctrlSetFade _fade;
+        _iconCtrl ctrlCommit 1;
+    } forEach [
+        [_thirst, IDC_COLORED_HUD_THIRST],
+        [_hunger, IDC_COLORED_HUD_HUNGER]
     ];
 } else {
     // Reposition controls group and icon to create draining effect
