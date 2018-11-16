@@ -18,12 +18,11 @@
 
 #include "\a3\ui_f\hpp\defineCommonGrids.inc"
 
-#define MP_SYNC_INTERVAL 60 + random 60
+#define MP_SYNC_INTERVAL (60 + random 60)
 
 #define REFILL_WATER_INFINITE -10
 #define REFILL_WATER_DISABLED -1
-#define DEFAULT_REFILL_TIME 5
-#define CHECK_WATER_TIME 1
+#define CHECK_WATER_TIME 2
 
 #define IDC_COLORED_HUD_THIRST 6740
 #define IDC_COLORED_HUD_HUNGER 6750

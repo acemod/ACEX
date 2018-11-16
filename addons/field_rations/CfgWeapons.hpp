@@ -11,6 +11,7 @@ class CfgWeapons {
      * GVAR(replacementItem)     - Replacement item on consumption (if any)
      * GVAR(refillItem)          - Item added when refilled (makes item refillable)
      * GVAR(refillAmount)        - Amount of water required to refill item
+     * GVAR(refillTime)          - Time in seconds to refill item
      */
 
     class ACE_ItemCore;
@@ -34,7 +35,7 @@ class CfgWeapons {
         };
         GVAR(consumeTime) = 10;
         GVAR(thirstRestored) = 10;
-        GVAR(consumeText) = CSTRING(DrinkingX);
+        GVAR(consumeText) = CSTRING(DrinkingFromX);
         GVAR(replacementItem) = "ACE_WaterBottle_Half";
         GVAR(consumeAnims)[] = {QGVAR(drinkStand), QGVAR(drinkCrouch), QGVAR(drinkProne)};
         GVAR(consumeSounds)[] = {QGVAR(drink1), QGVAR(drink1), QGVAR(drink2)};
@@ -50,6 +51,7 @@ class CfgWeapons {
         GVAR(replacementItem) = "ACE_WaterBottle_Empty";
         GVAR(refillItem) = "ACE_WaterBottle";
         GVAR(refillAmount) = 0.5;
+        GVAR(refillTime) = 8;
     };
 
     class ACE_WaterBottle_Empty: ACE_WaterBottle {
@@ -64,6 +66,7 @@ class CfgWeapons {
         GVAR(replacementItem) = "";
         GVAR(refillItem) = "ACE_WaterBottle";
         GVAR(refillAmount) = 1;
+        GVAR(refillTime) = 8;
     };
 
     // - Canteens -------------------------------------------------------------
@@ -79,7 +82,7 @@ class CfgWeapons {
         };
         GVAR(consumeTime) = 10;
         GVAR(thirstRestored) = 10;
-        GVAR(consumeText) = CSTRING(DrinkingX);
+        GVAR(consumeText) = CSTRING(DrinkingFromX);
         GVAR(replacementItem) = "ACE_Canteen_Half";
         GVAR(consumeAnims)[] = {QGVAR(drinkStand), QGVAR(drinkCrouch), QGVAR(drinkProne)};
         GVAR(consumeSounds)[] = {QGVAR(drink1), QGVAR(drink1), QGVAR(drink2)};
@@ -95,6 +98,7 @@ class CfgWeapons {
         GVAR(replacementItem) = "ACE_Canteen_Empty";
         GVAR(refillItem) = "ACE_Canteen";
         GVAR(refillAmount) = 0.5;
+        GVAR(refillTime) = 8;
     };
 
     class ACE_Canteen_Empty: ACE_Canteen {
@@ -108,6 +112,7 @@ class CfgWeapons {
         GVAR(replacementItem) = "";
         GVAR(refillItem) = "ACE_Canteen";
         GVAR(refillAmount) = 1;
+        GVAR(refillTime) = 8;
     };
 
     // - Soda Cans ------------------------------------------------------------
@@ -123,6 +128,7 @@ class CfgWeapons {
         };
         GVAR(consumeTime) = 10;
         GVAR(thirstRestored) = 5;
+        GVAR(consumeText) = CSTRING(DrinkingX);
     };
 
     class ACE_Can_Franta: ACE_Can_Spirit {
@@ -154,6 +160,7 @@ class CfgWeapons {
         };
         GVAR(consumeTime) = 10;
         GVAR(hungerRestored) = 20;
+        GVAR(consumeText) = CSTRING(EatingX);
     };
 
     class ACE_MRE_Rice: ACE_MRE_LambCurry {

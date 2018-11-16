@@ -26,9 +26,10 @@ if !(hasInterface) exitWith {};
             && {_waterSource call FUNC(getRemainingWater) != REFILL_WATER_DISABLED}
             && {[_player, _waterSource] call ACEFUNC(common,canInteractWith)}
         },
-        { // Add refil actions as sub actions to main node?
+        {
             private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
-            [_waterSource, _player] call FUNC(getRefillChildren);},
+            [_waterSource, _player] call FUNC(getRefillChildren);
+        },
         [],
         {[0, 0, 0]},
         5.5,
@@ -42,7 +43,8 @@ if !(hasInterface) exitWith {};
             QPATHTOF(ui\icon_water_tap.paa),
             {
                 private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
-                [_player, _waterSource] call FUNC(checkWater);},
+                [_player, _waterSource] call FUNC(checkWater);
+            },
             {
                 private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
                 (_waterSource call FUNC(getRemainingWater)) != REFILL_WATER_INFINITE
@@ -56,20 +58,10 @@ if !(hasInterface) exitWith {};
             {systemChat "x"},
             {true}
         ] call ACEFUNC(interact_menu,createAction),
-        [
-            QGVAR(refill),
-            localize LSTRING(Refill),
-            QPATHTOF(ui\icon_water_tap.paa),
-            {},
-            {true},
-            {
-                private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
-                [_waterSource, _player] call FUNC(getRefillChildren);
-            }
-        ] call ACEFUNC(interact_menu,createAction)
         */
     ];
-    // Add refill water actions
+
+    // Add water source actions to helper
     [QGVAR(helper), 0, [], _mainAction] call ACEFUNC(interact_menu,addActionToClass);
     {
         [QGVAR(helper), 0, [QGVAR(waterSource)], _x] call ACEFUNC(interact_menu,addActionToClass);
@@ -77,7 +69,6 @@ if !(hasInterface) exitWith {};
 
     // Add water source helpers when interaction menu is opened
     ["ace_interactMenuOpened", {call FUNC(addWaterSourceInteractions)}] call CBA_fnc_addEventHandler;
-
 
     // Add status modifiers
     if (["ace_medical"] call ACEFUNC(common,isModLoaded)) then {

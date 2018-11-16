@@ -1,6 +1,6 @@
 /*
  * Author: mharis001, Glowbal, PabstMirror
- * Checks whether a player can refill an item from given water source.
+ * Checks whether the player can refill an item from given water source.
  *
  * Arguments:
  * 0: Water source <OBJECT>
@@ -11,7 +11,7 @@
  * Can refill item <BOOL>
  *
  * Example:
- * [_source, _player, "ACE_WaterBottle_empty"] call acex_field_rations_fnc_canRefillItem
+ * [_source, _player, "ACE_WaterBottle_Empty"] call acex_field_rations_fnc_canRefillItem
  *
  * Public: No
  */
@@ -19,7 +19,7 @@
 
 params ["_source", "_player", "_item"];
 
-if !(alive _source && {_item in ([_player] call CBA_fnc_uniqueUnitItems)}) exitWith {false};
+if !(alive _source && {_item in (_player call ACEFUNC(common,uniqueItems))}) exitWith {false};
 
 private _water = _source call FUNC(getRemainingWater);
 _water == REFILL_WATER_INFINITE || {_water >= getNumber (configFile >> "CfgWeapons" >> _item >> QGVAR(refillAmount))}

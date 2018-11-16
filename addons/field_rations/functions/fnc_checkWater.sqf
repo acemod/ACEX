@@ -18,19 +18,17 @@
 
 params ["_player", "_source"];
 
-private _water = _source call FUNC(getRemainingWater);
-
 [
     CHECK_WATER_TIME,
-    [_player, _water],
+    [_player, _source],
     {
-        (_this select 0) params ["_player", "_water"];
+        params ["_args"];
+        _args params ["_player", "_source"];
+
+        private _water = _source call FUNC(getRemainingWater);
+
         if (_water > 0) then {
-            if (_water == 1) then {
-                [LSTRING(RemainingWaterLitre), 1.5, _player] call ACEFUNC(common,displayTextStructured);
-            } else {
-                [[LSTRING(RemainingWaterLitres), _water], 1.5, _player] call ACEFUNC(common,displayTextStructured);
-            };
+            [[LSTRING(RemainingWater), _water], 1.5, _player] call ACEFUNC(common,displayTextStructured);
         } else {
             [LSTRING(NoWaterRemaining), 1.5, _player] call ACEFUNC(common,displayTextStructured);
         };

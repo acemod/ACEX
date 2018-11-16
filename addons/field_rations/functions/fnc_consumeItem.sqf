@@ -18,7 +18,7 @@
 #include "script_component.hpp"
 
 params ["", "_player", "_consumeItem"];
-TRACE_2("Consume Item STARTED",_player,_consumeItem);
+TRACE_2("Consume item started",_player,_consumeItem);
 
 private _config = configFile >> "CfgWeapons" >> _consumeItem;
 
@@ -70,7 +70,7 @@ private _soundPlayed = if (_consumeAnim != "" && {vehicle _player == _player && 
 private _fnc_onSuccess = {
     params ["_args"];
     _args params ["_player", "_consumeItem", "_replacementItem", "_thirstRestored", "_hungerRestored"];
-    TRACE_1("Consume Item SUCCESS",_args);
+    TRACE_1("Consume item successful",_args);
 
     // Remove consumed item
     _player removeItem _consumeItem;
@@ -97,7 +97,7 @@ private _fnc_onSuccess = {
 private _fnc_onFailure = {
     params ["_args"];
     _args params ["_player"];
-    TRACE_1("Consume Item FAILED",_args);
+    TRACE_1("Consume item failed",_args);
 
     // Reset animation if needed
     if (vehicle _player == _player && {!(_player call ACEFUNC(common,isSwimming))}) then {

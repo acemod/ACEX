@@ -1,5 +1,5 @@
 /*
- * Author: mharis001
+ * Author: mharis001, PabstMirror
  * Returns the remaining water in a source.
  *
  * Arguments:
@@ -23,17 +23,19 @@ private _water = _source getVariable QGVAR(currentWaterSupply);
 
 if (isNil "_water") then {
     private _typeOf = typeOf _source;
-    if (_typeOf != "") then { // Have type, check config
+    if (_typeOf != "") then {
+        // Check for waterSupply entry since we have valid typeOf
         _water = getNumber (configFile >> "CfgVehicles" >> _typeOf >> QGVAR(waterSupply));
-        if ((_water != 0) && {_water != REFILL_WATER_DISABLED}) then {
-            if ([_source] call CBA_fnc_isTerrainObject) then {
+        if (_water != 0 && {_water != REFILL_WATER_DISABLED}) then {
+            if (_source call CBA_fnc_isTerrainObject) then {
                 _water = REFILL_WATER_INFINITE;
             } else {
                 _source setVariable [QGVAR(currentWaterSupply), _water, true];
             };
         };
-    } else { // Check the p3d name against list
-        _water = if (((getModelInfo _source) select 0) in GVAR(waterSourceP3ds)) then { REFILL_WATER_INFINITE } else { 0 };
+    } else {
+        // check the p3d name against list
+        _water = if ((getModelInfo _source select 0) in GVAR(waterSourceP3ds)) then {REFILL_WATER_INFINITE} else {0};
     };
 };
 

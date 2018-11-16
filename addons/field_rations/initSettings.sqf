@@ -6,7 +6,7 @@
     false,
     true,
     {},
-    true // needRestart
+    true // Needs restart
 ] call CBA_settings_fnc_init;
 
 [
@@ -30,7 +30,7 @@
 [
     QGVAR(hudType),
     "LIST",
-    [LSTRING(HudType), LSTRING(HudType_Description)],
+    [LSTRING(HudType_DisplayName), LSTRING(HudType_Description)],
     LSTRING(DisplayName),
     [[0, 1], [LSTRING(ColoredIcons), LSTRING(DrainingIcons)], 0],
     false
@@ -39,7 +39,7 @@
 [
     QGVAR(hudShowLevel),
     "LIST",
-    [LSTRING(HudShowLevel), LSTRING(HudShowLevel_Description)],
+    [LSTRING(HudShowLevel_DisplayName), LSTRING(HudShowLevel_Description)],
     LSTRING(DisplayName),
     [[0, 10, 20, 30, 40, 50, 60, 70], [LSTRING(Always), "10%", "20%", "30%", "40%", "50%", "60%", "70%"], 0],
     false
@@ -48,7 +48,7 @@
 [
     QGVAR(hudTransparency),
     "LIST",
-    [LSTRING(HudTransparency), LSTRING(HudTransparency_Description)],
+    [LSTRING(HudTransparency_DisplayName), LSTRING(HudTransparency_Description)],
     LSTRING(DisplayName),
     [[-1, 1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2], [LSTRING(Dynamic), "0%", "10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", 0], 0],
     false

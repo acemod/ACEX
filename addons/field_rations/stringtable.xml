@@ -132,7 +132,7 @@
             <Russian>Как долго подразделение сможет идти без пищи (часы)</Russian>
             <Spanish>¿Cuánto tiempo debería una unidad ir sin comida (horas)?</Spanish>
         </Key>
-        <Key ID="STR_ACEX_Field_Rations_HudType">
+        <Key ID="STR_ACEX_Field_Rations_HudType_DisplayName">
             <English>HUD Type</English>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_Description">
@@ -144,7 +144,7 @@
         <Key ID="STR_ACEX_Field_Rations_DrainingIcons">
             <English>Draining Icons</English>
         </Key>
-        <Key ID="STR_ACEX_Field_Rations_HudShowLevel">
+        <Key ID="STR_ACEX_Field_Rations_HudShowLevel_DisplayName">
             <English>HUD Show Level</English>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudShowLevel_Description">
@@ -166,7 +166,7 @@
             <Russian>Всегда</Russian>
             <Spanish>Siempre</Spanish>
         </Key>
-        <Key ID="STR_ACEX_Field_Rations_HudTransparency">
+        <Key ID="STR_ACEX_Field_Rations_HudTransparency_DisplayName">
             <English>Colored Icons - Transparency</English>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudTransparency_Description">
@@ -197,10 +197,7 @@
         <Key ID="STR_ACEX_Field_Rations_CheckingWater">
             <English>Checking remaining water...</English>
         </Key>
-        <Key ID="STR_ACEX_Field_Rations_RemainingWaterLitre">
-            <English>There is 1 litre left.</English>
-        </Key>
-        <Key ID="STR_ACEX_Field_Rations_RemainingWaterLitres">
+        <Key ID="STR_ACEX_Field_Rations_RemainingWater">
             <English>There are %1 litres left.</English>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_NoWaterRemaining">
@@ -241,76 +238,6 @@
             <Russian>Наполнение ...</Russian>
             <Spanish>Rellenar ...</Spanish>
         </Key>
-        <Key ID="STR_ACEX_Field_Rations_Eat">
-            <English>Eat</English>
-            <Chinese>吃</Chinese>
-            <Chinesesimp>吃</Chinesesimp>
-            <Czech>Jíst</Czech>
-            <French>Manger</French>
-            <German>Essen</German>
-            <Hungarian>Eszik</Hungarian>
-            <Italian>Mangiare</Italian>
-            <Japanese>食べる</Japanese>
-            <Korean>먹다</Korean>
-            <Polish>Jeść</Polish>
-            <Portuguese>Comer</Portuguese>
-            <Russian>Есть</Russian>
-            <Spanish>Comer</Spanish>
-        </Key>
-        <Key ID="STR_ACEX_Field_Rations_Eating">
-            <English>Eating</English>
-            <Chinese>吃</Chinese>
-            <Chinesesimp>吃</Chinesesimp>
-            <Czech>Jíst</Czech>
-            <French>En mangeant</French>
-            <German>Essen</German>
-            <Hungarian>Enni</Hungarian>
-            <Italian>Mangiare</Italian>
-            <Japanese>食べる</Japanese>
-            <Korean>먹기</Korean>
-            <Polish>Jedzenie</Polish>
-            <Portuguese>Comendo</Portuguese>
-            <Russian>принимать пищу</Russian>
-            <Spanish>Comiendo</Spanish>
-        </Key>
-        <Key ID="STR_ACEX_Field_Rations_EatingX">
-            <English>Eating %1...</English>
-        </Key>
-        <Key ID="STR_ACEX_Field_Rations_Drink">
-            <English>Drink</English>
-            <Chinese>喝</Chinese>
-            <Chinesesimp>喝</Chinesesimp>
-            <Czech>Napít se</Czech>
-            <French>Boisson</French>
-            <German>Getränk</German>
-            <Hungarian>Ital</Hungarian>
-            <Italian>Bere</Italian>
-            <Japanese>ドリンク</Japanese>
-            <Korean>음주</Korean>
-            <Polish>Pić</Polish>
-            <Portuguese>Beber</Portuguese>
-            <Russian>Напиток</Russian>
-            <Spanish>Beber</Spanish>
-        </Key>
-        <Key ID="STR_ACEX_Field_Rations_Drinking">
-            <English>Drinking</English>
-            <Chinese>喝</Chinese>
-            <Chinesesimp>喝</Chinesesimp>
-            <Czech>Pití</Czech>
-            <French>En buvant</French>
-            <German>Trinken</German>
-            <Hungarian>Ivás</Hungarian>
-            <Italian>Potabile</Italian>
-            <Japanese>飲酒</Japanese>
-            <Korean>음주</Korean>
-            <Polish>Picie</Polish>
-            <Portuguese>Bebendo</Portuguese>
-            <Russian>Питьевой</Russian>
-            <Spanish>Bebida</Spanish>
-        </Key>
-        <Key ID="STR_ACEX_Field_Rations_DrinkingX">
-            <English>Drinking %1...</English>
-        </Key>
         <Key ID="STR_ACEX_Field_Rations_ItemRefilled">
             <English>Item Refilled</English>
             <Chinese>項目重新填充</Chinese>
@@ -326,6 +253,15 @@
             <Portuguese>Item Recarregado</Portuguese>
             <Russian>Заполненный товар</Russian>
             <Spanish>Artículo Rellenado</Spanish>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_EatingX">
+            <English>Eating %1...</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_DrinkingX">
+            <English>Drinking %1...</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_DrinkingFromX">
+            <English>Drinking from %1...</English>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottle_DisplayName">
             <English>Water Bottle</English>
@@ -518,38 +454,6 @@
             <Portuguese>Uma cantina vazia</Portuguese>
             <Russian>Пустая столовая</Russian>
             <Spanish>Una cantina vacía</Spanish>
-        </Key>
-        <Key ID="STR_ACEX_Field_Rations_DrinkFromCanteen">
-            <English>Drink from Canteen</English>
-            <Chinese>食堂飲料</Chinese>
-            <Chinesesimp>食堂饮料</Chinesesimp>
-            <Czech>Pít z jídelny</Czech>
-            <French>Boire de la cantine</French>
-            <German>Trinken aus der Kantine</German>
-            <Hungarian>Drink a kantinból</Hungarian>
-            <Italian>Bere dalla mensa</Italian>
-            <Japanese>カントードリンク</Japanese>
-            <Korean>캔틴에서 마셔 라.</Korean>
-            <Polish>Pić od stołówki</Polish>
-            <Portuguese>Bebida da cantina</Portuguese>
-            <Russian>Выпить из столовой</Russian>
-            <Spanish>Beba de Canteen</Spanish>
-        </Key>
-        <Key ID="STR_ACEX_Field_Rations_DrinkFromCanteenHalf">
-            <English>Drink from Canteen (Half)</English>
-            <Chinese>食堂飲料（一半）</Chinese>
-            <Chinesesimp>食堂饮料（一半）</Chinesesimp>
-            <Czech>Pít z jídelny (poloviční)</Czech>
-            <French>Buvez de la cantine (la moitié)</French>
-            <German>Trinken aus der Kantine (halb)</German>
-            <Hungarian>Drink from Canteen (Fél)</Hungarian>
-            <Italian>Bere dalla mensa (metà)</Italian>
-            <Japanese>カクテルを飲む（半分）</Japanese>
-            <Korean>캔틴에서 마셔 (하프)</Korean>
-            <Polish>Pić od stołówki (pół)</Polish>
-            <Portuguese>Bebida de Cantina (meio)</Portuguese>
-            <Russian>Напиток из столовой (половина)</Russian>
-            <Spanish>Bebida de Cantina (Mitad)</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Can_Spirit_Description">
             <English>Refreshing lemon and lime flavored soft drink</English>

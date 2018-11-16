@@ -1,5 +1,5 @@
 /*
- * Author: mharis001
+ * Author: mharis001, PabstMirror
  * Sets the remaining water supply for given water source.
  *
  * Arguments:
@@ -18,6 +18,6 @@
 
 params [["_source", objNull, [objNull]], ["_water", nil, [0]]];
 
-if (isNull _source || {isNil "_water"}) exitWith {};
+if (!alive _source || {isNil "_water"}) exitWith {};
 
 _source setVariable [QGVAR(currentWaterSupply), _water, true];
