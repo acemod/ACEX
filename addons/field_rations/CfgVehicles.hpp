@@ -87,4 +87,186 @@ class CfgVehicles {
     class C_IDAP_Truck_02_water_F: Truck_02_water_base_F {
         GVAR(waterSupply) = 10000;
     };
+
+    class Item_Base_F;
+    class ACE_WaterBottle_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(WaterBottle_DisplayName);
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_WaterBottle,1);
+        };
+    };
+    class ACE_WaterBottle_Half_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(WaterBottleHalf_DisplayName);
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_WaterBottle_Half,1);
+        };
+    };
+    class ACE_WaterBottle_Empty_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(WaterBottleEmpty_DisplayName);
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_WaterBottle_Empty,1);
+        };
+    };
+    class ACE_Canteen_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(Canteen_DisplayName);
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_Canteen,1);
+        };
+    };
+    class ACE_Canteen_Half_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(CanteenHalf_DisplayName);
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_Canteen_Half,1);
+        };
+    };
+    class ACE_Canteen_Empty_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(CanteenEmpty_DisplayName);
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_Canteen_Empty,1);
+        };
+    };
+    class ACE_Can_Spirit_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "$STR_a3_cfgvehicles_land_can_v1_f0";
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_Can_Spirit,1);
+        };
+    };
+    class ACE_Can_Franta_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "$STR_a3_cfgvehicles_land_can_v2_f0";
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_Can_Franta,1);
+        };
+    };
+    class ACE_Can_RedGull_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "$STR_a3_cfgvehicles_land_can_v3_f0";
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_Can_RedGull,1);
+        };
+    };
+    class ACE_MRE_LambCurry_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(MRE_LambCurry_DisplayName);
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_MRE_LambCurry,1);
+        };
+    };
+    class ACE_MRE_BeefStew_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(MRE_BeefStew_DisplayName);
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_MRE_BeefStew,1);
+        };
+    };
+    class ACE_MRE_CreamTomatoSoup_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(MRE_CreamTomatoSoup_DisplayName);
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_MRE_CreamTomatoSoup,1);
+        };
+    };
+    class ACE_MRE_CreamChickenSoup_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(MRE_CreamChickenSoup_DisplayName);
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_MRE_CreamChickenSoup,1);
+        };
+    };
+    class ACE_MRE_ChickenTikkaMasala_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(MRE_ChickenTikkaMasala_DisplayName);
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_MRE_ChickenTikkaMasala,1);
+        };
+    };
+    class ACE_MRE_SteakVegetables_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(MRE_SteakVegetables_DisplayName);
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_MRE_SteakVegetables,1);
+        };
+    };
+    class ACE_MRE_MeatballsPasta_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(MRE_MeatballsPasta_DisplayName);
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_MRE_MeatballsPasta,1);
+        };
+    };
+    class ACE_MRE_ChickenHerbDumplings_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(MRE_ChickenHerbDumplings_DisplayName);
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_MRE_ChickenHerbDumplings,1);
+        };
+    };
+    class ACE_Humanitarian_Ration_Item: Item_Base_F {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2;
+        scopeCurator = 2;
+        displayName = CSTRING(Humanitarian_Ration_DisplayName);
+        vehicleClass = "Items";
+        class TransportItems {
+            MACRO_ADDITEM(ACE_Humanitarian_Ration,1);
+        };
+    };
 };

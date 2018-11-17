@@ -165,10 +165,10 @@ class CfgWeapons {
         GVAR(consumeText) = CSTRING(EatingX);
     };
 
-    class ACE_MRE_Rice: ACE_MRE_LambCurry {
+    class ACE_MRE_BeefStew: ACE_MRE_LambCurry {
         author = ACECSTRING(common,ACETeam);
-        displayName = CSTRING(MRE_Rice_DisplayName);
-        descriptionShort = CSTRING(MRE_Rice_Description);
+        displayName = CSTRING(MRE_BeefStew_DisplayName);
+        descriptionShort = CSTRING(MRE_BeefStew_Description);
         model = QPATHTOF(data\mre_type2.p3d);
         picture = QPATHTOF(ui\item_mre_type2_co.paa);
     };

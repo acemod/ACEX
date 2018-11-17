@@ -496,37 +496,11 @@
             <Russian>MRE, содержащие ягненок карри. Тепла для лучшего эффекта</Russian>
             <Spanish>Un MRE que contiene cordero al curry. Calor para el mejor efecto</Spanish>
         </Key>
-        <Key ID="STR_ACEX_Field_Rations_MRE_Rice_DisplayName">
-            <English>MRE Rice</English>
-            <Chinese>MRE賴斯</Chinese>
-            <Chinesesimp>MRE赖斯</Chinesesimp>
-            <Czech>MRE rýže</Czech>
-            <French>MRE riz</French>
-            <German>MRE Reis</German>
-            <Hungarian>MRE rizs</Hungarian>
-            <Italian>MRE riso</Italian>
-            <Japanese>MRE 米</Japanese>
-            <Korean>MRE 쌀</Korean>
-            <Polish>MRE ryżu</Polish>
-            <Portuguese>MRE Arroz</Portuguese>
-            <Russian>MRE Райс</Russian>
-            <Spanish>MRE Arroz</Spanish>
+        <Key ID="STR_ACEX_Field_Rations_MRE_BeefStew_DisplayName">
+            <English>MRE Beef Stew</English>
         </Key>
-        <Key ID="STR_ACEX_Field_Rations_MRE_Rice_Description">
-            <English>An MRE containing Rice. Heat for best effect</English>
-            <Chinese>包含水稻的MRE。 加熱以達到最佳效果</Chinese>
-            <Chinesesimp>包含水稻的MRE。 加热以达到最佳效果</Chinesesimp>
-            <Czech>MRE obsahující rýži. Teplo pro nejlepší efekt</Czech>
-            <French>Un EMR contenant du riz. Chaleur pour le meilleur effet</French>
-            <German>Ein MRE, der Reis enthält. Hitze für den besten Effekt</German>
-            <Hungarian>Egy Rice-t tartalmazó MRE. Hő a legjobb hatás érdekében</Hungarian>
-            <Italian>Un MRE contenente riso. Calore per il miglior effetto</Italian>
-            <Japanese>ライスを含むMRE。 ベストエフェクトのためのヒート</Japanese>
-            <Korean>라이스가 들어있는 MRE. 효과를 극대화하기위한 열기</Korean>
-            <Polish>MRE zawierające ryż. Ciepło dla najlepszego efektu</Polish>
-            <Portuguese>Uma MRE contendo Arroz. Calor para melhor efeito</Portuguese>
-            <Russian>MRE, содержащий рис. Тепло для лучшего эффекта</Russian>
-            <Spanish>Un MRE que contiene arroz. Calor para el mejor efecto</Spanish>
+        <Key ID="STR_ACEX_Field_Rations_MRE_BeefStew_Description">
+            <English>An MRE containing Beef Stew. Heat for best effect</English>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_CreamTomatoSoup_DisplayName">
             <English>MRE Cream Tomato Soup</English>
