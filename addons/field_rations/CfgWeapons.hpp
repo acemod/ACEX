@@ -129,6 +129,8 @@ class CfgWeapons {
         GVAR(consumeTime) = 10;
         GVAR(thirstRestored) = 5;
         GVAR(consumeText) = CSTRING(DrinkingX);
+        GVAR(consumeAnims)[] = {QGVAR(drinkStandCan), QGVAR(drinkCrouchCan), QGVAR(drinkProneCan)};
+        GVAR(consumeSounds)[] = {QGVAR(drinkCan1), QGVAR(drinkCan1), QGVAR(drinkCan2)};
     };
 
     class ACE_Can_Franta: ACE_Can_Spirit {

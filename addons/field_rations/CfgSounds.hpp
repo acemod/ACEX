@@ -9,4 +9,14 @@ class CfgSounds {
         sound[] = {QPATHTOF(sounds\drink2.ogg), 1, 1};
         titles[] = {};
     };
+    class GVAR(drinkCan1) {
+        name = QGVAR(drinkCan1);
+        sound[] = {QPATHTOF(sounds\drink_can1.ogg), 1, 1};
+        titles[] = {};
+    };
+    class GVAR(drinkCan2) {
+        name = QGVAR(drinkCan2);
+        sound[] = {QPATHTOF(sounds\drink_can2.ogg), 1, 1};
+        titles[] = {};
+    };
 };

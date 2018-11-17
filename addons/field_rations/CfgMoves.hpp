@@ -31,5 +31,17 @@ class CfgMovesMaleSdr: CfgMovesBasic {
             connectTo[] = {"AmovPpneMstpSnonWnonDnon", 0.1};
             interpolateFrom[] = {"AmovPpneMstpSnonWnonDnon", 0.1};
         };
+        class GVAR(drinkStandCan): GVAR(drinkStand) {
+            file = QPATHTOF(anim\drink_stand_can.rtm);
+            speed = 1/9;
+        };
+        class GVAR(drinkCrouchCan): GVAR(drinkCrouch) {
+            file = QPATHTOF(anim\drink_crouch_can.rtm);
+            speed = 1/9;
+        };
+        class GVAR(drinkProneCan): GVAR(drinkProne) {
+            file = QPATHTOF(anim\drink_prone_can.rtm);
+            speed = 1/9;
+        };
     };
 };
