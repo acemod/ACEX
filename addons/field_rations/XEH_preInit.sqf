@@ -14,7 +14,12 @@ GVAR(hungerModifiers) = [];
 
 // List of p3d water sources (case sensitive) for objects that report `typeOf == ""`
 GVAR(waterSourceP3ds) = [
-    "misc_wellpump.p3d" // (11899,9150,0] on chenarus
+    "misc_wellpump.p3d" // [11899, 9150, 0] on chenarus
+];
+
+// List of refill action offsets corresponding to the p3ds in the array above
+GVAR(waterSourceOffsets) = [
+    [0, 0, 0]
 ];
 
 ADDON = true;

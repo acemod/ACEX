@@ -3,6 +3,7 @@ PREP(addWaterSourceInteractions);
 PREP(canRefillItem);
 PREP(checkWater);
 PREP(consumeItem);
+PREP(getActionOffset);
 PREP(getConsumableChildren);
 PREP(getRefillChildren);
 PREP(getRemainingWater);
