@@ -25,7 +25,7 @@ private _fnc_getActions = {
 
     {
         private _config = _cfgWeapons >> _x;
-        if (getNumber (_config >> QGVAR(thirstRestored)) > 0 || {getNumber (_config >> QGVAR(hungerRestored)) > 0}) then {
+        if (getNumber (_config >> QGVAR(thirstQuenched)) > 0 || {getNumber (_config >> QGVAR(hungerSatiated)) > 0}) then {
             private _displayName = getText (_config >> "displayName");
             private _picture = getText (_config >> "picture");
 

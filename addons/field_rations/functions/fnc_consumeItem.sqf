@@ -1,6 +1,6 @@
 /*
  * Author: mharis001, Glowbal, PabstMirror
- * Consumes an item. Creates progress bar and restores relevant thirst/hunger values.
+ * Consumes an item. Creates a progress bar and handles relevant thirst/hunger values.
  *
  * Arguments:
  * 0: Target (not used) <OBJECT>
@@ -26,8 +26,8 @@ private _config = configFile >> "CfgWeapons" >> _consumeItem;
 private _consumeTime = getNumber (_config >> QGVAR(consumeTime));
 
 // Get restored values and replacement item
-private _thirstRestored = getNumber (_config >> QGVAR(thirstRestored));
-private _hungerRestored = getNumber (_config >> QGVAR(hungerRestored));
+private _thirstQuenched = getNumber (_config >> QGVAR(thirstQuenched));
+private _hungerSatiated = getNumber (_config >> QGVAR(hungerSatiated));
 private _replacementItem = getText (_config >> QGVAR(replacementItem));
 
 // Create consume text for item
@@ -35,7 +35,7 @@ private _displayName = getText (_config >> "displayName");
 private _consumeText = getText (_config >> QGVAR(consumeText));
 
 if (_consumeText == "") then {
-    _consumeText = if (_hungerRestored > 0) then {
+    _consumeText = if (_hungerSatiated > 0) then {
         localize LSTRING(EatingX);
     } else {
         localize LSTRING(DrinkingX);
@@ -48,6 +48,7 @@ _consumeText = format [_consumeText, _displayName];
 
 // Get consume animation and sound for item
 private _stanceIndex = ["STAND", "CROUCH", "PRONE"] find stance _player;
+
 // Handle in vehicle when stance is UNDEFINED
 if (vehicle _player != _player) then {_stanceIndex = 0};
 
@@ -69,7 +70,7 @@ private _soundPlayed = if (_consumeAnim != "" && {vehicle _player == _player && 
 
 private _fnc_onSuccess = {
     params ["_args"];
-    _args params ["_player", "_consumeItem", "_replacementItem", "_thirstRestored", "_hungerRestored"];
+    _args params ["_player", "_consumeItem", "_replacementItem", "_thirstQuenched", "_hungerSatiated"];
     TRACE_1("Consume item successful",_args);
 
     // Remove consumed item
@@ -80,15 +81,15 @@ private _fnc_onSuccess = {
         [_player, _replacementItem] call ACEFUNC(common,addToInventory);
     };
 
-    // Restore thirst and hunger values
-    if (_thirstRestored > 0) then {
+    // Handle thirst and hunger values
+    if (_thirstQuenched > 0) then {
         private _thirst = _player getVariable [QGVAR(thirst), 0];
-        _player setVariable [QGVAR(thirst), (_thirst - _thirstRestored) max 0];
+        _player setVariable [QGVAR(thirst), (_thirst - _thirstQuenched) max 0];
     };
 
-    if (_hungerRestored > 0) then {
+    if (_hungerSatiated > 0) then {
         private _hunger = _player getVariable [QGVAR(hunger), 0];
-        _player setVariable [QGVAR(hunger), (_hunger - _hungerRestored) max 0];
+        _player setVariable [QGVAR(hunger), (_hunger - _hungerSatiated) max 0];
     };
 
     _player setVariable [QGVAR(previousAnim), nil];
@@ -129,8 +130,8 @@ private _fnc_condition = {
         _player,
         _consumeItem,
         _replacementItem,
-        _thirstRestored,
-        _hungerRestored,
+        _thirstQuenched,
+        _hungerSatiated,
         _consumeAnim,
         _consumeSound,
         _soundPlayed
