@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Kingsley
  * Deploys the object to the player for them to move it around.
@@ -16,7 +17,6 @@
  * Public: No
  */
 
-#include "script_component.hpp"
 
 params ["", "_player", "_params"];
 _params params [["_side", sideUnknown, [sideUnknown]], ["_classname", "", [""]], ["_rotations", [0,0,0]]];
@@ -40,19 +40,25 @@ if (_budget > -1) then {_lmb = _lmb + format [" -$%1", _cost];};
 private _rmb = localize ACELSTRING(Common,Cancel);
 private _wheel = localize LSTRING(rotate);
 private _xAxis = localize "str_disp_conf_xaxis";
-private _icons = [["alt", localize "str_3den_display3den_entitymenu_movesurface_text"], ["shift", localize "str_disp_conf_xaxis" + " " +_wheel], ["control", localize "str_disp_conf_yaxis" + " " + _wheel]];
+private _icons = [["alt", localize "str_3den_display3den_entitymenu_movesurface_text"], ["shift", localize "str_disp_conf_xaxis" + " " + _wheel], ["control", localize "str_disp_conf_yaxis" + " " + _wheel]];
 [_lmb, _rmb, _wheel, _icons] call ACEFUNC(interaction,showMouseHint);
 
 private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAITING}, {GVAR(isPlacing) = PLACE_APPROVE}] call ACEFUNC(common,addActionEventHandler);
+[QGVAR(onDeployStart), [_player, _object, _cost]] call CBA_fnc_localEvent;
 
 [{
     params ["_args", "_pfID"];
     _args params ["_unit", "_object", "_cost", "_mouseClickID"];
 
-
-    if ((_unit != ACE_player) || {isNull _object} || {!([_unit, _object, []] call ACEFUNC(common,canInteractWith))} || {!([_unit, _cost] call FUNC(canFortify))}) then {
+    if (_unit != ACE_player || {isNull _object} || {!([_unit, _object, []] call ACEFUNC(common,canInteractWith))} || {!([_unit, _cost] call FUNC(canFortify))}) then {
         GVAR(isPlacing) = PLACE_CANCEL;
     };
+
+    // If place approved, verify deploy handlers
+    if (GVAR(isPlacing) == PLACE_APPROVE && {(GVAR(deployHandlers) findIf {([_unit, _object, _cost] call _x) isEqualTo false}) > -1}) then {
+        GVAR(isPlacing) = PLACE_WAITING;
+    };
+
     if (GVAR(isPlacing) != PLACE_WAITING) exitWith {
         TRACE_3("exiting PFEH",GVAR(isPlacing),_pfID,_mouseClickID);
         [_pfID] call CBA_fnc_removePerFrameHandler;
@@ -74,8 +80,8 @@ private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAI
 
     private _start = eyePos _unit;
     private _camViewDir = getCameraViewDirection _unit;
-    private _basePos = (_start vectorAdd (_camViewDir vectorMultiply _distance));
-    _basePos set [2, ((_basePos select 2) - (_height / 2)) max ((getTerrainHeightASL _basePos) - 0.05)];
+    private _basePos = _start vectorAdd (_camViewDir vectorMultiply _distance);
+    _basePos set [2, ((_basePos select 2) - (_height / 2)) max (getTerrainHeightASL _basePos - 0.05)];
 
     _object setPosASL _basePos;
 
@@ -91,4 +97,3 @@ private _mouseClickID = [_player, "DefaultAction", {GVAR(isPlacing) == PLACE_WAI
     hintSilent format ["Rotation:\nX: %1\nY: %2\nZ: %3", GVAR(objectRotationX), GVAR(objectRotationY), GVAR(objectRotationZ)];
     #endif
 }, 0, [_player, _object, _cost, _mouseClickID]] call CBA_fnc_addPerFrameHandler;
-

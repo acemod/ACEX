@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Jonpas
  * Ends mission on server if no players are connected.
@@ -13,7 +14,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 // Exit if players connected
 if !(call CBA_fnc_players isEqualTo []) exitWith {

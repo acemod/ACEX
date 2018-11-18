@@ -10,7 +10,7 @@ class Cfg3DEN {
                         control = "Checkbox";
                         condition = "objectControllable";
                         expression = QUOTE(_this setVariable [ARR_3(QQGVAR(blacklist), _value, true)]);
-                        defaultValue = 0;
+                        defaultValue = "(false)";
                     };
                 };
             };
@@ -26,7 +26,7 @@ class Cfg3DEN {
                         property = QGVAR(blacklist);
                         control = "Checkbox";
                         expression = QUOTE(_this setVariable [ARR_3(QQGVAR(blacklist), _value, true)]);
-                        defaultValue = 0;
+                        defaultValue = "(false)";
                     };
                 };
             };

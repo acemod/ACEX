@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Kingsley
  * Lowers the game and music volume with values from ACE settings.
@@ -13,7 +14,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 ACEGVAR(hearing,disableVolumeUpdate) = true;
 

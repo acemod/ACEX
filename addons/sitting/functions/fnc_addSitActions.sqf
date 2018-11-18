@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Jonpas
  * Adds sit actions.
@@ -13,7 +14,7 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
+
 params ["_seat"];
 
 private "_type";
