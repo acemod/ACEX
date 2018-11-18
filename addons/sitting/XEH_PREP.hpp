@@ -1,10 +1,8 @@
 PREP(addSitActions);
 PREP(canSit);
-PREP(canSitMultiPos);
 PREP(canStand);
 PREP(getRandomAnimation);
 PREP(handleInterrupt);
 PREP(moduleInit);
 PREP(sit);
-PREP(sitMultiPos);
 PREP(stand);

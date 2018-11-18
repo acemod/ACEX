@@ -123,7 +123,6 @@ class CfgVehicles {
         ACEGVAR(dragging,carryPosition)[] = {0, 0.75, 0.5};
         ACEGVAR(dragging,carryDirection) = 180;
     };
-    
 
     // Wooden Log
     class Land_WoodenLog_F: ThingX {
@@ -157,35 +156,59 @@ class CfgVehicles {
         ACEGVAR(dragging,carryDirection) = 180;
     };
 
-    // Multi Sitting Benches
-
-    class House_Small_F;
-    class Land_Bench_01_F : House_Small_F {
+    // Arm Chair
+    class Furniture_Residental_base_F;
+    class Land_ArmChair_01_F: Furniture_Residental_base_F {
         class EventHandlers {
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
         };
 
         GVAR(canSit) = 1;
-        GVAR(sitDirection) = 180;
-
-        GVAR(sitPosition)[] = { {0.5, -0.04, -0.90}, {-0.5, -0.04, -0.90} };
-        GVAR(interactPosition)[] = { {0.5,0,0.3}, {-0.5,0,0.3} };
-
-    };
-
-    class Land_Bench_02_F : Land_Bench_01_F {};
-
-    class Land_Bench_03_F : Land_Bench_01_F {
-        GVAR(sitPosition)[] = { {0.5, -0.15, -0.90}, {-0.5, -0.15, -0.90} };
-    };
-
-    // Land_Bench_03_F is not possible with the current system
-
-    class Land_Bench_05_F : Land_Bench_01_F {
         GVAR(sitDirection) = 0;
+        GVAR(sitPosition)[] = {0, 0, -1};
+        GVAR(interactPosition)[] = {0, 0, 0.3};
 
-        GVAR(sitPosition)[] = { {0.5, -0.04, -0.90}, {-0.5, -0.04, -0.90} };
-        GVAR(interactPosition)[] = { {0.5,0,0.3}, {-0.5,0,0.3} };
+        ACEGVAR(dragging,canCarry) = 1;
+        ACEGVAR(dragging,carryPosition)[] = {0, 0.75, 0.5};
+        ACEGVAR(dragging,carryDirection) = 180;
+
     };
-    
+
+    // Benches
+    class House_Small_F;
+    class Land_Bench_01_F: House_Small_F {
+        GVAR(canSit) = 1;
+        GVAR(sitDirection) = 180;
+        GVAR(sitPosition)[] = { {0.5, -0.04, -0.90}, {-0.5, -0.04, -0.90} };
+        GVAR(interactPosition)[] = { {0.5, 0, 0.3}, {-0.5, 0, 0.3} };
+    };
+
+    class Land_Bench_02_F: House_Small_F {
+        GVAR(canSit) = 1;
+        GVAR(sitDirection) = 180;
+        GVAR(sitPosition)[] = { {0.5, -0.04, -0.90}, {-0.5, -0.04, -0.90} };
+        GVAR(interactPosition)[] = { {0.5, 0, 0.3}, {-0.5, 0, 0.3} };
+    };
+
+    class Land_Bench_03_F: House_Small_F {
+        GVAR(canSit) = 1;
+        GVAR(sitDirection) = 180;
+        GVAR(sitPosition)[] = { {0.5, -0.15, -0.90}, {-0.5, -0.15, -0.90} };
+        GVAR(interactPosition)[] = { {0.5, 0, 0.3}, {-0.5, 0, 0.3} };
+    };
+
+    /* Disabled due to a geometry issue with height
+    class Land_Bench_04_F: House_Small_F {
+        GVAR(canSit) = 1;
+        GVAR(sitDirection) = 180;
+        GVAR(sitPosition)[] = { {0.5, -0.04, -2.00}, {-0.5, -0.04, -2.00} };
+        GVAR(interactPosition)[] = { {0.5, 0, 0.3}, {-0.5, 0, 0.3} };
+    };*/
+
+    class Land_Bench_05_F: House_Small_F {
+        GVAR(canSit) = 1;
+        GVAR(sitDirection) = 0;
+        GVAR(sitPosition)[] = { {0.5, -0.04, -0.90}, {-0.5, -0.04, -0.90} };
+        GVAR(interactPosition)[] = { {0.5, 0, 0.3}, {-0.5, 0, 0.3} };
+    };
 };
