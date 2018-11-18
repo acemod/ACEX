@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [object] call acex_headless_fnc_handleSpawn;
+ * [object] call acex_headless_fnc_handleSpawn
  *
  * Public: No
  */

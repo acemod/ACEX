@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [false] call acex_headless_fnc_rebalance;
+ * [false] call acex_headless_fnc_rebalance
  *
  * Public: No
  */

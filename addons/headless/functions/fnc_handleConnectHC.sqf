@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [headlessClient] call acex_headless_fnc_handleConnectHC;
+ * [headlessClient] call acex_headless_fnc_handleConnectHC
  *
  * Public: No
  */
