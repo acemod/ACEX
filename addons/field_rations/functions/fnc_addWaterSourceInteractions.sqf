@@ -41,7 +41,7 @@ TRACE_1("Starting interact PFH",_interactionType);
             {
                 if !(_x in _sourcesHelped) then {
                     private _waterRemaining = [_x] call FUNC(getRemainingWater);
-                    if (_waterRemaining == REFILL_WATER_INFINITE || {_waterRemaining > 0}) then {
+                    if (_waterRemaining != REFILL_WATER_DISABLED) then {
                         _sourcesHelped pushBack _x;
                         private _helper = QGVAR(helper) createVehicleLocal [0, 0, 0];
                         _helper setVariable [QGVAR(waterSource), _x];

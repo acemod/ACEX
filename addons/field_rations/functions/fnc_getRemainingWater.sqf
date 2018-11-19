@@ -26,7 +26,9 @@ if (isNil "_water") then {
     if (_typeOf != "") then {
         // Check for waterSupply entry since we have valid typeOf
         _water = getNumber (configFile >> "CfgVehicles" >> _typeOf >> QGVAR(waterSupply));
-        if (_water != 0 && {_water != REFILL_WATER_DISABLED}) then {
+        if (_water == 0) then {_water = REFILL_WATER_DISABLED};
+
+        if (_water != REFILL_WATER_DISABLED) then {
             if (_source call CBA_fnc_isTerrainObject) then {
                 _water = REFILL_WATER_INFINITE;
             } else {
@@ -34,7 +36,7 @@ if (isNil "_water") then {
             };
         };
     } else {
-        // check the p3d name against list
+        // Check the p3d name against list
         _water = if ((getModelInfo _source select 0) in GVAR(waterSourceP3ds)) then {REFILL_WATER_INFINITE} else {0};
     };
 };
