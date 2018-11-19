@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [seat] call acex_sitting_fnc_addSitActions
+ * [cursorObject] call acex_sitting_fnc_addSitActions
  *
  * Public: No
  */

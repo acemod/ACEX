@@ -11,7 +11,7 @@
  * Can Sit Down <BOOL>
  *
  * Example:
- * [seat, player] call acex_sitting_fnc_canSit
+ * [cursorObject, player] call acex_sitting_fnc_canSit
  *
  * Public: No
  */

@@ -12,8 +12,8 @@
  * None
  *
  * Example:
- * [seat, player] call acex_sitting_fnc_sit
- * [seat, player, 0] call acex_sitting_fnc_sit
+ * [cursorObject, player] call acex_sitting_fnc_sit
+ * [cursorObject, player, 0] call acex_sitting_fnc_sit
  *
  * Public: No
  */
