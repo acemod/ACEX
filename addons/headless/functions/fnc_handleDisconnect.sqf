@@ -2,7 +2,7 @@
 /*
  * Author: Jonpas
  * Removes Headless Client from use.
- * Ends mission if setting enabled and only Headless CLients are still connected.
+ * Ends mission if setting enabled and only Headless Clients are still connected.
  *
  * Arguments:
  * 0: Object <OBJECT>
