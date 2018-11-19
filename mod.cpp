@@ -1,8 +1,8 @@
-name = "Advanced Combat Environment Extras 3.3.1";
+name = "Advanced Combat Environment Extras 0.0.0";
 picture = "logo_acex_ca.paa";
 actionName = "GitHub";
 action = "https://github.com/acemod/ACEX";
-description = "ACEX - Version 3.3.1";
+description = "ACEX - Version 0.0.0";
 logo = "logo_acex_ca.paa";
 logoOver = "logo_acex_ca.paa";
 tooltip = "ACEX";
