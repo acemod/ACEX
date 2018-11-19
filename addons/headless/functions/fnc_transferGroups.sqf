@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [false] call acex_headless_fnc_transferGroups;
+ * [false] call acex_headless_fnc_transferGroups
  *
  * Public: No
  */
