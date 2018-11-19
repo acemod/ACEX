@@ -16,10 +16,13 @@
  * Public: No
  */
 
-params ["_seat", "_player"];
+params ["_seat", "_player", ["_seatPos", 0]];
 
-// Sitting enabled, is seat object, not occupied and standing up (or not on a big slope)
+// Sitting enabled, not occupied and standing up (or not on a big slope)
 GVAR(enable) &&
 {isNil {_player getVariable QGVAR(sittingStatus)}} &&
-{(_seat getVariable [QGVAR(seatsClaimed), []]) find true == -1} &&
+{
+    private _seatsClaimed = _seat getVariable [QGVAR(seatsClaimed), []];
+    _seatsClaimed isEqualTo [] || {!(_seatsClaimed select _seatPos)}
+} &&
 {round (vectorUp _seat select 0) == 0 && {round (vectorUp _seat select 1) == 0} && {round (vectorUp _seat select 2) == 1}}
