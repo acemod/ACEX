@@ -16,7 +16,7 @@
  */
 
 // Exit if no players of virtual curators present
-if (call CBA_fnc_players isEqualTo [] && {allCurators isEqualTo []}) exitWith {
+if (call CBA_fnc_players isEqualTo [] && {(allCurators select {isPlayer getAssignedCuratorUnit _x}) isEqualTo []}) exitWith {
     // End mission
     [] call BIS_fnc_endMissionServer;
     if (GVAR(log)) then {
