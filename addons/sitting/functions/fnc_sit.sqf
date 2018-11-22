@@ -19,6 +19,7 @@
  */
 
 params ["_seat", "_player", ["_seatPos", 0]];
+TRACE_3("sit",_seat,_player,_seatPos);
 
 // Overwrite weird position, because Arma decides to set it differently based on current animation/stance...
 _player switchMove "amovpknlmstpsraswrfldnon";
@@ -65,17 +66,21 @@ private _seatsClaimed = _seat getVariable [QGVAR(seatsClaimed), []];
 // Initialize claimed seats if first time sitting on it
 if (_seatsClaimed isEqualTo []) then {
     if (_multiSitting) then {
-        for "_i" from 0 to (count _sitPosition) do {
+        for "_i" from 0 to ((count _sitPositionAll) - 1) do {
             _seatsClaimed pushBack (_i == _seatPos);
         };
     } else {
         _seatsClaimed = [true];
     };
+} else {
+    _seatsClaimed set [_seatPos, true];
 };
 _seat setVariable [QGVAR(seatsClaimed), _seatsClaimed, true];
 
 // Also prevent dragging/carrying
-[_player, _seat] call ACEFUNC(common,claim);
+if (!([_seat] call ACEFUNC(common,owned))) then {
+    [_player, _seat] call ACEFUNC(common,claim);
+};
 
 // Add automatical stand PFH in case of interruptions
 private _seatPosOrig = getPosASL _seat;

@@ -16,8 +16,10 @@
  */
 
 params ["_player"];
+TRACE_1("stand",_player);
 
 (_player getVariable QGVAR(sittingStatus)) params ["_seat", "_actionID", ["_seatPos", 0]];
+TRACE_3("sittingStatus",_seat,_actionID,_seatPos);
 
 // Remove scroll-wheel action
 _player removeAction _actionID;

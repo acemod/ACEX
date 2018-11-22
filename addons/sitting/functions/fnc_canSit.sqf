@@ -5,7 +5,8 @@
  *
  * Arguments:
  * 0: Seat <OBJECT>
- * 1: Player <OBJECT>
+ * 1: Player <OBJECT> 
+ * 2: Seat Position <NUMBER> (default: 0)
  *
  * Return Value:
  * Can Sit Down <BOOL>
