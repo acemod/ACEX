@@ -10,7 +10,7 @@
  * Can Stand Up <BOOL>
  *
  * Example:
- * player call acex_sitting_fnc_canStand;
+ * player call acex_sitting_fnc_canStand
  *
  * Public: No
  */
@@ -18,4 +18,4 @@
 params ["_player"];
 
 // Sitting
-!isNil {_player getVariable QGVAR(isSitting)}
+!isNil {_player getVariable QGVAR(sittingStatus)}

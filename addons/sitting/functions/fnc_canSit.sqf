@@ -1,25 +1,29 @@
 #include "script_component.hpp"
 /*
- * Author: Jonpas
+ * Author: Jonpas, vabene1111
  * Check if the player can sit down.
  *
  * Arguments:
  * 0: Seat <OBJECT>
- * 1: Player <OBJECT>
+ * 1: Player <OBJECT> 
+ * 2: Seat Position <NUMBER> (default: 0)
  *
  * Return Value:
  * Can Sit Down <BOOL>
  *
  * Example:
- * [seat, player] call acex_sitting_fnc_canSit
+ * [cursorObject, player] call acex_sitting_fnc_canSit
  *
  * Public: No
  */
 
-params ["_seat", "_player"];
+params ["_seat", "_player", ["_seatPos", 0]];
 
-// Sitting enabled, is seat object, not occupied and standing up (or not on a big slope)
+// Sitting enabled, not occupied and standing up (or not on a big slope)
 GVAR(enable) &&
-{isNil {_player getVariable QGVAR(isSitting)}} &&
-{!(_seat call ACEFUNC(common,owned))} &&
+{isNil {_player getVariable QGVAR(sittingStatus)}} &&
+{
+    private _seatsClaimed = _seat getVariable [QGVAR(seatsClaimed), []];
+    _seatsClaimed isEqualTo [] || {!(_seatsClaimed select _seatPos)}
+} &&
 {round (vectorUp _seat select 0) == 0 && {round (vectorUp _seat select 1) == 0} && {round (vectorUp _seat select 2) == 1}}
