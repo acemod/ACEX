@@ -32,7 +32,7 @@ if !(hasInterface) exitWith {};
         },
         [],
         {[0, 0, 0]},
-        5.5,
+        2,
         [false, false, false, false, true]
     ] call ACEFUNC(interact_menu,createAction);
 
