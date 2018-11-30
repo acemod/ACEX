@@ -37,7 +37,7 @@ if (isNil "_water") then {
         };
     } else {
         // Check the p3d name against list
-        _water = if ((getModelInfo _source select 0) in GVAR(waterSourceP3ds)) then {REFILL_WATER_INFINITE} else {0};
+        _water = if ((getModelInfo _source select 0) in GVAR(waterSourceP3ds)) then {REFILL_WATER_INFINITE} else {REFILL_WATER_DISABLED};
     };
 };
 
