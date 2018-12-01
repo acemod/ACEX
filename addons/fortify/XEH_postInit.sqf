@@ -24,7 +24,7 @@ GVAR(objectRotationZ) = 0;
 
 [QGVAR(sideBudgetHint), {
     params ["_side"];
-    if (_side isEqualTo side group ACE_player && {GVAR(settingHint) isEqualTo 2 || {GVAR(settingHint) isEqualTo 1 && {"ACE_Fortify" in (items ACE_player)}}}) then {
+    if (_side isEqualTo side group ACE_player && {GVAR(settingHint) isEqualTo 2 || {GVAR(settingHint) isEqualTo 1 && {"ACE_Fortify" in (ACE_player call ACEFUNC(common,uniqueItems))}}}) then {
         private _budget = [_side] call FUNC(getBudget);
         TRACE_2("sideBudgetHint",_side,_budget);
         [format ["%1 $%2", localize LSTRING(Budget), _budget]] call ACEFUNC(common,displayTextStructured);
@@ -53,7 +53,7 @@ GVAR(objectRotationZ) = 0;
                 deleteVehicle _target;
                 _params call FUNC(updateBudget);
             },
-            {(missionNamespace getVariable [QGVAR(fortifyAllowed), true]) && {"ACE_Fortify" in (items _player)}},
+            {(missionNamespace getVariable [QGVAR(fortifyAllowed), true]) && {"ACE_Fortify" in (_player call ACEFUNC(common,uniqueItems))}},
             {},
             [_side, _cost],
             {[0, 0, 0]},

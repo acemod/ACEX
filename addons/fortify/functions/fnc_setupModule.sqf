@@ -57,7 +57,7 @@ if (_addToolItem) then {
         params ["_side"];
         TRACE_1("Adding tool",_side);
         {
-            if (((side group _x) == _side) && {!("ACE_Fortify" in (items _x))}) then {
+            if (((side group _x) == _side) && {!("ACE_Fortify" in (_x call ACEFUNC(common,uniqueItems)))}) then {
                 _x addItem "ACE_Fortify";
             };
         } forEach allUnits;
