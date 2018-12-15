@@ -91,8 +91,8 @@ private _fnc_onSuccess = {
         private _hunger = _player getVariable [QGVAR(hunger), 0];
         _player setVariable [QGVAR(hunger), (_hunger - _hungerSatiated) max 0];
     };
-	
-	[QGVAR(consumeItem), [_player, _consumeItem, _replacementItem, _thirstQuenched, _hungerSatiated]] call CBA_fnc_localEvent;
+
+    [QGVAR(consumeItem), [_player, _consumeItem, _replacementItem, _thirstQuenched, _hungerSatiated]] call CBA_fnc_localEvent;
 
     _player setVariable [QGVAR(previousAnim), nil];
 };
