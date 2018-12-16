@@ -133,6 +133,18 @@
             <Russian>Как долго подразделение сможет идти без пищи (часы)</Russian>
             <Spanish>¿Cuánto tiempo debería una unidad ir sin comida (horas)?</Spanish>
         </Key>
+        <Key ID="STR_ACEX_Field_Rations_thirstRestored_DisplayName">
+            <English>Thirst Restored</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_thirstRestored_Description">
+            <English>Coefficent for amount of thirst restored when drinking</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_hungerRestored_DisplayName">
+            <English>Hunger Restored</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_hungerRestored_Description">
+            <English>Coefficent for amount of hunger restored when eating</English>
+        </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_DisplayName">
             <English>HUD Type</English>
             <Japanese>HUD タイプ</Japanese>
