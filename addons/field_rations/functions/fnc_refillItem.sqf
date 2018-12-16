@@ -43,7 +43,7 @@ private _fnc_onSuccess = {
         [_source, _waterInSource] call FUNC(setRemainingWater);
     };
 
-    [QGVAR(refillItem), [_source, _player, _item, _refillItem, _refillAmount]] call CBA_fnc_localEvent;
+    ["acex_rationRefilled", [_source, _player, _item, _refillItem, _refillAmount]] call CBA_fnc_localEvent;
 
     // Show refilled item hint
     private _picture = getText (configFile >> "CfgWeapons" >> _refillItem >> "picture");
