@@ -137,7 +137,7 @@
         <Key ID="STR_ACEX_Field_Rations_HudType_DisplayName">
             <English>HUD Type</English>
             <Japanese>HUD タイプ</Japanese>
-            <Polish>Typ HUD </Polish>
+            <Polish>Typ HUD</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_Description">
             <English>Selects which HUD style will be used</English>
@@ -421,7 +421,7 @@
             <Italian>Una mensa piena d'acqua</Italian>
             <Japanese>水で一杯の水筒</Japanese>
             <Korean>물이 채워진 식당</Korean>
-            <Polish>Manierka wypełniona wodą </Polish>
+            <Polish>Manierka wypełniona wodą</Polish>
             <Portuguese>Uma cantina cheia de água</Portuguese>
             <Russian>Столовая с водой</Russian>
             <Spanish>Una cantina llena de agua</Spanish>
