@@ -55,18 +55,18 @@
 ] call CBA_settings_fnc_init;
 
 [
-    QGVAR(thirstRestored),
+    QGVAR(thirstQuenched),
     "SLIDER",
-    [LSTRING(thirstRestored_DisplayName), LSTRING(thirstRestored_Description)],
+    [LSTRING(thirstQuenched_DisplayName), LSTRING(thirstQuenched_Description)],
     LSTRING(DisplayName),
     [0.1, 10, 1, 1],
     true
 ] call CBA_settings_fnc_init;
 
 [
-    QGVAR(hungerRestored),
+    QGVAR(hungerSatiated),
     "SLIDER",
-    [LSTRING(hungerRestored_DisplayName), LSTRING(hungerRestored_Description)],
+    [LSTRING(hungerSatiated_DisplayName), LSTRING(hungerSatiated_Description)],
     LSTRING(DisplayName),
     [0.1, 10, 1, 1],
     true
