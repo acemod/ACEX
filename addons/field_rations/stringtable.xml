@@ -20,6 +20,7 @@
         <Key ID="STR_ACEX_Field_Rations_IGUI_DisplayName">
             <English>ACEX Field Rations HUD</English>
             <Japanese>ACEX フィールド レーション HUD</Japanese>
+            <Polish>ACEX HUD Racji Polowych</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_IGUI_Description">
             <English>Indicates current hunger and thirst status.</English>
@@ -64,7 +65,7 @@
             <Italian>Abilita / disabilita le razioni di campo</Italian>
             <Japanese>フィールド レーションを有効/無効化します</Japanese>
             <Korean>필드 배급량 활성화 / 비활성화</Korean>
-            <Polish>Włącz / wyłącz racje pola</Polish>
+            <Polish>Włącz / wyłącz racje polowe</Polish>
             <Portuguese>Ativar / Desativar rações de campo</Portuguese>
             <Russian>Включение / отключение полевых пайков</Russian>
             <Spanish>Habilitar / deshabilitar las raciones de campo</Spanish>
@@ -96,7 +97,7 @@
             <Italian>Mennyi ideig kell egy egység víz nélkül (óra)</Italian>
             <Japanese>ユニットが水なしでどれくらい時間を過ごすことができるか (一時間単位)</Japanese>
             <Korean>한 유닛이 물없이 얼마나 오래 갈 수 있어야 하는가? (시간)</Korean>
-            <Polish>Jak długo jednostka powinna pływać bez wody (godziny)</Polish>
+            <Polish>Jak długo jednostka powinna przetrwać bez wody (godziny)</Polish>
             <Portuguese>Quanto tempo uma unidade pode passar sem água (horas)</Portuguese>
             <Russian>Как долго устройство сможет идти без воды (часы)</Russian>
             <Spanish>¿Cuánto tiempo debería una unidad ir sin agua (horas)?</Spanish>
@@ -128,7 +129,7 @@
             <Italian>Per quanto tempo un'unità dovrebbe essere in grado di andare senza cibo (ore)</Italian>
             <Japanese>ユニットが食糧なしでどれくらい時間を過ごすことができるか (一時間単位)</Japanese>
             <Korean>한 음식물이 음식 없이도 갈 수있는 시간 (시간)</Korean>
-            <Polish>Jak długo jednostka powinna być gotowa bez jedzenia (godziny)</Polish>
+            <Polish>Jak długo jednostka powinna przetrwać bez jedzenia (godziny)</Polish>
             <Portuguese>Quanto tempo uma unidade pode ir sem alimentos (horas)</Portuguese>
             <Russian>Как долго подразделение сможет идти без пищи (часы)</Russian>
             <Spanish>¿Cuánto tiempo debería una unidad ir sin comida (horas)?</Spanish>
@@ -136,26 +137,32 @@
         <Key ID="STR_ACEX_Field_Rations_HudType_DisplayName">
             <English>HUD Type</English>
             <Japanese>HUD タイプ</Japanese>
+            <Polish>Typ HUD</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_Description">
             <English>Selects which HUD style will be used</English>
             <Japanese>使用する HUD のタイプを選択できます</Japanese>
+            <Polish>Wybierz który styl HUD będzie używany</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ColoredIcons">
             <English>Colored Icons</English>
             <Japanese>色付きアイコン</Japanese>
+            <Polish>Kolorowe ikony</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrainingIcons">
             <English>Draining Icons</English>
             <Japanese>ドレイン アイコン</Japanese>
+            <Polish>Ubywające ikony</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudShowLevel_DisplayName">
             <English>HUD Show Level</English>
             <Japanese>HUD 表示レベル</Japanese>
+            <Polish>Widok HUD</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudShowLevel_Description">
             <English>Automatically show the HUD when either thirst or hunger are above this level</English>
             <Japanese>この値以上に空腹感か乾きを感じると自動的に HUD を表示します</Japanese>
+            <Polish>Automatycznie pokaż HUD kiedy pragnienie albo głód przekroczy ten poziom</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Always">
             <English>Always</English>
@@ -176,9 +183,11 @@
         <Key ID="STR_ACEX_Field_Rations_HudTransparency_DisplayName">
             <English>Colored Icons - Transparency</English>
             <Japanese>色付きアイコン - 透明度</Japanese>
+            <Polish>Kolorowe ikony - transparentność</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudTransparency_Description">
             <English>Controls the transparency of the Colored Icons HUD. Dynamic setting makes the HUD less transparent as thirst or hunger increase</English>
+            <Polish>Kontroluje transparentność kolorowych ikon HUD. Dynamiczne ustawienie zmniejsza przejrzystość wraz z zwiększeniem głodu czy pragnienia.</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Dynamic">
             <English>Dynamic</English>
@@ -199,26 +208,32 @@
         <Key ID="STR_ACEX_Field_Rations_WaterSource">
             <English>Water Source</English>
             <Japanese>水源</Japanese>
+            <Polish>Źródło wody</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CheckWater">
             <English>Check remaining water</English>
             <Japanese>残っている水を確認</Japanese>
+            <Polish>Sprawdź ilość wody</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CheckingWater">
             <English>Checking remaining water...</English>
             <Japanese>残っている水の量を確認中です・・・</Japanese>
+            <Polish>Sprawdzanie ilości wody</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_RemainingWater">
             <English>There are %1 litres left.</English>
             <Japanese>残り %1 リットル残っています。</Japanese>
+            <Polish>Pozostało %1 litrów.</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_NoWaterRemaining">
             <English>There is no water left.</English>
             <Japanese>水はもうありません。</Japanese>
+            <Polish>Nie ma wody</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrinkDirectly">
             <English>Drink directly</English>
             <Japanese>直接飲む</Japanese>
+            <Polish>Napij się</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Refill">
             <English>Refill</English>
@@ -231,7 +246,7 @@
             <Italian>Ricarica</Italian>
             <Japanese>汲む</Japanese>
             <Korean>다시 채우다</Korean>
-            <Polish>Wkład</Polish>
+            <Polish>Uzupełnij</Polish>
             <Portuguese>Recarga</Portuguese>
             <Russian>Пополнение</Russian>
             <Spanish>Rellenar</Spanish>
@@ -263,7 +278,7 @@
             <Italian>Articolo riempito</Italian>
             <Japanese>中身がいっぱいになりました</Japanese>
             <Korean>리필 품목</Korean>
-            <Polish>Element ponownie napełniony</Polish>
+            <Polish>Przedmiot uzupełniony</Polish>
             <Portuguese>Item Recarregado</Portuguese>
             <Russian>Заполненный товар</Russian>
             <Spanish>Artículo Rellenado</Spanish>
@@ -271,14 +286,17 @@
         <Key ID="STR_ACEX_Field_Rations_EatingX">
             <English>Eating %1...</English>
             <Japanese>%1を食べています・・・</Japanese>
+            <Polish>Jedzenie %1...</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrinkingX">
             <English>Drinking %1...</English>
             <Japanese>%1を飲んでいます・・・</Japanese>
+            <Polish>Picie %1...</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrinkingFromX">
             <English>Drinking from %1...</English>
             <Japanese>%1から飲んでいます・・・</Japanese>
+            <Polish>Picie z %1...</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottle_DisplayName">
             <English>Water Bottle</English>
@@ -323,7 +341,7 @@
             <Italian>Bottiglia d'acqua (metà)</Italian>
             <Japanese>ウォーター ボトル (半分)</Japanese>
             <Korean>Garrafa de água (meio)</Korean>
-            <Polish>Bidon (połowa)</Polish>
+            <Polish>Butelka wody (połowa)</Polish>
             <Portuguese>Garrafa de água (meio)</Portuguese>
             <Russian>Бутылка воды (половина)</Russian>
             <Spanish>Botella de agua (mitad)</Spanish>
@@ -387,7 +405,7 @@
             <Italian>Mensa</Italian>
             <Japanese>水筒</Japanese>
             <Korean>반합</Korean>
-            <Polish>Stołówka</Polish>
+            <Polish>Manierka</Polish>
             <Portuguese>Cantina</Portuguese>
             <Russian>Столовая</Russian>
             <Spanish>Cantina</Spanish>
@@ -403,7 +421,7 @@
             <Italian>Una mensa piena d'acqua</Italian>
             <Japanese>水で一杯の水筒</Japanese>
             <Korean>물이 채워진 식당</Korean>
-            <Polish>Stołówka wypełniona wodą</Polish>
+            <Polish>Manierka wypełniona wodą</Polish>
             <Portuguese>Uma cantina cheia de água</Portuguese>
             <Russian>Столовая с водой</Russian>
             <Spanish>Una cantina llena de agua</Spanish>
@@ -419,7 +437,7 @@
             <Italian>Mensa (metà)</Italian>
             <Japanese>水筒 (半分)</Japanese>
             <Korean>캔틴 (하프)</Korean>
-            <Polish>Stołówka (połowa)</Polish>
+            <Polish>Manierka (połowa)</Polish>
             <Portuguese>Cantina (meio)</Portuguese>
             <Russian>Столовая (половина)</Russian>
             <Spanish>Cantina (Mitad)</Spanish>
@@ -435,7 +453,7 @@
             <Italian>Una mensa riempita per metà di acqua</Italian>
             <Japanese>水が半分入っている水筒</Japanese>
             <Korean>물이 담긴 식당 절반</Korean>
-            <Polish>Stołówka w połowie wypełniona wodą</Polish>
+            <Polish>Manierka w połowie wypełniona wodą</Polish>
             <Portuguese>Uma meia cantina cheia de água</Portuguese>
             <Russian>Столовая наполовину заполнена водой</Russian>
             <Spanish>Una cantina medio llena de agua</Spanish>
@@ -451,7 +469,7 @@
             <Italian>Mensa (vuota)</Italian>
             <Japanese>水筒 (空)</Japanese>
             <Korean>캔틴 (비어 있음)</Korean>
-            <Polish>Stołówka (pusta)</Polish>
+            <Polish>Manierka (pusta)</Polish>
             <Portuguese>Cantina (vazia)</Portuguese>
             <Russian>Столовая (пустая)</Russian>
             <Spanish>Cantina (Vacío)</Spanish>
@@ -467,7 +485,7 @@
             <Italian>Una mensa vuota</Italian>
             <Japanese>空の水筒</Japanese>
             <Korean>빈 수통</Korean>
-            <Polish>Pusta stołówka</Polish>
+            <Polish>Pusta manierka</Polish>
             <Portuguese>Uma cantina vazia</Portuguese>
             <Russian>Пустая столовая</Russian>
             <Spanish>Una cantina vacía</Spanish>
@@ -475,14 +493,17 @@
         <Key ID="STR_ACEX_Field_Rations_Can_Spirit_Description">
             <English>Refreshing lemon and lime flavored soft drink</English>
             <Japanese>新鮮なレモンとライムの風味を味わえるソフト ドリンク</Japanese>
+            <Polish>Odświeżający napój cytronowo-limonkowy</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Can_Franta_Description">
             <English>Orange flavored soft drink with a tingly, fruity taste</English>
             <Japanese>口いっぱいに果物を感じるオレンジ風味のソフト ドリンク</Japanese>
+            <Polish>Napój pomarańczowy</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Can_RedGull_Description">
             <English>Red Gull gives you wings</English>
             <Japanese>レッドガルは翼をさずける</Japanese>
+            <Polish>Red Gull doda ci skrzydeł</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_LambCurry_DisplayName">
             <English>MRE Lamb Curry</English>
@@ -511,7 +532,7 @@
             <Italian>Un MRE contenente Lamb Curry. Calore per il miglior effetto</Italian>
             <Japanese>羊カレーの MRE。温めるとなお美味しい</Japanese>
             <Korean>램 카레가 들어있는 MRE. 효과를 극대화하기위한 열기</Korean>
-            <Polish>MRE zawierające Lamb Curry. Ciepło dla najlepszego efektu</Polish>
+            <Polish>MRE zawierające jagnięcine Curry. Podgrzej dla najlepszego efektu</Polish>
             <Portuguese>Um MRE contendo Lamb Curry. Calor para melhor efeito</Portuguese>
             <Russian>MRE, содержащие ягненок карри. Тепла для лучшего эффекта</Russian>
             <Spanish>Un MRE que contiene cordero al curry. Calor para el mejor efecto</Spanish>
@@ -519,10 +540,12 @@
         <Key ID="STR_ACEX_Field_Rations_MRE_BeefStew_DisplayName">
             <English>MRE Beef Stew</English>
             <Japanese>MRE ビーフ シチュー</Japanese>
+            <Polish>MRE Gulasz wołowy</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_BeefStew_Description">
             <English>An MRE containing Beef Stew. Heat for best effect</English>
             <Japanese>ビーフ シチューの MRE。温めるとなお美味しい</Japanese>
+            <Polish>MRE zawierające gulasz wołowy. Podgrzej dla najlepszego efektu</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_CreamTomatoSoup_DisplayName">
             <English>MRE Cream Tomato Soup</English>
@@ -535,7 +558,7 @@
             <Italian>MRE Crema di pomodoro</Italian>
             <Japanese>MRE クリーム トマト スープ</Japanese>
             <Korean>MRE 크림 토마토 수프</Korean>
-            <Polish>MRE krem pomidorowa</Polish>
+            <Polish>MRE Kremowa Zupa Pomidorowa</Polish>
             <Portuguese>MRE Sopa de creme de tomate</Portuguese>
             <Russian>MRE кремовый томатный суп</Russian>
             <Spanish>MRE Sopa de tomate crema</Spanish>
@@ -567,7 +590,7 @@
             <Italian>MRE Zuppa di pollo crema</Italian>
             <Japanese>MRE クリーム チキン スープ</Japanese>
             <Korean>MRE 크림 치킨 스프</Korean>
-            <Polish>MRE Zupa krem z kurczaka</Polish>
+            <Polish>MRE Kremowy Rosół</Polish>
             <Portuguese>MRE Sopa de creme de galinha</Portuguese>
             <Russian>MRE крем куриный суп</Russian>
             <Spanish>MRE Sopa de pollo crema</Spanish>
@@ -583,7 +606,7 @@
             <Italian>Un MRE contenente zuppa di pollo. Mescolare con acqua e calore per ottenere il massimo effetto</Italian>
             <Japanese>チキン スープの MRE。水と混ぜて温めるとなお美味しい</Japanese>
             <Korean>치킨 수프를 포함한 MRE. 최상의 효과를 위해 물과 열을 섞으십시오.</Korean>
-            <Polish>MRE zawierające zupę z kurczaka. Wymieszaj z wodą i podgrzej, aby uzyskać najlepszy efekt</Polish>
+            <Polish>MRE zawierające rosół. Wymieszaj z wodą i podgrzej, aby uzyskać najlepszy efekt</Polish>
             <Portuguese>Um MRE contendo Sopa de Frango. Misture com água e calor para melhor efeito</Portuguese>
             <Russian>MRE содержит куриный суп. Смешайте с водой и теплом для лучшего эффекта</Russian>
             <Spanish>Un MRE que contiene sopa de pollo. Mezcle con agua y calor para un mejor efecto</Spanish>
@@ -615,7 +638,7 @@
             <Italian>Un MRE con pollo Tikka Masala. Calore per effetto migliore</Italian>
             <Japanese>チキン ティッカ マサラの MRE。温めるとなお美味しい</Japanese>
             <Korean>치킨 티 카 Masala와 MRE입니다. 최고의 효과 대 한 열</Korean>
-            <Polish>MRE z kurczakiem Tikka Masala. Ciepło dla najlepszego efektu</Polish>
+            <Polish>MRE z kurczakiem Tikka Masala. Podgrzej dla najlepszego efektu</Polish>
             <Portuguese>Um MRE com Frango Tikka Masala. Calor para melhor efeito</Portuguese>
             <Russian>MRE с курицей Тикка Масала. Тепло для лучшего эффекта</Russian>
             <Spanish>Un ERM con Pollo Tikka Masala. Calor para un mejor efecto</Spanish>
@@ -631,7 +654,7 @@
             <Italian>MRE Verdura di bistecca</Italian>
             <Japanese>MRE 野菜添えステーキ</Japanese>
             <Korean>MRE 스테이크 야채</Korean>
-            <Polish>MRE stek warzyw</Polish>
+            <Polish>MRE Stek Warzywny</Polish>
             <Portuguese>MRE bife legumes</Portuguese>
             <Russian>MRE стейк овощи</Russian>
             <Spanish>ERM de ternera verduras</Spanish>
@@ -647,7 +670,7 @@
             <Italian>Un MRE contenente bistecche e verdure. Calore per il miglior effetto</Italian>
             <Japanese>野菜とステーキの MRE。温めるとなお美味しい</Japanese>
             <Korean>스테이크와 채소가 들어있는 MRE. 효과를 극대화하기위한 열기</Korean>
-            <Polish>MRE zawierający stek i warzywa. Ciepło dla najlepszego efektu</Polish>
+            <Polish>MRE zawierający stek i warzywa. Podgrzej dla najlepszego efektu</Polish>
             <Portuguese>Um MRE contendo Bife e Legumes. Calor para melhor efeito</Portuguese>
             <Russian>MRE содержит стейк и овощи. Тепло для лучшего эффекта</Russian>
             <Spanish>Un MRE que contiene carne y verduras. Calor para el mejor efecto</Spanish>
@@ -679,7 +702,7 @@
             <Italian>Un MRE contenente polpette e pasta. Calore per il miglior effetto</Italian>
             <Japanese>ミートボールとパスタの MRE。温めるとなお美味しい</Japanese>
             <Korean>미트볼과 파스타를 포함한 MRE. 효과를 극대화하기위한 열기</Korean>
-            <Polish>MRE zawierające klopsiki i makaron. Ciepło dla najlepszego efektu</Polish>
+            <Polish>MRE zawierające klopsiki i makaron. Podgrzej dla najlepszego efektu</Polish>
             <Portuguese>Um MRE contendo Meatballs e Pasta. Calor para melhor efeito</Portuguese>
             <Russian>MRE содержит фрикадельки и пасту. Тепло для лучшего эффекта</Russian>
             <Spanish>Un MRE que contiene albóndigas y pasta. Calor para el mejor efecto</Spanish>
@@ -695,7 +718,7 @@
             <Italian>MRE pollo con gnocchi alle erbe</Italian>
             <Japanese>MRE 鶏肉団子</Japanese>
             <Korean>MRE 치킨 약초만 두</Korean>
-            <Polish>MRE kurczak z kluskami zioło</Polish>
+            <Polish>MRE kurczak z pierogami ziołowymi.</Polish>
             <Portuguese>MRE Frango com Dumplings de ervas</Portuguese>
             <Russian>MRE курица с травы пельмени</Russian>
             <Spanish>MRE pollo con bolas de masa hervida</Spanish>
@@ -711,7 +734,7 @@
             <Italian>Un MRE contenente pollo con gnocchi alle erbe. Calore per il miglior effetto</Italian>
             <Japanese>鶏肉を団子で包んだ MRE。温めるとなお美味しい</Japanese>
             <Korean>치킨과 허브 만두가 포함 된 MRE. 효과를 극대화하기위한 열기</Korean>
-            <Polish>MRE z kurczakiem i kluskami ziołowymi. Ciepło dla najlepszego efektu</Polish>
+            <Polish>MRE z kurczakiem i pierogamii ziołowymi. Podgrzej dla najlepszego efektu</Polish>
             <Portuguese>Uma MRE que contém Bolinhos De Frango Com Erva. Calor para melhor efeito</Portuguese>
             <Russian>MRE содержит курицу с пельменями с травами. Тепло для лучшего эффекта</Russian>
             <Spanish>Un MRE que contiene pollo con bolas de masa hervida. Calor para el mejor efecto</Spanish>
