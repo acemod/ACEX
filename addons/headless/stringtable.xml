@@ -122,7 +122,7 @@
             <English>Transfer Loadout</English>
         </Key>
         <Key ID="STR_ACEX_Headless_TransferLoadoutDesc">
-            <English>Transfer loadout of units attempts to work around an issue where units appear naked after transferring to  a Headless Client.</English>
+            <English>Transfer loadout of units attempts to work around an issue where units appear naked after transferring to a Headless Client.</English>
         </Key>
         <Key ID="STR_ACEX_Headless_TransferLoadoutCurrent">
             <English>Current Loadout</English>
