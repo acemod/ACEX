@@ -205,6 +205,12 @@
             <Russian>динамический</Russian>
             <Spanish>Dinámica</Spanish>
         </Key>
+        <Key ID="STR_ACEX_Field_Rations_WaterSupply_3DEN_DisplayName">
+            <English>Water Supply</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_WaterSupply_3DEN_Description">
+            <English>The amount of water available for ACEX Field Rations water source actions (-1 disabled, -10 infinite)</English>
+        </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSource">
             <English>Water Source</English>
             <Japanese>水源</Japanese>
