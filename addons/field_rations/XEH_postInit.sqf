@@ -9,7 +9,7 @@ if !(hasInterface) exitWith {};
     // Add Advanced Fatigue duty factor
     if (GVAR(affectAdvancedFatigue) && {missionNamespace getVariable [QACEGVAR(advanced_fatigue,enabled), false]}) then {
         [QUOTE(ADDON), {
-            linearConversion [50, 100, _this getVariable [QGVAR(thirst), 0], 1, 1.4, true] * linearConversion [50, 100, _this getVariable [QGVAR(hunger), 0], 1, 1.1, true];
+            linearConversion [50, 100, _this getVariable [QGVAR(thirst), 0], 1, 1.4, true] * linearConversion [50, 100, _this getVariable [QGVAR(hunger), 0], 1, 1.1, true]
         }] call ACEFUNC(advanced_fatigue,addDutyFactor);
         TRACE_1("Added duty factor",GVAR(affectAdvancedFatigue));
     };
