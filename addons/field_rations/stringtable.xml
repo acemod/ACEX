@@ -55,7 +55,7 @@
             <Spanish>Supervivencia</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Enabled_Description">
-            <English>Enable/Disable field rations</English>
+            <English>Enable/Disable Field Rations</English>
             <Chinese>啟用/禁用字段口糧</Chinese>
             <Chinesesimp>启用/禁用字段口粮</Chinesesimp>
             <Czech>Povolit / zakázat příděly v polích</Czech>
@@ -71,7 +71,7 @@
             <Spanish>Habilitar / deshabilitar las raciones de campo</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_TimeWithoutWater_DisplayName">
-            <English>Time without water</English>
+            <English>Time Without Water</English>
             <Chinese>沒有水的時候</Chinese>
             <Chinesesimp>没有水的时候</Chinesesimp>
             <Czech>Czas bez wody</Czech>
@@ -103,7 +103,7 @@
             <Spanish>¿Cuánto tiempo debería una unidad ir sin agua (horas)?</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_TimeWithoutFood_DisplayName">
-            <English>Time without food</English>
+            <English>Time Without Food</English>
             <Chinese>沒有食物的時間</Chinese>
             <Chinesesimp>没有食物的时间</Chinesesimp>
             <Czech>Čas bez jídla</Czech>
@@ -134,17 +134,23 @@
             <Russian>Как долго подразделение сможет идти без пищи (часы)</Russian>
             <Spanish>¿Cuánto tiempo debería una unidad ir sin comida (horas)?</Spanish>
         </Key>
-        <Key ID="STR_ACEX_Field_Rations_thirstQuenched_DisplayName">
-            <English>Thirst quenched</English>
+        <Key ID="STR_ACEX_Field_Rations_ThirstQuenched_DisplayName">
+            <English>Thirst Quenched</English>
         </Key>
-        <Key ID="STR_ACEX_Field_Rations_thirstQuenched_Description">
+        <Key ID="STR_ACEX_Field_Rations_ThirstQuenched_Description">
             <English>Coefficient for the amount of thirst quenched from drinking</English>
         </Key>
-        <Key ID="STR_ACEX_Field_Rations_hungerSatiated_DisplayName">
-            <English>Hunger satiated</English>
+        <Key ID="STR_ACEX_Field_Rations_HungerSatiated_DisplayName">
+            <English>Hunger Satiated</English>
         </Key>
-        <Key ID="STR_ACEX_Field_Rations_hungerSatiated_Description">
+        <Key ID="STR_ACEX_Field_Rations_HungerSatiated_Description">
             <English>Coefficient for the amount of hunger satiated from eating</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_AffectAdvancedFatigue_DisplayName">
+            <English>Affect Advanced Fatigue</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_AffectAdvancedFatigue_Description">
+            <English>Controls if thirst and hunger should affect ACE Advanced Fatigue</English>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_DisplayName">
             <English>HUD Type</English>
