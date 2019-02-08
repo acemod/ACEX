@@ -30,7 +30,7 @@ GVAR(waterSourceOffsets) = [];
 
     private _index = GVAR(waterSourceP3Ds) pushBackUnique _string;
     if (_index != -1) then {
-        GVAR(waterSourceOffsets) pushBack ([_x >> QGVAR(offset), "ARRAY", [0,0,0]] call CBA_fnc_getConfigEntry);
+        GVAR(waterSourceOffsets) pushBack ([_x >> QGVAR(offset), "ARRAY", [0, 0, 0]] call CBA_fnc_getConfigEntry);
     };
 } forEach (QUOTE(isNumber (_x >> 'GVAR(waterSupply)')) configClasses (configFile >> "CfgVehicles"));
 
