@@ -73,6 +73,7 @@ class CfgVehicles {
     class NonStrategic;
     class Land_Water_source_F: NonStrategic {
         GVAR(waterSupply) = REFILL_WATER_INFINITE;
+        GVAR(offset)[] = {0, 0, -0.2};
     };
 
     class Land_WaterPump_01_F;
