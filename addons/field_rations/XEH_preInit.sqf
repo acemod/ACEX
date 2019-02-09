@@ -13,19 +13,23 @@ GVAR(thirstModifiers) = [];
 GVAR(hungerModifiers) = [];
 
 // List of p3d water sources (case sensitive) for objects that report `typeOf == ""`
-GVAR(waterSourceP3Ds) = [];
+GVAR(waterSourceP3Ds) = [
+    "misc_wellpump.p3d" // [11899, 9150, 0] on chenarus
+];
 
 // List of refill action offsets corresponding to the p3ds in the array above
-GVAR(waterSourceOffsets) = [];
+GVAR(waterSourceOffsets) = [
+    [0, 0, 0]
+];
 
 // Fill water source arrays from CfgVehicles
 {
     private _split = (getText (_x >> "model")) splitString "\";
     private _string = toLower (_split select ((count _split) - 1));
-    _string = if ((_string find ".p3d") == -1) then {
-        _string + ".p3d"
-    } else {
-        _string
+
+    // Append extension if necessary
+    if ((_string select [count _string - 4]) isEqualTo ".p3d") then {
+        _string = _string + ".p3d"
     };
 
     private _index = GVAR(waterSourceP3Ds) pushBackUnique _string;
