@@ -36,6 +36,6 @@ GVAR(waterSourceOffsets) = [
     if (_index != -1) then {
         GVAR(waterSourceOffsets) pushBack ([_x >> QGVAR(offset), "ARRAY", [0, 0, 0]] call CBA_fnc_getConfigEntry);
     };
-} forEach (QUOTE(isNumber (_x >> 'GVAR(waterSupply)')) configClasses (configFile >> "CfgVehicles"));
+} forEach (QUOTE(isNumber (_x >> 'GVAR(waterSupply)') && {(getNumber (_x >> 'GVAR(waterSupply)')) != REFILL_WATER_DISABLED}) configClasses (configFile >> "CfgVehicles"));
 
 ADDON = true;
