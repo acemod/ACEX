@@ -14,5 +14,23 @@
             // Register HC (this part happens on HC only)
             [QGVAR(headlessClientJoined), [player]] call CBA_fnc_globalEvent; // Global event for API purposes
         };
+
+        // Transfer loadouts (naked unit work-around)
+        if (GVAR(transferLoadut) > 0) then {
+            ["CAManBase", "Local", {
+                params ["_unit", "_local"];
+
+                // Check if naked unit bug happened
+                if (_local && {uniform _unit == ""}) then {
+                    if (GVAR(transferLoadout) == 1) then {
+                        // Transferred loadout, if unavailable reset to config default (still better than naked)
+                        _unit setUnitLoadout (_unit getVariable [QGVAR(loadout), typeOf _unit]);
+                    } else {
+                        // Config default loadout
+                        _unit setUnitLoadout (typeOf _unit);
+                    };
+                };
+            }] call CBA_fnc_addClassEventHandler;
+        };
     };
 }] call CBA_fnc_addEventHandler;
