@@ -95,7 +95,7 @@ private _numTransferredHC3 = 0;
             };
 
             // Save gear if unit about to be transferred with current loadout (naked unit work-around)
-            if (GVAR(transferLoadout) == 1) {
+            if (GVAR(transferLoadout) == 1) then {
                 _x setVariable [QGVAR(loadout), getUnitLoadout _x, true];
             };
         } forEach (units _x);
