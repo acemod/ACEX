@@ -136,21 +136,27 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ThirstQuenched_DisplayName">
             <English>Thirst Quenched</English>
+            <Japanese>乾きの満たし</Japanese>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ThirstQuenched_Description">
             <English>Coefficient for the amount of thirst quenched from drinking</English>
+            <Japanese>飲むことによって得られる乾きの満たし量の係数を設定します</Japanese>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HungerSatiated_DisplayName">
             <English>Hunger Satiated</English>
+            <Japanese>満腹感</Japanese>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HungerSatiated_Description">
             <English>Coefficient for the amount of hunger satiated from eating</English>
+            <Japanese>食べることによって得られる満腹感の量の係数を設定します</Japanese>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_AffectAdvancedFatigue_DisplayName">
             <English>Affect Advanced Fatigue</English>
+            <Japanese>アドバンスド ファティーグへの影響</Japanese>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_AffectAdvancedFatigue_Description">
             <English>Controls if thirst and hunger should affect ACE Advanced Fatigue</English>
+            <Japanese>喉の渇きと空腹感が ACE アドバンスド ファティーグへ与える影響を決定します</Japanese>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_DisplayName">
             <English>HUD Type</English>
@@ -206,6 +212,7 @@
         <Key ID="STR_ACEX_Field_Rations_HudTransparency_Description">
             <English>Controls the transparency of the Colored Icons HUD. Dynamic setting makes the HUD less transparent as thirst or hunger increase</English>
             <Polish>Kontroluje transparentność kolorowych ikon HUD. Dynamiczne ustawienie zmniejsza przejrzystość wraz z zwiększeniem głodu czy pragnienia.</Polish>
+            <Japanese>色付きアイコンの透明度を決定できます。動的に設定されると、喉の渇きや空腹感が増すにつれて、アイコンの透明度を下げます。</Japanese>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Dynamic">
             <English>Dynamic</English>
@@ -225,9 +232,11 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSupply_3DEN_DisplayName">
             <English>Water Supply</English>
+            <Japanese>水資源</Japanese>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSupply_3DEN_Description">
             <English>The amount of water available for ACEX Field Rations water source actions (-1 disabled, -10 infinite)</English>
+            <Japanese>ACEX フィールド レーションで利用できる水源の量を設定できます。(-1で無効化、-10で無限)</Japanese>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSource">
             <English>Water Source</English>
