@@ -14,7 +14,7 @@
     "SLIDER",
     [LSTRING(TimeWithoutWater_DisplayName), LSTRING(TimeWithoutWater_Description)],
     LSTRING(DisplayName),
-    [0.1, 24, 2, 1],
+    [0.1, 168, 2, 1],
     true
 ] call CBA_settings_fnc_init;
 
@@ -23,7 +23,34 @@
     "SLIDER",
     [LSTRING(TimeWithoutFood_DisplayName), LSTRING(TimeWithoutFood_Description)],
     LSTRING(DisplayName),
-    [0.1, 24, 2, 1],
+    [0.1, 504, 2, 1],
+    true
+] call CBA_settings_fnc_init;
+
+[
+    QGVAR(thirstQuenched),
+    "SLIDER",
+    [LSTRING(ThirstQuenched_DisplayName), LSTRING(ThirstQuenched_Description)],
+    LSTRING(DisplayName),
+    [0.1, 10, 1, 1],
+    true
+] call CBA_settings_fnc_init;
+
+[
+    QGVAR(hungerSatiated),
+    "SLIDER",
+    [LSTRING(HungerSatiated_DisplayName), LSTRING(HungerSatiated_Description)],
+    LSTRING(DisplayName),
+    [0.1, 10, 1, 1],
+    true
+] call CBA_settings_fnc_init;
+
+[
+    QGVAR(affectAdvancedFatigue),
+    "CHECKBOX",
+    [LSTRING(AffectAdvancedFatigue_DisplayName), LSTRING(AffectAdvancedFatigue_Description)],
+    LSTRING(DisplayName),
+    true,
     true
 ] call CBA_settings_fnc_init;
 

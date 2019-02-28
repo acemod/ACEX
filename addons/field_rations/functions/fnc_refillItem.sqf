@@ -43,6 +43,8 @@ private _fnc_onSuccess = {
         [_source, _waterInSource] call FUNC(setRemainingWater);
     };
 
+    ["acex_rationRefilled", [_source, _player, _item, _refillItem, _refillAmount]] call CBA_fnc_localEvent;
+
     // Show refilled item hint
     private _picture = getText (configFile >> "CfgWeapons" >> _refillItem >> "picture");
     [LSTRING(ItemRefilled), _picture] call ACEFUNC(common,displayTextPicture);

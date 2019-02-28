@@ -57,5 +57,6 @@ class CfgPatches {
 #include "CfgWeapons.hpp"
 #include "CfgSounds.hpp"
 #include "CfgMoves.hpp"
+#include "Cfg3DEN.hpp"
 #include "RscTitles.hpp"
 #include "CfgUIGrids.hpp"

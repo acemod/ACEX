@@ -26,8 +26,8 @@ private _config = configFile >> "CfgWeapons" >> _consumeItem;
 private _consumeTime = getNumber (_config >> QGVAR(consumeTime));
 
 // Get restored values and replacement item
-private _thirstQuenched = getNumber (_config >> QGVAR(thirstQuenched));
-private _hungerSatiated = getNumber (_config >> QGVAR(hungerSatiated));
+private _thirstQuenched = GVAR(thirstQuenched) * getNumber (_config >> QGVAR(thirstQuenched));
+private _hungerSatiated = GVAR(hungerSatiated) * getNumber (_config >> QGVAR(hungerSatiated));
 private _replacementItem = getText (_config >> QGVAR(replacementItem));
 
 // Create consume text for item
@@ -91,6 +91,8 @@ private _fnc_onSuccess = {
         private _hunger = _player getVariable [QGVAR(hunger), 0];
         _player setVariable [QGVAR(hunger), (_hunger - _hungerSatiated) max 0];
     };
+
+    ["acex_rationConsumed", [_player, _consumeItem, _replacementItem, _thirstQuenched, _hungerSatiated]] call CBA_fnc_localEvent;
 
     _player setVariable [QGVAR(previousAnim), nil];
 };

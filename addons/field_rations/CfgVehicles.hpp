@@ -73,14 +73,17 @@ class CfgVehicles {
     class NonStrategic;
     class Land_Water_source_F: NonStrategic {
         GVAR(waterSupply) = REFILL_WATER_INFINITE;
+        GVAR(offset)[] = {0, 0, -0.2};
     };
 
-    class Machine_base_F;
-    class WaterPump_01_forest_F: Machine_base_F {
+    class Land_WaterPump_01_F;
+    class WaterPump_01_forest_F: Land_WaterPump_01_F {
         GVAR(waterSupply) = REFILL_WATER_INFINITE;
+        GVAR(offset)[] = {0, -1.8, 0.06};
     };
-    class WaterPump_01_sand_F: Machine_base_F {
+    class WaterPump_01_sand_F: Land_WaterPump_01_F {
         GVAR(waterSupply) = REFILL_WATER_INFINITE;
+        GVAR(offset)[] = {0, -1.8, 0.06};
     };
 
     class Truck_02_water_base_F;

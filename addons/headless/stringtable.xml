@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project name="ACEX">
     <Package name="Headless">
         <Key ID="STR_ACEX_Headless_Module">
@@ -64,6 +64,7 @@
             <Chinesesimp>结束任务</Chinesesimp>
             <Chinese>結束任務</Chinese>
             <Italian>Termina Missione</Italian>
+            <Polish>Koniec misji</Polish>
         </Key>
         <Key ID="STR_ACEX_Headless_EndMissionDesc">
             <English>End mission when there are no players connected (same as 'persistent = 0' in server configuration but with Headless Client support).</English>
@@ -73,6 +74,7 @@
             <Chinesesimp>当伺服器里没有任何玩家还连线时自动结束任务(效果同于伺服器设定的'persistent = 0'，但支援无头客户端)。</Chinesesimp>
             <Chinese>當伺服器裡沒有任何玩家還連線時自動結束任務(效果同於伺服器設定的'persistent = 0'，但支援無頭客戶端)。</Chinese>
             <Italian>Termina la missione quando non ci sono più giocatori connessi (come 'persistent = 0' nella configurazione dei server ma con il supporto dell'Headless Client).</Italian>
+            <Polish>Kończy misje kiedy nie ma połączonych graczy(tak samo jak 'persistent = 0' w konfiguracji serwer ale z wsparciem Headless Client</Polish>
         </Key>
         <Key ID="STR_ACEX_Headless_Instant">
             <English>Instant</English>
@@ -82,6 +84,7 @@
             <Chinesesimp>立即</Chinesesimp>
             <Chinese>立即</Chinese>
             <Italian>Istantaneo</Italian>
+            <Polish>Natychmiastowy</Polish>
         </Key>
         <Key ID="STR_ACEX_Headless_Delayed">
             <English>Delayed (60s)</English>
@@ -91,6 +94,7 @@
             <Chinesesimp>延迟 (60秒)</Chinesesimp>
             <Chinese>延遲 (60秒)</Chinese>
             <Italian>Ritardato (60s)</Italian>
+            <Polish>Opóźniony (60s)</Polish>
         </Key>
         <Key ID="STR_ACEX_Headless_Log">
             <English>Log</English>
@@ -114,6 +118,18 @@
             <Chinese>記錄無頭客戶端間的轉換數量與連線/斷線等記錄到RPT報告檔中。(預設:關閉)</Chinese>
             <Italian>Registra le statistiche del trasferimento e delle (dis)connessioni dell'Headless Clienti su RPT. (Default: No)</Italian>
         </Key>
+        <Key ID="STR_ACEX_Headless_TransferLoadout">
+            <English>Transfer Loadout</English>
+        </Key>
+        <Key ID="STR_ACEX_Headless_TransferLoadoutDesc">
+            <English>Transfer loadout of units attempts to work around an issue where units appear naked after transferring to a Headless Client.</English>
+        </Key>
+        <Key ID="STR_ACEX_Headless_TransferLoadoutCurrent">
+            <English>Current Loadout</English>
+        </Key>
+        <Key ID="STR_ACEX_Headless_TransferLoadoutConfig">
+            <English>Config Loadout</English>
+        </Key>
         <Key ID="STR_ACEX_Headless_BlacklistEden">
             <English>Headless Blacklist</English>
             <Japanese>ヘッドレス ブラックリスト</Japanese>
@@ -122,6 +138,7 @@
             <Chinese>無頭客戶端黑名單</Chinese>
             <Italian>Lista Nera Headless</Italian>
             <Korean>헤드리스 블랙리스트</Korean>
+            <Polish>Czarna lista Headless</Polish>
         </Key>
         <Key ID="STR_ACEX_Headless_BlacklistEdenDesc">
             <English>Disables transferring of this AI unit/group to Headless Clients. No effect on player units.</English>
@@ -131,6 +148,7 @@
             <Chinese>禁止轉換黑名單中的AI單位/群組到無頭客戶端上。此功能對玩家單位無用。</Chinese>
             <Italian>Disabilita il trasferimento di questa unità/gruppo di AI negli Headless Client. Non ha effetto sui giocatori.</Italian>
             <Korean>이 AI 유닛 / 그룹을 헤드리스 클라이언트로 전송하지 못하도록합니다. 플레이어 유닛에는 영향을주지 않습니다.</Korean>
+            <Polish>Wyłącza transfer tych jednostek/grup AI do Headless Clients. Bez efektu na jednostkach gracza.</Polish>
         </Key>
     </Package>
 </Project>
