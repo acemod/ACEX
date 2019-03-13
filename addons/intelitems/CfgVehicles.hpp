@@ -1,63 +1,84 @@
-
 class CfgVehicles {
+    class Man;
+    class CAManBase: Man {
+        class ACE_SelfActions {
+            class ADDON {
+                displayName = CSTRING(DisplayName);
+                condition = QUOTE(visibleMap);
+                exceptions[] = {"isNotInside", "notOnMap"};
+                statement = "";
+                insertChildren = QUOTE(_player call FUNC(addActions));
+                icon = "";
+            };
+        };
+    };
+
     class ThingX;
     class GVAR(base): ThingX {
         XEH_ENABLED;
         icon = "iconObject_2x3";
         mapSize = 0.3;
-        vehicleClass = QUOTE(ADDON);
-        simulation = "House"; //Needed because the objects don't have good collision physx
+        simulation = "House"; // Needed because the objects don't have good collision physx
         destrType = "DesturctNo";
-        curatorInfoTypeEmpty = QGVAR(zeusAttributes);
+        curatorInfoTypeEmpty = QGVAR(RscSetData);
+        editorSubcategory = QUOTE(ADDON);
+        GVAR(magazine) = "";
         class Attributes {
-            class GVAR(3denAttribute) {
-                displayName = CSTRING(edit_text);
+            class GVAR(data) {
+                displayName = CSTRING(Text);
                 property = QGVAR(data);
                 control = "EditMulti5";
-                expression = QUOTE([ARR_2(_this, _value)] call FUNC(server_setObjectData););
+                expression = QUOTE([ARR_2(_this,_value)] call FUNC(setObjectData));
                 defaultValue = "''";
-                unique = 0;
-                validate = "string";
+                validate = "STRING";
                 condition = "object";
                 typeName = "STRING";
             };
         };
         class ACE_Actions {
             class GVAR(pickup) {
-                displayName = CSTRING(pickupAction);
-                selection = "";
-                distance = 4;
-                condition = QUOTE(_this call FUNC(canPickupIntelObject));
-                statement = QUOTE(_this call FUNC(pickupIntelObject));
+                displayName = CSTRING(Pickup);
+                icon = "\a3\ui_f\data\igui\cfg\actions\take_ca.paa";
+                distance = 2;
+                condition = QUOTE(_this call FUNC(canPickup));
+                statement = QUOTE(_this call FUNC(pickup));
             };
         };
     };
 
-    class GVAR(DocumentObject): GVAR(base) {
-        displayName = CSTRING(Document_displayName);
-        author = "PabstMirror";
-        model = "\A3\Structures_F\Items\Documents\File2_F.p3d";
+    class GVAR(notepad): GVAR(base) {
+        author = ACECSTRING(common,ACETeam);
+        displayName = CSTRING(Notepad_DisplayName);
+        model = "\a3\structures_f\items\documents\notepad_f.p3d";
+        editorPreview = "\a3\editorpreviews_f\data\cfgvehicles\land_notepad_f.jpg";
         scope = 2;
         scopeCurator = 2;
+        GVAR(magazine) = QGVAR(notepad);
     };
-    class GVAR(PhotoObject): GVAR(base) {
-        displayName = CSTRING(Photo_displayName);
-        author = "PabstMirror";
-        model = "\A3\Structures_F\Items\Documents\FilePhotos_F.p3d";
+
+    class GVAR(document): GVAR(base) {
+        author = ACECSTRING(common,ACETeam);
+        displayName = CSTRING(Document_DisplayName);
+        model = "\a3\structures_f\items\documents\file2_f.p3d";
+        editorPreview = "\a3\editorpreviews_f\data\cfgvehicles\intel_file2_f.jpg";
         scope = 2;
         scopeCurator = 2;
+        GVAR(magazine) = QGVAR(document);
+    };
+
+    class GVAR(photo): GVAR(base) {
+        author = ACECSTRING(common,ACETeam);
+        displayName = CSTRING(Photo_DisplayName);
+        model = "\a3\structures_f\items\documents\filephotos_f.p3d";
+        editorPreview = "\a3\editorpreviews_f\data\cfgvehicles\land_filephotos_f.jpg";
+        scope = 2;
+        scopeCurator = 2;
+        GVAR(magazine) = QGVAR(photo);
         class Attributes: Attributes {
-            class GVAR(3denAttribute): GVAR(3denAttribute) {
-                displayName = CSTRING(edit_photo);
+            class GVAR(data): GVAR(data) {
+                displayName = CSTRING(Photo_Filename);
                 control = "Edit";
             };
         };
-    };
-    class GVAR(NotepadObject): GVAR(base) {
-        displayName = CSTRING(Notepad_displayName);
-        author = "Pabst";
-        model = "\A3\Structures_F\Items\Documents\Notepad_F.p3d";
-        scope = 2;
-        scopeCurator = 2;
     };
 };

@@ -2,24 +2,24 @@
 
 class CfgPatches {
     class ADDON {
-        units[] = {QGVAR(DocumentObject), QGVAR(PhotoObject), QGVAR(NotepadObject)};
+        name = COMPONENT_NAME;
+        units[] = {
+            QGVAR(notepad),
+            QGVAR(document),
+            QGVAR(photo)
+        };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ace_interaction"};
-        authors[] = {"PabstMirror"};
+        requiredAddons[] = {"ace_interact_menu", "ace_zeus"};
         author = ACECSTRING(common,ACETeam);
+        authors[] = {"PabstMirror", "mharis001"};
         url = ACECSTRING(main,URL);
         VERSION_CONFIG;
     };
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgEditorSubcategories.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgVehicles.hpp"
-#include "UI.hpp"
-
-class CfgVehicleClasses {
-    class ADDON {
-        displayName = CSTRING(VehicleClass_displayName);
-    };
-};
+#include "gui.hpp"

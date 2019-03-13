@@ -1,9 +1,9 @@
 #define COMPONENT intelitems
+#define COMPONENT_BEAUTIFIED Intel Items
 #include "\z\acex\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
-// #define CBA_DEBUG_SYNCHRONOUS
 // #define ENABLE_PERFORMANCE_COUNTERS
 
 #ifdef DEBUG_ENABLED_INTELITEMS
@@ -16,21 +16,24 @@
 
 #include "\z\acex\addons\main\script_macros.hpp"
 
-//Internal "Type" codes:
-#define TYPE_DOCUMENT 0
-#define TYPE_PHOTO 1
-#define TYPE_NOTEPAD 2
+#include "\a3\ui_f\hpp\defineResincl.inc"
+#include "\a3\ui_f\hpp\defineCommonGrids.inc"
 
-//IDCS:
-#define IDC_CG 724340
-#define IDC_BORDER 724341
-#define IDC_PAPERBACKGROUND 724342
-#define IDC_CONTENTPICTURE 724343
-#define IDC_CONTENTEDIT 724344
-#define IDC_CONTENTTEXT 724345
+#define POS_X(N) ((N) * GUI_GRID_W + GUI_GRID_CENTER_X)
+#define POS_Y(N) ((N) * GUI_GRID_H + GUI_GRID_CENTER_Y)
+#define POS_W(N) ((N) * GUI_GRID_W)
+#define POS_H(N) ((N) * GUI_GRID_H)
 
-#define IDC_TOPBAR 724350
-#define IDC_CLOSEBUTTON 724351
+#define IDC_BORDER     10
+#define IDC_BACKGROUND 20
+#define IDC_HEADER     30
+#define IDC_CLOSE      40
+#define IDC_CONTENT    50
 
-#define IDC_ZEUSTITLE 26468
-#define IDC_ZEUSVALUE 26469
+#define IDC_ATTRIBUTE_GROUP 4800
+#define IDC_ATTRIBUTE_LABEL 4801
+#define IDC_ATTRIBUTE_EDIT  4802
+
+#define SYS_DATA(index)      (format [QGVAR(%1), index])
+#define SET_DATA(index,data) (GVAR(intelData) setVariable [SYS_DATA(index), data, true])
+#define GET_DATA(index)      (GVAR(intelData) getVariable [SYS_DATA(index), ""])

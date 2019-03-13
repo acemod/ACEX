@@ -1,24 +1,38 @@
 class CfgMagazines {
     class CA_Magazine;
-    class GVAR(document): CA_Magazine {
-        displayName = CSTRING(Document_displayName);
-        descriptionShort = CSTRING(Document_descriptionShort);
-        picture = QUOTE(PATHTOF(UI\document_ca.paa));
-        model = "\A3\Structures_F\Items\Documents\File2_F.p3d";
+    class GVAR(base): CA_Magazine {
         count = 1;
-        mass = 0;
+        mass = 1;
         ACE_isUnique = 1;
+        GVAR(intel) = 1;
+        GVAR(control) = "";
     };
-    class GVAR(photo): GVAR(document) {
-        displayName = CSTRING(Photo_displayName);
-        descriptionShort = CSTRING(Photo_descriptionShort);
-        picture = QUOTE(PATHTOF(UI\photo_ca.paa));
-        model = "\A3\Structures_F\Items\Documents\FilePhotos_F.p3d";
+
+    class GVAR(notepad): GVAR(base) {
+        author = ACECSTRING(common,ACETeam);
+        scope = 2; // Allows players to access from arsenal
+        displayName = CSTRING(Notepad_DisplayName);
+        descriptionShort = CSTRING(Notepad_Description);
+        picture = QPATHTOF(ui\notepad_ca.paa);
+        model = "\a3\structures_f\items\documents\notepad_f.p3d";
+        GVAR(control) = QGVAR(RscNotepad);
     };
-    class GVAR(notepad): GVAR(document) {
-        displayName = CSTRING(Notepad_displayName);
-        descriptionShort = CSTRING(Notepad_descriptionShort);
-        picture = QUOTE(PATHTOF(UI\notepad_ca.paa));
-        model = "\A3\Structures_F\Items\Documents\Notepad_F.p3d";
+
+    class GVAR(document): GVAR(base) {
+        author = ACECSTRING(common,ACETeam);
+        displayName = CSTRING(Document_DisplayName);
+        descriptionShort = CSTRING(Document_Description);
+        picture = QPATHTOF(ui\document_ca.paa);
+        model = "\a3\structures_f\items\documents\file2_f.p3d";
+        GVAR(control) = QGVAR(RscDocument);
+    };
+
+    class GVAR(photo): GVAR(base) {
+        author = ACECSTRING(common,ACETeam);
+        displayName = CSTRING(Photo_DisplayName);
+        descriptionShort = CSTRING(Photo_Description);
+        picture = QPATHTOF(ui\photo_ca.paa);
+        model = "\a3\structures_f\items\documents\filephotos_f.p3d";
+        GVAR(control) = QGVAR(RscPhoto);
     };
 };

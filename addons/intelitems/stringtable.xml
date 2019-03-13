@@ -1,7 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="ACEX">
     <Package name="intelItems">
-        <Key ID="STR_ACEX_IntelItems_pickupAction">            
+        <Key ID="STR_ACEX_IntelItems_Category">
+            <English>ACEX Intel Items</English>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_DisplayName">
+            <English>Intel Items</English>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_Notepad_DisplayName">
+            <English>Notepad</English>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_Notepad_Description">
+            <English>Notepad - Can access from the map screen</English>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_Document_DisplayName">
+            <English>Document</English>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_Document_Description">
+            <English>Printed Document - Can access from the map screen</English>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_Photo_DisplayName">
+            <English>Photo</English>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_Photo_Description">
+            <English>Photo - Can access from the map screen</English>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_Text">
+            <English>Text</English>
+            <Czech>Text</Czech>
+            <French>Texte</French>
+            <German>Text</German>
+            <Italian>Testo</Italian>
+            <Polish>Tekst</Polish>
+            <Portuguese>Texto</Portuguese>
+            <Russian>Текст</Russian>
+            <Spanish>Texto</Spanish>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_Photo_Filename">
+            <English>Photo Filename</English>
+        </Key>
+        <Key ID="STR_ACEX_IntelItems_Pickup">
             <English>Pick Up</English>
             <Czech>Vyzvednout</Czech>
             <French>Ramasser</French>
@@ -11,41 +49,6 @@
             <Portuguese>Pegar</Portuguese>
             <Russian>Подобрать</Russian>
             <Spanish>Recoger</Spanish>
-        </Key>
-        <Key ID="STR_ACEX_IntelItems_VehicleClass_displayName">
-            <English>ACEX Intel Items</English>
-        </Key>
-        <Key ID="STR_ACEX_IntelItems_Document_displayName">
-            <English>Intel Document</English>
-        </Key>
-        <Key ID="STR_ACEX_IntelItems_Document_descriptionShort">
-            <English>Printed Document - Can access from the map screen</English>
-        </Key>
-        <Key ID="STR_ACEX_IntelItems_Photo_displayName">
-            <English>Intel Photo</English>
-        </Key>
-        <Key ID="STR_ACEX_IntelItems_Photo_descriptionShort">
-            <English>Photo - Can access from the map screen</English>
-        </Key>
-        <Key ID="STR_ACEX_IntelItems_Notepad_displayName">
-            <English>Notepad</English>
-        </Key>
-        <Key ID="STR_ACEX_IntelItems_Notepad_descriptionShort">
-            <English>Notepad - Can access from the map screen</English>
-        </Key>
-        <Key ID="STR_ACEX_IntelItems_edit_text">          
-            <English>Text:</English>
-            <Czech>Text:</Czech>
-            <French>Texte :</French>
-            <German>Text:</German>
-            <Italian>Testo:</Italian>
-            <Polish>Tekst:</Polish>
-            <Portuguese>Texto:</Portuguese>
-            <Russian>Текст:</Russian>
-            <Spanish>Texto:</Spanish>
-        </Key>
-        <Key ID="STR_ACEX_IntelItems_edit_photo">          
-            <English>Photo Filename:</English>
         </Key>
     </Package>
 </Project>
