@@ -21,7 +21,7 @@ params ["_object", "_player"];
 private _magazineClass = getText (configFile >> "CfgVehicles" >> typeOf _object >> QGVAR(magazine));
 private _index = _object getVariable [QGVAR(index), -1];
 
-// Add magazine to inventory and gets it id
+// Add magazine to inventory and get its id
 private _magazinesBefore = [_player, _magazineClass] call CBA_fnc_getMagazineIndex;
 _player addMagazine _magazineClass;
 private _magazinesAfter = [_player, _magazineClass] call CBA_fnc_getMagazineIndex;
