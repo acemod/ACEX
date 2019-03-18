@@ -87,7 +87,7 @@ private _seatPosOrig = getPosASL _seat;
 private _seatDistOrig = (getPosASL _player) distance _seat;
 [{
     params ["_args", "_pfhId"];
-    _args params ["_player", "_seat", "_seatPosOrig"];
+    _args params ["_player", "_seat", "_seatPosOrig", "_seatDistOrig"];
 
     // Remove PFH if not sitting any more
     if (isNil {_player getVariable QGVAR(sittingStatus)}) exitWith {
