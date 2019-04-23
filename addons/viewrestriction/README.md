@@ -7,5 +7,5 @@ The View Restriction module introduces restricting of first and third person vie
 
 The people responsible for merging changes to this component or answering potential questions.
 
-- [Jonpas] (https://github.com/jonpas)
-- [esteldunedain] (https://github.com/esteldunedain)
+- [Jonpas](https://github.com/jonpas)
+- [esteldunedain](https://github.com/esteldunedain)
