@@ -3,13 +3,19 @@
 // Exit on Headless
 if (!hasInterface) exitWith {};
 
-GVAR(isEnabled) = false;
-DFUNC(onInitEvent) = {
+["ace_settingsInitialized", {
     TRACE_1("SettingInit", GVAR(enable));
 
-    //If not enabled, then do not add CanInteractWith Condition or event handlers:
-    if (!GVAR(enable) || GVAR(isEnabled)) exitWith {};
-    GVAR(isEnabled) = true;
+    // If not enabled, then do not add CanInteractWith Condition or event handlers
+    if (!GVAR(enable)) exitWith {};
+
+    // Initialize classes as they spawn
+    ["ThingX", "init", FUNC(addSitActions), nil, nil, true] call CBA_fnc_addClassEventHandler;
+
+    // Initialize statically defined benches (also appear as world objects, no class EH thrown)
+    {
+        [_x] call FUNC(addSitActions);
+    } forEach [BENCHES];
 
     // Add interaction menu exception
     ["isNotSitting", {isNil {(_this select 0) getVariable QGVAR(isSitting)}}] call ACEFUNC(common,addCanInteractWithCondition);
@@ -17,13 +23,4 @@ DFUNC(onInitEvent) = {
     // Handle interruptions
     ["ace_unconscious", {_this call DFUNC(handleInterrupt)}] call CBA_fnc_addEventHandler;
     ["ace_captives_SetHandcuffed", {_this call DFUNC(handleInterrupt)}] call CBA_fnc_addEventHandler;
-};
-
-["ace_settingsInitialized", {
-    call FUNC(onInitEvent);
-}] call CBA_fnc_addEventHandler;
-
-["ace_settingChanged", {
-    params ["_name", "_value", "_force"];
-    call FUNC(onInitEvent);
 }] call CBA_fnc_addEventHandler;

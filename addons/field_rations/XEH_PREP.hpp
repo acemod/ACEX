@@ -1,0 +1,15 @@
+PREP(addStatusModifier);
+PREP(addWaterSourceInteractions);
+PREP(canRefillItem);
+PREP(checkWater);
+PREP(consumeItem);
+PREP(getActionOffset);
+PREP(getConsumableChildren);
+PREP(getRefillChildren);
+PREP(getRemainingWater);
+PREP(handleEffects);
+PREP(handleHUD);
+PREP(handleRespawn);
+PREP(refillItem);
+PREP(setRemainingWater);
+PREP(update);

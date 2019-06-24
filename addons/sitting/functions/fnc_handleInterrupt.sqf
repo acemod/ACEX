@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Jonpas
  * Handles interruptions of sitting, like killed or unconsciousness.
@@ -13,10 +14,9 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["_player"];
 
-if (!isNil {_player getVariable QGVAR(isSitting)}) then {
+if (!isNil {_player getVariable QGVAR(sittingStatus)}) then {
     _player call FUNC(stand);
 };

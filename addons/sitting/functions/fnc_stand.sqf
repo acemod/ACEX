@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Jonpas
  * Stands up the player.
@@ -9,15 +10,16 @@
  * None
  *
  * Example:
- * player call acex_sitting_fnc_stand;
+ * player call acex_sitting_fnc_stand
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["_player"];
+TRACE_1("stand",_player);
 
-(_player getVariable QGVAR(isSitting)) params ["_seat", "_actionID"];
+(_player getVariable QGVAR(sittingStatus)) params ["_seat", "_actionID", ["_seatPos", 0]];
+TRACE_3("sittingStatus",_seat,_actionID,_seatPos);
 
 // Remove scroll-wheel action
 _player removeAction _actionID;
@@ -32,7 +34,19 @@ private _animation = switch (currentWeapon _player) do {
 
 [_player, _animation, 2] call ACEFUNC(common,doAnimation);
 
-// Set variables to nil
-_player setVariable [QGVAR(isSitting), nil];
+// Set sitting status to nil
+_player setVariable [QGVAR(sittingStatus), nil];
+
+["ace_stoodUp", [_player, _seat, _seatPos]] call CBA_fnc_localEvent;
+
 if (isNull _seat) exitWith {};
-[objNull, _seat] call ACEFUNC(common,claim);
+
+// Allow sitting on this seat again
+private _seatsClaimed = _seat getVariable [QGVAR(seatsClaimed), []];
+_seatsClaimed set [_seatPos, false];
+_seat setVariable [QGVAR(seatsClaimed), _seatsClaimed, true];
+
+// Unclaim if no one else sitting on it
+if (_seatsClaimed find true == -1) then {
+    [objNull, _seat] call ACEFUNC(common,claim);
+};

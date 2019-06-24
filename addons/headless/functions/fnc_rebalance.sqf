@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Jonpas
  * Rebalance AI groups accross HCs.
@@ -9,11 +10,10 @@
  * None
  *
  * Example:
- * [false] call acex_headless_fnc_rebalance;
+ * [false] call acex_headless_fnc_rebalance
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["_force"];
 

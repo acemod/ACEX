@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Jonpas
  * Changes camera mode based on vehicle type the player is currently occupying.
@@ -13,7 +14,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["_cameraOn"];
 

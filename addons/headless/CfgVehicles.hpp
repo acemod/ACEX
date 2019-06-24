@@ -5,7 +5,7 @@ class CfgVehicles {
         category = "ACEX";
         displayName = CSTRING(Module);
         function = QFUNC(moduleInit);
-        scope = 2;
+        scope = 1;
         isGlobal = 1; // Global
         isTriggerActivated = 0;
         isDisposable = 0;

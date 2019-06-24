@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: Jonpas
  * Check if the player can stand up (is in sitting position).
@@ -9,13 +10,12 @@
  * Can Stand Up <BOOL>
  *
  * Example:
- * player call acex_sitting_fnc_canStand;
+ * player call acex_sitting_fnc_canStand
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["_player"];
 
 // Sitting
-!isNil {_player getVariable QGVAR(isSitting)}
+!isNil {_player getVariable QGVAR(sittingStatus)}

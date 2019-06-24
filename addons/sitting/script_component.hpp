@@ -15,3 +15,6 @@
 #endif
 
 #include "\z\acex\addons\main\script_macros.hpp"
+
+
+#define BENCHES "Land_Bench_01_F", "Land_Bench_02_F", "Land_Bench_03_F", "Land_Bench_04_F", "Land_Bench_05_F"
