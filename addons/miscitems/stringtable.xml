@@ -21,7 +21,7 @@
             <Korean>FM 라디오 [PROP]</Korean>
             <Chinesesimp>调频收音机 [PROP]</Chinesesimp>
             <Japanese>FMラジオ [PROP]</Japanese>
-            <Turkish>FM Radyo [PROP]</Turkish>
+            <Turkish>FM Radyo [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_ExtensionCord">
             <English>Extension Cord [PROP]</English>
@@ -37,7 +37,7 @@
             <Korean>연장선 [PROP]</Korean>
             <Chinesesimp>延长绳 [PROP]</Chinesesimp>
             <Japanese>延長コード [PROP]</Japanese>
-            <Turkish>Uzatma Kablosu [PROP]</Turkish>
+            <Turkish>Uzatma Kablosu [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_HandyCam">
             <English>Handheld Camera [PROP]</English>
@@ -53,7 +53,7 @@
             <Korean>휴대용 카메라 [PROP]</Korean>
             <Chinesesimp>手持式摄像机 [PROP]</Chinesesimp>
             <Japanese>ハンディカメラ [PROP]</Japanese>
-            <Turkish>El Kamerası [PROP]</Turkish>
+            <Turkish>El Kamerası [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Laptop">
             <English>Laptop (Closed) [PROP]</English>
@@ -69,7 +69,7 @@
             <Korean>노트북(닫힘) [PROP]</Korean>
             <Chinesesimp>笔记本电脑（合上） [PROP]</Chinesesimp>
             <Japanese>ラップトップ（閉） [PROP]</Japanese>
-            <Turkish>Laptop (Kapalı) [PROP]</Turkish>
+            <Turkish>Laptop (Kapalı) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_MobilePhone_Old">
             <English>Mobile Phone (Old) [PROP]</English>
@@ -85,7 +85,7 @@
             <Korean>휴대전화(낡음) [PROP]</Korean>
             <Chinesesimp>手机（旧） [PROP]</Chinesesimp>
             <Japanese>携帯電話（古） [PROP]</Japanese>
-            <Turkish>Mobil Telefon (Eski) [PROP]</Turkish>
+            <Turkish>Mobil Telefon (Eski) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_MobilePhone_Smart">
             <English>Mobile Phone (New) [PROP]</English>
@@ -101,7 +101,7 @@
             <Korean>휴대전화(새것) [PROP]</Korean>
             <Chinesesimp>手机（新） [PROP]</Chinesesimp>
             <Japanese>携帯電話（新） [PROP]</Japanese>
-            <Turkish>Mobil Telefon (Yeni) [PROP]</Turkish>
+            <Turkish>Mobil Telefon (Yeni) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_PortableLongRangeRadio">
             <English>Portable Long-range Radio [PROP]</English>
@@ -117,7 +117,7 @@
             <Korean>휴대용 장거리 라디오 [PROP]</Korean>
             <Chinesesimp>便携式远程无线电设备 [PROP]</Chinesesimp>
             <Japanese>携帯長距離無線 [PROP]</Japanese>
-            <Turkish>Taşınabilir Uzun Menzilli Telsiz [PROP]</Turkish>
+            <Turkish>Taşınabilir Uzun Menzilli Telsiz [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_SatellitePhone">
             <English>Satellite Phone [PROP]</English>
@@ -133,7 +133,7 @@
             <Korean>위성전화 [PROP]</Korean>
             <Chinesesimp>卫星电话 [PROP]</Chinesesimp>
             <Japanese>衛星電話 [PROP]</Japanese>
-            <Turkish>Uydu Telefonu [PROP]</Turkish>
+            <Turkish>Uydu Telefonu [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_SurvivalRadio">
             <English>Survival Radio [PROP]</English>
@@ -149,7 +149,7 @@
             <Korean>구명무전기 [PROP]</Korean>
             <Chinesesimp>救生电台 [PROP]</Chinesesimp>
             <Japanese>救難無線 [PROP]</Japanese>
-            <Turkish>Hayatta Kalma Telsizi [PROP]</Turkish>
+            <Turkish>Hayatta Kalma Telsizi [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_File1">
             <English>File (Documents) [PROP]</English>
@@ -165,7 +165,7 @@
             <Korean>파일(서류) [PROP]</Korean>
             <Chinesesimp>文件（文档） [PROP]</Chinesesimp>
             <Japanese>ファイル（書類） [PROP]</Japanese>
-            <Turkish>Eğe (Belgeler) [PROP]</Turkish>
+            <Turkish>Eğe (Belgeler) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_File2">
             <English>File (Research) [PROP]</English>
@@ -181,7 +181,7 @@
             <Korean>파일(연구) [PROP]</Korean>
             <Chinesesimp>文件（研究） [PROP]</Chinesesimp>
             <Japanese>ファイル（研究） [PROP]</Japanese>
-            <Turkish>Eğe (Araştırma) [PROP]</Turkish>
+            <Turkish>Eğe (Araştırma) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_FilePhotos">
             <English>File (Photos) [PROP]</English>
@@ -197,7 +197,7 @@
             <Korean>파일(사진) [PROP]</Korean>
             <Chinesesimp>文件（照片） [PROP]</Chinesesimp>
             <Japanese>ファイル（写真） [PROP]</Japanese>
-            <Turkish>Eğe (Fotolar) [PROP]</Turkish>
+            <Turkish>Eğe (Fotolar) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Map">
           <English>Sleeved map [PROP]</English>
@@ -213,7 +213,7 @@
           <Korean>접힌 지도 [PROP]</Korean>
           <Chinesesimp>有封套的地图 [PROP]</Chinesesimp>
           <Japanese>カバーつきマップ [PROP]</Japanese>
-          <Turkish>Manşonlu harita [PROP]</Turkish>
+          <Turkish>Manşonlu harita [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Photos_V1">
             <English>Photos 1 [PROP]</English>
@@ -229,7 +229,7 @@
             <Korean>사진 1 [PROP]</Korean>
             <Chinesesimp>照片 1 [PROP]</Chinesesimp>
             <Japanese>写真1 [PROP]</Japanese>
-            <Turkish>Fotolar 1 [PROP]</Turkish>
+            <Turkish>Fotolar 1 [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_BottlePlastic_V1">
             <English>Plastic Bottle [PROP]</English>
@@ -245,7 +245,7 @@
             <Korean>플라스틱 병 [PROP]</Korean>
             <Chinesesimp>塑料瓶 [PROP]</Chinesesimp>
             <Japanese>プラスチックボトル [PROP]</Japanese>
-            <Turkish>Plastik Şişe [PROP]</Turkish>
+            <Turkish>Plastik Şişe [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Can_Dented">
             <English>Can (Dented) [PROP]</English>
@@ -261,7 +261,7 @@
             <Korean>깡통(찌그러짐) [PROP]</Korean>
             <Chinesesimp>罐（凹瘪） [PROP]</Chinesesimp>
             <Japanese>缶（傷あり） [PROP]</Japanese>
-            <Turkish>Teneke Kutu (Yamulmuş) [PROP]</Turkish>
+            <Turkish>Teneke Kutu (Yamulmuş) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Can_Rusty">
             <English>Can (Rusty) [PROP]</English>
@@ -277,7 +277,7 @@
             <Korean>깡통(녹투성이) [PROP]</Korean>
             <Chinesesimp>罐（生锈） [PROP]</Chinesesimp>
             <Japanese>缶（さび） [PROP]</Japanese>
-            <Turkish>Teneke Kutu (Paslı) [PROP]</Turkish>
+            <Turkish>Teneke Kutu (Paslı) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_TacticalBacon">
             <English>Tactical Bacon [PROP]</English>
@@ -293,7 +293,7 @@
             <Korean>전술 베이컨 [PROP]</Korean>
             <Chinesesimp>战术培根 [PROP]</Chinesesimp>
             <Japanese>戦術的ベーコン [PROP]</Japanese>
-            <Turkish>Tactical Bacon [PROP]</Turkish>
+            <Turkish>Tactical Bacon [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Suitcase">
             <English>Suitcase [PROP]</English>
@@ -309,7 +309,7 @@
             <Korean>서류가방 [PROP]</Korean>
             <Chinesesimp>手提箱 [PROP]</Chinesesimp>
             <Japanese>スーツケース [PROP]</Japanese>
-            <Turkish>Evrak Çantası [PROP]</Turkish>
+            <Turkish>Evrak Çantası [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_PenBlack">
             <English>Pen (Black) [PROP]</English>
@@ -325,7 +325,7 @@
             <Korean>펜(흑색) [PROP]</Korean>
             <Chinesesimp>钢笔（黑色） [PROP]</Chinesesimp>
             <Japanese>ペン（黒） [PROP]</Japanese>
-            <Turkish>Dolma Kalem (Siyah) [PROP]</Turkish>
+            <Turkish>Dolma Kalem (Siyah) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_PenRed">
             <English>Pen (Red) [PROP]</English>
@@ -341,7 +341,7 @@
             <Korean>펜(적색) [PROP]</Korean>
             <Chinesesimp>钢笔（红色） [PROP]</Chinesesimp>
             <Japanese>ペン（赤） [PROP]</Japanese>
-            <Turkish>Dolma Kalem (Kırmızı) [PROP]</Turkish>
+            <Turkish>Dolma Kalem (Kırmızı) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_PencilBlue">
             <English>Pencil (Blue) [PROP]</English>
@@ -357,7 +357,7 @@
             <Korean>연필(청색) [PROP]</Korean>
             <Chinesesimp>铅笔（蓝色） [PROP]</Chinesesimp>
             <Japanese>鉛筆（青） [PROP]</Japanese>
-            <Turkish>Kurşun Kalem (Mavi) [PROP]</Turkish>
+            <Turkish>Kurşun Kalem (Mavi) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_PencilGreen">
             <English>Pencil (Green) [PROP]</English>
@@ -373,7 +373,7 @@
             <Korean>연필(녹색) [PROP]</Korean>
             <Chinesesimp>铅笔（绿色） [PROP]</Chinesesimp>
             <Japanese>鉛筆（緑） [PROP]</Japanese>
-            <Turkish>Kurşun Kalem (Yeşil) [PROP]</Turkish>
+            <Turkish>Kurşun Kalem (Yeşil) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_PencilRed">
             <English>Pencil (Red) [PROP]</English>
@@ -389,7 +389,7 @@
             <Korean>연필(적색) [PROP]</Korean>
             <Chinesesimp>铅笔（红色） [PROP]</Chinesesimp>
             <Japanese>鉛筆（赤） [PROP]</Japanese>
-            <Turkish>Kurşun Kalem (Kırmızı) [PROP]</Turkish>
+            <Turkish>Kurşun Kalem (Kırmızı) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_PencilYellow">
             <English>Pencil (Yellow) [PROP]</English>
@@ -405,7 +405,7 @@
             <Korean>연필(황색) [PROP]</Korean>
             <Chinesesimp>铅笔（黄色） [PROP]</Chinesesimp>
             <Japanese>鉛筆（黄） [PROP]</Japanese>
-            <Turkish>Kurşun Kalem (Sarı) [PROP]</Turkish>
+            <Turkish>Kurşun Kalem (Sarı) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_PensAndPencils">
             <English>Pens and Pencils [PROP]</English>
@@ -421,7 +421,7 @@
             <Korean>펜과 연필 [PROP]</Korean>
             <Chinesesimp>钢笔和铅笔 [PROP]</Chinesesimp>
             <Japanese>ペンと鉛筆 [PROP]</Japanese>
-            <Turkish>Dolma Kalemler ve Kurşun Kalemler [PROP]</Turkish>
+            <Turkish>Dolma Kalemler ve Kurşun Kalemler [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Axe">
             <English>Axe [PROP]</English>
@@ -437,7 +437,7 @@
             <Korean>도끼 [PROP]</Korean>
             <Chinesesimp>斧 [PROP]</Chinesesimp>
             <Japanese>斧 [PROP]</Japanese>
-            <Turkish>Balta [PROP]</Turkish>
+            <Turkish>Balta [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Axe_fire">
             <English>Axe (Firefighter) [PROP]</English>
@@ -453,7 +453,7 @@
             <Korean>도끼(소방수) [PROP]</Korean>
             <Chinesesimp>斧（消防人员） [PROP]</Chinesesimp>
             <Japanese>斧（消防士） [PROP]</Japanese>
-            <Turkish>Balta (Silahlı Çatışma) [PROP]</Turkish>
+            <Turkish>Balta (Silahlı Çatışma) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_DrillAku">
             <English>Accu-Drill [PROP]</English>
@@ -469,7 +469,7 @@
             <Korean>정밀드릴 [PROP]</Korean>
             <Chinesesimp>精钻 [PROP]</Chinesesimp>
             <Japanese>先端駆動ドリル [PROP]</Japanese>
-            <Turkish>Matkap [PROP]</Turkish>
+            <Turkish>Matkap [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_DustMask">
             <English>Dust Mask [PROP]</English>
@@ -485,7 +485,7 @@
             <Korean>방진마스크 [PROP]</Korean>
             <Chinesesimp>防尘面具 [PROP]</Chinesesimp>
             <Japanese>防塵マスク [PROP]</Japanese>
-            <Turkish>Toz Maskesi [PROP]</Turkish>
+            <Turkish>Toz Maskesi [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_File_Tool">
             <English>File [PROP]</English>
@@ -501,7 +501,7 @@
             <Korean>파일 [PROP]</Korean>
             <Chinesesimp>文件 [PROP]</Chinesesimp>
             <Japanese>ファイル [PROP]</Japanese>
-            <Turkish>Eğe [PROP]</Turkish>
+            <Turkish>Eğe [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Gloves">
             <English>Gloves [PROP]</English>
@@ -517,7 +517,7 @@
             <Korean>장갑 [PROP]</Korean>
             <Chinesesimp>手套 [PROP]</Chinesesimp>
             <Japanese>手袋 [PROP]</Japanese>
-            <Turkish>Eldiven [PROP]</Turkish>
+            <Turkish>Eldiven [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Grinder">
             <English>Grinder [PROP]</English>
@@ -533,7 +533,7 @@
             <Korean>그라인더 [PROP]</Korean>
             <Chinesesimp>磨床 [PROP]</Chinesesimp>
             <Japanese>グラインダー [PROP]</Japanese>
-            <Turkish>Taşlama Mak. [PROP]</Turkish>
+            <Turkish>Taşlama Mak. [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Hammer">
             <English>Hammer [PROP]</English>
@@ -549,7 +549,7 @@
             <Korean>망치 [PROP]</Korean>
             <Chinesesimp>锤子 [PROP]</Chinesesimp>
             <Japanese>ハンマー [PROP]</Japanese>
-            <Turkish>Çekiç [PROP]</Turkish>
+            <Turkish>Çekiç [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Meter3m">
             <English>Tape Measure [PROP]</English>
@@ -565,7 +565,7 @@
             <Korean>줄자 [PROP]</Korean>
             <Chinesesimp>卷尺 [PROP]</Chinesesimp>
             <Japanese>メジャー [PROP]</Japanese>
-            <Turkish>Şerit Metre [PROP]</Turkish>
+            <Turkish>Şerit Metre [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_MultiMeter">
             <English>Multi-meter [PROP]</English>
@@ -581,7 +581,7 @@
             <Korean>멀티미터 [PROP]</Korean>
             <Chinesesimp>万用表 [PROP]</Chinesesimp>
             <Japanese>マルチメーター [PROP]</Japanese>
-            <Turkish>Avometre [PROP]</Turkish>
+            <Turkish>Avometre [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Saw">
             <English>Saw [PROP]</English>
@@ -597,7 +597,7 @@
             <Korean>톱 [PROP]</Korean>
             <Chinesesimp>锯 [PROP]</Chinesesimp>
             <Japanese>のこぎり [PROP]</Japanese>
-            <Turkish>Testere [PROP]</Turkish>
+            <Turkish>Testere [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Screwdriver_V1">
             <English>Screwdriver (Slotted) [PROP]</English>
@@ -613,7 +613,7 @@
             <Korean>드라이버(슬롯) [PROP]</Korean>
             <Chinesesimp>螺丝刀（一字） [PROP]</Chinesesimp>
             <Japanese>ドライバー（マイナス） [PROP]</Japanese>
-            <Turkish>Tornavida (Oluklu) [PROP]</Turkish>
+            <Turkish>Tornavida (Oluklu) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Screwdriver_V2">
             <English>Screwdriver (Phillips) [PROP]</English>
@@ -629,7 +629,7 @@
             <Korean>드라이버(Phillips) [PROP]</Korean>
             <Chinesesimp>螺丝刀（飞利浦） [PROP]</Chinesesimp>
             <Japanese>ドライバー（プラス） [PROP]</Japanese>
-            <Turkish>Tornavida (Phillips) [PROP]</Turkish>
+            <Turkish>Tornavida (Phillips) [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Wrench">
             <English>Wrench [PROP]</English>
@@ -645,7 +645,7 @@
             <Korean>렌치 [PROP]</Korean>
             <Chinesesimp>扳手 [PROP]</Chinesesimp>
             <Japanese>レンチ [PROP]</Japanese>
-            <Turkish>İngiliz Anahtarı [PROP]</Turkish>
+            <Turkish>İngiliz Anahtarı [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Money">
             <English>Pile of Money [PROP]</English>
@@ -661,7 +661,7 @@
             <Korean>돈다발 [PROP]</Korean>
             <Chinesesimp>钱堆 [PROP]</Chinesesimp>
             <Japanese>大量のお金 [PROP]</Japanese>
-            <Turkish>Para Yığını [PROP]</Turkish>
+            <Turkish>Para Yığını [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_HeatPack">
             <English>Heatpack [PROP]</English>
@@ -677,7 +677,7 @@
             <Korean>발열팩 [PROP]</Korean>
             <Chinesesimp>热敷袋 [PROP]</Chinesesimp>
             <Japanese>カイロ [PROP]</Japanese>
-            <Turkish>Isı paketi [PROP]</Turkish>
+            <Turkish>Isı paketi [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_VitaminBottle">
             <German>Vitaminfläschchen [DEKOR]</German>
@@ -693,7 +693,7 @@
             <Korean>비타민병 [PROP]</Korean>
             <Chinesesimp>维生素瓶 [PROP]</Chinesesimp>
             <Japanese>ビタミンボトル [PROP]</Japanese>
-            <Turkish>Vitamin şişesi [PROP]</Turkish>
+            <Turkish>Vitamin şişesi [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_WaterPurificationTablets">
             <English>Water purification tablets [PROP]</English>
@@ -709,7 +709,7 @@
             <Korean>정수용정제 [PROP]</Korean>
             <Chinesesimp>水净化药片 [PROP]</Chinesesimp>
             <Japanese>浄水剤 [PROP]</Japanese>
-            <Turkish>Su arıtma tabletleri [PROP]</Turkish>
+            <Turkish>Su arıtma tabletleri [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_ButaneCanister">
             <English>Butane canister [PROP]</English>
@@ -725,7 +725,7 @@
             <Korean>부탄가스통 [PROP]</Korean>
             <Chinesesimp>丁烷罐 [PROP]</Chinesesimp>
             <Japanese>ブタン缶 [PROP]</Japanese>
-            <Turkish>Bütan kutusu [PROP]</Turkish>
+            <Turkish>Bütan kutusu [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_ButaneTorch">
             <English>Butane torch [PROP]</English>
@@ -741,7 +741,7 @@
             <Korean>부탄가스 토치 [PROP]</Korean>
             <Chinesesimp>丁烷喷灯 [PROP]</Chinesesimp>
             <Japanese>ブタントーチ [PROP]</Japanese>
-            <Turkish>Pürmüz [PROP]</Turkish>
+            <Turkish>Pürmüz [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_CanOpener">
             <English>Can opener [PROP]</English>
@@ -757,7 +757,7 @@
             <Korean>병따개 [PROP]</Korean>
             <Chinesesimp>开罐器 [PROP]</Chinesesimp>
             <Japanese>缶切り [PROP]</Japanese>
-            <Turkish>Konserve açacağı [PROP]</Turkish>
+            <Turkish>Konserve açacağı [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_FireExtinguisher">
             <English>Fire extinguisher [PROP]</English>
@@ -773,7 +773,7 @@
             <Korean>소화기 [PROP]</Korean>
             <Chinesesimp>灭火器 [PROP]</Chinesesimp>
             <Japanese>消火器 [PROP]</Japanese>
-            <Turkish>Yangın söndürücü [PROP]</Turkish>
+            <Turkish>Yangın söndürücü [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_GasCanister">
             <English>Gas canister [PROP]</English>
@@ -789,7 +789,7 @@
             <Korean>가스통 [PROP]</Korean>
             <Chinesesimp>储气罐 [PROP]</Chinesesimp>
             <Japanese>ガスボンベ [PROP]</Japanese>
-            <Turkish>Gaz Tüpü [PROP]</Turkish>
+            <Turkish>Gaz Tüpü [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_GasCooker">
             <English>Gas cooker [PROP]</English>
@@ -805,7 +805,7 @@
             <Korean>가스레인지 [PROP]</Korean>
             <Chinesesimp>煤气炉 [PROP]</Chinesesimp>
             <Japanese>ガスオーブン [PROP]</Japanese>
-            <Turkish>Piknik Tüpü [PROP]</Turkish>
+            <Turkish>Piknik Tüpü [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_Matches">
             <English>Box of matches [PROP]</English>
@@ -821,7 +821,7 @@
             <Korean>성냥갑 [PROP]</Korean>
             <Chinesesimp>火柴盒 [PROP]</Chinesesimp>
             <Japanese>マッチ箱 [PROP]</Japanese>
-            <Turkish>Kibrit kutusu [PROP]</Turkish>
+            <Turkish>Kibrit kutusu [DEKOR]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_MetalWire">
             <English>Metal wire [PROP]</English>
@@ -837,7 +837,7 @@
             <Korean>금속 와이어 [PROP]</Korean>
             <Chinesesimp>金属线 [PROP]</Chinesesimp>
             <Japanese>金属線 [PROP]</Japanese>
-            <Turkish>Metal tel [PROP]</Turkish>
+            <Turkish>Metal tel [DEKOR]</Turkish>
         </Key>
     </Package>
 </Project>
