@@ -7,7 +7,7 @@ class CfgVehicles {
     class ACEX_Item_FMRadio_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_FMradio_F0";
+        displayName = CSTRING(FMRadio);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -21,7 +21,7 @@ class CfgVehicles {
     class ACEX_Item_ExtensionCord_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_ExtensionCord_F0";
+        displayName = CSTRING(ExtensionCord);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -35,7 +35,7 @@ class CfgVehicles {
     class ACEX_Item_HandyCam_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_HandyCam_F0";
+        displayName = CSTRING(HandyCam);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -49,7 +49,7 @@ class CfgVehicles {
     class ACEX_Item_Laptop_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Laptop_F0";
+        displayName = CSTRING(Laptop);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -63,7 +63,7 @@ class CfgVehicles {
     class ACEX_Item_MobilePhone_Old_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_MobilePhone_old_F0";
+        displayName = CSTRING(MobilePhone_Old);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -77,7 +77,7 @@ class CfgVehicles {
     class ACEX_Item_MobilePhone_Smart_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_MobilePhone_smart_F0";
+        displayName = CSTRING(MobilePhone_Smart);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -91,7 +91,7 @@ class CfgVehicles {
     class ACEX_Item_PortableLongRangeRadio_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_PortableLongRangeRadio_F0";
+        displayName = CSTRING(PortableLongRangeRadio);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -105,7 +105,7 @@ class CfgVehicles {
     class ACEX_Item_SatellitePhone_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_SatellitePhone_F0";
+        displayName = CSTRING(SatellitePhone);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -119,7 +119,7 @@ class CfgVehicles {
     class ACEX_Item_SurvivalRadio_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_SurvivalRadio_F0";
+        displayName = CSTRING(SurvivalRadio);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -133,7 +133,7 @@ class CfgVehicles {
     class ACEX_Item_File1_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_File1_F0";
+        displayName = CSTRING(File1);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -147,7 +147,7 @@ class CfgVehicles {
     class ACEX_Item_File2_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_CFGVEHICLES_LAND_FILE_RESEARCH_F0";
+        displayName = CSTRING(File2);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -161,7 +161,7 @@ class CfgVehicles {
     class ACEX_Item_FilePhotos_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_FilePhotos_F0";
+        displayName = CSTRING(FilePhotos);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -175,7 +175,7 @@ class CfgVehicles {
     class ACEX_Item_Map_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_sleeved_map_0";
+        displayName = CSTRING(Map);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -189,7 +189,7 @@ class CfgVehicles {
     class ACEX_Item_Photos_V1_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Photos_V1_F0";
+        displayName = CSTRING(Photos_V1);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -203,7 +203,7 @@ class CfgVehicles {
     class ACEX_Item_BottlePlastic_V1_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_BottlePlastic_V1_F0";
+        displayName = CSTRING(BottlePlastic_V1);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -217,7 +217,7 @@ class CfgVehicles {
     class ACEX_Item_Can_Dented_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Can_Dented_F0";
+        displayName = CSTRING(Can_Dented);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -231,7 +231,7 @@ class CfgVehicles {
     class ACEX_Item_Can_Rusty_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Can_Rusty_F0";
+        displayName = CSTRING(Can_Rusty);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -245,7 +245,7 @@ class CfgVehicles {
     class ACEX_Item_TacticalBacon_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_TacticalBacon_F0";
+        displayName = CSTRING(TacticalBacon);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -259,7 +259,7 @@ class CfgVehicles {
     class ACEX_Item_Suitcase_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Suitcase_F0";
+        displayName = CSTRING(Suitcase);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -273,7 +273,7 @@ class CfgVehicles {
     class ACEX_Item_PenBlack_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_PenBlack_F0";
+        displayName = CSTRING(PenBlack);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -287,7 +287,7 @@ class CfgVehicles {
     class ACEX_Item_PenRed_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_PenRed_F0";
+        displayName = CSTRING(PenRed);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -301,7 +301,7 @@ class CfgVehicles {
     class ACEX_Item_PencilBlue_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_PencilBlue_F0";
+        displayName = CSTRING(PencilBlue);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -315,7 +315,7 @@ class CfgVehicles {
     class ACEX_Item_PencilGreen_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_PencilGreen_F0";
+        displayName = CSTRING(PencilGreen);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -329,7 +329,7 @@ class CfgVehicles {
     class ACEX_Item_PencilRed_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_PencilRed_F0";
+        displayName = CSTRING(PencilRed);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -343,7 +343,7 @@ class CfgVehicles {
     class ACEX_Item_PencilYellow_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_PencilYellow_F0";
+        displayName = CSTRING(PencilYellow);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -357,7 +357,7 @@ class CfgVehicles {
     class ACEX_Item_PensAndPencils_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_PensAndPencils_F0";
+        displayName = CSTRING(PensAndPencils);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -371,7 +371,7 @@ class CfgVehicles {
     class ACEX_Item_Axe_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Axe_F0";
+        displayName = CSTRING(Axe);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -385,7 +385,7 @@ class CfgVehicles {
     class ACEX_Item_Axe_fire_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Axe_fire_F0";
+        displayName = CSTRING(Axe_fire);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -399,7 +399,7 @@ class CfgVehicles {
     class ACEX_Item_DrillAku_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_DrillAku_F0";
+        displayName = CSTRING(DrillAku);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -413,7 +413,7 @@ class CfgVehicles {
     class ACEX_Item_DustMask_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_DustMask_F0";
+        displayName = CSTRING(DustMask);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -427,7 +427,7 @@ class CfgVehicles {
     class ACEX_Item_File_Tool_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_File_F0";
+        displayName = CSTRING(File_Tool);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -441,7 +441,7 @@ class CfgVehicles {
     class ACEX_Item_Gloves_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Gloves_F0";
+        displayName = CSTRING(Gloves);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -455,7 +455,7 @@ class CfgVehicles {
     class ACEX_Item_Grinder_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Grinder_F0";
+        displayName = CSTRING(Grinder);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -469,7 +469,7 @@ class CfgVehicles {
     class ACEX_Item_Hammer_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Hammer_F0";
+        displayName = CSTRING(Hammer);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -483,7 +483,7 @@ class CfgVehicles {
     class ACEX_Item_Meter3m_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Meter3m_F0";
+        displayName = CSTRING(Meter3m);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -497,7 +497,7 @@ class CfgVehicles {
     class ACEX_Item_MultiMeter_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_MultiMeter_F0";
+        displayName = CSTRING(MultiMeter);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -511,7 +511,7 @@ class CfgVehicles {
     class ACEX_Item_Saw_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Saw_F0";
+        displayName = CSTRING(Saw);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -525,7 +525,7 @@ class CfgVehicles {
     class ACEX_Item_Screwdriver_V1_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Screwdriver_V1_F0";
+        displayName = CSTRING(Screwdriver_V1);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -539,7 +539,7 @@ class CfgVehicles {
     class ACEX_Item_Screwdriver_V2_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Screwdriver_V2_F0";
+        displayName = CSTRING(Screwdriver_V2);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -553,7 +553,7 @@ class CfgVehicles {
     class ACEX_Item_Wrench_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Wrench_F0";
+        displayName = CSTRING(Wrench);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -567,7 +567,7 @@ class CfgVehicles {
     class ACEX_Item_Money_Item: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_cfgVehicles_Land_Money_F0";
+        displayName = CSTRING(Money);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -581,7 +581,7 @@ class CfgVehicles {
     class ACEX_Item_HeatPack: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_heatpack";
+        displayName = CSTRING(HeatPack);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -595,7 +595,7 @@ class CfgVehicles {
     class ACEX_Item_VitaminBottle: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_vitamin_bottle";
+        displayName = CSTRING(VitaminBottle);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -609,7 +609,7 @@ class CfgVehicles {
     class ACEX_Item_WaterPurificationTablets: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_water_purification_tablets";
+        displayName = CSTRING(WaterPurificationTablets);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -623,7 +623,7 @@ class CfgVehicles {
     class ACEX_Item_ButaneCanister: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_butane_canister";
+        displayName = CSTRING(ButaneCanister);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -637,7 +637,7 @@ class CfgVehicles {
     class ACEX_Item_ButaneTorch: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_butane_torch";
+        displayName = CSTRING(ButaneTorch);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -651,7 +651,7 @@ class CfgVehicles {
     class ACEX_Item_CanOpener: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_can_opener";
+        displayName = CSTRING(CanOpener);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -665,7 +665,7 @@ class CfgVehicles {
     class ACEX_Item_FireExtinguisher: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_fire_extinguisher";
+        displayName = CSTRING(FireExtinguisher);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -679,7 +679,7 @@ class CfgVehicles {
     class ACEX_Item_GasCanister: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_gas_canister";
+        displayName = CSTRING(GasCanister);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -693,7 +693,7 @@ class CfgVehicles {
     class ACEX_Item_GasCooker: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_gas_cooker";
+        displayName = CSTRING(GasCooker);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -707,7 +707,7 @@ class CfgVehicles {
     class ACEX_Item_Matches: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_box_of_matches";
+        displayName = CSTRING(Matches);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
@@ -721,7 +721,7 @@ class CfgVehicles {
     class ACEX_Item_MetalWire: ACEX_MiscItem_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_A3_metal_wire";
+        displayName = CSTRING(MetalWire);
         author = ACECSTRING(common,ACETeam);
         vehicleClass = "ACE_Misc_Items";
         class TransportItems {
