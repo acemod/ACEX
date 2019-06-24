@@ -10,12 +10,12 @@
         <Key ID="STR_ACEX_MiscItems_FMRadio">
             <English>FM Radio [PROP]</English>
             <Chinese>FM 收音機 [PROP]</Chinese>
-            <French>Radio FM [PROP]</French>
-            <Spanish>Radio FM [PROP]</Spanish>
+            <French>Radio FM [DÉCOR]</French>
+            <Spanish>Radio FM [ORNATO]</Spanish>
             <Italian>Radio FM [PROP]</Italian>
             <Polish>Krótkofalówka [PROP]</Polish>
             <Russian>Радиоприемник [PROP]</Russian>
-            <German>UKW-Radio [PROP]</German>
+            <German>UKW-Radio [DEKOR]</German>
             <Czech>FM rádio [PROP]</Czech>
             <Portuguese>Rádio FM [PROP]</Portuguese>
             <Korean>FM 라디오 [PROP]</Korean>
@@ -26,12 +26,12 @@
         <Key ID="STR_ACEX_MiscItems_ExtensionCord">
             <English>Extension Cord [PROP]</English>
             <Chinese>延長線 [PROP]</Chinese>
-            <French>Rallonge [PROP]</French>
-            <Spanish>Alargador [PROP]</Spanish>
+            <French>Rallonge [DÉCOR]</French>
+            <Spanish>Alargador [ORNATO]</Spanish>
             <Italian>Cavo di estensione [PROP]</Italian>
             <Polish>Przedłużacz [PROP]</Polish>
             <Russian>Удлинитель [PROP]</Russian>
-            <German>Verlängerungskabel [PROP]</German>
+            <German>Verlängerungskabel [DEKOR]</German>
             <Czech>Prodlužovací kabel [PROP]</Czech>
             <Portuguese>Extensão elétrica [PROP]</Portuguese>
             <Korean>연장선 [PROP]</Korean>
@@ -42,12 +42,12 @@
         <Key ID="STR_ACEX_MiscItems_HandyCam">
             <English>Handheld Camera [PROP]</English>
             <Chinese>手持相機 [PROP]</Chinese>
-            <French>Caméra à l'épaule [PROP]</French>
-            <Spanish>Cámara de mano [PROP]</Spanish>
+            <French>Caméra à l'épaule [DÉCOR]</French>
+            <Spanish>Cámara de mano [ORNATO]</Spanish>
             <Italian>Telecamera portatile [PROP]</Italian>
             <Polish>Kamera ręczna [PROP]</Polish>
             <Russian>Переносная видеокамера [PROP]</Russian>
-            <German>Handkamera [PROP]</German>
+            <German>Handkamera [DEKOR]</German>
             <Czech>Ruční fotoaparát [PROP]</Czech>
             <Portuguese>Câmera portátil [PROP]</Portuguese>
             <Korean>휴대용 카메라 [PROP]</Korean>
@@ -58,12 +58,12 @@
         <Key ID="STR_ACEX_MiscItems_Laptop">
             <English>Laptop (Closed) [PROP]</English>
             <Chinese>筆記型電腦（關） [PROP]</Chinese>
-            <French>Ordinateur portable (fermé) [PROP]</French>
-            <Spanish>Portátil (cerrado) [PROP]</Spanish>
+            <French>Ordinateur portable (fermé) [DÉCOR]</French>
+            <Spanish>Portátil (cerrado) [ORNATO]</Spanish>
             <Italian>Laptop (chiuso) [PROP]</Italian>
             <Polish>Laptop (zamknięty) [PROP]</Polish>
             <Russian>Ноутбук (закрытый) [PROP]</Russian>
-            <German>Laptop (geschlossen) [PROP]</German>
+            <German>Laptop (geschlossen) [DEKOR]</German>
             <Czech>Laptop (zavřený) [PROP]</Czech>
             <Portuguese>Laptop (fechado) [PROP]</Portuguese>
             <Korean>노트북(닫힘) [PROP]</Korean>
@@ -74,12 +74,12 @@
         <Key ID="STR_ACEX_MiscItems_MobilePhone_Old">
             <English>Mobile Phone (Old) [PROP]</English>
             <Chinese>手機（舊） [PROP]</Chinese>
-            <French>Téléphone portable (vieux) [PROP]</French>
-            <Spanish>Teléfono móvil (viejo) [PROP]</Spanish>
+            <French>Téléphone portable (vieux) [DÉCOR]</French>
+            <Spanish>Teléfono móvil (viejo) [ORNATO]</Spanish>
             <Italian>Telefono cellulare (obsoleto) [PROP]</Italian>
             <Polish>Telefon komórkowy (stary) [PROP]</Polish>
             <Russian>Мобильный телефон (старый) [PROP]</Russian>
-            <German>Handy (alt) [PROP]</German>
+            <German>Handy (alt) [DEKOR]</German>
             <Czech>Mobilní telefon (starý) [PROP]</Czech>
             <Portuguese>Telefone celular (antigo) [PROP]</Portuguese>
             <Korean>휴대전화(낡음) [PROP]</Korean>
@@ -90,12 +90,12 @@
         <Key ID="STR_ACEX_MiscItems_MobilePhone_Smart">
             <English>Mobile Phone (New) [PROP]</English>
             <Chinese>手機（新） [PROP]</Chinese>
-            <French>Téléphone portable (récent) [PROP]</French>
-            <Spanish>Teléfono móvil (nuevo) [PROP]</Spanish>
+            <French>Téléphone portable (récent) [DÉCOR]</French>
+            <Spanish>Teléfono móvil (nuevo) [ORNATO]</Spanish>
             <Italian>Telefono cellulare (nuovo) [PROP]</Italian>
             <Polish>Telefon komórkowy (nowy) [PROP]</Polish>
             <Russian>Мобильный телефон (новый) [PROP]</Russian>
-            <German>Handy (neu) [PROP]</German>
+            <German>Handy (neu) [DEKOR]</German>
             <Czech>Mobilní telefon (nový) [PROP]</Czech>
             <Portuguese>Telefone celular (novo) [PROP]</Portuguese>
             <Korean>휴대전화(새것) [PROP]</Korean>
@@ -106,12 +106,12 @@
         <Key ID="STR_ACEX_MiscItems_PortableLongRangeRadio">
             <English>Portable Long-range Radio [PROP]</English>
             <Chinese>可攜式長距無線電 [PROP]</Chinese>
-            <French>Radio portable longue portée [PROP]</French>
-            <Spanish>Radio de largo alcance portátil [PROP]</Spanish>
+            <French>Radio portable longue portée [DÉCOR]</French>
+            <Spanish>Radio de largo alcance portátil [ORNATO]</Spanish>
             <Italian>Radio portatile a lungo raggio [PROP]</Italian>
             <Polish>Przenośne radio dalekiego zasięgu [PROP]</Polish>
             <Russian>Портативная радиостанция [PROP]</Russian>
-            <German>Tragbares Langwellenradio [PROP]</German>
+            <German>Tragbares Langwellenradio [DEKOR]</German>
             <Czech>Přenosné rádio s dlouhým dosahem [PROP]</Czech>
             <Portuguese>Rádio portátil de longo alcance [PROP]</Portuguese>
             <Korean>휴대용 장거리 라디오 [PROP]</Korean>
@@ -122,12 +122,12 @@
         <Key ID="STR_ACEX_MiscItems_SatellitePhone">
             <English>Satellite Phone [PROP]</English>
             <Chinese>衛星電話 [PROP]</Chinese>
-            <French>Téléphone satellite [PROP]</French>
-            <Spanish>Teléfono por satélite [PROP]</Spanish>
+            <French>Téléphone satellite [DÉCOR]</French>
+            <Spanish>Teléfono por satélite [ORNATO]</Spanish>
             <Italian>Telefono satellitare [PROP]</Italian>
             <Polish>Telefon satelitarny [PROP]</Polish>
             <Russian>Спутниковый телефон [PROP]</Russian>
-            <German>Satellitentelefon [PROP]</German>
+            <German>Satellitentelefon [DEKOR]</German>
             <Czech>Satelitní telefon [PROP]</Czech>
             <Portuguese>Telefone por satélite [PROP]</Portuguese>
             <Korean>위성전화 [PROP]</Korean>
@@ -138,12 +138,12 @@
         <Key ID="STR_ACEX_MiscItems_SurvivalRadio">
             <English>Survival Radio [PROP]</English>
             <Chinese>求生無線電 [PROP]</Chinese>
-            <French>Radio de survie [PROP]</French>
-            <Spanish>Radio de supervivencia [PROP]</Spanish>
+            <French>Radio de survie [DÉCOR]</French>
+            <Spanish>Radio de supervivencia [ORNATO]</Spanish>
             <Italian>Radio di sopravvivenza [PROP]</Italian>
             <Polish>Krótkofalówka [PROP]</Polish>
             <Russian>Аварийная радиостанция [PROP]</Russian>
-            <German>Notfallfunkgerät [PROP]</German>
+            <German>Notfallfunkgerät [DEKOR]</German>
             <Czech>Rádio pro přežití [PROP]</Czech>
             <Portuguese>Rádio de Sobrevivência [PROP]</Portuguese>
             <Korean>구명무전기 [PROP]</Korean>
@@ -154,12 +154,12 @@
         <Key ID="STR_ACEX_MiscItems_File1">
             <English>File (Documents) [PROP]</English>
             <Chinese>檔案（文件） [PROP]</Chinese>
-            <French>Fichier (documents) [PROP]</French>
-            <Spanish>Archivo (documentos) [PROP]</Spanish>
+            <French>Fichier (documents) [DÉCOR]</French>
+            <Spanish>Archivo (documentos) [ORNATO]</Spanish>
             <Italian>Dossier (documenti) [PROP]</Italian>
             <Polish>Plik (dokumenty) [PROP]</Polish>
             <Russian>Папка (документы) [PROP]</Russian>
-            <German>Akte (Dokumente) [PROP]</German>
+            <German>Akte (Dokumente) [DEKOR]</German>
             <Czech>Složka (dokumenty) [PROP]</Czech>
             <Portuguese>Arquivo (documentos) [PROP]</Portuguese>
             <Korean>파일(서류) [PROP]</Korean>
@@ -170,12 +170,12 @@
         <Key ID="STR_ACEX_MiscItems_File2">
             <English>File (Research) [PROP]</English>
             <Chinese>檔案（研究） [PROP]</Chinese>
-            <French>Fichier (recherche) [PROP]</French>
-            <Spanish>Archivo (investigación) [PROP]</Spanish>
+            <French>Fichier (recherche) [DÉCOR]</French>
+            <Spanish>Archivo (investigación) [ORNATO]</Spanish>
             <Italian>File (ricerca) [PROP]</Italian>
             <Polish>Plik (badania) [PROP]</Polish>
             <Russian>Папка (исследования) [PROP]</Russian>
-            <German>Akte (Forschung) [PROP]</German>
+            <German>Akte (Forschung) [DEKOR]</German>
             <Czech>Soubor (výzkum) [PROP]</Czech>
             <Portuguese>Arquivo (pesquisa) [PROP]</Portuguese>
             <Korean>파일(연구) [PROP]</Korean>
@@ -186,12 +186,12 @@
         <Key ID="STR_ACEX_MiscItems_FilePhotos">
             <English>File (Photos) [PROP]</English>
             <Chinese>檔案（相片） [PROP]</Chinese>
-            <French>Fichier (photos) [PROP]</French>
-            <Spanish>Archivo (fotos) [PROP]</Spanish>
+            <French>Fichier (photos) [DÉCOR]</French>
+            <Spanish>Archivo (fotos) [ORNATO]</Spanish>
             <Italian>Dossier (foto) [PROP]</Italian>
             <Polish>Plik (zdjęcia) [PROP]</Polish>
             <Russian>Папка (фотографии) [PROP]</Russian>
-            <German>Akte (Fotos) [PROP]</German>
+            <German>Akte (Fotos) [DEKOR]</German>
             <Czech>Složka (fotografie) [PROP]</Czech>
             <Portuguese>Arquivo (fotos) [PROP]</Portuguese>
             <Korean>파일(사진) [PROP]</Korean>
@@ -202,12 +202,12 @@
         <Key ID="STR_ACEX_MiscItems_Map">
           <English>Sleeved map [PROP]</English>
           <Chinese>連袖地圖 [PROP]</Chinese>
-          <French>Carte protégée [PROP]</French>
-          <Spanish>Mapa enfundado [PROP]</Spanish>
+          <French>Carte protégée [DÉCOR]</French>
+          <Spanish>Mapa enfundado [ORNATO]</Spanish>
           <Italian>Mappa con custodia [PROP]</Italian>
           <Polish>Mapa z osłoną [PROP]</Polish>
           <Russian>Карта в обложке [PROP]</Russian>
-          <German>Karte in Hülle [PROP]</German>
+          <German>Karte in Hülle [DEKOR]</German>
           <Czech>Mapa v pouzdře [PROP]</Czech>
           <Portuguese>Mapa em cilindro [PROP]</Portuguese>
           <Korean>접힌 지도 [PROP]</Korean>
@@ -218,12 +218,12 @@
         <Key ID="STR_ACEX_MiscItems_Photos_V1">
             <English>Photos 1 [PROP]</English>
             <Chinese>相片 1 [PROP]</Chinese>
-            <French>Photos 1 [PROP]</French>
-            <Spanish>Fotos 1 [PROP]</Spanish>
+            <French>Photos 1 [DÉCOR]</French>
+            <Spanish>Fotos 1 [ORNATO]</Spanish>
             <Italian>Foto 1 [PROP]</Italian>
             <Polish>Zdjęcia 1 [PROP]</Polish>
             <Russian>Фотографии 1 [PROP]</Russian>
-            <German>Fotos 1 [PROP]</German>
+            <German>Fotos 1 [DEKOR]</German>
             <Czech>Fotografie 1 [PROP]</Czech>
             <Portuguese>Fotos 1 [PROP]</Portuguese>
             <Korean>사진 1 [PROP]</Korean>
@@ -234,12 +234,12 @@
         <Key ID="STR_ACEX_MiscItems_BottlePlastic_V1">
             <English>Plastic Bottle [PROP]</English>
             <Chinese>塑膠瓶 [PROP]</Chinese>
-            <French>Bouteille plastique [PROP]</French>
-            <Spanish>Botella de plástico [PROP]</Spanish>
+            <French>Bouteille plastique [DÉCOR]</French>
+            <Spanish>Botella de plástico [ORNATO]</Spanish>
             <Italian>Bottiglia di plastica [PROP]</Italian>
             <Polish>Plastikowa butelka [PROP]</Polish>
             <Russian>Пластиковая бутылка [PROP]</Russian>
-            <German>Plastikflasche [PROP]</German>
+            <German>Plastikflasche [DEKOR]</German>
             <Czech>Plastová lahev [PROP]</Czech>
             <Portuguese>Garrafa de plástico [PROP]</Portuguese>
             <Korean>플라스틱 병 [PROP]</Korean>
@@ -250,12 +250,12 @@
         <Key ID="STR_ACEX_MiscItems_Can_Dented">
             <English>Can (Dented) [PROP]</English>
             <Chinese>金屬罐（凹陷） [PROP]</Chinese>
-            <French>Bidon (cabossé) [PROP]</French>
-            <Spanish>Lata (dentada) [PROP]</Spanish>
+            <French>Bidon (cabossé) [DÉCOR]</French>
+            <Spanish>Lata (dentada) [ORNATO]</Spanish>
             <Italian>Lattina (ammaccata) [PROP]</Italian>
             <Polish>Puszka (wgnieciona) [PROP]</Polish>
             <Russian>Жестяная банка (мятая) [PROP]</Russian>
-            <German>Dose (verbeult) [PROP]</German>
+            <German>Dose (verbeult) [DEKOR]</German>
             <Czech>Plechovka (promáčknutá) [PROP]</Czech>
             <Portuguese>Lata (amassada) [PROP]</Portuguese>
             <Korean>깡통(찌그러짐) [PROP]</Korean>
@@ -266,12 +266,12 @@
         <Key ID="STR_ACEX_MiscItems_Can_Rusty">
             <English>Can (Rusty) [PROP]</English>
             <Chinese>金屬罐（生鏽） [PROP]</Chinese>
-            <French>Bidon (rouillé) [PROP]</French>
-            <Spanish>Lata (oxidada) [PROP]</Spanish>
+            <French>Bidon (rouillé) [DÉCOR]</French>
+            <Spanish>Lata (oxidada) [ORNATO]</Spanish>
             <Italian>Lattina (arrugginita) [PROP]</Italian>
             <Polish>Puszka (zardzewiała) [PROP]</Polish>
             <Russian>Банка (ржавая) [PROP]</Russian>
-            <German>Dose (rostig) [PROP]</German>
+            <German>Dose (rostig) [DEKOR]</German>
             <Czech>Plechovka (rezavá) [PROP]</Czech>
             <Portuguese>Lata (enferrujada) [PROP]</Portuguese>
             <Korean>깡통(녹투성이) [PROP]</Korean>
@@ -282,12 +282,12 @@
         <Key ID="STR_ACEX_MiscItems_TacticalBacon">
             <English>Tactical Bacon [PROP]</English>
             <Chinese>戰術培根罐頭 [PROP]</Chinese>
-            <French>Bacon tactique [PROP]</French>
-            <Spanish>Baliza táctica [PROP]</Spanish>
+            <French>Bacon tactique [DÉCOR]</French>
+            <Spanish>Baliza táctica [ORNATO]</Spanish>
             <Italian>Segnalatore tattico [PROP]</Italian>
             <Polish>Puszkowany boczek [PROP]</Polish>
             <Russian>Тушенка [PROP]</Russian>
-            <German>Taktischer Schinken [PROP]</German>
+            <German>Taktischer Schinken [DEKOR]</German>
             <Czech>Taktická slanina [PROP]</Czech>
             <Portuguese>Bacon tático [PROP]</Portuguese>
             <Korean>전술 베이컨 [PROP]</Korean>
@@ -298,12 +298,12 @@
         <Key ID="STR_ACEX_MiscItems_Suitcase">
             <English>Suitcase [PROP]</English>
             <Chinese>行李箱 [PROP]</Chinese>
-            <French>Valise [PROP]</French>
-            <Spanish>Maleta [PROP]</Spanish>
+            <French>Valise [DÉCOR]</French>
+            <Spanish>Maleta [ORNATO]</Spanish>
             <Italian>Valigia [PROP]</Italian>
             <Polish>Walizka [PROP]</Polish>
             <Russian>Чемодан [PROP]</Russian>
-            <German>Koffer [PROP]</German>
+            <German>Koffer [DEKOR]</German>
             <Czech>Kufřík [PROP]</Czech>
             <Portuguese>Mala [PROP]</Portuguese>
             <Korean>서류가방 [PROP]</Korean>
@@ -314,12 +314,12 @@
         <Key ID="STR_ACEX_MiscItems_PenBlack">
             <English>Pen (Black) [PROP]</English>
             <Chinese>原子筆（黑） [PROP]</Chinese>
-            <French>Stylo (noir) [PROP]</French>
-            <Spanish>Boli (negro) [PROP]</Spanish>
+            <French>Stylo (noir) [DÉCOR]</French>
+            <Spanish>Boli (negro) [ORNATO]</Spanish>
             <Italian>Penna (nera) [PROP]</Italian>
             <Polish>Pióro (czarne) [PROP]</Polish>
             <Russian>Ручка (черная) [PROP]</Russian>
-            <German>Kugelschreiber (schwarz) [PROP]</German>
+            <German>Kugelschreiber (schwarz) [DEKOR]</German>
             <Czech>Pero (černé) [PROP]</Czech>
             <Portuguese>Caneta (preta) [PROP]</Portuguese>
             <Korean>펜(흑색) [PROP]</Korean>
@@ -330,12 +330,12 @@
         <Key ID="STR_ACEX_MiscItems_PenRed">
             <English>Pen (Red) [PROP]</English>
             <Chinese>原子筆（紅） [PROP]</Chinese>
-            <French>Crayon (rouge) [PROP]</French>
-            <Spanish>Boli (rojo) [PROP]</Spanish>
+            <French>Crayon (rouge) [DÉCOR]</French>
+            <Spanish>Boli (rojo) [ORNATO]</Spanish>
             <Italian>Penna (rossa) [PROP]</Italian>
             <Polish>Pióro (czerwone) [PROP]</Polish>
             <Russian>Ручка (красная) [PROP]</Russian>
-            <German>Kugelschreiber (rot) [PROP]</German>
+            <German>Kugelschreiber (rot) [DEKOR]</German>
             <Czech>Pero (červené) [PROP]</Czech>
             <Portuguese>Caneta (vermelha) [PROP]</Portuguese>
             <Korean>펜(적색) [PROP]</Korean>
@@ -346,12 +346,12 @@
         <Key ID="STR_ACEX_MiscItems_PencilBlue">
             <English>Pencil (Blue) [PROP]</English>
             <Chinese>鉛筆（藍） [PROP]</Chinese>
-            <French>Crayon (bleu) [PROP]</French>
-            <Spanish>Lápiz (azul) [PROP]</Spanish>
+            <French>Crayon (bleu) [DÉCOR]</French>
+            <Spanish>Lápiz (azul) [ORNATO]</Spanish>
             <Italian>Pastello (blu) [PROP]</Italian>
             <Polish>Ołówek (niebieski) [PROP]</Polish>
             <Russian>Карандаш (синий) [PROP]</Russian>
-            <German>Bleistift (blau) [PROP]</German>
+            <German>Bleistift (blau) [DEKOR]</German>
             <Czech>Tužka (modrá) [PROP]</Czech>
             <Portuguese>Lápis (azul) [PROP]</Portuguese>
             <Korean>연필(청색) [PROP]</Korean>
@@ -362,12 +362,12 @@
         <Key ID="STR_ACEX_MiscItems_PencilGreen">
             <English>Pencil (Green) [PROP]</English>
             <Chinese>鉛筆（綠） [PROP]</Chinese>
-            <French>Crayon (vert) [PROP]</French>
-            <Spanish>Lápiz (verde) [PROP]</Spanish>
+            <French>Crayon (vert) [DÉCOR]</French>
+            <Spanish>Lápiz (verde) [ORNATO]</Spanish>
             <Italian>Pastello (verde) [PROP]</Italian>
             <Polish>Ołówek (zielony) [PROP]</Polish>
             <Russian>Карандаш (зеленый) [PROP]</Russian>
-            <German>Bleistift (grün) [PROP]</German>
+            <German>Bleistift (grün) [DEKOR]</German>
             <Czech> Tužka (zelená) [PROP]</Czech>
             <Portuguese>Lápis (verde) [PROP]</Portuguese>
             <Korean>연필(녹색) [PROP]</Korean>
@@ -378,12 +378,12 @@
         <Key ID="STR_ACEX_MiscItems_PencilRed">
             <English>Pencil (Red) [PROP]</English>
             <Chinese>鉛筆（紅） [PROP]</Chinese>
-            <French>Crayon (rouge) [PROP]</French>
-            <Spanish>Lápiz (rojo) [PROP]</Spanish>
+            <French>Crayon (rouge) [DÉCOR]</French>
+            <Spanish>Lápiz (rojo) [ORNATO]</Spanish>
             <Italian>Pastello (rosso) [PROP]</Italian>
             <Polish>Ołówek (czerwony) [PROP]</Polish>
             <Russian>Карандаш (красный) [PROP]</Russian>
-            <German>Bleistift (rot) [PROP]</German>
+            <German>Bleistift (rot) [DEKOR]</German>
             <Czech>Tužka (červená) [PROP]</Czech>
             <Portuguese>Lápis (vermelho) [PROP]</Portuguese>
             <Korean>연필(적색) [PROP]</Korean>
@@ -394,12 +394,12 @@
         <Key ID="STR_ACEX_MiscItems_PencilYellow">
             <English>Pencil (Yellow) [PROP]</English>
             <Chinese>鉛筆（黃） [PROP]</Chinese>
-            <French>Crayon (jaune) [PROP]</French>
-            <Spanish>Lápiz (amarillo) [PROP]</Spanish>
+            <French>Crayon (jaune) [DÉCOR]</French>
+            <Spanish>Lápiz (amarillo) [ORNATO]</Spanish>
             <Italian>Pastello (giallo) [PROP]</Italian>
             <Polish>Ołówek (żółty) [PROP]</Polish>
             <Russian>Карандаш (желтый) [PROP]</Russian>
-            <German>Bleistift (gelb) [PROP]</German>
+            <German>Bleistift (gelb) [DEKOR]</German>
             <Czech>Tužka (žlutá) [PROP]</Czech>
             <Portuguese>Lápis (amarelo) [PROP]</Portuguese>
             <Korean>연필(황색) [PROP]</Korean>
@@ -410,12 +410,12 @@
         <Key ID="STR_ACEX_MiscItems_PensAndPencils">
             <English>Pens and Pencils [PROP]</English>
             <Chinese>原子筆與鉛筆 [PROP]</Chinese>
-            <French>Stylos et crayons [PROP]</French>
-            <Spanish>Bolis y lápices [PROP]</Spanish>
+            <French>Stylos et crayons [DÉCOR]</French>
+            <Spanish>Bolis y lápices [ORNATO]</Spanish>
             <Italian>Penne e pastelli [PROP]</Italian>
             <Polish>Pióra i ołówki [PROP]</Polish>
             <Russian>Карандаши и ручки [PROP]</Russian>
-            <German>Kugelschreiber und Bleistifte [PROP]</German>
+            <German>Kugelschreiber und Bleistifte [DEKOR]</German>
             <Czech>Pera a tužky [PROP]</Czech>
             <Portuguese>Canetas e lápis [PROP]</Portuguese>
             <Korean>펜과 연필 [PROP]</Korean>
@@ -426,12 +426,12 @@
         <Key ID="STR_ACEX_MiscItems_Axe">
             <English>Axe [PROP]</English>
             <Chinese>斧頭 [PROP]</Chinese>
-            <French>Hache [PROP]</French>
-            <Spanish>Hacha [PROP]</Spanish>
+            <French>Hache [DÉCOR]</French>
+            <Spanish>Hacha [ORNATO]</Spanish>
             <Italian>Accetta [PROP]</Italian>
             <Polish>Topór [PROP]</Polish>
             <Russian>Топор [PROP]</Russian>
-            <German>Axt [PROP]</German>
+            <German>Axt [DEKOR]</German>
             <Czech>Sekera [PROP]</Czech>
             <Portuguese>Machado [PROP]</Portuguese>
             <Korean>도끼 [PROP]</Korean>
@@ -442,12 +442,12 @@
         <Key ID="STR_ACEX_MiscItems_Axe_fire">
             <English>Axe (Firefighter) [PROP]</English>
             <Chinese>斧頭（消防員） [PROP]</Chinese>
-            <French>Hache (pompier) [PROP]</French>
-            <Spanish>Hacha (bombero) [PROP]</Spanish>
+            <French>Hache (pompier) [DÉCOR]</French>
+            <Spanish>Hacha (bombero) [ORNATO]</Spanish>
             <Italian>Accetta (pompiere) [PROP]</Italian>
             <Polish>Topór (strażacki) [PROP]</Polish>
             <Russian>Топор (пожарный) [PROP]</Russian>
-            <German>Axt (Feuerwehrmann) [PROP]</German>
+            <German>Axt (Feuerwehrmann) [DEKOR]</German>
             <Czech>Sekera (požárnická) [PROP]</Czech>
             <Portuguese>Machado (bombeiro) [PROP]</Portuguese>
             <Korean>도끼(소방수) [PROP]</Korean>
@@ -458,12 +458,12 @@
         <Key ID="STR_ACEX_MiscItems_DrillAku">
             <English>Accu-Drill [PROP]</English>
             <Chinese>鑽孔器 [PROP]</Chinese>
-            <French>Perceuse sans fil [PROP]</French>
-            <Spanish>Taladro preciso [PROP]</Spanish>
+            <French>Perceuse sans fil [DÉCOR]</French>
+            <Spanish>Taladro preciso [ORNATO]</Spanish>
             <Italian>Trapano di precisione [PROP]</Italian>
             <Polish>Wiertarka akumulatorowa [PROP]</Polish>
             <Russian>Шуруповерт [PROP]</Russian>
-            <German>Akkuschrauber [PROP]</German>
+            <German>Akkuschrauber [DEKOR]</German>
             <Czech>Aku vrtačka [PROP]</Czech>
             <Portuguese>Accu-Drill [PROP]</Portuguese>
             <Korean>정밀드릴 [PROP]</Korean>
@@ -474,12 +474,12 @@
         <Key ID="STR_ACEX_MiscItems_DustMask">
             <English>Dust Mask [PROP]</English>
             <Chinese>防塵罩 [PROP]</Chinese>
-            <French>Masque anti-poussière [PROP]</French>
-            <Spanish>Mascarilla [PROP]</Spanish>
+            <French>Masque anti-poussière [DÉCOR]</French>
+            <Spanish>Mascarilla [ORNATO]</Spanish>
             <Italian>Mascherina [PROP]</Italian>
             <Polish>Maska przeciwpyłowa [PROP]</Polish>
             <Russian>Респиратор [PROP]</Russian>
-            <German>Staubmaske [PROP]</German>
+            <German>Staubmaske [DEKOR]</German>
             <Czech>Rouška [PROP]</Czech>
             <Portuguese>Máscara para poeira [PROP]</Portuguese>
             <Korean>방진마스크 [PROP]</Korean>
@@ -490,12 +490,12 @@
         <Key ID="STR_ACEX_MiscItems_File_Tool">
             <English>File [PROP]</English>
             <Chinese>檔案 [PROP]</Chinese>
-            <French>Fichier [PROP]</French>
-            <Spanish>Archivo [PROP]</Spanish>
+            <French>Fichier [DÉCOR]</French>
+            <Spanish>Archivo [ORNATO]</Spanish>
             <Italian>Col. Compatta [PROP]</Italian>
             <Polish>Plik [PROP]</Polish>
             <Russian>Папка [PROP]</Russian>
-            <German>Akte [PROP]</German>
+            <German>Akte [DEKOR]</German>
             <Czech>Složka [PROP]</Czech>
             <Portuguese>Arquivo [PROP]</Portuguese>
             <Korean>파일 [PROP]</Korean>
@@ -506,12 +506,12 @@
         <Key ID="STR_ACEX_MiscItems_Gloves">
             <English>Gloves [PROP]</English>
             <Chinese>手套 [PROP]</Chinese>
-            <French>Gants [PROP]</French>
-            <Spanish>Guantes [PROP]</Spanish>
+            <French>Gants [DÉCOR]</French>
+            <Spanish>Guantes [ORNATO]</Spanish>
             <Italian>Guanti [PROP]</Italian>
             <Polish>Rękawice [PROP]</Polish>
             <Russian>Перчатки [PROP]</Russian>
-            <German>Handschuhe [PROP]</German>
+            <German>Handschuhe [DEKOR]</German>
             <Czech>Rukavice [PROP]</Czech>
             <Portuguese>Luvas [PROP]</Portuguese>
             <Korean>장갑 [PROP]</Korean>
@@ -522,12 +522,12 @@
         <Key ID="STR_ACEX_MiscItems_Grinder">
             <English>Grinder [PROP]</English>
             <Chinese>研磨機 [PROP]</Chinese>
-            <French>Broyeur [PROP]</French>
-            <Spanish>Molinillo [PROP]</Spanish>
+            <French>Broyeur [DÉCOR]</French>
+            <Spanish>Molinillo [ORNATO]</Spanish>
             <Italian>Affilatrice [PROP]</Italian>
             <Polish>Szlifierka [PROP]</Polish>
             <Russian>Болгарка [PROP]</Russian>
-            <German>Schleifmaschine [PROP]</German>
+            <German>Schleifmaschine [DEKOR]</German>
             <Czech>Bruska [PROP]</Czech>
             <Portuguese>Triturador [PROP]</Portuguese>
             <Korean>그라인더 [PROP]</Korean>
@@ -538,12 +538,12 @@
         <Key ID="STR_ACEX_MiscItems_Hammer">
             <English>Hammer [PROP]</English>
             <Chinese>榔頭 [PROP]</Chinese>
-            <French>Marteau [PROP]</French>
-            <Spanish>Martillo [PROP]</Spanish>
+            <French>Marteau [DÉCOR]</French>
+            <Spanish>Martillo [ORNATO]</Spanish>
             <Italian>Martello [PROP]</Italian>
             <Polish>Młotek [PROP]</Polish>
             <Russian>Молоток [PROP]</Russian>
-            <German>Hammer [PROP]</German>
+            <German>Hammer [DEKOR]</German>
             <Czech>Kladivo [PROP]</Czech>
             <Portuguese>Martelo [PROP]</Portuguese>
             <Korean>망치 [PROP]</Korean>
@@ -554,12 +554,12 @@
         <Key ID="STR_ACEX_MiscItems_Meter3m">
             <English>Tape Measure [PROP]</English>
             <Chinese>捲尺 [PROP]</Chinese>
-            <French>Mètre [PROP]</French>
-            <Spanish>Cinta métrica [PROP]</Spanish>
+            <French>Mètre [DÉCOR]</French>
+            <Spanish>Cinta métrica [ORNATO]</Spanish>
             <Italian>Metro a nastro [PROP]</Italian>
             <Polish>Miarka [PROP]</Polish>
             <Russian>Рулетка [PROP]</Russian>
-            <German>Maßband [PROP]</German>
+            <German>Maßband [DEKOR]</German>
             <Czech>Metr [PROP]</Czech>
             <Portuguese>Fita métrica [PROP]</Portuguese>
             <Korean>줄자 [PROP]</Korean>
@@ -570,12 +570,12 @@
         <Key ID="STR_ACEX_MiscItems_MultiMeter">
             <English>Multi-meter [PROP]</English>
             <Chinese>萬用電表 [PROP]</Chinese>
-            <French>Multimètre [PROP]</French>
-            <Spanish>Polímetro [PROP]</Spanish>
+            <French>Multimètre [DÉCOR]</French>
+            <Spanish>Polímetro [ORNATO]</Spanish>
             <Italian>Multimetro [PROP]</Italian>
             <Polish>Miernik [PROP]</Polish>
             <Russian>Мультиметр [PROP]</Russian>
-            <German>Multimeter [PROP]</German>
+            <German>Multimeter [DEKOR]</German>
             <Czech>Multimetr [PROP]</Czech>
             <Portuguese>Multímetro [PROP]</Portuguese>
             <Korean>멀티미터 [PROP]</Korean>
@@ -586,12 +586,12 @@
         <Key ID="STR_ACEX_MiscItems_Saw">
             <English>Saw [PROP]</English>
             <Chinese>鋸子 [PROP]</Chinese>
-            <French>Scie [PROP]</French>
-            <Spanish>Sierra [PROP]</Spanish>
+            <French>Scie [DÉCOR]</French>
+            <Spanish>Sierra [ORNATO]</Spanish>
             <Italian>Sega [PROP]</Italian>
             <Polish>Piła [PROP]</Polish>
             <Russian>Пила [PROP]</Russian>
-            <German>Säge [PROP]</German>
+            <German>Säge [DEKOR]</German>
             <Czech>Pila [PROP]</Czech>
             <Portuguese>Serrote [PROP]</Portuguese>
             <Korean>톱 [PROP]</Korean>
@@ -602,12 +602,12 @@
         <Key ID="STR_ACEX_MiscItems_Screwdriver_V1">
             <English>Screwdriver (Slotted) [PROP]</English>
             <Chinese>螺絲起子（插槽） [PROP]</Chinese>
-            <French>Tournevis (plat) [PROP]</French>
-            <Spanish>Destornillador (punta plana) [PROP]</Spanish>
+            <French>Tournevis (plat) [DÉCOR]</French>
+            <Spanish>Destornillador (punta plana) [ORNATO]</Spanish>
             <Italian>Cacciavite (punta piatta) [PROP]</Italian>
             <Polish>Śrubokręt (płaski) [PROP]</Polish>
             <Russian>Отвертка (прямая) [PROP]</Russian>
-            <German>Schlitzschraubendreher [PROP]</German>
+            <German>Schlitzschraubendreher [DEKOR]</German>
             <Czech>Šroubovák (rovný) [PROP]</Czech>
             <Portuguese>Chave de parafuso (fenda) [PROP]</Portuguese>
             <Korean>드라이버(슬롯) [PROP]</Korean>
@@ -618,12 +618,12 @@
         <Key ID="STR_ACEX_MiscItems_Screwdriver_V2">
             <English>Screwdriver (Phillips) [PROP]</English>
             <Chinese>螺絲起子（Phillips） [PROP]</Chinese>
-            <French>Tournevis (cruciforme) [PROP]</French>
-            <Spanish>Destornillador (de estrella) [PROP]</Spanish>
+            <French>Tournevis (cruciforme) [DÉCOR]</French>
+            <Spanish>Destornillador (de estrella) [ORNATO]</Spanish>
             <Italian>Cacciavite (Phillips) [PROP]</Italian>
             <Polish>Śrubokręt (Phillips) [PROP]</Polish>
             <Russian>Отвертка (крестовая) [PROP]</Russian>
-            <German>Kreuzschlitzschraubendreher [PROP]</German>
+            <German>Kreuzschlitzschraubendreher [DEKOR]</German>
             <Czech>Šroubovák (křížový) [PROP]</Czech>
             <Portuguese>Chave de parafuso (Phillips) [PROP]</Portuguese>
             <Korean>드라이버(Phillips) [PROP]</Korean>
@@ -634,12 +634,12 @@
         <Key ID="STR_ACEX_MiscItems_Wrench">
             <English>Wrench [PROP]</English>
             <Chinese>扳手 [PROP]</Chinese>
-            <French>Clé [PROP]</French>
-            <Spanish>Llave inglesa [PROP]</Spanish>
+            <French>Clé [DÉCOR]</French>
+            <Spanish>Llave inglesa [ORNATO]</Spanish>
             <Italian>Chiave inglese [PROP]</Italian>
             <Polish>Klucz [PROP]</Polish>
             <Russian>Гаечный ключ [PROP]</Russian>
-            <German>Schraubenschlüssel [PROP]</German>
+            <German>Schraubenschlüssel [DEKOR]</German>
             <Czech>Klíč [PROP]</Czech>
             <Portuguese>Chave inglesa [PROP]</Portuguese>
             <Korean>렌치 [PROP]</Korean>
@@ -650,12 +650,12 @@
         <Key ID="STR_ACEX_MiscItems_Money">
             <English>Pile of Money [PROP]</English>
             <Chinese>一堆錢 [PROP]</Chinese>
-            <French>Tas d'argent [PROP]</French>
-            <Spanish>Montón de dinero [PROP]</Spanish>
+            <French>Tas d'argent [DÉCOR]</French>
+            <Spanish>Montón de dinero [ORNATO]</Spanish>
             <Italian>Mucchio di soldi [PROP]</Italian>
             <Polish>Stos pieniędzy [PROP]</Polish>
             <Russian>Пачка денег [PROP]</Russian>
-            <German>Geldhaufen [PROP]</German>
+            <German>Geldhaufen [DEKOR]</German>
             <Czech>Hromada peněz [PROP]</Czech>
             <Portuguese>Pilha de dinheiro [PROP]</Portuguese>
             <Korean>돈다발 [PROP]</Korean>
@@ -666,12 +666,12 @@
         <Key ID="STR_ACEX_MiscItems_HeatPack">
             <English>Heatpack [PROP]</English>
             <Chinese>暖暖包 [PROP]</Chinese>
-            <French>Couverture de survie [PROP]</French>
-            <Spanish>Calentador [PROP]</Spanish>
+            <French>Couverture de survie [DÉCOR]</French>
+            <Spanish>Calentador [ORNATO]</Spanish>
             <Italian>Sacca termica [PROP]</Italian>
             <Polish>Podgrzewacz [PROP]</Polish>
             <Russian>Термопакет [PROP]</Russian>
-            <German>Hitzepack [PROP]</German>
+            <German>Hitzepack [DEKOR]</German>
             <Czech>Ohřívací balíček [PROP]</Czech>
             <Portuguese>Bolsa térmica [PROP]</Portuguese>
             <Korean>발열팩 [PROP]</Korean>
@@ -680,10 +680,10 @@
             <Turkish>Isı paketi [PROP]</Turkish>
         </Key>
         <Key ID="STR_ACEX_MiscItems_VitaminBottle">
-            <German>Vitaminfläschchen [PROP]</German>
+            <German>Vitaminfläschchen [DEKOR]</German>
             <Chinese>維他命瓶 [PROP]</Chinese>
-            <French>Flacon de vitamines [PROP]</French>
-            <Spanish>Frasco de vitaminas [PROP]</Spanish>
+            <French>Flacon de vitamines [DÉCOR]</French>
+            <Spanish>Frasco de vitaminas [ORNATO]</Spanish>
             <Italian>Vitamine [PROP]</Italian>
             <Polish>Butelka z witaminami [PROP]</Polish>
             <Russian>Бутылек с витаминами [PROP]</Russian>
@@ -698,12 +698,12 @@
         <Key ID="STR_ACEX_MiscItems_WaterPurificationTablets">
             <English>Water purification tablets [PROP]</English>
             <Chinese>淨水錠 [PROP]</Chinese>
-            <French>Tablettes de potabilisation [PROP]</French>
-            <Spanish>Pastillas para purificar agua [PROP]</Spanish>
+            <French>Tablettes de potabilisation [DÉCOR]</French>
+            <Spanish>Pastillas para purificar agua [ORNATO]</Spanish>
             <Italian>Pastiglie per purificare l'acqua [PROP]</Italian>
             <Polish>Tabletki do oczyszczania wody [PROP]</Polish>
             <Russian>Таблетки для очистки воды [PROP]</Russian>
-            <German>Wasserpurifikationstabletten [PROP]</German>
+            <German>Wasserpurifikationstabletten [DEKOR]</German>
             <Czech>Tablety na čištění vody [PROP]</Czech>
             <Portuguese>Pastilhas de purificação de água [PROP]</Portuguese>
             <Korean>정수용정제 [PROP]</Korean>
@@ -714,12 +714,12 @@
         <Key ID="STR_ACEX_MiscItems_ButaneCanister">
             <English>Butane canister [PROP]</English>
             <Chinese>丁烷罐 [PROP]</Chinese>
-            <French>Bonbonne de butane [PROP]</French>
-            <Spanish>Lata de butano [PROP]</Spanish>
+            <French>Bonbonne de butane [DÉCOR]</French>
+            <Spanish>Lata de butano [ORNATO]</Spanish>
             <Italian>Latta di butano [PROP]</Italian>
             <Polish>Zbiornik z butanem [PROP]</Polish>
             <Russian>Баллон с бутаном [PROP]</Russian>
-            <German>Butan-Kanister [PROP]</German>
+            <German>Butan-Kanister [DEKOR]</German>
             <Czech>Láhev s butanem [PROP]</Czech>
             <Portuguese>Lata de butano (óleo) [PROP]</Portuguese>
             <Korean>부탄가스통 [PROP]</Korean>
@@ -730,12 +730,12 @@
         <Key ID="STR_ACEX_MiscItems_ButaneTorch">
             <English>Butane torch [PROP]</English>
             <Chinese>丁烷火把 [PROP]</Chinese>
-            <French>Chalumeau au butane [PROP]</French>
-            <Spanish>Linterna de butano [PROP]</Spanish>
+            <French>Chalumeau au butane [DÉCOR]</French>
+            <Spanish>Linterna de butano [ORNATO]</Spanish>
             <Italian>Torcia al butano [PROP]</Italian>
             <Polish>Palnik butanowy [PROP]</Polish>
             <Russian>Бутановая горелка [PROP]</Russian>
-            <German>Butan-Fackel [PROP]</German>
+            <German>Butan-Fackel [DEKOR]</German>
             <Czech>Butanová letlampa [PROP]</Czech>
             <Portuguese>Tocha de butano [PROP]</Portuguese>
             <Korean>부탄가스 토치 [PROP]</Korean>
@@ -746,12 +746,12 @@
         <Key ID="STR_ACEX_MiscItems_CanOpener">
             <English>Can opener [PROP]</English>
             <Chinese>開罐器 [PROP]</Chinese>
-            <French>Ouvre-boîte [PROP]</French>
-            <Spanish>Abrelatas [PROP]</Spanish>
+            <French>Ouvre-boîte [DÉCOR]</French>
+            <Spanish>Abrelatas [ORNATO]</Spanish>
             <Italian>Apriscatole [PROP]</Italian>
             <Polish>Otwieracz do puszek [PROP]</Polish>
             <Russian>Консервный нож [PROP]</Russian>
-            <German>Dosenöffner [PROP]</German>
+            <German>Dosenöffner [DEKOR]</German>
             <Czech>Otvírák [PROP]</Czech>
             <Portuguese>Abridor de lata [PROP]</Portuguese>
             <Korean>병따개 [PROP]</Korean>
@@ -762,12 +762,12 @@
         <Key ID="STR_ACEX_MiscItems_FireExtinguisher">
             <English>Fire extinguisher [PROP]</English>
             <Chinese>滅火器 [PROP]</Chinese>
-            <French>Extincteur [PROP]</French>
-            <Spanish>Extintor [PROP]</Spanish>
+            <French>Extincteur [DÉCOR]</French>
+            <Spanish>Extintor [ORNATO]</Spanish>
             <Italian>Estintore [PROP]</Italian>
             <Polish>Gaśnica [PROP]</Polish>
             <Russian>Огнетушитель [PROP]</Russian>
-            <German>Feuerlöscher [PROP]</German>
+            <German>Feuerlöscher [DEKOR]</German>
             <Czech>Hasicí přístroj [PROP]</Czech>
             <Portuguese>Extintor de incêndio [PROP]</Portuguese>
             <Korean>소화기 [PROP]</Korean>
@@ -778,12 +778,12 @@
         <Key ID="STR_ACEX_MiscItems_GasCanister">
             <English>Gas canister [PROP]</English>
             <Chinese>瓦斯罐 [PROP]</Chinese>
-            <French>Bonbonne de gaz [PROP]</French>
-            <Spanish>Lata de gas [PROP]</Spanish>
+            <French>Bonbonne de gaz [DÉCOR]</French>
+            <Spanish>Lata de gas [ORNATO]</Spanish>
             <Italian>Latta di gas [PROP]</Italian>
             <Polish>Zbiornik z gazem [PROP]</Polish>
             <Russian>Баллон с газом [PROP]</Russian>
-            <German>Gaskanister [PROP]</German>
+            <German>Gaskanister [DEKOR]</German>
             <Czech>Plynová láhev [PROP]</Czech>
             <Portuguese>Lata de gás [PROP]</Portuguese>
             <Korean>가스통 [PROP]</Korean>
@@ -794,12 +794,12 @@
         <Key ID="STR_ACEX_MiscItems_GasCooker">
             <English>Gas cooker [PROP]</English>
             <Chinese>瓦斯爐 [PROP]</Chinese>
-            <French>Réchaud à gaz [PROP]</French>
-            <Spanish>Cocina de gas [PROP]</Spanish>
+            <French>Réchaud à gaz [DÉCOR]</French>
+            <Spanish>Cocina de gas [ORNATO]</Spanish>
             <Italian>Cucina a gas [PROP]</Italian>
             <Polish>Kuchenka gazowa [PROP]</Polish>
             <Russian>Газовая плита [PROP]</Russian>
-            <German>Gaskocher [PROP]</German>
+            <German>Gaskocher [DEKOR]</German>
             <Czech>Plynový vařič [PROP]</Czech>
             <Portuguese>Fogão a gás [PROP]</Portuguese>
             <Korean>가스레인지 [PROP]</Korean>
@@ -810,12 +810,12 @@
         <Key ID="STR_ACEX_MiscItems_Matches">
             <English>Box of matches [PROP]</English>
             <Chinese>火柴盒 [PROP]</Chinese>
-            <French>Boîte d'allumettes [PROP]</French>
-            <Spanish>Caja de cerillas [PROP]</Spanish>
+            <French>Boîte d'allumettes [DÉCOR]</French>
+            <Spanish>Caja de cerillas [ORNATO]</Spanish>
             <Italian>Scatola di fiammiferi [PROP]</Italian>
             <Polish>Pudełko zapałek [PROP]</Polish>
             <Russian>Коробок спичек [PROP]</Russian>
-            <German>Streichholzschachtel [PROP]</German>
+            <German>Streichholzschachtel [DEKOR]</German>
             <Czech>Krabička zápalek [PROP]</Czech>
             <Portuguese>Caixa de fósforos [PROP]</Portuguese>
             <Korean>성냥갑 [PROP]</Korean>
@@ -826,12 +826,12 @@
         <Key ID="STR_ACEX_MiscItems_MetalWire">
             <English>Metal wire [PROP]</English>
             <Chinese>金屬電線 [PROP]</Chinese>
-            <French>Câble métallique [PROP]</French>
-            <Spanish>Alambre de metal [PROP]</Spanish>
+            <French>Câble métallique [DÉCOR]</French>
+            <Spanish>Alambre de metal [ORNATO]</Spanish>
             <Italian>Filo metallico [PROP]</Italian>
             <Polish>Metalowy drut [PROP]</Polish>
             <Russian>Металлическая проволока [PROP]</Russian>
-            <German>Metalldraht [PROP]</German>
+            <German>Metalldraht [DEKOR]</German>
             <Czech>Kovový drát [PROP]</Czech>
             <Portuguese>Fio de metal [PROP]</Portuguese>
             <Korean>금속 와이어 [PROP]</Korean>
