@@ -21,6 +21,7 @@
             <English>ACEX Field Rations HUD</English>
             <Japanese>ACEX フィールド レーション HUD</Japanese>
             <Polish>ACEX HUD Racji Polowych</Polish>
+            <Russian>Индикаторы жажды и голода</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_IGUI_Description">
             <English>Indicates current hunger and thirst status.</English>
@@ -35,7 +36,7 @@
             <Korean>현재의 굶주림과 갈증 상태를 나타냅니다.</Korean>
             <Polish>Wskazuje bieżący status głodu i pragnienia.</Polish>
             <Portuguese>Indica o status atual de fome e sede.</Portuguese>
-            <Russian>Указывает на текущий статус голода и жажды.</Russian>
+            <Russian>Указывают на текущий статус жажды и голода.</Russian>
             <Spanish>Indica el estado actual de hambre y sed.</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MainInteractionText">
@@ -51,7 +52,7 @@
             <Korean>활착</Korean>
             <Polish>Przetrwanie</Polish>
             <Portuguese>Sobrevivência</Portuguese>
-            <Russian>выживание</Russian>
+            <Russian>Выживание</Russian>
             <Spanish>Supervivencia</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Enabled_Description">
@@ -67,7 +68,7 @@
             <Korean>필드 배급량 활성화 / 비활성화</Korean>
             <Polish>Włącz / wyłącz racje polowe</Polish>
             <Portuguese>Ativar / Desativar rações de campo</Portuguese>
-            <Russian>Включение / отключение полевых пайков</Russian>
+            <Russian>Включение / отключение жажды и голода</Russian>
             <Spanish>Habilitar / deshabilitar las raciones de campo</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_TimeWithoutWater_DisplayName">
@@ -99,7 +100,7 @@
             <Korean>한 유닛이 물없이 얼마나 오래 갈 수 있어야 하는가? (시간)</Korean>
             <Polish>Jak długo jednostka powinna przetrwać bez wody (godziny)</Polish>
             <Portuguese>Quanto tempo uma unidade pode passar sem água (horas)</Portuguese>
-            <Russian>Как долго устройство сможет идти без воды (часы)</Russian>
+            <Russian>Как долго персонаж может находиться без воды (часы)</Russian>
             <Spanish>¿Cuánto tiempo debería una unidad ir sin agua (horas)?</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_TimeWithoutFood_DisplayName">
@@ -131,62 +132,74 @@
             <Korean>한 음식물이 음식 없이도 갈 수있는 시간 (시간)</Korean>
             <Polish>Jak długo jednostka powinna przetrwać bez jedzenia (godziny)</Polish>
             <Portuguese>Quanto tempo uma unidade pode ir sem alimentos (horas)</Portuguese>
-            <Russian>Как долго подразделение сможет идти без пищи (часы)</Russian>
+            <Russian>Как долго персонаж может находиться без пищи (часы)</Russian>
             <Spanish>¿Cuánto tiempo debería una unidad ir sin comida (horas)?</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ThirstQuenched_DisplayName">
             <English>Thirst Quenched</English>
             <Japanese>乾きの満たし</Japanese>
+            <Russian>Утоление жажды</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ThirstQuenched_Description">
             <English>Coefficient for the amount of thirst quenched from drinking</English>
             <Japanese>飲むことによって得られる乾きの満たし量の係数を設定します</Japanese>
+            <Russian>Коэффициент утоления жажды от питья</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HungerSatiated_DisplayName">
             <English>Hunger Satiated</English>
             <Japanese>満腹感</Japanese>
+            <Russian>Утоление голода</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HungerSatiated_Description">
             <English>Coefficient for the amount of hunger satiated from eating</English>
             <Japanese>食べることによって得られる満腹感の量の係数を設定します</Japanese>
+            <Russian>Коэффициент утоления голода от принятия пищи</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_AffectAdvancedFatigue_DisplayName">
             <English>Affect Advanced Fatigue</English>
             <Japanese>アドバンスド ファティーグへの影響</Japanese>
+            <Russian>Влияние на Усталость</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_AffectAdvancedFatigue_Description">
             <English>Controls if thirst and hunger should affect ACE Advanced Fatigue</English>
             <Japanese>喉の渇きと空腹感が ACE アドバンスド ファティーグへ与える影響を決定します</Japanese>
+            <Russian>Управляет влиянием голода и жажды на модуль ACE Продвинутая усталость</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_DisplayName">
             <English>HUD Type</English>
             <Japanese>HUD タイプ</Japanese>
             <Polish>Typ HUD</Polish>
+            <Russian>Тип Индикаторов</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_Description">
             <English>Selects which HUD style will be used</English>
             <Japanese>使用する HUD のタイプを選択できます</Japanese>
             <Polish>Wybierz który styl HUD będzie używany</Polish>
+            <Russian>Выберите тип используемых индикаторов</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ColoredIcons">
             <English>Colored Icons</English>
             <Japanese>色付きアイコン</Japanese>
             <Polish>Kolorowe ikony</Polish>
+            <Russian>Цветные иконки</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrainingIcons">
             <English>Draining Icons</English>
             <Japanese>ドレイン アイコン</Japanese>
             <Polish>Ubywające ikony</Polish>
+            <Russian>Исчезающие иконки</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudShowLevel_DisplayName">
             <English>HUD Show Level</English>
             <Japanese>HUD 表示レベル</Japanese>
             <Polish>Widok HUD</Polish>
+            <Russian>Уровень для отображения иконок</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudShowLevel_Description">
             <English>Automatically show the HUD when either thirst or hunger are above this level</English>
             <Japanese>この値以上に空腹感か乾きを感じると自動的に HUD を表示します</Japanese>
             <Polish>Automatycznie pokaż HUD kiedy pragnienie albo głód przekroczy ten poziom</Polish>
+            <Russian>Автоматически отображает иконки при достижении определенных уровней голода и жажды</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Always">
             <English>Always</English>
@@ -208,11 +221,13 @@
             <English>Colored Icons - Transparency</English>
             <Japanese>色付きアイコン - 透明度</Japanese>
             <Polish>Kolorowe ikony - transparentność</Polish>
+            <Russian>Цветные иконки - прозрачность</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudTransparency_Description">
             <English>Controls the transparency of the Colored Icons HUD. Dynamic setting makes the HUD less transparent as thirst or hunger increase</English>
             <Polish>Kontroluje transparentność kolorowych ikon HUD. Dynamiczne ustawienie zmniejsza przejrzystość wraz z zwiększeniem głodu czy pragnienia.</Polish>
             <Japanese>色付きアイコンの透明度を決定できます。動的に設定されると、喉の渇きや空腹感が増すにつれて、アイコンの透明度を下げます。</Japanese>
+            <Russian>Настраивает прозрачность цветных иконок. "Динамическая" делает иконки менее прозрачными при увеличении жажды и голода.</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Dynamic">
             <English>Dynamic</English>
@@ -227,46 +242,54 @@
             <Korean>동적</Korean>
             <Polish>Dynamiczny</Polish>
             <Portuguese>Dinâmico</Portuguese>
-            <Russian>динамический</Russian>
+            <Russian>Динамическая</Russian>
             <Spanish>Dinámica</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSupply_3DEN_DisplayName">
             <English>Water Supply</English>
             <Japanese>水資源</Japanese>
+            <Russian>Водные ресурсы</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSupply_3DEN_Description">
             <English>The amount of water available for ACEX Field Rations water source actions (-1 disabled, -10 infinite)</English>
             <Japanese>ACEX フィールド レーションで利用できる水源の量を設定できます。(-1で無効化、-10で無限)</Japanese>
+            <Russian>Количество источников воды, доступных для использования в ACEX Полевые рационы.  (-1 - отключено, -10 - бесконечно)</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSource">
             <English>Water Source</English>
             <Japanese>水源</Japanese>
             <Polish>Źródło wody</Polish>
+            <Russian>Источник воды</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CheckWater">
             <English>Check remaining water</English>
             <Japanese>残っている水を確認</Japanese>
             <Polish>Sprawdź ilość wody</Polish>
+            <Russian>Проверить остаток воды</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CheckingWater">
             <English>Checking remaining water...</English>
             <Japanese>残っている水の量を確認中です・・・</Japanese>
             <Polish>Sprawdzanie ilości wody</Polish>
+            <Russian>Проверяется остаток воды...</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_RemainingWater">
             <English>There are %1 litres left.</English>
             <Japanese>残り %1 リットル残っています。</Japanese>
             <Polish>Pozostało %1 litrów.</Polish>
+            <Russian>Осталось %1 л воды</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_NoWaterRemaining">
             <English>There is no water left.</English>
             <Japanese>水はもうありません。</Japanese>
             <Polish>Nie ma wody</Polish>
+            <Russian>Воды больше не осталось</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrinkDirectly">
             <English>Drink directly</English>
             <Japanese>直接飲む</Japanese>
             <Polish>Napij się</Polish>
+            <Russian>Выпить из источника</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Refill">
             <English>Refill</English>
@@ -281,7 +304,7 @@
             <Korean>다시 채우다</Korean>
             <Polish>Uzupełnij</Polish>
             <Portuguese>Recarga</Portuguese>
-            <Russian>Пополнение</Russian>
+            <Russian>Наполнить ёмкость</Russian>
             <Spanish>Rellenar</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Refilling">
@@ -297,7 +320,7 @@
             <Korean>리필 중 ...</Korean>
             <Polish>Uzupełnianie ...</Polish>
             <Portuguese>Recarga ...</Portuguese>
-            <Russian>Наполнение ...</Russian>
+            <Russian>Наполнение...</Russian>
             <Spanish>Rellenar ...</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ItemRefilled">
@@ -313,23 +336,26 @@
             <Korean>리필 품목</Korean>
             <Polish>Przedmiot uzupełniony</Polish>
             <Portuguese>Item Recarregado</Portuguese>
-            <Russian>Заполненный товар</Russian>
+            <Russian>Ёмкость наполнена</Russian>
             <Spanish>Artículo Rellenado</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_EatingX">
             <English>Eating %1...</English>
             <Japanese>%1を食べています・・・</Japanese>
             <Polish>Jedzenie %1...</Polish>
+            <Russian>Поедание %1...</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrinkingX">
             <English>Drinking %1...</English>
             <Japanese>%1を飲んでいます・・・</Japanese>
             <Polish>Picie %1...</Polish>
+            <Russian>Выпивание %1...</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrinkingFromX">
             <English>Drinking from %1...</English>
             <Japanese>%1から飲んでいます・・・</Japanese>
             <Polish>Picie z %1...</Polish>
+            <Russian>Выпивание из %1...</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottle_DisplayName">
             <English>Water Bottle</English>
@@ -344,7 +370,7 @@
             <Korean>물 병</Korean>
             <Polish>Butelka wody</Polish>
             <Portuguese>Garrafa de agua</Portuguese>
-            <Russian>Бутылка для воды</Russian>
+            <Russian>Бутылка воды (полная)</Russian>
             <Spanish>Botella de agua</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottle_Description">
@@ -360,7 +386,7 @@
             <Korean>물병</Korean>
             <Polish>Butelka wody</Polish>
             <Portuguese>Uma garrafa de água</Portuguese>
-            <Russian>Бутылка для воды</Russian>
+            <Russian>Полная бутылка с водой</Russian>
             <Spanish>Una botella de agua</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottleHalf_DisplayName">
@@ -392,7 +418,7 @@
             <Korean>반만 물병</Korean>
             <Polish>Pół butelki z wodą</Polish>
             <Portuguese>Uma garrafa de água meia cheia</Portuguese>
-            <Russian>Половина бутылки с полной водой</Russian>
+            <Russian>Половина бутылки с водой</Russian>
             <Spanish>Una botella de agua media llena</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottleEmpty_DisplayName">
@@ -424,7 +450,7 @@
             <Korean>빈 물병</Korean>
             <Polish>Pusta butelka wody</Polish>
             <Portuguese>Uma garrafa de água vazia</Portuguese>
-            <Russian>Пустая бутылка с водой</Russian>
+            <Russian>Пустая бутылка</Russian>
             <Spanish>Una botella de agua vacía</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Canteen_DisplayName">
@@ -440,7 +466,7 @@
             <Korean>반합</Korean>
             <Polish>Manierka</Polish>
             <Portuguese>Cantina</Portuguese>
-            <Russian>Столовая</Russian>
+            <Russian>Фляга (полная)</Russian>
             <Spanish>Cantina</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Canteen_Description">
@@ -456,7 +482,7 @@
             <Korean>물이 채워진 식당</Korean>
             <Polish>Manierka wypełniona wodą</Polish>
             <Portuguese>Uma cantina cheia de água</Portuguese>
-            <Russian>Столовая с водой</Russian>
+            <Russian>Фляга с водой</Russian>
             <Spanish>Una cantina llena de agua</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CanteenHalf_DisplayName">
@@ -472,7 +498,7 @@
             <Korean>캔틴 (하프)</Korean>
             <Polish>Manierka (połowa)</Polish>
             <Portuguese>Cantina (meio)</Portuguese>
-            <Russian>Столовая (половина)</Russian>
+            <Russian>Фляга (половина)</Russian>
             <Spanish>Cantina (Mitad)</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CanteenHalf_Description">
@@ -488,7 +514,7 @@
             <Korean>물이 담긴 식당 절반</Korean>
             <Polish>Manierka w połowie wypełniona wodą</Polish>
             <Portuguese>Uma meia cantina cheia de água</Portuguese>
-            <Russian>Столовая наполовину заполнена водой</Russian>
+            <Russian>Половина фляги с водой</Russian>
             <Spanish>Una cantina medio llena de agua</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CanteenEmpty_DisplayName">
@@ -504,7 +530,7 @@
             <Korean>캔틴 (비어 있음)</Korean>
             <Polish>Manierka (pusta)</Polish>
             <Portuguese>Cantina (vazia)</Portuguese>
-            <Russian>Столовая (пустая)</Russian>
+            <Russian>Фляга (пустая)</Russian>
             <Spanish>Cantina (Vacío)</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CanteenEmpty_Description">
@@ -520,23 +546,26 @@
             <Korean>빈 수통</Korean>
             <Polish>Pusta manierka</Polish>
             <Portuguese>Uma cantina vazia</Portuguese>
-            <Russian>Пустая столовая</Russian>
+            <Russian>Пустая фляга</Russian>
             <Spanish>Una cantina vacía</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Can_Spirit_Description">
             <English>Refreshing lemon and lime flavored soft drink</English>
             <Japanese>新鮮なレモンとライムの風味を味わえるソフト ドリンク</Japanese>
             <Polish>Odświeżający napój cytronowo-limonkowy</Polish>
+            <Russian>Освежающий напиток со вкусом лимона и лайма</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Can_Franta_Description">
             <English>Orange flavored soft drink with a tingly, fruity taste</English>
             <Japanese>口いっぱいに果物を感じるオレンジ風味のソフト ドリンク</Japanese>
             <Polish>Napój pomarańczowy</Polish>
+            <Russian>Напиток с апельсиновым вкусом</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Can_RedGull_Description">
             <English>Red Gull gives you wings</English>
             <Japanese>レッドガルは翼をさずける</Japanese>
             <Polish>Red Gull doda ci skrzydeł</Polish>
+            <Russian>Рэд Гулл окрыляет!</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_LambCurry_DisplayName">
             <English>MRE Lamb Curry</English>
@@ -551,7 +580,7 @@
             <Korean>MRE 양고기 카레</Korean>
             <Polish>MRE jagnięcina Curry</Polish>
             <Portuguese>MRE cordeiro ao Curry</Portuguese>
-            <Russian>MRE Лэмб Карри</Russian>
+            <Russian>ИРП: Баранина с карри</Russian>
             <Spanish>MRE cordero Curry</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_LambCurry_Description">
@@ -567,18 +596,20 @@
             <Korean>램 카레가 들어있는 MRE. 효과를 극대화하기위한 열기</Korean>
             <Polish>MRE zawierające jagnięcine Curry. Podgrzej dla najlepszego efektu</Polish>
             <Portuguese>Um MRE contendo Lamb Curry. Calor para melhor efeito</Portuguese>
-            <Russian>MRE, содержащие ягненок карри. Тепла для лучшего эффекта</Russian>
+            <Russian>ИРП "Баранина с карри". Перед употреблением рекомендуется разогреть.</Russian>
             <Spanish>Un MRE que contiene cordero al curry. Calor para el mejor efecto</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_BeefStew_DisplayName">
             <English>MRE Beef Stew</English>
             <Japanese>MRE ビーフ シチュー</Japanese>
             <Polish>MRE Gulasz wołowy</Polish>
+            <Russian>ИРП: Жаркое из говядины</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_BeefStew_Description">
             <English>An MRE containing Beef Stew. Heat for best effect</English>
             <Japanese>ビーフ シチューの MRE。温めるとなお美味しい</Japanese>
             <Polish>MRE zawierające gulasz wołowy. Podgrzej dla najlepszego efektu</Polish>
+            <Russian>ИРП "Жаркое из говядины". Перед употреблением рекомендуется разогреть.</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_CreamTomatoSoup_DisplayName">
             <English>MRE Cream Tomato Soup</English>
@@ -593,7 +624,7 @@
             <Korean>MRE 크림 토마토 수프</Korean>
             <Polish>MRE Kremowa Zupa Pomidorowa</Polish>
             <Portuguese>MRE Sopa de creme de tomate</Portuguese>
-            <Russian>MRE кремовый томатный суп</Russian>
+            <Russian>ИРП: Томатный крем-суп</Russian>
             <Spanish>MRE Sopa de tomate crema</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_CreamTomatoSoup_Description">
@@ -609,7 +640,7 @@
             <Korean>크림 토마토 수프가 들어있는 MRE. 최상의 효과를 위해 물과 열을 함께 섞으십시오.</Korean>
             <Polish>MRE zawierające śmietanową zupę pomidorową. Wymieszaj z wodą i podgrzej, aby uzyskać najlepszy efekt</Polish>
             <Portuguese>Uma MRE contendo Cream Tomato Soup. Misture com água e calor para melhor efeito</Portuguese>
-            <Russian>MRE, содержащий сливочный томатный суп. Смешайте с водой и теплом для лучшего эффекта</Russian>
+            <Russian>ИРП "Томатный крем-суп". Перед употреблением - растворить в воде и разогреть.</Russian>
             <Spanish>Una MRE que contiene Sopa de Tomate Crema. Mezcle con agua y calor para un mejor efecto</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_CreamChickenSoup_DisplayName">
@@ -625,7 +656,7 @@
             <Korean>MRE 크림 치킨 스프</Korean>
             <Polish>MRE Kremowy Rosół</Polish>
             <Portuguese>MRE Sopa de creme de galinha</Portuguese>
-            <Russian>MRE крем куриный суп</Russian>
+            <Russian>ИРП: Куриный крем-суп.</Russian>
             <Spanish>MRE Sopa de pollo crema</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_CreamChickenSoup_Description">
@@ -641,7 +672,7 @@
             <Korean>치킨 수프를 포함한 MRE. 최상의 효과를 위해 물과 열을 섞으십시오.</Korean>
             <Polish>MRE zawierające rosół. Wymieszaj z wodą i podgrzej, aby uzyskać najlepszy efekt</Polish>
             <Portuguese>Um MRE contendo Sopa de Frango. Misture com água e calor para melhor efeito</Portuguese>
-            <Russian>MRE содержит куриный суп. Смешайте с водой и теплом для лучшего эффекта</Russian>
+            <Russian>ИРП "Куриный крем-суп". Перед употреблением - растворить в воде и разогреть.</Russian>
             <Spanish>Un MRE que contiene sopa de pollo. Mezcle con agua y calor para un mejor efecto</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_ChickenTikkaMasala_DisplayName">
@@ -657,7 +688,7 @@
             <Korean>MRE 치킨 티카 마샬 라</Korean>
             <Polish>MRE kurczak Tikka Masala</Polish>
             <Portuguese>MRE frango Tikka Masala</Portuguese>
-            <Russian>MRE курица Тикка Масала</Russian>
+            <Russian>ИРП: Курица Тикка Масала</Russian>
             <Spanish>MRE Pollo Tikka Masala</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_ChickenTikkaMasala_Description">
@@ -673,7 +704,7 @@
             <Korean>치킨 티 카 Masala와 MRE입니다. 최고의 효과 대 한 열</Korean>
             <Polish>MRE z kurczakiem Tikka Masala. Podgrzej dla najlepszego efektu</Polish>
             <Portuguese>Um MRE com Frango Tikka Masala. Calor para melhor efeito</Portuguese>
-            <Russian>MRE с курицей Тикка Масала. Тепло для лучшего эффекта</Russian>
+            <Russian>ИРП "Курица Тикка Масала". Перед употреблением рекомендуется разогреть.</Russian>
             <Spanish>Un ERM con Pollo Tikka Masala. Calor para un mejor efecto</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_SteakVegetables_DisplayName">
@@ -689,7 +720,7 @@
             <Korean>MRE 스테이크 야채</Korean>
             <Polish>MRE Stek Warzywny</Polish>
             <Portuguese>MRE bife legumes</Portuguese>
-            <Russian>MRE стейк овощи</Russian>
+            <Russian>ИРП: Стейк с овощами</Russian>
             <Spanish>ERM de ternera verduras</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_SteakVegetables_Description">
@@ -705,7 +736,7 @@
             <Korean>스테이크와 채소가 들어있는 MRE. 효과를 극대화하기위한 열기</Korean>
             <Polish>MRE zawierający stek i warzywa. Podgrzej dla najlepszego efektu</Polish>
             <Portuguese>Um MRE contendo Bife e Legumes. Calor para melhor efeito</Portuguese>
-            <Russian>MRE содержит стейк и овощи. Тепло для лучшего эффекта</Russian>
+            <Russian>ИРП "Стейк с овощами". Перед употреблением рекомендуется разогреть.</Russian>
             <Spanish>Un MRE que contiene carne y verduras. Calor para el mejor efecto</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_MeatballsPasta_DisplayName">
@@ -721,7 +752,7 @@
             <Korean>MRE 미트볼과 파스타</Korean>
             <Polish>MRE Klopsiki i makaron</Polish>
             <Portuguese>MRE Macarrão com almôndegas</Portuguese>
-            <Russian>MRE Фрикадельки и макаронные изделия</Russian>
+            <Russian>ИРП: Макароны с фрикадельками</Russian>
             <Spanish>MRE Albóndigas y pastas</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_MeatballsPasta_Description">
@@ -737,7 +768,7 @@
             <Korean>미트볼과 파스타를 포함한 MRE. 효과를 극대화하기위한 열기</Korean>
             <Polish>MRE zawierające klopsiki i makaron. Podgrzej dla najlepszego efektu</Polish>
             <Portuguese>Um MRE contendo Meatballs e Pasta. Calor para melhor efeito</Portuguese>
-            <Russian>MRE содержит фрикадельки и пасту. Тепло для лучшего эффекта</Russian>
+            <Russian>ИРП "Макароны с фрикадельками". Перед употреблением рекомендуется разогреть.</Russian>
             <Spanish>Un MRE que contiene albóndigas y pasta. Calor para el mejor efecto</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_ChickenHerbDumplings_DisplayName">
@@ -753,7 +784,7 @@
             <Korean>MRE 치킨 약초만 두</Korean>
             <Polish>MRE kurczak z pierogami ziołowymi.</Polish>
             <Portuguese>MRE Frango com Dumplings de ervas</Portuguese>
-            <Russian>MRE курица с травы пельмени</Russian>
+            <Russian>ИРП: Курица с клёцками</Russian>
             <Spanish>MRE pollo con bolas de masa hervida</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_ChickenHerbDumplings_Description">
@@ -769,7 +800,7 @@
             <Korean>치킨과 허브 만두가 포함 된 MRE. 효과를 극대화하기위한 열기</Korean>
             <Polish>MRE z kurczakiem i pierogamii ziołowymi. Podgrzej dla najlepszego efektu</Polish>
             <Portuguese>Uma MRE que contém Bolinhos De Frango Com Erva. Calor para melhor efeito</Portuguese>
-            <Russian>MRE содержит курицу с пельменями с травами. Тепло для лучшего эффекта</Russian>
+            <Russian>ИРП "Курица с клёцками и травами". Перед употреблением рекомендуется разогреть.</Russian>
             <Spanish>Un MRE que contiene pollo con bolas de masa hervida. Calor para el mejor efecto</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Humanitarian_Ration_DisplayName">
@@ -785,7 +816,7 @@
             <Korean>인도주의 배급</Korean>
             <Polish>Racja humanitarna</Polish>
             <Portuguese>Ração Humanitária</Portuguese>
-            <Russian>Гуманитарный рацион</Russian>
+            <Russian>Гуманитарный ИРП</Russian>
             <Spanish>Ración humanitaria</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Humanitarian_Ration_Description">
@@ -801,7 +832,7 @@
             <Korean>위기 상황에서 식량 공급을위한 인도 주의적 식량 배급</Korean>
             <Polish>Racja humanitarna, która ma służyć jako żywność dla danej osoby podczas kryzysów</Polish>
             <Portuguese>Uma Ração Humanitária destinada a servir como alimento alimentar de uma pessoa durante as crises</Portuguese>
-            <Russian>Гуманитарный рацион, предназначенный для обеспечения питания людей во время кризисов</Russian>
+            <Russian>Гуманитарный ИРП, предназначенный для питания людей во время кризисов и катастроф.</Russian>
             <Spanish>Una ración humanitaria destinada a servir como el suministro de alimentos de una persona durante las crisis</Spanish>
         </Key>
     </Package>

@@ -11,6 +11,7 @@
             <Chinesesimp>无头客户端</Chinesesimp>
             <Chinese>無頭客戶端</Chinese>
             <Italian>Headless</Italian>
+            <Russian>Headless клиент</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_ModuleDesc">
             <English>This module allows you to setup automatic transferring of AI to Headless Clients. (Default: No)</English>
@@ -22,6 +23,7 @@
             <Chinesesimp>此模块能让你自动转换AI的控制权给其他无头客户端。(预设:关闭)</Chinesesimp>
             <Chinese>此模塊能讓你自動轉換AI的控制權給其他無頭客戶端。(預設:關閉)</Chinese>
             <Italian>Questo modulo ti consente di impostare il trasferimento automatico delle AI su dei Client Headless. (Default: No)</Italian>
+            <Russian>Этот модуль позволяет настроить автоматическую передачу управления ИИ Headless клиентам. (По умолчанию: Откл.)</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_EnabledDesc">
             <English>Enables transferring of AI to Headless Clients.</English>
@@ -33,6 +35,7 @@
             <Chinesesimp>开启转换AI控制权给无头客户端。</Chinesesimp>
             <Chinese>開啟轉換AI控制權給無頭客戶端。</Chinese>
             <Italian>Abilita il trasferimento delle AI sugli Headless Client.</Italian>
+            <Russian>Передает управление ИИ Headless клиентам.</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_Delay">
             <English>Delay</English>
@@ -44,6 +47,7 @@
             <Chinesesimp>延迟</Chinesesimp>
             <Chinese>延遲</Chinese>
             <Italian>Latenza</Italian>
+            <Russian>Задержка</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_DelayDesc">
             <English>Minimal delay between transfers, in seconds. (Default: 15)</English>
@@ -55,6 +59,7 @@
             <Chinesesimp>设定每次转换间隔多少秒。(预设:15秒)</Chinesesimp>
             <Chinese>設定每次轉換間隔多少秒。(預設:15秒)</Chinese>
             <Italian>Latenza minima tra i trasferimenti, in secondi. (Default: 15)</Italian>
+            <Russian>Минимальная задержка в секундах между передачами. (По умолчанию: 15)</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_EndMission">
             <English>End Mission</English>
@@ -65,6 +70,7 @@
             <Chinese>結束任務</Chinese>
             <Italian>Termina Missione</Italian>
             <Polish>Koniec misji</Polish>
+            <Russian>Завершать миссию</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_EndMissionDesc">
             <English>End mission when there are no players connected (same as 'persistent = 0' in server configuration but with Headless Client support).</English>
@@ -75,6 +81,7 @@
             <Chinese>當伺服器裡沒有任何玩家還連線時自動結束任務(效果同於伺服器設定的'persistent = 0'，但支援無頭客戶端)。</Chinese>
             <Italian>Termina la missione quando non ci sono più giocatori connessi (come 'persistent = 0' nella configurazione dei server ma con il supporto dell'Headless Client).</Italian>
             <Polish>Kończy misje kiedy nie ma połączonych graczy(tak samo jak 'persistent = 0' w konfiguracji serwer ale z wsparciem Headless Client</Polish>
+            <Russian>Завершает миссию, если нет присоединенных игроков (аналогично  'persistent = 0' в настройках сервера, но с включенной поддержкой Headless клиентов).</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_Instant">
             <English>Instant</English>
@@ -85,6 +92,7 @@
             <Chinese>立即</Chinese>
             <Italian>Istantaneo</Italian>
             <Polish>Natychmiastowy</Polish>
+            <Russian>Мгновенно</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_Delayed">
             <English>Delayed (60s)</English>
@@ -95,6 +103,7 @@
             <Chinese>延遲 (60秒)</Chinese>
             <Italian>Ritardato (60s)</Italian>
             <Polish>Opóźniony (60s)</Polish>
+            <Russian>С задержкой 60 с.</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_Log">
             <English>Log</English>
@@ -106,6 +115,7 @@
             <Chinesesimp>日志</Chinesesimp>
             <Chinese>日誌</Chinese>
             <Italian>Registra</Italian>
+            <Russian>Вести журнал</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_LogDesc">
             <English>Log transfer statistics and Headless Client (dis)connections to RPT. (Default: No)</English>
@@ -117,22 +127,27 @@
             <Chinesesimp>记录无头客户端间的转换数量与连线/断线等记录到RPT报告档中。(预设:关闭)</Chinesesimp>
             <Chinese>記錄無頭客戶端間的轉換數量與連線/斷線等記錄到RPT報告檔中。(預設:關閉)</Chinese>
             <Italian>Registra le statistiche del trasferimento e delle (dis)connessioni dell'Headless Clienti su RPT. (Default: No)</Italian>
+            <Russian>Вести журнал передач и подключений Headless клиентов в файл RPT. (По умолчанию: Откл)</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_TransferLoadout">
             <English>Transfer Loadout</English>
             <Japanese>装備の移送</Japanese>
+            <Russian>Передавать снаряжение</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_TransferLoadoutDesc">
             <English>Transfer loadout of units attempts to work around an issue where units appear naked after transferring to a Headless Client.</English>
             <Japanese>装備の移送はヘッドレス クライアントへの移行後にユニットが裸で出現する問題の回避を試みます。</Japanese>
+            <Russian>Передавать снаряжение юнитов, позволяет обходить проблему, при которой юниты оказываются без снаряжения после передачи управления  Headless клиенту.</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_TransferLoadoutCurrent">
             <English>Current Loadout</English>
             <Japanese>現在の装備</Japanese>
+            <Russian>Текущее снаряжение</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_TransferLoadoutConfig">
             <English>Config Loadout</English>
             <Japanese>コンフィグの装備</Japanese>
+            <Russian>Снаряжение из настроек</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_BlacklistEden">
             <English>Headless Blacklist</English>
@@ -143,6 +158,7 @@
             <Italian>Lista Nera Headless</Italian>
             <Korean>헤드리스 블랙리스트</Korean>
             <Polish>Czarna lista Headless</Polish>
+            <Russian>Черный список Headless клиента</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_BlacklistEdenDesc">
             <English>Disables transferring of this AI unit/group to Headless Clients. No effect on player units.</English>
@@ -153,6 +169,7 @@
             <Italian>Disabilita il trasferimento di questa unità/gruppo di AI negli Headless Client. Non ha effetto sui giocatori.</Italian>
             <Korean>이 AI 유닛 / 그룹을 헤드리스 클라이언트로 전송하지 못하도록합니다. 플레이어 유닛에는 영향을주지 않습니다.</Korean>
             <Polish>Wyłącza transfer tych jednostek/grup AI do Headless Clients. Bez efektu na jednostkach gracza.</Polish>
+            <Russian>Отключает передачу управления этого юныта/группы Headless клиенту. Не влияет на юниты игроков.</Russian>
         </Key>
     </Package>
 </Project>
