@@ -137,7 +137,7 @@
         <Key ID="STR_ACEX_Headless_TransferLoadoutDesc">
             <English>Transfer loadout of units attempts to work around an issue where units appear naked after transferring to a Headless Client.</English>
             <Japanese>装備の移送はヘッドレス クライアントへの移行後にユニットが裸で出現する問題の回避を試みます。</Japanese>
-            <Russian>Передавать снаряжение юнитов, позволяет обходить проблему, при которой юниты оказываются без снаряжения после передачи управления  Headless клиенту.</Russian>
+            <Russian>Передавать снаряжение юнитов, позволяет обходить проблему, при которой юниты оказываются без снаряжения после передачи управления Headless клиенту.</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_TransferLoadoutCurrent">
             <English>Current Loadout</English>
@@ -169,7 +169,7 @@
             <Italian>Disabilita il trasferimento di questa unità/gruppo di AI negli Headless Client. Non ha effetto sui giocatori.</Italian>
             <Korean>이 AI 유닛 / 그룹을 헤드리스 클라이언트로 전송하지 못하도록합니다. 플레이어 유닛에는 영향을주지 않습니다.</Korean>
             <Polish>Wyłącza transfer tych jednostek/grup AI do Headless Clients. Bez efektu na jednostkach gracza.</Polish>
-            <Russian>Отключает передачу управления этого юныта/группы Headless клиенту. Не влияет на юниты игроков.</Russian>
+            <Russian>Отключает передачу управления этого юнита/группы Headless клиенту. Не влияет на юниты игроков.</Russian>
         </Key>
     </Package>
 </Project>

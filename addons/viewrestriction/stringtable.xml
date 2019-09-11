@@ -63,7 +63,7 @@
             <Chinesesimp>(可选) 步行</Chinesesimp>
             <Chinese>(可選) 步行</Chinese>
             <Italian>(Selettiva) Piedi</Italian>
-            <Russian>(Выборочные) Пехота</Russian>
+            <Russian>(Выборочные) Пешком</Russian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveFootDesc">
             <English>Selective mode on Foot. Default: Disabled (Requires Mode: Selective)</English>
@@ -76,7 +76,7 @@
             <Chinesesimp>设定在步行的状况下能使用的视野模式。预设:关闭(需在全局设定中先选择'使用可选设定')</Chinesesimp>
             <Chinese>設定在步行的狀況下能使用的視野模式。預設:關閉(需在全局設定中先選擇'使用可選設定')</Chinese>
             <Italian>Modalità selettiva su Piedi. Default: Disabilitato (Necessita della Modalità: Selettiva)</Italian>
-            <Russian>Выборочные установки для Пехоты. По умолчанию: Отключено (требуется режим: Выборочные)</Russian>
+            <Russian>Выборочные установки без техники. По умолчанию: Отключено (требуется режим: Выборочные)</Russian>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveLand">
             <English>(Selective) Land Vehicles</English>

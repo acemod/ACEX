@@ -100,7 +100,7 @@
             <Korean>한 유닛이 물없이 얼마나 오래 갈 수 있어야 하는가? (시간)</Korean>
             <Polish>Jak długo jednostka powinna przetrwać bez wody (godziny)</Polish>
             <Portuguese>Quanto tempo uma unidade pode passar sem água (horas)</Portuguese>
-            <Russian>Как долго персонаж может находиться без воды (часы)</Russian>
+            <Russian>Как долго персонаж может обходиться без воды (часы)</Russian>
             <Spanish>¿Cuánto tiempo debería una unidad ir sin agua (horas)?</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_TimeWithoutFood_DisplayName">
@@ -132,7 +132,7 @@
             <Korean>한 음식물이 음식 없이도 갈 수있는 시간 (시간)</Korean>
             <Polish>Jak długo jednostka powinna przetrwać bez jedzenia (godziny)</Polish>
             <Portuguese>Quanto tempo uma unidade pode ir sem alimentos (horas)</Portuguese>
-            <Russian>Как долго персонаж может находиться без пищи (часы)</Russian>
+            <Russian>Как долго персонаж может обходиться без пищи (часы)</Russian>
             <Spanish>¿Cuánto tiempo debería una unidad ir sin comida (horas)?</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ThirstQuenched_DisplayName">
@@ -253,7 +253,7 @@
         <Key ID="STR_ACEX_Field_Rations_WaterSupply_3DEN_Description">
             <English>The amount of water available for ACEX Field Rations water source actions (-1 disabled, -10 infinite)</English>
             <Japanese>ACEX フィールド レーションで利用できる水源の量を設定できます。(-1で無効化、-10で無限)</Japanese>
-            <Russian>Количество источников воды, доступных для использования в ACEX Полевые рационы.  (-1 - отключено, -10 - бесконечно)</Russian>
+            <Russian>Количество воды, доступной для использования в ACEX Полевые рационы.  (-1 - отключено, -10 - бесконечно)</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSource">
             <English>Water Source</English>
