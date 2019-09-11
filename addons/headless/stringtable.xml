@@ -81,7 +81,7 @@
             <Chinese>當伺服器裡沒有任何玩家還連線時自動結束任務(效果同於伺服器設定的'persistent = 0'，但支援無頭客戶端)。</Chinese>
             <Italian>Termina la missione quando non ci sono più giocatori connessi (come 'persistent = 0' nella configurazione dei server ma con il supporto dell'Headless Client).</Italian>
             <Polish>Kończy misje kiedy nie ma połączonych graczy(tak samo jak 'persistent = 0' w konfiguracji serwer ale z wsparciem Headless Client</Polish>
-            <Russian>Завершает миссию, если нет присоединенных игроков (аналогично  'persistent = 0' в настройках сервера, но с включенной поддержкой Headless клиентов).</Russian>
+            <Russian>Завершает миссию, если нет присоединенных игроков (аналогично 'persistent = 0' в настройках сервера, но с включенной поддержкой Headless клиентов).</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_Instant">
             <English>Instant</English>
@@ -137,7 +137,7 @@
         <Key ID="STR_ACEX_Headless_TransferLoadoutDesc">
             <English>Transfer loadout of units attempts to work around an issue where units appear naked after transferring to a Headless Client.</English>
             <Japanese>装備の移送はヘッドレス クライアントへの移行後にユニットが裸で出現する問題の回避を試みます。</Japanese>
-            <Russian>Передавать снаряжение юнитов, позволяет обходить проблему, при которой юниты оказываются без снаряжения после передачи управления Headless клиенту.</Russian>
+            <Russian>Передача снаряжения юнитов позволяет обходить проблему, при которой юниты оказываются без снаряжения после передачи управления Headless клиенту.</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_TransferLoadoutCurrent">
             <English>Current Loadout</English>

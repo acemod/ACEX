@@ -253,7 +253,7 @@
         <Key ID="STR_ACEX_Field_Rations_WaterSupply_3DEN_Description">
             <English>The amount of water available for ACEX Field Rations water source actions (-1 disabled, -10 infinite)</English>
             <Japanese>ACEX フィールド レーションで利用できる水源の量を設定できます。(-1で無効化、-10で無限)</Japanese>
-            <Russian>Количество воды, доступной для использования в ACEX Полевые рационы.  (-1 - отключено, -10 - бесконечно)</Russian>
+            <Russian>Количество воды, доступной для использования в ACEX Полевые рационы. (-1 - отключено, -10 - бесконечно)</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSource">
             <English>Water Source</English>

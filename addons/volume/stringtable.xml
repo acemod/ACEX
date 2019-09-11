@@ -109,7 +109,7 @@
             <Chinesesimp>当正在降低/回复音量时显示提示。</Chinesesimp>
             <Chinese>當正在降低/回復音量時顯示提示。</Chinese>
             <Italian>Mostra notifiche mentre si abbassa/ripristina il volume.</Italian>
-            <Russian>Показывать уведомление при уменьшении/восстановении громкости</Russian>
+            <Russian>Показывать уведомление при уменьшении/восстановлении громкости</Russian>
         </Key>
         <Key ID="STR_ACEX_Volume_FadeDelay">
             <English>Fade delay</English>
@@ -129,7 +129,7 @@
             <Chinesesimp>设定音量淡出/入时所需的秒数。</Chinesesimp>
             <Chinese>設定音量淡出/入時所需的秒數。</Chinese>
             <Italian>Il tempo che impiega (in secondi) il suono a dissolversi entrata/uscita.</Italian>
-            <Russian>Время задержки (сек.) при затухания звука.</Russian>
+            <Russian>Время (сек.) для затухания/восстановления звука.</Russian>
         </Key>
         <Key ID="STR_ACEX_Volume_RemindIfLowered">
             <English>Reminder if lowered</English>
