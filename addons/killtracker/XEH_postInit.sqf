@@ -43,40 +43,37 @@ GVAR(killCount) = 0;
     TRACE_2("kill eh",_name,_killInfo);
     // Increment kill counter
     GVAR(killCount) = GVAR(killCount) + 1;
-    GVAR(eventsArray) pushBack format ["Killed: %1 %2", _name, _killInfo];
+    GVAR(eventsArray) pushBack format ["KILLED: %1 %2", _name, _killInfo];
     GVAR(outputText) = (format ["Total Kills: %1<br/>", GVAR(killCount)]) + (GVAR(eventsArray) joinString "<br/>");
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(death), {
     params ["_name", "_killInfo"];
     TRACE_2("death eh",_name,_killInfo);
-    GVAR(eventsArray) pushBack format ["Died: %1 %2", _name, _killInfo];
+    GVAR(eventsArray) pushBack format ["DIED: %1 %2", _name, _killInfo];
     GVAR(outputText) = (format ["Total Kills: %1<br/>", GVAR(killCount)]) + (GVAR(eventsArray) joinString "<br/>");
 }] call CBA_fnc_addEventHandler;
 
-// Add Killed Event Handler - killed EH and lastDamageSource var are local only
-["CAManBase", "killed", {
-    params ["_unit", ["_killer", objNull]];
-    TRACE_2("killed",_unit,_killer);
+
+["ace_killed", {
+    params ["_unit", "_causeOfDeath", "_killer", "_instigator"];
+    TRACE_4("ace_killed EH",_unit,_causeOfDeath,_killer,_instigator);
+
+    if (!local _unit) exitWith {};
 
     private _killInfo = [];
-    if ((isNull _killer) || {_killer == _unit}) then {
-        private _aceSource = _unit getVariable ["ace_medical_lastDamageSource", objNull];
-        TRACE_1("",_aceSource);
-        if ((!isNull _aceSource) && {_aceSource != _unit}) then {
-            _killInfo pushBack "Last damage";
-            _killer = _aceSource;
+
+    if (!isNull _killer) then {
+        if (!(_killer isKindof "CAManBase")) then { // If killer is a vehicle log the vehicle type
+            _killInfo pushBack format ["Vehicle: %1", getText (configfile >> "CfgVehicles" >> (typeOf _killer) >> "displayName")];
+        };
+        if (isNull _instigator) then {
+            _instigator = effectiveCommander _killer;
+            TRACE_2("using effectiveCommander",_instigator,_killer);
         };
     };
-
-    // If killer is a vehicle get the commander (this is how vanilla does it?) and log the vehicle type
-    if ((!isNull _killer) && {!(_killer isKindof "CAManBase")}) then {
-        _killInfo pushBack format ["Vehicle: %1", getText (configfile >> "CfgVehicles" >> (typeOf _killer) >> "displayName")];
-        _killer = effectiveCommander _killer;
-    };
-
-    private _unitIsPlayer = hasInterface && {_unit == ace_player}; // isPlayer check will fail at this point
-    private _killerIsPlayer = (!isNull _killer) && {_unit != _killer} && {[_killer] call ACEFUNC(common,isPlayer)};
+    private _unitIsPlayer = hasInterface && {_unit in [player, ace_player]}; // isPlayer check will fail at this point
+    private _killerIsPlayer = (!isNull _instigator) && {_unit != _instigator} && {[_instigator] call ACEFUNC(common,isPlayer)};
     TRACE_2("",_unitIsPlayer,_killerIsPlayer);
 
     // Don't do anything if neither are players
@@ -92,20 +89,17 @@ GVAR(killCount) = 0;
             default {civilian};
         };
     };
-    if ((!isNull _killer) && {_unit != _killer} && {_killer isKindOf "CAManBase"}) then {
+    if ((!isNull _instigator) && {_unit != _instigator} && {_instigator isKindOf "CAManBase"}) then {
         // Because of unconscious group switching/captives it's probably best to just use unit's config side
         private _unitSide = [_unit] call _fnc_getSideFromConfig;
-        private _killerSide = [_killer] call _fnc_getSideFromConfig;
+        private _killerSide = [_instigator] call _fnc_getSideFromConfig;
         if ([_unitSide, _killerSide] call BIS_fnc_areFriendly) then {
             _killInfo pushBack "<t color='#ff0000'>Friendly Fire</t>";
         };
     };
 
-    // Log bleed out - ToDo: could change setDead to log the specific medical cause (e.g. blood loss / cardiac arrest / overdose)
-    private _bloodVolume = _unit getVariable ["ace_medical_bloodVolume", 100];
-    if (_bloodVolume <= 60) then {
-        _killInfo pushBack format ["Blood %1%2", floor _bloodVolume, "%"];
-    };
+    // Rough cause of death from statemachine (e.g. "CardiacArrest:Timeout"), could parse this to be more human readable
+    _killInfo pushBack _causeOfDeath;
 
     // Parse info into text
     _killInfo = if (_killInfo isEqualTo []) then {
@@ -138,4 +132,4 @@ GVAR(killCount) = 0;
         TRACE_3("send kill event",_killer,_unitName,_killInfo);
         [QGVAR(kill), [_unitName, _killInfo], _killer] call CBA_fnc_targetEvent;
     };
-}] call CBA_fnc_addClassEventHandler;
+}] call CBA_fnc_addEventHandler;
