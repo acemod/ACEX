@@ -31,7 +31,6 @@ class CfgVehicles {
                 expression = QUOTE([ARR_2(_this,_value)] call FUNC(setObjectData));
                 defaultValue = "''";
                 validate = "STRING";
-                condition = "object";
                 typeName = "STRING";
             };
         };
