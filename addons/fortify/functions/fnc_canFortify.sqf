@@ -23,7 +23,7 @@ params ["_player", ["_cost", 0]];
 {"ACE_Fortify" in (_player call ACEFUNC(common,uniqueItems))} &&
 {
     private _budget = [side group _player] call FUNC(getBudget);
-    ((_budget == -1) || {_budget > _cost})
+    ((_budget == -1) || {_budget >= _cost})
 } && {
     private _inArea = GVAR(locations) isEqualTo [];
     {

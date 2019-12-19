@@ -26,6 +26,8 @@ if (_side isEqualTo sideUnknown) exitWith {ERROR("Unknown side");};
 private _budget = [_side] call FUNC(getBudget);
 private _newBudget = _budget + _change;
 
+_newBudget = 0 max _newBudget;
+
 if (_budget != -1) then {
     missionNamespace setVariable [format [QGVAR(Budget_%1), _side], _newBudget, true];
 
