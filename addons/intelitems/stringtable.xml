@@ -4,34 +4,42 @@
         <Key ID="STR_ACEX_IntelItems_Category">
             <English>ACEX Intel Items</English>
             <Chinese>ACEX 情報物品</Chinese>
+            <Japanese>ACEX 機密アイテム</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_DisplayName">
             <English>Intel Items</English>
             <Chinese>情報物品</Chinese>
+            <Japanese>機密アイテム</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Notepad_DisplayName">
             <English>Notepad</English>
             <Chinese>筆記本</Chinese>
+            <Japanese>メモ</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Notepad_Description">
             <English>Notepad - Can access from the map screen</English>
             <Chinese>筆記本 - 可以透過地圖界面來存取</Chinese>
+            <Japanese>メモ - マップ画面から確認可能</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Document_DisplayName">
             <English>Document</English>
             <Chinese>文件</Chinese>
+            <Japanese>資料</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Document_Description">
             <English>Printed Document - Can access from the map screen</English>
             <Chinese>影印文件 - 可以透過地圖界面來存取</Chinese>
+            <Japanese>メモ - マップ画面から確認可能</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Photo_DisplayName">
             <English>Photo</English>
             <Chinese>相片</Chinese>
+            <Japanese>写真</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Photo_Description">
             <English>Photo - Can access from the map screen</English>
             <Chinese>相片  - 可以透過地圖界面來存取</Chinese>
+            <Japanese>写真 - マップ画面から確認可能</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Text">
             <English>Text</English>
@@ -44,10 +52,12 @@
             <Russian>Текст</Russian>
             <Spanish>Texto</Spanish>
             <Chinese>文字</Chinese>
+            <Japanese>テキスト</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Photo_Filename">
             <English>Photo Filename</English>
             <Chinese>相片名稱</Chinese>
+            <Japanese>写真名</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Pickup">
             <English>Pick Up</English>
@@ -60,6 +70,7 @@
             <Russian>Подобрать</Russian>
             <Spanish>Recoger</Spanish>
             <Chinese>撿起</Chinese>
+            <Japanese>拾う</Japanese>
         </Key>
     </Package>
 </Project>
