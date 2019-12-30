@@ -262,7 +262,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSupply_3DEN_DisplayName">
             <English>Water Supply</English>
-            <Chinese>補水量</Chinese>
+            <Chinese>飲用水補給</Chinese>
             <Japanese>水資源</Japanese>
             <Russian>Водные ресурсы</Russian>
         </Key>
@@ -385,7 +385,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottle_DisplayName">
             <English>Water Bottle</English>
-            <Chinese>寶特瓶</Chinese>
+            <Chinese>飲用水</Chinese>
             <Chinesesimp>水瓶</Chinesesimp>
             <Czech>Láhev na vodu</Czech>
             <French>Bouteille d'eau</French>
@@ -417,7 +417,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottleHalf_DisplayName">
             <English>Water Bottle (Half)</English>
-            <Chinese>寶特瓶（半罐）</Chinese>
+            <Chinese>飲用水（半罐）</Chinese>
             <Chinesesimp>水瓶（一半）</Chinesesimp>
             <Czech>Vodní láhev (poloviční)</Czech>
             <French>Bouteille d'eau (la moitié)</French>
@@ -449,7 +449,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottleEmpty_DisplayName">
             <English>Water Bottle (Empty)</English>
-            <Chinese>寶特瓶（空）</Chinese>
+            <Chinese>空寶特瓶</Chinese>
             <Chinesesimp>水瓶（空）</Chinesesimp>
             <Czech>Láhev s vodou (prázdné)</Czech>
             <French>Bouteille d'eau (vide)</French>
@@ -598,7 +598,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_LambCurry_DisplayName">
             <English>MRE Lamb Curry</English>
-            <Chinese>MRE 羊肉咖哩</Chinese>
+            <Chinese>軍糧 羊肉咖哩</Chinese>
             <Chinesesimp>MRE羊肉咖喱</Chinesesimp>
             <Czech>MRE jehněčí kari</Czech>
             <French>MRE Curry d'agneau</French>
@@ -630,7 +630,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_BeefStew_DisplayName">
             <English>MRE Beef Stew</English>
-            <Chinese>MRE 牛肉燉湯</Chinese>
+            <Chinese>軍糧 牛肉燉湯</Chinese>
             <Japanese>MRE ビーフ シチュー</Japanese>
             <Polish>MRE Gulasz wołowy</Polish>
             <Russian>ИРП: Жаркое из говядины</Russian>
@@ -644,7 +644,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_CreamTomatoSoup_DisplayName">
             <English>MRE Cream Tomato Soup</English>
-            <Chinese>MRE奶油番茄湯</Chinese>
+            <Chinese>軍糧 奶油番茄湯</Chinese>
             <Chinesesimp>MRE奶油西红柿汤</Chinesesimp>
             <Czech>MRE krémová rajská polévka</Czech>
             <French>MRE Soupe de tomate crème</French>
@@ -676,7 +676,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_CreamChickenSoup_DisplayName">
             <English>MRE Cream Chicken Soup</English>
-            <Chinese>MRE奶油雞湯</Chinese>
+            <Chinese>軍糧 奶油雞湯</Chinese>
             <Chinesesimp>MRE奶油鸡汤</Chinesesimp>
             <Czech>MRE krémová kuřecí polévka</Czech>
             <French>MRE Soupe à la crème au poulet</French>
@@ -708,7 +708,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_ChickenTikkaMasala_DisplayName">
             <English>MRE Chicken Tikka Masala</English>
-            <Chinese>MRE瑪撒拉雞</Chinese>
+            <Chinese>軍糧 瑪撒拉雞</Chinese>
             <Chinesesimp>MRE鸡蒂卡Masala</Chinesesimp>
             <Czech>MRE Kuře Tikka Masala</Czech>
             <French>MRE Poulet Tikka Masala</French>
@@ -740,7 +740,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_SteakVegetables_DisplayName">
             <English>MRE Steak Vegetables</English>
-            <Chinese>MRE牛排蔬菜</Chinese>
+            <Chinese>軍糧 牛排蔬菜</Chinese>
             <Chinesesimp>MRE牛排蔬菜</Chinesesimp>
             <Czech>MRE Steak zelenina</Czech>
             <French>MRE Steak légumes</French>
@@ -772,7 +772,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_MeatballsPasta_DisplayName">
             <English>MRE Meatballs and Pasta</English>
-            <Chinese>MRE肉丸和意大利麵</Chinese>
+            <Chinese>軍糧 肉丸和意大利麵</Chinese>
             <Chinesesimp>MRE肉丸和意大利面</Chinesesimp>
             <Czech>MRE karbanátky a těstoviny</Czech>
             <French>MRE Pâtes aux boulettes de viande</French>
@@ -804,7 +804,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_ChickenHerbDumplings_DisplayName">
             <English>MRE Chicken with Herb Dumplings</English>
-            <Chinese>MRE雞肉香草餃子</Chinese>
+            <Chinese>軍糧 雞肉香草餃子</Chinese>
             <Chinesesimp>MRE鸡肉香草饺子</Chinesesimp>
             <Czech>MRE kuře s bylinkovým knedlíkem</Czech>
             <French>MRE de poulet avec des boulettes aux herbes</French>
