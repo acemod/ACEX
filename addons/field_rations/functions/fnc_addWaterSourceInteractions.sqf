@@ -43,7 +43,7 @@ TRACE_1("Starting interact PFH",_interactionType);
         if (getPosASL ACE_player distanceSqr _setPosition > 25) then {
             BEGIN_COUNTER(updatePosition);
             {
-                if (!(_x in _sourcesHelped) && {GVAR(terrainObjectActions) || {!(_x call CBA_fnc_isTerrainObject)}} ) then {
+                if (!(_x in _sourcesHelped) && {GVAR(terrainObjectActions) || {!(_x call CBA_fnc_isTerrainObject)}}) then {
                     private _waterRemaining = [_x] call FUNC(getRemainingWater);
 
                     if (_waterRemaining != REFILL_WATER_DISABLED) then {
