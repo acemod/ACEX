@@ -20,5 +20,5 @@ params ["_player", "_source"];
 
 GVAR(waterSourceActions) == 2 && {
     private _water = _source call FUNC(getRemainingWater);
-    _water == REFILL_WATER_INFINITE || {_source call FUNC(getRemainingWater) >= DRINK_FROM_SOURCE_AMOUNT}
+    _water == REFILL_WATER_INFINITE || {_water >= DRINK_FROM_SOURCE_AMOUNT}
 }
