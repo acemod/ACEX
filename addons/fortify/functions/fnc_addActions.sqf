@@ -23,18 +23,21 @@ private _objects = missionNamespace getVariable [format [QGVAR(Objects_%1), _sid
 private _actions = [];
 
 {
-    _x params ["_classname"];
+    _x params ["_classname", "_cost"];
+
+    private _displayName = getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 
     private _action = [
         _classname,
-        getText (configFile >> "CfgVehicles" >> _classname >> "displayName"),
+        format ["$%1 - %2", _cost, _displayName],
         "",
-        {_this call FUNC(deployObject)},
+        LINKFUNC(deployObject),
         {
-            params ["", "_player", "_params"];
-            private _cost = _params call FUNC(getCost);
+            params ["", "_player", "_args"];
+
+            private _cost = _args call FUNC(getCost);
             private _budget = [side group _player] call FUNC(getBudget);
-            (_budget == -1 || _budget >= _cost)
+            _budget == -1 || {_budget >= _cost}
         },
         {},
         [_side, _classname]
