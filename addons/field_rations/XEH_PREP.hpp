@@ -1,10 +1,13 @@
 PREP(addStatusModifier);
 PREP(addWaterSourceInteractions);
+PREP(canDrinkFromSource);
 PREP(canRefillItem);
 PREP(checkWater);
 PREP(consumeItem);
+PREP(drinkFromSource);
 PREP(getActionOffset);
 PREP(getConsumableChildren);
+PREP(getDrinkAnimation);
 PREP(getRefillChildren);
 PREP(getRemainingWater);
 PREP(handleEffects);

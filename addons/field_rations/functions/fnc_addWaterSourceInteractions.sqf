@@ -18,8 +18,12 @@
 
 params ["_interactionType"];
 
-// Ignore self-interaction menu or mounted vehicle interaction
-if (_interactionType != 0 || {vehicle ACE_player != ACE_player}) exitWith {};
+// Ignore when self-interaction, mounted vehicle interaction, or water source actions are disabled
+if (
+    _interactionType != 0
+    || {vehicle ACE_player != ACE_player}
+    || {GVAR(waterSourceActions) == 0}
+) exitWith {};
 TRACE_1("Starting interact PFH",_interactionType);
 
 [{
@@ -39,15 +43,17 @@ TRACE_1("Starting interact PFH",_interactionType);
         if (getPosASL ACE_player distanceSqr _setPosition > 25) then {
             BEGIN_COUNTER(updatePosition);
             {
-                if !(_x in _sourcesHelped) then {
+                if (!(_x in _sourcesHelped) && {GVAR(terrainObjectActions) || {!(_x call CBA_fnc_isTerrainObject)}} ) then {
                     private _waterRemaining = [_x] call FUNC(getRemainingWater);
+
                     if (_waterRemaining != REFILL_WATER_DISABLED) then {
-                        _sourcesHelped pushBack _x;
-                        private _helper = QGVAR(helper) createVehicleLocal [0, 0, 0];
-                        _helper setVariable [QGVAR(waterSource), _x];
                         private _offset = [_x] call FUNC(getActionOffset);
+                        private _helper = QGVAR(helper) createVehicleLocal [0, 0, 0];
                         _helper setPosASL AGLtoASL (_x modelToWorld _offset);
+                        _helper setVariable [QGVAR(waterSource), _x];
+
                         _addedHelpers pushBack _helper;
+                        _sourcesHelped pushBack _x;
                         TRACE_3("Added interaction helper",_x,typeOf _x,_waterRemaining);
                     };
                 };

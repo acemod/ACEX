@@ -123,7 +123,7 @@ private _fnc_condition = {
         _args set [7, true];
     };
 
-    _consumeItem in (_player call ACEFUNC(common,uniqueItems));
+    _consumeItem in (_player call ACEFUNC(common,uniqueItems))
 };
 
 [

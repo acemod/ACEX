@@ -22,7 +22,9 @@ if !(hasInterface) exitWith {};
         {true},
         {
             private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
+
             alive _waterSource
+            && {GVAR(waterSourceActions) != 0}
             && {_waterSource call FUNC(getRemainingWater) != REFILL_WATER_DISABLED}
             && {[_player, _waterSource] call ACEFUNC(common,canInteractWith)}
         },
@@ -49,16 +51,20 @@ if !(hasInterface) exitWith {};
                 private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
                 (_waterSource call FUNC(getRemainingWater)) != REFILL_WATER_INFINITE
             }
-        ] call ACEFUNC(interact_menu,createAction)
-        /*
-        [
-            QGVAR(drinkDirectly),
-            localize LSTRING(DrinkDirectly),
-            QPATHTOF(ui\icon_water_tap.paa),
-            {systemChat "x"},
-            {true}
         ] call ACEFUNC(interact_menu,createAction),
-        */
+        [
+            QGVAR(drinkFromSource),
+            localize LSTRING(DrinkFromSource),
+            QPATHTOF(ui\icon_water_tap.paa),
+            {
+                private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
+                [_player, _waterSource] call FUNC(drinkFromSource);
+            },
+            {
+                private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
+                [_player, _waterSource] call FUNC(canDrinkFromSource);
+            }
+        ] call ACEFUNC(interact_menu,createAction)
     ];
 
     // Add water source actions to helper
@@ -79,11 +85,13 @@ if !(hasInterface) exitWith {};
             -1 * count (_this getVariable [QACEGVAR(medical,ivBags), []]);
         }] call FUNC(addStatusModifier);
     };
+
     if (["ace_weather"] call ACEFUNC(common,isModLoaded)) then {
         [0, {
             linearConversion [40, 60, missionNamespace getVariable [QACEGVAR(weather,currentTemperature), 25], 0, 1.5, true];
         }] call FUNC(addStatusModifier);
     };
+
     if (["ace_dragging"] call ACEFUNC(common,isModLoaded)) then {
         [2, {
             if (_this getVariable [QACEGVAR(dragging,isDragging), false] || {_this getVariable [QACEGVAR(dragging,isCarrying), false]}) exitWith {
