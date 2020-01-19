@@ -3,41 +3,49 @@
     <Package name="intelItems">
         <Key ID="STR_ACEX_IntelItems_Category">
             <English>ACEX Intel Items</English>
+            <German>ACEX Aufklärungsgegenstände</German>
             <Chinese>ACEX 情報物品</Chinese>
             <Japanese>ACEX 機密アイテム</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_DisplayName">
             <English>Intel Items</English>
+            <German>Aufklärungsgegenstände</German>
             <Chinese>情報物品</Chinese>
             <Japanese>機密アイテム</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Notepad_DisplayName">
             <English>Notepad</English>
+            <German>Notizblock</German>
             <Chinese>筆記本</Chinese>
             <Japanese>メモ</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Notepad_Description">
             <English>Notepad - Can access from the map screen</English>
+            <German>Notizblock - Kann man auf dem Kartenbildschirm zugreifen</German>
             <Chinese>筆記本 - 可以透過地圖界面來存取</Chinese>
             <Japanese>メモ - マップ画面から確認可能</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Document_DisplayName">
             <English>Document</English>
+            <German>Dokument</German>
             <Chinese>文件</Chinese>
             <Japanese>資料</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Document_Description">
             <English>Printed Document - Can access from the map screen</English>
+            <German>Ausgedrucktes Dokument - Kann man auf dem Kartenbildschirm zugreifen</German>
             <Chinese>影印文件 - 可以透過地圖界面來存取</Chinese>
             <Japanese>メモ - マップ画面から確認可能</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Photo_DisplayName">
             <English>Photo</English>
+            <German>Foto</German>
             <Chinese>相片</Chinese>
             <Japanese>写真</Japanese>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Photo_Description">
             <English>Photo - Can access from the map screen</English>
+            <German>Foto - Kann man auf dem Kartenbildschirm zugreifen</German>
             <Chinese>相片  - 可以透過地圖界面來存取</Chinese>
             <Japanese>写真 - マップ画面から確認可能</Japanese>
         </Key>
@@ -56,6 +64,7 @@
         </Key>
         <Key ID="STR_ACEX_IntelItems_Photo_Filename">
             <English>Photo Filename</English>
+            <German>Foto Dateiname</German>
             <Chinese>相片名稱</Chinese>
             <Japanese>写真名</Japanese>
         </Key>
