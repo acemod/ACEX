@@ -33,7 +33,7 @@
         </Key>
         <Key ID="STR_ACEX_IntelItems_Document_Description">
             <English>Printed Document - Can access from the map screen</English>
-            <German>Ausgedrucktes Dokument - Kann man auf dem Kartenbildschirm zugreifen</German>
+            <German>Bedrucktes Dokument - Über die Karte abrufbar</German>
             <Chinese>影印文件 - 可以透過地圖界面來存取</Chinese>
             <Japanese>メモ - マップ画面から確認可能</Japanese>
         </Key>
