@@ -221,7 +221,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudShowLevel_Description">
             <English>Automatically show the HUD when either thirst or hunger are above this level</English>
-            <German>Zeigt automatisch das HUD wenn Durst oder Hunger über diesen level sind.</German>
+            <German>Zeigt automatisch das HUD an, wenn Durst oder Hunger über diesem Level sind.</German>
             <Chinese>在飲食低於多少程度時顯示界面。</Chinese>
             <Japanese>この値以上に空腹感か乾きを感じると自動的に HUD を表示します</Japanese>
             <Polish>Automatycznie pokaż HUD kiedy pragnienie albo głód przekroczy ten poziom</Polish>
