@@ -175,7 +175,7 @@
         </Key>
         <Key ID="STR_ACEX_Headless_BlacklistEdenDesc">
             <English>Disables transferring of this AI unit/group to Headless Clients. No effect on player units.</English>
-            <German>Schaltet das übertragen dieser KI Einheit/Gruppe zu einen Headless Client aus. Hat keinen Effekt auf Spielereinheiten.</German>
+            <German>Schaltet das Übertragen dieser KI Einheit/Gruppe zu einem Headless Client aus. Hat keinen Effekt auf Spielereinheiten.</German>
             <Japanese>ヘッドレス クライアントへ移行させない AI ユニット/グループを指定します。プレイヤー ユニットへ効果はありません。</Japanese>
             <French>Désactive le transfert de ce(tte) unité/groupe au Headless Clients. Sans effet sur les unités des joueurs.</French>
             <Chinesesimp>禁止转换黑名单中的AI单位/群组到无头客户端上。此功能对玩家单位无用。</Chinesesimp>
