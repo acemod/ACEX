@@ -124,7 +124,7 @@
         </Key>
         <Key ID="STR_ACEX_Volume_FadeDelay">
             <English>Fade delay</English>
-            <German>Schwinde Verzögerung</German>
+            <German>Ausblendzeit</German>
             <Japanese>フェードへの遅延</Japanese>
             <French>Retard fondu</French>
             <Korean>페이드 지연</Korean>
