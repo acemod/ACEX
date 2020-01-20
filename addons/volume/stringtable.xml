@@ -113,7 +113,7 @@
         </Key>
         <Key ID="STR_ACEX_Volume_ShowNotificationDescription">
             <English>Show notification when lowering/restoring volume.</English>
-            <German>Zeige Benachrichtigung wenn Lautstärke verringert/wiederhergestellt ist.</German>
+            <German>Zeige Benachrichtigung, wenn Lautstärke verringert/wiederhergestellt wurde.</German>
             <Japanese>音量を低減、復元時に通知を表示します。</Japanese>
             <French>Affiche une notification lorsque le volume est réduit/rétabli.</French>
             <Korean>음량이 감소/복구될 때 메세지를 표시합니다.</Korean>
