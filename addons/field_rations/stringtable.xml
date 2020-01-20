@@ -167,7 +167,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_AffectAdvancedFatigue_DisplayName">
             <English>Affect Advanced Fatigue</English>
-            <German>Beeinflusst Erweiterte Ausdauer</German>
+            <German>Beeinflusst die Erweiterte Ausdauer</German>
             <Chinese>與進階疲勞聯動</Chinese>
             <Japanese>アドバンスド ファティーグへの影響</Japanese>
             <Russian>Влияние на Усталость</Russian>
