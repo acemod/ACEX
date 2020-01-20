@@ -157,7 +157,7 @@
         </Key>
         <Key ID="STR_ACEX_Volume_RemindIfLoweredDescription">
             <English>Reminds you every minute if your volume is lowered.</English>
-            <German>Erinnert dich jede Minute wenn deine Lautstärke verringert ist.</German>
+            <German>Erinnert dich jede Minute, wenn deine Lautstärke verringert wurde.</German>
             <Japanese>音量を低減時は毎分ごとに通知します。</Japanese>
             <French>Rappelle chaque minute que le volume est réduit.</French>
             <Korean>음량이 감소되면 매 분 마다 알려줍니다</Korean>
