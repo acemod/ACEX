@@ -142,7 +142,7 @@
         </Key>
         <Key ID="STR_ACEX_Headless_TransferLoadoutDesc">
             <English>Transfer loadout of units attempts to work around an issue where units appear naked after transferring to a Headless Client.</English>
-            <German>Transferiere Ausrüstung einer Einheit um einen Fehler zu umgehen wo Einheiten nach dem Transfer auf einen Headless Client nackt erscheinen.</German>
+            <German>Transferiere die Ausrüstung einer Einheit, um einen Fehler zu umgehen, bei welchem Einheiten nach dem Transfer auf einen Headless Client nackt erscheinen.</German>
             <Japanese>装備の移送はヘッドレス クライアントへの移行後にユニットが裸で出現する問題の回避を試みます。</Japanese>
             <Russian>Передача снаряжения юнитов позволяет обходить проблему, при которой юниты оказываются без снаряжения после передачи управления Headless клиенту.</Russian>
             <Chinese>裝備傳輸用於試著暫時應付單位透過無頭客戶端傳輸時所導致裸裝之問題。</Chinese>
