@@ -27,7 +27,7 @@
         </Key>
         <Key ID="STR_ACEX_Headless_EnabledDesc">
             <English>Enables transferring of AI to Headless Clients.</English>
-            <German>Aktiviert den Transfer der KI auf Headless Clients.</German>
+            <German>Aktiviert den Transfer der KI auf die Headless Clients.</German>
             <Polish>Włącza transfer AI do Headless Client.</Polish>
             <Korean>AI를 헤드리스 클라이언트로 전송할 수 있습니다.</Korean>
             <Japanese>AI をヘッドレス クライアントへ移行を有効化</Japanese>
