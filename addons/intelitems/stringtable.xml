@@ -21,7 +21,7 @@
         </Key>
         <Key ID="STR_ACEX_IntelItems_Notepad_Description">
             <English>Notepad - Can access from the map screen</English>
-            <German>Notizblock - Kann man auf dem Kartenbildschirm zugreifen</German>
+            <German>Notizblock - Über die Karte abrufbar</German>
             <Chinese>筆記本 - 可以透過地圖界面來存取</Chinese>
             <Japanese>メモ - マップ画面から確認可能</Japanese>
         </Key>
