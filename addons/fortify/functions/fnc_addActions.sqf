@@ -21,6 +21,7 @@ params ["_player"];
 private _side = side group _player;
 private _objects = missionNamespace getVariable [format [QGVAR(Objects_%1), _side], []];
 private _actions = [];
+private _infiniteBudget = ([side group _player] call FUNC(getBudget)) == -1;
 
 {
     _x params ["_classname", "_cost"];
@@ -29,7 +30,7 @@ private _actions = [];
 
     private _action = [
         _classname,
-        format ["$%1 - %2", _cost, _displayName],
+        if (_infiniteBudget) then { _displayName } else { format ["$%1 - %2", _cost, _displayName] },
         "",
         LINKFUNC(deployObject),
         {
