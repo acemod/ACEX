@@ -132,10 +132,9 @@ GVAR(killCount) = 0;
             _unitName = [_unit, true, false] call ACEFUNC(common,getName); // should be same as profileName
         } else {
             _unitName = _unit getVariable [QGVAR(aiName), ""]; // allow setting a custom AI name (e.g. VIP Target)
-                if (_unitName == "") then {
-                    _unitName = format ["*AI* - %1", getText (configfile >> "CfgVehicles" >> (typeOf _killer) >> "displayName")];
-                };
-            format ["*AI* - %1", getText (configfile >> "CfgVehicles" >> (typeOf _unit) >> "displayName")];
+            if (_unitName == "") then {
+                _unitName = format ["*AI* - %1", getText (configfile >> "CfgVehicles" >> (typeOf _killer) >> "displayName")];
+            };
         };
         TRACE_3("send kill event",_killer,_unitName,_killInfo);
         [QGVAR(kill), [_unitName, _killInfo], _killer] call CBA_fnc_targetEvent;
