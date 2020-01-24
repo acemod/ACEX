@@ -131,7 +131,7 @@ GVAR(killCount) = 0;
         if (_unitIsPlayer) then {
             _unitName = [_unit, true, false] call ACEFUNC(common,getName); // should be same as profileName
         } else {
-                _unitName = _unit getVariable [QGVAR(aiName), ""]; // allow setting a custom AI name (e.g. VIP Target)
+            _unitName = _unit getVariable [QGVAR(aiName), ""]; // allow setting a custom AI name (e.g. VIP Target)
                 if (_unitName == "") then {
                     _unitName = format ["*AI* - %1", getText (configfile >> "CfgVehicles" >> (typeOf _killer) >> "displayName")];
                 };
