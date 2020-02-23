@@ -78,7 +78,10 @@
     [LSTRING(HudType_DisplayName), LSTRING(HudType_Description)],
     LSTRING(DisplayName),
     [[0, 1], [LSTRING(ColoredIcons), LSTRING(DrainingIcons)], 0],
-    false
+    false,
+    {
+        QGVAR(hud) cutFadeOut 0;
+    }
 ] call CBA_settings_fnc_init;
 
 [
