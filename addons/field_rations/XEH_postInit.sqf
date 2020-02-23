@@ -93,6 +93,7 @@ if !(hasInterface) exitWith {};
         }] call FUNC(addStatusModifier);
     };
 
+    // Handle returning to normal transparency once interaction menu is closed
     GVAR(hudInteractionHover) = false;
 
     ["ace_interactMenuClosed", {
