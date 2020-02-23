@@ -29,7 +29,7 @@ if (
     || {!(_unit isKindOf "CAManBase")}
     || {!(_unit canAdd _item)}
     || {getNumber (configFile >> "CfgMagazines" >> _item >> QGVAR(intel)) != 1}
-) exitWith {false};
+) exitWith { ERROR_1("addIntel failed - %1",_this); false };
 
 // Add the magazine item to the unit's inventory and get its id
 private _magazinesBefore = [_unit, _item] call CBA_fnc_getMagazineIndex;
