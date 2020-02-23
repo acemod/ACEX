@@ -60,6 +60,6 @@ GVAR(objectRotationZ) = 0;
             5
         ] call ACEFUNC(interact_menu,createAction);
 
-        [_object, 0, [], _removeAction] call ACEFUNC(interact_menu,addActionToObject);
+        [_object, 0, ["ACE_MainActions"], _removeAction] call ACEFUNC(interact_menu,addActionToObject);
     };
 }] call CBA_fnc_addEventHandler;
