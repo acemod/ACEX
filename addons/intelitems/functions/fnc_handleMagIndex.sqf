@@ -7,7 +7,7 @@
  * 0: Magazine id <STRING>
  *
  * Return Value:
- * None
+ * Intel Index <NUMBER>
  *
  * Example:
  * ["001"] call acex_intelitems_fnc_handleMagIndex
@@ -25,3 +25,5 @@ if (isNil "_index") then {
 };
 
 GVAR(intelMap) setVariable [_magazineId, _index, true];
+
+_index
