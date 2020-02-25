@@ -68,7 +68,7 @@ if !(hasInterface) exitWith {};
     ];
 
     // Add water source actions to helper
-    [QGVAR(helper), 0, [], _mainAction] call ACEFUNC(interact_menu,addActionToClass);
+    [QGVAR(helper), 0, ["ACE_MainActions"], _mainAction] call ACEFUNC(interact_menu,addActionToClass);
     {
         [QGVAR(helper), 0, [QGVAR(waterSource)], _x] call ACEFUNC(interact_menu,addActionToClass);
     } forEach _subActions;
