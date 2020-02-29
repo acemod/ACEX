@@ -1,0 +1,40 @@
+branches:
+  - master
+  - release-drafter  # for testing edits to this configuration
+
+name-template: 'Version $NEXT_PATCH_VERSION'
+tag-template: 'v$NEXT_PATCH_VERSION'
+
+categories:
+  - title: '**ADDED:**'
+    labels:
+      - 'feature request'
+  - title: '**FIXED:**'
+    labels:
+      - 'bug fix'
+  - title: '**IMPROVED:**'
+    labels:
+      - 'enhancement'
+  - title: '**CHANGED:**'
+    labels:
+      - 'cleanup'
+  - title: '**TRANSLATIONS:**'
+    labels:
+      - 'translations'
+
+exclude-labels:
+  - 'ignore changelog'
+
+change-template: '- $TITLE (#$NUMBER)'
+template: |
+  _Requires ACE3 version X.Y.Z or later._
+
+  ## Change Log Summary
+
+  $CHANGES
+
+replacers:
+  # Category titles
+  - search: '/\#\# (\*\*(ADDED|FIXED|IMPROVED|CHANGED|TRANSLATIONS):\*\*)/g'
+    replace: '$1'
+
