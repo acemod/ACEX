@@ -2,11 +2,11 @@
 
 #include "XEH_PREP.hpp"
 
-
 // List of p3d water sources (case sensitive) for objects that report `typeOf == ""`
 private _waterSourceP3Ds = [
     "misc_wellpump.p3d" // [11899, 9150, 0] on chenarus
 ];
+
 // List of refill action offsets corresponding to the p3ds in the array above
 private _waterSourceOffsets = [
     [0, 0, 0]
