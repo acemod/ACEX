@@ -1,18 +1,20 @@
 # Number of days of inactivity before an issue becomes stale
-daysUntilStale: 90
+daysUntilStale: 180
 
 # Number of days of inactivity before a stale issue is closed
-daysUntilClose: 7
+daysUntilClose: 14
 
 # Issues with these labels will never be considered stale
 exemptLabels:
   - pinned
   - critical bug
   - bug
-  - feature request 
+  - feature request
+  - sticky
+  - help wanted
 
 # Label to use when marking an issue as stale
-staleLabel: inactive
+staleLabel: stale
 
 # Comment to post when marking an issue as stale. Set to `false` to disable
 markComment: >
@@ -22,8 +24,14 @@ markComment: >
 
 # Comment to post when closing a stale issue. Set to `false` to disable
 closeComment: >
-  This issue has been automatically closed due to inactivity. Please re-open
-  if this still requires investigation.
+  This issue has been automatically closed due to inactivity.
+
+  If this is still an issue, please feel free to re-open this. If necessary, provide any additional details to help us solve this issue.
+
+  If you wish to assist us resolving this issue,
+  please re-open or create a new issue stating you wish to help us out.
+
+  Thank you for your contributions.
 
 # Limit the number of actions per hour, from 1-30. Default is 30
 limitPerRun: 30
