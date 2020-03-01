@@ -36,9 +36,12 @@ _side = switch (_side) do {
 
 private _preset = _logic getVariable ["Preset", "small"];
 _preset = switch (_preset) do {
-    case (1): {"small"};
-    case (2): {"medium"};
-    case (3): {"big"};
+    case 1: {"small"};
+    case 2: {"medium"};
+    case 3: {"big"};
+    case 4: {"smallGreen"};
+    case 5: {"mediumGreen"};
+    case 6: {"bigGreen"};
     default {"?"};
 };
 
