@@ -22,6 +22,7 @@ jobs:
       run: python3 tools/check_strings.py
     - name: Check for BOM
       uses: arma-actions/bom-check@master
+      continue-on-error: true # https://github.com/arma-actions/bom-check/issues/1
 
   lint:
     runs-on: ubuntu-latest
