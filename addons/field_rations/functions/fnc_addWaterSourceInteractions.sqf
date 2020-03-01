@@ -24,6 +24,7 @@ if (
     || {vehicle ACE_player != ACE_player}
     || {GVAR(waterSourceActions) == 0}
 ) exitWith {};
+
 TRACE_1("Starting interact PFH",_interactionType);
 
 [{
@@ -33,7 +34,7 @@ TRACE_1("Starting interact PFH",_interactionType);
 
     if (!ACEGVAR(interact_menu,keyDown)) then {
         TRACE_1("Ending interact PFH",_pfhID);
-        {deleteVehicle _x} forEach _addedHelpers;
+        {detach _x; deleteVehicle _x} forEach _addedHelpers;
         [_pfhID] call CBA_fnc_removePerFrameHandler;
     } else {
         // Prevent rare error when ending mission with interact key down
@@ -49,8 +50,8 @@ TRACE_1("Starting interact PFH",_interactionType);
                     if (_waterRemaining != REFILL_WATER_DISABLED) then {
                         private _offset = [_x] call FUNC(getActionOffset);
                         private _helper = QGVAR(helper) createVehicleLocal [0, 0, 0];
-                        _helper setPosASL AGLtoASL (_x modelToWorld _offset);
                         _helper setVariable [QGVAR(waterSource), _x];
+                        _helper attachTo [_x, _offset];
 
                         _addedHelpers pushBack _helper;
                         _sourcesHelped pushBack _x;
