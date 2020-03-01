@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - master
+    - release-drafter # for testing edits to configuration
 
 jobs:
   draft:
