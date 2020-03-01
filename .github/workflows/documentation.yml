@@ -22,4 +22,3 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.DOCS_TOKEN }}
       run: python3 tools/deploy.py
-
