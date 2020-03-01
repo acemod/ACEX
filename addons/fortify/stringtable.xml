@@ -125,5 +125,14 @@
             <Polish>Zawsze</Polish>
             <Russian>Показывать всегда</Russian>
         </Key>
+        <Key ID="STR_ACEX_Fortify_SmallGreen">
+            <English>Small (Green)</English>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_MediumGreen">
+            <English>Medium (Green)</English>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_LargeGreen">
+            <English>Large (Green)</English>
+        </Key>
     </Package>
 </Project>
