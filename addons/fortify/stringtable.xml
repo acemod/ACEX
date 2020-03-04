@@ -102,7 +102,7 @@
         </Key>
         <Key ID="STR_ACEX_Fortify_settingHintDesc">
             <English>Controls when budget update hints are shown</English>
-            <German>Bestimmt wenn Budgetveränderungen angezeigt werden</German>
+            <German>Bestimmt wann Budgetveränderungen angezeigt werden</German>
             <Chinese>決定預算變更時是否會顯示提示</Chinese>
             <Chinesesimp>决定预算变更时是否会显示提示</Chinesesimp>
             <Japanese>予算が更新されヒント表示時の操作を決定します</Japanese>
