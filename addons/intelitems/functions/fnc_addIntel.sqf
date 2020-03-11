@@ -33,7 +33,7 @@ if (
 
 // Add the magazine item to the unit's inventory and get its id
 private _magazinesBefore = [_unit, _item] call CBA_fnc_getMagazineIndex;
-_unit addMagazine _item;
+_unit addMagazine [_item, 2];
 private _magazinesAfter = [_unit, _item] call CBA_fnc_getMagazineIndex;
 
 private _magazineId = _magazinesAfter - _magazinesBefore;
