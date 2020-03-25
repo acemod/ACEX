@@ -20,7 +20,7 @@
 /*
     class CfgDebriefingSections {
         class acex_killTracker {
-            title = "Acex Killed Events";
+            title = "ACEX Killed Events";
             variable = "acex_killTracker_outputText";
         };
     };
@@ -53,7 +53,6 @@ GVAR(killCount) = 0;
     GVAR(eventsArray) pushBack format ["DIED: %1 %2", _name, _killInfo];
     GVAR(outputText) = (format ["Total Kills: %1<br/>", GVAR(killCount)]) + (GVAR(eventsArray) joinString "<br/>");
 }] call CBA_fnc_addEventHandler;
-
 
 ["ace_killed", {
     params ["_unit", "_causeOfDeath", "_killer", "_instigator"];
@@ -115,7 +114,7 @@ GVAR(killCount) = 0;
             if (_killerIsPlayer) then {
                 _killerName = [_killer, true, false] call ACEFUNC(common,getName);
             } else {
-                _killerName = _unit getVariable [QGVAR(aiName), ""]; // allow setting a custom AI name (e.g. VIP Target)
+                _killerName = _killer getVariable [QGVAR(aiName), ""]; // allow setting a custom AI name (e.g. VIP Target)
                 if (_killerName == "") then {
                     _killerName = format ["*AI* - %1", getText (configfile >> "CfgVehicles" >> (typeOf _killer) >> "displayName")];
                 };
@@ -133,7 +132,7 @@ GVAR(killCount) = 0;
         } else {
             _unitName = _unit getVariable [QGVAR(aiName), ""]; // allow setting a custom AI name (e.g. VIP Target)
             if (_unitName == "") then {
-                _unitName = format ["*AI* - %1", getText (configfile >> "CfgVehicles" >> (typeOf _killer) >> "displayName")];
+                _unitName = format ["*AI* - %1", getText (configfile >> "CfgVehicles" >> (typeOf _unit) >> "displayName")];
             };
         };
         TRACE_3("send kill event",_killer,_unitName,_killInfo);
