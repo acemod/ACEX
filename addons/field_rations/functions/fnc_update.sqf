@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: mharis001, Glowbal, PabstMirror
  * Main looping function that updates thirst/hunger status.
@@ -13,7 +14,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 // 1 sec (update interval) * 100 (max thirst/hunger) / 3600 (sec in hour) = 0.02777778
 #define CHANGE_CONSTANT 0.02777778

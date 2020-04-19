@@ -16,7 +16,6 @@
  * Public: Yes
  */
 
-
 params ["_side", "_classname"];
 
 private _objects = missionNamespace getVariable [format [QGVAR(Objects_%1), _side], []];

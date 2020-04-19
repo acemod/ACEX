@@ -18,4 +18,11 @@ GVAR(waterSourceP3Ds) = _cache select 0;
 // List of refill action offsets corresponding to the p3ds in the array above
 GVAR(waterSourceOffsets) = _cache select 1;
 
+// ContextMenuOption
+["ACE_fieldRationsItems", ["CONTAINER"], "Eat/Drink", [], QPATHTOF(ui\icon_survival.paa), [{GVAR(enabled)}, {GVAR(enabled)}], {
+        params ["_unit", "_container", "_item", "_slot", "_params"];
+        [objNull, _unit, _item] call acex_field_rations_fnc_consumeItem;
+        false
+    }, false, []] call CBA_fnc_addItemContextMenuOption;
+
 ADDON = true;

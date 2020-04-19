@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: mharis001
  * Handles creating and updating the visuals of the HUD.
@@ -14,7 +15,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params [["_thirst", ACE_player getVariable [QGVAR(thirst), 0]], ["_hunger", ACE_player getVariable [QGVAR(hunger), 0]]];
 

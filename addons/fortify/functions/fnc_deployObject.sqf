@@ -17,7 +17,6 @@
  * Public: No
  */
 
-
 params ["", "_player", "_params"];
 _params params [["_side", sideUnknown, [sideUnknown]], ["_classname", "", [""]], ["_rotations", [0,0,0]]];
 TRACE_4("deployObject",_player,_side,_classname,_rotations);

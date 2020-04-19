@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: mharis001, Glowbal, PabstMirror
  * Consumes an item. Creates a progress bar and handles relevant thirst/hunger values.
@@ -15,7 +16,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["", "_player", "_consumeItem"];
 TRACE_2("Consume item started",_player,_consumeItem);

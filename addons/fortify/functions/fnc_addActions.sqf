@@ -15,7 +15,6 @@
  * Public: No
  */
 
-
 params ["_player"];
 
 private _side = side group _player;
