@@ -74,7 +74,7 @@ if !(hasInterface) exitWith {};
     } forEach _subActions;
 
     // ContextMenuOption
-    private _config = configFile >> "CfgWeapons"
+    private _config = configFile >> "CfgWeapons";
     [QGVAR(base), ["CONTAINER"], LLSTRING(ContextMenu_EatDrink), [], QPATHTOF(ui\icon_survival.paa),
         [
             { // enable
