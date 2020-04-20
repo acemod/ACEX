@@ -2,7 +2,7 @@
 
 if (!hasInterface) exitWith {};
 
-["ACEX", QGVAR(toggle), [localize LSTRING(KeybindName), localize LSTRING(KeybindDescription)], "", {
+["ACEX", QGVAR(toggle), [LLSTRING(KeybindName), LLSTRING(KeybindDescription)], "", {
     if (!GVAR(enabled)) exitWith {
         if (GVAR(isLowered)) then {
             call FUNC(restoreVolume);

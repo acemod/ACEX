@@ -36,9 +36,9 @@ private _consumeText = getText (_config >> QGVAR(consumeText));
 
 if (_consumeText == "") then {
     _consumeText = if (_hungerSatiated > 0) then {
-        localize LSTRING(EatingX);
+        LLSTRING(EatingX);
     } else {
-        localize LSTRING(DrinkingX);
+        LLSTRING(DrinkingX);
     };
 };
 

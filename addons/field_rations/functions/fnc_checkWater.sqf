@@ -34,5 +34,5 @@ params ["_player", "_source"];
         };
     },
     {},
-    localize LSTRING(CheckingWater)
+    LLSTRING(CheckingWater)
 ] call ACEFUNC(common,progressBar);

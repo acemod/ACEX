@@ -17,7 +17,7 @@ if !(hasInterface) exitWith {};
     // Compile water source actions
     private _mainAction = [
         QGVAR(waterSource),
-        localize LSTRING(WaterSource),
+        LLSTRING(WaterSource),
         QPATHTOF(ui\icon_water_tap.paa),
         {true},
         {
@@ -41,7 +41,7 @@ if !(hasInterface) exitWith {};
     private _subActions = [
         [
             QGVAR(checkWater),
-            localize LSTRING(CheckWater),
+            LLSTRING(CheckWater),
             QPATHTOF(ui\icon_water_tap.paa),
             {
                 private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
@@ -54,7 +54,7 @@ if !(hasInterface) exitWith {};
         ] call ACEFUNC(interact_menu,createAction),
         [
             QGVAR(drinkFromSource),
-            localize LSTRING(DrinkFromSource),
+            LLSTRING(DrinkFromSource),
             QPATHTOF(ui\icon_water_tap.paa),
             {
                 private _waterSource = _target getVariable [QGVAR(waterSource), objNull];

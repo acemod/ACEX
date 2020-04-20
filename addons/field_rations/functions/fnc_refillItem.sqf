@@ -70,6 +70,6 @@ private _fnc_condition = {
     ],
     _fnc_onSuccess,
     _fnc_onFailure,
-    localize LSTRING(Refilling),
+    LLSTRING(Refilling),
     _fnc_condition
 ] call ACEFUNC(common,progressBar);
