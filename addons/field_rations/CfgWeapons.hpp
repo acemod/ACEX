@@ -16,16 +16,16 @@ class CfgWeapons {
 
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
-    class ACE_fieldRationsItems: ACE_ItemCore {};
+    class GVAR(base): ACE_ItemCore {};
 
-    class ACE_Banana: ACE_fieldRationsItems {
+    class ACE_Banana: GVAR(base) {
         GVAR(consumeTime) = 10;
         GVAR(hungerSatiated) = 3;
         GVAR(consumeText) = CSTRING(EatingX);
     };
 
     // - Water Bottles --------------------------------------------------------
-    class ACE_WaterBottle: ACE_fieldRationsItems {
+    class ACE_WaterBottle: GVAR(base) {
         author = ACECSTRING(common,ACETeam);
         scope = 2;
         displayName = CSTRING(WaterBottle_DisplayName);
@@ -72,7 +72,7 @@ class CfgWeapons {
     };
 
     // - Canteens -------------------------------------------------------------
-    class ACE_Canteen: ACE_fieldRationsItems {
+    class ACE_Canteen: GVAR(base) {
         author = ACECSTRING(common,ACETeam);
         scope = 2;
         displayName = CSTRING(Canteen_DisplayName);
@@ -118,7 +118,7 @@ class CfgWeapons {
     };
 
     // - Soda Cans ------------------------------------------------------------
-    class ACE_Can_Spirit: ACE_fieldRationsItems {
+    class ACE_Can_Spirit: GVAR(base) {
         author = ACECSTRING(common,ACETeam);
         scope = 2;
         displayName = "$STR_a3_cfgvehicles_land_can_v1_f0";
@@ -152,7 +152,7 @@ class CfgWeapons {
     };
 
     // - MREs -----------------------------------------------------------------
-    class ACE_MRE_LambCurry: ACE_fieldRationsItems {
+    class ACE_MRE_LambCurry: GVAR(base) {
         author = ACECSTRING(common,ACETeam);
         scope = 2;
         displayName = CSTRING(MRE_LambCurry_DisplayName);

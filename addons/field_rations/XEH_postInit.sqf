@@ -75,7 +75,7 @@ if !(hasInterface) exitWith {};
 
     // ContextMenuOption
     private _config = configFile >> "CfgWeapons"
-    ["ACE_fieldRationsItems", ["CONTAINER"], LLSTRING(ContextMenu_EatDrink), [], QPATHTOF(ui\icon_survival.paa),
+    [QGVAR(base), ["CONTAINER"], LLSTRING(ContextMenu_EatDrink), [], QPATHTOF(ui\icon_survival.paa),
         [
             { // enable
                 params ["", "", "_item", "", "_config"];
