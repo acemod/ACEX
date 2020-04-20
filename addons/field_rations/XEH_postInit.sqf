@@ -73,6 +73,24 @@ if !(hasInterface) exitWith {};
         [QGVAR(helper), 0, [QGVAR(waterSource)], _x] call ACEFUNC(interact_menu,addActionToClass);
     } forEach _subActions;
 
+    // ContextMenuOption
+    private _config = configFile >> "CfgWeapons"
+    ["ACE_fieldRationsItems", ["CONTAINER"], LLSTRING(ContextMenu_EatDrink), [], QPATHTOF(ui\icon_survival.paa),
+        [
+            { // enable
+                params ["", "", "_item", "", "_config"];
+                getNumber (_config >> _item >> QGVAR(thirstQuenched)) > 0 || getNumber (_config >> _item >> QGVAR(hungerSatiated)) > 0
+            },
+            {GVAR(enabled)} // show
+        ],
+        {
+            params ["_unit", "", "_item"];
+            [objNull, _unit, _item] call FUNC(consumeItem);
+            false
+        },
+        false, _config
+    ] call CBA_fnc_addItemContextMenuOption;
+
     // Add water source helpers when interaction menu is opened
     ["ace_interactMenuOpened", {call FUNC(addWaterSourceInteractions)}] call CBA_fnc_addEventHandler;
 

@@ -880,5 +880,9 @@
             <Russian>Гуманитарный ИРП, предназначенный для питания людей во время кризисов и катастроф.</Russian>
             <Spanish>Una ración humanitaria destinada a servir como el suministro de alimentos de una persona durante las crisis</Spanish>
         </Key>
+        <Key ID="STR_ACEX_Field_Rations_ContextMenu_EatDrink">
+            <English>Eat/Drink</English>
+            <German>Essen/Trinken</German>
+        </Key>
     </Package>
 </Project>
