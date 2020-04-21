@@ -1,5 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="ACEX">
     <Package name="KillTracker">
+        <Key ID="STR_ACEX_KillTracker_TotalKills">
+          <Original>Total Kills: %1&lt;br /&gt;</Original>
+          <Russian>Всего убийств: %1&lt;br /&gt;</Russian>
+        </Key>
+        <Key ID="STR_ACEX_KillTracker_Killed">
+          <Original>Killed: %1 %2</Original>
+          <Russian>Убил: %1 %2</Russian>
+        </Key>
+        <Key ID="STR_ACEX_KillTracker_Died">
+          <Original>Died: %1 %2</Original>
+          <Russian>Убийца: %1 %2</Russian>
+        </Key>
+        <Key ID="STR_ACEX_KillTracker_Vehicle">
+          <Original>Vehicle: %1</Original>
+          <Russian>Техника: %1</Russian>
+        </Key>
+        <Key ID="STR_ACEX_KillTracker_FriendlyFire">
+          <Original>&lt;t color='#ff0000'&gt;Friendly Fire&lt;/t&gt;</Original>
+          <Russian>&lt;t color='#ff0000'&gt;Союзник&lt;/t&gt;</Russian>
+        </Key>
     </Package>
 </Project>

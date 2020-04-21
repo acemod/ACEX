@@ -43,15 +43,15 @@ GVAR(killCount) = 0;
     TRACE_2("kill eh",_name,_killInfo);
     // Increment kill counter
     GVAR(killCount) = GVAR(killCount) + 1;
-    GVAR(eventsArray) pushBack format ["Killed: %1 %2", _name, _killInfo];
-    GVAR(outputText) = (format ["Total Kills: %1<br/>", GVAR(killCount)]) + (GVAR(eventsArray) joinString "<br/>");
+    GVAR(eventsArray) pushBack format [LLSTRING(Killed), _name, _killInfo];
+    GVAR(outputText) = (format [LLSTRING(TotalKills), GVAR(killCount)]) + (GVAR(eventsArray) joinString "<br/>");
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(death), {
     params ["_name", "_killInfo"];
     TRACE_2("death eh",_name,_killInfo);
-    GVAR(eventsArray) pushBack format ["Died: %1 %2", _name, _killInfo];
-    GVAR(outputText) = (format ["Total Kills: %1<br/>", GVAR(killCount)]) + (GVAR(eventsArray) joinString "<br/>");
+    GVAR(eventsArray) pushBack format [LLSTRING(Died), _name, _killInfo];
+    GVAR(outputText) = (format [LLSTRING(TotalKills), GVAR(killCount)]) + (GVAR(eventsArray) joinString "<br/>");
 }] call CBA_fnc_addEventHandler;
 
 // Add Killed Event Handler - killed EH and lastDamageSource var are local only
@@ -71,7 +71,7 @@ GVAR(killCount) = 0;
 
     // If killer is a vehicle get the commander (this is how vanilla does it?) and log the vehicle type
     if ((!isNull _killer) && {!(_killer isKindof "CAManBase")}) then {
-        _killInfo pushBack format ["Vehicle: %1", getText (configfile >> "CfgVehicles" >> (typeOf _killer) >> "displayName")];
+        _killInfo pushBack format [LLSTRING(Vehicle), getText (configfile >> "CfgVehicles" >> (typeOf _killer) >> "displayName")];
         _killer = effectiveCommander _killer;
     };
 
@@ -97,7 +97,7 @@ GVAR(killCount) = 0;
         private _unitSide = [_unit] call _fnc_getSideFromConfig;
         private _killerSide = [_killer] call _fnc_getSideFromConfig;
         if ([_unitSide, _killerSide] call BIS_fnc_areFriendly) then {
-            _killInfo pushBack "<t color='#ff0000'>Friendly Fire</t>";
+            _killInfo pushBack LLSTRING(FriendlyFire);
         };
     };
 
