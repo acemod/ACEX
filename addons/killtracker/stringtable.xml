@@ -34,9 +34,5 @@
             <Japanese>同士討ち</Japanese>
             <Turkish>Dost Atışı</Turkish>
         </Key>
-        <Key ID="STR_ACEX_KillTracker_Blood">
-          <Original>Blood level %1%2</Original>
-          <Russian>Уровень крови %1%2</Russian>
-        </Key>
     </Package>
 </Project>
