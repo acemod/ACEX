@@ -34,7 +34,7 @@ INFO("Running Kill Tracking");
 
 // Variables:
 GVAR(eventsArray) = [];
-GVAR(outputText) = format ["%1 0", LLSTRING(TotalKills)];
+GVAR(outputText) = "Total Kills: 0";
 GVAR(killCount) = 0;
 
 // Add Event Handlers:
@@ -43,15 +43,15 @@ GVAR(killCount) = 0;
     TRACE_2("kill eh",_name,_killInfo);
     // Increment kill counter
     GVAR(killCount) = GVAR(killCount) + 1;
-    GVAR(eventsArray) pushBack format [LLSTRING(Kill), _name, _killInfo];
-    GVAR(outputText) = (format ["%1 %2<br/>", LLSTRING(TotalKills), GVAR(killCount)]) + (GVAR(eventsArray) joinString "<br/>");
+    GVAR(eventsArray) pushBack format [LLSTRING(Killed), _name, _killInfo];
+    GVAR(outputText) = (format [LLSTRING(TotalKills), GVAR(killCount)]) + (GVAR(eventsArray) joinString "<br/>");
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(death), {
     params ["_name", "_killInfo"];
     TRACE_2("death eh",_name,_killInfo);
-    GVAR(eventsArray) pushBack format [LLSTRING(Killer), _name, _killInfo];
-    GVAR(outputText) = (format ["%1 %2<br/>", LLSTRING(TotalKills), GVAR(killCount)]) + (GVAR(eventsArray) joinString "<br/>");
+    GVAR(eventsArray) pushBack format [LLSTRING(Died), _name, _killInfo];
+    GVAR(outputText) = (format [LLSTRING(TotalKills), GVAR(killCount)]) + (GVAR(eventsArray) joinString "<br/>");
 }] call CBA_fnc_addEventHandler;
 
 // Add Killed Event Handler - killed EH and lastDamageSource var are local only
@@ -97,14 +97,14 @@ GVAR(killCount) = 0;
         private _unitSide = [_unit] call _fnc_getSideFromConfig;
         private _killerSide = [_killer] call _fnc_getSideFromConfig;
         if ([_unitSide, _killerSide] call BIS_fnc_areFriendly) then {
-            _killInfo pushBack format["<t color='#ff0000'>%1</t>", LLSTRING(FriendlyFire)];
+            _killInfo pushBack LLSTRING(FriendlyFire);
         };
     };
 
     // Log bleed out - ToDo: could change setDead to log the specific medical cause (e.g. blood loss / cardiac arrest / overdose)
     private _bloodVolume = _unit getVariable ["ace_medical_bloodVolume", 100];
     if (_bloodVolume <= 60) then {
-        _killInfo pushBack format [LLSTRING(Blood), floor _bloodVolume, "%"];
+        _killInfo pushBack format ["Blood %1%2", floor _bloodVolume, "%"];
     };
 
     // Parse info into text

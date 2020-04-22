@@ -2,15 +2,15 @@
 <Project name="ACEX">
     <Package name="KillTracker">
         <Key ID="STR_ACEX_KillTracker_TotalKills">
-          <Original>Total Kills:</Original>
-          <Russian>Всего убийств:</Russian>
+          <Original>Total Kills: %1&lt;br /&gt;</Original>
+          <Russian>Всего убийств: %1&lt;br /&gt;</Russian>
         </Key>
-        <Key ID="STR_ACEX_KillTracker_Kill">
-          <Original>Kill: %1 %2</Original>
+        <Key ID="STR_ACEX_KillTracker_Killed">
+          <Original>Killed: %1 %2</Original>
           <Russian>Убил: %1 %2</Russian>
         </Key>
-        <Key ID="STR_ACEX_KillTracker_Killer">
-          <Original>Killer: %1 %2</Original>
+        <Key ID="STR_ACEX_KillTracker_Died">
+          <Original>Died: %1 %2</Original>
           <Russian>Убийца: %1 %2</Russian>
         </Key>
         <Key ID="STR_ACEX_KillTracker_Vehicle">
@@ -18,25 +18,8 @@
           <Russian>Техника: %1</Russian>
         </Key>
         <Key ID="STR_ACEX_KillTracker_FriendlyFire">
-            <Original>Friendly Fire</Original>
-            <Chinese>誤擊友方</Chinese>
-            <French>Tir fratricide</French>
-            <Spanish>Fuego aliado</Spanish>
-            <Italian>Fuoco amico</Italian>
-            <Polish>Ostrzał sojuszniczy</Polish>
-            <Russian>Дружественный огонь</Russian>
-            <German>Teambeschuss</German>
-            <Czech>Střelba do vlastních!</Czech>
-            <English>Friendly Fire</English>
-            <Portuguese>Fogo amigo</Portuguese>
-            <Korean>아군 오인사격</Korean>
-            <Chinesesimp>友军误射</Chinesesimp>
-            <Japanese>同士討ち</Japanese>
-            <Turkish>Dost Atışı</Turkish>
-        </Key>
-        <Key ID="STR_ACEX_KillTracker_Blood">
-          <Original>Blood level %1%2</Original>
-          <Russian>Уровень крови %1%2</Russian>
+          <Original>&lt;t color='#ff0000'&gt;Friendly Fire&lt;/t&gt;</Original>
+          <Russian>&lt;t color='#ff0000'&gt;Союзник&lt;/t&gt;</Russian>
         </Key>
     </Package>
 </Project>
