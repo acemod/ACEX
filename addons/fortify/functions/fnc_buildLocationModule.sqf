@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [logic] call acex_fortify_fnc_buildLocations
+ * [logic] call acex_fortify_fnc_buildLocationModule
  *
  * Public: No
  */
