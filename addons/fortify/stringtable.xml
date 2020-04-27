@@ -8,6 +8,7 @@
             <Chinese>要塞</Chinese>
             <Chinesesimp>要塞</Chinesesimp>
             <Polish>Fortyfikowanie</Polish>
+            <Russian>Фортификация</Russian>
         </Key>
         <Key ID="STR_ACEX_Fortify_FortifyItem_name">
             <English>Fortify Tool</English>
@@ -16,6 +17,7 @@
             <Chinese>要塞工具</Chinese>
             <Chinesesimp>要塞工具</Chinesesimp>
             <Polish>Narzędzie do fortyfikowania</Polish>
+            <Russian>Инструмент строителя</Russian>
         </Key>
         <Key ID="STR_ACEX_Fortify_Budget">
             <English>Budget</English>
@@ -24,6 +26,7 @@
             <Chinese>預算</Chinese>
             <Chinesesimp>预算</Chinesesimp>
             <Polish>Budżet</Polish>
+            <Russian>Бюджет</Russian>
         </Key>
         <Key ID="STR_ACEX_Fortify_addToolItem">
             <English>Auto add fortify item</English>
@@ -32,6 +35,7 @@
             <Chinese>自動增加要塞物品</Chinese>
             <Chinesesimp>自动增加要塞物品</Chinesesimp>
             <Polish>Automatycznie dodaj narzędzie do fortyfikowania</Polish>
+            <Russian>Автоматически добавлять Инструмент строителя</Russian>
         </Key>
         <Key ID="STR_ACEX_Fortify_rotate">
             <English>Rotate</English>
@@ -52,7 +56,7 @@
         <Key ID="STR_ACEX_Fortify_Confirm">
             <English>Confirm Deployment</English>
             <German>Aufbauen</German>
-            <Russian>Подтвердить установку</Russian>
+            <Russian>Подтвердить размещение</Russian>
             <Polish>Potwierdź rozłożenie</Polish>
             <Spanish>Confirmar despliegue</Spanish>
             <French>Confirmer Déploiement</French>
@@ -71,6 +75,7 @@
             <Chinese>要塞: 限制建造區</Chinese>
             <Chinesesimp>要塞: 限制建造区</Chinesesimp>
             <Polish>Fortyfikowanie: Limituj strefe budowania</Polish>
+            <Russian>Фортификация: ограничить зону постройки</Russian>
         </Key>
         <Key ID="STR_ACEX_Fortify_settingsCategory">
             <English>ACEX Fortify</English>
@@ -78,6 +83,7 @@
             <Chinesesimp>ACEX 要塞</Chinesesimp>
             <Japanese>ACEX 要塞</Japanese>
             <Polish>ACEX Fortyfikowanie</Polish>
+            <Russian>ACEX Фортификация</Russian>
         </Key>
         <Key ID="STR_ACEX_Fortify_settingHint">
             <English>Show budget updates</English>
@@ -85,6 +91,7 @@
             <Chinesesimp>显示预算更新</Chinesesimp>
             <Japanese>予算の更新を表示</Japanese>
             <Polish>Pokaż aktualizacje budżetu</Polish>
+            <Russian>Показывать обновления бюджета</Russian>
         </Key>
         <Key ID="STR_ACEX_Fortify_settingHintDesc">
             <English>Controls when budget update hints are shown</English>
@@ -92,6 +99,7 @@
             <Chinesesimp>决定预算变更时是否会显示提示</Chinesesimp>
             <Japanese>予算が更新されヒント表示時の操作を決定します</Japanese>
             <Polish>Kontroluje kiedy aktualizacje budżetu są wyświetlane</Polish>
+            <Russian>Настраивает сообщения об обновлении бюджета</Russian>
         </Key>
         <Key ID="STR_ACEX_Fortify_settingHintNone">
             <English>Never show</English>
@@ -99,6 +107,7 @@
             <Chinesesimp>永不显示</Chinesesimp>
             <Japanese>非表示</Japanese>
             <Polish>Nigdy</Polish>
+            <Russian>Не показывать никогда</Russian>
         </Key>
         <Key ID="STR_ACEX_Fortify_settingHintHasTool">
             <English>Has fortify tool</English>
@@ -106,6 +115,7 @@
             <Chinesesimp>有要塞工具</Chinesesimp>
             <Japanese>要塞ツール所持の時</Japanese>
             <Polish>Posiada narzędzie do fortyfikowania</Polish>
+            <Russian>Если имеется Инструмент</Russian>
         </Key>
         <Key ID="STR_ACEX_Fortify_settingHintEveryone">
             <English>Always show</English>
@@ -113,6 +123,16 @@
             <Chinesesimp>总是显示</Chinesesimp>
             <Japanese>常に表示</Japanese>
             <Polish>Zawsze</Polish>
+            <Russian>Показывать всегда</Russian>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_SmallGreen">
+            <English>Small (Green)</English>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_MediumGreen">
+            <English>Medium (Green)</English>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_LargeGreen">
+            <English>Large (Green)</English>
         </Key>
     </Package>
 </Project>

@@ -2,7 +2,7 @@
 /*
  * Author: PabstMirror
  * Tracks deaths/kills and logs to the end mission disaplay
- * Attemps to log kills from ace_medical by using ace_medical_lastDamageSource
+ * Attemps to log kills from ace_medical by using "ace_killed" event
  *
  * Note: Requires config setup in a mission's description.ext
  * Has no effect if mission is not setup correctly
@@ -15,17 +15,17 @@
  *
  * Public: No
  */
-// #define DEBUG_MODE_FULL
 
 // place the following in a misison's description.ext:
 /*
     class CfgDebriefingSections {
         class acex_killTracker {
-            title = "Acex Killed Events";
+            title = "ACEX Killed Events";
             variable = "acex_killTracker_outputText";
         };
     };
  */
+
 if ((getText (missionconfigfile >> "CfgDebriefingSections" >> QUOTE(ADDON) >> "variable")) != QGVAR(outputText)) exitWith {
     TRACE_1("no mission debriefing config",_this);
 };
@@ -54,29 +54,25 @@ GVAR(killCount) = 0;
     GVAR(outputText) = (format ["%1 %2<br/>", LLSTRING(TotalKills), GVAR(killCount)]) + (GVAR(eventsArray) joinString "<br/>");
 }] call CBA_fnc_addEventHandler;
 
-// Add Killed Event Handler - killed EH and lastDamageSource var are local only
-["CAManBase", "killed", {
-    params ["_unit", ["_killer", objNull]];
-    TRACE_2("killed",_unit,_killer);
+["ace_killed", {
+    params ["_unit", "_causeOfDeath", "_killer", "_instigator"];
+    TRACE_4("ace_killed EH",_unit,_causeOfDeath,_killer,_instigator);
+
+    if (!local _unit) exitWith {};
 
     private _killInfo = [];
-    if ((isNull _killer) || {_killer == _unit}) then {
-        private _aceSource = _unit getVariable ["ace_medical_lastDamageSource", objNull];
-        TRACE_1("",_aceSource);
-        if ((!isNull _aceSource) && {_aceSource != _unit}) then {
-            _killInfo pushBack "Last damage";
-            _killer = _aceSource;
+
+    if (!isNull _killer) then {
+        if (!(_killer isKindof "CAManBase")) then { // If killer is a vehicle log the vehicle type
+            _killInfo pushBack format [LLSTRING(Vehicle), getText (configfile >> "CfgVehicles" >> (typeOf _killer) >> "displayName")];
+        };
+        if (isNull _instigator) then {
+            _instigator = effectiveCommander _killer;
+            TRACE_2("using effectiveCommander",_instigator,_killer);
         };
     };
-
-    // If killer is a vehicle get the commander (this is how vanilla does it?) and log the vehicle type
-    if ((!isNull _killer) && {!(_killer isKindof "CAManBase")}) then {
-        _killInfo pushBack format [LLSTRING(Vehicle), getText (configfile >> "CfgVehicles" >> (typeOf _killer) >> "displayName")];
-        _killer = effectiveCommander _killer;
-    };
-
-    private _unitIsPlayer = hasInterface && {_unit == ace_player}; // isPlayer check will fail at this point
-    private _killerIsPlayer = (!isNull _killer) && {_unit != _killer} && {[_killer] call ACEFUNC(common,isPlayer)};
+    private _unitIsPlayer = hasInterface && {_unit in [player, ace_player]}; // isPlayer check will fail at this point
+    private _killerIsPlayer = (!isNull _instigator) && {_unit != _instigator} && {[_instigator] call ACEFUNC(common,isPlayer)};
     TRACE_2("",_unitIsPlayer,_killerIsPlayer);
 
     // Don't do anything if neither are players
@@ -92,20 +88,17 @@ GVAR(killCount) = 0;
             default {civilian};
         };
     };
-    if ((!isNull _killer) && {_unit != _killer} && {_killer isKindOf "CAManBase"}) then {
+    if ((!isNull _instigator) && {_unit != _instigator} && {_instigator isKindOf "CAManBase"}) then {
         // Because of unconscious group switching/captives it's probably best to just use unit's config side
         private _unitSide = [_unit] call _fnc_getSideFromConfig;
-        private _killerSide = [_killer] call _fnc_getSideFromConfig;
+        private _killerSide = [_instigator] call _fnc_getSideFromConfig;
         if ([_unitSide, _killerSide] call BIS_fnc_areFriendly) then {
             _killInfo pushBack format["<t color='#ff0000'>%1</t>", LLSTRING(FriendlyFire)];
         };
     };
 
-    // Log bleed out - ToDo: could change setDead to log the specific medical cause (e.g. blood loss / cardiac arrest / overdose)
-    private _bloodVolume = _unit getVariable ["ace_medical_bloodVolume", 100];
-    if (_bloodVolume <= 60) then {
-        _killInfo pushBack format ["Blood %1%2", floor _bloodVolume, "%"];
-    };
+    // Rough cause of death from statemachine (e.g. "CardiacArrest:Timeout"), could parse this to be more human readable
+    _killInfo pushBack _causeOfDeath;
 
     // Parse info into text
     _killInfo = if (_killInfo isEqualTo []) then {
@@ -121,7 +114,10 @@ GVAR(killCount) = 0;
             if (_killerIsPlayer) then {
                 _killerName = [_killer, true, false] call ACEFUNC(common,getName);
             } else {
-                _killerName = format ["*AI* - %1", getText (configfile >> "CfgVehicles" >> (typeOf _killer) >> "displayName")];
+                _killerName = _killer getVariable [QGVAR(aiName), ""]; // allow setting a custom AI name (e.g. VIP Target)
+                if (_killerName == "") then {
+                    _killerName = format ["*AI* - %1", getText (configfile >> "CfgVehicles" >> (typeOf _killer) >> "displayName")];
+                };
             };
         };
         TRACE_3("send death event",_unit,_killerName,_killInfo);
@@ -130,12 +126,16 @@ GVAR(killCount) = 0;
 
     // If killer was player then send event to killer
     if (_killerIsPlayer) then {
-        private _unitName = if (_unitIsPlayer) then {
-            [_unit, true, false] call ACEFUNC(common,getName); // should be same as profileName
+        private _unitName = "";
+        if (_unitIsPlayer) then {
+            _unitName = [_unit, true, false] call ACEFUNC(common,getName); // should be same as profileName
         } else {
-            format ["*AI* - %1", getText (configfile >> "CfgVehicles" >> (typeOf _unit) >> "displayName")];
+            _unitName = _unit getVariable [QGVAR(aiName), ""]; // allow setting a custom AI name (e.g. VIP Target)
+            if (_unitName == "") then {
+                _unitName = format ["*AI* - %1", getText (configfile >> "CfgVehicles" >> (typeOf _unit) >> "displayName")];
+            };
         };
         TRACE_3("send kill event",_killer,_unitName,_killInfo);
         [QGVAR(kill), [_unitName, _killInfo], _killer] call CBA_fnc_targetEvent;
     };
-}] call CBA_fnc_addClassEventHandler;
+}] call CBA_fnc_addEventHandler;

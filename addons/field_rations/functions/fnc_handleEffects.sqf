@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: mharis001, Glowbal, PabstMirror
  * Handles the effects/consequences of high thirst/hunger.
@@ -15,14 +16,13 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["_player", "_thirst", "_hunger"];
 
 // Kill unit with max thirst or hunger
 if ((_thirst > 99.9 || {_hunger > 99.9}) && {random 1 < 0.5}) exitWith {
     if (["ace_medical"] call ACEFUNC(common,isModLoaded)) then {
-        _player call ACEFUNC(medical,setDead);
+        [_player, "Hunger/Thirst empty"] call ACEFUNC(medical_status,setDead);
     } else {
         _player setDamage 1;
     };
@@ -34,7 +34,7 @@ if !(_player call ACEFUNC(common,isAwake)) exitWith {};
 // Set unit unconscious (chance based on how high thirst/hunger are)
 if ((_thirst > 85 || {_hunger > 85}) && {random 1 < linearConversion [85, 100, _thirst max _hunger, 0.05, 0.1, true]}) exitWith {
     if (["ace_medical"] call ACEFUNC(common,isModLoaded)) then {
-        [_player, true, 5] call ACEFUNC(medical,setUnconscious);
+        [_player, true, 5, true] call ACEFUNC(medical,setUnconscious);
     };
 };
 

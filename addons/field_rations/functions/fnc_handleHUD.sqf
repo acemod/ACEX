@@ -36,7 +36,9 @@ if (GVAR(hudType) == 0) then {
     };
 
     // Reduce transparency if hovering on interaction
-    _fade = _fade min ([1, 0.5] select GVAR(hudInteractionHover));
+    if (GVAR(hudInteractionHover)) then {
+        _fade = _fade min 0.5;
+    };
 
     // Update HUD icon colors (White -> Yellow -> Orange -> Red)
     {

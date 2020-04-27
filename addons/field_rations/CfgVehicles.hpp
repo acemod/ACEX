@@ -20,21 +20,23 @@ class CfgVehicles {
     class Items_base_F;
     class Land_WaterBarrel_F: Items_base_F {
         GVAR(waterSupply) = 200;
+        GVAR(offset)[] = {0, 0, 0.6};
     };
     class Land_BarrelWater_F: Items_base_F {
         GVAR(waterSupply) = 160;
+        GVAR(offset)[] = {0, 0, 0.25};
     };
     class Land_BarrelWater_grey_F: Items_base_F {
         GVAR(waterSupply) = 160;
+        GVAR(offset)[] = {0, 0, 0.25};
     };
     class Land_WaterTank_F: Items_base_F {
         GVAR(waterSupply) = 600;
+        GVAR(offset)[] = {1.15, 0, 0.65};
     };
     class Land_WaterCooler_01_new_F: Items_base_F {
         GVAR(waterSupply) = 20;
-    };
-    class Land_WaterCooler_01_old_F: Land_WaterCooler_01_new_F {
-        GVAR(waterSupply) = 20;
+        GVAR(offset)[] = {0, -0.13, 0.1};
     };
 
     class Infrastructure_base_F;
@@ -48,6 +50,7 @@ class CfgVehicles {
     };
     class Land_WaterTank_03_F: Infrastructure_base_F {
         GVAR(waterSupply) = 200;
+        GVAR(offset)[] = {0, 0, 0.44};
     };
     class Land_WaterTank_04_F: Infrastructure_base_F {
         GVAR(waterSupply) = 200;
@@ -57,6 +60,7 @@ class CfgVehicles {
     class Stall_base_F;
     class Land_StallWater_F: Stall_base_F {
         GVAR(waterSupply) = 250;
+        GVAR(offset)[] = {0, -0.33, 0.4};
     };
 
     class StorageBladder_base_F;
@@ -73,7 +77,7 @@ class CfgVehicles {
     class NonStrategic;
     class Land_Water_source_F: NonStrategic {
         GVAR(waterSupply) = REFILL_WATER_INFINITE;
-        GVAR(offset)[] = {0, 0, -0.2};
+        GVAR(offset)[] = {0, -0.12, -0.25};
     };
 
     class Land_WaterPump_01_F;
@@ -89,6 +93,7 @@ class CfgVehicles {
     class Truck_02_water_base_F;
     class C_IDAP_Truck_02_water_F: Truck_02_water_base_F {
         GVAR(waterSupply) = 10000;
+        GVAR(offset)[] = {-0.03, -3.72, -1.05};
     };
 
     class Item_Base_F;
