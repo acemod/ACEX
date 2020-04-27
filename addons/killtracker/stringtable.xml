@@ -2,23 +2,23 @@
 <Project name="ACEX">
     <Package name="KillTracker">
         <Key ID="STR_ACEX_KillTracker_TotalKills">
-          <Original>Total Kills:</Original>
-          <Russian>Всего убийств:</Russian>
+            <English>Total Kills:</English>
+            <Russian>Всего убийств:</Russian>
         </Key>
         <Key ID="STR_ACEX_KillTracker_Kill">
-          <Original>Kill: %1 %2</Original>
-          <Russian>Убил: %1 %2</Russian>
+            <English>Kill: %1 %2</English>
+            <Russian>Убил: %1 %2</Russian>
         </Key>
         <Key ID="STR_ACEX_KillTracker_Killer">
-          <Original>Killer: %1 %2</Original>
-          <Russian>Убийца: %1 %2</Russian>
+            <English>Killer: %1 %2</English>
+            <Russian>Убийца: %1 %2</Russian>
         </Key>
         <Key ID="STR_ACEX_KillTracker_Vehicle">
-          <Original>Vehicle: %1</Original>
-          <Russian>Техника: %1</Russian>
+            <English>Vehicle: %1</English>
+            <Russian>Техника: %1</Russian>
         </Key>
         <Key ID="STR_ACEX_KillTracker_FriendlyFire">
-            <Original>Friendly Fire</Original>
+            <English>Friendly Fire</English>
             <Chinese>誤擊友方</Chinese>
             <French>Tir fratricide</French>
             <Spanish>Fuego aliado</Spanish>
@@ -27,7 +27,6 @@
             <Russian>Дружественный огонь</Russian>
             <German>Teambeschuss</German>
             <Czech>Střelba do vlastních!</Czech>
-            <English>Friendly Fire</English>
             <Portuguese>Fogo amigo</Portuguese>
             <Korean>아군 오인사격</Korean>
             <Chinesesimp>友军误射</Chinesesimp>
