@@ -75,13 +75,16 @@ if !(hasInterface) exitWith {};
 
     // ContextMenuOption
     private _config = configFile >> "CfgWeapons";
-    [QGVAR(base), ["CONTAINER"], LLSTRING(ContextMenu_EatDrink), [], QPATHTOF(ui\icon_survival.paa),
+    ["ACE_ItemCore", ["CONTAINER"], LLSTRING(ContextMenu_EatDrink), [], QPATHTOF(ui\icon_survival.paa),
         [
             { // enable
                 params ["", "", "_item", "", "_config"];
                 getNumber (_config >> _item >> QGVAR(thirstQuenched)) > 0 || getNumber (_config >> _item >> QGVAR(hungerSatiated)) > 0
             },
-            {GVAR(enabled)} // show
+            { // show
+                params ["", "", "_item", "", "_config"];
+                GVAR(enabled) && getNumber (_config >> _item >> QGVAR(consumeTime)) > 0
+            }
         ],
         {
             params ["_unit", "", "_item"];
