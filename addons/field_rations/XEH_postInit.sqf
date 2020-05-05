@@ -73,25 +73,25 @@ if !(hasInterface) exitWith {};
         [QGVAR(helper), 0, [QGVAR(waterSource)], _x] call ACEFUNC(interact_menu,addActionToClass);
     } forEach _subActions;
 
-    // ContextMenuOption
-    private _config = configFile >> "CfgWeapons";
-    ["ACE_ItemCore", ["CONTAINER"], LLSTRING(ContextMenu_EatDrink), [], QPATHTOF(ui\icon_survival.paa),
+    // Add inventory context menu option to consume items
+    ["ACE_ItemCore", ["CONTAINER"], LSTRING(EatDrink), [], QPATHTOF(ui\icon_survival.paa),
         [
-            { // enable
-                params ["", "", "_item", "", "_config"];
-                getNumber (_config >> _item >> QGVAR(thirstQuenched)) > 0 || getNumber (_config >> _item >> QGVAR(hungerSatiated)) > 0
-            },
-            { // show
-                params ["", "", "_item", "", "_config"];
-                GVAR(enabled) && getNumber (_config >> _item >> QGVAR(consumeTime)) > 0
+            {true},
+            {
+                params ["", "", "_item"];
+                
+                GVAR(enabled) && {
+                    private _config = configFile >> "CfgWeapons" >> _item;                    
+                    getNumber (_config >> QGVAR(thirstQuenched)) > 0
+                    || {getNumber (_config >> QGVAR(hungerSatiated)) > 0}
+                }
             }
         ],
         {
             params ["_unit", "", "_item"];
             [objNull, _unit, _item] call FUNC(consumeItem);
             false
-        },
-        false, _config
+        }
     ] call CBA_fnc_addItemContextMenuOption;
 
     // Add water source helpers when interaction menu is opened
