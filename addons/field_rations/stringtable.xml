@@ -160,7 +160,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HungerSatiated_Description">
             <English>Coefficient for the amount of hunger satiated from eating</English>
-            <German>Koeffizient für die Menge des Hunger gesättigt Werts vom Essen</German>
+            <German>Koeffizient für die Menge des Hungers, der durch essen gesättigt wird.</German>
             <Chinese>從飲食中獲取多少飽食感。</Chinese>
             <Japanese>食べることによって得られる満腹感の量の係数を設定します</Japanese>
             <Russian>Коэффициент утоления голода от принятия пищи</Russian>
