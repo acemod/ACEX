@@ -174,7 +174,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_AffectAdvancedFatigue_Description">
             <English>Controls if thirst and hunger should affect ACE Advanced Fatigue</English>
-            <German>Bestimmt ob Durst und Hunger ACE Erweiterte Ausdauer beeinflussen sollen.</German>
+            <German>Bestimmt, ob Durst und Hunger ACE Erweiterte Ausdauer beeinflussen sollen.</German>
             <Chinese>是否讓飲食影響到ACE的進階疲勞。</Chinese>
             <Japanese>喉の渇きと空腹感が ACE アドバンスド ファティーグへ与える影響を決定します</Japanese>
             <Russian>Управляет влиянием голода и жажды на модуль ACE Продвинутая усталость</Russian>
