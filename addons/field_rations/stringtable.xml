@@ -189,7 +189,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_Description">
             <English>Selects which HUD style will be used</English>
-            <German>Wählt welcher HUD Stil benutzt wird</German>
+            <German>Wählt, welcher HUD Stil benutzt wird.</German>
             <Chinese>選擇妳想使用的界面類型。</Chinese>
             <Japanese>使用する HUD のタイプを選択できます</Japanese>
             <Polish>Wybierz który styl HUD będzie używany</Polish>
