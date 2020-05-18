@@ -146,7 +146,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ThirstQuenched_Description">
             <English>Coefficient for the amount of thirst quenched from drinking</English>
-            <German>Koeffizient für die Menge des Durst stillen Werts vom Trinken</German>
+            <German>Koeffizient für die Menge des Dursts, der durch Trinken gestillt wird.</German>
             <Chinese>從飲用中能夠攝取多少水份。</Chinese>
             <Japanese>飲むことによって得られる乾きの満たし量の係数を設定します</Japanese>
             <Russian>Коэффициент утоления жажды от питья</Russian>
