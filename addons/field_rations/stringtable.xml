@@ -647,7 +647,7 @@
             <Chinesesimp>含有羊肉咖喱的MRE。加热以达到最佳效果</Chinesesimp>
             <Czech>MRE obsahující Lamb Curry. Teplo pro nejlepší efekt</Czech>
             <French>Un MRE contenant du Curry d'agneau. Chaleur pour le meilleur effet</French>
-            <German>Eine EPA mit Lamm Curry. Erwärme für den besten Effekt</German>
+            <German>Eine EPA mit Lamm Curry. Für den besten Geschmack erhitzen.</German>
             <Hungarian>Egy MRE, amely Lamb Curry-t tartalmaz. Hő a legjobb hatás érdekében</Hungarian>
             <Italian>Un MRE contenente Lamb Curry. Calore per il miglior effetto</Italian>
             <Japanese>羊カレーの MRE。温めるとなお美味しい</Japanese>
@@ -667,7 +667,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_BeefStew_Description">
             <English>An MRE containing Beef Stew. Heat for best effect</English>
-            <German>Eine EPA welche Rindereintopf beeinhaltet. Erwärme für den besten Effekt</German>
+            <German>Eine EPA, welche Rindereintopf beeinhaltet. Für den besten Geschmack erhitzen.</German>
             <Chinese>含有牛肉燉湯的軍用口糧。加熱以達到最佳效果</Chinese>
             <Japanese>ビーフ シチューの MRE。温めるとなお美味しい</Japanese>
             <Polish>MRE zawierające gulasz wołowy. Podgrzej dla najlepszego efektu</Polish>
@@ -759,7 +759,7 @@
             <Chinesesimp>与鸡Tikka马萨拉MRE。 加热以达到最佳效果</Chinesesimp>
             <Czech>MRE s kuřecím masem Tikka Masala. Teplo pro nejlepší efekt</Czech>
             <French>Un MRE avec du poulet Tikka Masala. Chaleur pour le meilleur effet</French>
-            <German>Eine EPA mit Hühnchen Tikka Masala. Erwärme für den besten Effekt</German>
+            <German>Eine EPA mit Hühnchen Tikka Masala. Für den besten Geschmack erhitzen.</German>
             <Hungarian>Egy MRE csirkével Tikka Masala. Hő a legjobb hatás érdekében</Hungarian>
             <Italian>Un MRE con pollo Tikka Masala. Calore per effetto migliore</Italian>
             <Japanese>チキン ティッカ マサラの MRE。温めるとなお美味しい</Japanese>
@@ -791,7 +791,7 @@
             <Chinesesimp>包含牛排和蔬菜的MRE。 加热以达到最佳效果</Chinesesimp>
             <Czech>MRE obsahující steak a zeleninu. Teplo pro nejlepší efekt</Czech>
             <French>Un MRE contenant du bifteck et des légumes. Chaleur pour le meilleur effet</French>
-            <German>Eine EPA mit Steak und Gemüse. Erwärme für den besten Effekt</German>
+            <German>Eine EPA mit Steak und Gemüse. Für den besten Geschmack erhitzen.</German>
             <Hungarian>Egy MRE, amely Steak és Zöldségeket tartalmaz. Hő a legjobb hatás érdekében</Hungarian>
             <Italian>Un MRE contenente bistecche e verdure. Calore per il miglior effetto</Italian>
             <Japanese>野菜とステーキの MRE。温めるとなお美味しい</Japanese>
@@ -823,7 +823,7 @@
             <Chinesesimp>含有肉丸和意大利面的MRE。 加热以达到最佳效果</Chinesesimp>
             <Czech>MRE obsahující maso a těstoviny. Teplo pro nejlepší efekt</Czech>
             <French>Un MRE contenant des boulettes de viande et des pâtes. Chaleur pour le meilleur effet</French>
-            <German>Eine EPA mit Fleischbällchen und Pasta. Hitze für den besten Effekt</German>
+            <German>Eine EPA mit Fleischbällchen und Pasta. Für den besten Geschmack erhitzen.</German>
             <Hungarian>Húsgombócokat és tésztát tartalmazó MRE. Hő a legjobb hatás érdekében</Hungarian>
             <Italian>Un MRE contenente polpette e pasta. Calore per il miglior effetto</Italian>
             <Japanese>ミートボールとパスタの MRE。温めるとなお美味しい</Japanese>
@@ -855,7 +855,7 @@
             <Chinesesimp>含有鸡肉和香草饺子的MRE。 加热以达到最佳效果</Chinesesimp>
             <Czech>MRE obsahující kuře s bylinkovými knedlíky. Teplo pro nejlepší efekt</Czech>
             <French>Un MRE contenant du poulet et des dumplings aux fines herbes. Chaleur pour le meilleur effet</French>
-            <German>Eine EPA mit Hühnchen mit Kräuterknödeln. Erwärme für den besten Effekt</German>
+            <German>Eine EPA mit Hühnchen mit Kräuterknödeln. Für den besten Geschmack erhitzen.</German>
             <Hungarian>Egy MRE, amely csirkét és fűszeres gombócokat tartalmaz. Hő a legjobb hatás érdekében</Hungarian>
             <Italian>Un MRE contenente pollo con gnocchi alle erbe. Calore per il miglior effetto</Italian>
             <Japanese>鶏肉を団子で包んだ MRE。温めるとなお美味しい</Japanese>
