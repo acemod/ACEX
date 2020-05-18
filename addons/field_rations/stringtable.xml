@@ -253,7 +253,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudTransparency_Description">
             <English>Controls the transparency of the Colored Icons HUD. Dynamic setting makes the HUD less transparent as thirst or hunger increase</English>
-            <German>Bestimmt die Tranzparenz der farbigen HUD Icons. Die Dynamische Einstellung macht das HUD weniger transparenter wenn Hunger oder Durst steigen.</German>
+            <German>Bestimmt die Tranzparenz der farbigen HUD Icons. Die Dynamische Einstellung macht das HUD weniger transparent, wenn Hunger oder Durst steigen.</German>
             <Chinese>控制顏色化圖示的透明度。設定為動態使其界面透明度與飲食需求一樣，越透明越需要。</Chinese>
             <Polish>Kontroluje transparentność kolorowych ikon HUD. Dynamiczne ustawienie zmniejsza przejrzystość wraz z zwiększeniem głodu czy pragnienia.</Polish>
             <Japanese>色付きアイコンの透明度を決定できます。動的に設定されると、喉の渇きや空腹感が増すにつれて、アイコンの透明度を下げます。</Japanese>
