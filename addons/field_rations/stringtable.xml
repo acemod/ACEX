@@ -190,7 +190,7 @@
             <English>Controls if thirst and hunger should affect ACE Advanced Fatigue.</English>
             <Chinese>是否讓飲食影響到ACE的進階疲勞。</Chinese>
             <Japanese>喉の渇きと空腹感が ACE アドバンスド ファティーグへ与える影響を決定します</Japanese>
-            <Russian>Определяет будет ли жажда и голод влиять на продвинутую усталость ACE.</Russian>
+            <Russian>Определяет, будет ли жажда и голод влиять на продвинутую усталость ACE.</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_DisplayName">
             <English>HUD Type</English>
