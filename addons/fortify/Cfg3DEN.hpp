@@ -1,7 +1,5 @@
-class Cfg3DEN
-{
-    class Attributes
-    {
+class Cfg3DEN {
+    class Attributes {
         class Title;
         class Combo: Title {
             class Controls {
