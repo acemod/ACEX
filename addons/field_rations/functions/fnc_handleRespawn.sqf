@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: mharis001, Glowbal, PabstMirror
  * Handles the respawning of a unit by resetting necessary variables.
@@ -14,7 +15,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["_unit", "_corpse"];
 TRACE_2("Handle Respawn",_unit,_corpse);

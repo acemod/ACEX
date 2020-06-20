@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: mharis001, Glowbal, PabstMirror
  * Refills an item from given water source.
@@ -15,7 +16,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["_source", "_player", "_item"];
 TRACE_3("Item refill started",_source,_player,_item);
@@ -70,6 +70,6 @@ private _fnc_condition = {
     ],
     _fnc_onSuccess,
     _fnc_onFailure,
-    localize LSTRING(Refilling),
+    LLSTRING(Refilling),
     _fnc_condition
 ] call ACEFUNC(common,progressBar);

@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: mharis001
  * Returns the refill action offset for given object.
@@ -13,7 +14,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["_object"];
 

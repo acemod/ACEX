@@ -16,7 +16,6 @@
  * Public: Yes
  */
 
-
 params ["_player", ["_cost", 0]];
 
 (missionNamespace getVariable [QGVAR(fortifyAllowed), true]) &&

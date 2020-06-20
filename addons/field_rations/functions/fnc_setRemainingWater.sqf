@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: mharis001, PabstMirror
  * Sets the remaining water supply for given water source.
@@ -14,7 +15,6 @@
  *
  * Public: Yes
  */
-#include "script_component.hpp"
 
 params [["_source", objNull, [objNull]], ["_water", nil, [0]]];
 

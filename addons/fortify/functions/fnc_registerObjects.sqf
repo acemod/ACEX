@@ -20,7 +20,6 @@
  * Public: Yes
  */
 
-
 if (!isServer) exitWith {};
 
 params [["_side", sideUnknown, [sideUnknown]], ["_budget", -1, [0]], ["_objects", [], [[]]]];
