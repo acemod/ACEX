@@ -15,7 +15,7 @@ class Cfg3DEN
                 class Value: Value {
                     delete Items;
                     class ItemsConfig {
-                        path[] = { QGVAR(Presets) };
+                        path[] = {QGVAR(Presets)};
                         localConfig = 1;
                         propertyText = "displayName";
                         sort = true;
