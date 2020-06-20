@@ -36,7 +36,7 @@ class CfgVehicles {
         class Attributes: AttributesBase {
             class Side: Combo {
                 displayName = "$STR_eval_typeside";
-                property = QGVAR(module_Side);
+                property = QGVAR(setupModule_Side);
                 typeName = "NUMBER";
                 defaultValue = 1;
                 class values {
@@ -60,19 +60,19 @@ class CfgVehicles {
             };
             class Preset: Default {
                 displayName = "$STR_controls_presets";
-                property = QGVAR(module_Preset);
+                property = QGVAR(setupModule_Preset);
                 control = QGVAR(presetSelection);
                 typeName = "STRING";
                 defaultValue = 0;
             };
             class Budget: Edit {
-                property = QGVAR(module_Budget);
+                property = QGVAR(setupModule_Budget);
                 displayName = CSTRING(budget);
                 typeName = "NUMBER";
                 defaultValue = -1;
             };
             class AddToolItem: Checkbox {
-                property = QGVAR(module_AddToolItem);
+                property = QGVAR(setupModule_AddToolItem);
                 displayName = CSTRING(addToolItem);
                 typeName = "BOOL";
             };
