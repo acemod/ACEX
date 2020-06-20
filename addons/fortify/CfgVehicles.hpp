@@ -14,8 +14,18 @@ class CfgVehicles {
             };
         };
     };
-
-    class ACE_Module;
+    class Logic;
+    class Module_F: Logic {
+        class AttributesBase {
+			class Default;
+            class Combo;
+			class Edit;
+			class Checkbox;
+			class ModuleDescription;
+		};
+        class ModuleDescription;
+    };
+    class ACE_Module: Module_F {};
     class GVAR(setupModule): ACE_Module {
         author = ACECSTRING(common,ACETeam);
         category = "ACEX";
@@ -23,15 +33,16 @@ class CfgVehicles {
         function = QFUNC(setupModule);
         scope = 2;
         isGlobal = 0;
-        class Arguments {
-            class Side {
+        class Attributes: AttributesBase {
+            class Side: Combo {
                 displayName = "$STR_eval_typeside";
+                property = QGVAR(module_Side);
                 typeName = "NUMBER";
+                defaultValue = 1;
                 class values {
                     class West {
                         name = "$STR_WEST";
                         value = 1;
-                        default = 1;
                     };
                     class East {
                         name = "$STR_east";
@@ -47,48 +58,30 @@ class CfgVehicles {
                     };
                 };
             };
-            class Preset {
+            class Preset: Default {
                 displayName = "$STR_controls_presets";
-                typeName = "NUMBER";
-                class values {
-                    class small {
-                        name = "$STR_small";
-                        value = 1;
-                        default = 1;
-                    };
-                    class medium {
-                        name = "$STR_controller_sensitivity_medium";
-                        value = 2;
-                    };
-                    class big {
-                        name = "$STR_large";
-                        value = 3;
-                    };
-                    class smallGreen {
-                        name = CSTRING(SmallGreen);
-                        value = 4;
-                    };
-                    class mediumGreen {
-                        name = CSTRING(MediumGreen);
-                        value = 5;
-                    };
-                    class bigGreen {
-                        name = CSTRING(LargeGreen);
-                        value = 6;
-                    };
-                };
+                property = QGVAR(module_Preset);
+                control = QGVAR(presetSelection);
+                typeName = "STRING";
+                defaultValue = 0;
             };
-            class Budget {
+            class Budget: Edit {
+                property = QGVAR(module_Budget);
                 displayName = CSTRING(budget);
                 typeName = "NUMBER";
                 defaultValue = -1;
             };
-            class AddToolItem {
+            class AddToolItem: Checkbox {
+                property = QGVAR(module_AddToolItem);
                 displayName = CSTRING(addToolItem);
                 typeName = "BOOL";
-                defaultValue = 0;
             };
+            class ModuleDescription: ModuleDescription {};
         };
+
+        class ModuleDescription: ModuleDescription {
+			description = CSTRING(moduleDescription);
+		};
     };
 
     class GVAR(buildLocationModule): ACE_Module {
