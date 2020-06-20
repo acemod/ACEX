@@ -57,6 +57,10 @@
             <Russian>Выживание</Russian>
             <Spanish>Supervivencia</Spanish>
         </Key>
+        <Key ID="STR_ACEX_Field_Rations_EatDrink">
+            <English>Eat/Drink</English>
+            <German>Essen/Trinken</German>
+        </Key>
         <Key ID="STR_ACEX_Field_Rations_Enabled_Description">
             <English>Enable/Disable Field Rations</English>
             <Chinese>啟用/禁用戰地口糧。</Chinese>
@@ -90,7 +94,7 @@
             <Spanish>Tiempo sin agua</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_TimeWithoutWater_Description">
-            <English>How long should a unit be able to go without water (hours)</English>
+            <English>How long should a person be able to go without water (hours).</English>
             <Chinese>一個單位脫水之前能支撐多久（單位為小時）。</Chinese>
             <Chinesesimp>一个单位能够没有水的时间多少（小时）</Chinesesimp>
             <Czech>Jak dlouho by měla jednotka jít bez vody (hodiny)</Czech>
@@ -122,7 +126,7 @@
             <Spanish>Tiempo sin comida</Spanish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_TimeWithoutFood_Description">
-            <English>How long should a unit be able to go without food (hours)</English>
+            <English>How long should a person be able to go without food (hours).</English>
             <Chinese>一個單位挨餓之前能支撐多久（單位為小時）。</Chinese>
             <Chinesesimp>一个单位能够没有食物的时间多少（小时）</Chinesesimp>
             <Czech>Jak dlouho by měla jednotka jít bez jídla (hodiny)</Czech>
@@ -145,7 +149,7 @@
             <Russian>Утоление жажды</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ThirstQuenched_Description">
-            <English>Coefficient for the amount of thirst quenched from drinking</English>
+            <English>Coefficient for the amount of thirst quenched from drinking.</English>
             <German>Koeffizient für die Menge des Dursts, der durch Trinken gestillt wird.</German>
             <Chinese>從飲用中能夠攝取多少水份。</Chinese>
             <Japanese>飲むことによって得られる乾きの満たし量の係数を設定します</Japanese>
@@ -159,11 +163,26 @@
             <Russian>Утоление голода</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HungerSatiated_Description">
-            <English>Coefficient for the amount of hunger satiated from eating</English>
+            <English>Coefficient for the amount of hunger satiated from eating.</English>
             <German>Koeffizient für die Menge des Hungers, der durch essen gesättigt wird.</German>
             <Chinese>從飲食中獲取多少飽食感。</Chinese>
             <Japanese>食べることによって得られる満腹感の量の係数を設定します</Japanese>
             <Russian>Коэффициент утоления голода от принятия пищи</Russian>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_WaterSourceActions_DisplayName">
+            <English>Water Source Actions</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_WaterSourceActions_Description">
+            <English>Controls what actions are available on water sources.</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_RefillOnly">
+            <English>Refill Only</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_TerrainObjectActions_DisplayName">
+            <English>Terrain Object Actions</English>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_TerrainObjectActions_Description">
+            <English>Enables water source actions for terrain objects.</English>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_AffectAdvancedFatigue_DisplayName">
             <English>Affect Advanced Fatigue</English>
@@ -188,7 +207,7 @@
             <Russian>Тип Индикаторов</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_Description">
-            <English>Selects which HUD style will be used</English>
+            <English>Selects which HUD style will be used.</English>
             <German>Wählt, welcher HUD Stil benutzt wird.</German>
             <Chinese>選擇妳想使用的界面類型。</Chinese>
             <Japanese>使用する HUD のタイプを選択できます</Japanese>
@@ -220,7 +239,7 @@
             <Russian>Уровень для отображения иконок</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudShowLevel_Description">
-            <English>Automatically show the HUD when either thirst or hunger are above this level</English>
+            <English>Automatically show the HUD when either thirst or hunger are above this level.</English>
             <German>Zeigt automatisch das HUD an, sobald Durst oder Hunger über diesem Level sind.</German>
             <Chinese>在飲食低於多少程度時顯示界面。</Chinese>
             <Japanese>この値以上に空腹感か乾きを感じると自動的に HUD を表示します</Japanese>
@@ -252,7 +271,7 @@
             <Russian>Цветные иконки - прозрачность</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudTransparency_Description">
-            <English>Controls the transparency of the Colored Icons HUD. Dynamic setting makes the HUD less transparent as thirst or hunger increase</English>
+            <English>Controls the transparency of the Colored Icons HUD. Dynamic setting makes the HUD less transparent as thirst or hunger increase.</English>
             <German>Bestimmt die Tranzparenz der farbigen HUD Icons. Die Dynamische Einstellung macht das HUD weniger transparent, wenn Hunger oder Durst steigen.</German>
             <Chinese>控制顏色化圖示的透明度。設定為動態使其界面透明度與飲食需求一樣，越透明越需要。</Chinese>
             <Polish>Kontroluje transparentność kolorowych ikon HUD. Dynamiczne ustawienie zmniejsza przejrzystość wraz z zwiększeniem głodu czy pragnienia.</Polish>
@@ -298,7 +317,7 @@
             <Russian>Источник воды</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CheckWater">
-            <English>Check remaining water</English>
+            <English>Check Remaining Water</English>
             <German>Überprüfe verbleibendes Wasser</German>
             <Chinese>檢查剩餘飲用水</Chinese>
             <Japanese>残っている水を確認</Japanese>
@@ -330,12 +349,8 @@
             <Russian>Воды больше не осталось</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrinkDirectly">
-            <English>Drink directly</English>
+            <English>Drink From Source</English>
             <German>Trinke direkt</German>
-            <Chinese>直接飲用</Chinese>
-            <Japanese>直接飲む</Japanese>
-            <Polish>Napij się</Polish>
-            <Russian>Выпить из источника</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Refill">
             <English>Refill</English>
@@ -408,6 +423,9 @@
             <Japanese>%1から飲んでいます・・・</Japanese>
             <Polish>Picie z %1...</Polish>
             <Russian>Выпивание из %1...</Russian>
+        </Key>
+        <Key ID="STR_ACEX_Field_Rations_DrinkingFromSource">
+            <English>Drinking from source...</English>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottle_DisplayName">
             <English>Water Bottle</English>

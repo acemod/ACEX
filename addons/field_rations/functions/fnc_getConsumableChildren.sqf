@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: mharis001, Glowbal, PabstMirror
  * Returns children actions for consumable items in player's inventory.
@@ -13,7 +14,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["_player"];
 

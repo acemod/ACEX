@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: mharis001
  * Displays the remaining water in the given water source.
@@ -14,7 +15,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["_player", "_source"];
 
@@ -34,5 +34,5 @@ params ["_player", "_source"];
         };
     },
     {},
-    localize LSTRING(CheckingWater)
+    LLSTRING(CheckingWater)
 ] call ACEFUNC(common,progressBar);

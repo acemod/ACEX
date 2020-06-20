@@ -46,6 +46,24 @@
 ] call CBA_settings_fnc_init;
 
 [
+    QGVAR(waterSourceActions),
+    "LIST",
+    [LSTRING(WaterSourceActions_DisplayName), LSTRING(WaterSourceActions_Description)],
+    LSTRING(DisplayName),
+    [[0, 1, 2], [ACELSTRING(common,Disabled), LSTRING(RefillOnly), ACELSTRING(common,Enabled)], 2],
+    true
+] call CBA_settings_fnc_init;
+
+[
+    QGVAR(terrainObjectActions),
+    "CHECKBOX",
+    [LSTRING(TerrainObjectActions_DisplayName), LSTRING(TerrainObjectActions_Description)],
+    LSTRING(DisplayName),
+    true,
+    true
+] call CBA_settings_fnc_init;
+
+[
     QGVAR(affectAdvancedFatigue),
     "CHECKBOX",
     [LSTRING(AffectAdvancedFatigue_DisplayName), LSTRING(AffectAdvancedFatigue_Description)],
@@ -60,7 +78,10 @@
     [LSTRING(HudType_DisplayName), LSTRING(HudType_Description)],
     LSTRING(DisplayName),
     [[0, 1], [LSTRING(ColoredIcons), LSTRING(DrainingIcons)], 0],
-    false
+    false,
+    {
+        QGVAR(hud) cutFadeOut 0;
+    }
 ] call CBA_settings_fnc_init;
 
 [

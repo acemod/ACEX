@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="ACEX">
-    <Package name="intelItems">
+    <Package name="IntelItems">
         <Key ID="STR_ACEX_IntelItems_Category">
             <English>ACEX Intel Items</English>
             <German>ACEX Aufklärungsgegenstände</German>

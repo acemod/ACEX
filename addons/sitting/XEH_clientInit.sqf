@@ -18,7 +18,7 @@ if (!hasInterface) exitWith {};
     } forEach [BENCHES];
 
     // Add interaction menu exception
-    ["isNotSitting", {isNil {(_this select 0) getVariable QGVAR(isSitting)}}] call ACEFUNC(common,addCanInteractWithCondition);
+    ["isNotSitting", {isNil {(_this select 0) getVariable QGVAR(sittingStatus)}}] call ACEFUNC(common,addCanInteractWithCondition);
 
     // Handle interruptions
     ["ace_unconscious", {_this call DFUNC(handleInterrupt)}] call CBA_fnc_addEventHandler;

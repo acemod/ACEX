@@ -1,4 +1,5 @@
 PREP(addActions);
+PREP(addIntel);
 PREP(attributeFocus);
 PREP(canPickup);
 PREP(createControl);

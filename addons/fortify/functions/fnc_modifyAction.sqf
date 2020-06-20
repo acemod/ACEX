@@ -22,9 +22,9 @@ params ["", "_player", "", "_actionData"];
 
 private _budget = [side group _player] call FUNC(getBudget);
 private _actionText = if (_budget > 0) then {
-    format ["%1 [$%2]", localize LSTRING(fortify), _budget];
+    format ["%1 [$%2]", LLSTRING(fortify), _budget];
 } else {
-    localize LSTRING(fortify);
+    LLSTRING(fortify);
 };
 
 _actionData set [1, _actionText];

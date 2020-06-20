@@ -27,7 +27,7 @@ GVAR(objectRotationZ) = 0;
     if (_side isEqualTo side group ACE_player && {GVAR(settingHint) isEqualTo 2 || {GVAR(settingHint) isEqualTo 1 && {"ACE_Fortify" in (ACE_player call ACEFUNC(common,uniqueItems))}}}) then {
         private _budget = [_side] call FUNC(getBudget);
         TRACE_2("sideBudgetHint",_side,_budget);
-        [format ["%1 $%2", localize LSTRING(Budget), _budget]] call ACEFUNC(common,displayTextStructured);
+        [format ["%1 $%2", LLSTRING(Budget), _budget]] call ACEFUNC(common,displayTextStructured);
     };
 }] call CBA_fnc_addEventHandler;
 
@@ -60,6 +60,6 @@ GVAR(objectRotationZ) = 0;
             5
         ] call ACEFUNC(interact_menu,createAction);
 
-        [_object, 0, [], _removeAction] call ACEFUNC(interact_menu,addActionToObject);
+        [_object, 0, ["ACE_MainActions"], _removeAction] call ACEFUNC(interact_menu,addActionToObject);
     };
 }] call CBA_fnc_addEventHandler;

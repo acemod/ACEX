@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: mharis001
  * Handles creating and updating the visuals of the HUD.
@@ -14,7 +15,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params [["_thirst", ACE_player getVariable [QGVAR(thirst), 0]], ["_hunger", ACE_player getVariable [QGVAR(hunger), 0]]];
 
@@ -36,7 +36,9 @@ if (GVAR(hudType) == 0) then {
     };
 
     // Reduce transparency if hovering on interaction
-    _fade = _fade min ([1, 0.5] select GVAR(hudInteractionHover));
+    if (GVAR(hudInteractionHover)) then {
+        _fade = _fade min 0.5;
+    };
 
     // Update HUD icon colors (White -> Yellow -> Orange -> Red)
     {

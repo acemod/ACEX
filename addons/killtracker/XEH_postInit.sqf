@@ -2,7 +2,7 @@
 /*
  * Author: PabstMirror
  * Tracks deaths/kills and logs to the end mission disaplay
- * Attemps to log kills from ace_medical by using ace_medical_lastDamageSource
+ * Attemps to log kills from ace_medical by using "ace_killed" event
  *
  * Note: Requires config setup in a mission's description.ext
  * Has no effect if mission is not setup correctly
@@ -15,17 +15,17 @@
  *
  * Public: No
  */
-// #define DEBUG_MODE_FULL
 
 // place the following in a misison's description.ext:
 /*
     class CfgDebriefingSections {
         class acex_killTracker {
-            title = "Acex Killed Events";
+            title = "ACEX Killed Events";
             variable = "acex_killTracker_outputText";
         };
     };
  */
+
 if ((getText (missionconfigfile >> "CfgDebriefingSections" >> QUOTE(ADDON) >> "variable")) != QGVAR(outputText)) exitWith {
     TRACE_1("no mission debriefing config",_this);
 };
@@ -53,7 +53,6 @@ GVAR(killCount) = 0;
     GVAR(eventsArray) pushBack format ["DIED: %1 %2", _name, _killInfo];
     GVAR(outputText) = (format ["Total Kills: %1<br/>", GVAR(killCount)]) + (GVAR(eventsArray) joinString "<br/>");
 }] call CBA_fnc_addEventHandler;
-
 
 ["ace_killed", {
     params ["_unit", "_causeOfDeath", "_killer", "_instigator"];
@@ -115,7 +114,10 @@ GVAR(killCount) = 0;
             if (_killerIsPlayer) then {
                 _killerName = [_killer, true, false] call ACEFUNC(common,getName);
             } else {
-                _killerName = format ["*AI* - %1", getText (configfile >> "CfgVehicles" >> (typeOf _killer) >> "displayName")];
+                _killerName = _killer getVariable [QGVAR(aiName), ""]; // allow setting a custom AI name (e.g. VIP Target)
+                if (_killerName == "") then {
+                    _killerName = format ["*AI* - %1", getText (configfile >> "CfgVehicles" >> (typeOf _killer) >> "displayName")];
+                };
             };
         };
         TRACE_3("send death event",_unit,_killerName,_killInfo);
@@ -124,10 +126,14 @@ GVAR(killCount) = 0;
 
     // If killer was player then send event to killer
     if (_killerIsPlayer) then {
-        private _unitName = if (_unitIsPlayer) then {
-            [_unit, true, false] call ACEFUNC(common,getName); // should be same as profileName
+        private _unitName = "";
+        if (_unitIsPlayer) then {
+            _unitName = [_unit, true, false] call ACEFUNC(common,getName); // should be same as profileName
         } else {
-            format ["*AI* - %1", getText (configfile >> "CfgVehicles" >> (typeOf _unit) >> "displayName")];
+            _unitName = _unit getVariable [QGVAR(aiName), ""]; // allow setting a custom AI name (e.g. VIP Target)
+            if (_unitName == "") then {
+                _unitName = format ["*AI* - %1", getText (configfile >> "CfgVehicles" >> (typeOf _unit) >> "displayName")];
+            };
         };
         TRACE_3("send kill event",_killer,_unitName,_killInfo);
         [QGVAR(kill), [_unitName, _killInfo], _killer] call CBA_fnc_targetEvent;

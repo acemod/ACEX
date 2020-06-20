@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: mharis001, Glowbal, PabstMirror
  * Main looping function that updates thirst/hunger status.
@@ -13,7 +14,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 // 1 sec (update interval) * 100 (max thirst/hunger) / 3600 (sec in hour) = 0.02777778
 #define CHANGE_CONSTANT 0.02777778
@@ -23,8 +23,8 @@ params ["_nextMpSync"];
 // Access global variable once
 private _player = ACE_player;
 
-// Handle unit not alive or null
-if (!alive _player) exitWith {
+// Exit if player is not alive or a virtual unit
+if (!alive _player || {_player isKindOf "VirtualMan_F"}) exitWith {
     [FUNC(update), _nextMpSync, 1] call CBA_fnc_waitAndExecute;
     QGVAR(hud) cutFadeOut 0.5;
 };
@@ -53,6 +53,7 @@ _hunger = _hunger + _hungerChange min 100 max 0;
 
 // Check if we want to do a MP sync
 private _doSync = false;
+
 if (CBA_missionTime >= _nextMpSync) then {
     _doSync = true;
     _nextMpSync = CBA_missionTime + MP_SYNC_INTERVAL;
@@ -66,7 +67,7 @@ _player setVariable [QGVAR(hunger), _hunger, _doSync];
 [_player, _thirst, _hunger] call FUNC(handleEffects);
 
 // Handle showing/updating or hiding of HUD
-if (_thirst > GVAR(hudShowLevel) || {_hunger > GVAR(hudShowLevel)} || {GVAR(hudInteractionHover)}) then {
+if (!ACEGVAR(common,OldIsCamera) && {_thirst > GVAR(hudShowLevel) || {_hunger > GVAR(hudShowLevel)} || {GVAR(hudInteractionHover)}}) then {
     [_thirst, _hunger] call FUNC(handleHUD);
 } else {
     QGVAR(hud) cutFadeOut 0.5;

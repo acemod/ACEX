@@ -43,5 +43,25 @@ class CfgMovesMaleSdr: CfgMovesBasic {
             file = QPATHTOF(anim\drink_prone_can.rtm);
             speed = 1/9;
         };
+        class GVAR(drinkFromSource): GVAR(drinkStand) {
+            file = QPATHTOF(anim\drink_source.rtm);
+            speed = 1/8;
+        };
+        class GVAR(drinkFromSourceHigh): GVAR(drinkFromSource) {
+            file = QPATHTOF(anim\drink_source_high.rtm);
+        };
+        class GVAR(drinkFromSourceLow): GVAR(drinkFromSource) {
+            file = QPATHTOF(anim\drink_source_low.rtm);
+        };
+        class GVAR(drinkFromSourceSquat): GVAR(drinkFromSource) {
+            file = QPATHTOF(anim\drink_source_squat.rtm);
+            interpolateFrom[] = {"AmovPercMstpSnonWnonDnon", 0.1, "AmovPknlMstpSnonWnonDnon", 0.1};
+        };
+        class GVAR(drinkFromSourceSquatHigh): GVAR(drinkFromSourceSquat) {
+            file = QPATHTOF(anim\drink_source_squat_high.rtm);
+        };
+        class GVAR(drinkFromSourceSquatLow): GVAR(drinkFromSourceSquat) {
+            file = QPATHTOF(anim\drink_source_squat_low.rtm);
+        };
     };
 };

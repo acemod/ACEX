@@ -17,12 +17,14 @@ if !(hasInterface) exitWith {};
     // Compile water source actions
     private _mainAction = [
         QGVAR(waterSource),
-        localize LSTRING(WaterSource),
+        LLSTRING(WaterSource),
         QPATHTOF(ui\icon_water_tap.paa),
         {true},
         {
             private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
+
             alive _waterSource
+            && {GVAR(waterSourceActions) != 0}
             && {_waterSource call FUNC(getRemainingWater) != REFILL_WATER_DISABLED}
             && {[_player, _waterSource] call ACEFUNC(common,canInteractWith)}
         },
@@ -39,7 +41,7 @@ if !(hasInterface) exitWith {};
     private _subActions = [
         [
             QGVAR(checkWater),
-            localize LSTRING(CheckWater),
+            LLSTRING(CheckWater),
             QPATHTOF(ui\icon_water_tap.paa),
             {
                 private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
@@ -49,16 +51,20 @@ if !(hasInterface) exitWith {};
                 private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
                 (_waterSource call FUNC(getRemainingWater)) != REFILL_WATER_INFINITE
             }
-        ] call ACEFUNC(interact_menu,createAction)
-        /*
-        [
-            QGVAR(drinkDirectly),
-            localize LSTRING(DrinkDirectly),
-            QPATHTOF(ui\icon_water_tap.paa),
-            {systemChat "x"},
-            {true}
         ] call ACEFUNC(interact_menu,createAction),
-        */
+        [
+            QGVAR(drinkFromSource),
+            LLSTRING(DrinkFromSource),
+            QPATHTOF(ui\icon_water_tap.paa),
+            {
+                private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
+                [_player, _waterSource] call FUNC(drinkFromSource);
+            },
+            {
+                private _waterSource = _target getVariable [QGVAR(waterSource), objNull];
+                [_player, _waterSource] call FUNC(canDrinkFromSource);
+            }
+        ] call ACEFUNC(interact_menu,createAction)
     ];
 
     // Add water source actions to helper
@@ -66,6 +72,27 @@ if !(hasInterface) exitWith {};
     {
         [QGVAR(helper), 0, [QGVAR(waterSource)], _x] call ACEFUNC(interact_menu,addActionToClass);
     } forEach _subActions;
+
+    // Add inventory context menu option to consume items
+    ["ACE_ItemCore", ["CONTAINER"], LSTRING(EatDrink), [], QPATHTOF(ui\icon_survival.paa),
+        [
+            {true},
+            {
+                params ["", "", "_item"];
+                
+                GVAR(enabled) && {
+                    private _config = configFile >> "CfgWeapons" >> _item;                    
+                    getNumber (_config >> QGVAR(thirstQuenched)) > 0
+                    || {getNumber (_config >> QGVAR(hungerSatiated)) > 0}
+                }
+            }
+        ],
+        {
+            params ["_unit", "", "_item"];
+            [objNull, _unit, _item] call FUNC(consumeItem);
+            false
+        }
+    ] call CBA_fnc_addItemContextMenuOption;
 
     // Add water source helpers when interaction menu is opened
     ["ace_interactMenuOpened", {call FUNC(addWaterSourceInteractions)}] call CBA_fnc_addEventHandler;
@@ -79,11 +106,13 @@ if !(hasInterface) exitWith {};
             -1 * count (_this getVariable [QACEGVAR(medical,ivBags), []]);
         }] call FUNC(addStatusModifier);
     };
+
     if (["ace_weather"] call ACEFUNC(common,isModLoaded)) then {
         [0, {
             linearConversion [40, 60, missionNamespace getVariable [QACEGVAR(weather,currentTemperature), 25], 0, 1.5, true];
         }] call FUNC(addStatusModifier);
     };
+
     if (["ace_dragging"] call ACEFUNC(common,isModLoaded)) then {
         [2, {
             if (_this getVariable [QACEGVAR(dragging,isDragging), false] || {_this getVariable [QACEGVAR(dragging,isCarrying), false]}) exitWith {
@@ -93,6 +122,7 @@ if !(hasInterface) exitWith {};
         }] call FUNC(addStatusModifier);
     };
 
+    // Handle returning to normal transparency once interaction menu is closed
     GVAR(hudInteractionHover) = false;
 
     ["ace_interactMenuClosed", {
