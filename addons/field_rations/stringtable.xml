@@ -192,7 +192,7 @@
             <Russian>Влияние на Усталость</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_AffectAdvancedFatigue_Description">
-            <English>Controls if thirst and hunger should affect ACE Advanced Fatigue</English>
+            <English>Controls if thirst and hunger should affect ACE Advanced Fatigue.</English>
             <German>Bestimmt, ob Durst und Hunger ACE Erweiterte Ausdauer beeinflussen sollen.</German>
             <Chinese>是否讓飲食影響到ACE的進階疲勞。</Chinese>
             <Japanese>喉の渇きと空腹感が ACE アドバンスド ファティーグへ与える影響を決定します</Japanese>
@@ -348,7 +348,7 @@
             <Polish>Nie ma wody</Polish>
             <Russian>Воды больше не осталось</Russian>
         </Key>
-        <Key ID="STR_ACEX_Field_Rations_DrinkDirectly">
+        <Key ID="STR_ACEX_Field_Rations_DrinkFromSource">
             <English>Drink From Source</English>
             <German>Trinke direkt</German>
         </Key>
