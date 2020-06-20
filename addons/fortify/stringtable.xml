@@ -138,12 +138,15 @@
         </Key>
         <Key ID="STR_ACEX_Fortify_SmallGreen">
             <English>Small (Green)</English>
+            <Russian>Малый (Зеленый)</Russian>
         </Key>
         <Key ID="STR_ACEX_Fortify_MediumGreen">
             <English>Medium (Green)</English>
+            <Russian>Средний (Зеленый)</Russian>
         </Key>
         <Key ID="STR_ACEX_Fortify_LargeGreen">
             <English>Large (Green)</English>
+            <Russian>Большой (Зеленый)</Russian>
         </Key>
     </Package>
 </Project>

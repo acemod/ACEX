@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="ACEX">
     <Package name="KillTracker">
+        <Key ID="STR_ACEX_KillTracker_TotalKills">
+            <English>Total Kills:</English>
+            <Russian>Всего убийств:</Russian>
+        </Key>
+        <Key ID="STR_ACEX_KillTracker_Kill">
+            <English>Kill: %1 %2</English>
+            <Russian>Убил: %1 %2</Russian>
+        </Key>
+        <Key ID="STR_ACEX_KillTracker_Killer">
+            <English>Killer: %1 %2</English>
+            <Russian>Убийца: %1 %2</Russian>
+        </Key>
+        <Key ID="STR_ACEX_KillTracker_Vehicle">
+            <English>Vehicle: %1</English>
+            <Russian>Техника: %1</Russian>
+        </Key>
+        <Key ID="STR_ACEX_KillTracker_FriendlyFire">
+            <English>Friendly Fire</English>
+            <Chinese>誤擊友方</Chinese>
+            <French>Tir fratricide</French>
+            <Spanish>Fuego aliado</Spanish>
+            <Italian>Fuoco amico</Italian>
+            <Polish>Ostrzał sojuszniczy</Polish>
+            <Russian>Дружественный огонь</Russian>
+            <German>Teambeschuss</German>
+            <Czech>Střelba do vlastních!</Czech>
+            <Portuguese>Fogo amigo</Portuguese>
+            <Korean>아군 오인사격</Korean>
+            <Chinesesimp>友军误射</Chinesesimp>
+            <Japanese>同士討ち</Japanese>
+            <Turkish>Dost Atışı</Turkish>
+        </Key>
     </Package>
 </Project>
