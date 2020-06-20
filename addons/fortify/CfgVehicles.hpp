@@ -17,12 +17,12 @@ class CfgVehicles {
     class Logic;
     class Module_F: Logic {
         class AttributesBase {
-			class Default;
+            class Default;
             class Combo;
-			class Edit;
-			class Checkbox;
-			class ModuleDescription;
-		};
+            class Edit;
+            class Checkbox;
+            class ModuleDescription;
+        };
         class ModuleDescription;
     };
     class ACE_Module: Module_F {};
@@ -80,8 +80,8 @@ class CfgVehicles {
         };
 
         class ModuleDescription: ModuleDescription {
-			description = CSTRING(moduleDescription);
-		};
+            description = CSTRING(moduleDescription);
+        };
     };
 
     class GVAR(buildLocationModule): ACE_Module {
