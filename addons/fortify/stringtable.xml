@@ -37,6 +37,9 @@
             <Polish>Automatycznie dodaj narzędzie do fortyfikowania</Polish>
             <Russian>Автоматически добавлять Инструмент строителя</Russian>
         </Key>
+        <Key ID="STR_ACEX_Fortify_moduleDescription">
+            <English>Initializes the Fortify system, with some basic parameters.&lt;br/&gt;Presets are pulled from configFile and missionConfigFile, see wiki for format.</English>
+        </Key>
         <Key ID="STR_ACEX_Fortify_rotate">
             <English>Rotate</English>
             <German>Drehen</German>
@@ -125,17 +128,25 @@
             <Polish>Zawsze</Polish>
             <Russian>Показывать всегда</Russian>
         </Key>
-        <Key ID="STR_ACEX_Fortify_SmallGreen">
+        <Key ID="STR_ACEX_Fortify_small">
+            <English>Small</English>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_smallGreen">
             <English>Small (Green)</English>
             <Russian>Малый (Зеленый)</Russian>
         </Key>
-        <Key ID="STR_ACEX_Fortify_MediumGreen">
+        <Key ID="STR_ACEX_Fortify_medium">
+            <English>Medium</English>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_mediumGreen">
             <English>Medium (Green)</English>
             <Russian>Средний (Зеленый)</Russian>
         </Key>
-        <Key ID="STR_ACEX_Fortify_LargeGreen">
-            <English>Large (Green)</English>
-            <Russian>Большой (Зеленый)</Russian>
+        <Key ID="STR_ACEX_Fortify_big">
+            <English>Big</English>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_bigGreen">
+            <English>Big (Green)</English>
         </Key>
     </Package>
 </Project>
