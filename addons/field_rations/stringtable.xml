@@ -19,6 +19,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_IGUI_DisplayName">
             <English>ACEX Field Rations HUD</English>
+            <German>ACEX Feldrationen HUD</German>
             <Chinese>ACEX 戰地口糧界面</Chinese>
             <Japanese>ACEX フィールド レーション HUD</Japanese>
             <Polish>ACEX HUD Racji Polowych</Polish>
@@ -142,24 +143,28 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ThirstQuenched_DisplayName">
             <English>Thirst Quenched</English>
+            <German>Durst gestillt</German>
             <Chinese>止渴程度</Chinese>
             <Japanese>乾きの満たし</Japanese>
             <Russian>Утоление жажды</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ThirstQuenched_Description">
             <English>Coefficient for the amount of thirst quenched from drinking.</English>
+            <German>Koeffizient für die Menge des Dursts, der durch Trinken gestillt wird.</German>
             <Chinese>從飲用中能夠攝取多少水份。</Chinese>
             <Japanese>飲むことによって得られる乾きの満たし量の係数を設定します</Japanese>
             <Russian>Коэффициент утоления жажды от питья</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HungerSatiated_DisplayName">
             <English>Hunger Satiated</English>
+            <German>Hunger gesättigt</German>
             <Chinese>飽足感</Chinese>
             <Japanese>満腹感</Japanese>
             <Russian>Утоление голода</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HungerSatiated_Description">
             <English>Coefficient for the amount of hunger satiated from eating.</English>
+            <German>Koeffizient für die Menge des Hungers, der durch essen gesättigt wird.</German>
             <Chinese>從飲食中獲取多少飽食感。</Chinese>
             <Japanese>食べることによって得られる満腹感の量の係数を設定します</Japanese>
             <Russian>Коэффициент утоления голода от принятия пищи</Russian>
@@ -186,18 +191,21 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_AffectAdvancedFatigue_DisplayName">
             <English>Affect Advanced Fatigue</English>
+            <German>Beeinflusst die erweiterte Ausdauer</German>
             <Chinese>與進階疲勞聯動</Chinese>
             <Japanese>アドバンスド ファティーグへの影響</Japanese>
             <Russian>Влияние на продвинутую усталость</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_AffectAdvancedFatigue_Description">
             <English>Controls if thirst and hunger should affect ACE Advanced Fatigue.</English>
+            <German>Bestimmt, ob Durst und Hunger ACE Erweiterte Ausdauer beeinflussen sollen.</German>
             <Chinese>是否讓飲食影響到ACE的進階疲勞。</Chinese>
             <Japanese>喉の渇きと空腹感が ACE アドバンスド ファティーグへ与える影響を決定します</Japanese>
             <Russian>Определяет, будет ли жажда и голод влиять на продвинутую усталость ACE.</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_DisplayName">
             <English>HUD Type</English>
+            <German>HUD Typ</German>
             <Chinese>界面類型</Chinese>
             <Japanese>HUD タイプ</Japanese>
             <Polish>Typ HUD</Polish>
@@ -205,6 +213,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_Description">
             <English>Selects which HUD style will be used.</English>
+            <German>Wählt, welcher HUD Stil benutzt wird.</German>
             <Chinese>選擇妳想使用的界面類型。</Chinese>
             <Japanese>使用する HUD のタイプを選択できます</Japanese>
             <Polish>Wybierz który styl HUD będzie używany</Polish>
@@ -212,6 +221,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ColoredIcons">
             <English>Colored Icons</English>
+            <German>Farbige Icons</German>
             <Chinese>顏色化圖示</Chinese>
             <Japanese>色付きアイコン</Japanese>
             <Polish>Kolorowe ikony</Polish>
@@ -219,6 +229,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrainingIcons">
             <English>Draining Icons</English>
+            <German>Farblose Icons</German>
             <Chinese>增減化圖示</Chinese>
             <Japanese>ドレイン アイコン</Japanese>
             <Polish>Ubywające ikony</Polish>
@@ -226,6 +237,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudShowLevel_DisplayName">
             <English>HUD Show Level</English>
+            <German>HUD zeigen Level</German>
             <Chinese>界面顯示程度</Chinese>
             <Japanese>HUD 表示レベル</Japanese>
             <Polish>Widok HUD</Polish>
@@ -233,6 +245,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudShowLevel_Description">
             <English>Automatically show the HUD when either thirst or hunger are above this level.</English>
+            <German>Zeigt automatisch das HUD an, sobald Durst oder Hunger über diesem Level sind.</German>
             <Chinese>在飲食低於多少程度時顯示界面。</Chinese>
             <Japanese>この値以上に空腹感か乾きを感じると自動的に HUD を表示します</Japanese>
             <Polish>Automatycznie pokaż HUD kiedy pragnienie albo głód przekroczy ten poziom</Polish>
@@ -256,6 +269,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudTransparency_DisplayName">
             <English>Colored Icons - Transparency</English>
+            <German>Farbige Icons - Transparenz</German>
             <Chinese>顏色化圖示 - 透明度</Chinese>
             <Japanese>色付きアイコン - 透明度</Japanese>
             <Polish>Kolorowe ikony - transparentność</Polish>
@@ -263,6 +277,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudTransparency_Description">
             <English>Controls the transparency of the Colored Icons HUD. Dynamic setting makes the HUD less transparent as thirst or hunger increase.</English>
+            <German>Bestimmt die Tranzparenz der farbigen HUD Icons. Die Dynamische Einstellung macht das HUD weniger transparent, wenn Hunger oder Durst steigen.</German>
             <Chinese>控制顏色化圖示的透明度。設定為動態使其界面透明度與飲食需求一樣，越透明越需要。</Chinese>
             <Polish>Kontroluje transparentność kolorowych ikon HUD. Dynamiczne ustawienie zmniejsza przejrzystość wraz z zwiększeniem głodu czy pragnienia.</Polish>
             <Japanese>色付きアイコンの透明度を決定できます。動的に設定されると、喉の渇きや空腹感が増すにつれて、アイコンの透明度を下げます。</Japanese>
@@ -286,18 +301,21 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSupply_3DEN_DisplayName">
             <English>Water Supply</English>
+            <German>Wasservorrat</German>
             <Chinese>飲用水補給</Chinese>
             <Japanese>水資源</Japanese>
             <Russian>Водные ресурсы</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSupply_3DEN_Description">
             <English>The amount of water available for ACEX Field Rations water source actions (-1 disabled, -10 infinite)</English>
+            <German>Die Menge des für ACEX Feldrationen Wasserquellenaktionen verfügbaren Wassers (-1 ausgeschaltet, -10 unendlich)</German>
             <Chinese>水源可供補充飲用水的次數（-1為關閉，-10為無限次）。</Chinese>
             <Japanese>ACEX フィールド レーションで利用できる水源の量を設定できます。(-1で無効化、-10で無限)</Japanese>
             <Russian>Количество воды, доступной для использования в ACEX Полевые рационы. (-1 - отключено, -10 - бесконечно)</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSource">
             <English>Water Source</English>
+            <German>Wasserquelle</German>
             <Chinese>水源</Chinese>
             <Japanese>水源</Japanese>
             <Polish>Źródło wody</Polish>
@@ -305,6 +323,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CheckWater">
             <English>Check Remaining Water</English>
+            <German>Überprüfe verbleibendes Wasser</German>
             <Chinese>檢查剩餘飲用水</Chinese>
             <Japanese>残っている水を確認</Japanese>
             <Polish>Sprawdź ilość wody</Polish>
@@ -312,6 +331,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CheckingWater">
             <English>Checking remaining water...</English>
+            <German>Überprüfe verbleibendes Wasser...</German>
             <Chinese>檢查剩下的飲用水...</Chinese>
             <Japanese>残っている水の量を確認中です・・・</Japanese>
             <Polish>Sprawdzanie ilości wody</Polish>
@@ -319,6 +339,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_RemainingWater">
             <English>There are %1 litres left.</English>
+            <German>Es sind %1 Liter übrig.</German>
             <Chinese>那還有 %1 公升</Chinese>
             <Japanese>残り %1 リットル残っています。</Japanese>
             <Polish>Pozostało %1 litrów.</Polish>
@@ -326,6 +347,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_NoWaterRemaining">
             <English>There is no water left.</English>
+            <German>Es ist kein Wasser mehr übrig.</German>
             <Chinese>水已經用完了</Chinese>
             <Japanese>水はもうありません。</Japanese>
             <Polish>Nie ma wody</Polish>
@@ -333,6 +355,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrinkFromSource">
             <English>Drink From Source</English>
+            <German>Trinke direkt</German>
             <Russian>Выпить из источника</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Refill">
@@ -385,6 +408,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_EatingX">
             <English>Eating %1...</English>
+            <German>Esse %1...</German>
             <Chinese>食用 %1...</Chinese>
             <Japanese>%1を食べています・・・</Japanese>
             <Polish>Jedzenie %1...</Polish>
@@ -392,6 +416,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrinkingX">
             <English>Drinking %1...</English>
+            <German>Trinke %1...</German>
             <Chinese>飲用自 %1...</Chinese>
             <Japanese>%1を飲んでいます・・・</Japanese>
             <Polish>Picie %1...</Polish>
@@ -399,6 +424,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrinkingFromX">
             <English>Drinking from %1...</English>
+            <German>Trinke von %1...</German>
             <Chinese>飲用%1的水中...</Chinese>
             <Japanese>%1から飲んでいます・・・</Japanese>
             <Polish>Picie z %1...</Polish>
@@ -510,7 +536,7 @@
             <Chinesesimp>食堂</Chinesesimp>
             <Czech>Jídelna</Czech>
             <French>Cantine</French>
-            <German>Kantine</German>
+            <German>Feldflasche</German>
             <Hungarian>Kantin</Hungarian>
             <Italian>Mensa</Italian>
             <Japanese>水筒</Japanese>
@@ -526,7 +552,7 @@
             <Chinesesimp>一个装满水的食堂</Chinesesimp>
             <Czech>Jídelna naplněná vodou</Czech>
             <French>Une cantine remplie d'eau</French>
-            <German>Eine Kantine mit Wasser gefüllt</German>
+            <German>Eine Feldflasche mit Wasser gefüllt</German>
             <Hungarian>Vízzel töltött kantin</Hungarian>
             <Italian>Una mensa piena d'acqua</Italian>
             <Japanese>水で一杯の水筒</Japanese>
@@ -542,7 +568,7 @@
             <Chinesesimp>食堂（一半）</Chinesesimp>
             <Czech>Jídelna (poloviční)</Czech>
             <French>Cantine (Demi)</French>
-            <German>Kantine (halb)</German>
+            <German>Feldflasche (halb)</German>
             <Hungarian>Étkezés (fél)</Hungarian>
             <Italian>Mensa (metà)</Italian>
             <Japanese>水筒 (半分)</Japanese>
@@ -558,7 +584,7 @@
             <Chinesesimp>食堂一半装满了水</Chinesesimp>
             <Czech>Jídelna naplněná vodou</Czech>
             <French>Une cantine à moitié remplie d'eau</French>
-            <German>Eine Kantine halb mit Wasser gefüllt</German>
+            <German>Eine Feldflasche zur Hälfte mit Wasser gefüllt</German>
             <Hungarian>A vízzel töltött kantin</Hungarian>
             <Italian>Una mensa riempita per metà di acqua</Italian>
             <Japanese>水が半分入っている水筒</Japanese>
@@ -574,7 +600,7 @@
             <Chinesesimp>食堂（空）</Chinesesimp>
             <Czech>Jídelna (prázdné)</Czech>
             <French>Cantine (Vide)</French>
-            <German>Kantine (leer)</German>
+            <German>Feldflasche (leer)</German>
             <Hungarian>Étkezde (üres)</Hungarian>
             <Italian>Mensa (vuota)</Italian>
             <Japanese>水筒 (空)</Japanese>
@@ -590,7 +616,7 @@
             <Chinesesimp>一个空的食堂</Chinesesimp>
             <Czech>Prázdná jídelna</Czech>
             <French>Une cantine vide</French>
-            <German>Eine leere Kantine</German>
+            <German>Eine leere Feldflasche</German>
             <Hungarian>Egy üres kantin</Hungarian>
             <Italian>Una mensa vuota</Italian>
             <Japanese>空の水筒</Japanese>
@@ -602,6 +628,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Can_Spirit_Description">
             <English>Refreshing lemon and lime flavored soft drink</English>
+            <German>Ein erfrischender Softdrink mit Zitronen- und Limettengeschmack.</German>
             <Chinese>清新檸檬以及有著酸橙味的汽水</Chinese>
             <Japanese>新鮮なレモンとライムの風味を味わえるソフト ドリンク</Japanese>
             <Polish>Odświeżający napój cytronowo-limonkowy</Polish>
@@ -609,6 +636,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Can_Franta_Description">
             <English>Orange flavored soft drink with a tingly, fruity taste</English>
+            <German>Ein nach Orange schmeckender Softdrink mit einem prickelndem und fruchtigem Geschmack</German>
             <Chinese>有著微微的橘子水果味的汽水</Chinese>
             <Japanese>口いっぱいに果物を感じるオレンジ風味のソフト ドリンク</Japanese>
             <Polish>Napój pomarańczowy</Polish>
@@ -616,6 +644,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Can_RedGull_Description">
             <English>Red Gull gives you wings</English>
+            <German>Red Gull verleiht Flügel</German>
             <Chinese>紅鷹讓你猛虎添翼</Chinese>
             <Japanese>レッドガルは翼をさずける</Japanese>
             <Polish>Red Gull doda ci skrzydeł</Polish>
@@ -627,7 +656,7 @@
             <Chinesesimp>MRE羊肉咖喱</Chinesesimp>
             <Czech>MRE jehněčí kari</Czech>
             <French>MRE Curry d'agneau</French>
-            <German>MRE Lamm Curry</German>
+            <German>EPA Lamm Curry</German>
             <Hungarian>MRE bárány Curry</Hungarian>
             <Italian>MRE Curry di agnello</Italian>
             <Japanese>MRE 羊カレー</Japanese>
@@ -643,7 +672,7 @@
             <Chinesesimp>含有羊肉咖喱的MRE。加热以达到最佳效果</Chinesesimp>
             <Czech>MRE obsahující Lamb Curry. Teplo pro nejlepší efekt</Czech>
             <French>Un MRE contenant du Curry d'agneau. Chaleur pour le meilleur effet</French>
-            <German>Ein MRE mit Lamm Curry. Hitze für den besten Effekt</German>
+            <German>Eine EPA mit Lamm Curry. Für den besten Geschmack erhitzen.</German>
             <Hungarian>Egy MRE, amely Lamb Curry-t tartalmaz. Hő a legjobb hatás érdekében</Hungarian>
             <Italian>Un MRE contenente Lamb Curry. Calore per il miglior effetto</Italian>
             <Japanese>羊カレーの MRE。温めるとなお美味しい</Japanese>
@@ -655,6 +684,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_BeefStew_DisplayName">
             <English>MRE Beef Stew</English>
+            <German>EPA Rindereintopf</German>
             <Chinese>軍糧 牛肉燉湯</Chinese>
             <Japanese>MRE ビーフ シチュー</Japanese>
             <Polish>MRE Gulasz wołowy</Polish>
@@ -662,6 +692,7 @@
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_BeefStew_Description">
             <English>An MRE containing Beef Stew. Heat for best effect</English>
+            <German>Eine EPA, welche Rindereintopf beeinhaltet. Für den besten Geschmack erhitzen.</German>
             <Chinese>含有牛肉燉湯的軍用口糧。加熱以達到最佳效果</Chinese>
             <Japanese>ビーフ シチューの MRE。温めるとなお美味しい</Japanese>
             <Polish>MRE zawierające gulasz wołowy. Podgrzej dla najlepszego efektu</Polish>
@@ -673,7 +704,7 @@
             <Chinesesimp>MRE奶油西红柿汤</Chinesesimp>
             <Czech>MRE krémová rajská polévka</Czech>
             <French>MRE Soupe de tomate crème</French>
-            <German>MRE Sahne Tomatensuppe</German>
+            <German>EPA Cremige Tomatensuppe</German>
             <Hungarian>MRE krémes paradicsomleves</Hungarian>
             <Italian>MRE Crema di pomodoro</Italian>
             <Japanese>MRE クリーム トマト スープ</Japanese>
@@ -689,7 +720,7 @@
             <Chinesesimp>含有奶油番茄汤的MRE。 用水和热混合以获得最佳效果</Chinesesimp>
             <Czech>MRE obsahující krémovou rajčatovou polévku. Směs s vodou a teplem pro nejlepší efekt</Czech>
             <French>Un MRE contenant de la soupe à la tomate et à la crème. Mélanger avec de l'eau et chauffer pour obtenir le meilleur effet</French>
-            <German>Ein MRE mit Creme Tomatensuppe. Für beste Wirkung mit Wasser und Hitze mischen</German>
+            <German>Eine EPA mit Creme Tomatensuppe. Für beste Wirkung mit Wasser und Hitze mischen.</German>
             <Hungarian>Egy krémes paradicsomleveset tartalmazó MRE. Keverjük össze vízzel és hővel a legjobb hatás érdekében</Hungarian>
             <Italian>Un MRE contenente zuppa di pomodoro crema. Mescolare con acqua e calore per ottenere il massimo effetto</Italian>
             <Japanese>クリーム トマト スープの MRE。水と混ぜて温めるとなお美味しい</Japanese>
@@ -705,7 +736,7 @@
             <Chinesesimp>MRE奶油鸡汤</Chinesesimp>
             <Czech>MRE krémová kuřecí polévka</Czech>
             <French>MRE Soupe à la crème au poulet</French>
-            <German>MRE Cream Hühnersuppe</German>
+            <German>EPA Cream Hühnersuppe</German>
             <Hungarian>MRE krémes csirke leves</Hungarian>
             <Italian>MRE Zuppa di pollo crema</Italian>
             <Japanese>MRE クリーム チキン スープ</Japanese>
@@ -721,7 +752,7 @@
             <Chinesesimp>含有鸡汤的MRE。 用水和热混合以获得最佳效果</Chinesesimp>
             <Czech>MRE obsahující kuřecí polévku. Směs s vodou a teplem pro nejlepší efekt</Czech>
             <French>Un MRE contenant une soupe au poulet. Mélanger avec de l'eau et chauffer pour obtenir le meilleur effet</French>
-            <German>Ein MRE mit Hühnersuppe. Für beste Wirkung mit Wasser und Hitze mischen</German>
+            <German>Eine EPA mit Hühnersuppe. Für beste Wirkung mit Wasser und Hitze mischen.</German>
             <Hungarian>A csirke leves tartalmú MRE. Keverjük össze vízzel és hővel a legjobb hatás érdekében</Hungarian>
             <Italian>Un MRE contenente zuppa di pollo. Mescolare con acqua e calore per ottenere il massimo effetto</Italian>
             <Japanese>チキン スープの MRE。水と混ぜて温めるとなお美味しい</Japanese>
@@ -737,7 +768,7 @@
             <Chinesesimp>MRE鸡蒂卡Masala</Chinesesimp>
             <Czech>MRE Kuře Tikka Masala</Czech>
             <French>MRE Poulet Tikka Masala</French>
-            <German>MRE Huhn Tikka Masala</German>
+            <German>EPA Huhn Tikka Masala</German>
             <Hungarian>MRE csirke Tikka Masala</Hungarian>
             <Italian>MRE pollo Tikka Masala</Italian>
             <Japanese>MRE チキン ティッカ マサラ</Japanese>
@@ -753,7 +784,7 @@
             <Chinesesimp>与鸡Tikka马萨拉MRE。 加热以达到最佳效果</Chinesesimp>
             <Czech>MRE s kuřecím masem Tikka Masala. Teplo pro nejlepší efekt</Czech>
             <French>Un MRE avec du poulet Tikka Masala. Chaleur pour le meilleur effet</French>
-            <German>Ein MRE mit Hühnchen Tikka Masala. Hitze für den besten Effekt</German>
+            <German>Eine EPA mit Hühnchen Tikka Masala. Für den besten Geschmack erhitzen.</German>
             <Hungarian>Egy MRE csirkével Tikka Masala. Hő a legjobb hatás érdekében</Hungarian>
             <Italian>Un MRE con pollo Tikka Masala. Calore per effetto migliore</Italian>
             <Japanese>チキン ティッカ マサラの MRE。温めるとなお美味しい</Japanese>
@@ -769,7 +800,7 @@
             <Chinesesimp>MRE牛排蔬菜</Chinesesimp>
             <Czech>MRE Steak zelenina</Czech>
             <French>MRE Steak légumes</French>
-            <German>MRE Steak Gemüse</German>
+            <German>EPA Steak Gemüse</German>
             <Hungarian>MRE Steak zöldségek</Hungarian>
             <Italian>MRE Verdura di bistecca</Italian>
             <Japanese>MRE 野菜添えステーキ</Japanese>
@@ -785,7 +816,7 @@
             <Chinesesimp>包含牛排和蔬菜的MRE。 加热以达到最佳效果</Chinesesimp>
             <Czech>MRE obsahující steak a zeleninu. Teplo pro nejlepší efekt</Czech>
             <French>Un MRE contenant du bifteck et des légumes. Chaleur pour le meilleur effet</French>
-            <German>Ein MRE mit Steak und Gemüse. Hitze für den besten Effekt</German>
+            <German>Eine EPA mit Steak und Gemüse. Für den besten Geschmack erhitzen.</German>
             <Hungarian>Egy MRE, amely Steak és Zöldségeket tartalmaz. Hő a legjobb hatás érdekében</Hungarian>
             <Italian>Un MRE contenente bistecche e verdure. Calore per il miglior effetto</Italian>
             <Japanese>野菜とステーキの MRE。温めるとなお美味しい</Japanese>
@@ -801,7 +832,7 @@
             <Chinesesimp>MRE肉丸和意大利面</Chinesesimp>
             <Czech>MRE karbanátky a těstoviny</Czech>
             <French>MRE Pâtes aux boulettes de viande</French>
-            <German>MRE Frikadellen und Pasta</German>
+            <German>EPA Frikadellen und Pasta</German>
             <Hungarian>MRE húsgombóc és tészta</Hungarian>
             <Italian>MRE Pasta e polpette</Italian>
             <Japanese>MRE ミートボールとパスタ</Japanese>
@@ -817,7 +848,7 @@
             <Chinesesimp>含有肉丸和意大利面的MRE。 加热以达到最佳效果</Chinesesimp>
             <Czech>MRE obsahující maso a těstoviny. Teplo pro nejlepší efekt</Czech>
             <French>Un MRE contenant des boulettes de viande et des pâtes. Chaleur pour le meilleur effet</French>
-            <German>Ein MRE mit Fleischbällchen und Pasta. Hitze für den besten Effekt</German>
+            <German>Eine EPA mit Fleischbällchen und Pasta. Für den besten Geschmack erhitzen.</German>
             <Hungarian>Húsgombócokat és tésztát tartalmazó MRE. Hő a legjobb hatás érdekében</Hungarian>
             <Italian>Un MRE contenente polpette e pasta. Calore per il miglior effetto</Italian>
             <Japanese>ミートボールとパスタの MRE。温めるとなお美味しい</Japanese>
@@ -833,7 +864,7 @@
             <Chinesesimp>MRE鸡肉香草饺子</Chinesesimp>
             <Czech>MRE kuře s bylinkovým knedlíkem</Czech>
             <French>MRE de poulet avec des boulettes aux herbes</French>
-            <German>MRE Huhn mit Kraut Knödel</German>
+            <German>EPA Huhn mit Kraut Knödel</German>
             <Hungarian>MRE csirke Herb galuskával</Hungarian>
             <Italian>MRE pollo con gnocchi alle erbe</Italian>
             <Japanese>MRE 鶏肉団子</Japanese>
@@ -849,7 +880,7 @@
             <Chinesesimp>含有鸡肉和香草饺子的MRE。 加热以达到最佳效果</Chinesesimp>
             <Czech>MRE obsahující kuře s bylinkovými knedlíky. Teplo pro nejlepší efekt</Czech>
             <French>Un MRE contenant du poulet et des dumplings aux fines herbes. Chaleur pour le meilleur effet</French>
-            <German>Ein MRE mit Hühnchen mit Kräuterknödeln. Hitze für den besten Effekt</German>
+            <German>Eine EPA mit Hühnchen mit Kräuterknödeln. Für den besten Geschmack erhitzen.</German>
             <Hungarian>Egy MRE, amely csirkét és fűszeres gombócokat tartalmaz. Hő a legjobb hatás érdekében</Hungarian>
             <Italian>Un MRE contenente pollo con gnocchi alle erbe. Calore per il miglior effetto</Italian>
             <Japanese>鶏肉を団子で包んだ MRE。温めるとなお美味しい</Japanese>

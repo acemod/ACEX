@@ -27,7 +27,7 @@
         </Key>
         <Key ID="STR_ACEX_Headless_EnabledDesc">
             <English>Enables transferring of AI to Headless Clients.</English>
-            <German>Aktiviert denTransfer der KI auf Headless Clients.</German>
+            <German>Aktiviert den Transfer der KI auf die Headless Clients.</German>
             <Polish>Włącza transfer AI do Headless Client.</Polish>
             <Korean>AI를 헤드리스 클라이언트로 전송할 수 있습니다.</Korean>
             <Japanese>AI をヘッドレス クライアントへ移行を有効化</Japanese>
@@ -63,6 +63,7 @@
         </Key>
         <Key ID="STR_ACEX_Headless_EndMission">
             <English>End Mission</English>
+            <German>Beende Mission</German>
             <Korean>미션 종료</Korean>
             <Japanese>ミッション終了</Japanese>
             <French>Termine la Mission</French>
@@ -74,6 +75,7 @@
         </Key>
         <Key ID="STR_ACEX_Headless_EndMissionDesc">
             <English>End mission when there are no players connected (same as 'persistent = 0' in server configuration but with Headless Client support).</English>
+            <German>Beende die Mission, wenn keine Spieler mehr verbunden sind (das gleiche wie 'persitent = 0' in den Serverkonfigurationen aber mit Headless Client Unterstützung).</German>
             <Korean>연결된 플레이어가 없을 때 임무 종료. (서버 구성에서는 'persistent = 0'과 같지만 Headless Client는 지원함)</Korean>
             <Japanese>プレイヤーが接続していない場合はミッション終了します。(サーバ設定の'presistent =0'と同じですが、ヘッドレス クライアントは適用されます)</Japanese>
             <French>Termine la mission lorsqu'il n'y a plus de joueur connecté (idem que 'persistent = 0' dans la config serveur mais avec la gestion du Headless Client).</French>
@@ -85,6 +87,7 @@
         </Key>
         <Key ID="STR_ACEX_Headless_Instant">
             <English>Instant</English>
+            <German>Sofort</German>
             <Korean>즉시</Korean>
             <Japanese>即座</Japanese>
             <French>Instantané</French>
@@ -96,6 +99,7 @@
         </Key>
         <Key ID="STR_ACEX_Headless_Delayed">
             <English>Delayed (60s)</English>
+            <German>Verzögert (60s)</German>
             <Korean>지연 (60초)</Korean>
             <Japanese>遅延 (60秒)</Japanese>
             <French>Retardé (60s)</French>
@@ -131,30 +135,35 @@
         </Key>
         <Key ID="STR_ACEX_Headless_TransferLoadout">
             <English>Transfer Loadout</English>
+            <German>Transferiere Ausrüstung</German>
             <Japanese>装備の移送</Japanese>
             <Chinese>裝備傳輸</Chinese>
             <Russian>Передавать снаряжение</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_TransferLoadoutDesc">
             <English>Transfer loadout of units attempts to work around an issue where units appear naked after transferring to a Headless Client.</English>
+            <German>Transferiere die Ausrüstung einer Einheit, um einen Fehler zu umgehen, bei welchem Einheiten nach dem Transfer auf einen Headless Client nackt erscheinen.</German>
             <Japanese>装備の移送はヘッドレス クライアントへの移行後にユニットが裸で出現する問題の回避を試みます。</Japanese>
             <Russian>Передача снаряжения юнитов позволяет обходить проблему, при которой юниты оказываются без снаряжения после передачи управления Headless клиенту.</Russian>
             <Chinese>裝備傳輸用於試著暫時應付單位透過無頭客戶端傳輸時所導致裸裝之問題。</Chinese>
         </Key>
         <Key ID="STR_ACEX_Headless_TransferLoadoutCurrent">
             <English>Current Loadout</English>
+            <German>Derzeitige Ausrüstung</German>
             <Japanese>現在の装備</Japanese>
             <Chinese>目前裝備</Chinese>
             <Russian>Текущее снаряжение</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_TransferLoadoutConfig">
             <English>Config Loadout</English>
+            <German>Konfiguriere Ausrüstung</German>
             <Japanese>コンフィグの装備</Japanese>
             <Chinese>設置裝備</Chinese>
             <Russian>Снаряжение из настроек</Russian>
         </Key>
         <Key ID="STR_ACEX_Headless_BlacklistEden">
             <English>Headless Blacklist</English>
+            <German>Headless Blacklist</German>
             <Japanese>ヘッドレス ブラックリスト</Japanese>
             <French>Liste noire Headless</French>
             <Chinesesimp>无头客户端黑名单</Chinesesimp>
@@ -166,6 +175,7 @@
         </Key>
         <Key ID="STR_ACEX_Headless_BlacklistEdenDesc">
             <English>Disables transferring of this AI unit/group to Headless Clients. No effect on player units.</English>
+            <German>Schaltet das Übertragen dieser KI Einheit/Gruppe zu einem Headless Client aus. Hat keinen Effekt auf Spielereinheiten.</German>
             <Japanese>ヘッドレス クライアントへ移行させない AI ユニット/グループを指定します。プレイヤー ユニットへ効果はありません。</Japanese>
             <French>Désactive le transfert de ce(tte) unité/groupe au Headless Clients. Sans effet sur les unités des joueurs.</French>
             <Chinesesimp>禁止转换黑名单中的AI单位/群组到无头客户端上。此功能对玩家单位无用。</Chinesesimp>

@@ -230,6 +230,7 @@
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_SettingPreserveViewName">
             <English>Preserve view for vehicle types</English>
+            <German>Behalte die Ansicht bei Fahrzeugtypen bei</German>
             <Russian>Запоминать вид для типов техники</Russian>
             <Japanese>車両の種類により視点を変更</Japanese>
             <Chinese>保留載具的視野模式</Chinese>
@@ -237,6 +238,7 @@
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_SettingPreserveViewDesc">
             <English>Switch view on vehicle change to last used in this vehicle type (Requires Mode: Disabled)</English>
+            <German>Wechsel die Ansicht bei Fahrzeugwechsel zu der zuletzt genutzen in diesen Fahrzeugtyp. (Benötigt Modus: Ausgeschaltet)</German>
             <Russian>Переключать вид при смене техники на последний использованный в данном типе техники (требуется режим: Отключено)</Russian>
             <Japanese>車両の種類により最後に使用した視点へ切り替え (無効モードでのみ有効)</Japanese>
             <Chinese>切換到載具時自動切換到上次最後使用的視野模式(需求模式:關閉)</Chinese>
