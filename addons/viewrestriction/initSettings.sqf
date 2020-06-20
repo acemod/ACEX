@@ -2,7 +2,7 @@
     QGVAR(preserveView),
     "CHECKBOX",
     [LSTRING(SettingPreserveViewName), LSTRING(SettingPreserveViewDesc)],
-    format ["ACEX %1", localize LSTRING(ModuleDisplayName)],
+    format ["ACEX %1", LLSTRING(ModuleDisplayName)],
     false,
     false,
     LINKFUNC(switchPreserveView)

@@ -15,7 +15,6 @@
  * Public: Yes
  */
 
-
 params ["_side"];
 
 (missionNamespace getVariable [format [QGVAR(Budget_%1), _side], -1])

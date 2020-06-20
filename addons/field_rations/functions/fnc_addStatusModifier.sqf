@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: mharis001
  * Adds a status modifier. Should be called on all machines.
@@ -15,7 +16,6 @@
  *
  * Public: Yes
  */
-#include "script_component.hpp"
 
 params [["_type", -1, [0]], ["_code", {}, [{}]]];
 

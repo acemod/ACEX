@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: mharis001, PabstMirror
  * Returns the remaining water in a source.
@@ -13,7 +14,6 @@
  *
  * Public: Yes
  */
-#include "script_component.hpp"
 
 params [["_source", objNull, [objNull]]];
 

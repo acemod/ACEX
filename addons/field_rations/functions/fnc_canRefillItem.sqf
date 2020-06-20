@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 /*
  * Author: mharis001, Glowbal, PabstMirror
  * Checks whether the player can refill an item from given water source.
@@ -15,7 +16,6 @@
  *
  * Public: No
  */
-#include "script_component.hpp"
 
 params ["_source", "_player", "_item"];
 

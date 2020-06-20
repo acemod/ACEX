@@ -15,7 +15,6 @@
  * Public: Yes
  */
 
-
 params [["_object", objNull, [objNull]]];
 
 (boundingBoxReal _object) params ["_p1", "_p2"];

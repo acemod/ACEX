@@ -65,9 +65,9 @@ private _fnc_condition = {
 
 private _sourceType = typeOf _source;
 private _progressText = if (_sourceType == "") then {
-    localize LSTRING(DrinkingFromSource)
+    LLSTRING(DrinkingFromSource)
 } else {
-    format [localize LSTRING(DrinkingFromX), getText (configFile >> "CfgVehicles" >> _sourceType >> "displayName")]
+    format [LLSTRING(DrinkingFromX), getText (configFile >> "CfgVehicles" >> _sourceType >> "displayName")]
 };
 
 [

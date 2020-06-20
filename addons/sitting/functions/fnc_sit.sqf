@@ -26,7 +26,7 @@ _player switchMove "amovpknlmstpsraswrfldnon";
 
 // Add scroll-wheel action to release object
 private _actionID = _player addAction [
-    format ["<t color='#FFFF00'>%1</t>", localize LSTRING(Stand)],
+    format ["<t color='#FFFF00'>%1</t>", LLSTRING(Stand)],
     QUOTE((_this select 0) call FUNC(stand)),
     nil,
     20,

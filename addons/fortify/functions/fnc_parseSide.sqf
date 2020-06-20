@@ -17,7 +17,6 @@
  * Public: Yes
  */
 
-
 params ["_side"];
 TRACE_1("parseSide",_side);
 

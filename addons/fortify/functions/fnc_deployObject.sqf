@@ -17,7 +17,6 @@
  * Public: No
  */
 
-
 params ["", "_player", "_params"];
 _params params [["_side", sideUnknown, [sideUnknown]], ["_classname", "", [""]], ["_rotations", [0,0,0]]];
 TRACE_4("deployObject",_player,_side,_classname,_rotations);
@@ -35,10 +34,10 @@ GVAR(objectRotationZ) = _rotations select 2;
 
 GVAR(isPlacing) = PLACE_WAITING;
 
-private _lmb = localize LSTRING(confirm);
+private _lmb = LLSTRING(confirm);
 if (_budget > -1) then {_lmb = _lmb + format [" -$%1", _cost];};
 private _rmb = localize ACELSTRING(Common,Cancel);
-private _wheel = localize LSTRING(rotate);
+private _wheel = LLSTRING(rotate);
 private _xAxis = localize "str_disp_conf_xaxis";
 private _icons = [["alt", localize "str_3den_display3den_entitymenu_movesurface_text"], ["shift", localize "str_disp_conf_xaxis" + " " + _wheel], ["control", localize "str_disp_conf_yaxis" + " " + _wheel]];
 [_lmb, _rmb, _wheel, _icons] call ACEFUNC(interaction,showMouseHint);

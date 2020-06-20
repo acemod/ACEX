@@ -57,7 +57,7 @@ if !((_sitPosition select 0) isEqualType []) then {
 
     private _sitAction = [
         format [QGVAR(Sit_%1), _forEachIndex],
-        localize LSTRING(Sit),
+        LLSTRING(Sit),
         QUOTE(PATHTOF(UI\sit_ca.paa)),
         {_this call FUNC(sit)},
         {_this call FUNC(canSit)},
