@@ -7,6 +7,7 @@
             <Chinese>ACEX 情報物品</Chinese>
             <Japanese>ACEX 機密アイテム</Japanese>
             <Russian>ACEX Предметы с данными</Russian>
+            <Polish>ACEX Przedmioty Wywiadu</Polish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_DisplayName">
             <English>Intel Items</English>
@@ -14,6 +15,7 @@
             <Chinese>情報物品</Chinese>
             <Japanese>機密アイテム</Japanese>
             <Russian>Предметы с данными</Russian>
+            <Polish>Przedmioty Wywiadu</Polish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Notepad_DisplayName">
             <English>Notepad</English>
@@ -21,6 +23,7 @@
             <Chinese>筆記本</Chinese>
             <Japanese>メモ</Japanese>
             <Russian>Блокнот</Russian>
+            <Polish>Notes</Polish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Notepad_Description">
             <English>Notepad - Can access from the map screen</English>
@@ -28,6 +31,7 @@
             <Chinese>筆記本 - 可以透過地圖界面來存取</Chinese>
             <Japanese>メモ - マップ画面から確認可能</Japanese>
             <Russian>Блокнот - Можно получить доступ с экрана карты</Russian>
+            <Polish>Notes - Dostępne z mapy</Polish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Document_DisplayName">
             <English>Document</English>
@@ -35,6 +39,7 @@
             <Chinese>文件</Chinese>
             <Japanese>資料</Japanese>
             <Russian>Документ</Russian>
+            <Polish>Dokument<Polish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Document_Description">
             <English>Printed Document - Can access from the map screen</English>
@@ -42,6 +47,7 @@
             <Chinese>影印文件 - 可以透過地圖界面來存取</Chinese>
             <Japanese>メモ - マップ画面から確認可能</Japanese>
             <Russian>Распечатанный документ - Можно получить доступ с экрана карты</Russian>
+            <Polish>Wydrukowane Dokumenty - Dostępne z mapy</Polish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Photo_DisplayName">
             <English>Photo</English>
@@ -49,6 +55,7 @@
             <Chinese>相片</Chinese>
             <Japanese>写真</Japanese>
             <Russian>Фотография</Russian>
+            <Polish>Zdjęcie</Polish
         </Key>
         <Key ID="STR_ACEX_IntelItems_Photo_Description">
             <English>Photo - Can access from the map screen</English>
@@ -56,6 +63,7 @@
             <Chinese>相片  - 可以透過地圖界面來存取</Chinese>
             <Japanese>写真 - マップ画面から確認可能</Japanese>
             <Russian>Фотография - Можно получить доступ с экрана карты</Russian>
+            <Polish>Zdjęcie - Dostępne z mapy</Polish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Text">
             <English>Text</English>
@@ -76,6 +84,7 @@
             <Chinese>相片名稱</Chinese>
             <Japanese>写真名</Japanese>
             <Russian>Имя файла фотографии</Russian>
+            <Polish>Zdjęcie Nazwa Pliku</Polish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Pickup">
             <English>Pick Up</English>

@@ -4,18 +4,22 @@
         <Key ID="STR_ACEX_KillTracker_TotalKills">
             <English>Total Kills:</English>
             <Russian>Всего убийств:</Russian>
+            <Polish>Liczba zabójstw:</Polish>
         </Key>
         <Key ID="STR_ACEX_KillTracker_Kill">
             <English>Kill: %1 %2</English>
             <Russian>Убил: %1 %2</Russian>
+            <Polish>Zabójstwo: %1 %2</Polish>
         </Key>
         <Key ID="STR_ACEX_KillTracker_Killer">
             <English>Killer: %1 %2</English>
             <Russian>Убийца: %1 %2</Russian>
+            <Polish>Zabójca: %1 %2</Polish>
         </Key>
         <Key ID="STR_ACEX_KillTracker_Vehicle">
             <English>Vehicle: %1</English>
             <Russian>Техника: %1</Russian>
+            <Polish>Pojazd: %1</Polish>
         </Key>
         <Key ID="STR_ACEX_KillTracker_FriendlyFire">
             <English>Friendly Fire</English>

@@ -11,6 +11,7 @@
             <Chinese>音量</Chinese>
             <Italian>Volume</Italian>
             <Russian>Громкость</Russian>
+            <Polish>Głosność</Polish>
         </Key>
         <Key ID="STR_ACEX_Volume_KeybindName">
             <English>Toggle Volume</English>
@@ -22,6 +23,7 @@
             <Chinese>切換音量</Chinese>
             <Italian>Attiva Volume</Italian>
             <Russian>Переключить громкость</Russian>
+            <Polish>Przełącz Głosność</Polish>
         </Key>
         <Key ID="STR_ACEX_Volume_KeybindDescription">
             <English>Toggle volume reduction.</English>
@@ -33,6 +35,7 @@
             <Chinese>切換降低音量。</Chinese>
             <Italian>Attiva riduzione del volume.</Italian>
             <Russian>Переключает уменьшение громкости</Russian>
+            <Polish>Przełącz redukcje głosności</Polish
         </Key>
         <Key ID="STR_ACEX_Volume_Lowered">
             <English>Lowered volume</English>
@@ -44,6 +47,7 @@
             <Chinese>降低音量</Chinese>
             <Italian>Volume diminuito</Italian>
             <Russian>Громкость снижена</Russian>
+            <Polish>Zmniejszona głosność</Polish>
         </Key>
         <Key ID="STR_ACEX_Volume_Restored">
             <English>Restored volume</English>
@@ -55,6 +59,7 @@
             <Chinese>回復音量</Chinese>
             <Italian>Volume ripristinato</Italian>
             <Russian>Громкость восстановлена</Russian>
+            <Polish>Przywrócona głosność</Polish>
         </Key>
         <Key ID="STR_ACEX_Volume_Reduction">
             <English>Reduction</English>
@@ -66,6 +71,7 @@
             <Chinese>降低</Chinese>
             <Italian>Riduzione</Italian>
             <Russian>Уменьшение</Russian>
+            <Polish>Redukcja<Polish>
         </Key>
         <Key ID="STR_ACEX_Volume_ReductionDescription">
             <English>Reduce volume by this percentage.</English>
@@ -77,6 +83,7 @@
             <Chinese>使用此百分比來調整音量降低大小。</Chinese>
             <Italian>Riduci il volume di questa percentuale.</Italian>
             <Russian>Уменьшает громкость</Russian>
+            <Polish>Zmniejsz głosność o tyle procent</Polish>
         </Key>
         <Key ID="STR_ACEX_Volume_LowerInVehicles">
             <English>Lower in vehicles</English>
@@ -88,6 +95,7 @@
             <Chinese>在載具中降低音量</Chinese>
             <Italian>Più basso nei veicoli</Italian>
             <Russian>Уменьшать в технике</Russian>
+            <Polish>Zmniejsz w pojazdach</Polish>
         </Key>
         <Key ID="STR_ACEX_Volume_LowerInVehiclesDescription">
             <English>Automatically lower volume when inside vehicles.</English>
@@ -99,6 +107,7 @@
             <Chinese>當搭乘載具時自動降低音量。</Chinese>
             <Italian>Riduce automaticamente il volume quando dentro i veicoli.</Italian>
             <Russian>Автоматически уменьшать громкость в технике</Russian>
+            <Polish>Automatycznie zmniejsz głosność będąc w pojeździe</Polish>
         </Key>
         <Key ID="STR_ACEX_Volume_ShowNotification">
             <English>Show notification</English>
@@ -110,6 +119,7 @@
             <Chinese>顯示提示</Chinese>
             <Italian>Mostra notifiche</Italian>
             <Russian>Показывать уведомление</Russian>
+            <Polish>Pokaż powiadomienie</Polish>
         </Key>
         <Key ID="STR_ACEX_Volume_ShowNotificationDescription">
             <English>Show notification when lowering/restoring volume.</English>
@@ -121,6 +131,7 @@
             <Chinese>當正在降低/回復音量時顯示提示。</Chinese>
             <Italian>Mostra notifiche mentre si abbassa/ripristina il volume.</Italian>
             <Russian>Показывать уведомление при уменьшении/восстановлении громкости</Russian>
+            <Polish>Pokaż powiadomienie zmniejszając/odnawiając głosność</Polish>
         </Key>
         <Key ID="STR_ACEX_Volume_FadeDelay">
             <English>Fade delay</English>
@@ -132,6 +143,7 @@
             <Chinese>淡出/入延遲</Chinese>
             <Italian>Latenza della dissolvenza</Italian>
             <Russian>Задержка затухания</Russian>
+            <Polish>Opoznienie wyciszenia</Polish>
         </Key>
         <Key ID="STR_ACEX_Volume_FadeDelayDescription">
             <English>Time it takes (in seconds) for the sound to fade in/out.</English>
@@ -143,6 +155,7 @@
             <Chinese>設定音量淡出/入時所需的秒數。</Chinese>
             <Italian>Il tempo che impiega (in secondi) il suono a dissolversi entrata/uscita.</Italian>
             <Russian>Время (сек.) для затухания/восстановления звука.</Russian>
+            <Polish>Ilość czasu (w sekundach) ile zajmuje wyciszenie/zgłośnienie dźwięku</Polish>
         </Key>
         <Key ID="STR_ACEX_Volume_RemindIfLowered">
             <English>Reminder if lowered</English>
@@ -154,6 +167,7 @@
             <Chinese>降低音量時是否提醒</Chinese>
             <Italian>Sollecita se diminuito</Italian>
             <Russian>Напоминать о снижении громкости</Russian>
+            <Polish>Przypomnij o zmniejszonej głosności dźwięku</Polish>
         </Key>
         <Key ID="STR_ACEX_Volume_RemindIfLoweredDescription">
             <English>Reminds you every minute if your volume is lowered.</English>
@@ -165,6 +179,7 @@
             <Chinese>開啟後會每分鐘警告一次你的音量已被降低。</Chinese>
             <Italian>Ti notifica ogni minuto se il tuo volume è basso.</Italian>
             <Russian>Ежеминутное напоминание о сниженной громкости</Russian>
+            <Polish>Przypomina co minuten o zmniejszonej głosności dźwięku</Polish>
         </Key>
         <Key ID="STR_ACEX_Volume_LoweredReminder">
             <English>Volume still lowered</English>
@@ -176,6 +191,7 @@
             <Chinese>降低音量中</Chinese>
             <Italian>Il volume è ancora basso</Italian>
             <Russian>Громкость все еще снижена</Russian>
+            <Polish>Dźwięk jest nadal zmniejszony</Polish>
         </Key>
     </Package>
 </Project>
