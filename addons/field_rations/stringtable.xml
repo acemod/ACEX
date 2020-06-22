@@ -163,7 +163,7 @@
             <Chinese>飽足感</Chinese>
             <Japanese>満腹感</Japanese>
             <Russian>Утоление голода</Russian>
-            <Polish>Głód Zaspokojony<Polish>
+            <Polish>Głód Zaspokojony</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HungerSatiated_Description">
             <English>Coefficient for the amount of hunger satiated from eating.</English>

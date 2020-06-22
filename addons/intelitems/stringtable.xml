@@ -39,7 +39,7 @@
             <Chinese>文件</Chinese>
             <Japanese>資料</Japanese>
             <Russian>Документ</Russian>
-            <Polish>Dokument<Polish>
+            <Polish>Dokument</Polish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Document_Description">
             <English>Printed Document - Can access from the map screen</English>
@@ -55,7 +55,7 @@
             <Chinese>相片</Chinese>
             <Japanese>写真</Japanese>
             <Russian>Фотография</Russian>
-            <Polish>Zdjęcie</Polish
+            <Polish>Zdjęcie</Polish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Photo_Description">
             <English>Photo - Can access from the map screen</English>

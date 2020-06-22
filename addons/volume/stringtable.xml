@@ -71,7 +71,7 @@
             <Chinese>降低</Chinese>
             <Italian>Riduzione</Italian>
             <Russian>Уменьшение</Russian>
-            <Polish>Redukcja<Polish>
+            <Polish>Redukcja</Polish>
         </Key>
         <Key ID="STR_ACEX_Volume_ReductionDescription">
             <English>Reduce volume by this percentage.</English>
