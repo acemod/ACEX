@@ -139,6 +139,7 @@
             <Japanese>装備の移送</Japanese>
             <Chinese>裝備傳輸</Chinese>
             <Russian>Передавать снаряжение</Russian>
+            <Polish>Transfer Wyposażenia</Polish>
         </Key>
         <Key ID="STR_ACEX_Headless_TransferLoadoutDesc">
             <English>Transfer loadout of units attempts to work around an issue where units appear naked after transferring to a Headless Client.</English>
@@ -146,6 +147,7 @@
             <Japanese>装備の移送はヘッドレス クライアントへの移行後にユニットが裸で出現する問題の回避を試みます。</Japanese>
             <Russian>Передача снаряжения юнитов позволяет обходить проблему, при которой юниты оказываются без снаряжения после передачи управления Headless клиенту.</Russian>
             <Chinese>裝備傳輸用於試著暫時應付單位透過無頭客戶端傳輸時所導致裸裝之問題。</Chinese>
+            <Polish>Transfer Wyposażenia jednostek usiłuje uniknąć problemu z nagimi jednostkami po transferze do Headless Clienta</Polish>
         </Key>
         <Key ID="STR_ACEX_Headless_TransferLoadoutCurrent">
             <English>Current Loadout</English>
@@ -153,6 +155,7 @@
             <Japanese>現在の装備</Japanese>
             <Chinese>目前裝備</Chinese>
             <Russian>Текущее снаряжение</Russian>
+            <Polish>Obecne wyposażenie</Polish>
         </Key>
         <Key ID="STR_ACEX_Headless_TransferLoadoutConfig">
             <English>Config Loadout</English>
@@ -160,6 +163,7 @@
             <Japanese>コンフィグの装備</Japanese>
             <Chinese>設置裝備</Chinese>
             <Russian>Снаряжение из настроек</Russian>
+            <Polish>Konfiguracja Wyposażenia</Polish>
         </Key>
         <Key ID="STR_ACEX_Headless_BlacklistEden">
             <English>Headless Blacklist</English>
