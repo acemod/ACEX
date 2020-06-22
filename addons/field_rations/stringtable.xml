@@ -147,6 +147,7 @@
             <Chinese>止渴程度</Chinese>
             <Japanese>乾きの満たし</Japanese>
             <Russian>Утоление жажды</Russian>
+            <Polish>Pragnienie zaspokojone</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ThirstQuenched_Description">
             <English>Coefficient for the amount of thirst quenched from drinking.</English>
@@ -154,6 +155,7 @@
             <Chinese>從飲用中能夠攝取多少水份。</Chinese>
             <Japanese>飲むことによって得られる乾きの満たし量の係数を設定します</Japanese>
             <Russian>Коэффициент утоления жажды от питья</Russian>
+            <Polish>Współczynnik ilości zaspokojnego pragnienia od picia</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HungerSatiated_DisplayName">
             <English>Hunger Satiated</English>
@@ -161,6 +163,7 @@
             <Chinese>飽足感</Chinese>
             <Japanese>満腹感</Japanese>
             <Russian>Утоление голода</Russian>
+            <Polish>Głód Zaspokojony</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HungerSatiated_Description">
             <English>Coefficient for the amount of hunger satiated from eating.</English>
@@ -168,26 +171,32 @@
             <Chinese>從飲食中獲取多少飽食感。</Chinese>
             <Japanese>食べることによって得られる満腹感の量の係数を設定します</Japanese>
             <Russian>Коэффициент утоления голода от принятия пищи</Russian>
+            <Polish>Współczynnik ilosci zaspokojnego głodu od jedzenia</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSourceActions_DisplayName">
             <English>Water Source Actions</English>
             <Russian>Действия с источником воды</Russian>
+            <Polish>Akcje przy źrodle wody</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSourceActions_Description">
             <English>Controls what actions are available on water sources.</English>
             <Russian>Определяет какие действия будут доступны с источником воды.</Russian>
+            <Polish>Kontroluje jakie akcje są dostępne przy źrodle wody.</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_RefillOnly">
             <English>Refill Only</English>
             <Russian>Только пополнить</Russian>
+            <Polish>Tylko napełnij</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_TerrainObjectActions_DisplayName">
             <English>Terrain Object Actions</English>
             <Russian>Действия с объектами ландшафта</Russian>
+            <Polish>Akcje Objektu terenu</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_TerrainObjectActions_Description">
             <English>Enables water source actions for terrain objects.</English>
             <Russian>Включает действия с источниками воды для объектов ландшафта.</Russian>
+            <Polish>Umożliwia akcje przy źrodle wody na obiektach terenu.</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_AffectAdvancedFatigue_DisplayName">
             <English>Affect Advanced Fatigue</English>
@@ -195,6 +204,7 @@
             <Chinese>與進階疲勞聯動</Chinese>
             <Japanese>アドバンスド ファティーグへの影響</Japanese>
             <Russian>Влияние на продвинутую усталость</Russian>
+            <Polish>Wpływ na zaawansowane zmęczenie</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_AffectAdvancedFatigue_Description">
             <English>Controls if thirst and hunger should affect ACE Advanced Fatigue.</English>
@@ -202,6 +212,7 @@
             <Chinese>是否讓飲食影響到ACE的進階疲勞。</Chinese>
             <Japanese>喉の渇きと空腹感が ACE アドバンスド ファティーグへ与える影響を決定します</Japanese>
             <Russian>Определяет, будет ли жажда и голод влиять на продвинутую усталость ACE.</Russian>
+            <Polish>Kontroluje czy pragnienie i głód mają wpływ na zaawansowane zmęczenie ACE.</Polish> 
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_DisplayName">
             <English>HUD Type</English>
@@ -305,6 +316,7 @@
             <Chinese>飲用水補給</Chinese>
             <Japanese>水資源</Japanese>
             <Russian>Водные ресурсы</Russian>
+            <Polish>Źródło wody</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSupply_3DEN_Description">
             <English>The amount of water available for ACEX Field Rations water source actions (-1 disabled, -10 infinite)</English>
@@ -312,6 +324,7 @@
             <Chinese>水源可供補充飲用水的次數（-1為關閉，-10為無限次）。</Chinese>
             <Japanese>ACEX フィールド レーションで利用できる水源の量を設定できます。(-1で無効化、-10で無限)</Japanese>
             <Russian>Количество воды, доступной для использования в ACEX Полевые рационы. (-1 - отключено, -10 - бесконечно)</Russian>
+            <Polish>Ilość wody dostępnej dla Akcji ACEX Źródła wody (-1 wyłączone, -10 nieskończone)</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSource">
             <English>Water Source</English>
@@ -357,6 +370,7 @@
             <English>Drink From Source</English>
             <German>Trinke direkt</German>
             <Russian>Выпить из источника</Russian>
+            <Polish>Pij z źródła wody</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Refill">
             <English>Refill</English>
@@ -433,6 +447,7 @@
         <Key ID="STR_ACEX_Field_Rations_DrinkingFromSource">
             <English>Drinking from source...</English>
             <Russian>Выпивание из источника...</Russian>
+            <Polish>Picie z źródła </Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottle_DisplayName">
             <English>Water Bottle</English>
