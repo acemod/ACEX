@@ -60,6 +60,7 @@
         <Key ID="STR_ACEX_Field_Rations_EatDrink">
             <English>Eat/Drink</English>
             <German>Essen/Trinken</German>
+            <Russian>Есть/Пить</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Enabled_Description">
             <English>Enable/Disable Field Rations</English>
