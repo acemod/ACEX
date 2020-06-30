@@ -9,18 +9,20 @@ categories:
   - title: '**ADDED:**'
     labels:
       - 'feature request'
+      - 'added feature'
   - title: '**FIXED:**'
     labels:
       - 'bug fix'
   - title: '**IMPROVED:**'
     labels:
       - 'enhancement'
+      - 'optimization'
   - title: '**CHANGED:**'
     labels:
       - 'cleanup'
   - title: '**TRANSLATIONS:**'
     labels:
-      - 'translations'
+      - 'translation'
 
 exclude-labels:
   - 'ignore changelog'
