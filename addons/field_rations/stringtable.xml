@@ -60,6 +60,7 @@
         <Key ID="STR_ACEX_Field_Rations_EatDrink">
             <English>Eat/Drink</English>
             <German>Essen/Trinken</German>
+            <Russian>Есть/Пить</Russian>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Enabled_Description">
             <English>Enable/Disable Field Rations</English>
@@ -212,7 +213,7 @@
             <Chinese>是否讓飲食影響到ACE的進階疲勞。</Chinese>
             <Japanese>喉の渇きと空腹感が ACE アドバンスド ファティーグへ与える影響を決定します</Japanese>
             <Russian>Определяет, будет ли жажда и голод влиять на продвинутую усталость ACE.</Russian>
-            <Polish>Kontroluje czy pragnienie i głód mają wpływ na zaawansowane zmęczenie ACE.</Polish> 
+            <Polish>Kontroluje czy pragnienie i głód mają wpływ na zaawansowane zmęczenie ACE.</Polish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_DisplayName">
             <English>HUD Type</English>
