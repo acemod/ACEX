@@ -35,7 +35,7 @@ _side = switch (_side) do {
 };
 
 private _preset = _logic getVariable ["Preset", "small"];
-if IS_NUMBER(preset) then { // Legacy support
+if IS_NUMBER(_preset) then { // Legacy support
     _preset = switch (_preset) do {
         case 1: {"small"};
         case 2: {"medium"};

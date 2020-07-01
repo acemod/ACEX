@@ -44,6 +44,7 @@
         <Key ID="STR_ACEX_Fortify_moduleDescription">
             <English>Initializes the Fortify system, with some basic parameters.&lt;br/&gt;Presets are pulled from configFile and missionConfigFile, see wiki for format.</English>
             <Polish>Inicjalizuje system fortyfikacji, z podstawowymi parametrami.&lt;br/&gt;Domyślne ustawienia są załadowane z configFile oraz missionConfigFile, odwiedź wiki aby znaleźć format</Polish>
+            <Russian>Инициализирует систему фортификации с некоторыми базовыми параметрами.&lt;br/&gt;Предустановки взяты из configFile и missionConfigFile, формат смотри на wiki.</Russian>
         </Key>
         <Key ID="STR_ACEX_Fortify_rotate">
             <English>Rotate</English>
@@ -143,6 +144,7 @@
         <Key ID="STR_ACEX_Fortify_small">
             <English>Small</English>
             <Polish>Małe</Polish>
+            <Russian>Малый</Russian>
         </Key>
         <Key ID="STR_ACEX_Fortify_smallGreen">
             <English>Small (Green)</English>
@@ -152,6 +154,7 @@
         <Key ID="STR_ACEX_Fortify_medium">
             <English>Medium</English>
             <Polish>Średnie</Polish>
+            <Russian>Средний</Russian>
         </Key>
         <Key ID="STR_ACEX_Fortify_mediumGreen">
             <English>Medium (Green)</English>
@@ -161,10 +164,12 @@
         <Key ID="STR_ACEX_Fortify_big">
             <English>Big</English>
             <Polish>Duże</Polish>
+            <Russian>Большой</Russian>
         </Key>
         <Key ID="STR_ACEX_Fortify_bigGreen">
             <English>Big (Green)</English>
             <Polish>Duże (Zielone)</Polish>
+            <Russian>Большой (Зеленый)</Russian>
         </Key>
     </Package>
 </Project>
