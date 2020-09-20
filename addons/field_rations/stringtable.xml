@@ -16,7 +16,7 @@
             <Portuguese>ACEX Rações de campo</Portuguese>
             <Russian>ACEX Полевые рационы</Russian>
             <Spanish>ACEX Raciones de campo</Spanish>
-            <Turkish>ACEX Gıda İhtiyaçları</Turkish>
+            <Turkish>ACEX Gıda Ihtiyaçları</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_IGUI_DisplayName">
             <English>ACEX Field Rations HUD</English>
@@ -66,7 +66,7 @@
             <German>Essen/Trinken</German>
             <Polish>Jeść/Pić</Polish>
             <Russian>Есть/Пить</Russian>
-            <Turkish>Yeme / İçme</Turkish>
+            <Turkish>Yeme / Içme</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Enabled_Description">
             <English>Enable/Disable Field Rations</English>
@@ -83,7 +83,7 @@
             <Portuguese>Ativar / Desativar rações de campo</Portuguese>
             <Russian>Включение/отключение жажды и голода</Russian>
             <Spanish>Habilitar / deshabilitar las raciones de campo</Spanish>
-            <Turkish>Gıda İhtiyaçlarını Etkinleştir/Devre Dışı Bırak</Turkish>
+            <Turkish>Gıda Ihtiyaçlarını Etkinleştir/Devre Dışı Bırak</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_TimeWithoutWater_DisplayName">
             <English>Time Without Water</English>
@@ -193,7 +193,7 @@
             <English>Water Source Actions</English>
             <Russian>Действия с источником воды</Russian>
             <Polish>Akcje przy źrodle wody</Polish>
-            <Turkish>Su İçme Animasyonu</Turkish>
+            <Turkish>Su Içme Animasyonu</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSourceActions_Description">
             <English>Controls what actions are available on water sources.</English>
@@ -262,7 +262,7 @@
             <Japanese>色付きアイコン</Japanese>
             <Polish>Kolorowe ikony</Polish>
             <Russian>Цветные иконки</Russian>
-            <Turkish>Renkli İkonlar</Turkish>
+            <Turkish>Renkli Ikonlar</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrainingIcons">
             <English>Draining Icons</English>
@@ -271,7 +271,7 @@
             <Japanese>ドレイン アイコン</Japanese>
             <Polish>Ubywające ikony</Polish>
             <Russian>Исчезающие иконки</Russian>
-            <Turkish>İçi Boşalan İkonlar</Turkish>
+            <Turkish>Içi Boşalan Ikonlar</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudShowLevel_DisplayName">
             <English>HUD Show Level</English>
@@ -315,7 +315,7 @@
             <Japanese>色付きアイコン - 透明度</Japanese>
             <Polish>Kolorowe ikony - transparentność</Polish>
             <Russian>Прозрачность цветных иконок</Russian>
-            <Turkish>Renkli İkonlar -  Şeffaflaşan</Turkish>
+            <Turkish>Renkli Ikonlar -  Şeffaflaşan</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudTransparency_Description">
             <English>Controls the transparency of the Colored Icons HUD. Dynamic setting makes the HUD less transparent as thirst or hunger increase.</English>
@@ -409,7 +409,7 @@
             <German>Trinke direkt</German>
             <Russian>Выпить из источника</Russian>
             <Polish>Pij z źródła wody</Polish>
-            <Turkish>Mataradan İç</Turkish>
+            <Turkish>Mataradan Iç</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Refill">
             <English>Refill</English>
@@ -478,7 +478,7 @@
             <Japanese>%1を飲んでいます・・・</Japanese>
             <Polish>Picie %1...</Polish>
             <Russian>Выпивание %1...</Russian>
-            <Turkish>%1 İçiliyor...</Turkish>
+            <Turkish>%1 Içiliyor...</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrinkingFromX">
             <English>Drinking from %1...</English>
@@ -493,7 +493,7 @@
             <English>Drinking from source...</English>
             <Russian>Выпивание из источника...</Russian>
             <Polish>Picie z źródła </Polish>
-            <Turkish>Mataradan İçiliyor...</Turkish>
+            <Turkish>Mataradan Içiliyor...</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottle_DisplayName">
             <English>Water Bottle</English>
@@ -706,7 +706,7 @@
             <Japanese>新鮮なレモンとライムの風味を味わえるソフト ドリンク</Japanese>
             <Polish>Odświeżający napój cytronowo-limonkowy</Polish>
             <Russian>Освежающий напиток со вкусом лимона и лайма</Russian>
-            <Turkish>Limon Ve Yeşil Limondan Yapılmış Gazlı Bir İçecek</Turkish>
+            <Turkish>Limon Ve Yeşil Limondan Yapılmış Gazlı Bir Içecek</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Can_Franta_Description">
             <English>Orange flavored soft drink with a tingly, fruity taste</English>
@@ -715,7 +715,7 @@
             <Japanese>口いっぱいに果物を感じるオレンジ風味のソフト ドリンク</Japanese>
             <Polish>Napój pomarańczowy</Polish>
             <Russian>Напиток с апельсиновым вкусом</Russian>
-            <Turkish>Gazlı Portakallı Bir İçecek</Turkish>
+            <Turkish>Gazlı Portakallı Bir Içecek</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Can_RedGull_Description">
             <English>Red Gull gives you wings</English>
