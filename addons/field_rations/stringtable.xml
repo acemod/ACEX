@@ -16,6 +16,7 @@
             <Portuguese>ACEX Rações de campo</Portuguese>
             <Russian>ACEX Полевые рационы</Russian>
             <Spanish>ACEX Raciones de campo</Spanish>
+            <Turkish>ACEX Gıda İhtiyaçları</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_IGUI_DisplayName">
             <English>ACEX Field Rations HUD</English>
@@ -24,6 +25,7 @@
             <Japanese>ACEX フィールド レーション HUD</Japanese>
             <Polish>ACEX HUD Racji Polowych</Polish>
             <Russian>Индикаторы жажды и голода</Russian>
+            <Turkish>ACEX Gıda Göstergesi</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_IGUI_Description">
             <English>Indicates current hunger and thirst status.</English>
@@ -40,6 +42,7 @@
             <Portuguese>Indica o status atual de fome e sede.</Portuguese>
             <Russian>Указывают на текущий статус жажды и голода.</Russian>
             <Spanish>Indica el estado actual de hambre y sed.</Spanish>
+            <Turkish>Mevcut açlık ve susuzluk durumunu gösterir.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MainInteractionText">
             <English>Survival</English>
@@ -56,12 +59,14 @@
             <Portuguese>Sobrevivência</Portuguese>
             <Russian>Выживание</Russian>
             <Spanish>Supervivencia</Spanish>
+            <Turkish>Hayatta kalma</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_EatDrink">
             <English>Eat/Drink</English>
             <German>Essen/Trinken</German>
             <Polish>Jeść/Pić</Polish>
             <Russian>Есть/Пить</Russian>
+            <Turkish>Yeme / İçme</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Enabled_Description">
             <English>Enable/Disable Field Rations</English>
@@ -78,6 +83,7 @@
             <Portuguese>Ativar / Desativar rações de campo</Portuguese>
             <Russian>Включение/отключение жажды и голода</Russian>
             <Spanish>Habilitar / deshabilitar las raciones de campo</Spanish>
+            <Turkish>Gıda İhtiyaçlarını Etkinleştir/Devre Dışı Bırak</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_TimeWithoutWater_DisplayName">
             <English>Time Without Water</English>
@@ -94,6 +100,7 @@
             <Portuguese>Tempo sem água</Portuguese>
             <Russian>Время без воды</Russian>
             <Spanish>Tiempo sin agua</Spanish>
+            <Turkish>Susuz Kalma Süresi</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_TimeWithoutWater_Description">
             <English>How long should a person be able to go without water (hours).</English>
@@ -110,6 +117,7 @@
             <Portuguese>Quanto tempo uma unidade pode passar sem água (horas)</Portuguese>
             <Russian>Как долго персонаж может обходиться без воды (часы)</Russian>
             <Spanish>¿Cuánto tiempo debería una unidad ir sin agua (horas)?</Spanish>
+            <Turkish>Bir kişi susuz ne kadar süre dayanabilir (saat).</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_TimeWithoutFood_DisplayName">
             <English>Time Without Food</English>
@@ -126,6 +134,7 @@
             <Portuguese>Tempo sem comida</Portuguese>
             <Russian>Время без еды</Russian>
             <Spanish>Tiempo sin comida</Spanish>
+            <Turkish>Aç Kalma Süresi</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_TimeWithoutFood_Description">
             <English>How long should a person be able to go without food (hours).</English>
@@ -142,6 +151,7 @@
             <Portuguese>Quanto tempo uma unidade pode ir sem alimentos (horas)</Portuguese>
             <Russian>Как долго персонаж может обходиться без пищи (часы)</Russian>
             <Spanish>¿Cuánto tiempo debería una unidad ir sin comida (horas)?</Spanish>
+            <Turkish>Bir kişi aç ne kadar süre dayanabilir (saat).</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ThirstQuenched_DisplayName">
             <English>Thirst Quenched</English>
@@ -150,6 +160,7 @@
             <Japanese>乾きの満たし</Japanese>
             <Russian>Утоление жажды</Russian>
             <Polish>Pragnienie zaspokojone</Polish>
+            <Turkish>Susuzluk Giderme Katsayısı</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ThirstQuenched_Description">
             <English>Coefficient for the amount of thirst quenched from drinking.</English>
@@ -158,6 +169,7 @@
             <Japanese>飲むことによって得られる乾きの満たし量の係数を設定します</Japanese>
             <Russian>Коэффициент утоления жажды от питья</Russian>
             <Polish>Współczynnik ilości zaspokojnego pragnienia od picia</Polish>
+            <Turkish>Bir şey içince, susuzluğunun ne kadar giderileceğini belirler.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HungerSatiated_DisplayName">
             <English>Hunger Satiated</English>
@@ -166,6 +178,7 @@
             <Japanese>満腹感</Japanese>
             <Russian>Утоление голода</Russian>
             <Polish>Głód Zaspokojony</Polish>
+            <Turkish>Açlık Giderme Katsayısı</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HungerSatiated_Description">
             <English>Coefficient for the amount of hunger satiated from eating.</English>
@@ -174,31 +187,37 @@
             <Japanese>食べることによって得られる満腹感の量の係数を設定します</Japanese>
             <Russian>Коэффициент утоления голода от принятия пищи</Russian>
             <Polish>Współczynnik ilosci zaspokojnego głodu od jedzenia</Polish>
+            <Turkish>Bir şey yiyince, açlığın ne kadar giderileceğini belirler.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSourceActions_DisplayName">
             <English>Water Source Actions</English>
             <Russian>Действия с источником воды</Russian>
             <Polish>Akcje przy źrodle wody</Polish>
+            <Turkish>Su İçme Animasyonu</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSourceActions_Description">
             <English>Controls what actions are available on water sources.</English>
             <Russian>Определяет какие действия будут доступны с источником воды.</Russian>
             <Polish>Kontroluje jakie akcje są dostępne przy źrodle wody.</Polish>
+            <Turkish>Su içerken hangi animasyonu yapacağını belirler</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_RefillOnly">
             <English>Refill Only</English>
             <Russian>Только пополнить</Russian>
             <Polish>Tylko napełnij</Polish>
+            <Turkish>Sadece içeceği iç</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_TerrainObjectActions_DisplayName">
             <English>Terrain Object Actions</English>
             <Russian>Действия с объектами ландшафта</Russian>
             <Polish>Akcje Objektu terenu</Polish>
+            <Turkish>Varsayılan Nesne Animasyonu</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_TerrainObjectActions_Description">
             <English>Enables water source actions for terrain objects.</English>
             <Russian>Включает действия с источниками воды для объектов ландшафта.</Russian>
             <Polish>Umożliwia akcje przy źrodle wody na obiektach terenu.</Polish>
+            <Turkish>Varsayılan nesneler için animasyonu etkinleştir</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_AffectAdvancedFatigue_DisplayName">
             <English>Affect Advanced Fatigue</English>
@@ -207,6 +226,7 @@
             <Japanese>アドバンスド ファティーグへの影響</Japanese>
             <Russian>Влияние на продвинутую усталость</Russian>
             <Polish>Wpływ na zaawansowane zmęczenie</Polish>
+            <Turkish>Gelişmiş Yorgunluk</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_AffectAdvancedFatigue_Description">
             <English>Controls if thirst and hunger should affect ACE Advanced Fatigue.</English>
@@ -215,6 +235,7 @@
             <Japanese>喉の渇きと空腹感が ACE アドバンスド ファティーグへ与える影響を決定します</Japanese>
             <Russian>Определяет, будет ли жажда и голод влиять на продвинутую усталость ACE.</Russian>
             <Polish>Kontroluje czy pragnienie i głód mają wpływ na zaawansowane zmęczenie ACE.</Polish>
+            <Turkish>Acıkınca veya susayınca kişinin yorulup yorulmayacağını belirler.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_DisplayName">
             <English>HUD Type</English>
@@ -223,6 +244,7 @@
             <Japanese>HUD タイプ</Japanese>
             <Polish>Typ HUD</Polish>
             <Russian>Тип индикаторов</Russian>
+            <Turkish>HUD Tipi</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudType_Description">
             <English>Selects which HUD style will be used.</English>
@@ -231,6 +253,7 @@
             <Japanese>使用する HUD のタイプを選択できます</Japanese>
             <Polish>Wybierz który styl HUD będzie używany</Polish>
             <Russian>Выберите какой стиль индикаторов будет использован.</Russian>
+            <Turkish>Hangi HUD sitilini kullanılacağını seçer.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ColoredIcons">
             <English>Colored Icons</English>
@@ -239,6 +262,7 @@
             <Japanese>色付きアイコン</Japanese>
             <Polish>Kolorowe ikony</Polish>
             <Russian>Цветные иконки</Russian>
+            <Turkish>Renkli İkonlar</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrainingIcons">
             <English>Draining Icons</English>
@@ -247,6 +271,7 @@
             <Japanese>ドレイン アイコン</Japanese>
             <Polish>Ubywające ikony</Polish>
             <Russian>Исчезающие иконки</Russian>
+            <Turkish>İçi Boşalan İkonlar</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudShowLevel_DisplayName">
             <English>HUD Show Level</English>
@@ -255,6 +280,7 @@
             <Japanese>HUD 表示レベル</Japanese>
             <Polish>Widok HUD</Polish>
             <Russian>Уровень для отображения иконок</Russian>
+            <Turkish>HUD Gösterilme Seviyesi</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudShowLevel_Description">
             <English>Automatically show the HUD when either thirst or hunger are above this level.</English>
@@ -263,6 +289,7 @@
             <Japanese>この値以上に空腹感か乾きを感じると自動的に HUD を表示します</Japanese>
             <Polish>Automatycznie pokaż HUD kiedy pragnienie albo głód przekroczy ten poziom</Polish>
             <Russian>Автоматически отображает иконки при достижении определенных уровней голода и жажды.</Russian>
+            <Turkish>Susuzluk veya açlık belli bir seviyenin altına inince otomatik olarak HUD u göster.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Always">
             <English>Always</English>
@@ -279,6 +306,7 @@
             <Portuguese>Sempre</Portuguese>
             <Russian>Всегда</Russian>
             <Spanish>Siempre</Spanish>
+            <Turkish>Her Zaman</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudTransparency_DisplayName">
             <English>Colored Icons - Transparency</English>
@@ -287,6 +315,7 @@
             <Japanese>色付きアイコン - 透明度</Japanese>
             <Polish>Kolorowe ikony - transparentność</Polish>
             <Russian>Прозрачность цветных иконок</Russian>
+            <Turkish>Renkli İkonlar -  Şeffaflaşan</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_HudTransparency_Description">
             <English>Controls the transparency of the Colored Icons HUD. Dynamic setting makes the HUD less transparent as thirst or hunger increase.</English>
@@ -295,6 +324,7 @@
             <Polish>Kontroluje transparentność kolorowych ikon HUD. Dynamiczne ustawienie zmniejsza przejrzystość wraz z zwiększeniem głodu czy pragnienia.</Polish>
             <Japanese>色付きアイコンの透明度を決定できます。動的に設定されると、喉の渇きや空腹感が増すにつれて、アイコンの透明度を下げます。</Japanese>
             <Russian>Настраивает прозрачность цветных иконок. «Динамическая» делает иконки менее прозрачными при увеличении жажды и голода.</Russian>
+            <Turkish>Renkli Simgeler Gösterge Paneli'nin şeffaflığını kontrol eder. Dinamik ayar, susuzluk veya açlık arttıkça HUD'yi daha az şeffaf hale getirir.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Dynamic">
             <English>Dynamic</English>
@@ -311,6 +341,7 @@
             <Portuguese>Dinâmico</Portuguese>
             <Russian>Динамическая</Russian>
             <Spanish>Dinámica</Spanish>
+            <Turkish>Dinamik</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterSupply_3DEN_DisplayName">
             <English>Water Supply</English>
@@ -335,6 +366,7 @@
             <Japanese>水源</Japanese>
             <Polish>Źródło wody</Polish>
             <Russian>Источник воды</Russian>
+            <Turkish>Matara</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CheckWater">
             <English>Check Remaining Water</English>
@@ -343,6 +375,7 @@
             <Japanese>残っている水を確認</Japanese>
             <Polish>Sprawdź ilość wody</Polish>
             <Russian>Проверить остаток воды</Russian>
+            <Turkish>Kalan Suyu Kontrol Et</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CheckingWater">
             <English>Checking remaining water...</English>
@@ -351,6 +384,7 @@
             <Japanese>残っている水の量を確認中です・・・</Japanese>
             <Polish>Sprawdzanie ilości wody</Polish>
             <Russian>Проверяется остаток воды...</Russian>
+            <Turkish>Kalan Su Kontrol Ediliyor...</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_RemainingWater">
             <English>There are %1 litres left.</English>
@@ -359,6 +393,7 @@
             <Japanese>残り %1 リットル残っています。</Japanese>
             <Polish>Pozostało %1 litrów.</Polish>
             <Russian>Осталось %1 л воды</Russian>
+            <Turkish>%1 Litre kaldı.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_NoWaterRemaining">
             <English>There is no water left.</English>
@@ -367,12 +402,14 @@
             <Japanese>水はもうありません。</Japanese>
             <Polish>Nie ma wody</Polish>
             <Russian>Воды больше не осталось</Russian>
+            <Turkish>Hiç su kalmadı.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrinkFromSource">
             <English>Drink From Source</English>
             <German>Trinke direkt</German>
             <Russian>Выпить из источника</Russian>
             <Polish>Pij z źródła wody</Polish>
+            <Turkish>Mataradan İç</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Refill">
             <English>Refill</English>
@@ -389,6 +426,7 @@
             <Portuguese>Recarga</Portuguese>
             <Russian>Наполнить ёмкость</Russian>
             <Spanish>Rellenar</Spanish>
+            <Turkish>Yeniden Doldur</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Refilling">
             <English>Refilling...</English>
@@ -405,6 +443,7 @@
             <Portuguese>Recarga ...</Portuguese>
             <Russian>Наполнение...</Russian>
             <Spanish>Rellenar ...</Spanish>
+            <Turkish>Yeniden Dolduruluyor...</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_ItemRefilled">
             <English>Item Refilled</English>
@@ -421,6 +460,7 @@
             <Portuguese>Item Recarregado</Portuguese>
             <Russian>Ёмкость наполнена</Russian>
             <Spanish>Artículo Rellenado</Spanish>
+            <Turkish>Eşya Yeniden Dolduruldu</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_EatingX">
             <English>Eating %1...</English>
@@ -429,6 +469,7 @@
             <Japanese>%1を食べています・・・</Japanese>
             <Polish>Jedzenie %1...</Polish>
             <Russian>Поедание %1...</Russian>
+            <Turkish>%1 Yeniyor...</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrinkingX">
             <English>Drinking %1...</English>
@@ -437,6 +478,7 @@
             <Japanese>%1を飲んでいます・・・</Japanese>
             <Polish>Picie %1...</Polish>
             <Russian>Выпивание %1...</Russian>
+            <Turkish>%1 İçiliyor...</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrinkingFromX">
             <English>Drinking from %1...</English>
@@ -445,11 +487,13 @@
             <Japanese>%1から飲んでいます・・・</Japanese>
             <Polish>Picie z %1...</Polish>
             <Russian>Выпивание из %1...</Russian>
+            <Turkish>%1 den içiliyor...</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_DrinkingFromSource">
             <English>Drinking from source...</English>
             <Russian>Выпивание из источника...</Russian>
             <Polish>Picie z źródła </Polish>
+            <Turkish>Mataradan İçiliyor...</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottle_DisplayName">
             <English>Water Bottle</English>
@@ -466,6 +510,7 @@
             <Portuguese>Garrafa de agua</Portuguese>
             <Russian>Бутылка воды (полная)</Russian>
             <Spanish>Botella de agua</Spanish>
+            <Turkish>Su Şişesi</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottle_Description">
             <English>A water bottle</English>
@@ -482,6 +527,7 @@
             <Portuguese>Uma garrafa de água</Portuguese>
             <Russian>Полная бутылка с водой</Russian>
             <Spanish>Una botella de agua</Spanish>
+            <Turkish>Bir Su Şişesi</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottleHalf_DisplayName">
             <English>Water Bottle (Half)</English>
@@ -498,6 +544,7 @@
             <Portuguese>Garrafa de água (meio)</Portuguese>
             <Russian>Бутылка воды (половина)</Russian>
             <Spanish>Botella de agua (mitad)</Spanish>
+            <Turkish>Su Şişesi (Yarım)</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottleHalf_Description">
             <English>A half full water bottle</English>
@@ -514,6 +561,7 @@
             <Portuguese>Uma garrafa de água meia cheia</Portuguese>
             <Russian>Половина бутылки с водой</Russian>
             <Spanish>Una botella de agua media llena</Spanish>
+            <Turkish>Yarım dolu Su Şişesi</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottleEmpty_DisplayName">
             <English>Water Bottle (Empty)</English>
@@ -530,6 +578,7 @@
             <Portuguese>Garrafa de água (vazia)</Portuguese>
             <Russian>Бутылка воды (пустая)</Russian>
             <Spanish>Botella de agua (vacía)</Spanish>
+            <Turkish>Su Şişesi (Boş)</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_WaterBottleEmpty_Description">
             <English>An empty water bottle</English>
@@ -546,6 +595,7 @@
             <Portuguese>Uma garrafa de água vazia</Portuguese>
             <Russian>Пустая бутылка</Russian>
             <Spanish>Una botella de agua vacía</Spanish>
+            <Turkish>Boş Su Şişesi</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Canteen_DisplayName">
             <English>Canteen</English>
@@ -562,6 +612,7 @@
             <Portuguese>Cantina</Portuguese>
             <Russian>Фляга (полная)</Russian>
             <Spanish>Cantina</Spanish>
+            <Turkish>Matara</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Canteen_Description">
             <English>A canteen filled with water</English>
@@ -578,6 +629,7 @@
             <Portuguese>Uma cantina cheia de água</Portuguese>
             <Russian>Фляга с водой</Russian>
             <Spanish>Una cantina llena de agua</Spanish>
+            <Turkish>Su Dolu Matara</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CanteenHalf_DisplayName">
             <English>Canteen (Half)</English>
@@ -594,6 +646,7 @@
             <Portuguese>Cantina (meio)</Portuguese>
             <Russian>Фляга (половина)</Russian>
             <Spanish>Cantina (Mitad)</Spanish>
+            <Turkish>Matara (Yarım)</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CanteenHalf_Description">
             <English>A canteen half filled with water</English>
@@ -610,6 +663,7 @@
             <Portuguese>Uma meia cantina cheia de água</Portuguese>
             <Russian>Наполовину заполненая водой фляга</Russian>
             <Spanish>Una cantina medio llena de agua</Spanish>
+            <Turkish>Yarım Dolu Matara</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CanteenEmpty_DisplayName">
             <English>Canteen (Empty)</English>
@@ -626,6 +680,7 @@
             <Portuguese>Cantina (vazia)</Portuguese>
             <Russian>Фляга (пустая)</Russian>
             <Spanish>Cantina (Vacío)</Spanish>
+            <Turkish>Matara (Boş)</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_CanteenEmpty_Description">
             <English>An empty canteen</English>
@@ -642,6 +697,7 @@
             <Portuguese>Uma cantina vazia</Portuguese>
             <Russian>Пустая фляга</Russian>
             <Spanish>Una cantina vacía</Spanish>
+            <Turkish>Boş Matara</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Can_Spirit_Description">
             <English>Refreshing lemon and lime flavored soft drink</English>
@@ -650,6 +706,7 @@
             <Japanese>新鮮なレモンとライムの風味を味わえるソフト ドリンク</Japanese>
             <Polish>Odświeżający napój cytronowo-limonkowy</Polish>
             <Russian>Освежающий напиток со вкусом лимона и лайма</Russian>
+            <Turkish>Limon Ve Yeşil Limondan Yapılmış Gazlı Bir İçecek</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Can_Franta_Description">
             <English>Orange flavored soft drink with a tingly, fruity taste</English>
@@ -658,6 +715,7 @@
             <Japanese>口いっぱいに果物を感じるオレンジ風味のソフト ドリンク</Japanese>
             <Polish>Napój pomarańczowy</Polish>
             <Russian>Напиток с апельсиновым вкусом</Russian>
+            <Turkish>Gazlı Portakallı Bir İçecek</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Can_RedGull_Description">
             <English>Red Gull gives you wings</English>
@@ -666,6 +724,7 @@
             <Japanese>レッドガルは翼をさずける</Japanese>
             <Polish>Red Gull doda ci skrzydeł</Polish>
             <Russian>Рэд Гулл окрыляет!</Russian>
+            <Turkish>Red Gull kanatlandırrrrr</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_LambCurry_DisplayName">
             <English>MRE Lamb Curry</English>
@@ -682,6 +741,7 @@
             <Portuguese>MRE cordeiro ao Curry</Portuguese>
             <Russian>ИРП Ягненок карри</Russian>
             <Spanish>MRE cordero Curry</Spanish>
+            <Turkish>MRE Kuzu Köri</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_LambCurry_Description">
             <English>An MRE containing Lamb Curry. Heat for best effect</English>
@@ -698,6 +758,7 @@
             <Portuguese>Um MRE contendo Lamb Curry. Calor para melhor efeito</Portuguese>
             <Russian>Сухой паёк, содержащий ягнятину карри. Перед употреблением рекомендуется разогреть</Russian>
             <Spanish>Un MRE que contiene cordero al curry. Calor para el mejor efecto</Spanish>
+            <Turkish>Kuzu Köri içeren bir MRE.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_BeefStew_DisplayName">
             <English>MRE Beef Stew</English>
@@ -706,6 +767,7 @@
             <Japanese>MRE ビーフ シチュー</Japanese>
             <Polish>MRE Gulasz wołowy</Polish>
             <Russian>ИРП Тушеная говядина</Russian>
+            <Turkish>MRE Dana Yahni</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_BeefStew_Description">
             <English>An MRE containing Beef Stew. Heat for best effect</English>
@@ -714,6 +776,7 @@
             <Japanese>ビーフ シチューの MRE。温めるとなお美味しい</Japanese>
             <Polish>MRE zawierające gulasz wołowy. Podgrzej dla najlepszego efektu</Polish>
             <Russian>Сухой паёк, содержащий тушеную говядину. Перед употреблением рекомендуется разогреть</Russian>
+            <Turkish>Sığır Yahni içeren bir MRE.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_CreamTomatoSoup_DisplayName">
             <English>MRE Cream Tomato Soup</English>
@@ -730,6 +793,7 @@
             <Portuguese>MRE Sopa de creme de tomate</Portuguese>
             <Russian>ИРП Томатный крем-суп</Russian>
             <Spanish>MRE Sopa de tomate crema</Spanish>
+            <Turkish>MRE Kremalı Domates Çorbası</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_CreamTomatoSoup_Description">
             <English>An MRE containing Cream Tomato Soup. Mix with water and heat for best effect</English>
@@ -746,6 +810,7 @@
             <Portuguese>Uma MRE contendo Cream Tomato Soup. Misture com água e calor para melhor efeito</Portuguese>
             <Russian>Сухой паёк, содержащий сублимированный томатный крем-суп. Перед употреблением растворить в воде и разогреть</Russian>
             <Spanish>Una MRE que contiene Sopa de Tomate Crema. Mezcle con agua y calor para un mejor efecto</Spanish>
+            <Turkish>Kremalı Domates Çorbası içeren bir MRE.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_CreamChickenSoup_DisplayName">
             <English>MRE Cream Chicken Soup</English>
@@ -762,6 +827,7 @@
             <Portuguese>MRE Sopa de creme de galinha</Portuguese>
             <Russian>ИРП Куриный крем-суп</Russian>
             <Spanish>MRE Sopa de pollo crema</Spanish>
+            <Turkish>MRE Kremalı Tavuk Çorbası</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_CreamChickenSoup_Description">
             <English>An MRE containing Chicken Soup. Mix with water and heat for best effect</English>
@@ -778,6 +844,7 @@
             <Portuguese>Um MRE contendo Sopa de Frango. Misture com água e calor para melhor efeito</Portuguese>
             <Russian>Сухой паёк, содержащий сублимированный куриный крем-суп. Перед употреблением растворить в воде и разогреть</Russian>
             <Spanish>Un MRE que contiene sopa de pollo. Mezcle con agua y calor para un mejor efecto</Spanish>
+            <Turkish>Tavuk Çorbası içeren bir MRE.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_ChickenTikkaMasala_DisplayName">
             <English>MRE Chicken Tikka Masala</English>
@@ -794,6 +861,7 @@
             <Portuguese>MRE frango Tikka Masala</Portuguese>
             <Russian>ИРП Курица Тикка Масала</Russian>
             <Spanish>MRE Pollo Tikka Masala</Spanish>
+            <Turkish>MRE Tikka Masala Soslu Tavuk</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_ChickenTikkaMasala_Description">
             <English>An MRE with Chicken Tikka Masala. Heat for best effect</English>
@@ -810,6 +878,7 @@
             <Portuguese>Um MRE com Frango Tikka Masala. Calor para melhor efeito</Portuguese>
             <Russian>Сухой паёк, содержащий Курицу Тикка Масала. Перед употреблением рекомендуется разогреть</Russian>
             <Spanish>Un ERM con Pollo Tikka Masala. Calor para un mejor efecto</Spanish>
+            <Turkish>Tikka Masala Soslu Tavuk içeren bir MRE.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_SteakVegetables_DisplayName">
             <English>MRE Steak Vegetables</English>
@@ -826,6 +895,7 @@
             <Portuguese>MRE bife legumes</Portuguese>
             <Russian>ИРП Стейк с овощами</Russian>
             <Spanish>ERM de ternera verduras</Spanish>
+            <Turkish>MRE Sebzeli Biftek</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_SteakVegetables_Description">
             <English>An MRE containing Steak and Vegetables. Heat for best effect</English>
@@ -842,6 +912,7 @@
             <Portuguese>Um MRE contendo Bife e Legumes. Calor para melhor efeito</Portuguese>
             <Russian>Сухой паёк, содержащий стейк с овощами. Перед употреблением рекомендуется разогреть</Russian>
             <Spanish>Un MRE que contiene carne y verduras. Calor para el mejor efecto</Spanish>
+            <Turkish>Sebzeli Biftek içeren bir MRE.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_MeatballsPasta_DisplayName">
             <English>MRE Meatballs and Pasta</English>
@@ -858,6 +929,7 @@
             <Portuguese>MRE Macarrão com almôndegas</Portuguese>
             <Russian>ИРП Макароны с фрикадельками</Russian>
             <Spanish>MRE Albóndigas y pastas</Spanish>
+            <Turkish>MRE Köfte Ve Makarna</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_MeatballsPasta_Description">
             <English>An MRE containing Meatballs and Pasta. Heat for best effect</English>
@@ -874,6 +946,7 @@
             <Portuguese>Um MRE contendo Meatballs e Pasta. Calor para melhor efeito</Portuguese>
             <Russian>Сухой паёк, содержащий макароны с фрикадельками. Перед употреблением рекомендуется разогреть</Russian>
             <Spanish>Un MRE que contiene albóndigas y pasta. Calor para el mejor efecto</Spanish>
+            <Turkish>Köfte ve makarnadan oluşan bir MRE.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_ChickenHerbDumplings_DisplayName">
             <English>MRE Chicken with Herb Dumplings</English>
@@ -890,6 +963,7 @@
             <Portuguese>MRE Frango com Dumplings de ervas</Portuguese>
             <Russian>ИРП Курица с клёцками</Russian>
             <Spanish>MRE pollo con bolas de masa hervida</Spanish>
+            <Turkish>MRE Tavuk ve Herb Mantısı</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_MRE_ChickenHerbDumplings_Description">
             <English>An MRE containing Chicken with Herb Dumplings. Heat for best effect</English>
@@ -906,6 +980,7 @@
             <Portuguese>Uma MRE que contém Bolinhos De Frango Com Erva. Calor para melhor efeito</Portuguese>
             <Russian>Сухой паёк, содержащий курицу с клёцками. Перед употреблением рекомендуется разогреть</Russian>
             <Spanish>Un MRE que contiene pollo con bolas de masa hervida. Calor para el mejor efecto</Spanish>
+            <Turkish>Tavuk ve Herb Mantısı içeren bir MRE.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Field_Rations_Humanitarian_Ration_DisplayName">
             <English>Humanitarian Ration</English>

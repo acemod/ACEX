@@ -12,6 +12,7 @@
             <Italian>Volume</Italian>
             <Russian>Громкость</Russian>
             <Polish>Głosność</Polish>
+            <Turkish>Ses</Turkish>
         </Key>
         <Key ID="STR_ACEX_Volume_KeybindName">
             <English>Toggle Volume</English>
@@ -24,6 +25,7 @@
             <Italian>Attiva Volume</Italian>
             <Russian>Переключить громкость</Russian>
             <Polish>Przełącz Głosność</Polish>
+            <Turkish>Sesi Aç/Kapat</Turkish>
         </Key>
         <Key ID="STR_ACEX_Volume_KeybindDescription">
             <English>Toggle volume reduction.</English>
@@ -36,6 +38,7 @@
             <Italian>Attiva riduzione del volume.</Italian>
             <Russian>Переключает уменьшение громкости</Russian>
             <Polish>Przełącz redukcje głosności</Polish>
+            <Turkish>Ses azaltmayı aç / kapat.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Volume_Lowered">
             <English>Lowered volume</English>
@@ -48,6 +51,7 @@
             <Italian>Volume diminuito</Italian>
             <Russian>Громкость снижена</Russian>
             <Polish>Zmniejszona głosność</Polish>
+            <Turkish>Azaltılmış ses</Turkish>
         </Key>
         <Key ID="STR_ACEX_Volume_Restored">
             <English>Restored volume</English>
@@ -96,6 +100,7 @@
             <Italian>Più basso nei veicoli</Italian>
             <Russian>Уменьшать в технике</Russian>
             <Polish>Zmniejsz w pojazdach</Polish>
+            <Turkish>Araçlarda Daha Düşük</Turkish>
         </Key>
         <Key ID="STR_ACEX_Volume_LowerInVehiclesDescription">
             <English>Automatically lower volume when inside vehicles.</English>
@@ -108,6 +113,7 @@
             <Italian>Riduce automaticamente il volume quando dentro i veicoli.</Italian>
             <Russian>Автоматически уменьшать громкость в технике</Russian>
             <Polish>Automatycznie zmniejsz głosność będąc w pojeździe</Polish>
+            <Turkish>Araçlara binince sesi azalt.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Volume_ShowNotification">
             <English>Show notification</English>
@@ -120,6 +126,7 @@
             <Italian>Mostra notifiche</Italian>
             <Russian>Показывать уведомление</Russian>
             <Polish>Pokaż powiadomienie</Polish>
+            <Turkish>Bildirim Göster</Turkish>
         </Key>
         <Key ID="STR_ACEX_Volume_ShowNotificationDescription">
             <English>Show notification when lowering/restoring volume.</English>
@@ -132,6 +139,7 @@
             <Italian>Mostra notifiche mentre si abbassa/ripristina il volume.</Italian>
             <Russian>Показывать уведомление при уменьшении/восстановлении громкости</Russian>
             <Polish>Pokaż powiadomienie zmniejszając/odnawiając głosność</Polish>
+            <Turkish>Ses azaltıldığın da bildirim göster.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Volume_FadeDelay">
             <English>Fade delay</English>
@@ -168,6 +176,7 @@
             <Italian>Sollecita se diminuito</Italian>
             <Russian>Напоминать о снижении громкости</Russian>
             <Polish>Przypomnij o zmniejszonej głosności dźwięku</Polish>
+            <Turkish>Eğer Düşükse Hatırlat</Turkish>
         </Key>
         <Key ID="STR_ACEX_Volume_RemindIfLoweredDescription">
             <English>Reminds you every minute if your volume is lowered.</English>
@@ -180,6 +189,7 @@
             <Italian>Ti notifica ogni minuto se il tuo volume è basso.</Italian>
             <Russian>Ежеминутное напоминание о сниженной громкости</Russian>
             <Polish>Przypomina co minuten o zmniejszonej głosności dźwięku</Polish>
+            <Turkish>Eğer ses düşükse her dakika hatırlatır.</Turkish>
         </Key>
         <Key ID="STR_ACEX_Volume_LoweredReminder">
             <English>Volume still lowered</English>
@@ -192,6 +202,7 @@
             <Italian>Il volume è ancora basso</Italian>
             <Russian>Громкость все еще снижена</Russian>
             <Polish>Dźwięk jest nadal zmniejszony</Polish>
+            <Turkish>Ses hala düşük</Turkish>
         </Key>
     </Package>
 </Project>
