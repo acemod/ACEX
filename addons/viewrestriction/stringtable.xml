@@ -180,7 +180,7 @@
             <Chinese>(可選) 無人載具</Chinese>
             <Italian>(Selettiva) UAV</Italian>
             <Russian>(Выборочные) Беспиплотники</Russian>
-            <Turkish>(Seçilebilir) İHA'lar</Turkish>
+            <Turkish>(Seçilebilir) IHA'lar</Turkish>
         </Key>
         <Key ID="STR_ACEX_ViewRestriction_ModeSelectiveUAVDesc">
             <English>Selective mode in UAVs. Default: Disabled (Requires Mode: Selective)</English>
