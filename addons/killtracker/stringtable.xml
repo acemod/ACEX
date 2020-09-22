@@ -5,21 +5,25 @@
             <English>Total Kills:</English>
             <Russian>Всего убийств:</Russian>
             <Polish>Liczba zabójstw:</Polish>
+            <Turkish>Toplam Öldürme:</Turkish>
         </Key>
         <Key ID="STR_ACEX_KillTracker_Kill">
             <English>Kill: %1 %2</English>
             <Russian>Убил: %1 %2</Russian>
             <Polish>Zabójstwo: %1 %2</Polish>
+            <Turkish>Öldürülen: %1 %2</Turkish>
         </Key>
         <Key ID="STR_ACEX_KillTracker_Killer">
             <English>Killer: %1 %2</English>
             <Russian>Убийца: %1 %2</Russian>
             <Polish>Zabójca: %1 %2</Polish>
+            <Turkish>Öldüren: %1 %2</Turkish>
         </Key>
         <Key ID="STR_ACEX_KillTracker_Vehicle">
             <English>Vehicle: %1</English>
             <Russian>Техника: %1</Russian>
             <Polish>Pojazd: %1</Polish>
+            <Turkish>Araç :%1</Turkish>
         </Key>
         <Key ID="STR_ACEX_KillTracker_FriendlyFire">
             <English>Friendly Fire</English>

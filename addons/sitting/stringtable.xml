@@ -16,6 +16,7 @@
             <Korean>앉기</Korean>
             <Chinesesimp>坐下</Chinesesimp>
             <Chinese>坐下</Chinese>
+            <Turkish>Otur</Turkish>
         </Key>
         <Key ID="STR_ACEX_Sitting_Stand">
             <English>Stand Up</English>
@@ -32,6 +33,7 @@
             <Korean>일어서기</Korean>
             <Chinesesimp>站起来</Chinesesimp>
             <Chinese>站起來</Chinese>
+            <Turkish>Kalk</Turkish>
         </Key>
         <Key ID="STR_ACEX_Sitting_Enable">
             <English>Enable Sitting</English>
@@ -48,6 +50,7 @@
             <Korean>앉기 사용</Korean>
             <Chinesesimp>开启坐下功能</Chinesesimp>
             <Chinese>開啟坐下功能</Chinese>
+            <Turkish>Oturmayı Aktik Et</Turkish>
         </Key>
         <Key ID="STR_ACEX_Sitting_ModuleDisplayName">
             <English>Sitting</English>
@@ -64,6 +67,7 @@
             <Korean>앉기</Korean>
             <Chinesesimp>坐下功能</Chinesesimp>
             <Chinese>坐下功能</Chinese>
+            <Turkish>Oturma</Turkish>
         </Key>
         <Key ID="STR_ACEX_Sitting_ModuleDescription">
             <English>This module allows you to disable the ability to sit on chairs.</English>
@@ -80,6 +84,7 @@
             <Korean>이 모듈을 사용하여 의자에 앉을 수 있는 기능을 비활성 할 수 있습니다.</Korean>
             <Chinesesimp>此模块可以让你开关在椅子上坐下的能力。</Chinesesimp>
             <Chinese>此模塊可以讓你開關在椅子上坐下的能力。</Chinese>
+            <Turkish>Bu modül, sandalyelere oturma özelliğini devre dışı bırakmanıza izin verir.</Turkish>
         </Key>
     </Package>
 </Project>

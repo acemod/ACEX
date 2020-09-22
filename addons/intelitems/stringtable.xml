@@ -8,6 +8,7 @@
             <Japanese>ACEX 機密アイテム</Japanese>
             <Russian>ACEX Предметы с данными</Russian>
             <Polish>ACEX Przedmioty Wywiadu</Polish>
+            <Turkish>ACEX Istihbarat Eşyaları</Turkish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_DisplayName">
             <English>Intel Items</English>
@@ -16,6 +17,7 @@
             <Japanese>機密アイテム</Japanese>
             <Russian>Предметы с данными</Russian>
             <Polish>Przedmioty Wywiadu</Polish>
+            <Turkish>Istihbarat Eşyaları</Turkish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Notepad_DisplayName">
             <English>Notepad</English>
@@ -24,6 +26,7 @@
             <Japanese>メモ</Japanese>
             <Russian>Блокнот</Russian>
             <Polish>Notes</Polish>
+            <Turkish>Not Defteri</Turkish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Notepad_Description">
             <English>Notepad - Can access from the map screen</English>
@@ -32,6 +35,7 @@
             <Japanese>メモ - マップ画面から確認可能</Japanese>
             <Russian>Блокнот - Можно получить доступ с экрана карты</Russian>
             <Polish>Notes - Dostępne z mapy</Polish>
+            <Turkish>Not Defteri - Haritadan erişim sağlanabilinir</Turkish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Document_DisplayName">
             <English>Document</English>
@@ -40,6 +44,7 @@
             <Japanese>資料</Japanese>
             <Russian>Документ</Russian>
             <Polish>Dokument</Polish>
+            <Turkish>Döküman</Turkish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Document_Description">
             <English>Printed Document - Can access from the map screen</English>
@@ -48,6 +53,7 @@
             <Japanese>メモ - マップ画面から確認可能</Japanese>
             <Russian>Распечатанный документ - Можно получить доступ с экрана карты</Russian>
             <Polish>Wydrukowane Dokumenty - Dostępne z mapy</Polish>
+            <Turkish>Yazılı Döküman - Haritadan erişim sağlanabilinir</Turkish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Photo_DisplayName">
             <English>Photo</English>
@@ -56,6 +62,7 @@
             <Japanese>写真</Japanese>
             <Russian>Фотография</Russian>
             <Polish>Zdjęcie</Polish>
+            <Turkish>Fotoğraf</Turkish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Photo_Description">
             <English>Photo - Can access from the map screen</English>
@@ -64,6 +71,7 @@
             <Japanese>写真 - マップ画面から確認可能</Japanese>
             <Russian>Фотография - Можно получить доступ с экрана карты</Russian>
             <Polish>Zdjęcie - Dostępne z mapy</Polish>
+            <Turkish>Fotoğraf - Haritadan erişim sağlanabilinir</Turkish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Text">
             <English>Text</English>
@@ -77,6 +85,7 @@
             <Spanish>Texto</Spanish>
             <Chinese>文字</Chinese>
             <Japanese>テキスト</Japanese>
+            <Turkish>Yazı</Turkish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Photo_Filename">
             <English>Photo Filename</English>
@@ -85,6 +94,7 @@
             <Japanese>写真名</Japanese>
             <Russian>Имя файла фотографии</Russian>
             <Polish>Zdjęcie Nazwa Pliku</Polish>
+            <Turkish>Fotoğraf Dosya Adı</Turkish>
         </Key>
         <Key ID="STR_ACEX_IntelItems_Pickup">
             <English>Pick Up</English>
@@ -98,6 +108,7 @@
             <Spanish>Recoger</Spanish>
             <Chinese>撿起</Chinese>
             <Japanese>拾う</Japanese>
+            <Turkish>Al</Turkish>
         </Key>
     </Package>
 </Project>
