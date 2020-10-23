@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="ACEX">
     <Package name="KillTracker">
+        <Key ID="STR_ACEX_KillTracker_Title">
+            <English>ACEX Killed Events</English>
+        </Key>
         <Key ID="STR_ACEX_KillTracker_TotalKills">
             <English>Total Kills:</English>
             <Russian>Всего убийств:</Russian>
