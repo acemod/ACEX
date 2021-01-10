@@ -8,3 +8,5 @@ texHeaders.bin
 *.swo
 *.biprivatekey
 Thumbs.db
+.hemtt/local
+hemtt.exe
