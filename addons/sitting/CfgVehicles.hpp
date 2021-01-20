@@ -1,6 +1,3 @@
-
-class CBA_Extended_EventHandlers;
-
 class CfgVehicles {
     class ACE_Module;
     class ACEX_ModuleSitting: ACE_Module {
@@ -45,15 +42,12 @@ class CfgVehicles {
     // Folding Chair
     class ThingX;
     class Land_CampingChair_V1_F: ThingX {
-        class EventHandlers {
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
-        };
-
         GVAR(canSit) = 1;
         GVAR(sitDirection) = 180;
         GVAR(sitPosition)[] = {0, -0.1, -0.45};
         GVAR(interactPosition)[] = {0, 0, 0.3};
 
+        ACEGVAR(interaction,replaceTerrainObject) = 1;
         ACEGVAR(dragging,canCarry) = 1;
         ACEGVAR(dragging,carryPosition)[] = {0, 0.75, 0.5};
         ACEGVAR(dragging,carryDirection) = 180;
@@ -61,15 +55,12 @@ class CfgVehicles {
 
     // Camping Chair
     class Land_CampingChair_V2_F: ThingX {
-        class EventHandlers {
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
-        };
-
         GVAR(canSit) = 1;
         GVAR(sitDirection) = 180;
         GVAR(sitPosition)[] = {0, -0.1, -0.45};
         GVAR(interactPosition)[] = {0, 0, 0.3};
 
+        ACEGVAR(interaction,replaceTerrainObject) = 1;
         ACEGVAR(dragging,canCarry) = 1;
         ACEGVAR(dragging,carryPosition)[] = {0, 0.75, 0.5};
         ACEGVAR(dragging,carryDirection) = 180;
@@ -78,15 +69,12 @@ class CfgVehicles {
     // Chair (Plastic)
     class Furniture_base_F: ThingX {};
     class Land_ChairPlastic_F: Furniture_base_F {
-        class EventHandlers {
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
-        };
-
         GVAR(canSit) = 1;
         GVAR(sitDirection) = 90;
         GVAR(sitPosition)[] = {0, 0, -0.5};
         GVAR(interactPosition)[] = {0, 0, 0.3};
 
+        ACEGVAR(interaction,replaceTerrainObject) = 1;
         ACEGVAR(dragging,canCarry) = 1;
         ACEGVAR(dragging,carryPosition)[] = {0, 0.75, 0.5};
         ACEGVAR(dragging,carryDirection) = 270;
@@ -94,10 +82,6 @@ class CfgVehicles {
 
     // Chair (Wooden)
     class Land_ChairWood_F: Furniture_base_F {
-        class EventHandlers {
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
-        };
-
         GVAR(canSit) = 1;
         GVAR(sitDirection) = 180;
         GVAR(sitPosition)[] = {0, -0.05, 0};
@@ -110,10 +94,6 @@ class CfgVehicles {
 
     // Office Chair
     class Land_OfficeChair_01_F: Furniture_base_F {
-        class EventHandlers {
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
-        };
-
         GVAR(canSit) = 1;
         GVAR(sitDirection) = 180;
         GVAR(sitPosition)[] = {0, 0, -0.6};
@@ -126,10 +106,6 @@ class CfgVehicles {
 
     // Wooden Log
     class Land_WoodenLog_F: ThingX {
-        class EventHandlers {
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
-        };
-
         GVAR(canSit) = 1;
         GVAR(sitDirection) = 0;
         GVAR(sitPosition)[] = {0, 0, -1};
@@ -142,10 +118,6 @@ class CfgVehicles {
 
     // Rattan Chair
     class Land_RattanChair_01_F: Furniture_base_F {
-        class EventHandlers {
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
-        };
-
         GVAR(canSit) = 1;
         GVAR(sitDirection) = 180;
         GVAR(sitPosition)[] = {0, 0, -1}; // Z must be -1 due to chair's geometry (magic floating seat point)
@@ -159,10 +131,6 @@ class CfgVehicles {
     // Arm Chair
     class Furniture_Residental_base_F;
     class Land_ArmChair_01_F: Furniture_Residental_base_F {
-        class EventHandlers {
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
-        };
-
         GVAR(canSit) = 1;
         GVAR(sitDirection) = 0;
         GVAR(sitPosition)[] = {0, 0, -1};
@@ -174,13 +142,39 @@ class CfgVehicles {
 
     };
 
+    class House_F;
+    class Land_BusStop_02_shelter_F: House_F {
+        GVAR(canSit) = 1;
+        GVAR(sitDirection) = 180;
+        GVAR(sitPosition)[] = { {-0.5, 0.9, -1.3}, {0.5, 0.9, -1.3} };
+        GVAR(interactPosition)[] = { {-0.5, 0.9, -0.3}, {0.5, 0.9, -0.3} };
+
+        ACEGVAR(interaction,replaceTerrainObject) = 1;
+    };
+
     // Benches
+    class Land_Bench_F: Furniture_base_F {
+        GVAR(canSit) = 1;
+        GVAR(sitDirection) = 90;
+        GVAR(sitPosition)[] = { {0.1, -0.5, -0.9}, {0.1, 0.5, -0.9} };
+        GVAR(interactPosition)[] = { {0, -0.5, 0.3}, {0, 0.5, 0.3} };
+
+        ACEGVAR(interaction,replaceTerrainObject) = 1;
+        ACEGVAR(dragging,canCarry) = 1;
+        ACEGVAR(dragging,carryDirection) = 90;
+        ACEGVAR(dragging,canDrag) = 1;
+        ACEGVAR(dragging,dragPosition)[] = {0, 1, 0};
+        ACEGVAR(dragging,dragDirection) = 90;
+    };
+
     class House_Small_F;
     class Land_Bench_01_F: House_Small_F {
         GVAR(canSit) = 1;
         GVAR(sitDirection) = 180;
         GVAR(sitPosition)[] = { {0.5, -0.04, -0.90}, {-0.5, -0.04, -0.90} };
         GVAR(interactPosition)[] = { {0.5, 0, 0.3}, {-0.5, 0, 0.3} };
+
+        ACEGVAR(interaction,replaceTerrainObject) = 1;
     };
 
     class Land_Bench_02_F: House_Small_F {
@@ -188,6 +182,8 @@ class CfgVehicles {
         GVAR(sitDirection) = 180;
         GVAR(sitPosition)[] = { {0.5, -0.04, -0.90}, {-0.5, -0.04, -0.90} };
         GVAR(interactPosition)[] = { {0.5, 0, 0.3}, {-0.5, 0, 0.3} };
+
+        ACEGVAR(interaction,replaceTerrainObject) = 1;
     };
 
     class Land_Bench_03_F: House_Small_F {
@@ -195,6 +191,8 @@ class CfgVehicles {
         GVAR(sitDirection) = 180;
         GVAR(sitPosition)[] = { {0.5, -0.15, -0.90}, {-0.5, -0.15, -0.90} };
         GVAR(interactPosition)[] = { {0.5, 0, 0.3}, {-0.5, 0, 0.3} };
+
+        ACEGVAR(interaction,replaceTerrainObject) = 1;
     };
 
     /* Disabled due to a geometry issue with height
@@ -210,5 +208,17 @@ class CfgVehicles {
         GVAR(sitDirection) = 0;
         GVAR(sitPosition)[] = { {0.5, -0.04, -0.90}, {-0.5, -0.04, -0.90} };
         GVAR(interactPosition)[] = { {0.5, 0, 0.3}, {-0.5, 0, 0.3} };
+
+        ACEGVAR(interaction,replaceTerrainObject) = 1;
+    };
+
+    class Stall_base_F;
+    class Land_StallWater_F: Stall_base_F {
+        GVAR(canSit) = 1;
+        GVAR(sitDirection) = 180;
+        GVAR(sitPosition)[] = { {-0.4, -0.8, -0.9}, {0.4, -0.8, -0.9} };
+        GVAR(interactPosition)[] = { {-0.4, -0.75, 0.3}, {0.4, -0.75, 0.3} };
+
+        ACEGVAR(interaction,replaceTerrainObject) = 1;
     };
 };
