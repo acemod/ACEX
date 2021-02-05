@@ -21,7 +21,7 @@ class Cfg3DEN {
                         path[] = {QGVAR(Presets)};
                         localConfig = 1;
                         propertyText = "displayName";
-                        sort = true;
+                        sort = 1;
                     };
                 };
             };
