@@ -71,7 +71,7 @@ GVAR(objectRotationZ) = 0;
         {!isNull player},
         {
             params ["_object"];
-            if (GVAR(markObjectsOnMap) isEqualTo 2 || {[_object getVariable QGVAR(objectSide), side group player] call BIS_fnc_sideIsEnemy}) then {
+            if (GVAR(markObjectsOnMap) isEqualTo 1 || {[_object getVariable QGVAR(objectSide), side group player] call BIS_fnc_sideIsEnemy}) then {
                 private _marker = _object getVariable QGVAR(mapMarker);
                 _marker setMarkerAlpha 0;
             };
