@@ -155,6 +155,21 @@
             <Russian>Показывать всегда</Russian>
             <Turkish>Her Zaman Göster</Turkish>
         </Key>
+        <Key ID="STR_ACEX_Fortify_markObjectsOnMap">
+            <English>Create map markers</English>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_markObjectsOnMapDesc">
+            <English>Controls when budget update hints are shown</English>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_markObjectsOnMapNone">
+            <English>Never</English>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_markObjectsOnMapFriendly">
+            <English>Only for friendlies</English>
+        </Key>
+        <Key ID="STR_ACEX_Fortify_markObjectsOnMapEveryone">
+            <English>Show for everyone</English>
+        </Key>
         <Key ID="STR_ACEX_Fortify_small">
             <English>Small</English>
             <Polish>Małe</Polish>

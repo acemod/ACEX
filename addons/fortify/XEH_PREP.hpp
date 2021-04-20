@@ -17,3 +17,4 @@ PREP(getPlaceableSet);
 PREP(modifyAction);
 PREP(setupModule);
 PREP(buildLocationModule);
+PREP(createObjectMarker);

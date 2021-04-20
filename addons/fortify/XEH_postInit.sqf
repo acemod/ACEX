@@ -7,6 +7,7 @@ if (isServer) then {
         TRACE_3("objectPlaced",_unit,_side,_object);
         private _jipID = [QGVAR(addActionToObject), [_side, _object]] call CBA_fnc_globalEventJIP;
         [_jipID, _object] call CBA_fnc_removeGlobalEventJIP; // idealy this function should be called on the server
+        if (GVAR(markObjectsOnMap) isNotEqualTo 0 && {_object isKindOf "Static"}) then {[_object] call FUNC(createObjectMarker)};
     }] call CBA_fnc_addEventHandler;
 };
 
@@ -62,4 +63,19 @@ GVAR(objectRotationZ) = 0;
 
         [_object, 0, ["ACE_MainActions"], _removeAction] call ACEFUNC(interact_menu,addActionToObject);
     };
+}] call CBA_fnc_addEventHandler;
+
+[QGVAR(setMarkerVisible), {
+    params ["_object"];
+    [
+        {!isNull player},
+        {
+            params ["_object"];
+            if (GVAR(markObjectsOnMap) isEqualTo 2 || {[_object getVariable QGVAR(objectSide), side group player] call BIS_fnc_sideIsEnemy}) then {
+                private _marker = _object getVariable QGVAR(mapMarker);
+                _marker setMarkerAlpha 0;
+            };
+        }, 
+        _object
+    ] call CBA_fnc_waitUntilAndExecute;
 }] call CBA_fnc_addEventHandler;
