@@ -13,7 +13,7 @@
  * Example:
  * _object call acex_fortify_fnc_createObjectMarker
  *
- * Public: Yes
+ * Public: No
  */
 
 params ["_object"];
@@ -27,10 +27,10 @@ private _maxLength = abs ((_p2 select 1) - (_p1 select 1));
 private _direction = getDir _object;
 
 // Marker name unique to this object
-private _markerNameStr = format ["acex_fortify_marker_%1", _object];
+private _markerNameStr = format [QGVAR(marker_%1), _object];
 
 // Create marker, set alpha using global event
-private _marker = createMarker [_markerNameStr, _object];
+private _marker = createMarkerLocal [_markerNameStr, _object];
 _marker setMarkerShapeLocal "RECTANGLE";
 _marker setMarkerBrushLocal "SolidFull";
 _marker setMarkerSizeLocal [(_maxWidth / 2),(_maxLength / 2)];
