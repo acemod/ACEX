@@ -9,6 +9,7 @@
         2
     ]
 ] call CBA_settings_fnc_init;
+
 [
     QGVAR(markObjectsOnMap),
     "LIST",
