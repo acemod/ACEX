@@ -159,16 +159,16 @@
             <English>Create map markers</English>
         </Key>
         <Key ID="STR_ACEX_Fortify_markObjectsOnMapDesc">
-            <English>Controls when budget update hints are shown</English>
+            <English>Create map area markers akin to terrain buildings when an ACEX static object is placed.</English>
         </Key>
         <Key ID="STR_ACEX_Fortify_markObjectsOnMapNone">
             <English>Never</English>
         </Key>
         <Key ID="STR_ACEX_Fortify_markObjectsOnMapFriendly">
-            <English>Only for friendlies</English>
+            <English>For friendlies only</English>
         </Key>
         <Key ID="STR_ACEX_Fortify_markObjectsOnMapEveryone">
-            <English>Show for everyone</English>
+            <English>For everyone</English>
         </Key>
         <Key ID="STR_ACEX_Fortify_small">
             <English>Small</English>
