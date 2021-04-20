@@ -6,13 +6,12 @@
  *
  * Arguments:
  * 0: Created fortify object <OBJECT>
- * 1: Friendly side
  *
  * Return Value:
  * None
  *
  * Example:
- * [_object, _side] call acex_fortify_fnc_createObjectMarker
+ * _object call acex_fortify_fnc_createObjectMarker
  *
  * Public: Yes
  */
@@ -27,10 +26,10 @@ private _maxWidth = abs ((_p2 select 0) - (_p1 select 0));
 private _maxLength = abs ((_p2 select 1) - (_p1 select 1));
 private _direction = getDir _object;
 
-// Marker name unique to this trench object
+// Marker name unique to this object
 private _markerNameStr = format ["acex_fortify_marker_%1", _object];
 
-// Create marker, but only for side of trench placer
+// Create marker, set alpha using global event
 private _marker = createMarker [_markerNameStr, _object];
 _marker setMarkerShapeLocal "RECTANGLE";
 _marker setMarkerBrushLocal "SolidFull";
