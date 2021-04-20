@@ -2,7 +2,7 @@
 
 /*
  * Author: Seb
- * Creates a map marker for a created static object but only for sides friendly to the creator side
+ * Creates a map marker for a created static object but only for sides friendly to the creator side.
  *
  * Arguments:
  * 0: Created fortify object <OBJECT>
