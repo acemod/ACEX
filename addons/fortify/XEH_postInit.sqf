@@ -95,7 +95,6 @@ GVAR(objectRotationZ) = 0;
 
 // Reset map marker alphas when the side of the controlled unit changes.
 ["group", {
-    systemChat "Running map change";
     {
         private _object = _y;
         [QGVAR(setMarkerVisible), _object] call CBA_fnc_localEvent;
