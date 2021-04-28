@@ -78,7 +78,7 @@ GVAR(objectRotationZ) = 0;
             // If enemy placed object, hide marker.
             if (GVAR(markObjectsOnMap) isEqualTo 1 && {_objectSide getFriend _playerSide < 0.6}) then {
                 private _marker = _object getVariable QGVAR(mapMarker);
-                _marker setMarkerAlpha 0;
+                _marker setMarkerAlphaLocal 0;
             };
         }, 
         _object
