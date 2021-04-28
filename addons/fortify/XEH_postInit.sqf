@@ -10,7 +10,12 @@ if (isServer) then {
         private _jipID = [QGVAR(addActionToObject), [_side, _object]] call CBA_fnc_globalEventJIP;
         [_jipID, _object] call CBA_fnc_removeGlobalEventJIP; // idealy this function should be called on the server
         if (GVAR(markObjectsOnMap) isNotEqualTo 0 && {_object isKindOf "Static"}) then {
-            [_object] call FUNC(createObjectMarker)
+            // Wait ensures correct marker pos/rot as object is moved into position after creation
+            [
+                {_this call FUNC(createObjectMarker)}, 
+                _object,
+                1
+            ] call CBA_fnc_waitAndExecute;
         };
     }] call CBA_fnc_addEventHandler;
 };
