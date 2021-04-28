@@ -159,13 +159,13 @@
             <English>Create map markers</English>
         </Key>
         <Key ID="STR_ACEX_Fortify_markObjectsOnMapDesc">
-            <English>Create map area markers akin to terrain buildings when an ACEX static object is placed.</English>
+            <English>Create map markers that look like terrain buildings when static fortifications are placed</English>
         </Key>
         <Key ID="STR_ACEX_Fortify_markObjectsOnMapNone">
             <English>Never</English>
         </Key>
         <Key ID="STR_ACEX_Fortify_markObjectsOnMapFriendly">
-            <English>For friendlies only</English>
+            <English>For units friendly to the placer</English>
         </Key>
         <Key ID="STR_ACEX_Fortify_markObjectsOnMapEveryone">
             <English>For everyone</English>
