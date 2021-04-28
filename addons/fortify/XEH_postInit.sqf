@@ -1,6 +1,8 @@
 #include "script_component.hpp"
 
 if (isServer) then {
+    GVAR(markerObjectHashmap) = createHashMap;
+    publicVariable QGVAR(markerObjectHashmap);
     [QGVAR(registerObjects), LINKFUNC(registerObjects)] call CBA_fnc_addEventHandler;
     [QGVAR(objectPlaced), {
         params ["_unit", "_side", "_object"];
@@ -73,14 +75,24 @@ GVAR(objectRotationZ) = 0;
         {!isNull player},
         {
             params ["_object"];
+            private _currentUnit = call CBA_fnc_currentUnit;
             private _objectSide = _object getVariable QGVAR(objectSide);
-            private _playerSide = side group player;
-            // If enemy placed object, hide marker.
-            if (GVAR(markObjectsOnMap) isEqualTo 1 && {_objectSide getFriend _playerSide < 0.6}) then {
-                private _marker = _object getVariable QGVAR(mapMarker);
-                _marker setMarkerAlphaLocal 0;
-            };
+            private _playerSide = side group _currentUnit;
+            private _marker = _object getVariable QGVAR(mapMarker);
+            // If enemy placed object, hide marker, else set visible
+            private _alpha = if (GVAR(markObjectsOnMap) isEqualTo 1 && {_objectSide getFriend _playerSide < 0.6}) then {0} else {1};
+            _marker setMarkerAlphaLocal _alpha;
         }, 
         _object
     ] call CBA_fnc_waitUntilAndExecute;
 }] call CBA_fnc_addEventHandler;
+
+
+// Reset map marker alphas when the side of the controlled unit changes.
+["group", {
+    systemChat "Running map change";
+    {
+        private _object = _y;
+        [QGVAR(setMarkerVisible), _object] call CBA_fnc_localEvent;
+    } forEach GVAR(markerObjectHashmap);
+}] call CBA_fnc_addPlayerEventHandler;
