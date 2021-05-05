@@ -8,7 +8,9 @@
 
     Example:
     class CfgDebriefingSections {
-        #include "\z\acex\addons\killtracker\killtracker.inc"
+        #if __has_include("\z\acex\addons\killtracker\killtracker.inc")
+            #include "\z\acex\addons\killtracker\killtracker.inc"
+        #endif
     };
 */
 
