@@ -1,3 +1,14 @@
+<h2 align="center">⚠️ ACEX was merged into <a href="https://github.com/acemod/ACE3">ACE3</a> v3.14.0! ⚠️</h2>
+<p align="center">
+    Read <a href="https://ace3mod.com/2021/10/14/ace3-version3140.html">ACEREP #00011</a> for more information.<br>
+    Remove ACEX if you still have it installed.
+    <br><br>
+    This repository has been archived.<br>
+    All further issues, pull requests or other inquiries should be directed to <a href="https://github.com/acemod/ACE3">ACE3</a>.
+</p>
+
+---
+
 <p align="center">
     <img src="https://github.com/acemod/ACEX/raw/master/extras/assets/logo/black/ACEX-Logo.jpg" width="480">
 </p>
